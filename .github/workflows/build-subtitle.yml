@@ -46,7 +46,7 @@ jobs:
       - name: Pack files
         run: |
           export now=$(date +"%Y%m%d%H%M")
-          zip -r -j mlan_subs_${now}.zip build/output/*
+          zip -r -j sc_subs_${now}.zip build/output/*
       - name: Delete latest release
         uses: actions/github-script@v7
         with:
