@@ -24,7 +24,7 @@ def main():
             if file.endswith(".ass"):
                 input_path = os.path.join(root, file)
                 output_path = os.path.join(build_dir, "output", file)
-                if file.startswith("ep"):
+                if file.startswith("ep") or file.startswith("test"):
                     os.chdir(root)
                     utils.merge_files(input_path, output_path)
                     print(f"Merged {file}")

@@ -36,6 +36,8 @@ jobs:
           unzip -q aegisub-cli.zip -d aegisub-cli/
       - name: Install custom fonts
         run: |
+          wget https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/download/typeface/fonts_sc.zip
+          unzip -q fonts_sc.zip -d Fonts/
           sudo mv Fonts/* /usr/share/fonts/
           fc-cache -fv
       - name: Build substitles
@@ -73,9 +75,9 @@ jobs:
           generate_release_notes: true
           name: "自动生成构建 Automatic CI Build"
           files: |
-            mlan_subs_*.zip
+            sc_subs_*.zip
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: mlan_subs_built
-          path: mlan_subs_*.zip
+          name: sc_subs_built
+          path: sc_subs_*.zip
