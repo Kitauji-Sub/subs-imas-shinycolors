@@ -57,17 +57,17 @@ def traditionalize_ass(input_file, output_file, user_pre_replace=""):
             traditionalized_slice = traditionalize_text(slice_texts, user_pre_replace)
             new_texts += json.loads(traditionalized_slice)
         for i in range(len(new_texts)):
-            doc.events[i].text = new_texts[i].replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC")
+            doc.events[i].text = new_texts[i].replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC").replace("FOT-Humming Std B","獅尾圓體JP-Bold")
             # replace import commands
             if doc.events[i].effect.startswith("import"):
                 doc.events[i].text = doc.events[i].text.replace(".ass", "_tc.ass").replace("_sc_tc.ass", "_tc.ass")
 
         # replace styles if needed
         for i in range(len(doc.styles)):
-            if doc.styles[i].fontname == "方正FW筑紫黑 简 E":
-                doc.styles[i].fontsize = "75"
+            if doc.styles[i].fontname == "方正FW轻吟体 简 B":
+                doc.styles[i].fontsize = "55"
                 doc.styles[i].bold = "-1"
-            doc.styles[i].fontname = doc.styles[i].fontname.replace("方正FW筑紫黑 简 E", "Source Han Sans TC").replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC")
+            doc.styles[i].fontname = doc.styles[i].fontname.replace("方正FW轻吟体 简 B", "獅尾圓體-Bold").replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC").replace("FOT-Humming Std B","獅尾圓體JP-Bold")
 
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, encoding='utf-8-sig', mode='w+') as f_out:
