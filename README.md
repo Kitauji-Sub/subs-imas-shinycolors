@@ -1,4 +1,4 @@
-# THE iDOLM@STER MILLION LIVE ANIMATION STAGE 偶像大师 闪耀色彩 字幕仓库
+# THE iDOLM@STER SHINY COLORS 偶像大师 闪耀色彩 字幕仓库
 
 该仓库存放以`北宇治字幕组`名义制作的TV动画《偶像大师 闪耀色彩》 字幕。
 
