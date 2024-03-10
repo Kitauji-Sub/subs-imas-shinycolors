@@ -13,9 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Video File: ?dummy:24000/1001:300000:1920:1080:182:190:193:c
 Video AR Value: 1.777778
-Video Zoom Percent: 1.125000
-Active Line: 14
-Video Position: 120
+Video Zoom Percent: 0.875000
+Active Line: 10
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -37,7 +36,7 @@ Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext 
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext unless overlap,{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!!set("extended", {_G.aegisub.text_extents(line.styleref, line.actor)})!!set("right_pos", line_left + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!line_left!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&}!line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext if overlap,{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20}　{\fscx80}& !line.actor!
 Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,kara,初星学园……是中专呢…^^\N初星学園…‥私立なんだ……
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,羽那,0,0,0,kara,我高中辍学来着\N私は高校を中退しました
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,羽那,0,0,0,kara,我高中辍学的来着\N私は高校を中退しました
 Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,小糸,1000,0,0,kara,我不好说我超\N…………
 Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,kara,我扔子大\N私の胸は大きいです
 Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,巡,300,0,0,kara,我更大\N………………
