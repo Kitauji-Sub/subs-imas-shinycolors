@@ -9,7 +9,7 @@
 
 |分支|说明|下载|
 |-|-|:-:|
-|`latest`|`main`持续集成的分支，拥有最新改动，部分显示可能会不正常|[点此下载](https://github.com/Kitauji-Sub/MILLION-Subs/releases/tag/latest)|
+|`latest`|`main`持续集成的分支，拥有最新改动，部分显示可能会不正常|[点此下载](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/tag/latest)|
 |~~`tv`~~|~~适配网络放送版TV播放源（例如CR）的稳定分支~~|~~暂无下载~~|
 
 ## 开发
