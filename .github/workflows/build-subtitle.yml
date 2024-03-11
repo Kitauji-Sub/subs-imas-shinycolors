@@ -73,13 +73,13 @@ jobs:
       - name: Wait a sec
         run: sleep 5
       - name: Publish
-        uses: "softprops/action-gh-release@v1"
+        uses: "softprops/action-gh-release@v2"
         with:
           tag_name: "latest"
           fail_on_unmatched_files: true
           prerelease: true
           draft: false
-          generate_release_notes: true
+          generate_release_notes: false
           name: "自动生成构建 Automatic CI Build"
           files: |
             sc_subs_*.zip
