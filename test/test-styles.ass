@@ -13,9 +13,7 @@ PlayResY: 1080
 Last Style Storage: Default
 Video File: ?dummy:24000/1001:300000:1920:1080:182:190:193:c
 Video AR Value: 1.777778
-Video Zoom Percent: 1.250000
-Active Line: 16
-Video Position: 168
+Video Zoom Percent: 1.125000
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -27,16 +25,17 @@ Style: pixelstyle,Arial,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", } function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code once anystyle,function string:split(delimiter)     local result = {}     local from = 1     local delim_from, delim_to = string.find(self, delimiter, from, true)     while delim_from do         if (delim_from ~= 1) then             table.insert(result, string.sub(self, from, delim_from-1))         end         from = delim_to + 1         delim_from, delim_to = string.find(self, delimiter, from, true)     end     if (from <= #self) then table.insert(result, string.sub(self, from)) end     return result end
-Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code once anystyle,_zh_jp_gap = 50 graphic_width = 55 graphic_height_bottom = 30 graphic_height_top = 25
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code once anystyle,_zh_jp_gap = 50 graphic_width = 60 graphic_height_bottom = 30 graphic_height_top = 25
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code once anystyle,start_time = -1 end_time = -1 right_pos = -1 align = -1 overlap = false function check_overlap (line_start_time, line_end_time, line_align) if line_start_time >= start_time and line_start_time < end_time and line_align == align then return true else return false end end
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,overlap = check_overlap(orgline.start_time, orgline.end_time, orgline.styleref.align) start_time = orgline.start_time end_time = orgline.end_time align = orgline.styleref.align line_text = orgline.text_stripped:split("\\N") line_width = _G.aegisub.text_extents(orgline.styleref, line_text[1] and line_text[1] or "") line_left = (meta.res_x - orgline.eff_margin_l - orgline.eff_margin_r - line_width) / 2 + orgline.eff_margin_l zh_jp_gap = line_text[2] and _zh_jp_gap or 0
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext unless overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and "" or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}!line_text[loopctx.state.zhjp]!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext if overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and "" or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}- !line_text[loopctx.state.zhjp]!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext unless overlap,{!set("separator_width", (line_width / 3 < 250 and 250 or line_width / 3) + graphic_width)!!set("separator_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 5 or line.height / 10)!!util.make_grad(line_left+separator_width-50,line_left+separator_width,1,false)!\pos(!line_left!,!line.styleref.align == 2 and line.top - separator_gap - zh_jp_gap or line.bottom + separator_gap + zh_jp_gap!)\an!line.styleref.align == 2 and 1 or 7!\bord0.2\blur1\shad0\p1\alpha!util.get_grad("&H00&","&HFF&")!}m 0 0 l !separator_width! 0 !separator_width! 2 0 2 0 0
-Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext unless overlap,{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!\an7\pos(!line_left!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
-Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext unless overlap,{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!!set("extended", {_G.aegisub.text_extents(line.styleref, line.actor)})!!set("right_pos", line_left + graphic_width + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!line_left + graphic_width!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&}!line.actor!
-Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext if overlap,{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20}　{\fscx80}& !line.actor!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext unless overlap,!relayer(9)!{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!\an7\pos(!line_left!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext unless overlap,{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!!set("extended", {_G.aegisub.text_extents(line.styleref, line.actor)})!!set("right_pos", line_left + graphic_width + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!line_left + graphic_width!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&}!line.actor!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,template line anystyle notext if overlap,{!set("name_gap", line.styleref.fontname == "獅尾圓體-Bold" and line.height / 2.5 or line.height / 5)!!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20}　{\fscx80}& !line.actor!
 Comment: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,kara,初星学园……是中专呢…^^\N初星学園…‥私立なんだ……
 Comment: 0,0:00:00.00,0:00:05.00,SC_Bottom,羽那,0,0,0,kara,我高中辍学的来着\N私は高校を中退しました
 Comment: 0,0:00:00.00,0:00:05.00,SC_Bottom,小糸,1000,0,0,kara,我不好说我超\N…………
@@ -46,225 +45,225 @@ Comment: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,kara,初星学园……�
 Comment: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,kara,没有日字的测试
 Dialogue: 9,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\pos(375,1000)\bord3\fscx100\fscy100\fn\3c&H202020&\3a&H5F&}初星学园……是中专呢…^^
 Dialogue: 8,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\pos(375,1050)\bord2.1\fscx70\fscy70\fnFOT-Humming Std B\3c&H202020&\3a&H5F&}初星学園…‥私立なんだ……
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(0,0,322.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(322.88,0,323.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(323.88,0,324.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(324.88,0,325.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(325.88,0,326.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(326.88,0,327.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(327.88,0,328.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(328.88,0,329.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(329.88,0,330.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(330.88,0,331.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(331.88,0,332.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(332.88,0,333.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(333.88,0,334.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(334.88,0,335.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(335.88,0,336.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(336.88,0,337.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(337.88,0,338.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(338.88,0,339.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(339.88,0,340.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(340.88,0,341.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(341.88,0,342.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(342.88,0,343.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(343.88,0,344.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(344.88,0,345.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(345.88,0,346.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(346.88,0,347.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(347.88,0,348.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(348.88,0,349.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(349.88,0,350.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(350.88,0,351.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(351.88,0,352.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(352.88,0,353.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(353.88,0,354.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(354.88,0,355.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(355.88,0,356.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(356.88,0,357.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(357.88,0,358.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(358.88,0,359.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(359.88,0,360.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(360.88,0,361.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(361.88,0,362.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(362.88,0,363.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(363.88,0,364.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(364.88,0,365.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(365.88,0,366.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(366.88,0,367.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(367.88,0,368.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(368.88,0,369.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(369.88,0,370.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(370.88,0,1920,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\an7\pos(66.88125,892)\bord2\fscx180\fscy180\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\an1\pos(121.88125,922)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&}雾子
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(0,0,327.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(327.88,0,328.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(328.88,0,329.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(329.88,0,330.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(330.88,0,331.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(331.88,0,332.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(332.88,0,333.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(333.88,0,334.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(334.88,0,335.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(335.88,0,336.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(336.88,0,337.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(337.88,0,338.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(338.88,0,339.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(339.88,0,340.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(340.88,0,341.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(341.88,0,342.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(342.88,0,343.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(343.88,0,344.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(344.88,0,345.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(345.88,0,346.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(346.88,0,347.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(347.88,0,348.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(348.88,0,349.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(349.88,0,350.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(350.88,0,351.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(351.88,0,352.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(352.88,0,353.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(353.88,0,354.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(354.88,0,355.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(355.88,0,356.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(356.88,0,357.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(357.88,0,358.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(358.88,0,359.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(359.88,0,360.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(360.88,0,361.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(361.88,0,362.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(362.88,0,363.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(363.88,0,364.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(364.88,0,365.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(365.88,0,366.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(366.88,0,367.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(367.88,0,368.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(368.88,0,369.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(369.88,0,370.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(370.88,0,371.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(371.88,0,372.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(372.88,0,373.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(373.88,0,374.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(374.88,0,375.88,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\clip(375.88,0,1920,1080)\pos(66.88125,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 9,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\an7\pos(66.88125,892)\bord2\fscx180\fscy180\c&HF5F1E8&\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,雾子,0,1200,0,fx,{\an1\pos(126.88125,922)\bord2.4\fscx80\fscy80\c&HF5F1E8&\3c&H202020&\3a&H5F&}雾子
 Dialogue: 9,0:00:00.00,0:00:05.00,SC_Bottom,羽那,0,0,0,fx,{\pos(960,1000)\bord3\fscx100\fscy100\fn\3c&H202020&\3a&H5F&}- 我高中辍学的来着
 Dialogue: 8,0:00:00.00,0:00:05.00,SC_Bottom,羽那,0,0,0,fx,{\pos(960,1050)\bord2.1\fscx70\fscy70\fnFOT-Humming Std B\3c&H202020&\3a&H5F&}- 私は高校を中退しました
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,羽那,0,0,0,fx,{\an1\pos(201.89125,922)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&\fscx20}　{\fscx80}& 羽那
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,羽那,0,0,0,fx,{\an1\pos(206.89125,922)\bord2.4\fscx80\fscy80\c&HE6DEEB&\3c&H202020&\3a&H5F&\fscx20}　{\fscx80}& 羽那
 Dialogue: 9,0:00:00.00,0:00:05.00,SC_Bottom,小糸,1000,0,0,fx,{\pos(1445,1000)\bord3\fscx100\fscy100\fn\3c&H202020&\3a&H5F&}- 我不好说我超
 Dialogue: 8,0:00:00.00,0:00:05.00,SC_Bottom,小糸,1000,0,0,fx,{\pos(1445,1050)\bord2.1\fscx70\fscy70\fnFOT-Humming Std B\3c&H202020&\3a&H5F&}- …………
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,小糸,1000,0,0,fx,{\an1\pos(346.80375,922)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&\fscx20}　{\fscx80}& 小糸
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Bottom,小糸,1000,0,0,fx,{\an1\pos(351.80375,922)\bord2.4\fscx80\fscy80\c&HE2CED0&\3c&H202020&\3a&H5F&\fscx20}　{\fscx80}& 小糸
 Dialogue: 9,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\pos(825,80)\bord3\fscx100\fscy100\fn\3c&H202020&\3a&H5F&}我扔子大
 Dialogue: 8,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\pos(825,30)\bord2.1\fscx70\fscy70\fnFOT-Humming Std B\3c&H202020&\3a&H5F&}私の胸は大きいです
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(0,0,980.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(980.99,0,981.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(981.99,0,982.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(982.99,0,983.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(983.99,0,984.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(984.99,0,985.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(985.99,0,986.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(986.99,0,987.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(987.99,0,988.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(988.99,0,989.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(989.99,0,990.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(990.99,0,991.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(991.99,0,992.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(992.99,0,993.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(993.99,0,994.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(994.99,0,995.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(995.99,0,996.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(996.99,0,997.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(997.99,0,998.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(998.99,0,999.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(999.99,0,1000.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1000.99,0,1001.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1001.99,0,1002.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1002.99,0,1003.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1003.99,0,1004.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1004.99,0,1005.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1005.99,0,1006.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1006.99,0,1007.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1007.99,0,1008.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1008.99,0,1009.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1009.99,0,1010.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1010.99,0,1011.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1011.99,0,1012.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1012.99,0,1013.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1013.99,0,1014.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1014.99,0,1015.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1015.99,0,1016.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1016.99,0,1017.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1017.99,0,1018.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1018.99,0,1019.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1019.99,0,1020.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1020.99,0,1021.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1021.99,0,1022.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1022.99,0,1023.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1023.99,0,1024.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1024.99,0,1025.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1025.99,0,1026.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1026.99,0,1027.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1027.99,0,1028.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1028.99,0,1920,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\an7\pos(724.9875,183)\bord2\fscx180\fscy180\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\an7\pos(779.9875,158)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&}真乃
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(0,0,985.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(985.99,0,986.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(986.99,0,987.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(987.99,0,988.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(988.99,0,989.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(989.99,0,990.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(990.99,0,991.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(991.99,0,992.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(992.99,0,993.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(993.99,0,994.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(994.99,0,995.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(995.99,0,996.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(996.99,0,997.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(997.99,0,998.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(998.99,0,999.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(999.99,0,1000.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1000.99,0,1001.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1001.99,0,1002.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1002.99,0,1003.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1003.99,0,1004.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1004.99,0,1005.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1005.99,0,1006.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1006.99,0,1007.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1007.99,0,1008.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1008.99,0,1009.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1009.99,0,1010.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1010.99,0,1011.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1011.99,0,1012.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1012.99,0,1013.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1013.99,0,1014.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1014.99,0,1015.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1015.99,0,1016.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1016.99,0,1017.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1017.99,0,1018.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1018.99,0,1019.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1019.99,0,1020.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1020.99,0,1021.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1021.99,0,1022.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1022.99,0,1023.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1023.99,0,1024.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1024.99,0,1025.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1025.99,0,1026.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1026.99,0,1027.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1027.99,0,1028.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1028.99,0,1029.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1029.99,0,1030.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1030.99,0,1031.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1031.99,0,1032.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1032.99,0,1033.99,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\clip(1033.99,0,1920,1080)\pos(724.9875,151.5)\an7\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 9,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\an7\pos(724.9875,183)\bord2\fscx180\fscy180\c&HE7DFF5&\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,真乃,0,300,0,fx,{\an7\pos(784.9875,158)\bord2.4\fscx80\fscy80\c&HE7DFF5&\3c&H202020&\3a&H5F&}真乃
 Dialogue: 9,0:00:00.00,0:00:05.00,SC_Top,巡,300,0,0,fx,{\pos(1095,80)\bord3\fscx100\fscy100\fn\3c&H202020&\3a&H5F&}- 我更大
 Dialogue: 8,0:00:00.00,0:00:05.00,SC_Top,巡,300,0,0,fx,{\pos(1095,30)\bord2.1\fscx70\fscy70\fnFOT-Humming Std B\3c&H202020&\3a&H5F&}- ………………
-Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,巡,300,0,0,fx,{\an7\pos(859.9975,158)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&\fscx20}　{\fscx80}& 巡
+Dialogue: 0,0:00:00.00,0:00:05.00,SC_Top,巡,300,0,0,fx,{\an7\pos(864.9975,158)\bord2.4\fscx80\fscy80\c&HC7EBF5&\3c&H202020&\3a&H5F&\fscx20}　{\fscx80}& 巡
 Dialogue: 9,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\pos(960,1000)\bord3\fscx100\fscy100\fn\3c&H202020&\3a&H5F&}初星学园……是中专呢……我是……国立医大B判定……^^
 Dialogue: 8,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\pos(960,1050)\bord2.1\fscx70\fscy70\fnFOT-Humming Std B\3c&H202020&\3a&H5F&}初星学園…‥私立なんだ……わたしは……国公医B判だけどね……
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(0,0,748.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(748.22,0,749.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(749.22,0,750.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(750.22,0,751.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(751.22,0,752.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(752.22,0,753.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(753.22,0,754.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(754.22,0,755.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(755.22,0,756.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(756.22,0,757.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(757.22,0,758.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(758.22,0,759.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(759.22,0,760.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(760.22,0,761.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(761.22,0,762.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(762.22,0,763.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(763.22,0,764.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(764.22,0,765.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(765.22,0,766.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(766.22,0,767.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(767.22,0,768.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(768.22,0,769.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(769.22,0,770.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(770.22,0,771.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(771.22,0,772.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(772.22,0,773.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(773.22,0,774.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(774.22,0,775.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(775.22,0,776.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(776.22,0,777.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(777.22,0,778.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(778.22,0,779.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(779.22,0,780.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(780.22,0,781.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(781.22,0,782.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(782.22,0,783.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(783.22,0,784.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(784.22,0,785.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(785.22,0,786.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(786.22,0,787.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(787.22,0,788.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(788.22,0,789.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(789.22,0,790.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(790.22,0,791.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(791.22,0,792.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(792.22,0,793.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(793.22,0,794.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(794.22,0,795.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(795.22,0,796.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(796.22,0,1920,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 490.56666666667 0 490.56666666667 2 0 2 0 0
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\an7\pos(306.65,892)\bord2\fscx180\fscy180\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
-Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\an1\pos(361.65,922)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&}雾子
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(0,0,753.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(753.22,0,754.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(754.22,0,755.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(755.22,0,756.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(756.22,0,757.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(757.22,0,758.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(758.22,0,759.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(759.22,0,760.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(760.22,0,761.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(761.22,0,762.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(762.22,0,763.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(763.22,0,764.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(764.22,0,765.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(765.22,0,766.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(766.22,0,767.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(767.22,0,768.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(768.22,0,769.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(769.22,0,770.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(770.22,0,771.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(771.22,0,772.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(772.22,0,773.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(773.22,0,774.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(774.22,0,775.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(775.22,0,776.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(776.22,0,777.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(777.22,0,778.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(778.22,0,779.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(779.22,0,780.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(780.22,0,781.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(781.22,0,782.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(782.22,0,783.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(783.22,0,784.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(784.22,0,785.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(785.22,0,786.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(786.22,0,787.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(787.22,0,788.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(788.22,0,789.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(789.22,0,790.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(790.22,0,791.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(791.22,0,792.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(792.22,0,793.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(793.22,0,794.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(794.22,0,795.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(795.22,0,796.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(796.22,0,797.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(797.22,0,798.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(798.22,0,799.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(799.22,0,800.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(800.22,0,801.22,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\clip(801.22,0,1920,1080)\pos(306.65,928.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 495.56666666667 0 495.56666666667 2 0 2 0 0
+Dialogue: 9,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\an7\pos(306.65,892)\bord2\fscx180\fscy180\c&HF5F1E8&\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
+Dialogue: 0,0:00:05.00,0:00:07.00,SC_Bottom,雾子,0,0,0,fx,{\an1\pos(366.65,922)\bord2.4\fscx80\fscy80\c&HF5F1E8&\3c&H202020&\3a&H5F&}雾子
 Dialogue: 9,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\pos(960,1050)\bord3\fscx100\fscy100\fn\3c&H202020&\3a&H5F&}没有日字的测试
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(0,0,1040.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1040.98,0,1041.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1041.98,0,1042.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1042.98,0,1043.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1043.98,0,1044.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1044.98,0,1045.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1045.98,0,1046.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1046.98,0,1047.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1047.98,0,1048.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1048.98,0,1049.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1049.98,0,1050.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1050.98,0,1051.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1051.98,0,1052.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1052.98,0,1053.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1053.98,0,1054.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1054.98,0,1055.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1055.98,0,1056.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1056.98,0,1057.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1057.98,0,1058.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1058.98,0,1059.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1059.98,0,1060.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1060.98,0,1061.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1061.98,0,1062.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1062.98,0,1063.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1063.98,0,1064.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1064.98,0,1065.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1065.98,0,1066.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1066.98,0,1067.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1067.98,0,1068.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1068.98,0,1069.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1069.98,0,1070.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1070.98,0,1071.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1071.98,0,1072.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1072.98,0,1073.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1073.98,0,1074.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1074.98,0,1075.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1075.98,0,1076.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1076.98,0,1077.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1077.98,0,1078.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1078.98,0,1079.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1079.98,0,1080.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1080.98,0,1081.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1081.98,0,1082.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1082.98,0,1083.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1083.98,0,1084.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1084.98,0,1085.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1085.98,0,1086.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1086.98,0,1087.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1087.98,0,1088.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1088.98,0,1920,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 305 0 305 2 0 2 0 0
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\an7\pos(784.978125,942)\bord2\fscx180\fscy180\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
-Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\an1\pos(839.978125,972)\bord2.4\fscx80\fscy80\3c&H202020&\3a&H5F&}无名
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(0,0,1045.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H00&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1045.98,0,1046.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H05&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1046.98,0,1047.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H0A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1047.98,0,1048.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H10&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1048.98,0,1049.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H15&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1049.98,0,1050.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1050.98,0,1051.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H1F&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1051.98,0,1052.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H24&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1052.98,0,1053.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2A&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1053.98,0,1054.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H2F&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1054.98,0,1055.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H34&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1055.98,0,1056.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H39&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1056.98,0,1057.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H3E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1057.98,0,1058.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H44&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1058.98,0,1059.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H49&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1059.98,0,1060.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H4E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1060.98,0,1061.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H53&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1061.98,0,1062.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H58&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1062.98,0,1063.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H5E&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1063.98,0,1064.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H63&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1064.98,0,1065.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H68&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1065.98,0,1066.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H6D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1066.98,0,1067.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H72&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1067.98,0,1068.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H78&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1068.98,0,1069.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H7D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1069.98,0,1070.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H82&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1070.98,0,1071.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H87&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1071.98,0,1072.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H8D&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1072.98,0,1073.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H92&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1073.98,0,1074.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H97&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1074.98,0,1075.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&H9C&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1075.98,0,1076.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1076.98,0,1077.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HA7&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1077.98,0,1078.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HAC&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1078.98,0,1079.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1079.98,0,1080.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HB6&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1080.98,0,1081.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HBB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1081.98,0,1082.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC1&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1082.98,0,1083.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HC6&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1083.98,0,1084.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HCB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1084.98,0,1085.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD0&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1085.98,0,1086.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HD5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1086.98,0,1087.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HDB&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1087.98,0,1088.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE0&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1088.98,0,1089.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HE5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1089.98,0,1090.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEA&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1090.98,0,1091.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HEF&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1091.98,0,1092.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HF5&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1092.98,0,1093.98,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFA&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\clip(1093.98,0,1920,1080)\pos(784.978125,978.5)\an1\bord0.2\blur1\shad0\p1\alpha&HFF&}m 0 0 l 310 0 310 2 0 2 0 0
+Dialogue: 9,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\an7\pos(784.978125,942)\bord2\fscx180\fscy180\c&HF0F0F0&\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
+Dialogue: 0,0:00:07.00,0:00:09.00,SC_Bottom,无名,0,0,0,fx,{\an1\pos(844.978125,972)\bord2.4\fscx80\fscy80\c&HF0F0F0&\3c&H202020&\3a&H5F&}无名
