@@ -14,7 +14,8 @@ Last Style Storage: Default
 Video File: ?dummy:24000/1001:300000:1920:1080:182:190:193:c
 Video AR Value: 1.777778
 Video Zoom Percent: 1.125000
-Active Line: 6
+Scroll Position: 12
+Active Line: 40
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -63,7 +64,7 @@ Comment: 0,0:00:24.52,0:00:26.96,OP_CN,,0,0,0,kara,切割开那片天空的彼�
 Comment: 0,0:00:27.07,0:00:33.58,OP_CN,,0,0,0,kara,如棱镜一般 霎时映射出翅膀的碎片（闪耀着）
 Comment: 0,0:00:33.58,0:00:35.99,OP_CN,,0,0,0,kara,一定已经开始了吧
 Comment: 0,0:00:36.30,0:00:38.76,OP_CN,,0,0,0,kara,感觉像是被召唤了一般
-Comment: 0,0:00:38.95,0:00:41.53,OP_CN,,0,0,0,kara,光芒指引着前方的道路
+Comment: 0,0:00:38.95,0:00:41.53,OP_CN,,0,0,0,kara,化作路标的光芒
 Comment: 0,0:00:41.69,0:00:44.17,OP_CN,,0,0,0,kara,还请稍等片刻
 Comment: 0,0:00:44.17,0:00:47.98,OP_CN,,0,700,80,kara,（一步一步）想成为你的力量
 Comment: 0,0:00:47.05,0:00:50.78,OP_CN,,700,0,0,kara,（一步一步）想要好好成长起来
