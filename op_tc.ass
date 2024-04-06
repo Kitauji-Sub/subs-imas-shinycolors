@@ -16,9 +16,9 @@ Video File: op.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.875000
-Scroll Position: 12
-Active Line: 40
-Video Position: 675
+Scroll Position: 39
+Active Line: 54
+Video Position: 1712
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -81,6 +81,7 @@ Comment: 0,0:01:25.70,0:01:27.70,OP_JP,,0,0,0,,=====FBF START=====
 Dialogue: 1,0:01:11.30,0:01:11.34,OP_JP,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(420.108109375,990)\alpha&HE6&\blur18}Catch my wish, Catch my wind
 Dialogue: 1,0:01:11.34,0:01:11.38,OP_JP,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(470.8161875,990)\alpha&HCC&\blur16}Catch my wish, Catch my wind
 Dialogue: 1,0:01:11.38,0:01:11.43,OP_JP,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(515.558609375,990)\alpha&HB3&\blur14}Catch my wish, Catch my wind
+Dialogue: 1,0:01:11.38,0:01:11.43,OP_JP,,0,0,0,sync,
 Dialogue: 1,0:01:11.43,0:01:11.47,OP_JP,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(554.335375,990)\alpha&H99&\blur12}Catch my wish, Catch my wind
 Dialogue: 1,0:01:11.47,0:01:11.51,OP_JP,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(587.146484375,990)\alpha&H80&\blur10}Catch my wish, Catch my wind
 Dialogue: 1,0:01:11.51,0:01:11.55,OP_JP,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(613.9919375,990)\alpha&H66&\blur8}Catch my wish, Catch my wind
