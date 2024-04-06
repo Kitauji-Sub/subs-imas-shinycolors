@@ -11,23 +11,28 @@ PlayResY: 1080
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
-Audio File: C:/Users/scree/Desktop/audio_cut.aac
+Audio File: C:/Users/scree/Desktop/sc_ep1.mkv
 Video File: C:/Users/scree/Desktop/sc_ep1.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 1.000000
-Scroll Position: 213
-Active Line: 235
-Video Position: 33910
+Active Line: 3
+Video Position: 5157
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: SC_Bottom,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,2,30,30,30,1
 Style: SC_Top,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,8,30,30,30,1
 Style: 注释,思源黑体,50,&H00F0F0F0,&H000000FF,&H002F2F2F,&H00000000,-1,0,0,0,100,100,1.1,0,1,3,0,7,50,10,70,1
+Style: STF,思源黑体 Heavy,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,0,0,0,0,100,100,1.1,0,1,0.3,0,8,10,10,30,1
+Style: TITLE,思源黑体 Medium,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,0,0,0,0,100,100,1.1,0,1,0,0,8,10,10,30,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
+Dialogue: 0,0:03:22.10,0:03:31.23,STF,,0,0,0,,{\fad(1200,0)\fn悠哉字体\bord0\an7\c&HFFBC8A&\b0\frz14.2\pos(175,245)}字幕制作：{\b1}北宇治字幕组\N{\b0}翻译：{\b1}FFU2\N{\b0}后期：{\b1}Scrpr
+Comment: 0,0:03:31.23,0:03:33.23,STF,,0,0,0,,=====TITLE=====
+Dialogue: 0,0:03:32.48,0:03:36.28,TITLE,,0,0,0,,{\pos(960,625)\fscy110\fad(1200,731)\bord0.4\blur6}属于自己的天空，独一无二的羽毛
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
 Dialogue: 0,0:05:12.23,0:05:15.16,注释,社长,0,0,0,,注：“天井”日语中读音为あまい (a ma i) \N\h\h\h\h\h\h\h\h\h\h发音与“甘い” 相同
 Dialogue: 0,0:05:17.63,0:05:21.53,注释,社长,0,0,0,,注：WING也是原作页游中的初始剧本（Produce mode）
@@ -65,7 +70,7 @@ Comment: 0,0:01:33.51,0:01:36.98,SC_Bottom,,0,0,0,kara,会在不知不觉之中 
 Comment: 0,0:01:44.48,0:01:45.70,SC_Bottom,,0,0,0,kara,就像现在还未曾知晓\N今は知らない
 Comment: 0,0:01:46.12,0:01:47.73,SC_Bottom,,0,0,0,kara,该去什么地方寻找一样\Nどこかを探すように
 Comment: 0,0:01:51.37,0:01:52.69,SC_Bottom,,0,0,0,kara,仰望着天空\N空を見てた
-Comment: 0,0:01:58.34,0:01:59.89,SC_Bottom,,0,0,0,kara,属于我的那片天空\N一人分の空
+Comment: 0,0:01:58.34,0:01:59.89,SC_Bottom,,0,0,0,kara,属于自己的那片天空\N一人分の空
 Comment: 0,0:02:06.63,0:02:08.07,SC_Bottom,,0,0,0,kara,只属于我的羽毛\N一枚の羽
 Comment: 0,0:02:11.40,0:02:12.45,SC_Bottom,,0,0,0,kara,我…\N私は
 Comment: 0,0:02:13.82,0:02:16.69,SC_Bottom,,0,0,0,kara,此刻的我们还不知道…\N私たちは 知らなかったんだ
