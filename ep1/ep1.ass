@@ -16,8 +16,8 @@ Video File: C:/Users/scree/Desktop/sc_ep1.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 1.000000
-Scroll Position: 246
-Active Line: 250
+Scroll Position: 213
+Active Line: 235
 Video Position: 33910
 
 [V4+ Styles]
@@ -272,8 +272,8 @@ Comment: 0,0:22:07.50,0:22:08.23,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
 Comment: 0,0:22:15.38,0:22:17.17,SC_Bottom,社长,0,0,0,kara,终于要开始了呢\Nいよいよここからだ
 Comment: 0,0:22:18.36,0:22:20.26,SC_Bottom,社长,0,0,0,kara,去开启新的篇章吧\N物語を始めよう
 Comment: 0,0:22:20.90,0:22:21.70,SC_Bottom,制作人,0,0,0,kara,明白\Nはい
-Comment: 0,0:22:26.06,0:22:28.67,SC_Bottom,真乃,0,0,0,kara,不知不觉中 迈出了这一步\N知らず知らず 駆け出していた
-Comment: 0,0:22:31.07,0:22:35.11,SC_Bottom,真乃,0,0,0,kara,各种各样的羽毛 在天空中飞舞\Nそれぞれの羽が あの空に舞い上がって
+Comment: 0,0:22:26.06,0:22:28.67,SC_Bottom,真乃,0,0,100,kara,不知不觉中 迈出了这一步\N知らず知らず 駆け出していた
+Comment: 0,0:22:31.07,0:22:35.11,SC_Bottom,真乃,0,0,100,kara,各种各样的羽毛 在天空中飞舞\Nそれぞれの羽が あの空に舞い上がって
 Comment: 0,0:22:37.65,0:22:41.05,SC_Bottom,真乃,0,0,0,kara,不管多远 都能飞过去\Nどこまでも 飛べますようにと
 Comment: 0,0:23:57.79,0:23:58.56,SC_Bottom,真乃,0,0,0,kara,mun!\Nむんっ！
 Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,insert/insert01.ass
