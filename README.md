@@ -1,8 +1,13 @@
 # THE iDOLM@STER SHINY COLORS 偶像大师 闪耀色彩 字幕仓库
 
+![visual](https://p.inari.site/kitauji/202403/26/imsc.jpg)
+
 该仓库存放以`北宇治字幕组`名义制作的TV动画《偶像大师 闪耀色彩》 字幕。
 
 ## 下载字幕
+
+[![status badge main branch](https://github.com/Kitauji-Sub/subs-imas-shinycolors/actions/workflows/build-subtitle.yml/badge.svg?branch=main)](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/tag/latest) ![GitHub last commit](https://img.shields.io/github/last-commit/Kitauji-Sub/subs-imas-shinycolors?label=last%20update)
+
 
 |分支|说明|下载|
 |-|-|:-:|
@@ -60,3 +65,11 @@ epxx → 主目录
 3. 修改对应样式为繁体样式，对应样式可以在_tc.ass的主文件中找到
 4. 使用`The0x539's templater`将模板应用到`insert`文件夹中的文件并保存，注意该脚本与aegisub自带的auto4模板运行器不完全兼容
 5. 依次打开各个主文件，使用`Merge Scripts`的`Import all external files`导入子文件；`Generate release candidate`生成发布文件
+
+## 声明
+
+![site image](https://zhconvert.org/build/assets/images/logo_h36.1306fa53.png)
+
+本仓库字幕在繁体中文化流程中，使用了繁化姬（[zhconvert.org](https://zhconvert.org/)）提供的 API 服务。
+
+繁化姬API仅供个人学习研究使用，商业用途请参考[繁化姬说明文件](https://docs.zhconvert.org/commercial/)
