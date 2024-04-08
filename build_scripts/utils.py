@@ -46,19 +46,20 @@ def traditionalize_text(input_text, user_pre_replace="", user_protect_replace=""
 def traditionalize_ass(input_file, output_file, user_pre_replace="", user_protect_replace=""):
     with open(input_file, encoding='utf-8-sig', mode='r') as f:
         doc = ass.parse(f)
-        new_texts = []
-        temp_texts = []
+        texts_and_names = []
+        temp_texts_names = []
         for i in range(len(doc.events)):
-            temp_texts.append(doc.events[i].text)
+            temp_texts_names.append([doc.events[i].text, doc.events[i].name])
         print(f"Traditionalizing {input_file}")
-        for i in range(0, len(temp_texts), 50):
+        for i in range(0, len(temp_texts_names), 50):
             print(f"Traditionalizing line {i} to {i+50}...")
-            slice_texts = temp_texts[i:i+50]
-            slice_texts = json.dumps(slice_texts, ensure_ascii=False)
-            traditionalized_slice = traditionalize_text(slice_texts, user_pre_replace, user_protect_replace)
-            new_texts += json.loads(traditionalized_slice)
-        for i in range(len(new_texts)):
-            doc.events[i].text = new_texts[i].replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC").replace("FOT-Humming Std B","獅尾圓體JP-Bold")
+            slice = temp_texts_names[i:i+50]
+            slice = json.dumps(slice, ensure_ascii=False)
+            traditionalized_slice = traditionalize_text(slice, user_pre_replace, user_protect_replace)
+            texts_and_names += json.loads(traditionalized_slice)
+        for i in range(len(texts_and_names)):
+            doc.events[i].text = texts_and_names[i][0].replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC").replace("FOT-Humming Std B","獅尾圓體JP-Bold")
+            doc.events[i].name = texts_and_names[i][1]
             # replace import commands
             if doc.events[i].effect.startswith("import"):
                 doc.events[i].text = doc.events[i].text.replace(".ass", "_tc.ass").replace("_sc_tc.ass", "_tc.ass")
@@ -113,3 +114,6 @@ def merge_files(input_file, output_file):
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, encoding='utf-8-sig', mode='w+') as f_out:
             subs.dump_file(f_out)
+
+if __name__ == '__main__':
+    traditionalize_ass('ep1.ass', 'ep1_out.ass')
