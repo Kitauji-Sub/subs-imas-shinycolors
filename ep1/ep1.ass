@@ -11,14 +11,13 @@ PlayResY: 1080
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 01 (1080p) [834D520B].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 01 (1080p) [834D520B].mkv
+Audio File: C:/Users/scree/Desktop/sc_ep1_empty.mkv
+Video File: C:/Users/scree/Desktop/sc_ep1_empty.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.875000
-Scroll Position: 159
-Active Line: 91
-Video Position: 10506
+Active Line: 7
+Video Position: 27721
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -37,6 +36,7 @@ Dialogue: 0,0:03:32.19,0:03:35.99,TITLE,,0,0,0,,{\pos(960,625)\fscy110\fad(1200,
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
 Dialogue: 0,0:05:11.96,0:05:14.88,注释,社长,0,0,0,,注：“天井”日语中读音为あまい (a ma i) \N\h\h\h\h\h\h\h\h\h\h发音与“甘い” 相同
 Dialogue: 0,0:05:17.34,0:05:21.22,注释,社长,0,0,0,,注：WING也是原作页游中的初始剧本（Produce mode）
+Dialogue: 0,0:19:16.18,0:19:24.89,注释,巡,0,0,0,,注：巡对二人的称呼经过了从名字+“ちゃん”\N到直呼其名、不加任何后缀的过程\N在日本文化中，后者往往比前者更加亲密
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,colors,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", } function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,utility,0,0,0,code once anystyle,function string:split(delimiter)     local result = {}     local from = 1     local delim_from, delim_to = string.find(self, delimiter, from, true)     while delim_from do         if (delim_from ~= 1) then             table.insert(result, string.sub(self, from, delim_from-1))         end         from = delim_to + 1         delim_from, delim_to = string.find(self, delimiter, from, true)     end     if (from <= #self) then table.insert(result, string.sub(self, from)) end     return result end
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,global settings,0,0,0,code once anystyle,_zh_jp_gap = 45; graphic_height_bottom = 30; graphic_height_top = 25; tc_fontname = "獅尾圓體-Bold"

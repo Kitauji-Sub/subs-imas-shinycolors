@@ -66,10 +66,10 @@ def traditionalize_ass(input_file, output_file, user_pre_replace="", user_protec
 
         # replace styles if needed
         for i in range(len(doc.styles)):
-            if doc.styles[i].fontname == "方正FW轻吟体 简 B":
+            if doc.styles[i].fontname == "方正FW轻吟体 简 B" or doc.styles[i].fontname == "方正FW轻吟体 简 M":
                 doc.styles[i].fontsize = "55"
                 doc.styles[i].bold = "0"
-            doc.styles[i].fontname = doc.styles[i].fontname.replace("方正FW轻吟体 简 B", "獅尾圓體-Bold").replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC").replace("FOT-Humming Std B","獅尾圓體JP-Bold")
+            doc.styles[i].fontname = doc.styles[i].fontname.replace("方正FW轻吟体 简 B", "獅尾圓體-Bold").replace("思源黑体", "Source Han Sans TC").replace("思源宋体", "Source Han Serif TC").replace("Source Han Sans SC", "Source Han Sans TC").replace("Source Han Serif SC", "Source Han Serif TC").replace("FOT-Humming Std B","獅尾圓體JP-Bold").replace("方正FW轻吟体 简 M","獅尾圓體-Regular")
 
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, encoding='utf-8-sig', mode='w+') as f_out:
