@@ -16,7 +16,7 @@ Video File: op.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.500000
-Scroll Position: 225
+Scroll Position: 211
 Active Line: 51
 Video Position: 1111
 
@@ -199,7 +199,7 @@ Dialogue: 1,0:01:14.60,0:01:14.64,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(818.2083
 Dialogue: 1,0:01:14.64,0:01:14.68,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(826.08564814815,30)\alpha&H39&\blur4.4444444444444}一起去尋找吧
 Dialogue: 1,0:01:14.68,0:01:14.72,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(830.81203703704,30)\alpha&H1C&\blur2.2222222222222}一起去尋找吧
 Dialogue: 1,0:01:14.72,0:01:14.76,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(832.3875,30)\alpha&H00&\blur0}一起去尋找吧
-Dialogue: 1,0:01:14.78,0:01:16.14,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&}一起去尋找吧
+Dialogue: 1,0:01:14.76,0:01:16.14,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&}一起去尋找吧
 Dialogue: 1,0:01:16.14,0:01:16.18,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(833.663625,30)\alpha&H1A&}一起去尋找吧
 Dialogue: 1,0:01:16.18,0:01:16.22,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(837.492,30)\alpha&H33&}一起去尋找吧
 Dialogue: 1,0:01:16.22,0:01:16.26,OP_CN,,0,0,0,fbf,{\c&HF0F0F0&\an7\pos(843.872625,30)\alpha&H4D&}一起去尋找吧
