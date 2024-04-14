@@ -15,8 +15,10 @@ Audio File: C:/Users/scree/Desktop/sc_ep2.mkv
 Video File: C:/Users/scree/Desktop/sc_ep2.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 1.000000
-Active Line: 1
+Video Zoom Percent: 0.750000
+Scroll Position: 120
+Active Line: 136
+Video Position: 11323
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -164,7 +166,7 @@ Comment: 0,0:07:38.55,0:07:41.89,SC_Bottom,,0,0,0,kara,首先就是下沉到街�
 Comment: 0,0:07:41.89,0:07:43.40,SC_Bottom,,0,0,0,kara,大概就是这种感觉吧？\Nって感じかな？
 Comment: 0,0:07:43.81,0:07:45.57,SC_Bottom,,0,0,0,kara,街道社区啊…\N地元ねー…
 Comment: 0,0:07:47.23,0:07:50.42,SC_Bottom,,0,0,0,kara,我会把你们的宣传海报贴到最炫最显眼的地方的！\N俺にパーッとポスター貼ってやるからな！
-Comment: 0,0:07:51.08,0:07:52.63,SC_Bottom,果穗,0,0,0,kara,非常感谢\Nありがとうございます！
+Comment: 0,0:07:51.08,0:07:52.63,SC_Bottom,,0,0,0,kara,非常感谢\Nありがとうございます！
 Comment: 0,0:07:52.63,0:07:53.68,SC_Bottom,,0,0,0,kara,请等一下\N待ってちょうだい
 Comment: 0,0:07:54.43,0:07:56.63,SC_Bottom,,0,0,0,kara,如果我们把香肠都卖光的话\Nすべて売り切った暁には…
 Comment: 0,0:07:57.38,0:07:59.90,SC_Bottom,,0,0,0,kara,能不能在这里也摆上我们的{\fscx50} {\fscx100}CD{\fscx50} {\fscx100}呢？\N私たちの{\fscx50} {\fscx100}CD{\fscx50} {\fscx100}も置いてもらえないかしら？
