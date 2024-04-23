@@ -1,5 +1,8 @@
 # THE iDOLM@STER SHINY COLORS 偶像大师 闪耀色彩 字幕仓库
 
+> [!IMPORTANT]  
+> 由于缺少翻译，本项目现已中止。
+
 ![visual](https://p.inari.site/kitauji/202403/26/imsc.jpg)
 
 该仓库存放以`北宇治字幕组`名义制作的TV动画《偶像大师 闪耀色彩》 字幕。
