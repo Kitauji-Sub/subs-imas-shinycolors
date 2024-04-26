@@ -1,5 +1,6 @@
-fonts_sc
+/fonts_sc
 op.mp4
 op_sc.mp4
-aegisub-cli
-build
+/aegisub-cli
+/build
+__pycache__
