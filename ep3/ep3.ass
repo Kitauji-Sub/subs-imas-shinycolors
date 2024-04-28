@@ -14,13 +14,14 @@ YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 03 (1080p) [4379C9E1].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 03 (1080p) [4379C9E1].mkv
+Audio File: C:/Users/scree/Desktop/sc_ep3.mkv
+Video File: C:/Users/scree/Desktop/sc_ep3.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.500000
-Active Line: 24
-Video Position: 452
+Video Zoom Percent: 1.000000
+Scroll Position: 306
+Active Line: 316
+Video Position: 31311
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -38,300 +39,318 @@ Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:00:00.00,0:00:03.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
 Dialogue: 0,0:00:17.68,0:00:22.46,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}对未来的憧憬？
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
+Dialogue: 0,0:01:12.13,0:01:14.80,注释,,0,0,0,,注：Alstroemeria 百合目六出花科六出花属，俗名水仙百合。\N因其有六片花瓣，故名六出花。\N虽然中文译名如此，但花瓣分成了内外两轮，\N外轮三枚比较宽大且素雅的是萼片，而内轮三枚窄的才是真正的花瓣。\N桑山千雪生日为4月16日，\N生日花（誕生花）刚好对应六出花。
+Dialogue: 0,0:12:36.45,0:12:39.08,注释,,0,0,0,,注：新娘草 (Bridal veil) 学名 Gibasis pellucida，\N在日本文化中花语为幸福的新娘
+Dialogue: 0,0:12:46.60,0:12:48.45,注释,,0,0,0,,注：在同名网页游戏偶像大师闪耀色彩中，\N桑山千雪已于2021年5月31日实装婚纱P-SSR\N【ハッピー・アイ・スクリーム】
+Dialogue: 0,0:12:50.32,0:12:51.68,注释,,0,0,0,,注：大崎甜花于2023年6月20日实装婚纱P-SSR【Eve】
+Dialogue: 0,0:12:55.68,0:13:00.02,注释,,0,0,0,,注：。。。。。。
+Dialogue: 0,0:15:39.46,0:15:44.67,注释,,0,0,0,,注：粉色六出花 白色六出花\N红色六出花 黄色六出花\N新娘草……
+Dialogue: 0,0:17:13.38,0:17:17.85,注释,,0,0,0,,注：红色六出花……
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,colors,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", } function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,utility,0,0,0,code once anystyle,function string:split(delimiter)     local result = {}     local from = 1     local delim_from, delim_to = string.find(self, delimiter, from, true)     while delim_from do         if (delim_from ~= 1) then             table.insert(result, string.sub(self, from, delim_from-1))         end         from = delim_to + 1         delim_from, delim_to = string.find(self, delimiter, from, true)     end     if (from <= #self) then table.insert(result, string.sub(self, from)) end     return result end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,global settings,0,0,0,code once anystyle,_zh_jp_gap = 45; graphic_height_bottom = 30; graphic_height_top = 25; tc_fontname = "獅尾圓體-Bold"
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,overlap checking,0,0,0,code once anystyle,start_time = -1 end_time = -1 right_pos = -1 align = -1 overlap = false function check_overlap (line_start_time, line_end_time, line_align) if line_start_time >= start_time and line_end_time <= end_time and line_align == align then return true else return false end end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,overlap = check_overlap(orgline.start_time, orgline.end_time, orgline.styleref.align) start_time = orgline.start_time end_time = orgline.end_time align = orgline.styleref.align line_text = orgline.text_stripped:split("\\N") line_width = _G.aegisub.text_extents(orgline.styleref, line_text[1] and line_text[1] or "") line_left = (meta.res_x - orgline.eff_margin_l - orgline.eff_margin_r - line_width) / 2 + orgline.eff_margin_l zh_jp_gap = line_text[2] and _zh_jp_gap or 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,short_line = _G.unicode.len(line_text[1] and line_text[1] or "1") <= 4; graphic_char_gap = short_line and 0 or 30; extended = {_G.aegisub.text_extents(orgline.styleref, orgline.actor)}; single_char_width = _G.aegisub.text_extents(orgline.styleref, " 一"); name_gap = orgline.styleref.fontname == tc_fontname and orgline.height / 2.5 or orgline.height / 5; separator_grad_length = short_line and 6-(single_char_width*0.5) or 50;
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext unless overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and line.styleref.fontname or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}!line_text[loopctx.state.zhjp]!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext if overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and "" or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}- !line_text[loopctx.state.zhjp]!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator,0,0,0,template line anystyle notext unless overlap,!relayer(9)!!line.actor == "" and skip() or ""!{!set("separator_width", (line_width / 3 < 100 and line_width or line_width / 3) + graphic_char_gap)!!set("separator_gap", line.styleref.fontname == tc_fontname and line.height / 5 or line.height / 10)!!util.make_grad(line_left+separator_width-separator_grad_length- (single_char_width*0.5),line_left+separator_width,1,false)!\pos(!short_line and (line_left) or (line_left - (single_char_width*0.5))!,!line.styleref.align == 2 and line.top - separator_gap - zh_jp_gap or line.bottom + separator_gap + zh_jp_gap!)\an!line.styleref.align == 2 and 1 or 7!\bord0.2\blur1\shad0\p1\alpha!util.get_grad("&H00&","&HFF&")!}m 0 0 l 1920 0 1920 2 0 2 0 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle notext unless overlap,!short_line and skip() or ""!!line.actor == "" and skip() or ""!{\an7\pos(!line_left - (single_char_width*0.5)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext unless overlap,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&}!line.actor!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext if overlap,!line.actor == "" and skip() or ""!{!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20}　{\fscx80}& !line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====TEXTS=====
-Dialogue: 0,0:00:00.46,0:00:03.77,SC_Bottom,恋钟,0,0,0,,L'Antica的MV堂堂发布\Nアンティーカのミュージックビデオばい
-Dialogue: 0,0:00:04.23,0:00:09.56,SC_Bottom,恋钟,0,0,0,,用咱们的歌声让观看MV的观众们完全燃烧！\Nうちらの歌でミュージックビデオを見た人の心にも火をつけと
-Dialogue: 0,0:00:09.56,0:00:15.93,SC_Bottom,恋钟,0,0,0,,咱们一定能跨过那新人偶像团体的龙门W.I.N.G.\N新人アイドルユニットの登竜門ウィング うちらが絶対優勝するばい
-Dialogue: 0,0:00:23.12,0:00:25.16,SC_Bottom,甘奈,0,0,0,,真好吃啊\N美味しかったー
-Dialogue: 0,0:00:25.89,0:00:29.34,SC_Bottom,甘奈,0,0,0,,甘奈我啊 是第一次吃搬家荞麦面哦\N甘奈は引っ越しそばって初めて食べたなぁ
-Dialogue: 0,0:00:30.66,0:00:32.97,SC_Bottom,甜花,0,0,0,,吃撑了…\Nお腹いっぱい
-Dialogue: 0,0:00:35.03,0:00:38.57,SC_Bottom,制作人,0,0,0,,谢谢了啊 千雪 还给我准备了一份\Nありがとうな千雪 俺までごちそうになっちゃって
-Dialogue: 0,0:00:38.57,0:00:40.49,SC_Bottom,千雪,0,0,0,,招待不周 还请多包涵\Nお粗末様でした
-Dialogue: 0,0:00:40.98,0:00:44.43,SC_Bottom,千雪,0,0,0,,也得谢谢你们来帮我搬家呢\N引っ越しのお手伝いまで ありがとうございます
-Dialogue: 0,0:00:44.43,0:00:46.90,SC_Bottom,甘奈,0,0,0,,你能感到高兴 真是太好了\N喜んでもらえてよかった
-Dialogue: 0,0:00:46.90,0:00:48.09,SC_Bottom,甜花,0,0,0,,呜…嗯\Nう うん
-Dialogue: 0,0:00:48.97,0:00:50.23,SC_Bottom,千雪,0,0,0,,虽然总感觉…\Nなんだかね
-Dialogue: 0,0:00:51.25,0:00:56.13,SC_Bottom,千雪,0,0,0,,离开了一直照顾着我的杂货铺 稍微有点寂寞呢\Nお世話になった雑貨屋さんを離れて 少し寂しいなって
-Dialogue: 0,0:00:57.24,0:01:00.37,SC_Bottom,千雪,0,0,0,,但是现在更多的是激动\Nでも今は ワクワクしてるの
-Dialogue: 0,0:01:02.75,0:01:05.89,SC_Bottom,千雪,0,0,0,,因为我们三人组成了ALSTROEMERIA\N3人で アルストロメリアになれたから
-Dialogue: 0,0:01:06.60,0:01:07.44,SC_Bottom,甘奈,0,0,0,,嗯\Nうん
-Dialogue: 0,0:01:09.09,0:01:10.92,SC_Bottom,千雪,0,0,0,,对未来的憧憬\N未来への憧れ
-Dialogue: 0,0:01:12.13,0:01:14.80,SC_Bottom,千雪,0,0,0,,这是六出花（Alstroemeria）的花语啊（注：又叫水仙百合,顺带一提桑山千雪生日4月16生日花（誕生花）刚好对应六出花，且六出花一般是三枚花瓣）\Nアルストロメリアの花言葉なの
-Dialogue: 0,0:01:14.80,0:01:17.42,SC_Bottom,甘奈,0,0,0,,对未来的憧憬…\N未来への憧れ
-Dialogue: 0,0:01:17.42,0:01:18.88,SC_Bottom,甜花,0,0,0,,憧憬\N憧れ
-Dialogue: 0,0:01:18.88,0:01:22.31,SC_Bottom,千雪,0,0,0,,所谓「对未来的憧憬」到底是什么呢\Nなんだろうね 未来への憧れって
-Dialogue: 0,0:01:23.34,0:01:27.86,SC_Bottom,制作人,0,0,0,,趁着这个好机会 好好想一想吧\Nいい機会だ 一度しっかり考えてみてもいいかもしれないな
-Dialogue: 0,0:01:27.86,0:01:31.46,SC_Bottom,制作人,0,0,0,,你们三人想要变成一个什么样的组合\N3人が どんなユニットになりたいかってこと
-Dialogue: 0,0:01:31.46,0:01:33.65,SC_Bottom,甘奈,0,0,0,,怎样的组合吗…\Nどんなユニットに
-Dialogue: 0,0:01:34.15,0:01:39.30,SC_Bottom,制作人,0,0,0,,你们若是能自己找到这个问题的答案 应该能获得强大的动力\N自分たちでそれを見つけられたら 前へ進む強い力になるはずだ
-Dialogue: 0,0:01:40.35,0:01:42.35,SC_Bottom,千雪,0,0,0,,真想一起去寻找啊\N一緒に見つけたいね
-Dialogue: 0,0:01:42.35,0:01:43.14,SC_Bottom,甘奈,0,0,0,,嗯\Nうん
-Dialogue: 0,0:01:42.35,0:01:43.14,SC_Bottom,甜花,0,0,0,,嗯\Nうん
-Dialogue: 0,0:03:18.59,0:03:22.41,SC_Top,NEWS,0,0,0,,因为收到了极高的热度 发布了第二部的制作决定…\Nその大ヒットを受けて パート2の制作が発表されました
-Dialogue: 0,0:03:21.30,0:03:24.13,SC_Bottom,恋钟,0,0,0,,啊 是不是等哈儿就要到了\Nあぁ そろそろじゃなか
-Dialogue: 0,0:03:23.32,0:03:27.50,SC_Top,NEWS,0,0,0,,导演说 当然加入更大更帅更潮更in的动作戏场面\N監督はアクションシーンを さらにスケールアップすることはもちろん
-Dialogue: 0,0:03:27.01,0:03:30.06,SC_Bottom,摩美美,0,0,0,,恋钟 你都说了几次了啊？\N恋鐘 それ言うの何回目?
-Dialogue: 0,0:03:27.60,0:03:31.85,SC_Top,NEWS,0,0,0,,不光如此 还想让所有人都体会到它的乐趣与感动\Nそれだけではなくて　誰もが笑って泣けるようにしたいと思います
-Dialogue: 0,0:03:30.31,0:03:34.73,SC_Bottom,结华,0,0,0,,虽然说了是晨间档节目 但也不知道具体什么时候能看到呢\N朝の番組って いつお目当てのやるか分かんないからね
-Dialogue: 0,0:03:32.81,0:03:35.97,SC_Top,NEWS,0,0,0,,并且 打算明年夏天上映\N公開は来年の夏を予定しているということです
-Dialogue: 0,0:03:35.97,0:03:37.86,SC_Bottom,咲耶,0,0,0,,大家一起来等也不失为一种乐趣\Nみんなで待つのも一興さ
-Dialogue: 0,0:03:36.51,0:03:37.86,SC_Top,NEWS,0,0,0,,真是让人非常期待呢…\N楽しみにしていますね
-Dialogue: 0,0:03:38.37,0:03:40.32,SC_Bottom,雾子,0,0,0,,嗯 真期待呢\Nうん 楽しみ
-Dialogue: 0,0:03:40.62,0:03:43.67,SC_Bottom,FEMALE CASTER,0,0,0,,接下来是 现在备受关注的MV\N続いては 今注目のミュージックビデオです
-Dialogue: 0,0:03:43.91,0:03:45.55,SC_Bottom,恋钟,0,0,0,,来咯\N来た！
-Dialogue: 0,0:03:46.60,0:03:51.53,SC_Bottom,FEMALE CASTER,0,0,0,,新人偶像组合L'Antica发布了第一支MV\N新人アイドルユニット アンティーカ 初のミュージックビデオが公開され
-Dialogue: 0,0:03:51.53,0:03:54.51,SC_Bottom,FEMALE CASTER,0,0,0,,在社交平台上成为了热门话题\NSNSを中心に話題となっています
-Dialogue: 0,0:03:54.51,0:03:56.17,SC_Bottom,恋钟,0,0,0,,成话题咯\N話題やって!
-Dialogue: 0,0:03:56.17,0:03:58.72,SC_Bottom,摩美美,0,0,0,,恋钟 我看不见了\N恋鐘 見えない
-Dialogue: 0,0:03:59.44,0:04:03.43,SC_Bottom,FEMALE CASTER,0,0,0,,之所以能成为话题 是因为在大雨中的舞蹈\N話題の訳は 大雨が降る中でのダンスシーンだ
-Dialogue: 0,0:04:03.76,0:04:08.35,SC_Bottom,FEMALE CASTER,0,0,0,,其实这个场景是在突如其来的大雨中 一次就拍摄完成的\N実はこれ 突然の大雨の中 一発で撮影したそうで
-Dialogue: 0,0:04:08.35,0:04:12.52,SC_Bottom,FEMALE CASTER,0,0,0,,在社交平台上收到了「太帅了」「 太燃了」的好评\NSNSには 熱い カッコいいとの声が多く上がっています
-Dialogue: 0,0:04:13.00,0:04:15.23,SC_Bottom,FEMALE CASTER,0,0,0,,还请继续关注L'Antica\Nアンティーカ 今後も注目です
-Dialogue: 0,0:04:15.66,0:04:21.34,SC_Top,FEMALE CASTER,0,0,0,,接下来是关于过马路遵守红绿灯的鸭子…\N続いては信号を守って以上横断する一家族のカモです
-Dialogue: 0,0:04:16.10,0:04:19.07,SC_Bottom,恋钟,0,0,0,,老厉害了 L'Antica\Nすごっかね アンティーカ
-Dialogue: 0,0:04:19.52,0:04:23.85,SC_Bottom,结华,0,0,0,,评论说「想去现地看Live了」「 L'Atica 太帅啦」\Nライブ行きたくなった アンティーカ 熱い だってー
-Dialogue: 0,0:04:21.89,0:04:23.85,SC_Top,FEMALE CASTER,0,0,0,,请看接下来的视频\Nそれではこちらの映像をご覧ください
-Dialogue: 0,0:04:24.94,0:04:26.62,SC_Bottom,咲耶,0,0,0,,辛苦得到了回报呢\N苦労した甲斐があったね
-Dialogue: 0,0:04:27.04,0:04:31.13,SC_Bottom,雾子,0,0,0,,虽然有点害羞 但真开心啊^ ^\Nうん ちょっと恥ずかしいけど 嬉しいな
-Dialogue: 0,0:04:35.24,0:04:39.42,SC_Bottom,结华,0,0,0,,恋碳队长 摩美美也十分满意\Nこがたん隊長 まみみんもご満悦であります
-Dialogue: 0,0:04:38.03,0:04:39.42,SC_Bottom,摩美美,0,0,0,,啥玩意儿？\Nは？
-Dialogue: 0,0:04:39.76,0:04:42.63,SC_Bottom,恋钟,0,0,0,,要得要得 非常不错\Nよーかよーか くるしゅない
-Dialogue: 0,0:04:43.07,0:04:46.24,SC_Bottom,咲耶,0,0,0,,就继续这个势头直冲W.I.N.G.吧\Nこの調子で ウィングでも前線したいところだね
-Dialogue: 0,0:04:46.24,0:04:47.65,SC_Bottom,恋钟,0,0,0,,好\Nよーっし
-Dialogue: 0,0:04:47.65,0:04:51.67,SC_Bottom,恋钟,0,0,0,,在W.I.N.G上也要用我们的歌声将让大家完全燃烧！\Nウィングでもうちらの歌で みんなも熱くするばーい
-Dialogue: 0,0:05:05.13,0:05:05.99,SC_Bottom,甜花,0,0,0,,小奈\Nなーちゃん…
-Dialogue: 0,0:05:09.47,0:05:14.79,SC_Bottom,甘奈,0,0,0,,甜花你啊 有没有想过什么是「对未来的憧憬」\N甜花ちゃんはさ 未来への憧れって 考えたことある
-Dialogue: 0,0:05:16.04,0:05:17.26,SC_Bottom,甜花,0,0,0,,小奈\Nなーちゃん
-Dialogue: 0,0:05:18.16,0:05:21.84,SC_Bottom,甘奈,0,0,0,,我啊 没怎么去想过\N甘奈ね あんまり考えたことなくって
-Dialogue: 0,0:05:22.25,0:05:25.47,SC_Bottom,甘奈,0,0,0,,在说出「我们两个人一起去当偶像吧」的时候\N二人でアイドルになろうって言ったときも
-Dialogue: 0,0:05:25.47,0:05:28.60,SC_Bottom,甘奈,0,0,0,,只想着能和甜花一起当上偶像就行了\N甜花ちゃんとアイドルやれたらいいなって
-Dialogue: 0,0:05:30.35,0:05:33.44,SC_Bottom,甜花,0,0,0,,甜花…我呢\N甜花…甜花ね
-Dialogue: 0,0:05:33.44,0:05:37.11,SC_Bottom,甜花,0,0,0,,在当上偶像后遇到了不少的第一次\Nアイドルになって初めてのこと いっぱい
-Dialogue: 0,0:05:37.87,0:05:43.07,SC_Bottom,甜花,0,0,0,,虽然有些许不安 但还是想加把油\N不安だけど ちょっと頑張りたいって思う
-Dialogue: 0,0:05:44.33,0:05:45.43,SC_Bottom,甘奈,0,0,0,,我也…\N甘奈も
-Dialogue: 0,0:05:46.12,0:05:50.74,SC_Bottom,甜花,0,0,0,,但是…未来…更往后的事情…\Nでも…未来…もっと先のことは…
-Dialogue: 0,0:05:52.79,0:05:55.50,SC_Bottom,甘奈,0,0,0,,憧憬和喜欢不一样吧…\N憧れって好きとは違うのかな
-Dialogue: 0,0:05:56.61,0:05:59.08,SC_Bottom,甜花,0,0,0,,憧憬和…喜欢？\N憧れと…好き?
-Dialogue: 0,0:05:59.47,0:06:03.59,SC_Bottom,甘奈,0,0,0,,嗯 甘奈我啊 有很多喜欢的东西\Nうん 甘奈ね 好きなものはたくさんあるよ
-Dialogue: 0,0:06:03.59,0:06:07.26,SC_Bottom,甘奈,0,0,0,,服装…美甲…\Nお洋服に ネイルに…
-Dialogue: 0,0:06:07.26,0:06:08.68,SC_Bottom,甘奈,0,0,0,,甜花！\N甜花ちゃん!
-Dialogue: 0,0:06:12.23,0:06:15.27,SC_Bottom,甜花,0,0,0,,甜花也…\N甜花も…
-Dialogue: 0,0:06:15.27,0:06:17.68,SC_Bottom,甜花,0,0,0,,喜欢…小奈\Nなーちゃん…好き
-Dialogue: 0,0:06:22.16,0:06:24.50,SC_Bottom,甘奈,0,0,0,,但是…憧憬呢\Nけど憧れか
-Dialogue: 0,0:06:24.96,0:06:27.30,SC_Bottom,甜花,0,0,0,,甜花我也想去寻找\N甜花も…見つけたい…
-Dialogue: 0,0:06:29.15,0:06:32.42,SC_Bottom,甜花,0,0,0,,小奈和千雪姐一起…甜花也…\Nなーちゃんと千雪さんと…てんかも…
-Dialogue: 0,0:06:36.76,0:06:39.45,SC_Bottom,千雪,0,0,0,,对未来的憧憬…吗\N未来への憧れ…か
-Dialogue: 0,0:06:54.08,0:06:57.04,SC_Bottom,巡,0,0,0,,真乃好厉害 真的非常美\N真乃すごいね すっごく綺麗
-Dialogue: 0,0:06:57.95,0:07:00.19,SC_Bottom,真乃,0,0,0,,啊 真的吗\Nそ、そうかな
-Dialogue: 0,0:07:00.51,0:07:02.29,SC_Bottom,灯织,0,0,0,,我也觉得很美\N私もきれいだと思った
-Dialogue: 0,0:07:02.92,0:07:05.54,SC_Bottom,灯织,0,0,0,,那个歌声 就是樱木同学的魅力所在\Nその声 櫻木さんの魅力だから
-Dialogue: 0,0:07:05.54,0:07:08.65,SC_Bottom,灯织,0,0,0,,好好保持着自觉 继续发展下去比较好\Nしっかりと自覚をもって　伸ばして行ったほうがいい
-Dialogue: 0,0:07:08.65,0:07:10.57,SC_Bottom,真乃,0,0,0,,灯织也这么说…\N灯織ちゃんまで…
-Dialogue: 0,0:07:11.19,0:07:13.44,SC_Bottom,真乃,0,0,0,,那个 谢谢你\Nその、ありがとう
-Dialogue: 0,0:07:19.12,0:07:21.67,SC_Bottom,巡,0,0,0,,好诶 大概是这种感觉吧\Nよし、こんな感じかな
-Dialogue: 0,0:07:21.91,0:07:26.58,SC_Bottom,真乃,0,0,0,,巡好厉害 就像小鸟在天空翱翔一样\Nめぐるちゃんすごい 鳥さんが空を飛んでるみたい
-Dialogue: 0,0:07:26.58,0:07:29.76,SC_Bottom,灯织,0,0,0,,八宫同学的舞蹈 非常地灵动\N八宮さんのダンス すごくキレがあった
-Dialogue: 0,0:07:29.76,0:07:32.18,SC_Bottom,巡,0,0,0,,真的？谢谢你\Nほんと? ありがとう
-Dialogue: 0,0:07:32.55,0:07:36.06,SC_Bottom,巡,0,0,0,,但是一唱歌就很难结合在一起呢\Nでも歌と一緒だと合わないんだよね
-Dialogue: 0,0:07:36.06,0:07:38.08,SC_Bottom,真乃,0,0,0,,我…我也…\Nわ、私も
-Dialogue: 0,0:07:38.08,0:07:41.49,SC_Bottom,巡,0,0,0,,能保持冷静的只有灯织呢\N混乱しないでできるの灯織だけだよね
-Dialogue: 0,0:07:41.49,0:07:44.87,SC_Bottom,真乃,0,0,0,,嗯 怎么做才好呢\Nうん、どうやったらいいのかな
-Dialogue: 0,0:07:45.67,0:07:47.65,SC_Bottom,灯织,0,0,0,,取平横吧\Nバランスかな
-Dialogue: 0,0:07:48.15,0:07:52.21,SC_Bottom,灯织,0,0,0,,歌和舞蹈 太过集中于任何一边都不行\N歌とダンス どちらかにかかりきりになったらダメなの
-Dialogue: 0,0:07:52.21,0:07:55.66,SC_Bottom,灯织,0,0,0,,反复练习 直到形成肌肉记忆为止\N体が完全に覚えるまで反復練習して
-Dialogue: 0,0:07:56.15,0:07:58.20,SC_Bottom,灯织,0,0,0,,在习惯之前只有不断重复\N慣れるまでは繰り返すしかない
-Dialogue: 0,0:07:58.58,0:08:02.18,SC_Bottom,巡,0,0,0,,这样啊 原来如此 就是练习加练习啊\Nそっか、そうだね、レッスンあるのみだ
-Dialogue: 0,0:08:02.18,0:08:04.56,SC_Bottom,巡,0,0,0,,真乃 让我们一起加油吧\N真乃 一緒に頑張ろうね
-Dialogue: 0,0:08:04.56,0:08:05.46,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:08:05.46,0:08:08.74,SC_Bottom,巡,0,0,0,,好 还需要更多练习啊\Nよーし まだまだ練習だ
-Dialogue: 0,0:08:08.74,0:08:09.51,SC_Bottom,灯织,0,0,0,,是呢\Nそうだね
-Dialogue: 0,0:08:10.56,0:08:15.26,SC_Bottom,真乃,0,0,0,,灯织很努力 巡很有活力\N灯織ちゃんは努力家だし めぐるちゃんはパワーがあって
-Dialogue: 0,0:08:15.95,0:08:17.82,SC_Bottom,真乃,0,0,0,,我也得加油才行\N私も頑張らないと
-Dialogue: 0,0:08:18.89,0:08:24.05,SC_Bottom,真乃,0,0,0,,为了我 灯织 巡三人的illumination STARS \N灯織ちゃん、めぐるちゃんと三人で イルミネーションスターズになるために
-Dialogue: 0,0:08:25.02,0:08:25.73,SC_Bottom,真乃,0,0,0,,mun \Nむんっ
-Dialogue: 0,0:08:28.06,0:08:29.86,SC_Bottom,制作人,0,0,0,,春天的花之祭\N春のフラワーフェスティバル
-Dialogue: 0,0:08:30.33,0:08:33.53,SC_Bottom,制作人,0,0,0,,不仅会卖花 还有舞台活动哦\N花の販売はもちろん ステージイベントもあるぞ
-Dialogue: 0,0:08:33.53,0:08:37.16,SC_Bottom,甘奈,0,0,0,,是一份非常适合ALSTROEMERIA的工作\Nアルストロメリアにぴったりのお仕事だね
-Dialogue: 0,0:08:37.16,0:08:38.12,SC_Bottom,甜花,0,0,0,,嗯\Nうん
-Dialogue: 0,0:08:38.12,0:08:39.62,SC_Bottom,制作人,0,0,0,,嗯 是啊\Nああ、そうだな
-Dialogue: 0,0:08:40.05,0:08:40.93,SC_Bottom,制作人,0,0,0,,而且\Nなんでも
-Dialogue: 0,0:08:40.93,0:08:44.40,SC_Bottom,制作人,0,0,0,,听说负责人看了之前的都市情报志\N担当の方がこの前のタウン誌を見てくださったみたいで
-Dialogue: 0,0:08:45.23,0:08:46.58,SC_Bottom,甘奈,0,0,0,,诶 真的吗\Nえっ、本当?
-Dialogue: 0,0:08:47.87,0:08:51.45,SC_Bottom,制作人,0,0,0,,觉得你们推荐的地方非常好\Nみんなのオススメスポット紹介、あれが良かったみたいだ
-Dialogue: 0,0:08:52.12,0:08:56.59,SC_Bottom,制作人,0,0,0,,并希望这次由花组来向客人传达花的魅力\N今回はアルストからお客さんに 花の魅力を届けて欲しいとのことだ
-Dialogue: 0,0:08:56.91,0:08:59.21,SC_Bottom,千雪,0,0,0,,好的 这当然没问题\Nはい、それはもちろん
-Dialogue: 0,0:09:04.60,0:09:05.94,SC_Bottom,制作人,0,0,0,,怎么了 甘奈\Nどうしたんだ、甘奈?
-Dialogue: 0,0:09:05.94,0:09:08.73,SC_Bottom,甘奈,0,0,0,,诶…那个啊\Nえっと…あのね
-Dialogue: 0,0:09:09.15,0:09:13.70,SC_Bottom,甘奈,0,0,0,,最近一直在想什么是对未来的憧憬…\Nなんだかずっと考えちゃってるんだ 未来への憧れ…
-Dialogue: 0,0:09:14.88,0:09:17.13,SC_Bottom,甘奈,0,0,0,,但是 真的好难啊\Nでも、難しいなって
-Dialogue: 0,0:09:18.34,0:09:21.45,SC_Bottom,制作人,0,0,0,,首先 把它想得简单一点如何\Nまずは、シンプルに考えてみてもいいんじゃないか
-Dialogue: 0,0:09:24.08,0:09:27.41,SC_Bottom,制作人,0,0,0,,「想变成这样的」…「能变成这样就好了」之类的\Nこうなりたいとか、こうなったらいいなとか
-Dialogue: 0,0:09:28.18,0:09:32.25,SC_Bottom,制作人,0,0,0,,或许啊 大家心里已经有答案了\Nもしかしたらさ 答えはもうみんなの中にあって
-Dialogue: 0,0:09:32.25,0:09:35.90,SC_Bottom,制作人,0,0,0,,只不过 可能只是无以言表而已\Nでも うまく言葉にできてないだけなのかもしれないぞ
-Dialogue: 0,0:09:36.42,0:09:38.84,SC_Bottom,甜花,0,0,0,,我们得心中…\N甜花たちの、中に…
-Dialogue: 0,0:09:38.84,0:09:42.64,SC_Bottom,甘奈,0,0,0,,制作人先生又在说很难懂的话了呢\Nまたプロデューサーさん 難しいこと言うな
-Dialogue: 0,0:09:42.99,0:09:47.06,SC_Bottom,制作人,0,0,0,,抱…抱歉 但其实你们也没必要着急\Nす、すまん、でも 焦ることはないよ
-Dialogue: 0,0:09:47.35,0:09:50.93,SC_Bottom,制作人,0,0,0,,因为你们一定能在这个过程中找到答案\Nやっていくうちに 見えてくるものがあるはずだから
-Dialogue: 0,0:09:50.93,0:09:53.12,SC_Bottom,甘奈,0,0,0,,要是这样的话就好了\Nそうだったらいいな
-Dialogue: 0,0:09:57.77,0:10:00.25,SC_Bottom,甜花,0,0,0,,这个放书架上就行了吗\Nこれ、本棚でいい?
-Dialogue: 0,0:10:00.73,0:10:02.60,SC_Bottom,千雪,0,0,0,,嗯 谢谢\Nうん、ありがとう
-Dialogue: 0,0:10:04.12,0:10:07.22,SC_Bottom,甘奈,0,0,0,,说到「想变成什么样」时 总会有很多答案呢\Nこうなりたいなら いろいろあるよね
-Dialogue: 0,0:10:07.22,0:10:08.58,SC_Bottom,千雪,0,0,0,,是呢\Nそうね
-Dialogue: 0,0:10:09.08,0:10:12.92,SC_Bottom,甜花,0,0,0,,甜花我 想变得擅长唱歌\N甜花 歌とか上手になりたい
-Dialogue: 0,0:10:13.16,0:10:15.26,SC_Bottom,甘奈,0,0,0,,嗯嗯 跳舞也\Nうんうん、ダンスも
-Dialogue: 0,0:10:15.26,0:10:17.17,SC_Bottom,甘奈,0,0,0,,然后想更多地上杂志\Nあともっと雑誌に乗りたい
-Dialogue: 0,0:10:17.48,0:10:19.93,SC_Bottom,千雪,0,0,0,,还有想更多的站在舞台上啊\Nステージにもたくさん立ちたいな
-Dialogue: 0,0:10:20.35,0:10:22.33,SC_Bottom,甘奈,0,0,0,,我还想上电视\Nテレビにもいつか出たい
-Dialogue: 0,0:10:23.65,0:10:25.52,SC_Bottom,甘奈,0,0,0,,果然有好多答案呢\Nやっぱいっぱいあるな
-Dialogue: 0,0:10:26.66,0:10:27.52,SC_Bottom,甜花,0,0,0,,嗯\Nうん
-Dialogue: 0,0:10:28.03,0:10:30.41,SC_Bottom,千雪,0,0,0,,如果都能实现的话就太美好了\Nたくさん叶えられたら素敵ね
-Dialogue: 0,0:10:31.58,0:10:32.65,SC_Bottom,甜花,0,0,0,,美好…\N素敵
-Dialogue: 0,0:10:33.68,0:10:36.61,SC_Bottom,甘奈,0,0,0,,对啊 …原来是这样啊 \Nそっか そうだよね
-Dialogue: 0,0:10:37.58,0:10:42.82,SC_Bottom,甘奈,0,0,0,,将所有的愿望都付诸实现 让我们三人成为冠以「美好」的组合\Nこうなりたいって思うことは全部叶えて 3人で素敵なユニットになる
-Dialogue: 0,0:10:43.71,0:10:44.58,SC_Bottom,千雪,0,0,0,,嗯\Nええ
-Dialogue: 0,0:10:51.17,0:10:53.96,SC_Bottom,甘奈,0,0,0,,恍然大悟之后 感觉好饿哦\Nすっきりしたらお腹空いてきちゃった
-Dialogue: 0,0:10:54.78,0:10:56.51,SC_Bottom,千雪,0,0,0,,那我去煮碗面吧\Nお蕎麦茹でよっか
-Dialogue: 0,0:10:56.51,0:10:58.02,SC_Bottom,甘奈,0,0,0,,诶 这样好吗\Nえ いいの
-Dialogue: 0,0:10:58.02,0:11:00.92,SC_Bottom,甜花,0,0,0,,搬家荞麦面 第二轮\N引っ越し蕎麦 2回戦
-Dialogue: 0,0:11:07.92,0:11:10.06,SC_Bottom,果穗,0,0,0,,恭喜你！\Nおめでとうございまーす
-Dialogue: 0,0:11:10.49,0:11:15.07,SC_Bottom,凛世,0,0,0,,此为原创铅笔一支 还请笑纳\Nこちらのオリジナル鉛筆をどうぞお一つ
-Dialogue: 0,0:11:15.90,0:11:18.14,SC_Bottom,WOMAN,0,0,0,,谢了 加油哦\Nありがと、頑張ってね
-Dialogue: 0,0:11:19.39,0:11:21.13,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,,谢谢\Nありがとうございます
-Dialogue: 0,0:11:22.25,0:11:25.35,SC_Bottom,树里,0,0,0,,喂 果穗 刚才她摇的是个六等奖吧\Nおい 果穂、今の6等だぞ
-Dialogue: 0,0:11:26.26,0:11:28.46,SC_Bottom,果穗,0,0,0,,表现得太兴奋了\N元気に言い過ぎちゃいました
-Dialogue: 0,0:11:28.46,0:11:30.55,SC_Bottom,夏叶,0,0,0,,不 没有那回事\Nいいえ、そんなことないわ
-Dialogue: 0,0:11:30.55,0:11:33.88,SC_Bottom,夏叶,0,0,0,,好不容易才从商店街拿到的一份工作\N商店街の方から頂いたせっかくのオファーだもの
-Dialogue: 0,0:11:34.16,0:11:35.12,SC_Bottom,智代子,0,0,0,,嗯嗯\Nうんうん
-Dialogue: 0,0:11:36.48,0:11:39.09,SC_Bottom,智代子,0,0,0,,万田電器纪念促销活动\Nマンダデンキ記念セールイベント
-Dialogue: 0,0:11:39.49,0:11:42.09,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,,会场在这边哦\N会場はこちらでーす
-Dialogue: 0,0:11:42.59,0:11:44.39,SC_Bottom,夏叶,0,0,0,,要用全力才行啊\N全力でやらなくちゃ
-Dialogue: 0,0:11:44.39,0:11:48.10,SC_Bottom,树里,0,0,0,,嘛 摸鱼的话就太对不起肉店大叔了\Nま、手抜いたら肉屋のおっちゃんにも悪いしな
-Dialogue: 0,0:11:48.67,0:11:50.77,SC_Bottom,WOMAN,0,0,0,,啊 是商店街的活动\Nあら 商店街の
-Dialogue: 0,0:11:51.41,0:11:53.40,SC_Bottom,WOMAN,0,0,0,,能帮我转一下吗\N代わりに回してもらっていい
-Dialogue: 0,0:11:54.91,0:11:56.69,SC_Bottom,夏叶,0,0,0,,谢谢你 乐意效劳\Nありがとう もちろんよ
-Dialogue: 0,0:11:57.29,0:11:58.86,SC_Bottom,智代子,0,0,0,,很开心对吧 树里\N嬉しいね 樹里ちゃん
-Dialogue: 0,0:12:00.05,0:12:01.13,SC_Bottom,树里,0,0,0,,嗯…\Nお、おう
-Dialogue: 0,0:12:02.09,0:12:03.47,SC_Bottom,智代子,0,0,0,,那我来帮忙咯\Nじゃあ行きますね
-Dialogue: 0,0:12:05.03,0:12:07.91,SC_Bottom,凛世,0,0,0,,那么 诸位尽请期待\Nさあ 皆様ご注目
-Dialogue: 0,0:12:08.16,0:12:09.03,SC_Bottom,智代子,0,0,0,,好\Nよし
-Dialogue: 0,0:12:09.55,0:12:13.31,SC_Bottom,智代子,0,0,0,,目标 一等奖 温泉旅行\N目指せ一等 温泉旅行
-Dialogue: 0,0:12:16.55,0:12:17.16,SC_Bottom,树里,0,0,0,,喂！\Nおー
-Dialogue: 0,0:12:17.16,0:12:18.19,SC_Bottom,智代子,0,0,0,,对不起！\Nごめんなさい
-Dialogue: 0,0:12:19.02,0:12:21.37,SC_Bottom,果穗,0,0,0,,大事不好了！！！\N 大変です！！！
-Dialogue: 0,0:12:29.75,0:12:33.07,SC_Bottom,甘奈,0,0,0,,这就是今天准备好的花啊\Nこれが今日のアレンジメントのお花なんだ
-Dialogue: 0,0:12:33.07,0:12:34.89,SC_Bottom,甜花,0,0,0,,都…好漂亮\Nみんな、きれい
-Dialogue: 0,0:12:36.45,0:12:39.08,SC_Bottom,千雪,0,0,0,,这盆婚纱草好可爱（注：bridal veil学名：Gibasis pellucida，日语里花语为花嫁の幸福）\Nこのブライダルベールかわいい
-Dialogue: 0,0:12:40.47,0:12:43.46,SC_Bottom,甜花,0,0,0,,千雪 就像新娘一样\N千雪さん 花嫁さんみたい
-Dialogue: 0,0:12:44.92,0:12:45.36,SC_Bottom,千雪,0,0,0,,请\Nはい
-Dialogue: 0,0:12:46.60,0:12:48.45,SC_Bottom,千雪,0,0,0,,甜花也很漂亮哦（注：在同名网页游戏偶像大师闪耀色彩中，桑山千雪已于2021年5月31日实装婚纱P-SSR【ハッピー・アイ・スクリーム】）\N甜花ちゃん素敵よ
-Dialogue: 0,0:12:50.32,0:12:51.68,SC_Bottom,甜花,0,0,0,,小奈也…（大崎甜花于2023年6月20日实装婚纱P-SSR【Eve】）\Nなーちゃんも
-Dialogue: 0,0:12:55.68,0:13:00.02,SC_Bottom,甘奈,0,0,0,,呐 制作人先生 能把这盆花装饰在休息室吗（注：。。。。。。）\Nねえ、プロデューサーさん、このお花控室に飾ってもいいかな
-Dialogue: 0,0:13:00.02,0:13:03.15,SC_Bottom,制作人,0,0,0,,嗯 我会去跟负责人谈一下的\Nああ 担当者さんには俺から話しておくよ
-Dialogue: 0,0:13:03.15,0:13:04.38,SC_Bottom,甘奈,0,0,0,,好耶\Nやったー
-Dialogue: 0,0:13:04.72,0:13:07.99,SC_Bottom,甘奈,0,0,0,,若是今天大家都绽放出笑容就好了\N今日はみんなを笑顔にできるといいなー
-Dialogue: 0,0:13:09.02,0:13:10.26,SC_Bottom,制作人,0,0,0,,加油吧\N頑張ってこい
-Dialogue: 0,0:13:10.26,0:13:11.08,SC_Bottom,ALSTROEMERIA,0,0,0,,好\Nはい
-Dialogue: 0,0:13:13.27,0:13:16.07,SC_Bottom,甘奈,0,0,0,,大家好啊\Nみなさん、こんにちはー
-Dialogue: 0,0:13:16.85,0:13:18.30,SC_Bottom,甘奈,0,0,0,,预—备\Nせーの
-Dialogue: 0,0:13:18.30,0:13:20.17,SC_Bottom,ALSTROEMERIA,0,0,0,,我们是ALSTROEMERIA\Nアルストロメリアです
-Dialogue: 0,0:13:24.33,0:13:29.99,SC_Bottom,甘奈,0,0,0,,那个 由衷地感谢诸位能来到今天的花之祭\Nえっと、今日はフラワーフェスティバルにご来場いただきましてありがとうございます
-Dialogue: 0,0:13:30.56,0:13:35.03,SC_Bottom,甘奈,0,0,0,,本次活动的主题是「将花赠与重要的人」\N今回は、大切な人にお花を贈ろうっていうのがテーマです
-Dialogue: 0,0:13:35.03,0:13:39.13,SC_Bottom,甘奈,0,0,0,,在这期间我们会跟大家聊天 还请大家享受这次活动到最后\Nいろいろお話していきますので、最後まで楽しんでください
-Dialogue: 0,0:13:39.62,0:13:42.05,SC_Bottom,甜花,0,0,0,,请享受活动…\Nた、楽しんでください
-Dialogue: 0,0:13:49.51,0:13:53.54,SC_Bottom,甘奈,0,0,0,,话说回来 千雪对花有什回忆吗\Nじゃあ、千雪さんは思い出に残ってるお花ってある
-Dialogue: 0,0:13:55.83,0:14:00.46,SC_Bottom,千雪,0,0,0,,毕业时以及开始新生活时\N卒業するとき 新しい生活を始めるとき
-Dialogue: 0,0:14:00.46,0:14:05.08,SC_Bottom,千雪,0,0,0,,在那时收到的花 能感受到大家的思念…\Nそんなときにいただくお花ってくださった方の思いが
-Dialogue: 0,0:14:05.08,0:14:08.30,SC_Bottom,千雪,0,0,0,,寄托于一枚又一枚的花瓣之中\N花びら一枚一枚にこもっている気がして
-Dialogue: 0,0:14:08.30,0:14:10.15,SC_Bottom,千雪,0,0,0,,这种感觉很美好\N素敵だなーって
-Dialogue: 0,0:14:10.15,0:14:12.08,SC_Bottom,甘奈,0,0,0,,千雪好成熟啊\N千雪さん大人ー
-Dialogue: 0,0:14:12.08,0:14:13.66,SC_Bottom,甜花,0,0,0,,哦…嗯\Nお うん
-Dialogue: 0,0:14:15.18,0:14:20.50,SC_Bottom,甘奈,0,0,0,,我想花对在座的各位来说 一定也寄托着不少思念吧\N会場のみなさんのお花にも きっと、沢山の思いがこもっているんだろうな
-Dialogue: 0,0:14:21.74,0:14:23.41,SC_Bottom,BROTHER,0,0,0,,最讨厌姐姐了\Nお姉ちゃん、もうやだ
-Dialogue: 0,0:14:30.40,0:14:31.80,SC_Bottom,SISTER,0,0,0,,等会儿 回来\Nちょっと待って
-Dialogue: 0,0:14:37.20,0:14:40.93,SC_Bottom,千雪,0,0,0,,甘奈 今天还有其他有趣的活动吧\N甘奈ちゃん 今日は楽しいイベントもあるのよね
-Dialogue: 0,0:14:40.93,0:14:44.81,SC_Bottom,甘奈,0,0,0,,啊 对对 还有插花讲座\Nあ そそう フラワーアレンジメント講座とか
-Dialogue: 0,0:14:44.81,0:14:47.15,SC_Bottom,甘奈,0,0,0,,中午开始在这舞台上有歌舞表演\Nお昼からここで歌のステージもあります
-Dialogue: 0,0:14:47.55,0:14:50.36,SC_Bottom,甜花,0,0,0,,请 一定要来看\Nぜひ 見に来てください
-Dialogue: 0,0:14:56.78,0:14:58.69,SC_Bottom,甘奈,0,0,0,,那些孩子们\Nあの子たち
-Dialogue: 0,0:14:58.69,0:14:59.37,SC_Bottom,制作人,0,0,0,,怎么了\Nどうした
-Dialogue: 0,0:15:00.03,0:15:03.75,SC_Bottom,甘奈,0,0,0,,观众席上 有两个小朋友吵起来了\N客席にね 喧嘩してる子たちがいたんだ
-Dialogue: 0,0:15:04.53,0:15:07.17,SC_Bottom,甘奈,0,0,0,,我想帮帮他们\Nなんとかしてあげたかったな
-Dialogue: 0,0:15:07.98,0:15:11.09,SC_Bottom,千雪,0,0,0,,嗯 我也想让他们也享受这次活动啊\Nうん 私も楽しんでほしいな
-Dialogue: 0,0:15:11.38,0:15:14.97,SC_Bottom,甜花,0,0,0,,嗯 甜花也这样想\Nうん 甜花も同じ気持ち
-Dialogue: 0,0:15:15.48,0:15:18.32,SC_Bottom,甘奈,0,0,0,,但是 该怎么办才好呢\Nでも どうしたらいいんだろう
-Dialogue: 0,0:15:19.66,0:15:20.33,SC_Bottom,制作人,0,0,0,,好的\Nはい
-Dialogue: 0,0:15:20.83,0:15:23.13,SC_Bottom,FEMALE STAFF,0,0,0,,到准备时间了哦 可以了吗\N次のスタンバイ お願いできますか
-Dialogue: 0,0:15:23.64,0:15:24.51,SC_Bottom,ALSTROEMERIA,0,0,0,,好的\Nはい
-Dialogue: 0,0:15:31.79,0:15:35.07,SC_Bottom,千雪,0,0,0,,大家 准备好了吗\N皆さん 準備はよろしいでしょうか
-Dialogue: 0,0:15:36.03,0:15:39.45,SC_Bottom,千雪,0,0,0,,那我们就开始插花吧\Nでは早速アレンジメントを始めましょう
-Dialogue: 0,0:15:40.07,0:15:44.67,SC_Bottom,千雪,0,0,0,,首先 将喜欢的花插入吸水海绵里  \Nまずはじめにお気に入りのお花を吸水スポンジにさしてください
-Dialogue: 0,0:15:46.83,0:15:50.43,SC_Bottom,千雪,0,0,0,,再在它周围装饰上一些花将其包围\Nその周りを囲うようにお花をあしらってあげると
-Dialogue: 0,0:15:50.43,0:15:53.47,SC_Bottom,千雪,0,0,0,,这样做出立体感后 就算完成了\N立体感が出て素敵に仕上がります
-Dialogue: 0,0:15:54.14,0:15:55.89,SC_Bottom,甘奈,0,0,0,,这种感觉吧\Nこんな感じかな
-Dialogue: 0,0:15:57.60,0:15:58.56,SC_Bottom,甜花,0,0,0,,嗯\Nうん
-Dialogue: 0,0:15:59.00,0:16:01.17,SC_Bottom,千雪,0,0,0,,两个人都做的好漂亮\N二人とも綺麗ね
-Dialogue: 0,0:16:02.99,0:16:05.06,SC_Bottom,千雪,0,0,0,,大家做的怎么样啊\N皆さんはどうですか
-Dialogue: 0,0:16:14.02,0:16:17.42,SC_Bottom,甘奈,0,0,0,,哇 好厉害 做的很漂亮呢\Nわあ すごい 上手にできてるね
-Dialogue: 0,0:16:21.26,0:16:24.71,SC_Bottom,甘奈,0,0,0,,小弟弟 你姐姐插的花可漂亮了呢\N弟くん お姉ちゃんお花上手だよ
-Dialogue: 0,0:16:31.37,0:16:35.01,SC_Bottom,甘奈,0,0,0,,对了 就让甘奈我去看看大家的花吧\Nそうだ 甘奈 みんなのお花を見に行ってみようかな
-Dialogue: 0,0:16:35.45,0:16:37.68,SC_Bottom,千雪,0,0,0,,嗯 你去吧\Nうん 行ってらっしゃい
-Dialogue: 0,0:16:37.68,0:16:39.22,SC_Bottom,甘奈,0,0,0,,好\Nよーし
-Dialogue: 0,0:16:47.85,0:16:50.12,SC_Bottom,甘奈,0,0,0,,能借用一下你的花吗\Nお花借りてもいいかな
-Dialogue: 0,0:16:50.12,0:16:50.73,SC_Bottom,SISTER,0,0,0,,好\Nはい
-Dialogue: 0,0:16:53.50,0:16:56.00,SC_Bottom,甘奈,0,0,0,,你看 就是这样插花的哦\Nほらこうやって刺すんだよ
-Dialogue: 0,0:16:57.55,0:17:00.88,SC_Bottom,甘奈,0,0,0,,接下来是这朵花 你看\N次はこのお花 ほら
-Dialogue: 0,0:17:07.04,0:17:10.17,SC_Bottom,甘奈,0,0,0,,那个 那些花里面你最喜欢那一朵\Nねえ あのお花の中でどれが好き
-Dialogue: 0,0:17:13.38,0:17:15.14,SC_Bottom,BROTHER,0,0,0,,那个最中间的】\Nあのまんまの
-Dialogue: 0,0:17:19.70,0:17:20.60,SC_Bottom,甘奈,0,0,0,,稍等一下哦\N待っててね
-Dialogue: 0,0:17:29.25,0:17:31.57,SC_Bottom,甘奈,0,0,0,,如果喜欢的话 就用这朵吧\Nこれ、よかったら使ってみて
-Dialogue: 0,0:17:32.36,0:17:35.18,SC_Bottom,SISTER,0,0,0,,非常感谢 试试看吧\Nありがとうございます ほら
-Dialogue: 0,0:17:38.46,0:17:39.25,SC_Bottom,BROTHER,0,0,0,,诶\Nえい
-Dialogue: 0,0:17:44.72,0:17:45.93,SC_Bottom,SISTER,0,0,0,,真漂亮啊\N綺麗だね
-Dialogue: 0,0:17:46.77,0:17:47.37,SC_Bottom,BROTHER,0,0,0,,嗯\Nうん
-Dialogue: 0,0:17:53.37,0:17:55.33,SC_Bottom,制作人,0,0,0,,大家 辛苦了\Nみんなお疲れ様
-Dialogue: 0,0:17:55.33,0:17:56.83,SC_Bottom,ALSTROEMERIA,0,0,0,,辛苦了、\Nお疲れ様です
-Dialogue: 0,0:17:57.48,0:18:00.68,SC_Bottom,千雪,0,0,0,,那对姐妹重归于好了呢\Nあのお姉ちゃんたち 仲直りできたのね
-Dialogue: 0,0:18:00.93,0:18:05.44,SC_Bottom,甘奈,0,0,0,,嗯 希望大家都能开心的这份心情传达到了吧\Nうん 楽しんでほしいって気持ちが届いたのかな
-Dialogue: 0,0:18:06.49,0:18:08.12,SC_Bottom,甘奈,0,0,0,,真高兴啊\N嬉しいな
-Dialogue: 0,0:18:08.12,0:18:13.07,SC_Bottom,甜花,0,0,0,,不光是那对姐妹 小奈也…\Nあの子たちもだけど なあちゃんも
-Dialogue: 0,0:18:13.07,0:18:16.40,SC_Bottom,甜花,0,0,0,,也像花开一般绽放了笑容\Nお花 咲いたみたいに笑ってた
-Dialogue: 0,0:18:22.14,0:18:27.18,SC_Bottom,甘奈,0,0,0,,那一定是将情感所传达后绽放的笑容之花吧\Nきっと気持ちが届くと咲くんだね 笑顔のお花
-Dialogue: 0,0:18:30.93,0:18:35.30,SC_Bottom,千雪,0,0,0,,今天很高兴能参加这么棒的活动\N今日は素敵なイベントに参加できて 本当に良かったです
-Dialogue: 0,0:18:35.71,0:18:36.91,SC_Bottom,千雪,0,0,0,,预—备\Nせーの
-Dialogue: 0,0:18:36.91,0:18:39.05,SC_Bottom,ALSTROEMERIA,0,0,0,,谢谢大家\Nありがとうございました
-Dialogue: 0,0:18:41.12,0:18:44.68,SC_Bottom,甘奈,0,0,0,,甘奈我也感觉到非常高兴\N甘奈も とっても素敵な気持ちになりました
-Dialogue: 0,0:18:46.53,0:18:49.86,SC_Bottom,甘奈,0,0,0,,在这会场中绽放了这么多鲜花\N会場いっぱいにお花が咲いていて
-Dialogue: 0,0:18:49.86,0:18:53.82,SC_Bottom,甘奈,0,0,0,,这不光指的是现实中的花朵\Nえっとね それは本当のお花だけじゃなくて
-Dialogue: 0,0:18:53.82,0:18:57.03,SC_Bottom,甘奈,0,0,0,,大家的笑容也像花朵一样\Nみんなの笑顔もお花に見えて
-Dialogue: 0,0:19:01.22,0:19:04.79,SC_Bottom,甘奈,0,0,0,,抱歉 虽然无以言表\Nごめんなさい うまく言えないけど
-Dialogue: 0,0:19:04.79,0:19:10.13,SC_Bottom,甘奈,0,0,0,,「想让大家如花朵一般绽放出笑容」\Nみんなを笑顔に 笑顔のお花を咲かせられるようになりたいなって
-Dialogue: 0,0:19:10.13,0:19:12.09,SC_Bottom,甘奈,0,0,0,,我们三人的愿望\Nそう思いました 3人で
-Dialogue: 0,0:19:12.09,0:19:13.23,SC_Bottom,甘奈,0,0,0,,\N3人で（这是一句话，不好改，合一下，谢谢）
-Dialogue: 0,0:19:14.32,0:19:16.33,SC_Bottom,千雪,0,0,0,,嗯 我也\Nうん 私も
-Dialogue: 0,0:19:16.33,0:19:17.76,SC_Bottom,甜花,0,0,0,,甜花也\N甜花も
-Dialogue: 0,0:19:18.65,0:19:24.33,SC_Bottom,甘奈,0,0,0,,虽然不知道之后的路会将我们引向何方 但依然想以花朵般的笑容相迎\Nずっと先のことは分からないけど 笑顔のお花を咲かせたい
-Dialogue: 0,0:19:25.32,0:19:29.02,SC_Bottom,甘奈,0,0,0,,这就是我们ALSTROEMERIA的\Nそれが甘奈たちアルストロメリアの
-Dialogue: 0,0:19:29.02,0:19:30.86,SC_Bottom,甘奈,0,0,0,,对未来的憧憬\N未来への憧れです
-Dialogue: 0,0:19:34.39,0:19:36.19,SC_Bottom,甘奈,0,0,0,,那么接下来 请听\Nそれでは聴いてください
-Dialogue: 0,0:19:36.99,0:19:38.60,SC_Bottom,ALSTROEMERIA,0,0,0,,ALSTROEMERIA\Nアルストロメリア
-Dialogue: 0,0:20:09.56,0:20:13.00,SC_Bottom,歌,0,0,0,,感觉头晕眼花 语无伦次 気絶しそう　しどろもどろ
-Dialogue: 0,0:20:13.00,0:20:16.03,SC_Bottom,歌,0,0,0,,花开的Thaleia 花ざかりタレイア
-Dialogue: 0,0:20:16.44,0:20:22.96,SC_Bottom,歌,0,0,0,,神经像脱线了一样 打着节拍（adagio）まともな神経(あたま)が繋がらない　アダージョみたい
-Dialogue: 0,0:20:23.31,0:20:26.38,SC_Bottom,歌,0,0,0,,变得帅气 强大起来吧 凛々しくいよう　強くなろう
-Dialogue: 0,0:20:26.72,0:20:29.87,SC_Bottom,歌,0,0,0,,天与地混在一起 天と地がディストーション
-Dialogue: 0,0:20:30.15,0:20:35.91,SC_Bottom,歌,0,0,0,,梦境也忘得一干二净了吧 夢をみることも忘れてしまうのかな
-Dialogue: 0,0:20:36.58,0:20:43.08,SC_Bottom,歌,0,0,0,,就算鼓起的花蕾满是伤痕 ふくらむ蕾が傷だらけでも
-Dialogue: 0,0:20:43.44,0:20:52.03,SC_Bottom,歌,0,0,0,,也能温柔地轻轻地握住你的手吗 優しくそっと手をとってくれますか
-Dialogue: 0,0:20:52.41,0:20:56.71,SC_Bottom,歌,0,0,0,,啾啾啾 幸福论 诞生了チュ　チュ　チュ　幸福論　誕生
-Dialogue: 0,0:20:56.92,0:21:00.21,SC_Bottom,歌,0,0,0,,找到了自我认同（identity)アイデンティティー見つけた
-Dialogue: 0,0:21:00.37,0:21:03.31,SC_Bottom,歌,0,0,0,,ALSTROEMERIA的花朵 アルストロメリアの花
-Dialogue: 0,0:21:03.31,0:21:06.63,SC_Bottom,歌,0,0,0,,盛开着 盛开着 Silent Love(无以言表的爱）咲いた　咲いた　Silent Love
-Dialogue: 0,0:21:06.79,0:21:10.45,SC_Bottom,歌,0,0,0,,过去和未来的种种 過去も未来も諸事情も
-Dialogue: 0,0:21:10.65,0:21:13.90,SC_Bottom,歌,0,0,0,,想都染上你的颜色 キミ色にぜんぶ染まりたい
-Dialogue: 0,0:21:14.12,0:21:17.00,SC_Bottom,歌,0,0,0,,这就我唯一的哲学（philosophy) 一途なわたし　フィロソフィ
-Dialogue: 0,0:21:17.00,0:21:20.48,SC_Bottom,歌,0,0,0,,盛开着 盛开着 Silent Love 咲いた　咲いた　Silent Love
-Dialogue: 0,0:21:45.92,0:21:48.14,SC_Bottom,ALSTROEMERIA,0,0,0,,谢谢\Nありがとうございました
-Dialogue: 0,0:21:56.39,0:21:59.42,SC_Bottom,甘奈,0,0,0,,正如制作人先生所说呢\Nプロデューサーさんが言った通りだった
-Dialogue: 0,0:22:00.03,0:22:03.45,SC_Bottom,甘奈,0,0,0,,答案已然存在于我们心中\N答えは甘奈たちの中にあるって話
-Dialogue: 0,0:22:03.45,0:22:04.44,SC_Bottom,制作人,0,0,0,,是啊\Nそうだな
-Dialogue: 0,0:22:13.21,0:22:15.73,SC_Bottom,甘奈,0,0,0,,让花朵绽放吧\Nお花 咲かせようね
+Comment: 0,0:00:00.46,0:00:03.77,SC_Bottom,恋钟,0,0,0,kara,L'Antica的MV堂堂发布\Nアンティーカのミュージックビデオばい
+Comment: 0,0:00:04.23,0:00:09.56,SC_Bottom,恋钟,0,0,0,kara,用咱们的歌声点燃观看MV的观众们的内心！\Nうちらの歌でミュージックビデオを見た人の心にも火をつけと
+Comment: 0,0:00:09.56,0:00:15.93,SC_Bottom,恋钟,0,0,0,kara,咱们一定能跨过那新人偶像团体的龙门W.I.N.G.\N新人アイドルユニットの登竜門ウィング うちらが絶対優勝するばい
+Comment: 0,0:00:23.12,0:00:25.16,SC_Bottom,甘奈,0,0,0,kara,真好吃啊\N美味しかったー
+Comment: 0,0:00:25.89,0:00:29.34,SC_Bottom,甘奈,0,0,0,kara,甘奈我啊 是第一次吃搬家荞麦面\N甘奈は引っ越しそばって初めて食べたなぁ
+Comment: 0,0:00:30.66,0:00:32.97,SC_Bottom,甜花,0,0,0,kara,吃撑了…\Nお腹いっぱい
+Comment: 0,0:00:35.03,0:00:38.57,SC_Bottom,制作人,0,0,0,kara,谢谢了啊 千雪 还给我准备了一份\Nありがとうな千雪 俺までごちそうになっちゃって
+Comment: 0,0:00:38.57,0:00:40.49,SC_Bottom,千雪,0,0,0,kara,招待不周 还请多包涵\Nお粗末様でした
+Comment: 0,0:00:40.98,0:00:44.43,SC_Bottom,千雪,0,0,0,kara,也得谢谢你们来帮我搬家呢\N引っ越しのお手伝いまで ありがとうございます
+Comment: 0,0:00:44.43,0:00:46.90,SC_Bottom,甘奈,0,0,0,kara,你能感到高兴 真是太好了\N喜んでもらえてよかった
+Comment: 0,0:00:46.90,0:00:48.09,SC_Bottom,甜花,0,0,0,kara,呜…嗯\Nう うん
+Comment: 0,0:00:48.97,0:00:50.23,SC_Bottom,千雪,0,0,0,kara,虽然总感觉…\Nなんだかね
+Comment: 0,0:00:51.25,0:00:56.13,SC_Bottom,千雪,0,0,0,kara,离开了一直照顾着我的杂货铺 稍微有点寂寞呢\Nお世話になった雑貨屋さんを離れて 少し寂しいなって
+Comment: 0,0:00:57.24,0:01:00.37,SC_Bottom,千雪,0,0,0,kara,但是现在更多的是激动\Nでも今は ワクワクしてるの
+Comment: 0,0:01:02.75,0:01:05.89,SC_Bottom,千雪,0,0,0,kara,因为我们三人组成了ALSTROEMERIA\N3人で アルストロメリアになれたから
+Comment: 0,0:01:06.60,0:01:07.44,SC_Bottom,甘奈,0,0,0,kara,嗯\Nうん
+Comment: 0,0:01:09.09,0:01:10.92,SC_Bottom,千雪,0,0,0,kara,对未来的憧憬\N未来への憧れ
+Comment: 0,0:01:12.13,0:01:14.80,SC_Bottom,千雪,0,0,0,kara,这是六出花（Alstroemeria）的花语啊\Nアルストロメリアの花言葉なの
+Comment: 0,0:01:14.80,0:01:17.42,SC_Bottom,甘奈,0,0,0,kara,对未来的憧憬…\N未来への憧れ
+Comment: 0,0:01:17.42,0:01:18.88,SC_Bottom,甜花,0,0,0,kara,憧憬…\N憧れ
+Comment: 0,0:01:18.88,0:01:22.31,SC_Bottom,千雪,0,0,0,kara,所谓「对未来的憧憬」到底是什么呢\Nなんだろうね 未来への憧れって
+Comment: 0,0:01:23.34,0:01:27.86,SC_Bottom,制作人,0,0,0,kara,趁着这个机会 好好想一想吧\Nいい機会だ 一度しっかり考えてみてもいいかもしれないな
+Comment: 0,0:01:27.86,0:01:31.46,SC_Bottom,制作人,0,0,0,kara,你们三人想要成为一个什么样的组合\N3人が どんなユニットになりたいかってこと
+Comment: 0,0:01:31.46,0:01:33.65,SC_Bottom,甘奈,0,0,0,kara,怎样的组合吗…\Nどんなユニットに
+Comment: 0,0:01:34.15,0:01:39.30,SC_Bottom,制作人,0,0,0,kara,你们若是能自己找到这个问题的答案 应该能获得强大的动力\N自分たちでそれを見つけられたら 前へ進む強い力になるはずだ
+Comment: 0,0:01:40.35,0:01:42.35,SC_Bottom,千雪,0,0,0,kara,真想一起去寻找啊\N一緒に見つけたいね
+Comment: 0,0:01:42.35,0:01:43.14,SC_Bottom,甘奈,0,200,0,kara,嗯\Nうん
+Comment: 0,0:01:42.35,0:01:43.14,SC_Bottom,甜花,200,0,0,kara,嗯\Nうん
+Comment: 0,0:03:18.59,0:03:22.41,SC_Top,NEWS,0,0,0,kara,电影上映后大获成功 第二部的制作决定已经宣布…\Nその大ヒットを受けて パート2の制作が発表されました
+Comment: 0,0:03:21.30,0:03:24.13,SC_Bottom,恋钟,0,0,0,kara,啊 是不是等哈儿就要到了\Nあぁ そろそろじゃなか
+Comment: 0,0:03:23.32,0:03:27.50,SC_Top,NEWS,0,0,0,kara,导演表示 想要加入更多动作戏场面\N監督はアクションシーンを さらにスケールアップすることはもちろん
+Comment: 0,0:03:27.01,0:03:30.06,SC_Bottom,摩美美,0,0,0,kara,恋钟 你都说了几次了啊？\N恋鐘 それ言うの何回目?
+Comment: 0,0:03:27.60,0:03:31.85,SC_Top,NEWS,0,0,0,kara,打造一部想让所有人都体会到它的乐趣与感动的电影\Nそれだけではなくて 誰もが笑って泣けるようにしたいと思います
+Comment: 0,0:03:30.31,0:03:34.73,SC_Bottom,结华,0,0,0,kara,虽然说了是晨间档节目 但也不知道具体什么时候能看到呢\N朝の番組って いつお目当てのやるか分かんないからね
+Comment: 0,0:03:32.81,0:03:35.97,SC_Top,NEWS,0,0,0,kara,计划于明年夏天上映\N公開は来年の夏を予定しているということです
+Comment: 0,0:03:35.97,0:03:37.86,SC_Bottom,咲耶,0,0,0,kara,大家一起来等也不失为一种乐趣\Nみんなで待つのも一興さ
+Comment: 0,0:03:36.51,0:03:37.86,SC_Top,NEWS,0,0,0,kara,真是让人非常期待呢…\N楽しみにしていますね
+Comment: 0,0:03:38.37,0:03:40.32,SC_Bottom,雾子,0,0,0,kara,嗯 真期待呢\Nうん 楽しみ
+Comment: 0,0:03:40.62,0:03:43.67,SC_Bottom,FEMALE CASTER,0,0,0,kara,接下来是 现在备受关注的MV\N続いては 今注目のミュージックビデオです
+Comment: 0,0:03:43.91,0:03:45.55,SC_Bottom,恋钟,0,0,0,kara,来咯\N来た！
+Comment: 0,0:03:46.60,0:03:51.53,SC_Bottom,FEMALE CASTER,0,0,0,kara,新人偶像组合L'Antica发布了第一支MV\N新人アイドルユニット アンティーカ 初のミュージックビデオが公開され
+Comment: 0,0:03:51.53,0:03:54.51,SC_Bottom,FEMALE CASTER,0,0,0,kara,在社交平台上成为了热门话题\NSNSを中心に話題となっています
+Comment: 0,0:03:54.51,0:03:56.17,SC_Bottom,恋钟,0,0,0,kara,成话题咯\N話題やって!
+Comment: 0,0:03:56.17,0:03:58.72,SC_Bottom,摩美美,0,0,0,kara,恋钟 我看不见了\N恋鐘 見えない
+Comment: 0,0:03:59.44,0:04:03.43,SC_Bottom,FEMALE CASTER,0,0,0,kara,之所以能成为话题 是因为在大雨中的舞蹈\N話題の訳は 大雨が降る中でのダンスシーンだ
+Comment: 0,0:04:03.76,0:04:08.35,SC_Bottom,FEMALE CASTER,0,0,0,kara,其实这个场景是在突如其来的大雨中 一次就拍摄完成的\N実はこれ 突然の大雨の中 一発で撮影したそうで
+Comment: 0,0:04:08.35,0:04:12.52,SC_Bottom,FEMALE CASTER,0,0,0,kara,在社交平台上收到了「太帅了」「 太燃了」的好评\NSNSには 熱い カッコいいとの声が多く上がっています
+Comment: 0,0:04:13.00,0:04:15.23,SC_Bottom,FEMALE CASTER,0,0,0,kara,还请继续关注L'Antica\Nアンティーカ 今後も注目です
+Comment: 0,0:04:15.66,0:04:21.34,SC_Top,FEMALE CASTER,0,0,0,kara,接下来是关于过马路遵守红绿灯的鸭子…\N続いては信号を守って以上横断する一家族のカモです
+Comment: 0,0:04:16.10,0:04:19.07,SC_Bottom,恋钟,0,0,0,kara,老厉害了 L'Antica\Nすごっかね アンティーカ
+Comment: 0,0:04:19.52,0:04:23.85,SC_Bottom,结华,0,0,0,kara,评论说「想去现地看Live了」「 L'Atica 太帅啦」\Nライブ行きたくなった アンティーカ 熱い だってー
+Comment: 0,0:04:21.89,0:04:23.85,SC_Top,FEMALE CASTER,0,0,0,kara,请看接下来的视频\Nそれではこちらの映像をご覧ください
+Comment: 0,0:04:24.94,0:04:26.62,SC_Bottom,咲耶,0,0,0,kara,辛苦得到了回报呢\N苦労した甲斐があったね
+Comment: 0,0:04:27.04,0:04:31.13,SC_Bottom,雾子,0,0,0,kara,虽然有点害羞 但真开心啊^ ^\Nうん ちょっと恥ずかしいけど 嬉しいな
+Comment: 0,0:04:35.24,0:04:39.42,SC_Bottom,结华,0,600,0,kara,恋碳队长 摩美美也十分满意\Nこがたん隊長 まみみんもご満悦であります
+Comment: 0,0:04:38.03,0:04:39.42,SC_Bottom,摩美美,600,0,0,kara,啥玩意儿？\Nは？
+Comment: 0,0:04:39.76,0:04:42.63,SC_Bottom,恋钟,0,0,0,kara,要得要得 非常不错\Nよーかよーか くるしゅない
+Comment: 0,0:04:43.07,0:04:46.24,SC_Bottom,咲耶,0,0,0,kara,就继续这个势头直冲W.I.N.G.吧\Nこの調子で ウィングでも前線したいところだね
+Comment: 0,0:04:46.24,0:04:47.65,SC_Bottom,恋钟,0,0,0,kara,好\Nよーっし
+Comment: 0,0:04:47.65,0:04:51.67,SC_Bottom,恋钟,0,0,0,kara,在W.I.N.G上也要用我们的歌声将让大家完全点燃！\Nウィングでもうちらの歌で みんなも熱くするばーい
+Comment: 0,0:05:05.13,0:05:05.99,SC_Bottom,甜花,0,0,0,kara,小奈\Nなーちゃん…
+Comment: 0,0:05:09.47,0:05:14.79,SC_Bottom,甘奈,0,0,0,kara,甜花你啊 有没有想过什么是「对未来的憧憬」\N甜花ちゃんはさ 未来への憧れって 考えたことある
+Comment: 0,0:05:16.04,0:05:17.26,SC_Bottom,甜花,0,0,0,kara,小奈\Nなーちゃん
+Comment: 0,0:05:18.16,0:05:21.84,SC_Bottom,甘奈,0,0,0,kara,我啊 没怎么去想过\N甘奈ね あんまり考えたことなくって
+Comment: 0,0:05:22.25,0:05:25.47,SC_Bottom,甘奈,0,0,0,kara,在说出「我们两个人一起去当偶像吧」的时候\N二人でアイドルになろうって言ったときも
+Comment: 0,0:05:25.47,0:05:28.60,SC_Bottom,甘奈,0,0,0,kara,只想着能和甜花一起当上偶像就行了\N甜花ちゃんとアイドルやれたらいいなって
+Comment: 0,0:05:30.35,0:05:33.44,SC_Bottom,甜花,0,0,0,kara,甜花…我呢\N甜花…甜花ね
+Comment: 0,0:05:33.44,0:05:37.11,SC_Bottom,甜花,0,0,0,kara,在当上偶像后遇到了不少的第一次\Nアイドルになって初めてのこと いっぱい
+Comment: 0,0:05:37.87,0:05:43.07,SC_Bottom,甜花,0,0,0,kara,虽然有些许不安 但还是想加把油\N不安だけど ちょっと頑張りたいって思う
+Comment: 0,0:05:44.33,0:05:45.43,SC_Bottom,甘奈,0,0,0,kara,我也…\N甘奈も
+Comment: 0,0:05:46.12,0:05:50.74,SC_Bottom,甜花,0,0,0,kara,但是…未来…更往后的事情…\Nでも…未来…もっと先のことは…
+Comment: 0,0:05:52.79,0:05:55.50,SC_Bottom,甘奈,0,0,0,kara,憧憬和喜欢不一样吧…\N憧れって好きとは違うのかな
+Comment: 0,0:05:56.61,0:05:59.08,SC_Bottom,甜花,0,0,0,kara,憧憬和…喜欢？\N憧れと…好き?
+Comment: 0,0:05:59.47,0:06:03.59,SC_Bottom,甘奈,0,0,0,kara,嗯 甘奈我啊 有很多喜欢的东西\Nうん 甘奈ね 好きなものはたくさんあるよ
+Comment: 0,0:06:03.59,0:06:07.26,SC_Bottom,甘奈,0,0,0,kara,服装…美甲…\Nお洋服に ネイルに…
+Comment: 0,0:06:07.26,0:06:08.68,SC_Bottom,甘奈,0,0,0,kara,甜花！\N甜花ちゃん!
+Comment: 0,0:06:12.23,0:06:15.27,SC_Bottom,甜花,0,0,0,kara,甜花也…\N甜花も…
+Comment: 0,0:06:15.27,0:06:17.68,SC_Bottom,甜花,0,0,0,kara,喜欢…小奈\Nなーちゃん…好き
+Comment: 0,0:06:22.16,0:06:24.50,SC_Bottom,甘奈,0,0,0,kara,但是…憧憬呢\Nけど憧れか
+Comment: 0,0:06:24.96,0:06:27.30,SC_Bottom,甜花,0,0,0,kara,甜花我也想去寻找\N甜花も…見つけたい…
+Comment: 0,0:06:29.15,0:06:32.42,SC_Bottom,甜花,0,0,0,kara,小奈和千雪姐一起…甜花也…\Nなーちゃんと千雪さんと…てんかも…
+Comment: 0,0:06:36.76,0:06:39.45,SC_Bottom,千雪,0,0,0,kara,对未来的憧憬…吗\N未来への憧れ…か
+Comment: 0,0:06:54.08,0:06:57.04,SC_Bottom,巡,0,0,0,kara,真乃好厉害 真的非常动听\N真乃すごいね すっごく綺麗
+Comment: 0,0:06:57.18,0:07:00.19,SC_Bottom,真乃,0,0,0,kara,Howa 啊 真的吗\Nほわっ そ、そうかな
+Comment: 0,0:07:00.51,0:07:02.29,SC_Bottom,灯织,0,0,0,kara,我也觉得很美\N私もきれいだと思った
+Comment: 0,0:07:02.92,0:07:05.54,SC_Bottom,灯织,0,0,0,kara,那个歌声 就是樱木同学的魅力所在\Nその声 櫻木さんの魅力だから
+Comment: 0,0:07:05.54,0:07:08.65,SC_Bottom,灯织,0,0,0,kara,好好保持着自觉 继续发展下去比较好\Nしっかりと自覚をもって　伸ばして行ったほうがいい
+Comment: 0,0:07:08.65,0:07:10.57,SC_Bottom,真乃,0,0,0,kara,灯织也这么说…\N灯織ちゃんまで…
+Comment: 0,0:07:11.19,0:07:13.44,SC_Bottom,真乃,0,0,0,kara,那个 谢谢你\Nその、ありがとう
+Comment: 0,0:07:19.12,0:07:21.67,SC_Bottom,巡,0,0,0,kara,好诶 大概是这种感觉吧\Nよし、こんな感じかな
+Comment: 0,0:07:21.91,0:07:26.58,SC_Bottom,真乃,0,0,0,kara,巡好厉害 就像小鸟在天空翱翔一样\Nめぐるちゃんすごい 鳥さんが空を飛んでるみたい
+Comment: 0,0:07:26.58,0:07:29.76,SC_Bottom,灯织,0,0,0,kara,八宫同学的舞蹈 非常地灵动\N八宮さんのダンス すごくキレがあった
+Comment: 0,0:07:29.76,0:07:32.18,SC_Bottom,巡,0,0,0,kara,真的？谢谢你\Nほんと? ありがとう
+Comment: 0,0:07:32.55,0:07:36.06,SC_Bottom,巡,0,0,0,kara,但是一唱歌就很难结合在一起呢\Nでも歌と一緒だと合わないんだよね
+Comment: 0,0:07:36.06,0:07:38.08,SC_Bottom,真乃,0,0,0,kara,我…我也…\Nわ、私も
+Comment: 0,0:07:38.08,0:07:41.49,SC_Bottom,巡,0,0,0,kara,能保持冷静的只有灯织呢\N混乱しないでできるの灯織だけだよね
+Comment: 0,0:07:41.49,0:07:44.87,SC_Bottom,真乃,0,0,0,kara,嗯 怎么做才好呢\Nうん、どうやったらいいのかな
+Comment: 0,0:07:45.67,0:07:47.65,SC_Bottom,灯织,0,0,0,kara,找到平衡点吧\Nバランスかな
+Comment: 0,0:07:48.15,0:07:52.21,SC_Bottom,灯织,0,0,0,kara,歌和舞蹈 太过集中于任何一边都不行\N歌とダンス どちらかにかかりきりになったらダメなの
+Comment: 0,0:07:52.21,0:07:55.66,SC_Bottom,灯织,0,0,0,kara,反复练习 直到形成肌肉记忆为止\N体が完全に覚えるまで反復練習して
+Comment: 0,0:07:56.15,0:07:58.20,SC_Bottom,灯织,0,0,0,kara,在习惯之前只有不断重复\N慣れるまでは繰り返すしかない
+Comment: 0,0:07:58.58,0:08:02.18,SC_Bottom,巡,0,0,0,kara,这样啊 原来如此 就是练习加练习啊\Nそっか、そうだね、レッスンあるのみだ
+Comment: 0,0:08:02.18,0:08:04.56,SC_Bottom,巡,0,0,0,kara,真乃 让我们一起加油吧\N真乃 一緒に頑張ろうね
+Comment: 0,0:08:04.56,0:08:05.46,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:08:05.46,0:08:08.74,SC_Bottom,巡,0,0,0,kara,好 还需要更多练习啊\Nよーし まだまだ練習だ
+Comment: 0,0:08:08.74,0:08:09.51,SC_Bottom,灯织,0,0,0,kara,是呢\Nそうだね
+Comment: 0,0:08:10.56,0:08:15.26,SC_Bottom,真乃,0,0,0,kara,灯织很努力 巡很有活力\N灯織ちゃんは努力家だし めぐるちゃんはパワーがあって
+Comment: 0,0:08:15.95,0:08:17.82,SC_Bottom,真乃,0,0,0,kara,我也得加油才行\N私も頑張らないと
+Comment: 0,0:08:18.89,0:08:24.05,SC_Bottom,真乃,0,0,0,kara,为了我 灯织 巡三人的illumination STARS \N灯織ちゃん、めぐるちゃんと三人で イルミネーションスターズになるために
+Comment: 0,0:08:25.02,0:08:25.73,SC_Bottom,真乃,0,0,0,kara,mun \Nむんっ
+Comment: 0,0:08:28.06,0:08:29.86,SC_Bottom,制作人,0,0,0,kara,春天的花之祭\N春のフラワーフェスティバル
+Comment: 0,0:08:30.33,0:08:33.53,SC_Bottom,制作人,0,0,0,kara,不仅会卖花 还有舞台活动哦\N花の販売はもちろん ステージイベントもあるぞ
+Comment: 0,0:08:33.53,0:08:37.16,SC_Bottom,甘奈,0,0,0,kara,是一份非常适合ALSTROEMERIA的工作\Nアルストロメリアにぴったりのお仕事だね
+Comment: 0,0:08:37.16,0:08:38.12,SC_Bottom,甜花,0,0,0,kara,嗯\Nうん
+Comment: 0,0:08:38.12,0:08:39.62,SC_Bottom,制作人,0,0,0,kara,嗯 是啊\Nああ、そうだな
+Comment: 0,0:08:40.05,0:08:40.93,SC_Bottom,制作人,0,0,0,kara,而且\Nなんでも
+Comment: 0,0:08:40.93,0:08:44.40,SC_Bottom,制作人,0,0,0,kara,听说负责人看了之前的都市情报志\N担当の方がこの前のタウン誌を見てくださったみたいで
+Comment: 0,0:08:45.23,0:08:46.58,SC_Bottom,甘奈,0,0,0,kara,诶 真的吗\Nえっ、本当?
+Comment: 0,0:08:47.87,0:08:51.45,SC_Bottom,制作人,0,0,0,kara,觉得你们推荐的地方非常好\Nみんなのオススメスポット紹介、あれが良かったみたいだ
+Comment: 0,0:08:52.12,0:08:56.59,SC_Bottom,制作人,0,0,0,kara,并希望这次由花组来向客人传达花的魅力\N今回はアルストからお客さんに 花の魅力を届けて欲しいとのことだ
+Comment: 0,0:08:56.91,0:08:59.21,SC_Bottom,千雪,0,0,0,kara,好的 这当然没问题\Nはい、それはもちろん
+Comment: 0,0:09:04.60,0:09:05.94,SC_Bottom,制作人,0,0,0,kara,怎么了 甘奈\Nどうしたんだ、甘奈?
+Comment: 0,0:09:05.94,0:09:08.73,SC_Bottom,甘奈,0,0,0,kara,诶…那个啊\Nえっと…あのね
+Comment: 0,0:09:09.15,0:09:13.70,SC_Bottom,甘奈,0,0,0,kara,最近一直在想什么是对未来的憧憬…\Nなんだかずっと考えちゃってるんだ 未来への憧れ…
+Comment: 0,0:09:14.88,0:09:17.13,SC_Bottom,甘奈,0,0,0,kara,但是 真的好难啊\Nでも、難しいなって
+Comment: 0,0:09:18.34,0:09:21.45,SC_Bottom,制作人,0,0,0,kara,首先 把它想得简单一点如何\Nまずは、シンプルに考えてみてもいいんじゃないか
+Comment: 0,0:09:24.08,0:09:27.41,SC_Bottom,制作人,0,0,0,kara,「想变成这样的」…「能变成这样就好了」之类的\Nこうなりたいとか、こうなったらいいなとか
+Comment: 0,0:09:28.18,0:09:32.25,SC_Bottom,制作人,0,0,0,kara,或许啊 大家心里已经有答案了\Nもしかしたらさ 答えはもうみんなの中にあって
+Comment: 0,0:09:32.25,0:09:35.90,SC_Bottom,制作人,0,0,0,kara,只不过 可能只是无以言表而已\Nでも うまく言葉にできてないだけなのかもしれないぞ
+Comment: 0,0:09:36.42,0:09:38.84,SC_Bottom,甜花,0,0,0,kara,我们的心中…\N甜花たちの、中に…
+Comment: 0,0:09:38.84,0:09:42.64,SC_Bottom,甘奈,0,0,0,kara,制作人先生又在说很难懂的话了呢\Nまたプロデューサーさん 難しいこと言うな
+Comment: 0,0:09:42.99,0:09:47.06,SC_Bottom,制作人,0,0,0,kara,抱…抱歉 但其实你们也没必要着急\Nす、すまん、でも 焦ることはないよ
+Comment: 0,0:09:47.35,0:09:50.93,SC_Bottom,制作人,0,0,0,kara,因为你们一定能在这个过程中找到答案\Nやっていくうちに 見えてくるものがあるはずだから
+Comment: 0,0:09:50.93,0:09:53.12,SC_Bottom,甘奈,0,0,0,kara,要是这样的话就好了\Nそうだったらいいな
+Comment: 0,0:09:57.77,0:10:00.25,SC_Bottom,甜花,0,0,0,kara,这个放书架上就行了吗\Nこれ、本棚でいい?
+Comment: 0,0:10:00.73,0:10:02.60,SC_Bottom,千雪,0,0,0,kara,嗯 谢谢\Nうん、ありがとう
+Comment: 0,0:10:04.12,0:10:07.22,SC_Bottom,甘奈,0,0,0,kara,说到「想变成什么样」时 总会有很多答案呢\Nこうなりたいなら いろいろあるよね
+Comment: 0,0:10:07.22,0:10:08.58,SC_Bottom,千雪,0,0,0,kara,是呢\Nそうね
+Comment: 0,0:10:09.08,0:10:12.92,SC_Bottom,甜花,0,0,0,kara,甜花我 想变得擅长唱歌\N甜花 歌とか上手になりたい
+Comment: 0,0:10:13.16,0:10:15.26,SC_Bottom,甘奈,0,0,0,kara,嗯嗯 跳舞也\Nうんうん、ダンスも
+Comment: 0,0:10:15.26,0:10:17.17,SC_Bottom,甘奈,0,0,0,kara,然后想上更多杂志\Nあともっと雑誌に乗りたい
+Comment: 0,0:10:17.48,0:10:19.93,SC_Bottom,千雪,0,0,0,kara,还有想更多地站在舞台上啊\Nステージにもたくさん立ちたいな
+Comment: 0,0:10:20.35,0:10:22.33,SC_Bottom,甘奈,0,0,0,kara,我还想上电视\Nテレビにもいつか出たい
+Comment: 0,0:10:23.65,0:10:25.52,SC_Bottom,甘奈,0,0,0,kara,果然有好多答案呢\Nやっぱいっぱいあるな
+Comment: 0,0:10:26.66,0:10:27.52,SC_Bottom,甜花,0,0,0,kara,嗯\Nうん
+Comment: 0,0:10:28.03,0:10:30.41,SC_Bottom,千雪,0,0,0,kara,如果都能实现的话就太美好了\Nたくさん叶えられたら素敵ね
+Comment: 0,0:10:31.58,0:10:32.65,SC_Bottom,甜花,0,0,0,kara,美好…\N素敵
+Comment: 0,0:10:33.68,0:10:36.61,SC_Bottom,甘奈,0,0,0,kara,对啊 …原来是这样啊 \Nそっか そうだよね
+Comment: 0,0:10:37.58,0:10:42.82,SC_Bottom,甘奈,0,0,0,kara,将所有的愿望都付诸实现 让我们三人成为冠以「美好」的组合\Nこうなりたいって思うことは全部叶えて 3人で素敵なユニットになる
+Comment: 0,0:10:43.71,0:10:44.58,SC_Bottom,千雪,0,0,0,kara,嗯\Nええ
+Comment: 0,0:10:51.17,0:10:53.96,SC_Bottom,甘奈,0,0,0,kara,恍然大悟之后 感觉好饿哦\Nすっきりしたらお腹空いてきちゃった
+Comment: 0,0:10:54.78,0:10:56.51,SC_Bottom,千雪,0,0,0,kara,那我去煮碗面吧\Nお蕎麦茹でよっか
+Comment: 0,0:10:56.51,0:10:58.02,SC_Bottom,甘奈,0,0,0,kara,诶 这样好吗\Nえ いいの
+Comment: 0,0:10:58.02,0:11:00.92,SC_Bottom,甜花,0,0,0,kara,搬家荞麦面 第二轮\N引っ越し蕎麦 2回戦
+Comment: 0,0:11:07.92,0:11:10.06,SC_Bottom,果穗,0,0,0,kara,恭喜你！\Nおめでとうございまーす
+Comment: 0,0:11:10.49,0:11:15.07,SC_Bottom,凛世,0,0,0,kara,此为原创铅笔一支 还请笑纳\Nこちらのオリジナル鉛筆をどうぞお一つ
+Comment: 0,0:11:15.90,0:11:18.14,SC_Bottom,,0,0,0,kara,谢谢 你们加油\Nありがと、頑張ってね
+Comment: 0,0:11:19.39,0:11:21.13,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,谢谢惠顾\Nありがとうございます
+Comment: 0,0:11:22.25,0:11:25.35,SC_Bottom,树里,0,0,0,kara,喂 果穗 刚才她摇的是个六等奖吧\Nおい 果穂、今の6等だぞ
+Comment: 0,0:11:26.26,0:11:28.46,SC_Bottom,果穗,0,0,0,kara,表现得太兴奋了吗\N元気に言い過ぎちゃいました
+Comment: 0,0:11:28.46,0:11:30.55,SC_Bottom,夏叶,0,0,0,kara,不 没有那回事\Nいいえ、そんなことないわ
+Comment: 0,0:11:30.55,0:11:33.88,SC_Bottom,夏叶,0,0,0,kara,好不容易才从商店街拿到的一份工作\N商店街の方から頂いたせっかくのオファーだもの
+Comment: 0,0:11:34.16,0:11:35.12,SC_Bottom,智代子,0,0,0,kara,嗯嗯\Nうんうん
+Comment: 0,0:11:36.48,0:11:39.09,SC_Bottom,智代子,0,0,0,kara,万田电器纪念促销活动\Nマンダデンキ記念セールイベント
+Comment: 0,0:11:39.49,0:11:42.09,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,会场在这边哦\N会場はこちらでーす
+Comment: 0,0:11:42.59,0:11:44.39,SC_Bottom,夏叶,0,0,0,kara,要全力以赴才行啊\N全力でやらなくちゃ
+Comment: 0,0:11:44.39,0:11:48.10,SC_Bottom,树里,0,0,0,kara,嘛 摸鱼的话就太对不起肉店大叔了\Nま、手抜いたら肉屋のおっちゃんにも悪いしな
+Comment: 0,0:11:48.67,0:11:50.77,SC_Bottom,,0,0,0,kara,啊 是商店街的活动\Nあら 商店街の
+Comment: 0,0:11:51.41,0:11:53.40,SC_Bottom,,0,0,0,kara,能帮我转一下吗\N代わりに回してもらっていい
+Comment: 0,0:11:54.91,0:11:56.69,SC_Bottom,夏叶,0,0,0,kara,谢谢你 乐意效劳\Nありがとう もちろんよ
+Comment: 0,0:11:57.29,0:11:58.86,SC_Bottom,智代子,0,0,0,kara,很开心对吧 树里\N嬉しいね 樹里ちゃん
+Comment: 0,0:12:00.05,0:12:01.13,SC_Bottom,树里,0,0,0,kara,嗯…\Nお、おう
+Comment: 0,0:12:02.09,0:12:03.47,SC_Bottom,智代子,0,0,0,kara,那我来帮忙咯\Nじゃあ行きますね
+Comment: 0,0:12:05.03,0:12:07.91,SC_Bottom,凛世,0,0,0,kara,那么 诸位尽请期待\Nさあ 皆様ご注目
+Comment: 0,0:12:08.16,0:12:09.03,SC_Bottom,智代子,0,0,0,kara,好\Nよし
+Comment: 0,0:12:09.55,0:12:13.31,SC_Bottom,智代子,0,0,0,kara,目标 一等奖 温泉旅行\N目指せ一等 温泉旅行
+Comment: 0,0:12:16.55,0:12:17.16,SC_Bottom,树里,0,0,0,kara,喂！\Nおー
+Comment: 0,0:12:17.16,0:12:18.19,SC_Bottom,智代子,0,0,0,kara,对不起！\Nごめんなさい
+Comment: 0,0:12:19.02,0:12:21.37,SC_Bottom,果穗,0,0,0,kara,大事不好了！！！\N 大変です！！！
+Comment: 0,0:12:29.75,0:12:33.07,SC_Bottom,甘奈,0,0,0,kara,这就是今天准备好的花啊\Nこれが今日のアレンジメントのお花なんだ
+Comment: 0,0:12:33.07,0:12:34.89,SC_Bottom,甜花,0,0,0,kara,大家都…好漂亮\Nみんな、きれい
+Comment: 0,0:12:36.45,0:12:39.08,SC_Bottom,千雪,0,0,0,kara,这盆新娘草好可爱\Nこのブライダルベールかわいい
+Comment: 0,0:12:40.47,0:12:43.46,SC_Bottom,甜花,0,0,0,kara,千雪 就像新娘一样\N千雪さん 花嫁さんみたい
+Comment: 0,0:12:44.92,0:12:45.36,SC_Bottom,千雪,0,0,0,kara,请\Nはい
+Comment: 0,0:12:46.60,0:12:48.45,SC_Bottom,千雪,0,0,0,kara,甜花也很漂亮哦\N甜花ちゃん素敵よ
+Comment: 0,0:12:50.32,0:12:51.68,SC_Bottom,甜花,0,0,0,kara,小奈也…\Nなーちゃんも
+Comment: 0,0:12:55.68,0:13:00.02,SC_Bottom,甘奈,0,0,0,kara,那个 制作人先生 能把这盆花装饰在休息室吗\Nねえ、プロデューサーさん、このお花控室に飾ってもいいかな
+Comment: 0,0:13:00.02,0:13:03.15,SC_Bottom,制作人,0,0,0,kara,嗯 我会去跟负责人谈一下的\Nああ 担当者さんには俺から話しておくよ
+Comment: 0,0:13:03.15,0:13:04.38,SC_Bottom,甘奈,0,0,0,kara,好耶\Nやったー
+Comment: 0,0:13:04.72,0:13:07.99,SC_Bottom,甘奈,0,0,0,kara,若是今天大家都绽放出笑容就好了\N今日はみんなを笑顔にできるといいなー
+Comment: 0,0:13:09.02,0:13:10.26,SC_Bottom,制作人,0,0,0,kara,加油吧\N頑張ってこい
+Comment: 0,0:13:10.26,0:13:11.08,SC_Bottom,Alstroemeria,0,0,0,kara,好\Nはい
+Comment: 0,0:13:13.27,0:13:16.07,SC_Bottom,甘奈,0,0,0,kara,大家好啊\Nみなさん、こんにちはー
+Comment: 0,0:13:16.85,0:13:18.30,SC_Bottom,甘奈,0,0,0,kara,预—备\Nせーの
+Comment: 0,0:13:18.30,0:13:20.17,SC_Bottom,Alstroemeria,0,0,0,kara,我们是ALSTROEMERIA\Nアルストロメリアです
+Comment: 0,0:13:24.33,0:13:29.99,SC_Bottom,甘奈,0,0,0,kara,那个 由衷地感谢诸位能来到今天的花之祭\Nえっと、今日はフラワーフェスティバルにご来場いただきましてありがとうございます
+Comment: 0,0:13:30.56,0:13:35.03,SC_Bottom,甘奈,0,0,0,kara,本次活动的主题是「将花赠与重要的人」\N今回は、大切な人にお花を贈ろうっていうのがテーマです
+Comment: 0,0:13:35.03,0:13:39.13,SC_Bottom,甘奈,0,0,0,kara,在这期间我们会跟大家聊天 还请大家享受这次活动到最后\Nいろいろお話していきますので、最後まで楽しんでください
+Comment: 0,0:13:39.62,0:13:42.05,SC_Bottom,甜花,0,0,0,kara,请享受活动…\Nた、楽しんでください
+Comment: 0,0:13:49.51,0:13:53.54,SC_Bottom,甘奈,0,0,0,kara,话说回来 千雪对花有什么回忆吗\Nじゃあ、千雪さんは思い出に残ってるお花ってある
+Comment: 0,0:13:55.83,0:14:00.46,SC_Bottom,千雪,0,0,0,kara,毕业的时候 以及开始新生活的时候\N卒業するとき 新しい生活を始めるとき
+Comment: 0,0:14:00.46,0:14:05.08,SC_Bottom,千雪,0,0,0,kara,在那时收到的花 能感受到大家的思念…\Nそんなときにいただくお花ってくださった方の思いが
+Comment: 0,0:14:05.08,0:14:08.30,SC_Bottom,千雪,0,0,0,kara,寄托于一枚又一枚的花瓣之中\N花びら一枚一枚にこもっている気がして
+Comment: 0,0:14:08.30,0:14:10.15,SC_Bottom,千雪,0,0,0,kara,这种感觉很美好\N素敵だなーって
+Comment: 0,0:14:10.15,0:14:12.08,SC_Bottom,甘奈,0,0,0,kara,千雪好成熟啊\N千雪さん大人ー
+Comment: 0,0:14:12.08,0:14:13.66,SC_Bottom,甜花,0,0,0,kara,哦…嗯\Nお うん
+Comment: 0,0:14:15.18,0:14:20.50,SC_Bottom,甘奈,0,0,0,kara,我想花对在座的各位来说 一定也寄托着不少思念吧\N会場のみなさんのお花にも きっと、沢山の思いがこもっているんだろうな
+Comment: 0,0:14:21.74,0:14:23.41,SC_Bottom,,0,0,0,kara,最讨厌姐姐了\Nお姉ちゃん、もうやだ
+Comment: 0,0:14:30.40,0:14:31.80,SC_Bottom,,0,0,0,kara,等等 别跑\Nちょっと待って
+Comment: 0,0:14:37.20,0:14:40.93,SC_Bottom,千雪,0,0,0,kara,甘奈 今天还有其他有趣的活动吧\N甘奈ちゃん 今日は楽しいイベントもあるのよね
+Comment: 0,0:14:40.93,0:14:44.81,SC_Bottom,甘奈,0,0,0,kara,啊 对对 还有插花讲座\Nあ そそう フラワーアレンジメント講座とか
+Comment: 0,0:14:44.81,0:14:47.15,SC_Bottom,甘奈,0,0,0,kara,中午开始在这舞台上有歌舞表演\Nお昼からここで歌のステージもあります
+Comment: 0,0:14:47.55,0:14:50.36,SC_Bottom,甜花,0,0,0,kara,请 一定要来看\Nぜひ 見に来てください
+Comment: 0,0:14:56.78,0:14:58.69,SC_Bottom,甘奈,0,0,0,kara,那些孩子们\Nあの子たち
+Comment: 0,0:14:58.69,0:14:59.37,SC_Bottom,制作人,0,0,0,kara,怎么了\Nどうした
+Comment: 0,0:15:00.03,0:15:03.75,SC_Bottom,甘奈,0,0,0,kara,观众席上 有两个小朋友吵起来了\N客席にね 喧嘩してる子たちがいたんだ
+Comment: 0,0:15:04.53,0:15:07.17,SC_Bottom,甘奈,0,0,0,kara,我想帮帮他们\Nなんとかしてあげたかったな
+Comment: 0,0:15:07.98,0:15:11.09,SC_Bottom,千雪,0,0,0,kara,嗯 我也想让他们也享受这次活动啊\Nうん 私も楽しんでほしいな
+Comment: 0,0:15:11.38,0:15:14.97,SC_Bottom,甜花,0,0,0,kara,嗯 甜花也这样想\Nうん 甜花も同じ気持ち
+Comment: 0,0:15:15.48,0:15:18.32,SC_Bottom,甘奈,0,0,0,kara,但是 该怎么办才好呢\Nでも どうしたらいいんだろう
+Comment: 0,0:15:19.66,0:15:20.33,SC_Bottom,制作人,0,0,0,kara,请进\Nはい
+Comment: 0,0:15:20.83,0:15:23.13,SC_Bottom,,0,0,0,kara,到准备时间了 可以了吗\N次のスタンバイ お願いできますか
+Comment: 0,0:15:23.64,0:15:24.51,SC_Bottom,Alstroemeria,0,0,0,kara,好的\Nはい
+Comment: 0,0:15:31.79,0:15:35.07,SC_Bottom,千雪,0,0,0,kara,大家 准备好了吗\N皆さん 準備はよろしいでしょうか
+Comment: 0,0:15:36.03,0:15:39.45,SC_Bottom,千雪,0,0,0,kara,那我们就开始插花吧\Nでは早速アレンジメントを始めましょう
+Comment: 0,0:15:40.07,0:15:44.67,SC_Bottom,千雪,0,0,0,kara,首先 将喜欢的花插入吸水海绵里  \Nまずはじめにお気に入りのお花を吸水スポンジにさしてください
+Comment: 0,0:15:46.83,0:15:50.43,SC_Bottom,千雪,0,0,0,kara,再在它周围装饰上一些花将其包围\Nその周りを囲うようにお花をあしらってあげると
+Comment: 0,0:15:50.43,0:15:53.47,SC_Bottom,千雪,0,0,0,kara,这样做出立体感后 就算完成了\N立体感が出て素敵に仕上がります
+Comment: 0,0:15:54.14,0:15:55.89,SC_Bottom,甘奈,0,0,0,kara,这种感觉吧\Nこんな感じかな
+Comment: 0,0:15:57.60,0:15:58.56,SC_Bottom,甜花,0,0,0,kara,嗯\Nうん
+Comment: 0,0:15:59.00,0:16:01.17,SC_Bottom,千雪,0,0,0,kara,两个人都做得好漂亮\N二人とも綺麗ね
+Comment: 0,0:16:02.99,0:16:05.06,SC_Bottom,千雪,0,0,0,kara,大家做的怎么样啊\N皆さんはどうですか
+Comment: 0,0:16:14.02,0:16:17.42,SC_Bottom,甘奈,0,0,0,kara,哇 好厉害 做得很漂亮呢\Nわあ すごい 上手にできてるね
+Comment: 0,0:16:21.26,0:16:24.71,SC_Bottom,甘奈,0,0,0,kara,小弟弟 你姐姐插的花可漂亮了呢\N弟くん お姉ちゃんお花上手だよ
+Comment: 0,0:16:31.37,0:16:35.01,SC_Bottom,甘奈,0,0,0,kara,对了 就让甘奈我去看看大家的花吧\Nそうだ 甘奈 みんなのお花を見に行ってみようかな
+Comment: 0,0:16:35.45,0:16:37.68,SC_Bottom,千雪,0,0,0,kara,嗯 你去吧\Nうん 行ってらっしゃい
+Comment: 0,0:16:37.68,0:16:39.22,SC_Bottom,甘奈,0,0,0,kara,好\Nよーし
+Comment: 0,0:16:47.85,0:16:50.12,SC_Bottom,甘奈,0,0,0,kara,能借用一下你的花吗\Nお花借りてもいいかな
+Comment: 0,0:16:50.12,0:16:50.73,SC_Bottom,,0,0,0,kara,好\Nはい
+Comment: 0,0:16:53.50,0:16:56.00,SC_Bottom,甘奈,0,0,0,kara,你看 就是这样插花的哦\Nほらこうやって刺すんだよ
+Comment: 0,0:16:57.55,0:17:00.88,SC_Bottom,甘奈,0,0,0,kara,接下来是这朵花 你看\N次はこのお花 ほら
+Comment: 0,0:17:07.04,0:17:10.17,SC_Bottom,甘奈,0,0,0,kara,那个 那些花里面你最喜欢那一朵\Nねえ あのお花の中でどれが好き
+Comment: 0,0:17:13.38,0:17:15.14,SC_Bottom,,0,0,0,kara,那个最中间的\Nあのまんまの
+Comment: 0,0:17:19.70,0:17:20.60,SC_Bottom,甘奈,0,0,0,kara,稍等一下哦\N待っててね
+Comment: 0,0:17:29.25,0:17:31.57,SC_Bottom,甘奈,0,0,0,kara,如果喜欢的话 就用这朵吧\Nこれ、よかったら使ってみて
+Comment: 0,0:17:32.36,0:17:35.18,SC_Bottom,,0,0,0,kara,非常感谢 试试看吧\Nありがとうございます ほら
+Comment: 0,0:17:38.46,0:17:39.25,SC_Bottom,,0,0,0,kara,诶\Nえい
+Comment: 0,0:17:44.72,0:17:45.93,SC_Bottom,,0,0,0,kara,真漂亮啊\N綺麗だね
+Comment: 0,0:17:46.77,0:17:47.37,SC_Bottom,,0,0,0,kara,嗯\Nうん
+Comment: 0,0:17:53.37,0:17:55.33,SC_Bottom,制作人,0,0,0,kara,大家 辛苦了\Nみんなお疲れ様
+Comment: 0,0:17:55.33,0:17:56.83,SC_Bottom,Alstroemeria,0,0,0,kara,辛苦了\Nお疲れ様です
+Comment: 0,0:17:57.48,0:18:00.68,SC_Bottom,千雪,0,0,0,kara,那对姐妹重归于好了呢\Nあのお姉ちゃんたち 仲直りできたのね
+Comment: 0,0:18:00.93,0:18:05.44,SC_Bottom,甘奈,0,0,0,kara,嗯 希望大家都能开心的这份心情传达到了吧\Nうん 楽しんでほしいって気持ちが届いたのかな
+Comment: 0,0:18:06.49,0:18:08.12,SC_Bottom,甘奈,0,0,0,kara,真高兴啊\N嬉しいな
+Comment: 0,0:18:08.12,0:18:13.07,SC_Bottom,甜花,0,0,0,kara,不光是那对姐妹 小奈也…\Nあの子たちもだけど なあちゃんも
+Comment: 0,0:18:13.07,0:18:16.40,SC_Bottom,甜花,0,0,0,kara,也像花开一般绽放了笑容\Nお花 咲いたみたいに笑ってた
+Comment: 0,0:18:22.14,0:18:27.18,SC_Bottom,甘奈,0,0,0,kara,那一定是将情感所传达后绽放的笑容之花吧\Nきっと気持ちが届くと咲くんだね 笑顔のお花
+Comment: 0,0:18:30.93,0:18:35.30,SC_Bottom,千雪,0,0,0,kara,今天很高兴能参加这么棒的活动\N今日は素敵なイベントに参加できて 本当に良かったです
+Comment: 0,0:18:35.71,0:18:36.91,SC_Bottom,千雪,0,0,0,kara,预—备\Nせーの
+Comment: 0,0:18:36.91,0:18:39.05,SC_Bottom,Alstroemeria,0,0,0,kara,谢谢大家\Nありがとうございました
+Comment: 0,0:18:41.12,0:18:44.68,SC_Bottom,甘奈,0,0,0,kara,甘奈我也感觉到非常高兴\N甘奈も とっても素敵な気持ちになりました
+Comment: 0,0:18:46.53,0:18:49.86,SC_Bottom,甘奈,0,0,0,kara,在这会场中绽放了这么多鲜花\N会場いっぱいにお花が咲いていて
+Comment: 0,0:18:49.86,0:18:53.82,SC_Bottom,甘奈,0,0,0,kara,这不光指的是现实中的花朵\Nえっとね それは本当のお花だけじゃなくて
+Comment: 0,0:18:53.82,0:18:57.03,SC_Bottom,甘奈,0,0,0,kara,大家的笑容也像花朵一样\Nみんなの笑顔もお花に見えて
+Comment: 0,0:19:01.22,0:19:04.79,SC_Bottom,甘奈,0,0,0,kara,抱歉 虽然无以言表\Nごめんなさい うまく言えないけど
+Comment: 0,0:19:04.79,0:19:10.13,SC_Bottom,甘奈,0,0,0,kara,「想让大家如花朵一般绽放出笑容」\Nみんなを笑顔に 笑顔のお花を咲かせられるようになりたいなって
+Comment: 0,0:19:10.13,0:19:13.23,SC_Bottom,甘奈,0,0,0,kara,我们三人的愿望\Nそう思いました 3人で
+Comment: 0,0:19:14.32,0:19:16.33,SC_Bottom,千雪,0,0,0,kara,嗯 我也\Nうん 私も
+Comment: 0,0:19:16.33,0:19:17.76,SC_Bottom,甜花,0,0,0,kara,甜花也\N甜花も
+Comment: 0,0:19:18.65,0:19:24.33,SC_Bottom,甘奈,0,0,0,kara,虽然不知道之后的路会将我们引向何方 但依然想以花朵般的笑容相迎\Nずっと先のことは分からないけど 笑顔のお花を咲かせたい
+Comment: 0,0:19:25.32,0:19:29.02,SC_Bottom,甘奈,0,0,0,kara,这就是我们ALSTROEMERIA的\Nそれが甘奈たちアルストロメリアの
+Comment: 0,0:19:29.02,0:19:30.86,SC_Bottom,甘奈,0,0,0,kara,对未来的憧憬\N未来への憧れです
+Comment: 0,0:19:34.39,0:19:36.19,SC_Bottom,甘奈,0,0,0,kara,那么接下来 请听\Nそれでは聴いてください
+Comment: 0,0:19:36.99,0:19:38.60,SC_Bottom,Alstroemeria,0,0,0,kara,ALSTROEMERIA\Nアルストロメリア
+Comment: 0,0:20:09.56,0:20:13.00,SC_Bottom,歌,0,0,0,kara,感觉头晕眼花 语无伦次 気絶しそう　しどろもどろ
+Comment: 0,0:20:13.00,0:20:16.03,SC_Bottom,歌,0,0,0,kara,花开女神Thalia 花ざかりタレイア
+Comment: 0,0:20:16.44,0:20:22.96,SC_Bottom,歌,0,0,0,kara,神经像脱线了一样 打着节拍（adagio）まともな神経(あたま)が繋がらない　アダージョみたい
+Comment: 0,0:20:23.31,0:20:26.38,SC_Bottom,歌,0,0,0,kara,变得帅气 强大起来吧 凛々しくいよう　強くなろう
+Comment: 0,0:20:26.72,0:20:29.87,SC_Bottom,歌,0,0,0,kara,天与地混在一起 天と地がディストーション
+Comment: 0,0:20:30.15,0:20:35.91,SC_Bottom,歌,0,0,0,kara,梦境也忘得一干二净了吧 夢をみることも忘れてしまうのかな
+Comment: 0,0:20:36.58,0:20:43.08,SC_Bottom,歌,0,0,0,kara,就算鼓起的花蕾满是伤痕 ふくらむ蕾が傷だらけでも
+Comment: 0,0:20:43.44,0:20:52.03,SC_Bottom,歌,0,0,0,kara,也能温柔地轻轻地握住你的手吗 優しくそっと手をとってくれますか
+Comment: 0,0:20:52.41,0:20:56.71,SC_Bottom,歌,0,0,0,kara,啾啾啾 幸福论 诞生了チュ　チュ　チュ　幸福論　誕生
+Comment: 0,0:20:56.92,0:21:00.21,SC_Bottom,歌,0,0,0,kara,找到了自我认同（identity)アイデンティティー見つけた
+Comment: 0,0:21:00.37,0:21:03.31,SC_Bottom,歌,0,0,0,kara,ALSTROEMERIA的花朵 アルストロメリアの花
+Comment: 0,0:21:03.31,0:21:06.63,SC_Bottom,歌,0,0,0,kara,盛开着 盛开着 Silent Love(无以言表的爱）咲いた　咲いた　Silent Love
+Comment: 0,0:21:06.79,0:21:10.45,SC_Bottom,歌,0,0,0,kara,过去和未来的种种 過去も未来も諸事情も
+Comment: 0,0:21:10.65,0:21:13.90,SC_Bottom,歌,0,0,0,kara,想都染上你的颜色 キミ色にぜんぶ染まりたい
+Comment: 0,0:21:14.12,0:21:17.00,SC_Bottom,歌,0,0,0,kara,这就是我唯一的哲学（philosophy) 一途なわたし　フィロソフィ
+Comment: 0,0:21:17.00,0:21:20.48,SC_Bottom,歌,0,0,0,kara,盛开着 盛开着 Silent Love 咲いた　咲いた　Silent Love
+Comment: 0,0:21:45.92,0:21:48.14,SC_Bottom,Alstroemeria,0,0,0,kara,非常感谢\Nありがとうございました
+Comment: 0,0:21:56.39,0:21:59.42,SC_Bottom,甘奈,0,0,0,kara,正如制作人先生所说呢\Nプロデューサーさんが言った通りだった
+Comment: 0,0:22:00.03,0:22:03.45,SC_Bottom,甘奈,0,0,0,kara,答案已然存在于我们心中\N答えは甘奈たちの中にあるって話
+Comment: 0,0:22:03.45,0:22:04.44,SC_Bottom,制作人,0,0,0,kara,是啊\Nそうだな
+Comment: 0,0:22:13.21,0:22:15.73,SC_Bottom,甘奈,0,0,0,kara,让花朵绽放吧\Nお花 咲かせようね
