@@ -13,10 +13,10 @@ Audio File: C:/Users/scree/Desktop/sc_ep4.mkv
 Video File: C:/Users/scree/Desktop/sc_ep4.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.875000
-Scroll Position: 30
-Active Line: 34
-Video Position: 29441
+Video Zoom Percent: 0.750000
+Scroll Position: 27
+Active Line: 48
+Video Position: 30081
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -61,31 +61,31 @@ Comment: 0,0:20:16.04,0:20:19.33,歌JP_center,歌,0,0,0,kara,{\k34}夢{\k18}は{
 Comment: 0,0:20:19.40,0:20:22.57,歌JP_center,歌,0,0,0,kara,{\k25}シ{\k36}ア{\k30}ワ{\k20}セ{\k16}も{\k33}強{\k22}さ{\k16}も{\k21}手{\k20}に{\k16}入{\k17}れ{\k45}て
 Comment: 0,0:20:22.57,0:20:24.76,歌JP_center,歌,0,0,0,kara,{\k25}ギ{\k26}ン{\k42}ガ{\k24}も{\k71}救{\k31}う
 Comment: 0,0:20:24.76,0:20:27.21,歌JP_center,歌,0,0,0,kara,{\k56}私{\k25}た{\k25}ち {\k59}CLIMAX (さ{\k14}い{\k12}こ{\k12}う{\k25}ちょ{\k17}う)
-Comment: 0,0:20:27.21,0:20:27.55,歌JP_center,歌,0,0,0,kara,{\k0}{\k34}(Yeah!){\k0}
+Comment: 0,0:20:27.21,0:20:27.55,歌JP_center,歌,0,0,0,kara,{\k34}(Yeah!)
 Comment: 0,0:20:27.88,0:20:33.34,歌JP_center,歌,0,0,0,kara,{\k34}Viva {\k59}After {\k62}school {\k32}Yeah {\k85}Yeah {\k66}(Hi {\k68}Hi {\k66}Hi {\k50}チーズ！)
 Comment: 0,0:20:33.34,0:20:38.59,歌JP_center,歌,0,0,0,kara,{\k36}Viva {\k57}After {\k62}school {\k34}Yeah {\k82}Yeah {\k72}(Hi {\k68}Hi {\k62}Hi {\k62}ピース！)
 Comment: 0,0:20:38.81,0:20:44.04,歌JP_center,歌,0,0,0,kara,{\k34}Viva {\k59}After {\k62}school {\k32}Yeah {\k85}Yeah {\k66}(Hi {\k68}Hi {\k66}Hi {\k50}チーズ！)
 Comment: 0,0:20:44.29,0:20:49.66,歌JP_center,歌,0,0,0,kara,{\k36}Viva {\k57}After {\k62}school {\k34}Yeah {\k82}Yeah {\k72}(Hi {\k68}Hi {\k62}Hi {\k62}ピース！)
 Comment: 0,0:19:17.96,0:19:23.18,歌CN_center,歌,600,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k472} {\k50}cheese!)
 Comment: 0,0:19:23.41,0:19:28.76,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k473} {\k62}peace!)
-Comment: 0,0:19:29.93,0:19:32.68,歌CN_center,歌,0,0,0,kara,呐呐 我有话要说
-Comment: 0,0:19:32.68,0:19:35.40,歌CN_center,歌,0,0,0,kara,是有好事发生了吗
-Comment: 0,0:19:35.40,0:19:38.21,歌CN_center,歌,0,0,0,kara,围着桌子慢慢讲吧
-Comment: 0,0:19:38.21,0:19:40.97,歌CN_center,歌,0,0,0,kara,放学后 放 放学后 （GoGo）
-Comment: 0,0:19:40.44,0:19:43.65,歌CN_center,歌,0,0,0,kara,自拍的角度 没法找到
-Comment: 0,0:19:43.65,0:19:46.78,歌CN_center,歌,0,0,0,kara,结果是 屏幕上全都是笑脸
-Comment: 0,0:19:48.65,0:19:51.88,歌CN_center,歌,0,0,0,kara,就这样前进吧 (Peace)
-Comment: 0,0:19:51.88,0:19:54.64,歌CN_center,歌,0,0,0,kara,一二三 预备（大概完美！）
-Comment: 0,0:19:54.64,0:19:57.22,歌CN_center,歌,0,0,0,kara,穿着小皮鞋（走吧 各位）
-Comment: 0,0:19:57.22,0:19:59.96,歌CN_center,歌,0,0,0,kara,虽然鞋可能有些不合脚
-Comment: 0,0:19:59.96,0:20:05.16,歌CN_center,歌,0,0,0,kara,也要全力向未来奔去（No.1）
-Comment: 0,0:20:05.16,0:20:08.40,歌CN_center,歌,0,0,0,kara,想紧握这世上的最强与最爱
-Comment: 0,0:20:08.40,0:20:11.60,歌CN_center,歌,0,0,0,kara,绽放的那一天已然开满鲜花
-Comment: 0,0:20:11.60,0:20:15.94,歌CN_center,歌,0,0,0,kara,手牵着手 指向天空
-Comment: 0,0:20:16.04,0:20:19.33,歌CN_center,歌,0,0,0,kara,任何一个 梦想 都不肯放手
-Comment: 0,0:20:19.40,0:20:22.57,歌CN_center,歌,0,0,0,kara,幸福与强大都想收入囊中
-Comment: 0,0:20:22.57,0:20:24.76,歌CN_center,歌,0,0,0,kara,银河也能拯救
-Comment: 0,0:20:24.76,0:20:27.21,歌CN_center,歌,0,0,0,kara,我们从来都是最佳状态
+Comment: 0,0:19:29.93,0:19:32.68,歌CN_center,歌,0,0,0,kara,{\k10}呐{\k10}呐{\k10} {\k10}我{\k10}有{\k10}话{\k10}要{\k10}说
+Comment: 0,0:19:32.68,0:19:35.40,歌CN_center,歌,0,0,0,kara,{\k10}是{\k10}有{\k10}好{\k10}事{\k10}发{\k10}生{\k10}了{\k10}吗
+Comment: 0,0:19:35.40,0:19:38.21,歌CN_center,歌,0,0,0,kara,{\k10}围{\k10}着{\k10}桌{\k10}子{\k10}慢{\k10}慢{\k10}讲{\k10}吧
+Comment: 0,0:19:38.21,0:19:40.97,歌CN_center,歌,0,0,0,kara,{\k10}放{\k10}学{\k10}后{\k10} {\k10}放{\k10} {\k10}放{\k10}学{\k10}后{\k115} {\k32} (Go {\k39}Go)
+Comment: 0,0:19:40.44,0:19:43.65,歌CN_center,歌,0,0,0,kara,{\k10}自{\k10}拍{\k10}的{\k10}角{\k10}度{\k10} {\k10}没{\k10}法{\k10}找{\k10}到
+Comment: 0,0:19:43.65,0:19:46.78,歌CN_center,歌,0,0,0,kara,{\k10}结{\k10}果{\k10}是{\k10} {\k10}屏{\k10}幕{\k10}上{\k10}全{\k10}都{\k10}是{\k10}笑{\k10}脸
+Comment: 0,0:19:48.65,0:19:51.88,歌CN_center,歌,0,0,0,kara,{\k10}就{\k10}这{\k10}样{\k10}前{\k10}进{\k10}吧{\k193} {\k70}(Peace)
+Comment: 0,0:19:51.88,0:19:54.64,歌CN_center,歌,0,0,0,kara,{\k10}一{\k10}二{\k10}三{\k10} {\k10}预{\k102}备{\k124}（大概完美！）
+Comment: 0,0:19:54.64,0:19:57.22,歌CN_center,歌,0,0,0,kara,{\k10}穿{\k10}着{\k10}小{\k10}皮{\k103}鞋{\k115}（走吧 各位）
+Comment: 0,0:19:57.22,0:19:59.96,歌CN_center,歌,0,0,0,kara,{\k10}虽{\k10}然{\k10}鞋{\k10}可{\k10}能{\k10}有{\k10}些{\k10}不{\k10}合{\k10}脚
+Comment: 0,0:19:59.96,0:20:05.16,歌CN_center,歌,0,0,0,kara,{\k10}也{\k10}要{\k10}全{\k10}力{\k10}向{\k10}未{\k10}来{\k10}奔{\k345}去{\k71}（No.{\k24}1）
+Comment: 0,0:20:05.16,0:20:08.40,歌CN_center,歌,0,0,0,kara,{\k10}想{\k10}紧{\k10}握{\k10}这{\k10}世{\k10}上{\k10}的{\k10}最{\k10}强{\k10}与{\k10}最{\k10}爱
+Comment: 0,0:20:08.40,0:20:11.60,歌CN_center,歌,0,0,0,kara,{\k10}绽{\k10}放{\k10}的{\k10}那{\k10}一{\k10}天{\k10}已{\k10}然{\k10}开{\k10}满{\k10}鲜{\k10}花
+Comment: 0,0:20:11.60,0:20:15.94,歌CN_center,歌,0,0,0,kara,{\k10}手{\k10}牵{\k10}着{\k10}手{\k10} {\k10}指{\k10}向{\k10}天{\k10}空
+Comment: 0,0:20:16.04,0:20:19.33,歌CN_center,歌,0,0,0,kara,{\k10}任{\k10}何{\k10}一{\k10}个{\k10} {\k10}梦{\k10}想{\k10} {\k10}都{\k10}不{\k10}肯{\k10}放{\k10}手
+Comment: 0,0:20:19.40,0:20:22.57,歌CN_center,歌,0,0,0,kara,{\k10}幸{\k10}福{\k10}与{\k10}强{\k10}大{\k10}都{\k10}想{\k10}收{\k10}入{\k10}囊{\k10}中
+Comment: 0,0:20:22.57,0:20:24.76,歌CN_center,歌,0,0,0,kara,{\k10}银{\k10}河{\k10}也{\k10}能{\k10}拯{\k10}救
+Comment: 0,0:20:24.76,0:20:27.21,歌CN_center,歌,0,0,0,kara,{\k10}我{\k10}们{\k10}从{\k10}来{\k10}都{\k10}是{\k10}最{\k10}佳{\k10}状{\k10}态
 Comment: 0,0:20:27.88,0:20:33.34,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k472} {\k50}cheese!)
 Comment: 0,0:20:33.34,0:20:38.59,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k473} {\k62}peace!)
 Comment: 0,0:20:38.81,0:20:44.04,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k472} {\k50}cheese!)
