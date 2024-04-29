@@ -1,0 +1,92 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Last Style Storage: Default
+Audio File: C:/Users/scree/Desktop/sc_ep4.mkv
+Video File: C:/Users/scree/Desktop/sc_ep4.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.875000
+Scroll Position: 30
+Active Line: 34
+Video Position: 29441
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 歌CN,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,125,1
+Style: 歌JP,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,70,1
+Style: 歌CN_center,荆南波波黑,60,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,5,0,1,0.6,0,2,70,70,135,1
+Style: 歌JP_center,荆南波波黑,60,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,3,0,1,0.6,0,2,70,70,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:19:18.55,0:19:21.22,歌JP_center,,0,0,0,,{\fscx90\fscy90\fad(150,394)\fn思源黑体 Heavy\c&HFFFFFF&\bord1.5\shad0\pos(423.08,991.34)}梦想盛开After school
+Comment: 0,0:15:08.52,0:15:10.52,歌JP_center,,0,0,0,code once anystyle,houkago = {"&H1C46E5&", "&H903BF9&", "&H02C6FC&", "&HEBC389&", "&H67E690&"}
+Comment: 0,0:15:08.52,0:15:10.52,歌JP_center,,0,0,0,code once anystyle,single_frame = 41.70833333333333; k_time = 1; pi=math.pi; radius = 100; angle_offset = 30 syl_start_offset = -200
+Comment: 0,0:15:10.52,0:15:12.52,歌JP_center,,0,0,0,code once anystyle,local animations = {     linear = function(v1, v2, position)         return CubicBezier(v1, v2, 0, 0, 1, 1, position)     end,     easeInSine = function(v1, v2, position)         return CubicBezier(v1, v2, 0.47, 0, 0.745, 0.715, position)     end,     easeOutSine = function(v1, v2, position)         return CubicBezier(v1, v2, 0.39, 0.575, 0.565, 1, position)     end,     easeInOutSine = function(v1, v2, position)         return CubicBezier(v1, v2, 0.445, 0.05, 0.55, 0.95, position)     end,     easeInQuad = function(v1, v2, position)         return CubicBezier(v1, v2, 0.55, 0.085, 0.68, 0.53, position)     end,     easeOutQuad = function(v1, v2, position)         return CubicBezier(v1, v2, 0.25, 0.46, 0.45, 0.94, position)     end,     easeInOutQuad = function(v1, v2, position)         return CubicBezier(v1, v2, 0.455, 0.03, 0.515, 0.955, position)     end,     easeInCubic = function(v1, v2, position)         return CubicBezier(v1, v2, 0.55, 0.055, 0.675, 0.19, position)     end,     easeOutCubic = function(v1, v2, position)         return CubicBezier(v1, v2, 0.215, 0.61, 0.355, 1, position)     end,     easeInOutCubic = function(v1, v2, position)         return CubicBezier(v1, v2, 0.645, 0.045, 0.355, 1, position)     end,     easeInQuart = function(v1, v2, position)         return CubicBezier(v1, v2, 0.895, 0.03, 0.685, 0.22, position)     end,     easeOutQuart = function(v1, v2, position)         return CubicBezier(v1, v2, 0.165, 0.84, 0.44, 1, position)     end,     easeInOutQuart = function(v1, v2, position)         return CubicBezier(v1, v2, 0.77, 0, 0.175, 1, position)     end,     easeInQuint = function(v1, v2, position)         return CubicBezier(v1, v2, 0.755, 0.05, 0.855, 0.06, position)     end,     easeOutQuint = function(v1, v2, position)         return CubicBezier(v1, v2, 0.23, 1, 0.32, 1, position)     end,     easeInOutQuint = function(v1, v2, position)         return CubicBezier(v1, v2, 0.86, 0, 0.07, 1, position)     end,     easeInExpo = function(v1, v2, position)         return CubicBezier(v1, v2, 0.95, 0.05, 0.795, 0.035, position)     end,     easeOutExpo = function(v1, v2, position)         return CubicBezier(v1, v2, 0.19, 1, 0.22, 1, position)     end,     easeInOutExpo = function(v1, v2, position)         return CubicBezier(v1, v2, 1, 0, 0, 1, position)     end,     easeInCirc = function(v1, v2, position)         return CubicBezier(v1, v2, 0.6, 0.04, 0.98, 0.335, position)     end,     easeOutCirc = function(v1, v2, position)         return CubicBezier(v1, v2, 0.075, 0.82, 0.165, 1, position)     end,     easeInOutCirc = function(v1, v2, position)         return CubicBezier(v1, v2, 0.785, 0.135, 0.15, 0.86, position)     end,     easeInBack = function(v1, v2, position)         return CubicBezier(v1, v2, 0.6, -0.28, 0.735, 0.045, position)     end,     easeOutBack = function(v1, v2, position)         return CubicBezier(v1, v2, 0.175, 0.885, 0.32, 1.275, position)     end,     easeInOutBack = function(v1, v2, position)         return CubicBezier(v1, v2, 0.68, -0.55, 0.265, 1.55, position)     end,     easeOutBounce = function(v1, v2, position)         local n1 = 7.5625         local d1 = 2.75         if position < 1 / d1 then             return v1 + (v2 - v1) * n1 * position * position         elseif position < 2 / d1 then             return v1 + (v2 - v1) * (n1 * (position - 1.5 / d1) * (position - 1.5 / d1) + 0.75)         elseif position < 2.5 / d1 then             return v1 + (v2 - v1) * (n1 * (position - 2.25 / d1) * (position - 2.25 / d1) + 0.9375)         else             return v1 + (v2 - v1) * (n1 * (position - 2.625 / d1) * (position - 2.625 / d1) + 0.984375)         end     end, } animations.easeInBounce = function(v1, v2, position)     return 1 - animations.easeOutBounce(v1, v2, 1 - position) end animations.easeInOutBounce = function(v1, v2, position)     if position < 0.5 then         return animations.easeInBounce(v1, v2, position * 2) * 0.5     else         return animations.easeOutBounce(v1, v2, position * 2 - 1) * 0.5 + 0.5     end end local animations_default = {     easeIn = animations.easeInQuad,     easeOut = animations.easeOutQuad,     easeInOut = animations.easeInOutQuad,     linear = animations.linear, } function Animation(v1, v2, position, type)     local animation = animations[type]     if animation then         return animation(v1, v2, position)     else         if animations_default[type] then             return animations_default[type](v1, v2, position)         end         error("Unknown animation type: " .. type)     end end function CubicBezier(v1, v2, x1, y1, x2, y2, position)     local ax = 3 * x1 - 3 * x2 + 1     local bx = 3 * x2 - 6 * x1     local cx = 3 * x1     local ay = 3 * y1 - 3 * y2 + 1     local by = 3 * y2 - 6 * y1     local cy = 3 * y1     local x = position     local t = 0.5     local epsilon = 0.00001     local Bt = 0     local dBt = 0     for i = 1, 8 do         Bt = ax * t^3 + bx * t^2 + cx * t         if math.abs(Bt - x) < epsilon then             break         end         dBt = 3 * ax * t^2 + 2 * bx * t + cx         t = t - (Bt - x) / dBt     end     local t0 = 0     local t1 = 1     for i = 1, 10 do         if math.abs(Bt - x) < epsilon then             break         end         Bt = ax * t^3 + bx * t^2 + cx * t         if Bt < x then             t0 = t         else             t1 = t         end         t = (t0 + t1) / 2     end     local Bty = ay * t^3 + by * t^2 + cy * t     return v1 + (v2 - v1) * Bty end
+Comment: 0,0:15:10.52,0:15:12.52,歌JP_center,,0,0,0,code once anystyle,function GetCirclePoint(x, y, angle, radius, offsetAngle)     local centerX = x - radius * math.cos(angle)     local centerY = y - radius * math.sin(angle)     local newAngle = angle + offsetAngle     local newX = centerX + radius * math.cos(newAngle)     local newY = centerY + radius * math.sin(newAngle)     return newX, newY end
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,code line anystyle,linestate = {}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,code syl,linestate[syl.i] = {}; linestate[syl.si].angle = math.random(-15,15); linestate[syl.si].size = math.random(90,110); linestate[syl.si].color = util.rand.item(houkago); speed = orgline.duration - syl.start_time < 800 and (orgline.duration - syl.start_time) * 0.5 or 400
+Comment: 0,0:15:12.52,0:15:12.52,歌CN_center,,0,0,0,code syl,linestate[syl.i] = {}; linestate[syl.si].angle = math.random(-5,5); linestate[syl.si].size = math.random(95,115); linestate[syl.si].color = util.rand.item(houkago); speed = orgline.duration - syl.start_time < 800 and (orgline.duration - syl.start_time) * 0.5 or 400
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,template syl noblank nok0 anystyle,!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("f_angle_offset", Animation(math.rad(syl.si % 2 == 0 and angle_offset or -angle_offset), 0,  loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!set("f_size", Animation(linestate[syl.si].size*0.6, linestate[syl.si].size,  loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!set("f_shad", CubicBezier(linestate[syl.si].size*0.4, linestate[syl.si].size, 0.32, 1.25, 0.4, 3.5,loopctx.state.fbf/loopctx.max.fbf))!!set("c_pos", {GetCirclePoint(line.left + syl.center, line.middle, linestate[syl.si].angle, radius,  f_angle_offset)} )!!retime("abs",line.start_time + syl.start_time + syl_start_offset + (single_frame * (loopctx.state.fbf - 1) * k_time),loopctx.state.fbf == loopctx.max.fbf and line.start_time + syl.start_time + syl_start_offset + speed  or line.start_time + syl.start_time + syl_start_offset + (single_frame * loopctx.state.fbf * k_time))!{\an5\pos(!c_pos[1]!,!c_pos[2]!)\frz!linestate[syl.si].angle + math.deg(f_angle_offset)!\fscx!f_size!\fscy!f_size!\c!linestate[syl.si].color!\4c!linestate[syl.si].color!\3c&HFFFFFF&}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,template syl noblank nok0 anystyle,!retime("abs",line.start_time + syl.start_time + syl_start_offset + speed, line.end_time - 400)!{\an5\pos(!c_pos[1]!,!c_pos[2]!)\frz!linestate[syl.si].angle + math.deg(f_angle_offset)!\fscx!linestate[syl.si].size!\fscy!linestate[syl.si].size!\c!linestate[syl.si].color!\c!linestate[syl.si].color!\4c!linestate[syl.si].color!\3c&HFFFFFF&}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,template syl noblank nok0 anystyle,!maxloop("manbaout",6)!!relayer(loopctx.state.manbaout)!!retime("abs",line.end_time - 400, line.end_time)!!set("if_end", loopctx.state.manbaout == loopctx.max.manbaout and true or false)!{\an5\pos(!c_pos[1]!,!c_pos[2]!)\frz!linestate[syl.si].angle + math.deg(f_angle_offset)!\fscx!linestate[syl.si].size!\fscy!linestate[syl.si].size!\c!if_end and linestate[syl.si].color or houkago[loopctx.state.manbaout]!\4c!if_end and linestate[syl.si].color or houkago[loopctx.state.manbaout]!\3c!if_end and "&HFFFFFF&" or houkago[loopctx.state.manbaout]!\clip(!line.left - 10!, 0, !line.right + 10!, 1080)\t(!50* (1 - loopctx.state.manbaout/loopctx.max.manbaout)!,400,!1.2 - loopctx.state.manbaout/loopctx.max.manbaout!,\clip(!line.right + 20!,0,!line.right + 20!,1080))}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,mixin syl anystyle,{\bord!6.5 * (f_size / linestate[syl.si].size)!\shad!6.5 * (f_shad / linestate[syl.si].size)!}
+Comment: 0,0:19:16.20,0:19:17.96,歌JP_center,歌,0,0,0,kara,{\k64}(Everybody {\k45}Let's {\k67}Go!)
+Comment: 0,0:19:17.96,0:19:23.18,歌JP_center,歌,600,0,0,kara,{\k34}Viva {\k59}After {\k62}school {\k32}Yeah {\k85}Yeah {\k66}(Hi {\k68}Hi {\k66}Hi {\k50}チーズ！)
+Comment: 0,0:19:23.41,0:19:28.76,歌JP_center,歌,0,0,0,kara,{\k36}Viva {\k57}After {\k62}school {\k34}Yeah {\k82}Yeah {\k72}(Hi {\k68}Hi {\k62}Hi {\k62}ピース！)
+Comment: 0,0:19:29.93,0:19:32.68,歌JP_center,歌,0,0,0,kara,{\k20}ね{\k18}え{\k16}ね{\k18}え{\k0} {\k34}ちょっ{\k16}と{\k73}話{\k21}聞{\k27}い{\k32}て
+Comment: 0,0:19:32.68,0:19:35.40,歌JP_center,歌,0,0,0,kara,{\k22}-い{\k16}い{\k82}事{\k39}あっ{\k16}た{\k19}ん{\k14}で{\k22}しょ{\k42}う？
+Comment: 0,0:19:35.40,0:19:38.21,歌JP_center,歌,0,0,0,kara,{\k59}机{\k14}か{\k36}こ{\k18}ん{\k32}で {\k57}語{\k10}り{\k11}ま{\k28}しょ{\k16}う
+Comment: 0,0:19:38.21,0:19:40.97,歌JP_center,歌,0,0,0,kara,{\k47}-放{\k19}課{\k45}後{\k0} {\k39}Ho{\k0} {\k33}放{\k20}課{\k37}後 (Go{\k0} {\k36}Go)
+Comment: 0,0:19:40.44,0:19:43.65,歌JP_center,歌,0,0,0,kara,{\k16}自{\k16}撮{\k19}り{\k37}の{\k34}角{\k46}度{\k0} {\k40}キ{\k16}マ{\k37}ら{\k16}な{\k44}い
+Comment: 0,0:19:43.65,0:19:46.78,歌JP_center,歌,0,0,0,kara,{\k36}結{\k67}局{\k0} {\k22}画{\k66}面{\k16}いっ{\k19}ぱ{\k16}い{\k36}笑{\k35}顔
+Comment: 0,0:19:46.78,0:19:48.65,歌JP_center,歌,0,0,0,kara,{\k94}-OK! {\k41}Let's {\k52}go!
+Comment: 0,0:19:48.65,0:19:51.88,歌JP_center,歌,0,0,0,kara,{\k16}こ{\k18}の{\k16}ま{\k37}ま{\k0}で{\k64}進{\k21}も{\k82}う {\k69}(ピース！)
+Comment: 0,0:19:51.88,0:19:54.64,歌JP_center,歌,0,0,0,kara,{\k20}いっ{\k36}せー{\k19}の{\k25}せ{\k57}で {\k16}(多{\k35}分{\k16}カ{\k15}ン{\k17}ペ{\k20}キ！)
+Comment: 0,0:19:54.64,0:19:57.22,歌JP_center,歌,0,0,0,kara,{\k51}ロー{\k17}フ{\k27}ァー{\k61}で{\k0} {\k16}(行{\k17}く{\k20}よ{\k0} {\k16}み{\k12}ん{\k21}な！)
+Comment: 0,0:19:57.22,0:19:59.96,歌JP_center,歌,0,0,0,kara,{\k50}靴{\k22}ズ{\k32}レ{\k34}も{\k16}し{\k17}そ{\k20}う{\k16}だ{\k34}け{\k33}ど
+Comment: 0,0:19:59.96,0:20:05.16,歌JP_center,歌,0,0,0,kara,{\k21}未{\k67}来{\k50}へ{\k34}全{\k36}力{\k17}で{\k16}駆{\k18}け{\k20}て{\k19}行{\k130}く {\k57}(No.{\k35}1!)
+Comment: 0,0:20:05.16,0:20:08.40,歌JP_center,歌,0,0,0,kara,{\k13}世{\k30}界{\k0} {\k30}最{\k39}上{\k0} {\k40}最{\k32}愛{\k0} {\k35}掴{\k18}み{\k34}た{\k53}い
+Comment: 0,0:20:08.40,0:20:11.60,歌JP_center,歌,0,0,0,kara,{\k30}咲{\k30}こ{\k16}う{\k15}と{\k19}し{\k16}た{\k20}そ{\k19}の{\k20}日{\k18}が{\k33}花{\k31}盛{\k53}り
+Comment: 0,0:20:11.60,0:20:15.94,歌JP_center,歌,0,0,0,kara,{\k18}手{\k18}を{\k21}取{\k16}り{\k19}合{\k22}い{\k0} {\k76}空{\k0} {\k66}指{\k34}さ{\k39}し{\k105}て
+Comment: 0,0:20:16.04,0:20:19.33,歌JP_center,歌,0,0,0,kara,{\k34}夢{\k18}は{\k0} {\k39}絶{\k32}対{\k0} {\k30}一{\k41}切{\k0} {\k30}離{\k20}さ{\k36}な{\k49}い
+Comment: 0,0:20:19.40,0:20:22.57,歌JP_center,歌,0,0,0,kara,{\k25}シ{\k36}ア{\k30}ワ{\k20}セ{\k16}も{\k33}強{\k22}さ{\k16}も{\k21}手{\k20}に{\k16}入{\k17}れ{\k45}て
+Comment: 0,0:20:22.57,0:20:24.76,歌JP_center,歌,0,0,0,kara,{\k25}ギ{\k26}ン{\k42}ガ{\k24}も{\k71}救{\k31}う
+Comment: 0,0:20:24.76,0:20:27.21,歌JP_center,歌,0,0,0,kara,{\k56}私{\k25}た{\k25}ち {\k59}CLIMAX (さ{\k14}い{\k12}こ{\k12}う{\k25}ちょ{\k17}う)
+Comment: 0,0:20:27.21,0:20:27.55,歌JP_center,歌,0,0,0,kara,{\k0}{\k34}(Yeah!){\k0}
+Comment: 0,0:20:27.88,0:20:33.34,歌JP_center,歌,0,0,0,kara,{\k34}Viva {\k59}After {\k62}school {\k32}Yeah {\k85}Yeah {\k66}(Hi {\k68}Hi {\k66}Hi {\k50}チーズ！)
+Comment: 0,0:20:33.34,0:20:38.59,歌JP_center,歌,0,0,0,kara,{\k36}Viva {\k57}After {\k62}school {\k34}Yeah {\k82}Yeah {\k72}(Hi {\k68}Hi {\k62}Hi {\k62}ピース！)
+Comment: 0,0:20:38.81,0:20:44.04,歌JP_center,歌,0,0,0,kara,{\k34}Viva {\k59}After {\k62}school {\k32}Yeah {\k85}Yeah {\k66}(Hi {\k68}Hi {\k66}Hi {\k50}チーズ！)
+Comment: 0,0:20:44.29,0:20:49.66,歌JP_center,歌,0,0,0,kara,{\k36}Viva {\k57}After {\k62}school {\k34}Yeah {\k82}Yeah {\k72}(Hi {\k68}Hi {\k62}Hi {\k62}ピース！)
+Comment: 0,0:19:17.96,0:19:23.18,歌CN_center,歌,600,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k472} {\k50}cheese!)
+Comment: 0,0:19:23.41,0:19:28.76,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k473} {\k62}peace!)
+Comment: 0,0:19:29.93,0:19:32.68,歌CN_center,歌,0,0,0,kara,呐呐 我有话要说
+Comment: 0,0:19:32.68,0:19:35.40,歌CN_center,歌,0,0,0,kara,是有好事发生了吗
+Comment: 0,0:19:35.40,0:19:38.21,歌CN_center,歌,0,0,0,kara,围着桌子慢慢讲吧
+Comment: 0,0:19:38.21,0:19:40.97,歌CN_center,歌,0,0,0,kara,放学后 放 放学后 （GoGo）
+Comment: 0,0:19:40.44,0:19:43.65,歌CN_center,歌,0,0,0,kara,自拍的角度 没法找到
+Comment: 0,0:19:43.65,0:19:46.78,歌CN_center,歌,0,0,0,kara,结果是 屏幕上全都是笑脸
+Comment: 0,0:19:48.65,0:19:51.88,歌CN_center,歌,0,0,0,kara,就这样前进吧 (Peace)
+Comment: 0,0:19:51.88,0:19:54.64,歌CN_center,歌,0,0,0,kara,一二三 预备（大概完美！）
+Comment: 0,0:19:54.64,0:19:57.22,歌CN_center,歌,0,0,0,kara,穿着小皮鞋（走吧 各位）
+Comment: 0,0:19:57.22,0:19:59.96,歌CN_center,歌,0,0,0,kara,虽然鞋可能有些不合脚
+Comment: 0,0:19:59.96,0:20:05.16,歌CN_center,歌,0,0,0,kara,也要全力向未来奔去（No.1）
+Comment: 0,0:20:05.16,0:20:08.40,歌CN_center,歌,0,0,0,kara,想紧握这世上的最强与最爱
+Comment: 0,0:20:08.40,0:20:11.60,歌CN_center,歌,0,0,0,kara,绽放的那一天已然开满鲜花
+Comment: 0,0:20:11.60,0:20:15.94,歌CN_center,歌,0,0,0,kara,手牵着手 指向天空
+Comment: 0,0:20:16.04,0:20:19.33,歌CN_center,歌,0,0,0,kara,任何一个 梦想 都不肯放手
+Comment: 0,0:20:19.40,0:20:22.57,歌CN_center,歌,0,0,0,kara,幸福与强大都想收入囊中
+Comment: 0,0:20:22.57,0:20:24.76,歌CN_center,歌,0,0,0,kara,银河也能拯救
+Comment: 0,0:20:24.76,0:20:27.21,歌CN_center,歌,0,0,0,kara,我们从来都是最佳状态
+Comment: 0,0:20:27.88,0:20:33.34,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k472} {\k50}cheese!)
+Comment: 0,0:20:33.34,0:20:38.59,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k473} {\k62}peace!)
+Comment: 0,0:20:38.81,0:20:44.04,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k472} {\k50}cheese!)
+Comment: 0,0:20:44.29,0:20:49.66,歌CN_center,歌,0,0,0,kara,{\k0}Viva {\k0}After {\k0}school {\k0}Yeah {\k0}Yeah {\k0}(Hi {\k0}Hi {\k0}Hi{\k473} {\k62}peace!)
