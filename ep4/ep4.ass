@@ -20,8 +20,7 @@ Video File: C:/Users/scree/Desktop/sc_ep4.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
-Scroll Position: 340
-Active Line: 348
+Active Line: 27
 Video Position: 4111
 
 [V4+ Styles]
@@ -56,18 +55,18 @@ Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle 
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext unless overlap,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&}!line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext if overlap,!line.actor == "" and skip() or ""!{!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20}　{\fscx80}& !line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====TEXTS=====
-Comment: 0,0:00:00.71,0:00:04.81,SC_Bottom,甘奈,0,0,0,kara,ALSTROEMERIA的花语是“对未来的憧憬”\Nアルストロメリアの花言葉は 未来への憧れ
+Comment: 0,0:00:00.71,0:00:04.81,SC_Bottom,甘奈,0,0,0,kara,ALSTROEMERIA{\fscx50} {\fscx100}的花语是{\fscx50} {\fscx100}“对未来的憧憬”\Nアルストロメリアの花言葉は 未来への憧れ
 Comment: 0,0:00:05.61,0:00:08.36,SC_Bottom,甘奈,0,0,0,kara,意为让我们三人一起让笑容之花绽放\N三人で笑顔の花を咲かせたい
 Comment: 0,0:00:09.42,0:00:10.90,SC_Bottom,甘奈,0,0,0,kara,这就是我们\Nそれが甘奈たちの
 Comment: 0,0:00:12.36,0:00:14.16,SC_Bottom,Alstroemeria,0,0,0,kara,对未来的憧憬\N未来への憧れ
 Comment: 0,0:00:40.38,0:00:42.27,SC_Bottom,夏叶,0,0,0,kara,这回是迄今为止最好的一次\N今までで一番の出来ね
-Comment: 0,0:00:43.39,0:00:47.14,SC_Bottom,树里,0,0,0,kara,应该算是合宿的功劳…吗\Nやっぱこれって合宿のせいか なのか
+Comment: 0,0:00:43.39,0:00:47.14,SC_Bottom,树里,0,0,0,kara,应该算是合宿的功劳…{\fscx50} {\fscx100}吗\Nやっぱこれって合宿のせいか なのか
 Comment: 0,0:00:48.01,0:00:50.11,SC_Bottom,智代子,0,0,0,kara,毕竟我们进行了试胆大会…\Nそりゃもう肝試しとか
 Comment: 0,0:00:50.55,0:00:52.28,SC_Bottom,智代子,0,0,0,kara,枕头大战…\N枕投げとか
 Comment: 0,0:00:52.28,0:00:54.85,SC_Bottom,智代子,0,0,0,kara,还有其他各种各样的活动\Nその他諸々のおかげだよ
 Comment: 0,0:00:55.68,0:01:00.50,SC_Bottom,凛世,0,0,0,kara,凛世与大家的羁绊 是否更坚固了呢\N強まったのでしょうか 凛世たちの絆
 Comment: 0,0:01:01.62,0:01:03.00,SC_Bottom,果穗,0,0,0,kara,一定是这样的\Nきっとそうです
-Comment: 0,0:01:03.51,0:01:07.21,SC_Bottom,果穗,0,0,0,kara,JUSTICE Ⅴ也是通过了特训后变强了\Nジャスティスファイブも 特訓でパワーアップしてきました
+Comment: 0,0:01:03.51,0:01:07.21,SC_Bottom,果穗,0,0,0,kara,JUSTICE Ⅴ{\fscx50} {\fscx100}也是通过了特训后变强了\Nジャスティスファイブも 特訓でパワーアップしてきました
 Comment: 0,0:01:09.34,0:01:12.55,SC_Bottom,夏叶,0,0,0,kara,那就趁着这个势头 向顶点进发吧\Nそれなら この勢いでてっぺんを目指そうじゃない
 Comment: 0,0:01:13.56,0:01:16.81,SC_Bottom,夏叶,0,0,0,kara,向着新人偶像的龙门 W.I.N.G.\N新人アイドルユニットの登竜門 ウィングのね
 Comment: 0,0:01:16.81,0:01:17.85,SC_Bottom,果穗,0,0,0,kara,好\Nはい
@@ -79,76 +78,76 @@ Comment: 0,0:01:25.31,0:01:29.19,SC_Bottom,制作人,0,0,0,kara,主办方似乎�
 Comment: 0,0:01:30.14,0:01:31.02,SC_Bottom,制作人,0,0,0,kara,而且啊 果穗\Nしかも果穂
 Comment: 0,0:01:32.10,0:01:34.63,SC_Bottom,制作人,0,0,0,kara,这次的活动是英雄秀\Nそのイベント ヒーローショーだあ
 Comment: 0,0:03:10.59,0:03:11.58,SC_Bottom,甘奈,0,0,0,kara,开始了哦\N行くよ
-Comment: 0,0:03:15.73,0:03:17.68,SC_Bottom,千雪,0,0,0,kara,ALSTROEMERIA的\Nアルストロメリアの
+Comment: 0,0:03:15.73,0:03:17.68,SC_Bottom,千雪,0,0,0,kara,ALSTROEMERIA{\fscx50} {\fscx100}的\Nアルストロメリアの
 Comment: 0,0:03:17.68,0:03:21.22,SC_Bottom,Alstroemeria,0,0,0,kara,温馨的下午茶时间\Nほっこりティータイム
 Comment: 0,0:03:22.57,0:03:24.97,SC_Bottom,甘奈,0,0,0,kara,我们就是…\Nということで 甘奈たち
 Comment: 0,0:03:25.83,0:03:27.69,SC_Bottom,Alstroemeria,0,0,0,kara,ALSTROEMERIA\Nアルストロメリアです
-Comment: 0,0:03:28.24,0:03:32.58,SC_Bottom,千雪,0,0,0,kara,在「温馨的下午茶时间」里 我们ALSTROEMERIA\Nこのほっこりティータイムは 私たちアルストロメリアが
+Comment: 0,0:03:28.24,0:03:32.58,SC_Bottom,千雪,0,0,0,kara,在「温馨的下午茶时间」里 我们{\fscx50} {\fscx100}ALSTROEMERIA\Nこのほっこりティータイムは 私たちアルストロメリアが
 Comment: 0,0:03:32.58,0:03:36.06,SC_Bottom,甜花,0,0,0,kara,会和大家一起度过一段悠闲而温馨的下午茶时间\N皆さんとティータイムをほっこり楽しむ
-Comment: 0,0:03:36.06,0:03:38.81,SC_Bottom,甘奈,0,0,0,kara,百分百「手工制作」的节目哟\N100%手作りの番組です
-Comment: 0,0:03:38.81,0:03:42.49,SC_Bottom,千雪,0,0,0,kara,今天是值得纪念的第一次直播\N今日は記念すべき放送1回目
-Comment: 0,0:03:43.31,0:03:45.78,SC_Bottom,甘奈,0,0,0,kara,93人 105人\N93人 105人
-Comment: 0,0:03:46.12,0:03:48.71,SC_Bottom,甘奈,0,0,0,kara,哇 已经有100人了吗\Nすごい もう100人
+Comment: 0,0:03:36.06,0:03:38.81,SC_Bottom,甘奈,0,0,0,kara,百分百「手工制作」的节目哟\N100%{\fscx50} {\fscx100}手作りの番組です
+Comment: 0,0:03:38.81,0:03:42.49,SC_Bottom,千雪,0,0,0,kara,今天是值得纪念的第一次直播\N今日は記念すべき放送{\fscx50} {\fscx100}1{\fscx50} {\fscx100}回目
+Comment: 0,0:03:43.31,0:03:45.78,SC_Bottom,甘奈,0,0,0,kara,93{\fscx50} {\fscx100}人 105{\fscx50} {\fscx100}人\N93{\fscx50} {\fscx100}人 105{\fscx50} {\fscx100}人
+Comment: 0,0:03:46.12,0:03:48.71,SC_Bottom,甘奈,0,0,0,kara,哇 已经有{\fscx50} {\fscx100}100{\fscx50} {\fscx100}人了吗\Nすごい もう{\fscx50} {\fscx100}100{\fscx50} {\fscx100}人
 Comment: 0,0:03:48.71,0:03:50.35,SC_Bottom,千雪,0,0,0,kara,我好高兴\N嬉しいね
 Comment: 0,0:03:50.35,0:03:51.67,SC_Bottom,甜花,0,0,0,kara,是 是啊\Nう　うん
 Comment: 0,0:03:52.24,0:03:55.24,SC_Bottom,甘奈,0,0,0,kara,能给大家带来笑容就好了啊\Nみんな笑顔になってくれるといいな
-Comment: 0,0:03:58.27,0:04:03.17,SC_Bottom,果穗,0,0,0,kara,就这样守护着地球的和平的就是JUSTICE Ⅴ\Nこうして世界の平和を守り抜いてきたのが ジャスティスファイブなんです
+Comment: 0,0:03:58.27,0:04:03.17,SC_Bottom,果穗,0,0,0,kara,就这样守护着地球的和平的就是{\fscx50} {\fscx100}JUSTICE Ⅴ\Nこうして世界の平和を守り抜いてきたのが ジャスティスファイブなんです
 Comment: 0,0:04:04.50,0:04:06.77,SC_Bottom,树里,0,0,0,kara,很早以前我就有一个问题想问了\N前から思ってたんだけどよ
-Comment: 0,0:04:06.87,0:04:09.86,SC_Bottom,树里,0,0,0,kara,为什么明明有11个人 却叫Five呢\NなんでFiveなのに11人いるんだ
+Comment: 0,0:04:06.87,0:04:09.86,SC_Bottom,树里,0,0,0,kara,为什么明明有{\fscx50} {\fscx100}11{\fscx50} {\fscx100}个人 却叫{\fscx50} {\fscx100}Five{\fscx50} {\fscx100}呢\Nなんで{\fscx50} {\fscx100}Five{\fscx50} {\fscx100}なのに{\fscx50} {\fscx100}11{\fscx50} {\fscx100}人いるんだ
 Comment: 0,0:04:09.86,0:04:10.22,SC_Bottom,果穗,0,0,0,kara,好问题\Nはい
 Comment: 0,0:04:10.62,0:04:14.65,SC_Bottom,果穗,0,0,0,kara,因为随着剧集进展 他们的伙伴也越来越多 变得更强了\Nシリーズを重ねるうちに仲間が増えて パワーアップしたんです
 Comment: 0,0:04:14.97,0:04:17.05,SC_Bottom,智代子,0,0,0,kara,追加角色之类的吗\N追加戦士ってわけか
 Comment: 0,0:04:17.76,0:04:20.40,SC_Bottom,凛世,0,0,0,kara,想必 甚是热闹吧\Nさぞや 賑やかでしょう
-Comment: 0,0:04:20.79,0:04:25.27,SC_Bottom,夏叶,0,0,0,kara,所以这次工作我们会和JUSTICE Ⅴ一起出演对吧\Nとにかく今回の仕事はジャスティス5との共演なのね
+Comment: 0,0:04:20.79,0:04:25.27,SC_Bottom,夏叶,0,0,0,kara,所以这次工作我们会和{\fscx50} {\fscx100}JUSTICE Ⅴ{\fscx50} {\fscx100}一起出演对吧\Nとにかく今回の仕事はジャスティス{\fscx50} {\fscx100}5{\fscx50} {\fscx100}との共演なのね
 Comment: 0,0:04:25.27,0:04:25.95,SC_Bottom,果穗,0,0,0,kara,是的\Nはい
-Comment: 0,0:04:26.26,0:04:30.08,SC_Bottom,果穗,0,0,0,kara,无法相信居然能和憧憬的英雄JUSTICE Ⅴ同台演出\N憧れのジャスティス5と共演できるなんて
+Comment: 0,0:04:26.26,0:04:30.08,SC_Bottom,果穗,0,0,0,kara,无法相信居然能和憧憬的英雄{\fscx50} {\fscx100}JUSTICE Ⅴ{\fscx50} {\fscx100}同台演出\N憧れのジャスティス{\fscx50} {\fscx100}5{\fscx50} {\fscx100}と共演できるなんて
 Comment: 0,0:04:31.37,0:04:34.21,SC_Bottom,果穗,0,0,0,kara,力量蕴藏在正义之心中\N正義の心がパワーを宿す
-Comment: 0,0:04:34.21,0:04:37.14,SC_Bottom,果穗,0,0,0,kara,JUSTICE RED是也\Nジャスティスレッドです
+Comment: 0,0:04:34.21,0:04:37.14,SC_Bottom,果穗,0,0,0,kara,JUSTICE RED{\fscx50} {\fscx100}是也\Nジャスティスレッドです
 Comment: 0,0:04:40.15,0:04:41.13,SC_Bottom,制作人,0,0,0,kara,坏了\Nまずい
 Comment: 0,0:04:41.35,0:04:43.20,SC_Bottom,制作人,0,0,0,kara,这下完蛋了\Nこれはまずいぞ
 Comment: 0,0:04:44.23,0:04:46.49,SC_Bottom,凛世,0,0,0,kara,啊 制作人大人\Nあ プロデューサー様
 Comment: 0,0:04:46.95,0:04:50.14,SC_Bottom,果穗,0,0,0,kara,那个 我们在英雄秀上会干些什么呢\Nあのヒーローショーではどんなことをするんですか
-Comment: 0,0:04:50.30,0:04:54.18,SC_Bottom,果穗,0,0,0,kara,我会努力和JUSTICE Ⅴ一起并肩作战的\N私ジャスティス5と一緒にすっごく頑張りますあ
+Comment: 0,0:04:50.30,0:04:54.18,SC_Bottom,果穗,0,0,0,kara,我会努力和{\fscx50} {\fscx100}JUSTICE Ⅴ{\fscx50} {\fscx100}一起并肩作战的\N私ジャスティス{\fscx50} {\fscx100}5{\fscx50} {\fscx100}と一緒にすっごく頑張りますあ
 Comment: 0,0:04:54.52,0:04:57.83,SC_Bottom,制作人,0,0,0,kara,啊 呃 其实呢\Nあぁ えっとだな
 Comment: 0,0:05:00.86,0:05:02.73,SC_Bottom,制作人,0,0,0,kara,其实这才是这次英雄秀的内容\Nこれが今回のヒーローショーだ
-Comment: 0,0:05:06.43,0:05:09.24,SC_Bottom,果穗,0,0,0,kara,这就是JUSTICE Ⅴ…\Nこれってジャスティス5…
-Comment: 0,0:05:09.96,0:05:12.95,SC_Bottom,果穗,0,0,0,kara,完全不是啊——\Nじゃありません
+Comment: 0,0:05:06.43,0:05:09.24,SC_Bottom,果穗,0,0,0,kara,这就是{\fscx50} {\fscx100}JUSTICE Ⅴ…\Nこれってジャスティス{\fscx50} {\fscx100}5…
+Comment: 0,0:05:09.96,0:05:12.95,SC_Bottom,果穗,0,0,0,kara,完全不是啊{\fscx50} {\fscx100}——\Nじゃありません
 Comment: 0,0:05:13.07,0:05:14.01,SC_Bottom,夏叶,0,0,0,kara,诶？\Nえ
 Comment: 0,0:05:14.01,0:05:15.84,SC_Bottom,智代子,0,0,0,kara,真的耶 感觉确实有点不一样\N本当だ なんか違うご
 Comment: 0,0:05:15.84,0:05:18.01,SC_Bottom,制作人,0,0,0,kara,抱歉啊 果穗\Nめんな果穂
-Comment: 0,0:05:18.01,0:05:21.45,SC_Bottom,制作人,0,0,0,kara,虽然英雄秀确实是那个英雄秀 但并没有JUSTICE Ⅴ\Nヒーローショーはヒーローショーだけど ジャスティス5のじゃないんだ
+Comment: 0,0:05:18.01,0:05:21.45,SC_Bottom,制作人,0,0,0,kara,虽然英雄秀确实是那个英雄秀 但并没有{\fscx50} {\fscx100}JUSTICE Ⅴ\Nヒーローショーはヒーローショーだけど ジャスティス{\fscx50} {\fscx100}5{\fscx50} {\fscx100}のじゃないんだ
 Comment: 0,0:05:22.02,0:05:24.51,SC_Bottom,制作人,0,0,0,kara,让你白期待了一场 对不起\N期待させちゃったよな すまん
-Comment: 0,0:05:26.25,0:05:30.47,SC_Bottom,树里,0,0,0,kara,那这些英雄不是JUSTICE Ⅴ的话 又是谁呢\Nで このヒーロー誰なんだ ジャスティス5じゃなくて
-Comment: 0,0:05:30.85,0:05:32.43,SC_Bottom,果穗,0,0,0,kara,是Pastel Nice\Nパステルナイスです
+Comment: 0,0:05:26.25,0:05:30.47,SC_Bottom,树里,0,0,0,kara,那这些英雄不是{\fscx50} {\fscx100}JUSTICE Ⅴ{\fscx50} {\fscx100}的话 又是谁呢\Nで このヒーロー誰なんだ ジャスティス{\fscx50} {\fscx100}5{\fscx50} {\fscx100}じゃなくて
+Comment: 0,0:05:30.85,0:05:32.43,SC_Bottom,果穗,0,0,0,kara,是{\fscx50} {\fscx100}Pastel Nice\Nパステルナイスです
 Comment: 0,0:05:32.80,0:05:36.26,SC_Bottom,凛世,0,0,0,kara,不知为何 感觉似曾相识\Nそこはかとなく 響きが似ています
 Comment: 0,0:05:36.26,0:05:38.56,SC_Bottom,夏叶,0,0,0,kara,感觉好像在那里看见过\Nどこかで見たことあるわね
-Comment: 0,0:05:39.78,0:05:43.77,SC_Bottom,果穗,0,0,0,kara,Pastel Nice是这附近非常有人气的地方英雄\Nパステルナイスは この辺りで人気のローカルヒーローなんです
+Comment: 0,0:05:39.78,0:05:43.77,SC_Bottom,果穗,0,0,0,kara,Pastel Nice{\fscx50} {\fscx100}是这附近非常有人气的地方英雄\Nパステルナイスは この辺りで人気のローカルヒーローなんです
 Comment: 0,0:05:43.77,0:05:45.53,SC_Bottom,树里,0,0,0,kara,对了 商店街\Nそうか 商店街
 Comment: 0,0:05:46.86,0:05:48.55,SC_Bottom,凛世,0,0,0,kara,确实是在这里\N確かにおられました
 Comment: 0,0:05:49.66,0:05:51.29,SC_Bottom,制作人,0,0,0,kara,这次接到的工作是\N今回いただいた仕事は
-Comment: 0,0:05:51.29,0:05:55.50,SC_Bottom,制作人,0,0,0,kara,Pastel Nice和放学后CLIMAX GIRLS的联动活动\Nこのパステルナイスと放課後クライマックスガールズのコラボイベントなんだよ
+Comment: 0,0:05:51.29,0:05:55.50,SC_Bottom,制作人,0,0,0,kara,Pastel Nice{\fscx50} {\fscx100}和放学后{\fscx50} {\fscx100}CLIMAX GIRLS{\fscx50} {\fscx100}的联动活动\Nこのパステルナイスと放課後クライマックスガールズのコラボイベントなんだよ
 Comment: 0,0:05:55.50,0:05:59.71,SC_Bottom,制作人,0,0,0,kara,主办方打算将英雄秀和演唱会结合起来 点燃现场\Nヒーローショーとライブを組み合わせて みんなに盛り上げてもらいたい
 Comment: 0,0:06:00.12,0:06:02.42,SC_Bottom,制作人,0,0,0,kara,你们当然也会在英雄秀里出演\Nもちろん ヒーローショーにも出てもらうぞ
 Comment: 0,0:06:02.80,0:06:04.17,SC_Bottom,果穗,0,0,0,kara,感觉好有趣\N面白そうです
 Comment: 0,0:06:04.83,0:06:06.17,SC_Bottom,制作人,0,0,0,kara,是 是吗\Nそ そうか
-Comment: 0,0:06:06.42,0:06:10.59,SC_Bottom,果穗,0,0,0,kara,嗯 因为Pastel Nice也是很帅的英雄\Nはい パステルナイスもかっこいいヒーローですから
+Comment: 0,0:06:06.42,0:06:10.59,SC_Bottom,果穗,0,0,0,kara,嗯 因为{\fscx50} {\fscx100}Pastel Nice{\fscx50} {\fscx100}也是很帅的英雄\Nはい パステルナイスもかっこいいヒーローですから
 Comment: 0,0:06:12.15,0:06:15.74,SC_Bottom,凛世,0,0,0,kara,于是乎 我们会在英雄秀里表演什么呢\Nそれで ヒーローショーとは何をするのでしょう
 Comment: 0,0:06:16.59,0:06:17.84,SC_Bottom,制作人,0,0,0,kara,这是台本\Nこれが台本だ
 Comment: 0,0:06:19.89,0:06:21.78,SC_Bottom,,0,0,0,kara,每周音乐热点速报\Nウィークリー・カミング・アップ・ヒット！
 Comment: 0,0:06:21.78,0:06:23.11,SC_Bottom,,0,0,0,kara,下一首（歇段）\Nネクスト・ブレイク！
-Comment: 0,0:06:23.39,0:06:28.22,SC_Bottom,,0,0,0,kara,今天的嘉宾是目前当红偶像组合L'Antica的成员们\Nさあ今日のゲストは今大注目のアイドルユニット アンティーカの皆さんです
+Comment: 0,0:06:23.39,0:06:28.22,SC_Bottom,,0,0,0,kara,今天的嘉宾是目前当红偶像组合{\fscx50} {\fscx100}L'Antica{\fscx50} {\fscx100}的成员们\Nさあ今日のゲストは今大注目のアイドルユニット アンティーカの皆さんです
 Comment: 0,0:06:28.58,0:06:30.59,SC_Bottom,L'Antica,0,0,0,kara,请多指教\Nよろしくお願いします
-Comment: 0,0:06:31.17,0:06:34.58,SC_Bottom,,0,0,0,kara,L'Antica的MV引起了很多讨论呢\Nいやアンティーカのミュージックビデオ話題になってますね
+Comment: 0,0:06:31.17,0:06:34.58,SC_Bottom,,0,0,0,kara,L'Antica{\fscx50} {\fscx100}的{\fscx50} {\fscx100}MV{\fscx50} {\fscx100}引起了很多讨论呢\Nいやアンティーカのミュージックビデオ話題になってますね
 Comment: 0,0:06:34.58,0:06:38.01,SC_Bottom,,0,0,0,kara,我们也是收到了很多留言 称赞效果很酷炫\Nかっこいいっていうメッセージがたくさん届いてますよ
-Comment: 0,0:06:38.01,0:06:41.48,SC_Bottom,恋钟,0,0,0,kara,肥肠…非常感谢\Nありがとう ございます
+Comment: 0,0:06:38.01,0:06:41.48,SC_Bottom,恋钟,0,0,0,kara,肥肠…{\fscx50} {\fscx100}非常感谢\Nありがとう ございます
 Comment: 0,0:06:41.95,0:06:43.79,SC_Bottom,雾子,0,0,0,kara,很高兴能这么受欢迎\Nとっても嬉しいです
 Comment: 0,0:06:44.09,0:06:46.06,SC_Bottom,咲耶,0,0,0,kara,虽然拍摄过程很艰苦\N撮影は大変でしたが
 Comment: 0,0:06:46.06,0:06:47.46,SC_Bottom,结华,0,0,0,kara,但这些都是值得的\Nその甲斐あって
 Comment: 0,0:06:48.58,0:06:50.97,SC_Bottom,结华,0,0,0,kara,这对我们来说是真的是很重要的作品\N大事な作品になりました
 Comment: 0,0:06:50.97,0:06:53.22,SC_Bottom,摩美美,0,0,0,kara,虽然被淋成落汤鸡了就是了\Nびしょびしょだったけと
 Comment: 0,0:06:53.22,0:06:54.60,SC_Bottom,结华,0,0,0,kara,等一下 Mamimin\Nちょっまみみん
-Comment: 0,0:06:56.02,0:07:00.44,SC_Bottom,恋钟,0,0,0,kara,多亏各位的付出 才拍出了这么好的MV\Nみんなのおかげで最高のMVになったと
-Comment: 0,0:07:00.65,0:07:04.83,SC_Bottom,恋钟,0,0,0,kara,我希望能有更多更多的人来看这部MV\Nもっといっぱいの人に見てほしかーって思います
+Comment: 0,0:06:56.02,0:07:00.44,SC_Bottom,恋钟,0,0,0,kara,多亏各位的付出 才拍出了这么好的{\fscx50} {\fscx100}MV\Nみんなのおかげで最高の{\fscx50} {\fscx100}MV{\fscx50} {\fscx100}になったと
+Comment: 0,0:07:00.65,0:07:04.83,SC_Bottom,恋钟,0,0,0,kara,我希望能有更多更多的人来看这部{\fscx50} {\fscx100}MV\Nもっといっぱいの人に見てほしかーって思います
 Comment: 0,0:07:10.46,0:07:13.96,SC_Bottom,灯织,0,0,0,kara,我的舞技还远远比不上八宫\N私じゃ はちみやさんのダンスにはかなわない
 Comment: 0,0:07:13.96,0:07:15.83,SC_Bottom,灯织,0,0,0,kara,唱功也比不上樱木\N歌だって櫻木さんには
 Comment: 0,0:07:25.08,0:07:27.71,SC_Bottom,真乃,0,0,0,kara,对不起 我又出错了\Nごめんなさい 私また
@@ -174,7 +173,7 @@ Comment: 0,0:08:32.98,0:08:36.74,SC_Bottom,夏叶,0,0,0,kara,嗯 要在正式演
 Comment: 0,0:08:36.74,0:08:37.90,SC_Bottom,智代子,0,0,0,kara,好\Nはーい
 Comment: 0,0:08:37.90,0:08:41.16,SC_Bottom,凛世,0,0,0,kara,我们需要注意一些什么呢\Nどのようなところに気をつければよいのでしょうか
 Comment: 0,0:08:41.16,0:08:44.32,SC_Bottom,果穗,0,0,0,kara,要点在于 求救的剧情\Nポイントは 助けを求めるところです
-Comment: 0,0:08:44.32,0:08:49.79,SC_Bottom,果穗,0,0,0,kara,因为这个故事是让Pastel Nice来解救被绑架的我们\N敵にさらわれた私たちを パステルナイスが助けに来てくれるお話ですから
+Comment: 0,0:08:44.32,0:08:49.79,SC_Bottom,果穗,0,0,0,kara,因为这个故事是让{\fscx50} {\fscx100}Pastel Nice{\fscx50} {\fscx100}来解救被绑架的我们\N敵にさらわれた私たちを パステルナイスが助けに来てくれるお話ですから
 Comment: 0,0:08:49.79,0:08:52.44,SC_Bottom,智代子,0,0,0,kara,我们全员都被绑架了 对吧\N私たち全員さらわれるんだよね
 Comment: 0,0:08:52.44,0:08:53.71,SC_Bottom,树里,0,0,0,kara,全员？\N全員？
 Comment: 0,0:08:53.71,0:08:59.26,SC_Bottom,果穗,0,0,0,kara,是的 被抓走的人多 才能让表演秀更热闹\Nはい いっぱいいっぱいさらわれた方が ショーも盛り上がります
@@ -205,7 +204,7 @@ Comment: 0,0:10:17.05,0:10:19.24,SC_Bottom,,0,0,0,kara,Pastel Beam!\Nパステ�
 Comment: 0,0:10:19.24,0:10:20.59,SC_Bottom,,0,0,0,kara,啊 不要乱跑\Nあ待ちなさい
 Comment: 0,0:10:25.12,0:10:27.44,SC_Bottom,智代子,0,0,0,kara,看到那些小孩子后就充满能量了呢\Nあんな子見ると燃えちゃうよね
 Comment: 0,0:10:27.44,0:10:28.16,SC_Bottom,果穗,0,0,0,kara,是啊\Nはい
-Comment: 0,0:10:28.16,0:10:32.29,SC_Bottom,树里,0,0,0,kara,不光光是Live 英雄秀也要全力以赴才行啊\Nライブはもちろんだけど ヒーローショーも気合いでねーとな
+Comment: 0,0:10:28.16,0:10:32.29,SC_Bottom,树里,0,0,0,kara,不光光是{\fscx50} {\fscx100}Live 英雄秀也要全力以赴才行啊\Nライブはもちろんだけど ヒーローショーも気合いでねーとな
 Comment: 0,0:10:32.29,0:10:35.05,SC_Bottom,凛世,0,0,0,kara,明白 已经万事具备了\Nはい 準備は万全です
 Comment: 0,0:10:35.05,0:10:37.94,SC_Bottom,夏叶,0,0,0,kara,剩下的就是不遗余力做出最棒的演出\Nあとは全力で本番に臨むだけよ
 Comment: 0,0:10:38.90,0:10:41.22,SC_Bottom,制作人,0,0,0,kara,放学后的凝聚力真强啊\Nホークらはすごくまとまってるな
@@ -214,22 +213,22 @@ Comment: 0,0:10:43.83,0:10:47.29,SC_Bottom,制作人,0,0,0,kara,我也应该尽�
 Comment: 0,0:10:49.03,0:10:51.50,SC_Bottom,,0,0,0,kara,非常抱歉 没有敲门\Nすみません ノックもしないで
 Comment: 0,0:10:51.50,0:10:52.99,SC_Bottom,制作人,0,0,0,kara,出 出了什么事吗\Nど どうかしたんですか
 Comment: 0,0:10:52.99,0:10:53.67,SC_Bottom,,0,0,0,kara,其实…\N実は
-Comment: 0,0:10:53.90,0:10:57.35,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,诶?!\Nえー?!
-Comment: 0,0:10:57.86,0:11:00.10,SC_Bottom,制作人,0,0,0,kara,Pastel Nice来不了？\Nパステルナイスが来られない
+Comment: 0,0:10:53.90,0:10:57.35,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,诶？！\Nえー？！
+Comment: 0,0:10:57.86,0:11:00.10,SC_Bottom,制作人,0,0,0,kara,Pastel Nice{\fscx50} {\fscx100}来不了？\Nパステルナイスが来られない
 Comment: 0,0:11:01.54,0:11:02.43,SC_Bottom,制作人,0,0,0,kara,福冈？\N福岡
 Comment: 0,0:11:02.95,0:11:05.81,SC_Bottom,,0,0,0,kara,是的 因为日程表出错了\Nええ パステルさん スケジュールを間違えて
-Comment: 0,0:11:05.81,0:11:08.25,SC_Bottom,,0,0,0,kara,Pastel去了博多的英雄祭\N博多のヒーローフェスに行っちゃったみたいで
+Comment: 0,0:11:05.81,0:11:08.25,SC_Bottom,,0,0,0,kara,Pastel{\fscx50} {\fscx100}去了博多的英雄祭\N博多のヒーローフェスに行っちゃったみたいで
 Comment: 0,0:11:08.71,0:11:10.10,SC_Bottom,凛世,0,0,0,kara,Pastel…\Nパステルさん
 Comment: 0,0:11:10.10,0:11:11.85,SC_Bottom,,0,0,0,kara,该怎么办啊\Nどうしたらいいのか
 Comment: 0,0:11:11.95,0:11:15.27,SC_Bottom,,0,0,0,kara,还请给我们一些时间 我们会想出办法的\Nあ少しお時間をください 対応検討しますので
 Comment: 0,0:11:15.27,0:11:17.72,SC_Bottom,制作人,0,0,0,kara,好 好的 了解了\Nえ ええ 承知しました
 Comment: 0,0:11:17.72,0:11:19.24,SC_Bottom,,0,0,0,kara,非常抱歉\N申し訳ありません
-Comment: 0,0:11:24.69,0:11:29.46,SC_Bottom,树里,0,0,0,kara,没有Pastel的话 英雄秀也就办不成了吧…\Nパステルさんがいなけりゃ ヒーローショーはできないよな
+Comment: 0,0:11:24.69,0:11:29.46,SC_Bottom,树里,0,0,0,kara,没有{\fscx50} {\fscx100}Pastel{\fscx50} {\fscx100}的话 英雄秀也就办不成了吧…\Nパステルさんがいなけりゃ ヒーローショーはできないよな
 Comment: 0,0:11:30.15,0:11:31.06,SC_Bottom,果穗,0,0,0,kara,我…\N私
 Comment: 0,0:11:31.59,0:11:35.50,SC_Bottom,果穗,0,0,0,kara,我从小就喜欢看英雄秀\N私 小さい頃からヒーローショーが大好きで
 Comment: 0,0:11:36.53,0:11:41.28,SC_Bottom,果穗,0,0,0,kara,能见到英雄本人 会让我感觉到高兴和激动\Nヒーローに会えるのがすっごく楽しみで わくわくしてました
 Comment: 0,0:11:42.84,0:11:47.85,SC_Bottom,果穗,0,0,0,kara,肯定也有很多孩子在期待着今天的英雄秀\Nきっと今日も たくさんの子がヒーローショーを楽しみにしてます
-Comment: 0,0:11:50.22,0:11:52.31,SC_Bottom,果穗,0,0,0,kara,所以…所以我…\Nだから だから
+Comment: 0,0:11:50.22,0:11:52.31,SC_Bottom,果穗,0,0,0,kara,所以…{\fscx50} {\fscx100}所以我…\Nだから だから
 Comment: 0,0:11:58.31,0:11:59.27,SC_Bottom,凛世,0,0,0,kara,果穗…\Nかほさん
 Comment: 0,0:12:00.20,0:12:01.37,SC_Bottom,夏叶,0,0,0,kara,是啊\Nそうね
 Comment: 0,0:12:03.83,0:12:04.88,SC_Bottom,夏叶,0,0,0,kara,制作人\Nプロデューサー
@@ -246,7 +245,7 @@ Comment: 0,0:12:32.54,0:12:36.24,SC_Bottom,夏叶,0,0,0,kara,确实 单凭我们
 Comment: 0,0:12:36.66,0:12:40.59,SC_Bottom,夏叶,0,0,0,kara,但是 你会协助我们的吧 制作人 \Nでも 力を貸してくれればよね プロデューサー
 Comment: 0,0:12:46.73,0:12:47.45,SC_Bottom,制作人,0,0,0,kara,是啊\Nああ
 Comment: 0,0:12:49.15,0:12:51.47,SC_Bottom,制作人,0,0,0,kara,我知道这事并不简单\Nそう簡単なことじゃないのはわかっています
-Comment: 0,0:12:51.47,0:12:53.67,SC_Bottom,,0,0,0,kara,距离开演还有3小时\N本番まであと3時間
+Comment: 0,0:12:51.47,0:12:53.67,SC_Bottom,,0,0,0,kara,距离开演还有{\fscx50} {\fscx100}3{\fscx50} {\fscx100}小时\N本番まであと{\fscx50} {\fscx100}3{\fscx50} {\fscx100}時間
 Comment: 0,0:12:53.67,0:12:55.62,SC_Bottom,,0,0,0,kara,我们连服装都提供不了\N衣装も何にもないですよ
 Comment: 0,0:12:55.96,0:13:00.72,SC_Bottom,制作人,0,0,0,kara,虽然灯光还有音响什么的 都需要做出很多调整\N照明 音響 いろいろな調整をしていただく必要が出てきますが
 Comment: 0,0:13:01.13,0:13:03.26,SC_Bottom,制作人,0,0,0,kara,但我保证肯定能成为一场有趣的演出\N楽しんでもらえるショーができるはずです
@@ -265,7 +264,7 @@ Comment: 0,0:13:37.20,0:13:43.04,SC_Bottom,,0,0,0,kara,非常感谢 我这边也
 Comment: 0,0:13:43.04,0:13:44.29,SC_Bottom,果穗,0,0,0,kara,好\Nよーし
 Comment: 0,0:13:44.29,0:13:48.09,SC_Bottom,果穗,0,0,0,kara,让我们一同打造出最好的英雄秀吧\N皆さんで一緒に 最高のヒーローショーを作りましょう
 Comment: 0,0:13:48.36,0:13:49.90,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,噢噢\Nおお
-Comment: 0,0:13:54.12,0:13:56.02,SC_Bottom,制作人,0,0,0,kara,距离开演还有2个半小时\N開演まであと2時間半
+Comment: 0,0:13:54.12,0:13:56.02,SC_Bottom,制作人,0,0,0,kara,距离开演还有{\fscx50} {\fscx100}2{\fscx50} {\fscx100}个半小时\N開演まであと{\fscx50} {\fscx100}2{\fscx50} {\fscx100}時間半
 Comment: 0,0:13:56.96,0:13:58.94,SC_Bottom,制作人,0,0,0,kara,已经迫在眉睫了 能赶上吗\N間に合うか ギリギリだ
 Comment: 0,0:14:01.09,0:14:02.72,SC_Bottom,树里,0,0,0,kara,这家应该会有需要的东西吧\Nここありそうじゃないか
 Comment: 0,0:14:02.72,0:14:05.87,SC_Bottom,智代子,0,0,0,kara,嗯 我去看看那边的店铺\Nうん 私あっちのお店も見てくるね
@@ -275,14 +274,14 @@ Comment: 0,0:14:12.65,0:14:13.37,SC_Bottom,智代子,0,0,0,kara,嗯\Nうん
 Comment: 0,0:14:13.93,0:14:16.83,SC_Bottom,夏叶,0,0,0,kara,剧情流程大概就是这样吧\Nお話の流れはだいたいできたわね
 Comment: 0,0:14:17.16,0:14:20.05,SC_Bottom,凛世,0,0,0,kara,说起来 反派该怎么办\Nそういえば 悪役はどうしましょう
 Comment: 0,0:14:20.05,0:14:21.86,SC_Bottom,果穗,0,0,0,kara,这个已经定好了\Nそれならもう決まってます
-Comment: 0,0:14:23.35,0:14:25.72,SC_Bottom,制作人,0,0,0,kara,距离开演还有30分钟\N開演まで あと30分
-Comment: 0,0:14:26.37,0:14:30.43,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,放学后CLIMAX GIRLS的英雄秀和Live\N放課後クライマックスガールズ ヒーローショー&ライブです
+Comment: 0,0:14:23.35,0:14:25.72,SC_Bottom,制作人,0,0,0,kara,距离开演还有{\fscx50} {\fscx100}30{\fscx50} {\fscx100}分钟\N開演まで あと{\fscx50} {\fscx100}30{\fscx50} {\fscx100}分
+Comment: 0,0:14:26.37,0:14:30.43,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,放学后{\fscx50} {\fscx100}CLIMAX GIRLS{\fscx50} {\fscx100}的英雄秀和{\fscx50} {\fscx100}Live\N放課後クライマックスガールズ ヒーローショー{\fscx50} {\fscx100}&{\fscx50} {\fscx100}ライブです
 Comment: 0,0:14:30.65,0:14:33.70,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,请务必来主舞台看看\Nぜひメインステージに見に来てください
 Comment: 0,0:14:33.70,0:14:34.97,SC_Bottom,,0,0,0,kara,嘿\Nおい
 Comment: 0,0:14:35.28,0:14:37.39,SC_Bottom,,0,0,0,kara,我把啦啦队带来了\N応援団 連れてきたぞ
 Comment: 0,0:14:38.57,0:14:39.79,SC_Bottom,树里,0,0,0,kara,谢啦\Nありがとな
 Comment: 0,0:14:43.86,0:14:44.98,SC_Bottom,制作人,0,0,0,kara,感觉不对\N違うか
-Comment: 0,0:14:48.07,0:14:49.64,SC_Bottom,果穗,0,0,0,kara,距离正式演出还剩10分钟\N本番10分前です
+Comment: 0,0:14:48.07,0:14:49.64,SC_Bottom,果穗,0,0,0,kara,距离正式演出还剩{\fscx50} {\fscx100}10{\fscx50} {\fscx100}分钟\N本番{\fscx50} {\fscx100}10{\fscx50} {\fscx100}分前です
 Comment: 0,0:14:50.82,0:14:54.23,SC_Bottom,果穗,0,0,0,kara,观众们会来看演出吗\Nお客さん 集まってくれてるでしょうか
 Comment: 0,0:15:07.32,0:15:08.82,SC_Bottom,果穗,0,0,0,kara,好多人啊\Nすごいです
 Comment: 0,0:15:11.37,0:15:14.41,SC_Bottom,夏叶,0,0,0,kara,来吧 让我们创造出最棒的舞台吧\Nさあ 最高のステージにするわよ
@@ -295,21 +294,21 @@ Comment: 0,0:15:34.89,0:15:37.77,SC_Bottom,智代子,0,0,0,kara,放学后 Pink!\
 Comment: 0,0:15:39.36,0:15:42.83,SC_Bottom,树里,0,0,0,kara,放学后 Yellow!\N放クラ イエロー
 Comment: 0,0:15:44.12,0:15:47.46,SC_Bottom,凛世,0,0,0,kara,放学后 Blue.\N放クラプルー
 Comment: 0,0:15:48.86,0:15:51.83,SC_Bottom,夏叶,0,0,0,kara,放学后 Green!\N放クラグリーン
-Comment: 0,0:15:52.46,0:15:56.14,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,我们就是偶像英雄 “放学后CLIMAX GIRLS”\Nアイドルヒーロー 放課後プライマックスガールズ
+Comment: 0,0:15:52.46,0:15:56.14,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,我们就是偶像英雄{\fscx50} {\fscx100}“放学后{\fscx50} {\fscx100}CLIMAX GIRLS”\Nアイドルヒーロー 放課後プライマックスガールズ
 Comment: 0,0:15:59.03,0:16:02.48,SC_Bottom,果穗,0,0,0,kara,大家的城市 就由我们来守护这份热闹\Nみんなの街は あたしたちが盛り上げます
 Comment: 0,0:16:04.57,0:16:06.56,SC_Bottom,？？？,0,0,0,kara,那可不好说哦\Nそれはどうかな
 Comment: 0,0:16:06.56,0:16:08.44,SC_Bottom,凛世,0,0,0,kara,谁 是谁啊\Nだ、誰でしょう
 Comment: 0,0:16:10.72,0:16:13.57,SC_Bottom,扫兴者,0,0,0,kara,吾名为扫兴者（莫里萨格尔）\Nわが名は モリサゲル（盛り下げる）
 Comment: 0,0:16:14.09,0:16:20.16,SC_Bottom,扫兴者,0,0,0,kara,吾将给此城镇 此会场 与之寒风\Nわが輩がこの街を この会場を 盛り下げる
 Comment: 0,0:16:21.67,0:16:23.72,SC_Bottom,果穗,0,0,0,kara,我们不会让你得逞的\Nそんなことはさせません
-Comment: 0,0:16:23.72,0:16:28.13,SC_Bottom,夏叶,0,0,0,kara,我们5个人齐心协力 一定能把气氛点燃\N私たち5人の力を合わせて 絶対に盛り上げてみせるわ
+Comment: 0,0:16:23.72,0:16:28.13,SC_Bottom,夏叶,0,0,0,kara,我们{\fscx50} {\fscx100}5{\fscx50} {\fscx100}个人齐心协力 一定能把气氛点燃\N私たち{\fscx50} {\fscx100}5{\fscx50} {\fscx100}人の力を合わせて 絶対に盛り上げてみせるわ
 Comment: 0,0:16:31.23,0:16:34.62,SC_Bottom,扫兴者,0,0,0,kara,到底要选哪个呢\Nだーれーにーしーよーうーかーなー
 Comment: 0,0:16:35.31,0:16:36.55,SC_Bottom,扫兴者,0,0,0,kara,就你了\Nお前だー
 Comment: 0,0:16:37.07,0:16:38.43,SC_Bottom,智代子,0,0,0,kara,放学后 Blue!\N放クラ ブルー
 Comment: 0,0:16:39.20,0:16:42.10,SC_Bottom,凛世,0,0,0,kara,请 救救我\Nお助け ください
-Comment: 0,0:16:42.36,0:16:46.77,SC_Bottom,扫兴者,0,0,0,kara,凑不齐5人的话 你们就使不出全力\N5人いなければ お前らも力を発揮できまい
+Comment: 0,0:16:42.36,0:16:46.77,SC_Bottom,扫兴者,0,0,0,kara,凑不齐{\fscx50} {\fscx100}5{\fscx50} {\fscx100}人的话 你们就使不出全力\N5{\fscx50} {\fscx100}人いなければ お前らも力を発揮できまい
 Comment: 0,0:16:47.30,0:16:49.29,SC_Bottom,树里,0,0,0,kara,手段太肮脏了吧 扫兴者\N汚ねーぞモリサゲル
-Comment: 0,0:16:49.88,0:16:51.86,SC_Bottom,凛世,0,300,0,kara,啊啦—\Nあれー
+Comment: 0,0:16:49.88,0:16:51.86,SC_Bottom,凛世,0,300,0,kara,啊啦{\fscx50} {\fscx100}—\Nあれー
 Comment: 0,0:16:51.06,0:16:52.10,SC_Bottom,果穗,300,0,0,kara,站住！\N待って
 Comment: 0,0:16:55.76,0:16:57.28,SC_Bottom,果穗,0,600,0,kara,放学后 Blue!\N放クラブルー
 Comment: 0,0:16:56.20,0:16:57.15,SC_Bottom,树里,0,0,0,kara,去哪儿了\Nどこにいくんだ
@@ -318,50 +317,50 @@ Comment: 0,0:16:58.25,0:17:01.18,SC_Bottom,智代子,0,0,0,kara,大家 我们能
 Comment: 0,0:17:05.39,0:17:08.12,SC_Bottom,凛世,0,0,0,kara,她们成功把氛围炒热了呢\N盛り上がって参りましたね
 Comment: 0,0:17:08.12,0:17:10.50,SC_Bottom,制作人,0,0,0,kara,是啊 马上就成功了\Nああ、もうひと頑張りだ
 Comment: 0,0:17:10.50,0:17:11.13,SC_Bottom,凛世,0,0,0,kara,嗯\Nはい
-Comment: 0,0:17:12.81,0:17:15.43,SC_Bottom,果穗,0,0,0,kara,有人看见扫兴者去哪了吗\Nどこへ行ったか見ませんでしたかー?
-Comment: 0,0:17:15.77,0:17:17.76,SC_Bottom,夏叶,0,0,0,kara,放学后 Blue?\N放クラブルー?
-Comment: 0,0:17:18.24,0:17:21.13,SC_Bottom,智代子,0,0,0,kara,你在哪里 放学后Blue?\Nどこなの?放クラブルー
-Comment: 0,0:17:22.53,0:17:24.25,SC_Bottom,,0,300,0,kara,加油\N頑張れー!
-Comment: 0,0:17:22.92,0:17:24.25,SC_Bottom,,300,0,0,kara,加油\N頑張ってー!
+Comment: 0,0:17:12.81,0:17:15.43,SC_Bottom,果穗,0,0,0,kara,有人看见扫兴者去哪了吗\Nどこへ行ったか見ませんでしたかー？
+Comment: 0,0:17:15.77,0:17:17.76,SC_Bottom,夏叶,0,0,0,kara,放学后 Blue?\N放クラブルー？
+Comment: 0,0:17:18.24,0:17:21.13,SC_Bottom,智代子,0,0,0,kara,你在哪里 放学后{\fscx50} {\fscx100}Blue?\Nどこなの？放クラブルー
+Comment: 0,0:17:22.53,0:17:24.25,SC_Bottom,,0,300,0,kara,加油\N頑張れー！
+Comment: 0,0:17:22.92,0:17:24.25,SC_Bottom,,300,0,0,kara,加油\N頑張ってー！
 Comment: 0,0:17:24.57,0:17:26.62,SC_Bottom,树里,0,0,0,kara,嗯 谢谢啦\Nああ、ありがとなー
 Comment: 0,0:17:27.71,0:17:29.93,SC_Bottom,,0,0,0,kara,噢 看起来很有趣啊\Nお、なんか盛り上がってるなー
 Comment: 0,0:17:32.28,0:17:34.41,SC_Bottom,夏叶,0,0,0,kara,怎么办 完全跟丢了\N完全に見失ってしまったわー
 Comment: 0,0:17:36.74,0:17:40.32,SC_Bottom,扫兴者,0,0,0,kara,看来还需要进一步冷场呢\Nまだまだ盛り下げ足りないようだなー
 Comment: 0,0:17:40.32,0:17:44.70,SC_Bottom,扫兴者,0,0,0,kara,我要再带走一个人 让气氛更加冷却\Nもう一人連れ去って、もっと盛り下げー
-Comment: 0,0:17:45.00,0:17:48.04,SC_Bottom,果穗,0,0,0,kara,扫兴者 快现身\N盛り下げるー!姿を現せー!
+Comment: 0,0:17:45.00,0:17:48.04,SC_Bottom,果穗,0,0,0,kara,扫兴者 快现身\N盛り下げるー！姿を現せー！
 Comment: 0,0:17:47.03,0:17:50.54,SC_Top,扫兴者,0,0,0,kara,到底要选哪个呢\Nだーれーにしーよーうかーなー
-Comment: 0,0:17:52.23,0:17:53.84,SC_Bottom,智代子,0,0,0,kara,大家 怎么了\Nどうしたの?みんなー!
-Comment: 0,0:17:53.84,0:17:56.04,SC_Bottom,,0,0,0,kara,背后！\Nうしろー!
-Comment: 0,0:17:56.04,0:17:57.84,SC_Bottom,树里,0,0,0,kara,可恶 到底在哪里\Nくそー!どこだー!
-Comment: 0,0:17:59.44,0:18:01.54,SC_Bottom,,0,0,0,kara,背后——！\Nうしろー!
-Comment: 0,0:18:01.54,0:18:03.06,SC_Bottom,夏叶,0,0,0,kara,诶？背后？\Nえ?うしろー?
+Comment: 0,0:17:52.23,0:17:53.84,SC_Bottom,智代子,0,0,0,kara,大家 怎么了\Nどうしたの？みんなー！
+Comment: 0,0:17:53.84,0:17:56.04,SC_Bottom,,0,0,0,kara,背后！\Nうしろー！
+Comment: 0,0:17:56.04,0:17:57.84,SC_Bottom,树里,0,0,0,kara,可恶 到底在哪里\Nくそー！どこだー！
+Comment: 0,0:17:59.44,0:18:01.54,SC_Bottom,,0,0,0,kara,背后{\fscx50} {\fscx100}——！\Nうしろー！
+Comment: 0,0:18:01.54,0:18:03.06,SC_Bottom,夏叶,0,0,0,kara,诶？背后？\Nえ？うしろー？
 Comment: 0,0:18:04.92,0:18:07.54,SC_Bottom,扫兴者,0,0,0,kara,看来观众们很碍事啊\N会場の邪魔が入ったか
 Comment: 0,0:18:07.54,0:18:08.83,SC_Bottom,夏叶,0,0,0,kara,找到你了\Nこんなところに
 Comment: 0,0:18:09.48,0:18:12.23,SC_Bottom,夏叶,0,0,0,kara,做好觉悟吧 扫兴者\N覚悟しなさい、盛り下げーる
-Comment: 0,0:18:13.22,0:18:18.57,SC_Bottom,扫兴者,0,0,0,kara,不要啊 火热的气氛让我更加虚弱了\Nやめろー!盛り上がると力が出ないのだー!
-Comment: 0,0:18:18.86,0:18:19.75,SC_Bottom,果穗,0,0,0,kara,趁现在\N今です!
-Comment: 0,0:18:22.78,0:18:23.64,SC_Bottom,扫兴者,0,0,0,kara,什么——\Nなにー?
-Comment: 0,0:18:23.64,0:18:25.33,SC_Bottom,夏叶,0,0,0,kara,束手就擒吧\N観念しなさい!
-Comment: 0,0:18:28.75,0:18:32.77,SC_Bottom,果穗,0,0,0,kara,让会场热热闹闹地 来打倒扫兴者吧\N会場全体で盛り上がって、モリサゲルを倒すんです!
-Comment: 0,0:18:33.06,0:18:36.91,SC_Bottom,果穗,0,0,0,kara,请让我们听到大家的声音 耶——！\Nみんなの声を聞かせてくださーい!イエーイ!
-Comment: 0,0:18:36.91,0:18:38.93,SC_Top,,0,0,0,kara,耶——！\Nイエーイ!
-Comment: 0,0:18:39.03,0:18:41.51,SC_Bottom,树里,0,0,0,kara,还不够 耶——！\Nまだまだ!イエーイ!
-Comment: 0,0:18:41.51,0:18:42.39,SC_Top,,0,0,0,kara,耶——！\Nイエーイ!
-Comment: 0,0:18:42.39,0:18:43.74,SC_Bottom,智代子,0,0,0,kara,再来再来\Nもっともっと!
-Comment: 0,0:18:43.74,0:18:44.57,SC_Top,,0,0,0,kara,耶——！\Nイエーイ!
-Comment: 0,0:18:44.57,0:18:45.31,SC_Bottom,凛世,0,0,0,kara,更多\Nもっと!
-Comment: 0,0:18:45.31,0:18:45.93,SC_Top,,0,0,0,kara,耶——！\Nイエーイ!
-Comment: 0,0:18:45.93,0:18:48.89,SC_Bottom,夏叶,0,0,0,kara,最后一次 越大声越好 耶——！\N最後は思いっきり!イエーイ!
-Comment: 0,0:18:48.89,0:18:50.59,SC_Top,,0,0,0,kara,耶——！\Nイエーイ!
-Comment: 0,0:18:50.59,0:18:51.86,SC_Bottom,夏叶,0,0,0,kara,谢谢大家\Nありがとう!
-Comment: 0,0:18:52.12,0:18:55.33,SC_Bottom,智代子,0,0,0,kara,多亏了大家 我们准备完成了\Nみんなのおかげで、準備オッケー!
+Comment: 0,0:18:13.22,0:18:18.57,SC_Bottom,扫兴者,0,0,0,kara,不要啊 火热的气氛让我更加虚弱了\Nやめろー！盛り上がると力が出ないのだー！
+Comment: 0,0:18:18.86,0:18:19.75,SC_Bottom,果穗,0,0,0,kara,趁现在\N今です！
+Comment: 0,0:18:22.78,0:18:23.64,SC_Bottom,扫兴者,0,0,0,kara,什么{\fscx50} {\fscx100}——\Nなにー？
+Comment: 0,0:18:23.64,0:18:25.33,SC_Bottom,夏叶,0,0,0,kara,束手就擒吧\N観念しなさい！
+Comment: 0,0:18:28.75,0:18:32.77,SC_Bottom,果穗,0,0,0,kara,让会场热热闹闹地 来打倒扫兴者吧\N会場全体で盛り上がって、モリサゲルを倒すんです！
+Comment: 0,0:18:33.06,0:18:36.91,SC_Bottom,果穗,0,0,0,kara,请让我们听到大家的声音 耶{\fscx50} {\fscx100}——！\Nみんなの声を聞かせてくださーい！イエーイ！
+Comment: 0,0:18:36.91,0:18:38.93,SC_Top,,0,0,0,kara,耶{\fscx50} {\fscx100}——！\Nイエーイ！
+Comment: 0,0:18:39.03,0:18:41.51,SC_Bottom,树里,0,0,0,kara,还不够 耶{\fscx50} {\fscx100}——！\Nまだまだ！イエーイ！
+Comment: 0,0:18:41.51,0:18:42.39,SC_Top,,0,0,0,kara,耶{\fscx50} {\fscx100}——！\Nイエーイ！
+Comment: 0,0:18:42.39,0:18:43.74,SC_Bottom,智代子,0,0,0,kara,再来再来\Nもっともっと！
+Comment: 0,0:18:43.74,0:18:44.57,SC_Top,,0,0,0,kara,耶{\fscx50} {\fscx100}——！\Nイエーイ！
+Comment: 0,0:18:44.57,0:18:45.31,SC_Bottom,凛世,0,0,0,kara,更多\Nもっと！
+Comment: 0,0:18:45.31,0:18:45.93,SC_Top,,0,0,0,kara,耶{\fscx50} {\fscx100}——！\Nイエーイ！
+Comment: 0,0:18:45.93,0:18:48.89,SC_Bottom,夏叶,0,0,0,kara,最后一次 越大声越好 耶{\fscx50} {\fscx100}——！\N最後は思いっきり！イエーイ！
+Comment: 0,0:18:48.89,0:18:50.59,SC_Top,,0,0,0,kara,耶{\fscx50} {\fscx100}——！\Nイエーイ！
+Comment: 0,0:18:50.59,0:18:51.86,SC_Bottom,夏叶,0,0,0,kara,谢谢大家\Nありがとう！
+Comment: 0,0:18:52.12,0:18:55.33,SC_Bottom,智代子,0,0,0,kara,多亏了大家 我们准备完成了\Nみんなのおかげで、準備オッケー！
 Comment: 0,0:18:55.52,0:18:58.01,SC_Bottom,凛世,0,0,0,kara,放学后的必杀技\N放クラの必殺技
 Comment: 0,0:18:58.01,0:18:59.86,SC_Bottom,树里,0,0,0,kara,尝尝这招\Nつらいやがれ
-Comment: 0,0:18:59.86,0:19:04.19,SC_Bottom,果穗,0,0,0,kara,放学后CLIMAX GIRLS 向着世界最强的偶像\Nホントのクライマックスガールズ 最強のアイドルにー
+Comment: 0,0:18:59.86,0:19:04.19,SC_Bottom,果穗,0,0,0,kara,放学后{\fscx50} {\fscx100}CLIMAX GIRLS 向着世界最强的偶像\Nホントのクライマックスガールズ 最強のアイドルにー
 Comment: 0,0:19:04.19,0:19:05.44,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,变身\N変身
-Comment: 0,0:19:09.71,0:19:13.05,SC_Bottom,果穗,0,0,0,kara,大家 把你们的力量借给我\Nみーんなー!力を足してください
-Comment: 0,0:19:13.92,0:19:16.00,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,梦想盛开After school!\N夢咲きAfter school
-Comment: 0,0:20:55.64,0:20:59.43,SC_Bottom,扫兴者,0,0,0,kara,干得不错嘛 放学后CLIMAX GIRLS\Nやるな、オオカドクライマックスガールズ!
+Comment: 0,0:19:09.71,0:19:13.05,SC_Bottom,果穗,0,0,0,kara,大家 把你们的力量借给我\Nみーんなー！力を足してください
+Comment: 0,0:19:13.92,0:19:16.00,SC_Bottom,放学后CLIMAX GIRLS,0,0,0,kara,梦想盛开{\fscx50} {\fscx100}After school!\N夢咲き{\fscx50} {\fscx100}After school
+Comment: 0,0:20:55.64,0:20:59.43,SC_Bottom,扫兴者,0,0,0,kara,干得不错嘛 放学后{\fscx50} {\fscx100}CLIMAX GIRLS\Nやるな、オオカドクライマックスガールズ！
 Comment: 0,0:20:59.43,0:21:02.73,SC_Bottom,扫兴者,0,0,0,kara,能把会场气氛炒得这么火热\N会場をこんなに盛り上げるとは…
 Comment: 0,0:21:02.73,0:21:06.16,SC_Bottom,扫兴者,0,0,0,kara,给我记住了\N覚えてろよ
 Comment: 0,0:21:06.45,0:21:08.66,SC_Bottom,,0,0,0,kara,放学后 太帅了\N放クラかっこいい
@@ -380,7 +379,7 @@ Comment: 0,0:21:55.94,0:21:59.60,SC_Bottom,智代子,0,0,0,kara,制作人先生 
 Comment: 0,0:21:59.76,0:22:01.06,SC_Bottom,树里,0,0,0,kara,你就是想说这句话是吧\N言いたいだけだろ
 Comment: 0,0:22:03.80,0:22:10.65,SC_Bottom,果穗,0,0,0,kara,这样的话 就把整个城镇 不 整个世界的人都凝聚进来吧\Nそれなら この街全部 いえ もっともっと世界中だって巻き込んじゃいます
 Comment: 0,0:22:10.65,0:22:11.64,SC_Bottom,夏叶,0,0,0,kara,好啊\Nいいわね
-Comment: 0,0:22:11.95,0:22:19.50,SC_Bottom,夏叶,0,0,0,kara,放学后CLIMAX GIRLS 凝聚世界 向着顶点前进\N放課後クライマックスガールズ 世界を巻き込んでてっぺんを目指すわよはい
+Comment: 0,0:22:11.95,0:22:19.50,SC_Bottom,夏叶,0,0,0,kara,放学后{\fscx50} {\fscx100}CLIMAX GIRLS 凝聚世界 向着顶点前进\N放課後クライマックスガールズ 世界を巻き込んでてっぺんを目指すわよはい
 Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,insert/insert01.ass
 Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,screen/screen.ass
 Comment: 0,0:02:51.44,0:02:51.48,Default,,0,0,0,import-shifted,../op_sc.ass
