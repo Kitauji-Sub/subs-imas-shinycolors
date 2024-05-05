@@ -19,8 +19,7 @@ Video File: C:/Users/scree/Desktop/sc_ep5.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.875000
-Scroll Position: 219
-Active Line: 231
+Active Line: 8
 Video Position: 4709
 
 [V4+ Styles]
@@ -40,9 +39,9 @@ Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:00:00.00,0:00:03.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
 Dialogue: 0,0:00:15.93,0:00:19.50,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}三人的阵型
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
-Dialogue: 0,0:06:58.75,0:07:01.86,注释,,0,0,0,,注：应该neta自TBS节目COUNT DOWN TV
-Dialogue: 0,0:13:27.16,0:13:31.12,注释,,0,0,0,,注：分镜构图致敬「くもりガラスの銀曜日」活动\N获取的S-SSR卡「宝石色のしおり」風野灯織
-Dialogue: 0,0:17:44.13,0:17:47.50,注释,,0,0,0,,注：THE IDOLM@STER SHINY COLORS\N\h\h\h\h\h\h\h\hBRILLI@NT WING 02 ヒカリのdestination\N\h\h\h\h\h\h\h\hCD专辑封面
+Dialogue: 9,0:06:58.75,0:07:01.86,注释,,0,0,0,,注：应该neta自TBS节目COUNT DOWN TV
+Dialogue: 9,0:13:27.16,0:13:31.12,注释,,0,0,0,,注：分镜构图致敬「くもりガラスの銀曜日」活动\N获取的S-SSR卡「宝石色のしおり」風野灯織
+Dialogue: 9,0:17:44.13,0:17:47.50,注释,,0,0,0,,注：THE IDOLM@STER SHINY COLORS\N\h\h\h\h\h\h\h\hBRILLI@NT WING 02 ヒカリのdestination\N\h\h\h\h\h\h\h\hCD专辑封面
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,colors,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", } function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,utility,0,0,0,code once anystyle,function string:split(delimiter)     local result = {}     local from = 1     local delim_from, delim_to = string.find(self, delimiter, from, true)     while delim_from do         if (delim_from ~= 1) then             table.insert(result, string.sub(self, from, delim_from-1))         end         from = delim_to + 1         delim_from, delim_to = string.find(self, delimiter, from, true)     end     if (from <= #self) then table.insert(result, string.sub(self, from)) end     return result end
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,global settings,0,0,0,code once anystyle,_zh_jp_gap = 45; graphic_height_bottom = 30; graphic_height_top = 25; tc_fontname = "獅尾圓體-Bold"
@@ -195,7 +194,7 @@ Comment: 0,0:12:17.13,0:12:18.38,SC_Bottom,灯织,0,0,0,kara,是 是什么啊\N�
 Comment: 0,0:12:18.76,0:12:24.00,SC_Bottom,巡,0,0,0,kara,因为之后我们三人会一直在一起 所以练习也三个人一起吧\Nこれからずっと{\fscx50} {\fscx100}3{\fscx50} {\fscx100}人なんだから、練習だって{\fscx50} {\fscx100}3{\fscx50} {\fscx100}人でやろうよ！
 Comment: 0,0:12:24.47,0:12:30.02,SC_Bottom,巡,0,0,0,kara,毕竟我们是一个组合了 对吧\Nだって せっかく同じユニットになれたんだからさ そうでしょ？
 Comment: 0,0:12:31.79,0:12:33.23,SC_Bottom,灯织,0,0,0,kara,八宫…\N八宮さん...
-Comment: 0,0:12:35.48,0:12:37.85,SC_Bottom,灯织,0,0,0,kara,不 你说得对 谢谢你 巡\Nうん そうだよね
+Comment: 0,0:12:35.48,0:12:37.85,SC_Bottom,灯织,0,0,0,kara,不 你说得对\Nうん そうだよね
 Comment: 0,0:12:38.56,0:12:40.57,SC_Bottom,灯织,0,0,0,kara,谢谢你 巡\Nありがとう めぐる
 Comment: 0,0:12:43.41,0:12:44.25,SC_Bottom,巡,0,0,0,kara,嗯！\Nうん
 Comment: 0,0:12:46.58,0:12:48.09,SC_Bottom,灯织,0,0,0,kara,让我们一起加油吧\N一緒に頑張ろう
