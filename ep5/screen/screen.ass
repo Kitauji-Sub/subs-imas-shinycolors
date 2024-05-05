@@ -14,8 +14,8 @@ Video File: C:/Users/scree/Desktop/sc_ep5.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 1.000000
-Scroll Position: 674
-Active Line: 680
+Scroll Position: 655
+Active Line: 681
 Video Position: 19352
 
 [V4+ Styles]
@@ -705,7 +705,7 @@ Dialogue: 0,0:13:26.99,0:13:27.03,OnScreen,,0,0,0,,{=303=306}{\alpha&H00&\fn思�
 Dialogue: 0,0:13:27.03,0:13:27.07,OnScreen,,0,0,0,,{=303=306}{\alpha&H00&\fn思源黑体\b0\c&H97968B&\fax-0.246895\fscx78.82\fscy60.96\frz-10.0571\frx2.7667\fry-0.6739\org(1382.66,299.56)\pos(1386.56,311.76)}illumination STARS
 Dialogue: 0,0:13:27.07,0:13:27.11,OnScreen,,0,0,0,,{=303=306}{\alpha&H00&\fn思源黑体\b0\c&H97968B&\fax-0.246895\fscx78.82\fscy60.96\frz-10.0571\frx2.7667\fry-0.6739\org(1382.65,299.66)\pos(1386.55,311.86)}illumination STARS
 Dialogue: 0,0:13:27.11,0:13:27.16,OnScreen,,0,0,0,,{=303=306}{\alpha&H00&\fn思源黑体\b0\c&H97968B&\fax-0.246895\fscx78.82\fscy60.96\frz-10.0571\frx2.7667\fry-0.6739\org(1382.64,299.96)\pos(1386.54,312.16)}illumination STARS
-Dialogue: 0,0:17:44.12,0:17:47.50,OnScreen,,0,0,0,,{=315}{\fn@Misans\b0\fax0.119839\fscx249.52\fscy209.13\frz-97.2259\frx1.3355\fry-2.0732\org(770.08,382.61)\pos(764.1,424.44)}光之destination
+Dialogue: 0,0:17:44.12,0:17:47.50,OnScreen,,0,0,0,,{=315}{\fn@MiSans\b0\fax0.119839\fscx249.52\fscy209.13\frz-97.2259\frx1.3355\fry-2.0732\org(770.08,382.61)\pos(764.1,424.44)}光之destination
 
 [Aegisub Extradata]
 Data: 0,_aegi_perspective_ambient_plane,e708.75;-114.10#7C1543.31;113.60#7C1543.31;753.60#7C493.56;753.60
