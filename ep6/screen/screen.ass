@@ -1,0 +1,74 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 06 (1080p) [8BB1B1EA].mkv
+Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 06 (1080p) [8BB1B1EA].mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.875000
+Scroll Position: 27
+Active Line: 47
+Video Position: 34391
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:01:43.47,0:01:45.12,Signs,SIGN,0,0,0,,{\bord5\b0\frx20\fry10\pos(291,165)\frz13.78\3c&H342109&}W.I.N.G. Office
+Comment: 0,0:01:43.47,0:01:45.12,Signs,SIGN,0,0,0,,{\fs15\bord3\b0\frx20\fry10\3c&H342109&\frz15.05\pos(413,302)}Answer
+Comment: 0,0:01:43.47,0:01:45.12,Signs,SIGN,0,0,0,,{\fs15\bord3\b0\frx20\fry10\3c&H342109&\frz15.05\pos(305,330)}Reject
+Comment: 0,0:04:48.72,0:04:51.93,Signs,SIGN,0,0,0,,{\fnTimes New Roman\bord3\c&H000000&\3c&H8DA2A6&\pos(357,175)\b0\frx12\fry18\frz354.9}Office
+Comment: 0,0:07:12.11,0:07:15.12,Signs,SIGN,0,0,0,,{\bord4\c&H00D8FF&\3c&HF8F8F8&\frx4\fry8\frz9.462\pos(319,60)}W.I.N.G. To Do List
+Comment: 0,0:07:12.11,0:07:15.12,Signs,SIGN,0,0,0,,{\fs11\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz9.462\pos(331,86)}Build stamina to perform double set list
+Comment: 0,0:07:12.11,0:07:15.12,Signs,SIGN,0,0,0,,{\an1\fs11\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz9.462\pos(249,139)}Pay attention to\N finger and toe tips during choreography
+Comment: 0,0:07:12.11,0:07:15.12,Signs,SIGN,0,0,0,,{\an1\fs11\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz9.462\pos(260,174)}Work on clear pronunciation of vowels
+Comment: 0,0:07:12.11,0:07:15.12,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz9.462\pos(267,220)}Increase expressiveness of ups and\Ndowns of song's story
+Comment: 0,0:07:12.11,0:07:15.12,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz9.462\pos(282,269)}Revise formations to make\Neveryone look bigger
+Comment: 0,0:07:12.11,0:07:15.12,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz9.462\pos(287,315)}Incorporate rhythm into ups and\Ndowns of dance lesson
+Comment: 0,0:07:37.81,0:07:39.68,Signs,SIGN,0,0,0,,{\an8}Sent you today's footage! Thank you in advance!
+Comment: 0,0:07:38.49,0:07:39.68,Signs,SIGN,0,0,0,,{\fnComic Sans MS\fs19\bord4\c&H342109&\3c&HFEFEFF&\fscx101\fscy78\frz9.099\pos(287,181)}Look\Nat this!
+Comment: 0,0:07:42.85,0:07:46.77,Signs,SIGN,0,0,0,,{\fs13\bord3\c&HE18B7B&\3c&HFEFEFF&\frx2\fry6\pos(311,159)\frz4.243}Close Coverage Documentary Proposal
+Comment: 0,0:12:18.59,0:12:27.01,Signs,SIGN,0,0,0,,{\an8bord2\c&HAD6150&\3c&HF6F6FF&}A Close Look! 283 Productions\N~Road to W.I.N.G.~
+Comment: 0,0:15:55.18,0:15:57.60,Signs,SIGN,0,0,0,,{\fnComic Sans MS\pos(324,71)\frx2\fry10\frz357.7\c&HFF563C&\3c&HFFFFFF&}Congratulations on Performing at\N{\shad1\fs30\c&HD4BF24&\3c&HFFFFFF&\4c&H000097&}W.I.N.G.
+Comment: 0,0:15:55.18,0:15:57.60,Signs,SIGN,0,0,0,,{\an3\fs14\fnComic Sans MS\frx2\fry10\frz357.7\c&HD648E8&\3c&HFFFFFF&\pos(536,168)}We're {\u1}totally{\u0} gonna win!!\NTsukioka Kogane
+Comment: 0,0:15:55.18,0:15:57.60,Signs,SIGN,0,0,0,,{\an1\fs14\fnComic Sans MS\frx2\fry10\frz357.7\c&HD411B3&\3c&HFFFFFF&\pos(151,181)}Don't worry, \NI'll do a good job\NTanaka Mamimi
+Comment: 0,0:15:55.18,0:15:57.60,Signs,SIGN,0,0,0,,{\an3\fs14\fnComic Sans MS\frx2\fry10\c&HD4BF24&\3c&HFFFFFF&\frz9.49\pos(549,242)}Let's deliver\Nour brilliance\Nto the audience!\NShirase Sakuya
+Comment: 0,0:15:55.18,0:15:57.60,Signs,SIGN,0,0,0,,{\an3\fs14\fnComic Sans MS\frx2\fry10\c&H487E46&\3c&HFFFFFF&\frz9.49\pos(472,218)}No one\N can stop us\Nfrom evolving!!\NMitsumine Yuika
+Comment: 0,0:15:55.18,0:15:57.60,Signs,SIGN,0,0,0,,{\an1\fs19\fnComic Sans MS\frx2\fry10\c&HD73866&\3c&HFFFFFF&\frz0.1223\pos(83.444,262.111)}Leave a message!!!
+Comment: 0,0:16:21.12,0:16:24.17,Signs,SIGN,0,0,0,,{\fs18\bord2\c&H00D8FF&\3c&H0059BD&\pos(429,136)\frz356.4}W.I.N.G. To Do List\N{\an1\fs13\bord2\c&H0C0C0C&\3c&H518CCE&}Pay attention to finger and toe tips\Nduring choreography\NIncrease expressiveness of\Nups and downs of song's story\NWork on smiling onstage!
+Comment: 0,0:16:27.17,0:16:29.48,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&H36B6AE&\3c&HFFFFFF&\frz9.49\pos(515,81)}I hope lots\Nof people smile\NOsaki Amana
+Comment: 0,0:16:27.17,0:16:29.48,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&HBF5FCB&\3c&HFFFFFF&\frz9.49\pos(612,194)}May the stage bloom\N with alstroemeria!\NKuwayama Chiyuki
+Comment: 0,0:16:27.17,0:16:29.48,Signs,SIGN,0,0,0,,{\an1\fs19\fnComic Sans MS\frx2\fry10\c&HBE402D&\3c&HFFFFFF&\frz9.49\pos(100,342)}Let's have\N tons of fun together!!\N{\c&H36B6AE&}Hachimiya Meguru
+Comment: 0,0:16:30.03,0:16:32.17,Signs,SIGN,0,0,0,,{\an1\fs19\fnComic Sans MS\frx2\fry10\c&HD411B3&\3c&HFFFFFF&\frz9.49\pos(147,341)}Being an idol\Nis so fun!!!!!!\NOsaki Tenka
+Comment: 0,0:16:30.03,0:16:32.17,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&H9A2BF1&\3c&HFFFFFF&\frz9.49\pos(147,124)}I'll do my best!!\NSakuragi Mano
+Comment: 0,0:16:30.03,0:16:32.17,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&HE1AA7B&\3c&HFFFFFF&\frz9.49\pos(130,190)}I want to shine\Neven brighter...!!\NKazano Hiori
+Comment: 0,0:16:30.03,0:16:32.17,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&HE1AA7B&\3c&HFFFFFF&\frz9.49\pos(242,191)}You're so bright, Hiori
+Comment: 0,0:16:36.74,0:16:38.64,Signs,SIGN PINK,0,0,0,,{\fs14\c&HD648E8&\3c&HFFFFFF&\pos(252.444,70.667)}Areas to Work On
+Comment: 0,0:16:36.74,0:16:38.64,Signs,SIGN TEAL,0,0,0,,{\fs13\c&H879A13&\3c&HFFFFFF&\pos(257.778,91.111)}Check Again!!
+Comment: 0,0:16:36.74,0:16:38.64,Signs,SIGN BLACK,0,0,0,,{\fs15\c&H6C5954&\3c&HFFFFFF&\pos(350.222,77.778)}Alstroemeria
+Comment: 0,0:17:07.38,0:17:09.94,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&H00A5FA&\3c&HD8E6F8&\frz357.4\pos(122.223,121.11)}Let's go all out!!\NSaijo Juri
+Comment: 0,0:17:07.38,0:17:09.94,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&H22CB6F&\3c&HD8E6F8&\pos(535.556,41.999)\frz1.797}Here we go, everyone!!\NArisugawa Natsuha
+Comment: 0,0:17:07.38,0:17:09.94,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&H7A2CF1&\3c&HD8E6F8&\frz357.4\pos(620.001,236.666)}I hope we have\Nthe sweetest time\NSonoda Chiyoko
+Comment: 0,0:17:07.38,0:17:09.94,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&HA49E8C&\3c&HD8E6F8&\pos(406.667,335.332)\frz0.8815}Let us have a fair fight\NMorino Rinze
+Comment: 0,0:17:09.98,0:17:12.23,Signs,SIGN,0,0,0,,{\an3\fs19\fnComic Sans MS\frx2\fry10\c&H062B4D&\3c&HEBEEF2&\frz6.329\pos(315.111,131.777)}We are number one!\NKomiya Kaho
+Comment: 0,0:17:30.23,0:17:32.61,Signs,SIGN,0,0,0,,{\an8\fs25\c&H1D1DDB&\3c&HFFFFFF&}Tomorrow Is
+Comment: 0,0:17:32.61,0:17:34.94,Signs,SIGN,0,0,0,,{\an8\fs25\c&HFFFFFF&\3c&H1D1DDB&}The Show
+Comment: 0,0:18:09.81,0:18:12.82,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz2.128\pos(241.857,46.286)}Increase expressiveness of ups and\Ndowns of song's story
+Comment: 0,0:18:09.81,0:18:12.82,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz2.578\pos(243.143,93)}Revise formations to make\Neveryone look bigger
+Comment: 0,0:18:09.81,0:18:12.82,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz3.025\pos(245.857,139)}Incorporate rhythm into ups and\Ndowns of dance lesson
+Comment: 0,0:18:09.81,0:18:12.82,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\frz3.025\pos(249.286,184.715)}Improve synchronization\N from front, back, and sides
+Comment: 0,0:18:09.81,0:18:12.82,Signs,SIGN,0,0,0,,{\an1\fs12\bord4\c&H6C5954&\3c&HF8F8F8&\frx4\fry8\pos(247,216.714)\frz1.679}Work on smiling onstage!
+Comment: 0,0:18:09.81,0:18:12.82,Signs,SIGN,0,0,0,,{\an1\fs15\bord4\c&H00A5FA&\3c&HF8F8F8&\frx4\fry8\frz3.025\pos(245.857,273.857)}New
+Comment: 0,0:20:40.52,0:20:41.94,Signs,SIGN,0,0,0,,{\an0\fs12\bord2\c&H6C5954&\3c&HF8F8F8&\frz359.7\frx4\fry20\pos(314.428,173.286)}283\NProductions
+Comment: 0,0:22:25.17,0:22:30.03,Signs,SIGN,0,0,0,,{\pos(320,244)\c&HFAEBD9&\3c&H976E63&}~Road to W.I.N.G.~
+Comment: 0,0:23:51.26,0:23:59.77,Signs,SIGN,0,0,0,,{\fnComic Sans MS\fs30\c&H5E5E65&\3c&HEBEEF2&\frx356\fry24\frz6.232\pos(244.572,106.857)}Let's do\Nour best!
+Comment: 0,0:24:00.04,0:24:05.25,Signs,SIGN,0,0,0,,{\fs15\pos(532.857,342.857)}Illustration by: Hayashi Kewi
