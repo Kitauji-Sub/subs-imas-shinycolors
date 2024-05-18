@@ -1,0 +1,44 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 07 (1080p) [BFBF7BC6].mkv
+Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 07 (1080p) [BFBF7BC6].mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 1.000000
+Scroll Position: 6
+Active Line: 18
+Video Position: 28744
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:03:33.81,0:03:37.19,OnScreen,,0,0,0,track,
+Comment: 0,0:03:46.08,0:03:49.25,OnScreen,,0,0,0,track,
+Comment: 0,0:03:53.92,0:04:01.97,OnScreen,,0,0,0,,
+Comment: 0,0:06:19.02,0:06:27.65,OnScreen,,0,0,0,track,
+Comment: 0,0:06:27.65,0:06:30.53,OnScreen,,0,0,0,,
+Comment: 0,0:06:38.54,0:06:41.79,OnScreen,,0,0,0,track,
+Comment: 0,0:06:45.30,0:06:45.44,OnScreen,,0,0,0,track,
+Comment: 0,0:06:45.52,0:06:47.84,OnScreen,,0,0,0,track,
+Comment: 0,0:08:40.62,0:08:44.12,OnScreen,,0,0,0,,
+Comment: 0,0:08:55.05,0:09:00.14,OnScreen,,0,0,0,track,
+Comment: 0,0:09:00.14,0:09:10.57,OnScreen,,0,0,0,,
+Comment: 0,0:09:18.20,0:09:21.24,OnScreen,,0,0,0,,
+Comment: 0,0:12:38.48,0:12:46.03,OnScreen,,0,0,0,,
+Comment: 0,0:14:42.73,0:14:45.61,OnScreen,,0,0,0,,
+Comment: 0,0:14:43.79,0:14:45.61,OnScreen,,0,0,0,,
+Comment: 0,0:15:28.19,0:15:36.49,OnScreen,,0,0,0,track,
+Comment: 0,0:16:37.94,0:16:40.86,OnScreen,,0,0,0,track,
+Comment: 0,0:16:41.31,0:16:44.32,OnScreen,,0,0,0,track,
+Comment: 0,0:19:54.46,0:19:58.89,OnScreen,,0,0,0,track,
