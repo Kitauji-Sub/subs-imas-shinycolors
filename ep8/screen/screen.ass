@@ -1,0 +1,24 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Active Line: 3
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:15:28.28,0:15:32.57,Signs,SIGN,0,0,0,,{\fs12\c&H404040&\3c&HEDEDED&\frz6.438\move(258,195,258,177,22,4276)}Good evening
+Dialogue: 0,0:15:28.28,0:15:32.57,Signs,SIGN,0,0,0,,{\an1\fs12\c&H404040&\3c&HEDEDED&\frz6.438\move(231,260,229,239,22,4234)}Sakuya, Mamimi, and Kiriko\Nare heading to the party!
+Dialogue: 0,0:15:28.28,0:15:32.57,Signs,SIGN,0,0,0,,{\an1\fs12\c&H404040&\3c&HEDEDED&\frz6.438\move(229,312,228,294,22,4234)}I haven't heard from Kogane yet
+Dialogue: 0,0:18:30.54,0:18:34.25,Signs,SIGN,0,0,0,,{\an8\c&HEB8061&}1st {\c&HEBD762&}Live\N{\c&H4FEEE9&}Kickoff Party!!
+Dialogue: 0,0:18:34.25,0:18:36.76,Signs,SIGN,0,0,0,,{\an8\c&HEB8061&}1st {\c&HEBD762&}Live\N{\c&H4FEEE9&}Kickoff Party!!
+Dialogue: 0,0:24:00.04,0:24:05.25,Signs,SIGN,0,0,0,,{\fs15\pos(532.857,342.857)}Illustration by: Kamo Kamen
