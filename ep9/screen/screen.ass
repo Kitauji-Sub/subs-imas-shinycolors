@@ -1,0 +1,33 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 09 (1080p) [8AC6E655].mkv
+Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 09 (1080p) [8AC6E655].mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.500000
+Video Position: 3210
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:02:13.88,0:02:15.28,Signs,SIGN,0,0,0,,{\fs14\frz21.72\pos(95.666,49.889)}Karaoke Dojo
+Dialogue: 0,0:08:50.46,0:08:53.95,Signs,SIGN,0,0,0,,{\an8\3c&H0D0D54&\shad2\4c&H0000A9&\pos(476.8,147.2)}Karaoke Dojo
+Dialogue: 0,0:09:03.31,0:09:05.35,Signs,SIGN,0,0,0,,{\fs18\bord2\c&H3A3A3A&\frx44\fry20\pos(170.286,270.285)\org(172.571,278.285)\frz110.4\3c&HEDEDED&}Tsubasa Gravity
+Dialogue: 0,0:10:38.03,0:10:40.36,Signs,SIGN,0,0,0,,{\fs15\bord2\c&H414148&\3c&HE9E9E9&\frx40\fry354\frz335.2\pos(361.143,40.572)}Tsubasa Gravity
+Dialogue: 0,0:13:01.42,0:13:05.01,Signs,SIGN,0,0,0,,{\fs15\bord2\c&H414148&\3c&HE9E9E9&\frx40\fry354\frz354.7\move(316.572,52.001,314.286,62.287,27,3530)}Tsubasa Gravity
+Dialogue: 0,0:17:05.79,0:17:10.36,Signs,SIGN,0,0,0,,{\fs14\c&H4B4B4B&\3c&HFFFFFF&\frz358.7\pos(227.428,116)}Producer
+Dialogue: 0,0:17:05.79,0:17:10.36,Signs,SIGN,0,0,0,,{\an1\bord4\fs14\c&H4B4B4B&\3c&HFFFFFF&\frz356\pos(167.999,160.571)}I'd like to talk to you. I'd appreciate if\Nyou could find some time to meet.
+Dialogue: 0,0:18:26.45,0:18:28.25,Signs,SIGN,0,0,0,,{\fnComic Sans MS\fs26\c&H000000&\3c&HFFFFFF&\pos(288,80.571)\frz358.9}283 Productions {\fs40}1st Live!
+Dialogue: 0,0:18:30.63,0:18:32.29,Signs,SIGN,0,0,0,,{\an8\c&H0000EB&\3c&HFFFFFF&}283 Productions! 1st LIVE!
+Dialogue: 0,0:18:59.45,0:19:01.74,Signs,SIGN,0,0,0,,{\fscx55\fscy55\frx8\fry8\pos(337.142,79.429)\3c&H540D39&}46th\NEscape the Heat\NFireworks Display
