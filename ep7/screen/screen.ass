@@ -8,14 +8,14 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/sc_ep7.mkv
-Video File: C:/Users/scree/Desktop/sc_ep7.mkv
+Audio File: C:/Users/scree/Desktop/sc_ep7/ep7.mkv
+Video File: C:/Users/scree/Desktop/sc_ep7/ep7.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 1.000000
-Scroll Position: 883
-Active Line: 893
-Video Position: 23927
+Scroll Position: 1000
+Active Line: 1007
+Video Position: 32710
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -27,6 +27,7 @@ Dialogue: 1,0:03:33.81,0:03:37.19,OnScreen,,0,0,0,track牛魔,{\an7\fn思源黑�
 Dialogue: 0,0:03:33.81,0:03:37.19,OnScreen,,0,0,0,track牛魔,{\an7\pos(0,0)\p1\c&HFFFFFF&\1a&H5A&\clip(0,0,604.57,297.15)}m 0 0 l 1920 0 1920 1080 0 1080 0 0{\p0}
 Dialogue: 1,0:03:46.08,0:03:49.25,OnScreen,,0,0,0,track牛魔,{\an7\fn思源黑体 Medium\b0\c&H000000&}ALSTROEMERIA的房间\N\N大崎甘奈：早上好（表情）\N\N甜花：早上好（表情）\N\N　　　　　　　开始了呢\N\N甜花：不能错过（表情）
 Dialogue: 0,0:03:46.08,0:03:49.25,OnScreen,,0,0,0,track牛魔,{\an7\pos(0,0)\p1\c&HFFFFFF&\1a&H5A&\clip(0,0,389.71,326.86)}m 0 0 l 1920 0 1920 1080 0 1080 0 0{\p0}
+Dialogue: 0,0:00:05.03,0:01:34.49,OnScreen,,0,0,0,,{\an9\pos(1663.43,160.86)\fn思源黑体\b1\c&HAF35F6&\bord2\3c&HFFFFFF&}贴身报道！283Production\N{\c&HDABE0B&}通往W.I.N.G.的历程
 Dialogue: 0,0:03:53.92,0:04:01.97,OnScreen,,0,0,0,,{\an9\pos(1663.43,160.86)\fn思源黑体\b1\c&HAF35F6&\bord2\3c&HFFFFFF&}贴身报道！283Production\N{\c&HDABE0B&}通往W.I.N.G.的历程
 Dialogue: 0,0:06:19.02,0:06:19.06,OnScreen,,0,0,0,track牛魔,{=0}{\frz0\alpha&H00&\an9\fscx60\fscy60\pos(1419.96,301.44)\fn思源黑体\b1\c&H92FFFF&\bord1}illumination STARS\N{\c&HECCF4F&}解决问题清单！！
 Dialogue: 0,0:06:19.06,0:06:19.10,OnScreen,,0,0,0,track牛魔,{=0}{\frz0\alpha&H00&\an9\fscx60\fscy60\pos(1419.97,301.44)\fn思源黑体\b1\c&H92FFFF&\bord1}illumination STARS\N{\c&HECCF4F&}解决问题清单！！
@@ -1029,6 +1030,113 @@ Dialogue: 0,0:19:58.71,0:19:58.76,OnScreen,,0,0,0,track牛魔,{=11}{\frz0\alpha&
 Dialogue: 0,0:19:58.76,0:19:58.80,OnScreen,,0,0,0,track牛魔,{=11}{\frz0\alpha&H00&\fn悠哉字体\fscx156.13\fscy156.13\b1\c&H3D414C&\pos(667.86,663.69)}开会\N不要迟到哟～
 Dialogue: 0,0:19:58.80,0:19:58.84,OnScreen,,0,0,0,track牛魔,{=11}{\frz0\alpha&H00&\fn悠哉字体\fscx156.18\fscy156.18\b1\c&H3D414C&\pos(667.76,663.73)}开会\N不要迟到哟～
 Dialogue: 0,0:19:58.84,0:19:58.88,OnScreen,,0,0,0,track牛魔,{=11}{\frz0\alpha&H00&\fn悠哉字体\fscx156.23\fscy156.23\b1\c&H3D414C&\pos(667.68,663.76)}开会\N不要迟到哟～
+Dialogue: 0,0:22:39.12,0:22:39.17,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H070707&\fn悠哉字体\b1\fax-0.081821\fscx242.58\fscy272.01\frz4.19\frx0.2998\fry-1.6330\org(970.02,840.88)\pos(977.96,949.68)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.17,0:22:39.21,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H111112&\fn悠哉字体\b1\fax-0.081821\fscx242.67\fscy272.11\frz4.19\frx0.2998\fry-1.6330\org(970.02,840.99)\pos(977.97,949.83)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.21,0:22:39.25,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H1B1C1D&\fn悠哉字体\b1\fax-0.081821\fscx242.75\fscy272.2\frz4.19\frx0.2998\fry-1.6330\org(970.03,841.1)\pos(977.97,949.97)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.25,0:22:39.29,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H252728&\fn悠哉字体\b1\fax-0.081821\fscx242.84\fscy272.3\frz4.19\frx0.2998\fry-1.6330\org(970.03,841.21)\pos(977.98,950.12)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.29,0:22:39.33,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H2F3133&\fn悠哉字体\b1\fax-0.081821\fscx242.93\fscy272.4\frz4.19\frx0.2998\fry-1.6330\org(970.03,841.31)\pos(977.99,950.27)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.33,0:22:39.37,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H3A3C3E&\fn悠哉字体\b1\fax-0.081821\fscx243.01\fscy272.5\frz4.19\frx0.2998\fry-1.6330\org(970.04,841.42)\pos(977.99,950.42)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.37,0:22:39.42,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H444649&\fn悠哉字体\b1\fax-0.081821\fscx243.1\fscy272.6\frz4.19\frx0.2998\fry-1.6330\org(970.04,841.53)\pos(978,950.57)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.42,0:22:39.46,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H4E5154&\fn悠哉字体\b1\fax-0.081821\fscx243.19\fscy272.69\frz4.19\frx0.2998\fry-1.6330\org(970.04,841.64)\pos(978.01,950.71)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.46,0:22:39.50,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H585B5F&\fn悠哉字体\b1\fax-0.081821\fscx243.28\fscy272.79\frz4.19\frx0.2998\fry-1.6330\org(970.05,841.75)\pos(978.01,950.86)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.50,0:22:39.54,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H63666A&\fn悠哉字体\b1\fax-0.081821\fscx243.36\fscy272.89\frz4.19\frx0.2998\fry-1.6330\org(970.05,841.86)\pos(978.02,951.01)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.54,0:22:39.58,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H6D7175&\fn悠哉字体\b1\fax-0.081821\fscx243.45\fscy272.99\frz4.19\frx0.2998\fry-1.6330\org(970.05,841.97)\pos(978.03,951.16)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.58,0:22:39.62,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx243.54\fscy273.08\frz4.19\frx0.2998\fry-1.6330\org(970.06,842.08)\pos(978.03,951.31)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.62,0:22:39.67,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx243.62\fscy273.18\frz4.19\frx0.2998\fry-1.6330\org(970.06,842.19)\pos(978.04,951.45)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.67,0:22:39.71,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx243.71\fscy273.28\frz4.19\frx0.2998\fry-1.6330\org(970.07,842.29)\pos(978.05,951.6)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.71,0:22:39.75,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx243.8\fscy273.38\frz4.19\frx0.2998\fry-1.6330\org(970.07,842.4)\pos(978.05,951.75)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.75,0:22:39.79,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx243.89\fscy273.48\frz4.19\frx0.2998\fry-1.6330\org(970.07,842.51)\pos(978.06,951.9)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.79,0:22:39.83,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx243.97\fscy273.57\frz4.19\frx0.2998\fry-1.6330\org(970.08,842.62)\pos(978.07,952.05)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.83,0:22:39.87,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.06\fscy273.67\frz4.19\frx0.2998\fry-1.6330\org(970.08,842.73)\pos(978.07,952.2)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.87,0:22:39.92,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.14\fscy273.76\frz4.19\frx0.2998\fry-1.6330\org(970.08,842.82)\pos(978.08,952.32)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.92,0:22:39.96,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.23\fscy273.85\frz4.19\frx0.2998\fry-1.6330\org(970.08,842.93)\pos(978.08,952.47)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:39.96,0:22:40.00,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.32\fscy273.96\frz4.19\frx0.2998\fry-1.6330\org(970.09,843.05)\pos(978.09,952.63)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.00,0:22:40.04,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.39\fscy274.04\frz4.19\frx0.2998\fry-1.6330\org(970.08,843.14)\pos(978.09,952.75)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.04,0:22:40.08,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.47\fscy274.13\frz4.19\frx0.2998\fry-1.6330\org(970.1,843.24)\pos(978.11,952.89)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.08,0:22:40.13,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.57\fscy274.24\frz4.19\frx0.2998\fry-1.6330\org(970.1,843.36)\pos(978.11,953.05)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.13,0:22:40.17,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.63\fscy274.31\frz4.19\frx0.2998\fry-1.6330\org(970.09,843.43)\pos(978.11,953.15)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.17,0:22:40.21,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.72\fscy274.41\frz4.19\frx0.2998\fry-1.6330\org(970.11,843.55)\pos(978.12,953.31)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.21,0:22:40.25,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.8\fscy274.5\frz4.19\frx0.2998\fry-1.6330\org(970.11,843.65)\pos(978.13,953.44)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.25,0:22:40.29,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.89\fscy274.6\frz4.19\frx0.2998\fry-1.6330\org(970.12,843.76)\pos(978.14,953.59)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.29,0:22:40.33,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx244.97\fscy274.69\frz4.19\frx0.2998\fry-1.6330\org(970.12,843.85)\pos(978.15,953.72)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.33,0:22:40.38,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.05\fscy274.79\frz4.19\frx0.2998\fry-1.6330\org(970.12,843.96)\pos(978.15,953.87)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.38,0:22:40.42,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.14\fscy274.88\frz4.19\frx0.2998\fry-1.6330\org(970.12,844.07)\pos(978.14,954.01)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.42,0:22:40.46,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.22\fscy274.97\frz4.19\frx0.2998\fry-1.6330\org(970.13,844.17)\pos(978.16,954.15)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.46,0:22:40.50,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.3\fscy275.06\frz4.19\frx0.2998\fry-1.6330\org(970.13,844.26)\pos(978.16,954.28)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.50,0:22:40.54,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.39\fscy275.16\frz4.19\frx0.2998\fry-1.6330\org(970.14,844.37)\pos(978.17,954.43)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.54,0:22:40.58,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.47\fscy275.25\frz4.19\frx0.2998\fry-1.6330\org(970.14,844.48)\pos(978.18,954.58)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.58,0:22:40.63,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.55\fscy275.34\frz4.19\frx0.2998\fry-1.6330\org(970.14,844.58)\pos(978.18,954.71)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.63,0:22:40.67,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.64\fscy275.44\frz4.19\frx0.2998\fry-1.6330\org(970.14,844.68)\pos(978.19,954.85)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.67,0:22:40.71,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.72\fscy275.53\frz4.19\frx0.2998\fry-1.6330\org(970.15,844.78)\pos(978.19,954.99)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.71,0:22:40.75,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.81\fscy275.63\frz4.19\frx0.2998\fry-1.6330\org(970.15,844.9)\pos(978.19,955.14)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.75,0:22:40.79,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.88\fscy275.72\frz4.19\frx0.2998\fry-1.6330\org(970.15,844.99)\pos(978.2,955.27)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.79,0:22:40.83,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx245.96\fscy275.81\frz4.19\frx0.2998\fry-1.6330\org(970.16,845.09)\pos(978.22,955.41)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.83,0:22:40.88,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.05\fscy275.9\frz4.19\frx0.2998\fry-1.6330\org(970.16,845.2)\pos(978.22,955.55)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.88,0:22:40.92,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.14\fscy276\frz4.19\frx0.2998\fry-1.6330\org(970.16,845.31)\pos(978.22,955.71)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.92,0:22:40.96,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.22\fscy276.09\frz4.19\frx0.2998\fry-1.6330\org(970.16,845.4)\pos(978.22,955.83)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:40.96,0:22:41.00,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.3\fscy276.18\frz4.19\frx0.2998\fry-1.6330\org(970.17,845.51)\pos(978.24,955.98)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.00,0:22:41.04,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.39\fscy276.28\frz4.19\frx0.2998\fry-1.6330\org(970.18,845.62)\pos(978.25,956.13)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.04,0:22:41.08,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.46\fscy276.36\frz4.19\frx0.2998\fry-1.6330\org(970.18,845.71)\pos(978.25,956.25)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.08,0:22:41.13,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.55\fscy276.46\frz4.19\frx0.2998\fry-1.6330\org(970.18,845.82)\pos(978.25,956.4)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.13,0:22:41.17,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.64\fscy276.56\frz4.19\frx0.2998\fry-1.6330\org(970.19,845.92)\pos(978.26,956.54)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.17,0:22:41.21,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.71\fscy276.64\frz4.19\frx0.2998\fry-1.6330\org(970.19,846.02)\pos(978.27,956.67)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.21,0:22:41.25,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.8\fscy276.74\frz4.19\frx0.2998\fry-1.6330\org(970.2,846.13)\pos(978.28,956.82)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.25,0:22:41.29,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.88\fscy276.83\frz4.19\frx0.2998\fry-1.6330\org(970.19,846.23)\pos(978.28,956.96)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.29,0:22:41.33,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx246.95\fscy276.91\frz4.19\frx0.2998\fry-1.6330\org(970.2,846.32)\pos(978.29,957.08)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.33,0:22:41.38,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.05\fscy277.03\frz4.19\frx0.2998\fry-1.6330\org(970.2,846.44)\pos(978.29,957.25)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.38,0:22:41.42,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.13\fscy277.11\frz4.19\frx0.2998\fry-1.6330\org(970.2,846.54)\pos(978.3,957.37)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.42,0:22:41.46,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.21\fscy277.2\frz4.19\frx0.2998\fry-1.6330\org(970.21,846.64)\pos(978.31,957.52)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.46,0:22:41.50,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.29\fscy277.29\frz4.19\frx0.2998\fry-1.6330\org(970.21,846.73)\pos(978.31,957.65)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.50,0:22:41.54,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.38\fscy277.39\frz4.19\frx0.2998\fry-1.6330\org(970.22,846.85)\pos(978.32,957.8)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.54,0:22:41.59,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.46\fscy277.48\frz4.19\frx0.2998\fry-1.6330\org(970.22,846.94)\pos(978.32,957.93)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.59,0:22:41.63,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.54\fscy277.58\frz4.19\frx0.2998\fry-1.6330\org(970.22,847.05)\pos(978.33,958.08)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.63,0:22:41.67,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.63\fscy277.67\frz4.19\frx0.2998\fry-1.6330\org(970.22,847.15)\pos(978.33,958.22)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.67,0:22:41.71,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.71\fscy277.76\frz4.19\frx0.2998\fry-1.6330\org(970.23,847.25)\pos(978.34,958.35)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.71,0:22:41.75,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.8\fscy277.86\frz4.19\frx0.2998\fry-1.6330\org(970.24,847.37)\pos(978.35,958.51)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.75,0:22:41.79,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.87\fscy277.94\frz4.19\frx0.2998\fry-1.6330\org(970.23,847.46)\pos(978.35,958.63)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.79,0:22:41.84,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx247.96\fscy278.04\frz4.19\frx0.2998\fry-1.6330\org(970.24,847.56)\pos(978.36,958.77)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.84,0:22:41.88,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.04\fscy278.14\frz4.19\frx0.2998\fry-1.6330\org(970.24,847.67)\pos(978.36,958.92)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.88,0:22:41.92,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.12\fscy278.23\frz4.19\frx0.2998\fry-1.6330\org(970.24,847.77)\pos(978.37,959.06)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.92,0:22:41.96,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.2\fscy278.32\frz4.19\frx0.2998\fry-1.6330\org(970.25,847.87)\pos(978.38,959.19)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:41.96,0:22:42.00,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.29\fscy278.41\frz4.19\frx0.2998\fry-1.6330\org(970.25,847.98)\pos(978.38,959.34)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.00,0:22:42.04,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.37\fscy278.51\frz4.19\frx0.2998\fry-1.6330\org(970.26,848.08)\pos(978.39,959.48)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.04,0:22:42.09,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.46\fscy278.6\frz4.19\frx0.2998\fry-1.6330\org(970.27,848.18)\pos(978.4,959.62)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.09,0:22:42.13,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.54\fscy278.69\frz4.19\frx0.2998\fry-1.6330\org(970.26,848.29)\pos(978.4,959.76)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.13,0:22:42.17,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.62\fscy278.78\frz4.19\frx0.2998\fry-1.6330\org(970.26,848.39)\pos(978.4,959.9)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.17,0:22:42.21,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.7\fscy278.88\frz4.19\frx0.2998\fry-1.6330\org(970.27,848.49)\pos(978.42,960.04)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.21,0:22:42.25,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.79\fscy278.97\frz4.19\frx0.2998\fry-1.6330\org(970.28,848.6)\pos(978.42,960.18)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.25,0:22:42.29,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.87\fscy279.06\frz4.19\frx0.2998\fry-1.6330\org(970.28,848.69)\pos(978.43,960.31)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.29,0:22:42.34,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx248.95\fscy279.16\frz4.19\frx0.2998\fry-1.6330\org(970.28,848.81)\pos(978.43,960.47)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.34,0:22:42.38,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.03\fscy279.24\frz4.19\frx0.2998\fry-1.6330\org(970.28,848.9)\pos(978.43,960.59)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.38,0:22:42.42,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.12\fscy279.34\frz4.19\frx0.2998\fry-1.6330\org(970.29,849.01)\pos(978.44,960.74)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.42,0:22:42.46,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.2\fscy279.43\frz4.19\frx0.2998\fry-1.6330\org(970.3,849.1)\pos(978.46,960.87)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.46,0:22:42.50,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.28\fscy279.52\frz4.19\frx0.2998\fry-1.6330\org(970.3,849.2)\pos(978.46,961.01)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.50,0:22:42.54,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.37\fscy279.62\frz4.19\frx0.2998\fry-1.6330\org(970.3,849.31)\pos(978.47,961.16)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.54,0:22:42.59,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.45\fscy279.71\frz4.19\frx0.2998\fry-1.6330\org(970.31,849.42)\pos(978.48,961.3)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.59,0:22:42.63,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.53\fscy279.81\frz4.19\frx0.2998\fry-1.6330\org(970.3,849.53)\pos(978.47,961.45)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.63,0:22:42.67,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.62\fscy279.9\frz4.19\frx0.2998\fry-1.6330\org(970.31,849.62)\pos(978.48,961.58)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.67,0:22:42.71,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.7\fscy280\frz4.19\frx0.2998\fry-1.6330\org(970.31,849.73)\pos(978.49,961.73)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.71,0:22:42.75,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.78\fscy280.08\frz4.19\frx0.2998\fry-1.6330\org(970.32,849.82)\pos(978.49,961.85)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.75,0:22:42.79,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.86\fscy280.18\frz4.19\frx0.2998\fry-1.6330\org(970.32,849.93)\pos(978.5,962)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.79,0:22:42.84,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx249.95\fscy280.27\frz4.19\frx0.2998\fry-1.6330\org(970.33,850.04)\pos(978.51,962.15)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.84,0:22:42.88,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx250.03\fscy280.37\frz4.19\frx0.2998\fry-1.6330\org(970.33,850.14)\pos(978.51,962.28)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.88,0:22:42.92,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx250.11\fscy280.46\frz4.19\frx0.2998\fry-1.6330\org(970.33,850.24)\pos(978.52,962.42)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.92,0:22:42.96,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx250.2\fscy280.55\frz4.19\frx0.2998\fry-1.6330\org(970.33,850.34)\pos(978.52,962.56)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:42.96,0:22:43.00,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx250.28\fscy280.64\frz4.19\frx0.2998\fry-1.6330\org(970.34,850.44)\pos(978.53,962.69)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.00,0:22:43.04,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx250.35\fscy280.73\frz4.19\frx0.2998\fry-1.6330\org(970.34,850.54)\pos(978.54,962.82)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.04,0:22:43.09,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H75797E&\fn悠哉字体\b1\fax-0.081821\fscx250.44\fscy280.82\frz4.19\frx0.2998\fry-1.6330\org(970.35,850.64)\pos(978.55,962.96)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.09,0:22:43.13,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H72767B&\fn悠哉字体\b1\fax-0.081821\fscx250.52\fscy280.91\frz4.19\frx0.2998\fry-1.6330\org(970.35,850.74)\pos(978.56,963.1)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.13,0:22:43.17,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H686B70&\fn悠哉字体\b1\fax-0.081821\fscx250.6\fscy281.01\frz4.19\frx0.2998\fry-1.6330\org(970.36,850.84)\pos(978.57,963.24)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.17,0:22:43.21,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H5D6064&\fn悠哉字体\b1\fax-0.081821\fscx250.69\fscy281.1\frz4.19\frx0.2998\fry-1.6330\org(970.36,850.94)\pos(978.57,963.38)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.21,0:22:43.25,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H525558&\fn悠哉字体\b1\fax-0.081821\fscx250.77\fscy281.19\frz4.19\frx0.2998\fry-1.6330\org(970.37,851.04)\pos(978.58,963.52)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.25,0:22:43.30,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H474A4D&\fn悠哉字体\b1\fax-0.081821\fscx250.85\fscy281.29\frz4.19\frx0.2998\fry-1.6330\org(970.37,851.14)\pos(978.59,963.65)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.30,0:22:43.34,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H3D3F42&\fn悠哉字体\b1\fax-0.081821\fscx250.94\fscy281.38\frz4.2\frx0.2998\fry-1.6330\org(970.38,851.25)\pos(978.6,963.79)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.34,0:22:43.38,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H323436&\fn悠哉字体\b1\fax-0.081821\fscx251.02\fscy281.47\frz4.2\frx0.2998\fry-1.6330\org(970.38,851.35)\pos(978.61,963.93)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.38,0:22:43.42,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H28292B&\fn悠哉字体\b1\fax-0.081821\fscx251.1\fscy281.57\frz4.2\frx0.2998\fry-1.6330\org(970.39,851.45)\pos(978.62,964.07)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.42,0:22:43.46,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H1D1E1F&\fn悠哉字体\b1\fax-0.081821\fscx251.19\fscy281.66\frz4.2\frx0.2998\fry-1.6330\org(970.39,851.55)\pos(978.63,964.21)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.46,0:22:43.50,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H121314&\fn悠哉字体\b1\fax-0.081821\fscx251.27\fscy281.75\frz4.2\frx0.2998\fry-1.6330\org(970.4,851.65)\pos(978.64,964.35)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.50,0:22:43.55,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H080808&\fn悠哉字体\b1\fax-0.081821\fscx251.35\fscy281.85\frz4.2\frx0.2998\fry-1.6330\org(970.4,851.75)\pos(978.64,964.48)}Tsubasa Gravity\NMV服装会议
+Dialogue: 0,0:22:43.55,0:22:43.59,OnScreen,,0,0,0,,{=21=22}{\alpha&H00&\1c&H000000&\fn悠哉字体\b1\fax-0.081821\fscx251.44\fscy281.94\frz4.2\frx0.2998\fry-1.6330\org(970.41,851.85)\pos(978.65,964.62)}Tsubasa Gravity\NMV服装会议
 
 [Aegisub Extradata]
 Data: 0,a-mo,u?S*P=GFH;7ZB<&2F?(1C/C*\8&RB<DF=8':T9XAW-&R=:H.D?49Q8&RQ<X-I-41R/3YZ.CQT-$%O.$1J8&RG<O;!H?;[E/G\E?3^EVR=9D&=8'-G3$ES2E:'2C:=8'*P=G1R@7FM<(6N;7ZB>'FP<C"46%&35VR=4HN=8'-G3%6$1U9U2C:^[+?DZ9;T[:?O[;+9ZLC&Z9W6\\S"\\S")CQC>86J:#)[)G-T/')T-4!R,4)X.$!N.$&F9CUY-T%W,7-V.4AY-$:C.')V.C*^
@@ -1037,3 +1145,14 @@ Data: 2,a-mo,e{"originalText"#3A"{\\fscx80\\fscy80\\pos(1467#2C276)\\c&HEE4B9C&}
 Data: 9,a-mo,e{"originalText"#3A"{\\fscx300\\fscy300\\fn@MiSans Demibold\\b0\\frz270\\c&HEEEBEB&\\bord3\\blur10\\pos(2376.32#2C774.12)}283#E4#BA#8B#E5#8A#A1#E6#89#80"#2C"uuid"#3A"8fab2112-7c3d-48f2-938c-a9ae9b96fdb0"}
 Data: 10,a-mo,e{"originalText"#3A"{\\fscx300\\fscy300\\fn@MiSans Demibold\\b0\\frz270\\c&HEEEBEB&\\bord3\\blur10\\pos(595#2C1100)}4#E7#BB#84#E5#90#88#E7#A1#AE#E8#AE#A4#E5#87#BA#E5#9C#BA#EF#BC#81"#2C"uuid"#3A"b82ab233-d9ea-4e9c-821e-f63ace51a0b0"}
 Data: 11,a-mo,u?S*P=GFH;7ZB<&2F?(1C/C*\8&RG<O;#I/74C?7NF_3^EVR=:H.D?$%V-&R=:H.D?4%V-&R=9D&=8'-G3$.%.$%U1S:=8("P=SAW.TEO-T)M.D5Y,DAT+8XFP)$EP*J=8%\EO)XIJI(IPZ`FC,$FEZ`PP:YC,#*V>7FE)DIC:D=V-$5Z.G%N:D>G:3UU.'%Q,7%U.D!N.4>B-4&D-TAW-7)Y)HU
+Data: 12,_aegi_perspective_ambient_plane,e467.83;207.87#7C1194.90;466.20#7C1194.90;626.20#7C747.94;626.20
+Data: 13,_aegi_perspective_ambient_plane,e467.83;207.87#7C1484.94;70.76#7C1194.90;626.20#7C747.94;626.20
+Data: 14,_aegi_perspective_ambient_plane,e467.83;207.87#7C1484.94;70.76#7C1353.83;811.00#7C747.94;626.20
+Data: 15,_aegi_perspective_ambient_plane,e467.83;207.87#7C1484.94;70.76#7C1353.83;811.00#7C459.89;1017.66
+Data: 16,_aegi_perspective_ambient_plane,e467.83;207.87#7C1484.94;70.76#7C1490.90;950.10#7C459.89;1017.66
+Data: 17,_aegi_perspective_ambient_plane,e467.83;207.87#7C1484.94;70.76#7C1495.65;957.22#7C459.89;1017.66
+Data: 18,_aegi_perspective_ambient_plane,e467.83;207.87#7C1487.68;65.29#7C1495.65;957.22#7C459.88;1017.66
+Data: 19,_aegi_perspective_ambient_plane,e467.52;204.76#7C1487.68;65.29#7C1495.65;957.22#7C459.89;1017.66
+Data: 20,_aegi_perspective_ambient_plane,e467.52;204.76#7C1487.68;65.28#7C1495.65;957.22#7C460.70;1019.30
+Data: 21,_aegi_perspective_ambient_plane,e467.52;204.76#7C1487.68;65.28#7C1495.65;957.22#7C460.70;1019.29
+Data: 22,a-mo,e{"uuid"#3A"0a8e83e7-628f-4b63-a3a3-7a908981e01f"#2C"originalText"#3A"{\\c&H000000&\\t(0#2C478#2C\\c&H75797E&)\\t(3982#2C4441#2C\\c&H000000&)\\fn#E6#82#A0#E5#93#89#E5#AD#97#E4#BD#93\\b1\\fax-0.081821\\fscx242.58\\fscy272.01\\frz4.1899\\frx0.2998\\fry-1.6330\\org(970.02#2C840.88)\\pos(977.96#2C949.68)}Tsubasa Gravity\\NMV#E6#9C#8D#E8#A3#85#E4#BC#9A#E8#AE#AE"}

@@ -14,14 +14,13 @@ YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
-Audio File: C:/Users/scree/Desktop/sc_ep7.mkv
-Video File: C:/Users/scree/Desktop/sc_ep7.mkv
+Audio File: C:/Users/scree/Desktop/sc_ep7/ep7.mkv
+Video File: C:/Users/scree/Desktop/sc_ep7/ep7.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.875000
-Scroll Position: 237
-Active Line: 255
-Video Position: 4327
+Video Zoom Percent: 0.750000
+Active Line: 1
+Video Position: 32588
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -36,7 +35,7 @@ Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
-Dialogue: 0,0:22:29.95,0:22:42.01,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：{\b1}北宇治字幕组\N{\b0}翻译：{\b1}Hammer\N{\b0}后期：{\b1}Scrpr
+Dialogue: 0,0:22:30.08,0:22:39.13,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：{\b1}北宇治字幕组\N{\b0}翻译：{\b1}Hammer\N{\b0}后期：{\b1}Scrpr
 Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:01:44.88,0:01:49.05,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}通往W.I.N.G.的历程
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
@@ -152,7 +151,7 @@ Comment: 0,0:10:25.52,0:10:28.79,SC_Bottom,夏叶,0,0,0,kara,嗯 多亏了{\fscx
 Comment: 0,0:10:28.79,0:10:31.69,SC_Bottom,树里,0,0,0,kara,最后一共开了多少次来着\N結局 何回やったんだ
 Comment: 0,0:10:32.10,0:10:36.31,SC_Bottom,智代子,0,0,0,kara,呃 第十次之后就没记次数了呢\Nうーん 10{\fscx50} {\fscx100}回超えてから数えなくなったね
 Comment: 0,0:11:00.71,0:11:01.65,SC_Bottom,智代子,0,0,0,kara,果穗\N果穂
-Comment: 0,0:11:18.82,0:11:23.61,SC_Bottom,果穗,0,0,0,kara,一直都跟在大家一起训练\N皆さんと ずっとずっと一緒に練習して
+Comment: 0,0:11:18.82,0:11:23.61,SC_Bottom,果穗,0,0,0,kara,一直都在跟大家一起训练\N皆さんと ずっとずっと一緒に練習して
 Comment: 0,0:11:24.47,0:11:28.25,SC_Bottom,果穗,0,0,0,kara,每天早上从梦中醒来都充满了期待\N毎朝 起きるのすっごく楽しみで
 Comment: 0,0:11:33.34,0:11:39.45,SC_Bottom,果穗,0,0,0,kara,一想到这样的日子就快要到头了 就感觉有点孤单\Nもう終わっちゃうと思うと 少しだけ寂しくなっちゃいました
 Comment: 0,0:11:43.69,0:11:47.01,SC_Bottom,树里,0,0,0,kara,今后也还会在一起训练的啊 果穗 对吧\Nこれからも一緒だろ 果穂 な
@@ -227,6 +226,7 @@ Comment: 0,0:18:06.47,0:18:08.85,SC_Bottom,甘奈,0,0,0,kara,我都想象不了�
 Comment: 0,0:18:10.41,0:18:12.82,SC_Bottom,千雪,0,0,0,kara,可能有点太贪心了呢\Nちょっと欲張りかな
 Comment: 0,0:18:12.82,0:18:15.33,SC_Bottom,甜花,0,0,0,kara,不 不会的 我也是\Nう ううん 甜花も
 Comment: 0,0:18:16.07,0:18:20.78,SC_Bottom,甜花,0,0,0,kara,虽然我还得再加把劲才行\N甜花は もっと頑張らないとダメだけど
+Comment: 0,0:18:21.27,0:18:22.75,SC_Bottom,甜花,0,0,0,kara,呢嘻嘻\Nにへへ
 Comment: 0,0:18:24.73,0:18:28.11,SC_Bottom,千雪,0,0,0,kara,啊 差不多到点了 我们走吧\Nあっ そろそろ時間ね 行こっか
 Comment: 0,0:18:28.11,0:18:29.15,SC_Bottom,甘奈 & 甜花,0,0,0,kara,好\Nうん
 Comment: 0,0:18:38.12,0:18:39.09,SC_Bottom,夏叶,0,0,0,kara,果穗\N果穂
@@ -290,4 +290,4 @@ Comment: 0,0:22:06.19,0:22:09.47,SC_Bottom,制作人,0,0,0,kara,没错 下一个
 Comment: 0,0:22:09.47,0:22:12.14,SC_Bottom,制作人,0,0,0,kara,由所有组合一同出演的\Nすべてのユニットが出演する
 Comment: 0,0:22:12.14,0:22:14.68,SC_Bottom,制作人,0,0,0,kara,283{\fscx50} {\fscx100}事务所 First Live\N283{\fscx50} {\fscx100}プロダクションファーストライブだ
 Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,screen/screen.ass
-Comment: 0,0:03:00.47,0:03:00.47,Default,,0,0,0,import,../op_sc.ass
+Comment: 0,0:03:00.47,0:03:00.47,Default,,0,0,0,import-shifted,../op_sc.ass
