@@ -19,7 +19,8 @@ Video File: C:/Users/scree/Desktop/sc_ep7/ep7.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
-Active Line: 1
+Scroll Position: 234
+Active Line: 254
 Video Position: 32588
 
 [V4+ Styles]
@@ -285,9 +286,9 @@ Comment: 0,0:21:41.16,0:21:48.26,SC_Bottom,制作人,0,0,0,kara,无论何时 只
 Comment: 0,0:21:48.26,0:21:53.24,SC_Bottom,制作人,0,0,0,kara,在和你们一起经历过{\fscx50} {\fscx100}W.I.N.G.之后 我也体会到了这一点\Nウィングを一緒に経験して 俺自身も そう感じさせてもらった
 Comment: 0,0:21:54.79,0:21:57.49,SC_Bottom,制作人,0,0,0,kara,为了大家能更向前一步\Nみんながもっと 前に進むために
 Comment: 0,0:21:58.71,0:22:01.84,SC_Bottom,制作人,0,0,0,kara,也让我们一起来打造下一个舞台吧\N次のステージも 一緒に作っていこう
-Comment: 0,0:22:02.51,0:22:05.59,SC_Bottom,恋钟,0,0,0,kara,已经决定好下一个舞台了吗\N次のステージ 決まったと
+Comment: 0,0:22:02.51,0:22:05.59,SC_Bottom,恋钟,0,0,0,kara,下一个舞台？已经决定了？\N次のステージ 決まったと
 Comment: 0,0:22:06.19,0:22:09.47,SC_Bottom,制作人,0,0,0,kara,没错 下一个舞台将会是\Nああ 次のステージは
 Comment: 0,0:22:09.47,0:22:12.14,SC_Bottom,制作人,0,0,0,kara,由所有组合一同出演的\Nすべてのユニットが出演する
-Comment: 0,0:22:12.14,0:22:14.68,SC_Bottom,制作人,0,0,0,kara,283{\fscx50} {\fscx100}事务所 First Live\N283{\fscx50} {\fscx100}プロダクションファーストライブだ
+Comment: 0,0:22:12.14,0:22:14.68,SC_Bottom,制作人,0,0,0,kara,283{\fscx50} {\fscx100}事务所 1st LIVE\N283{\fscx50} {\fscx100}プロダクションファーストライブだ
 Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,screen/screen.ass
 Comment: 0,0:03:00.47,0:03:00.47,Default,,0,0,0,import-shifted,../op_sc.ass
