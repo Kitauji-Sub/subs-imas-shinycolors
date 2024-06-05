@@ -8,7 +8,13 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Active Line: 3
+Audio File: C:/Users/scree/Desktop/sc_ep8.mkv
+Video File: C:/Users/scree/Desktop/sc_ep8.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 1.000000
+Active Line: 2
+Video Position: 26834
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -16,9 +22,24 @@ Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:15:28.28,0:15:32.57,Signs,SIGN,0,0,0,,{\fs12\c&H404040&\3c&HEDEDED&\frz6.438\move(258,195,258,177,22,4276)}Good evening
-Dialogue: 0,0:15:28.28,0:15:32.57,Signs,SIGN,0,0,0,,{\an1\fs12\c&H404040&\3c&HEDEDED&\frz6.438\move(231,260,229,239,22,4234)}Sakuya, Mamimi, and Kiriko\Nare heading to the party!
-Dialogue: 0,0:15:28.28,0:15:32.57,Signs,SIGN,0,0,0,,{\an1\fs12\c&H404040&\3c&HEDEDED&\frz6.438\move(229,312,228,294,22,4234)}I haven't heard from Kogane yet
-Dialogue: 0,0:18:30.54,0:18:34.25,Signs,SIGN,0,0,0,,{\an8\c&HEB8061&}1st {\c&HEBD762&}Live\N{\c&H4FEEE9&}Kickoff Party!!
-Dialogue: 0,0:18:34.25,0:18:36.76,Signs,SIGN,0,0,0,,{\an8\c&HEB8061&}1st {\c&HEBD762&}Live\N{\c&H4FEEE9&}Kickoff Party!!
-Dialogue: 0,0:24:00.04,0:24:05.25,Signs,SIGN,0,0,0,,{\fs15\pos(532.857,342.857)}Illustration by: Kamo Kamen
+Dialogue: 0,0:15:28.28,0:15:32.57,OnScreen,,0,0,0,,{\an7\pos(0,0)\p1\alpha&H4A&\clip(0,0,639,306)}m 0 0 l 1920 0 1920 1080 0 1080 0 0{\p0}
+Dialogue: 1,0:15:28.28,0:15:32.57,OnScreen,,0,0,0,,{\fn思源黑体 Medium\b0\an7\c&H000000&}制作人：请多关照！\N\N　　　　　　　　　　　　　任务完成！（表情）\N\N制作人：辛苦了\N\N制作人：咲耶、摩美美和雾子在来派对的路上了！\N\N制作人：恋钟还没联系我
+Dialogue: 0,0:18:30.55,0:18:34.25,OnScreen,,0,0,0,track,{=15}{\fn悠哉字体\b1\c&HD59DB2&\fax0.011565\fscx111.72\fscy112.14\frz-0.4445\frx-1.0891\fry-1.2990\org(1557.19,106.04)\move(1556.67,150.9,1362,150.9)\bord1.5}1st {\c&HDFDAA7&}Live\N{\c&H36E5FF&}开工派对
+
+[Aegisub Extradata]
+Data: 0,_aegi_perspective_ambient_plane,e1596.10;352.87#7C1851.50;334.00#7C1851.50;494.00#7C1630.50;494.00
+Data: 1,_aegi_perspective_ambient_plane,e1596.10;352.87#7C1882.57;349.54#7C1851.50;494.00#7C1630.50;494.00
+Data: 2,_aegi_perspective_ambient_plane,e1596.10;352.87#7C1882.57;349.54#7C1882.57;476.24#7C1630.50;494.00
+Data: 3,_aegi_perspective_ambient_plane,e1552.81;352.87#7C1882.57;349.54#7C1882.57;476.24#7C1630.50;494.00
+Data: 4,_aegi_perspective_ambient_plane,e1552.81;352.87#7C1882.57;349.54#7C1882.57;476.24#7C1557.25;458.48
+Data: 5,_aegi_perspective_ambient_plane,e1552.81;352.87#7C1882.57;349.54#7C1883.68;459.59#7C1557.25;458.48
+Data: 6,_aegi_perspective_ambient_plane,e1556.81;350.87#7C1882.57;349.54#7C1883.69;459.59#7C1557.25;458.48
+Data: 7,_aegi_perspective_ambient_plane,e1582.81;0.87#7C1882.57;349.54#7C1883.69;459.59#7C1557.25;458.48
+Data: 8,_aegi_perspective_ambient_plane,e1582.74;0.79#7C1900.58;-2.45#7C1883.69;459.59#7C1557.17;458.45
+Data: 9,_aegi_perspective_ambient_plane,e1582.74;0.79#7C1900.58;-2.45#7C1891.69;229.59#7C1557.17;458.45
+Data: 10,_aegi_perspective_ambient_plane,e1592.74;2.79#7C1900.58;-2.45#7C1891.69;229.59#7C1557.17;458.45
+Data: 11,_aegi_perspective_ambient_plane,e1592.74;-0.02#7C1900.58;-2.45#7C1891.69;229.59#7C1557.18;458.45
+Data: 12,_aegi_perspective_ambient_plane,e1592.74;-0.02#7C1900.58;-2.45#7C1891.69;229.59#7C1593.20;224.69
+Data: 13,_aegi_perspective_ambient_plane,e1592.74;-0.02#7C1900.58;-2.45#7C1894.58;229.59#7C1593.20;224.69
+Data: 14,_aegi_perspective_ambient_plane,e1592.74;-0.02#7C1898.34;0.02#7C1894.58;229.59#7C1593.20;224.69
+Data: 15,_aegi_perspective_ambient_plane,e1592.74;-0.02#7C1898.34;0.02#7C1894.58;229.60#7C1593.20;224.69
