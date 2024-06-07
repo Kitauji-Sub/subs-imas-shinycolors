@@ -4,3 +4,6 @@ op_sc.mp4
 /aegisub-cli
 /build
 __pycache__
+/build_scripts/pre_translate.py
+/build_scripts/*.ass
+.vscode/
