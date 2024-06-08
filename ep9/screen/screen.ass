@@ -8,12 +8,14 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 09 (1080p) [8AC6E655].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 09 (1080p) [8AC6E655].mkv
+Audio File: C:/Users/scree/Desktop/sc_ep9.mkv
+Video File: C:/Users/scree/Desktop/sc_ep9.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.500000
-Video Position: 3210
+Video Zoom Percent: 1.250000
+Scroll Position: 258
+Active Line: 263
+Video Position: 24719
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -21,13 +23,395 @@ Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:02:13.88,0:02:15.28,Signs,SIGN,0,0,0,,{\fs14\frz21.72\pos(95.666,49.889)}Karaoke Dojo
-Dialogue: 0,0:08:50.46,0:08:53.95,Signs,SIGN,0,0,0,,{\an8\3c&H0D0D54&\shad2\4c&H0000A9&\pos(476.8,147.2)}Karaoke Dojo
-Dialogue: 0,0:09:03.31,0:09:05.35,Signs,SIGN,0,0,0,,{\fs18\bord2\c&H3A3A3A&\frx44\fry20\pos(170.286,270.285)\org(172.571,278.285)\frz110.4\3c&HEDEDED&}Tsubasa Gravity
-Dialogue: 0,0:10:38.03,0:10:40.36,Signs,SIGN,0,0,0,,{\fs15\bord2\c&H414148&\3c&HE9E9E9&\frx40\fry354\frz335.2\pos(361.143,40.572)}Tsubasa Gravity
-Dialogue: 0,0:13:01.42,0:13:05.01,Signs,SIGN,0,0,0,,{\fs15\bord2\c&H414148&\3c&HE9E9E9&\frx40\fry354\frz354.7\move(316.572,52.001,314.286,62.287,27,3530)}Tsubasa Gravity
-Dialogue: 0,0:17:05.79,0:17:10.36,Signs,SIGN,0,0,0,,{\fs14\c&H4B4B4B&\3c&HFFFFFF&\frz358.7\pos(227.428,116)}Producer
-Dialogue: 0,0:17:05.79,0:17:10.36,Signs,SIGN,0,0,0,,{\an1\bord4\fs14\c&H4B4B4B&\3c&HFFFFFF&\frz356\pos(167.999,160.571)}I'd like to talk to you. I'd appreciate if\Nyou could find some time to meet.
-Dialogue: 0,0:18:26.45,0:18:28.25,Signs,SIGN,0,0,0,,{\fnComic Sans MS\fs26\c&H000000&\3c&HFFFFFF&\pos(288,80.571)\frz358.9}283 Productions {\fs40}1st Live!
-Dialogue: 0,0:18:30.63,0:18:32.29,Signs,SIGN,0,0,0,,{\an8\c&H0000EB&\3c&HFFFFFF&}283 Productions! 1st LIVE!
-Dialogue: 0,0:18:59.45,0:19:01.74,Signs,SIGN,0,0,0,,{\fscx55\fscy55\frx8\fry8\pos(337.142,79.429)\3c&H540D39&}46th\NEscape the Heat\NFireworks Display
+Dialogue: 0,0:02:13.99,0:02:14.11,OnScreen,,0,0,0,manual,{=47}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.186338\fscx89.93\fscy93.04\frz34.4448\frx1.6907\fry2.5579\xbord3.60\ybord3.72\org(426.42,359.4)\pos(429.77,378.01)}KTV道场
+Dialogue: 0,0:02:14.11,0:02:14.24,OnScreen,,0,0,0,manual,{=43}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.099122\fscx93.36\fscy95.12\frz21.9996\frx1.4038\fry2.5840\xbord3.74\ybord3.80\org(462.75,321.25)\pos(464.6,340.27)}KTV道场
+Dialogue: 0,0:02:14.24,0:02:14.36,OnScreen,,0,0,0,manual,{=39}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.046811\fscx96.06\fscy95.59\frz7.1379\frx0.4905\fry2.6745\xbord3.85\ybord3.83\org(537.94,280.35)\pos(538.84,299.47)}KTV道场
+Dialogue: 0,0:02:14.36,0:02:14.49,OnScreen,,0,0,0,manual,{=9}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.020356\fscx97.20\fscy95.00\frz-1.6166\frx0.7644\fry2.7506\xbord3.89\ybord3.80\org(586.01,259.57)\pos(586.41,278.57)}KTV道场
+Dialogue: 0,0:02:14.49,0:02:14.61,OnScreen,,0,0,0,manual,{=13}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.036395\fscx97.98\fscy95.39\frz1.6475\frx0.3819\fry2.3254\xbord3.92\ybord3.82\org(565.14,269.64)\pos(565.86,288.72)}KTV道场
+Dialogue: 0,0:02:14.61,0:02:14.74,OnScreen,,0,0,0,manual,{=17}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.068874\fscx98.04\fscy95.29\frz11.2224\frx0.7295\fry2.4355\xbord3.92\ybord3.81\org(492.28,306.26)\pos(493.63,325.32)}KTV道场
+Dialogue: 0,0:02:14.74,0:02:14.86,OnScreen,,0,0,0,manual,{=21}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.085914\fscx105.17\fscy94.51\frz31.0814\frx0.4009\fry1.8234\xbord4.21\ybord3.78\org(372.76,375.22)\pos(374.57,394.13)}KTV道场
+Dialogue: 0,0:02:14.86,0:02:14.99,OnScreen,,0,0,0,manual,{=25}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.065273\fscx108.67\fscy94.50\frz45.5042\frx0.0574\fry1.5775\xbord4.36\ybord3.78\org(291.4,447.96)\pos(292.82,466.86)}KTV道场
+Dialogue: 0,0:02:14.99,0:02:15.11,OnScreen,,0,0,0,manual,{=30}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.067274\fscx106.63\fscy95.32\frz32.9827\frx0.2523\fry1.6820\xbord4.28\ybord3.81\org(352.38,377.27)\pos(353.81,396.33)}KTV道场
+Dialogue: 0,0:02:15.11,0:02:15.28,OnScreen,,0,0,0,manual,{=34}{\fn思源黑体 Heavy\b0\3c&H5957E0&\fax-0.062439\fscx106.19\fscy95.71\frz28.7129\frx0.2669\fry1.7309\xbord4.25\ybord3.82\org(373.98,355.74)\pos(375.31,374.88)}KTV道场
+Dialogue: 0,0:08:50.46,0:08:53.97,OnScreen,,0,0,0,,{=54}{\fn思源黑体 Heavy\b0\fax0.012818\fscx237.13\fscy241.62\frz-0.7892\frx-0.0617\fry-0.8191\org(1446.4,825.39)\pos(1445.8,873.71)\c&HF8F8FB&}KTV道场
+Dialogue: 0,0:17:05.79,0:17:05.83,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.16\fscy105.57\frz-4.06\frx0.4335\fry-0.8286\org(1176.49,446.18)\pos(1009.8,403.95)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:05.83,0:17:05.87,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.24\fscy105.65\frz-4.07\frx0.4335\fry-0.8286\org(1176.95,446.25)\pos(1010.13,403.97)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:05.87,0:17:05.92,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.28\fscy105.7\frz-4.06\frx0.4335\fry-0.8286\org(1177.32,446.29)\pos(1010.43,404)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:05.92,0:17:05.96,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.37\fscy105.79\frz-4.07\frx0.4335\fry-0.8286\org(1177.84,446.39)\pos(1010.81,404.04)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:05.96,0:17:06.00,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.41\fscy105.84\frz-4.06\frx0.4335\fry-0.8286\org(1178.24,446.38)\pos(1011.12,404.04)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.00,0:17:06.04,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.48\fscy105.92\frz-4.07\frx0.4335\fry-0.8286\org(1178.71,446.43)\pos(1011.48,404.05)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.04,0:17:06.08,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.54\fscy105.98\frz-4.07\frx0.4335\fry-0.8286\org(1179.12,446.48)\pos(1011.79,404.08)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.08,0:17:06.12,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.61\fscy106.04\frz-4.07\frx0.4335\fry-0.8286\org(1179.56,446.53)\pos(1012.12,404.1)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.12,0:17:06.17,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.67\fscy106.11\frz-4.07\frx0.4335\fry-0.8286\org(1180.01,446.58)\pos(1012.47,404.12)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.17,0:17:06.21,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.73\fscy106.18\frz-4.07\frx0.4335\fry-0.8286\org(1180.44,446.63)\pos(1012.8,404.14)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.21,0:17:06.25,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.8\fscy106.25\frz-4.06\frx0.4335\fry-0.8286\org(1180.89,446.67)\pos(1013.13,404.16)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.25,0:17:06.29,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.86\fscy106.31\frz-4.06\frx0.4335\fry-0.8286\org(1181.32,446.72)\pos(1013.46,404.18)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.29,0:17:06.33,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.92\fscy106.38\frz-4.06\frx0.4335\fry-0.8286\org(1181.76,446.76)\pos(1013.79,404.2)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.33,0:17:06.38,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx99.98\fscy106.44\frz-4.06\frx0.4335\fry-0.8286\org(1182.2,446.8)\pos(1014.13,404.22)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.38,0:17:06.42,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.04\fscy106.51\frz-4.06\frx0.4335\fry-0.8286\org(1182.64,446.82)\pos(1014.46,404.22)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.42,0:17:06.46,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.1\fscy106.57\frz-4.06\frx0.4335\fry-0.8286\org(1183.07,446.87)\pos(1014.79,404.24)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.46,0:17:06.50,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.17\fscy106.65\frz-4.06\frx0.4335\fry-0.8286\org(1183.52,446.93)\pos(1015.13,404.27)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.50,0:17:06.54,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.24\fscy106.72\frz-4.06\frx0.4335\fry-0.8286\org(1183.96,446.98)\pos(1015.46,404.29)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.54,0:17:06.58,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.29\fscy106.78\frz-4.06\frx0.4335\fry-0.8286\org(1184.38,447.02)\pos(1015.78,404.31)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.58,0:17:06.63,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.36\fscy106.85\frz-4.06\frx0.4335\fry-0.8286\org(1184.83,447.09)\pos(1016.12,404.34)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.63,0:17:06.67,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.42\fscy106.91\frz-4.06\frx0.4335\fry-0.8286\org(1185.27,447.13)\pos(1016.45,404.36)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.67,0:17:06.71,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.48\fscy106.98\frz-4.06\frx0.4335\fry-0.8286\org(1185.71,447.14)\pos(1016.79,404.35)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.71,0:17:06.75,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.55\fscy107.05\frz-4.06\frx0.4335\fry-0.8286\org(1186.15,447.21)\pos(1017.12,404.39)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.75,0:17:06.79,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.62\fscy107.12\frz-4.06\frx0.4335\fry-0.8286\org(1186.6,447.24)\pos(1017.46,404.41)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.79,0:17:06.83,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.68\fscy107.18\frz-4.06\frx0.4335\fry-0.8286\org(1187.02,447.3)\pos(1017.78,404.43)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.83,0:17:06.88,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.74\fscy107.25\frz-4.06\frx0.4335\fry-0.8286\org(1187.45,447.34)\pos(1018.11,404.45)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.88,0:17:06.92,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.8\fscy107.32\frz-4.06\frx0.4335\fry-0.8286\org(1187.9,447.39)\pos(1018.45,404.47)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.92,0:17:06.96,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.86\fscy107.38\frz-4.06\frx0.4335\fry-0.8286\org(1188.33,447.43)\pos(1018.78,404.49)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:06.96,0:17:07.00,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.93\fscy107.45\frz-4.06\frx0.4335\fry-0.8286\org(1188.77,447.49)\pos(1019.11,404.51)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.00,0:17:07.04,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx100.98\fscy107.51\frz-4.05\frx0.4335\fry-0.8286\org(1189.18,447.5)\pos(1019.43,404.52)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.04,0:17:07.08,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.05\fscy107.59\frz-4.06\frx0.4335\fry-0.8286\org(1189.66,447.58)\pos(1019.79,404.55)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.08,0:17:07.13,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.11\fscy107.65\frz-4.06\frx0.4335\fry-0.8286\org(1190.09,447.62)\pos(1020.11,404.57)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.13,0:17:07.17,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.18\fscy107.72\frz-4.06\frx0.4335\fry-0.8286\org(1190.53,447.67)\pos(1020.45,404.59)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.17,0:17:07.21,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.24\fscy107.78\frz-4.06\frx0.4335\fry-0.8286\org(1190.96,447.72)\pos(1020.77,404.61)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.21,0:17:07.25,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.31\fscy107.86\frz-4.06\frx0.4335\fry-0.8286\org(1191.42,447.79)\pos(1021.12,404.64)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.25,0:17:07.29,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.37\fscy107.92\frz-4.06\frx0.4335\fry-0.8286\org(1191.84,447.81)\pos(1021.44,404.65)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.29,0:17:07.33,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.43\fscy107.98\frz-4.06\frx0.4335\fry-0.8286\org(1192.28,447.87)\pos(1021.78,404.68)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.33,0:17:07.38,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.49\fscy108.05\frz-4.06\frx0.4335\fry-0.8286\org(1192.72,447.91)\pos(1022.1,404.69)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.38,0:17:07.42,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.55\fscy108.12\frz-4.06\frx0.4335\fry-0.8286\org(1193.16,447.96)\pos(1022.44,404.72)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.42,0:17:07.46,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.62\fscy108.19\frz-4.06\frx0.4335\fry-0.8286\org(1193.6,447.99)\pos(1022.77,404.73)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.46,0:17:07.50,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.68\fscy108.25\frz-4.06\frx0.4335\fry-0.8286\org(1194.04,448.03)\pos(1023.11,404.74)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.50,0:17:07.54,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.74\fscy108.32\frz-4.06\frx0.4335\fry-0.8286\org(1194.47,448.1)\pos(1023.44,404.78)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.54,0:17:07.58,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.81\fscy108.4\frz-4.06\frx0.4335\fry-0.8286\org(1194.94,448.16)\pos(1023.79,404.81)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.58,0:17:07.63,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.87\fscy108.46\frz-4.06\frx0.4335\fry-0.8286\org(1195.35,448.19)\pos(1024.1,404.82)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.63,0:17:07.67,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx101.93\fscy108.52\frz-4.06\frx0.4335\fry-0.8286\org(1195.79,448.21)\pos(1024.44,404.82)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.67,0:17:07.71,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102\fscy108.59\frz-4.06\frx0.4335\fry-0.8286\org(1196.24,448.29)\pos(1024.78,404.86)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.71,0:17:07.75,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.06\fscy108.66\frz-4.06\frx0.4335\fry-0.8286\org(1196.67,448.33)\pos(1025.1,404.88)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.75,0:17:07.79,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.12\fscy108.73\frz-4.06\frx0.4335\fry-0.8286\org(1197.12,448.38)\pos(1025.44,404.9)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.79,0:17:07.83,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.19\fscy108.79\frz-4.06\frx0.4335\fry-0.8286\org(1197.57,448.42)\pos(1025.79,404.91)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.83,0:17:07.88,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.25\fscy108.86\frz-4.06\frx0.4335\fry-0.8286\org(1197.98,448.46)\pos(1026.1,404.93)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.88,0:17:07.92,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.31\fscy108.92\frz-4.06\frx0.4335\fry-0.8286\org(1198.44,448.52)\pos(1026.45,404.96)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.92,0:17:07.96,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.37\fscy108.99\frz-4.06\frx0.4335\fry-0.8286\org(1198.86,448.56)\pos(1026.77,404.97)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:07.96,0:17:08.00,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.43\fscy109.06\frz-4.06\frx0.4335\fry-0.8286\org(1199.29,448.6)\pos(1027.1,404.99)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.00,0:17:08.04,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.5\fscy109.13\frz-4.06\frx0.4335\fry-0.8286\org(1199.75,448.66)\pos(1027.44,405.02)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.04,0:17:08.09,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.56\fscy109.19\frz-4.06\frx0.4335\fry-0.8286\org(1200.19,448.7)\pos(1027.77,405.04)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.09,0:17:08.13,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.62\fscy109.26\frz-4.06\frx0.4335\fry-0.8286\org(1200.62,448.74)\pos(1028.1,405.06)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.13,0:17:08.17,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.69\fscy109.33\frz-4.06\frx0.4335\fry-0.8286\org(1201.06,448.77)\pos(1028.44,405.06)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.17,0:17:08.21,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.75\fscy109.39\frz-4.06\frx0.4335\fry-0.8286\org(1201.5,448.83)\pos(1028.77,405.09)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.21,0:17:08.25,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.82\fscy109.47\frz-4.06\frx0.4335\fry-0.8286\org(1201.96,448.92)\pos(1029.11,405.14)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.25,0:17:08.29,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.88\fscy109.53\frz-4.06\frx0.4335\fry-0.8286\org(1202.39,448.94)\pos(1029.44,405.14)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.29,0:17:08.34,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx102.94\fscy109.59\frz-4.06\frx0.4335\fry-0.8286\org(1202.81,448.98)\pos(1029.77,405.15)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.34,0:17:08.38,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103\fscy109.66\frz-4.06\frx0.4335\fry-0.8286\org(1203.25,449.03)\pos(1030.1,405.18)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.38,0:17:08.42,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.07\fscy109.73\frz-4.06\frx0.4335\fry-0.8286\org(1203.7,449.09)\pos(1030.44,405.21)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.42,0:17:08.46,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.13\fscy109.8\frz-4.06\frx0.4335\fry-0.8286\org(1204.13,449.12)\pos(1030.76,405.22)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.46,0:17:08.50,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.19\fscy109.86\frz-4.05\frx0.4335\fry-0.8286\org(1204.56,449.14)\pos(1031.09,405.22)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.50,0:17:08.54,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.26\fscy109.93\frz-4.06\frx0.4335\fry-0.8286\org(1205.01,449.21)\pos(1031.43,405.26)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.54,0:17:08.59,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.32\fscy110\frz-4.05\frx0.4335\fry-0.8286\org(1205.44,449.26)\pos(1031.76,405.28)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.59,0:17:08.63,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.38\fscy110.06\frz-4.06\frx0.4335\fry-0.8286\org(1205.88,449.31)\pos(1032.09,405.3)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.63,0:17:08.67,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.44\fscy110.13\frz-4.05\frx0.4335\fry-0.8286\org(1206.32,449.34)\pos(1032.43,405.31)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.67,0:17:08.71,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.51\fscy110.2\frz-4.06\frx0.4335\fry-0.8286\org(1206.77,449.4)\pos(1032.76,405.34)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.71,0:17:08.75,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.57\fscy110.26\frz-4.05\frx0.4335\fry-0.8286\org(1207.18,449.45)\pos(1033.08,405.36)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.75,0:17:08.79,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.63\fscy110.33\frz-4.06\frx0.4335\fry-0.8286\org(1207.64,449.5)\pos(1033.43,405.38)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.79,0:17:08.84,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.69\fscy110.39\frz-4.05\frx0.4335\fry-0.8286\org(1208.07,449.5)\pos(1033.75,405.37)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.84,0:17:08.88,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.76\fscy110.47\frz-4.05\frx0.4335\fry-0.8286\org(1208.52,449.59)\pos(1034.09,405.42)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.88,0:17:08.92,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.83\fscy110.54\frz-4.05\frx0.4335\fry-0.8286\org(1208.97,449.64)\pos(1034.43,405.45)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.92,0:17:08.96,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.88\fscy110.6\frz-4.05\frx0.4335\fry-0.8286\org(1209.4,449.68)\pos(1034.76,405.46)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:08.96,0:17:09.00,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx103.95\fscy110.67\frz-4.05\frx0.4335\fry-0.8286\org(1209.84,449.73)\pos(1035.09,405.48)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.00,0:17:09.04,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.01\fscy110.73\frz-4.05\frx0.4335\fry-0.8286\org(1210.27,449.77)\pos(1035.42,405.5)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.04,0:17:09.09,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.07\fscy110.8\frz-4.05\frx0.4335\fry-0.8286\org(1210.72,449.82)\pos(1035.76,405.52)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.09,0:17:09.13,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.13\fscy110.87\frz-4.05\frx0.4335\fry-0.8286\org(1211.15,449.87)\pos(1036.09,405.54)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.13,0:17:09.17,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.2\fscy110.94\frz-4.05\frx0.4335\fry-0.8286\org(1211.59,449.89)\pos(1036.42,405.55)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.17,0:17:09.21,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.26\fscy111\frz-4.05\frx0.4335\fry-0.8286\org(1212.02,449.96)\pos(1036.75,405.58)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.21,0:17:09.25,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.33\fscy111.07\frz-4.05\frx0.4335\fry-0.8286\org(1212.47,450)\pos(1037.09,405.6)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.25,0:17:09.29,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.39\fscy111.14\frz-4.05\frx0.4335\fry-0.8286\org(1212.91,450.05)\pos(1037.42,405.62)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.29,0:17:09.34,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.45\fscy111.2\frz-4.05\frx0.4335\fry-0.8286\org(1213.35,450.08)\pos(1037.76,405.63)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.34,0:17:09.38,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.51\fscy111.27\frz-4.05\frx0.4335\fry-0.8286\org(1213.78,450.14)\pos(1038.08,405.66)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.38,0:17:09.42,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.58\fscy111.34\frz-4.05\frx0.4335\fry-0.8286\org(1214.21,450.18)\pos(1038.41,405.68)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.42,0:17:09.46,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.64\fscy111.4\frz-4.05\frx0.4335\fry-0.8286\org(1214.66,450.24)\pos(1038.75,405.7)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.46,0:17:09.50,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.7\fscy111.47\frz-4.05\frx0.4335\fry-0.8286\org(1215.09,450.26)\pos(1039.08,405.71)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.50,0:17:09.54,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.76\fscy111.54\frz-4.05\frx0.4335\fry-0.8286\org(1215.53,450.32)\pos(1039.41,405.74)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.54,0:17:09.59,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.82\fscy111.6\frz-4.05\frx0.4335\fry-0.8286\org(1215.94,450.38)\pos(1039.73,405.77)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.59,0:17:09.63,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.89\fscy111.67\frz-4.05\frx0.4335\fry-0.8286\org(1216.41,450.43)\pos(1040.08,405.78)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.63,0:17:09.67,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx104.95\fscy111.74\frz-4.05\frx0.4335\fry-0.8286\org(1216.85,450.45)\pos(1040.41,405.79)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.67,0:17:09.71,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.01\fscy111.8\frz-4.05\frx0.4335\fry-0.8286\org(1217.28,450.51)\pos(1040.74,405.82)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.71,0:17:09.75,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.08\fscy111.87\frz-4.05\frx0.4335\fry-0.8286\org(1217.74,450.58)\pos(1041.09,405.86)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.75,0:17:09.80,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.14\fscy111.94\frz-4.05\frx0.4335\fry-0.8286\org(1218.16,450.6)\pos(1041.4,405.86)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.80,0:17:09.84,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.2\fscy112\frz-4.05\frx0.4335\fry-0.8286\org(1218.59,450.64)\pos(1041.74,405.87)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.84,0:17:09.88,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.27\fscy112.07\frz-4.05\frx0.4335\fry-0.8286\org(1219.04,450.7)\pos(1042.07,405.9)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.88,0:17:09.92,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.33\fscy112.14\frz-4.05\frx0.4335\fry-0.8286\org(1219.5,450.76)\pos(1042.42,405.93)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.92,0:17:09.96,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.4\fscy112.21\frz-4.05\frx0.4335\fry-0.8286\org(1219.92,450.79)\pos(1042.74,405.94)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:09.96,0:17:10.00,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.46\fscy112.28\frz-4.05\frx0.4335\fry-0.8286\org(1220.38,450.81)\pos(1043.09,405.94)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.00,0:17:10.05,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.53\fscy112.35\frz-4.05\frx0.4335\fry-0.8286\org(1220.85,450.84)\pos(1043.44,405.94)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.05,0:17:10.09,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.59\fscy112.42\frz-4.04\frx0.4335\fry-0.8286\org(1221.31,450.86)\pos(1043.79,405.95)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.09,0:17:10.13,OnScreen,,0,0,0,track,{=64=67}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.66\fscy112.49\frz-4.04\frx0.4335\fry-0.8286\org(1221.77,450.88)\pos(1044.14,405.95)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.13,0:17:10.17,OnScreen,,0,0,0,track,{=64=67}{\alpha&H03&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.73\fscy112.56\frz-4.04\frx0.4335\fry-0.8286\org(1222.23,450.91)\pos(1044.49,405.95)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.17,0:17:10.21,OnScreen,,0,0,0,track,{=64=67}{\alpha&H0D&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.79\fscy112.63\frz-4.04\frx0.4335\fry-0.8286\org(1222.69,450.93)\pos(1044.83,405.96)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.21,0:17:10.25,OnScreen,,0,0,0,track,{=64=67}{\alpha&H17&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.86\fscy112.7\frz-4.03\frx0.4335\fry-0.8286\org(1223.15,450.95)\pos(1045.18,405.96)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.25,0:17:10.30,OnScreen,,0,0,0,track,{=64=67}{\alpha&H21&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.92\fscy112.77\frz-4.03\frx0.4335\fry-0.8286\org(1223.62,450.98)\pos(1045.53,405.96)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.30,0:17:10.34,OnScreen,,0,0,0,track,{=64=67}{\alpha&H2E&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx105.99\fscy112.84\frz-4.03\frx0.4335\fry-0.8286\org(1224.08,451)\pos(1045.88,405.96)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.34,0:17:10.38,OnScreen,,0,0,0,track,{=64=67}{\alpha&H38&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.06\fscy112.91\frz-4.03\frx0.4335\fry-0.8286\org(1224.54,451.02)\pos(1046.23,405.97)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.38,0:17:10.42,OnScreen,,0,0,0,track,{=64=67}{\alpha&H42&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.12\fscy112.98\frz-4.02\frx0.4335\fry-0.8286\org(1225.01,451.05)\pos(1046.58,405.97)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.42,0:17:10.46,OnScreen,,0,0,0,track,{=64=67}{\alpha&H4D&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.19\fscy113.05\frz-4.02\frx0.4335\fry-0.8286\org(1225.47,451.07)\pos(1046.93,405.97)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.46,0:17:10.50,OnScreen,,0,0,0,track,{=64=67}{\alpha&H57&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.26\fscy113.12\frz-4.02\frx0.4335\fry-0.8286\org(1225.93,451.09)\pos(1047.28,405.97)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.50,0:17:10.55,OnScreen,,0,0,0,track,{=64=67}{\alpha&H61&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.32\fscy113.19\frz-4.02\frx0.4335\fry-0.8286\org(1226.4,451.12)\pos(1047.63,405.98)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.55,0:17:10.59,OnScreen,,0,0,0,track,{=64=67}{\alpha&H6E&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.39\fscy113.27\frz-4.01\frx0.4335\fry-0.8286\org(1226.87,451.14)\pos(1047.99,405.98)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.59,0:17:10.63,OnScreen,,0,0,0,track,{=64=67}{\alpha&H78&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.46\fscy113.34\frz-4.01\frx0.4335\fry-0.8286\org(1227.33,451.16)\pos(1048.34,405.98)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.63,0:17:10.67,OnScreen,,0,0,0,track,{=64=67}{\alpha&H82&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.52\fscy113.41\frz-4.01\frx0.4335\fry-0.8286\org(1227.8,451.19)\pos(1048.69,405.99)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.67,0:17:10.71,OnScreen,,0,0,0,track,{=64=67}{\alpha&H8C&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.59\fscy113.48\frz-4.01\frx0.4335\fry-0.8286\org(1228.26,451.21)\pos(1049.04,405.99)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.71,0:17:10.75,OnScreen,,0,0,0,track,{=64=67}{\alpha&H96&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.66\fscy113.55\frz-4\frx0.4335\fry-0.8286\org(1228.73,451.23)\pos(1049.39,405.99)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.75,0:17:10.80,OnScreen,,0,0,0,track,{=64=67}{\alpha&HA1&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.72\fscy113.62\frz-4\frx0.4335\fry-0.8286\org(1229.19,451.25)\pos(1049.74,405.99)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.80,0:17:10.84,OnScreen,,0,0,0,track,{=64=67}{\alpha&HAD&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.79\fscy113.69\frz-4\frx0.4335\fry-0.8286\org(1229.66,451.28)\pos(1050.1,406)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.84,0:17:10.88,OnScreen,,0,0,0,track,{=64=67}{\alpha&HB8&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.86\fscy113.76\frz-4\frx0.4335\fry-0.8286\org(1230.13,451.3)\pos(1050.45,406)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.88,0:17:10.92,OnScreen,,0,0,0,track,{=64=67}{\alpha&HC2&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.92\fscy113.83\frz-3.99\frx0.4335\fry-0.8286\org(1230.6,451.32)\pos(1050.8,406)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.92,0:17:10.96,OnScreen,,0,0,0,track,{=64=67}{\alpha&HCC&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx106.99\fscy113.91\frz-3.99\frx0.4335\fry-0.8286\org(1231.06,451.35)\pos(1051.15,406)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:10.96,0:17:11.00,OnScreen,,0,0,0,track,{=64=67}{\alpha&HD6&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx107.06\fscy113.98\frz-3.99\frx0.4335\fry-0.8286\org(1231.53,451.37)\pos(1051.51,406.01)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:11.00,0:17:11.05,OnScreen,,0,0,0,track,{=64=67}{\alpha&HE0&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx107.12\fscy114.05\frz-3.99\frx0.4335\fry-0.8286\org(1232,451.39)\pos(1051.86,406.01)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:11.05,0:17:11.09,OnScreen,,0,0,0,track,{=64=67}{\alpha&HED&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx107.19\fscy114.12\frz-3.98\frx0.4335\fry-0.8286\org(1232.47,451.42)\pos(1052.22,406.01)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:11.09,0:17:11.13,OnScreen,,0,0,0,track,{=64=67}{\alpha&HF7&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.053535\fscx107.26\fscy114.19\frz-3.98\frx0.4335\fry-0.8286\org(1232.93,451.44)\pos(1052.57,406.01)}我有事要和真乃商量，\N如果你能抽空来一下就好了。
+Dialogue: 0,0:17:05.79,0:17:05.83,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx96.81\fscy104.03\frz-3.82\frx0.4391\fry-0.8391\org(953.2,344.07)\pos(885.74,323.26)}制作人先生
+Dialogue: 0,0:17:05.83,0:17:05.87,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx96.88\fscy104.11\frz-3.83\frx0.4391\fry-0.8391\org(953.49,344.04)\pos(885.98,323.21)}制作人先生
+Dialogue: 0,0:17:05.87,0:17:05.92,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx96.93\fscy104.16\frz-3.83\frx0.4391\fry-0.8391\org(953.76,344.04)\pos(886.22,323.2)}制作人先生
+Dialogue: 0,0:17:05.92,0:17:05.96,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.01\fscy104.25\frz-3.83\frx0.4391\fry-0.8391\org(954.11,344.03)\pos(886.51,323.16)}制作人先生
+Dialogue: 0,0:17:05.96,0:17:06.00,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.06\fscy104.3\frz-3.83\frx0.4391\fry-0.8391\org(954.38,344)\pos(886.75,323.13)}制作人先生
+Dialogue: 0,0:17:06.00,0:17:06.04,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.13\fscy104.37\frz-3.83\frx0.4391\fry-0.8391\org(954.7,343.97)\pos(887.02,323.08)}制作人先生
+Dialogue: 0,0:17:06.04,0:17:06.08,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.18\fscy104.43\frz-3.83\frx0.4391\fry-0.8391\org(954.98,343.96)\pos(887.26,323.07)}制作人先生
+Dialogue: 0,0:17:06.08,0:17:06.12,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.24\fscy104.5\frz-3.83\frx0.4391\fry-0.8391\org(955.27,343.95)\pos(887.51,323.04)}制作人先生
+Dialogue: 0,0:17:06.12,0:17:06.17,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.31\fscy104.56\frz-3.83\frx0.4391\fry-0.8391\org(955.58,343.93)\pos(887.77,323.01)}制作人先生
+Dialogue: 0,0:17:06.17,0:17:06.21,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.37\fscy104.63\frz-3.83\frx0.4391\fry-0.8391\org(955.87,343.91)\pos(888.02,322.98)}制作人先生
+Dialogue: 0,0:17:06.21,0:17:06.25,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.43\fscy104.7\frz-3.83\frx0.4391\fry-0.8391\org(956.17,343.89)\pos(888.28,322.95)}制作人先生
+Dialogue: 0,0:17:06.25,0:17:06.29,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.49\fscy104.76\frz-3.83\frx0.4391\fry-0.8391\org(956.46,343.88)\pos(888.53,322.92)}制作人先生
+Dialogue: 0,0:17:06.29,0:17:06.33,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.55\fscy104.83\frz-3.82\frx0.4391\fry-0.8391\org(956.76,343.86)\pos(888.78,322.89)}制作人先生
+Dialogue: 0,0:17:06.33,0:17:06.38,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.61\fscy104.89\frz-3.82\frx0.4391\fry-0.8391\org(957.06,343.84)\pos(889.05,322.86)}制作人先生
+Dialogue: 0,0:17:06.38,0:17:06.42,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.67\fscy104.96\frz-3.82\frx0.4391\fry-0.8391\org(957.35,343.81)\pos(889.29,322.82)}制作人先生
+Dialogue: 0,0:17:06.42,0:17:06.46,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.73\fscy105.02\frz-3.82\frx0.4391\fry-0.8391\org(957.65,343.8)\pos(889.55,322.79)}制作人先生
+Dialogue: 0,0:17:06.46,0:17:06.50,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.8\fscy105.09\frz-3.82\frx0.4391\fry-0.8391\org(957.95,343.78)\pos(889.8,322.75)}制作人先生
+Dialogue: 0,0:17:06.50,0:17:06.54,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.86\fscy105.16\frz-3.82\frx0.4391\fry-0.8391\org(958.25,343.76)\pos(890.05,322.72)}制作人先生
+Dialogue: 0,0:17:06.54,0:17:06.58,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.92\fscy105.22\frz-3.82\frx0.4391\fry-0.8391\org(958.53,343.75)\pos(890.3,322.7)}制作人先生
+Dialogue: 0,0:17:06.58,0:17:06.63,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx97.98\fscy105.29\frz-3.82\frx0.4391\fry-0.8391\org(958.84,343.74)\pos(890.56,322.67)}制作人先生
+Dialogue: 0,0:17:06.63,0:17:06.67,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.04\fscy105.35\frz-3.82\frx0.4391\fry-0.8391\org(959.13,343.71)\pos(890.82,322.64)}制作人先生
+Dialogue: 0,0:17:06.67,0:17:06.71,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.1\fscy105.42\frz-3.82\frx0.4391\fry-0.8391\org(959.43,343.68)\pos(891.07,322.59)}制作人先生
+Dialogue: 0,0:17:06.71,0:17:06.75,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.17\fscy105.49\frz-3.82\frx0.4391\fry-0.8391\org(959.73,343.67)\pos(891.32,322.57)}制作人先生
+Dialogue: 0,0:17:06.75,0:17:06.79,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.23\fscy105.56\frz-3.82\frx0.4391\fry-0.8391\org(960.02,343.65)\pos(891.57,322.54)}制作人先生
+Dialogue: 0,0:17:06.79,0:17:06.83,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.29\fscy105.62\frz-3.82\frx0.4391\fry-0.8391\org(960.31,343.64)\pos(891.82,322.51)}制作人先生
+Dialogue: 0,0:17:06.83,0:17:06.88,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.35\fscy105.68\frz-3.82\frx0.4391\fry-0.8391\org(960.61,343.62)\pos(892.08,322.48)}制作人先生
+Dialogue: 0,0:17:06.88,0:17:06.92,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.41\fscy105.75\frz-3.82\frx0.4391\fry-0.8391\org(960.91,343.6)\pos(892.33,322.44)}制作人先生
+Dialogue: 0,0:17:06.92,0:17:06.96,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.47\fscy105.82\frz-3.82\frx0.4391\fry-0.8391\org(961.2,343.59)\pos(892.58,322.43)}制作人先生
+Dialogue: 0,0:17:06.96,0:17:07.00,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.54\fscy105.88\frz-3.82\frx0.4391\fry-0.8391\org(961.5,343.57)\pos(892.84,322.39)}制作人先生
+Dialogue: 0,0:17:07.00,0:17:07.04,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.59\fscy105.94\frz-3.82\frx0.4391\fry-0.8391\org(961.78,343.54)\pos(893.08,322.36)}制作人先生
+Dialogue: 0,0:17:07.04,0:17:07.08,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.66\fscy106.02\frz-3.82\frx0.4391\fry-0.8391\org(962.11,343.53)\pos(893.36,322.32)}制作人先生
+Dialogue: 0,0:17:07.08,0:17:07.13,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.72\fscy106.08\frz-3.82\frx0.4391\fry-0.8391\org(962.39,343.52)\pos(893.6,322.3)}制作人先生
+Dialogue: 0,0:17:07.13,0:17:07.17,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.78\fscy106.15\frz-3.82\frx0.4391\fry-0.8391\org(962.7,343.49)\pos(893.86,322.26)}制作人先生
+Dialogue: 0,0:17:07.17,0:17:07.21,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.84\fscy106.21\frz-3.82\frx0.4391\fry-0.8391\org(962.98,343.48)\pos(894.11,322.24)}制作人先生
+Dialogue: 0,0:17:07.21,0:17:07.25,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.91\fscy106.28\frz-3.82\frx0.4391\fry-0.8391\org(963.29,343.47)\pos(894.37,322.21)}制作人先生
+Dialogue: 0,0:17:07.25,0:17:07.29,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx98.96\fscy106.34\frz-3.82\frx0.4391\fry-0.8391\org(963.58,343.44)\pos(894.62,322.17)}制作人先生
+Dialogue: 0,0:17:07.29,0:17:07.33,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.02\fscy106.41\frz-3.82\frx0.4391\fry-0.8391\org(963.88,343.43)\pos(894.88,322.15)}制作人先生
+Dialogue: 0,0:17:07.33,0:17:07.38,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.09\fscy106.48\frz-3.82\frx0.4391\fry-0.8391\org(964.17,343.41)\pos(895.12,322.11)}制作人先生
+Dialogue: 0,0:17:07.38,0:17:07.42,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.15\fscy106.54\frz-3.82\frx0.4391\fry-0.8391\org(964.47,343.4)\pos(895.38,322.09)}制作人先生
+Dialogue: 0,0:17:07.42,0:17:07.46,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.21\fscy106.61\frz-3.82\frx0.4391\fry-0.8391\org(964.77,343.37)\pos(895.63,322.05)}制作人先生
+Dialogue: 0,0:17:07.46,0:17:07.50,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.27\fscy106.67\frz-3.82\frx0.4391\fry-0.8391\org(965.06,343.34)\pos(895.89,322.01)}制作人先生
+Dialogue: 0,0:17:07.50,0:17:07.54,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.33\fscy106.74\frz-3.82\frx0.4391\fry-0.8391\org(965.36,343.34)\pos(896.14,321.99)}制作人先生
+Dialogue: 0,0:17:07.54,0:17:07.58,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.4\fscy106.81\frz-3.82\frx0.4391\fry-0.8391\org(965.67,343.33)\pos(896.4,321.96)}制作人先生
+Dialogue: 0,0:17:07.58,0:17:07.63,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.46\fscy106.87\frz-3.82\frx0.4391\fry-0.8391\org(965.95,343.3)\pos(896.64,321.93)}制作人先生
+Dialogue: 0,0:17:07.63,0:17:07.67,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.51\fscy106.94\frz-3.82\frx0.4391\fry-0.8391\org(966.25,343.27)\pos(896.91,321.88)}制作人先生
+Dialogue: 0,0:17:07.67,0:17:07.71,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.58\fscy107.01\frz-3.82\frx0.4391\fry-0.8391\org(966.55,343.27)\pos(897.16,321.86)}制作人先生
+Dialogue: 0,0:17:07.71,0:17:07.75,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.64\fscy107.07\frz-3.82\frx0.4391\fry-0.8391\org(966.84,343.25)\pos(897.41,321.84)}制作人先生
+Dialogue: 0,0:17:07.75,0:17:07.79,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.7\fscy107.14\frz-3.82\frx0.4391\fry-0.8391\org(967.14,343.23)\pos(897.67,321.8)}制作人先生
+Dialogue: 0,0:17:07.79,0:17:07.83,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.77\fscy107.21\frz-3.82\frx0.4391\fry-0.8391\org(967.46,343.21)\pos(897.94,321.77)}制作人先生
+Dialogue: 0,0:17:07.83,0:17:07.88,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.82\fscy107.27\frz-3.82\frx0.4391\fry-0.8391\org(967.73,343.19)\pos(898.17,321.74)}制作人先生
+Dialogue: 0,0:17:07.88,0:17:07.92,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.89\fscy107.34\frz-3.82\frx0.4391\fry-0.8391\org(968.04,343.18)\pos(898.44,321.72)}制作人先生
+Dialogue: 0,0:17:07.92,0:17:07.96,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx99.95\fscy107.4\frz-3.82\frx0.4391\fry-0.8391\org(968.33,343.16)\pos(898.68,321.68)}制作人先生
+Dialogue: 0,0:17:07.96,0:17:08.00,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.01\fscy107.47\frz-3.82\frx0.4391\fry-0.8391\org(968.62,343.14)\pos(898.93,321.65)}制作人先生
+Dialogue: 0,0:17:08.00,0:17:08.04,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.07\fscy107.53\frz-3.82\frx0.4391\fry-0.8391\org(968.93,343.13)\pos(899.19,321.62)}制作人先生
+Dialogue: 0,0:17:08.04,0:17:08.09,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.13\fscy107.6\frz-3.82\frx0.4391\fry-0.8391\org(969.22,343.11)\pos(899.44,321.59)}制作人先生
+Dialogue: 0,0:17:08.09,0:17:08.13,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.19\fscy107.66\frz-3.82\frx0.4391\fry-0.8391\org(969.52,343.09)\pos(899.7,321.56)}制作人先生
+Dialogue: 0,0:17:08.13,0:17:08.17,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.26\fscy107.73\frz-3.82\frx0.4391\fry-0.8391\org(969.81,343.05)\pos(899.95,321.51)}制作人先生
+Dialogue: 0,0:17:08.17,0:17:08.21,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.32\fscy107.8\frz-3.82\frx0.4391\fry-0.8391\org(970.11,343.05)\pos(900.21,321.49)}制作人先生
+Dialogue: 0,0:17:08.21,0:17:08.25,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.39\fscy107.87\frz-3.82\frx0.4391\fry-0.8391\org(970.42,343.05)\pos(900.47,321.47)}制作人先生
+Dialogue: 0,0:17:08.25,0:17:08.29,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.44\fscy107.93\frz-3.82\frx0.4391\fry-0.8391\org(970.71,343.02)\pos(900.72,321.43)}制作人先生
+Dialogue: 0,0:17:08.29,0:17:08.34,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.5\fscy107.99\frz-3.82\frx0.4391\fry-0.8391\org(971,342.99)\pos(900.97,321.4)}制作人先生
+Dialogue: 0,0:17:08.34,0:17:08.38,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.56\fscy108.06\frz-3.82\frx0.4391\fry-0.8391\org(971.3,342.98)\pos(901.22,321.38)}制作人先生
+Dialogue: 0,0:17:08.38,0:17:08.42,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.63\fscy108.13\frz-3.82\frx0.4391\fry-0.8391\org(971.6,342.98)\pos(901.48,321.35)}制作人先生
+Dialogue: 0,0:17:08.42,0:17:08.46,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.69\fscy108.19\frz-3.82\frx0.4391\fry-0.8391\org(971.89,342.95)\pos(901.73,321.31)}制作人先生
+Dialogue: 0,0:17:08.46,0:17:08.50,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.74\fscy108.26\frz-3.81\frx0.4391\fry-0.8391\org(972.18,342.92)\pos(901.98,321.28)}制作人先生
+Dialogue: 0,0:17:08.50,0:17:08.54,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.81\fscy108.33\frz-3.82\frx0.4391\fry-0.8391\org(972.49,342.91)\pos(902.24,321.25)}制作人先生
+Dialogue: 0,0:17:08.54,0:17:08.59,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.87\fscy108.39\frz-3.82\frx0.4391\fry-0.8391\org(972.78,342.9)\pos(902.49,321.22)}制作人先生
+Dialogue: 0,0:17:08.59,0:17:08.63,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.93\fscy108.46\frz-3.82\frx0.4391\fry-0.8391\org(973.08,342.87)\pos(902.74,321.19)}制作人先生
+Dialogue: 0,0:17:08.63,0:17:08.67,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx100.99\fscy108.52\frz-3.82\frx0.4391\fry-0.8391\org(973.38,342.86)\pos(903,321.16)}制作人先生
+Dialogue: 0,0:17:08.67,0:17:08.71,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.05\fscy108.59\frz-3.82\frx0.4391\fry-0.8391\org(973.68,342.84)\pos(903.25,321.13)}制作人先生
+Dialogue: 0,0:17:08.71,0:17:08.75,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.11\fscy108.65\frz-3.82\frx0.4391\fry-0.8391\org(973.95,342.83)\pos(903.49,321.1)}制作人先生
+Dialogue: 0,0:17:08.75,0:17:08.79,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.18\fscy108.72\frz-3.82\frx0.4391\fry-0.8391\org(974.27,342.81)\pos(903.76,321.07)}制作人先生
+Dialogue: 0,0:17:08.79,0:17:08.84,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.23\fscy108.78\frz-3.81\frx0.4391\fry-0.8391\org(974.55,342.77)\pos(904,321.02)}制作人先生
+Dialogue: 0,0:17:08.84,0:17:08.88,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.3\fscy108.85\frz-3.82\frx0.4391\fry-0.8391\org(974.86,342.77)\pos(904.27,321)}制作人先生
+Dialogue: 0,0:17:08.88,0:17:08.92,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.37\fscy108.93\frz-3.82\frx0.4391\fry-0.8391\org(975.16,342.76)\pos(904.52,320.98)}制作人先生
+Dialogue: 0,0:17:08.92,0:17:08.96,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.42\fscy108.99\frz-3.82\frx0.4391\fry-0.8391\org(975.46,342.74)\pos(904.78,320.95)}制作人先生
+Dialogue: 0,0:17:08.96,0:17:09.00,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.48\fscy109.05\frz-3.82\frx0.4391\fry-0.8391\org(975.75,342.72)\pos(905.03,320.91)}制作人先生
+Dialogue: 0,0:17:09.00,0:17:09.04,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.54\fscy109.12\frz-3.82\frx0.4391\fry-0.8391\org(976.05,342.7)\pos(905.28,320.88)}制作人先生
+Dialogue: 0,0:17:09.04,0:17:09.09,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.61\fscy109.18\frz-3.82\frx0.4391\fry-0.8391\org(976.35,342.68)\pos(905.54,320.85)}制作人先生
+Dialogue: 0,0:17:09.09,0:17:09.13,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.67\fscy109.25\frz-3.82\frx0.4391\fry-0.8391\org(976.64,342.66)\pos(905.79,320.82)}制作人先生
+Dialogue: 0,0:17:09.13,0:17:09.17,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.73\fscy109.32\frz-3.81\frx0.4391\fry-0.8391\org(976.93,342.63)\pos(906.04,320.78)}制作人先生
+Dialogue: 0,0:17:09.17,0:17:09.21,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.79\fscy109.38\frz-3.82\frx0.4391\fry-0.8391\org(977.23,342.63)\pos(906.3,320.76)}制作人先生
+Dialogue: 0,0:17:09.21,0:17:09.25,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.85\fscy109.45\frz-3.81\frx0.4391\fry-0.8391\org(977.53,342.61)\pos(906.55,320.73)}制作人先生
+Dialogue: 0,0:17:09.25,0:17:09.29,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.91\fscy109.52\frz-3.81\frx0.4391\fry-0.8391\org(977.83,342.59)\pos(906.81,320.7)}制作人先生
+Dialogue: 0,0:17:09.29,0:17:09.34,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx101.98\fscy109.58\frz-3.81\frx0.4391\fry-0.8391\org(978.12,342.56)\pos(907.06,320.65)}制作人先生
+Dialogue: 0,0:17:09.34,0:17:09.38,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.04\fscy109.65\frz-3.81\frx0.4391\fry-0.8391\org(978.42,342.56)\pos(907.31,320.64)}制作人先生
+Dialogue: 0,0:17:09.38,0:17:09.42,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.1\fscy109.71\frz-3.81\frx0.4391\fry-0.8391\org(978.71,342.54)\pos(907.56,320.61)}制作人先生
+Dialogue: 0,0:17:09.42,0:17:09.46,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.16\fscy109.78\frz-3.81\frx0.4391\fry-0.8391\org(979.01,342.52)\pos(907.82,320.57)}制作人先生
+Dialogue: 0,0:17:09.46,0:17:09.50,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.22\fscy109.84\frz-3.81\frx0.4391\fry-0.8391\org(979.3,342.49)\pos(908.06,320.54)}制作人先生
+Dialogue: 0,0:17:09.50,0:17:09.54,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.28\fscy109.91\frz-3.81\frx0.4391\fry-0.8391\org(979.6,342.48)\pos(908.33,320.51)}制作人先生
+Dialogue: 0,0:17:09.54,0:17:09.59,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.34\fscy109.97\frz-3.81\frx0.4391\fry-0.8391\org(979.88,342.48)\pos(908.57,320.49)}制作人先生
+Dialogue: 0,0:17:09.59,0:17:09.63,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.41\fscy110.04\frz-3.81\frx0.4391\fry-0.8391\org(980.2,342.45)\pos(908.84,320.45)}制作人先生
+Dialogue: 0,0:17:09.63,0:17:09.67,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.46\fscy110.11\frz-3.81\frx0.4391\fry-0.8391\org(980.49,342.42)\pos(909.09,320.41)}制作人先生
+Dialogue: 0,0:17:09.67,0:17:09.71,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.53\fscy110.17\frz-3.81\frx0.4391\fry-0.8391\org(980.78,342.41)\pos(909.34,320.39)}制作人先生
+Dialogue: 0,0:17:09.71,0:17:09.75,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.59\fscy110.24\frz-3.81\frx0.4391\fry-0.8391\org(981.1,342.41)\pos(909.61,320.37)}制作人先生
+Dialogue: 0,0:17:09.75,0:17:09.80,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.65\fscy110.31\frz-3.81\frx0.4391\fry-0.8391\org(981.38,342.38)\pos(909.85,320.33)}制作人先生
+Dialogue: 0,0:17:09.80,0:17:09.84,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.71\fscy110.37\frz-3.81\frx0.4391\fry-0.8391\org(981.68,342.36)\pos(910.1,320.29)}制作人先生
+Dialogue: 0,0:17:09.84,0:17:09.88,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.77\fscy110.44\frz-3.81\frx0.4391\fry-0.8391\org(981.97,342.34)\pos(910.35,320.26)}制作人先生
+Dialogue: 0,0:17:09.88,0:17:09.92,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.84\fscy110.51\frz-3.81\frx0.4391\fry-0.8391\org(982.28,342.33)\pos(910.62,320.24)}制作人先生
+Dialogue: 0,0:17:09.92,0:17:09.96,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.9\fscy110.57\frz-3.81\frx0.4391\fry-0.8391\org(982.57,342.3)\pos(910.87,320.2)}制作人先生
+Dialogue: 0,0:17:09.96,0:17:10.00,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx102.96\fscy110.64\frz-3.81\frx0.4391\fry-0.8391\org(982.88,342.27)\pos(911.13,320.15)}制作人先生
+Dialogue: 0,0:17:10.00,0:17:10.05,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.03\fscy110.71\frz-3.81\frx0.4391\fry-0.8391\org(983.19,342.24)\pos(911.39,320.11)}制作人先生
+Dialogue: 0,0:17:10.05,0:17:10.09,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.09\fscy110.78\frz-3.8\frx0.4391\fry-0.8391\org(983.49,342.2)\pos(911.65,320.06)}制作人先生
+Dialogue: 0,0:17:10.09,0:17:10.13,OnScreen,,0,0,0,track,{=65=66}{\alpha&H00&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.16\fscy110.85\frz-3.8\frx0.4391\fry-0.8391\org(983.8,342.17)\pos(911.91,320.02)}制作人先生
+Dialogue: 0,0:17:10.13,0:17:10.17,OnScreen,,0,0,0,track,{=65=66}{\alpha&H03&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.22\fscy110.92\frz-3.8\frx0.4391\fry-0.8391\org(984.11,342.13)\pos(912.18,319.97)}制作人先生
+Dialogue: 0,0:17:10.17,0:17:10.21,OnScreen,,0,0,0,track,{=65=66}{\alpha&H0D&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.28\fscy110.99\frz-3.8\frx0.4391\fry-0.8391\org(984.42,342.1)\pos(912.44,319.93)}制作人先生
+Dialogue: 0,0:17:10.21,0:17:10.25,OnScreen,,0,0,0,track,{=65=66}{\alpha&H17&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.35\fscy111.06\frz-3.79\frx0.4391\fry-0.8391\org(984.73,342.06)\pos(912.7,319.88)}制作人先生
+Dialogue: 0,0:17:10.25,0:17:10.30,OnScreen,,0,0,0,track,{=65=66}{\alpha&H21&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.41\fscy111.13\frz-3.79\frx0.4391\fry-0.8391\org(985.04,342.03)\pos(912.96,319.84)}制作人先生
+Dialogue: 0,0:17:10.30,0:17:10.34,OnScreen,,0,0,0,track,{=65=66}{\alpha&H2E&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.48\fscy111.2\frz-3.79\frx0.4391\fry-0.8391\org(985.35,341.99)\pos(913.23,319.79)}制作人先生
+Dialogue: 0,0:17:10.34,0:17:10.38,OnScreen,,0,0,0,track,{=65=66}{\alpha&H38&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.54\fscy111.27\frz-3.79\frx0.4391\fry-0.8391\org(985.66,341.96)\pos(913.49,319.75)}制作人先生
+Dialogue: 0,0:17:10.38,0:17:10.42,OnScreen,,0,0,0,track,{=65=66}{\alpha&H42&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.61\fscy111.33\frz-3.79\frx0.4391\fry-0.8391\org(985.96,341.93)\pos(913.75,319.7)}制作人先生
+Dialogue: 0,0:17:10.42,0:17:10.46,OnScreen,,0,0,0,track,{=65=66}{\alpha&H4D&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.67\fscy111.4\frz-3.78\frx0.4391\fry-0.8391\org(986.28,341.89)\pos(914.02,319.66)}制作人先生
+Dialogue: 0,0:17:10.46,0:17:10.50,OnScreen,,0,0,0,track,{=65=66}{\alpha&H57&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.74\fscy111.47\frz-3.78\frx0.4391\fry-0.8391\org(986.58,341.86)\pos(914.28,319.61)}制作人先生
+Dialogue: 0,0:17:10.50,0:17:10.55,OnScreen,,0,0,0,track,{=65=66}{\alpha&H61&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.8\fscy111.54\frz-3.78\frx0.4391\fry-0.8391\org(986.9,341.82)\pos(914.55,319.57)}制作人先生
+Dialogue: 0,0:17:10.55,0:17:10.59,OnScreen,,0,0,0,track,{=65=66}{\alpha&H6E&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.87\fscy111.61\frz-3.78\frx0.4391\fry-0.8391\org(987.21,341.79)\pos(914.81,319.52)}制作人先生
+Dialogue: 0,0:17:10.59,0:17:10.63,OnScreen,,0,0,0,track,{=65=66}{\alpha&H78&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx103.93\fscy111.68\frz-3.77\frx0.4391\fry-0.8391\org(987.52,341.75)\pos(915.07,319.47)}制作人先生
+Dialogue: 0,0:17:10.63,0:17:10.67,OnScreen,,0,0,0,track,{=65=66}{\alpha&H82&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104\fscy111.75\frz-3.77\frx0.4391\fry-0.8391\org(987.83,341.72)\pos(915.34,319.43)}制作人先生
+Dialogue: 0,0:17:10.67,0:17:10.71,OnScreen,,0,0,0,track,{=65=66}{\alpha&H8C&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.06\fscy111.82\frz-3.77\frx0.4391\fry-0.8391\org(988.14,341.68)\pos(915.6,319.38)}制作人先生
+Dialogue: 0,0:17:10.71,0:17:10.75,OnScreen,,0,0,0,track,{=65=66}{\alpha&H96&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.13\fscy111.89\frz-3.77\frx0.4391\fry-0.8391\org(988.45,341.65)\pos(915.87,319.34)}制作人先生
+Dialogue: 0,0:17:10.75,0:17:10.80,OnScreen,,0,0,0,track,{=65=66}{\alpha&HA1&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.19\fscy111.96\frz-3.76\frx0.4391\fry-0.8391\org(988.76,341.61)\pos(916.13,319.29)}制作人先生
+Dialogue: 0,0:17:10.80,0:17:10.84,OnScreen,,0,0,0,track,{=65=66}{\alpha&HAD&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.26\fscy112.03\frz-3.76\frx0.4391\fry-0.8391\org(989.07,341.58)\pos(916.4,319.24)}制作人先生
+Dialogue: 0,0:17:10.84,0:17:10.88,OnScreen,,0,0,0,track,{=65=66}{\alpha&HB8&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.32\fscy112.1\frz-3.76\frx0.4391\fry-0.8391\org(989.38,341.54)\pos(916.66,319.2)}制作人先生
+Dialogue: 0,0:17:10.88,0:17:10.92,OnScreen,,0,0,0,track,{=65=66}{\alpha&HC2&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.39\fscy112.17\frz-3.76\frx0.4391\fry-0.8391\org(989.69,341.51)\pos(916.93,319.15)}制作人先生
+Dialogue: 0,0:17:10.92,0:17:10.96,OnScreen,,0,0,0,track,{=65=66}{\alpha&HCC&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.45\fscy112.24\frz-3.75\frx0.4391\fry-0.8391\org(990.01,341.47)\pos(917.19,319.11)}制作人先生
+Dialogue: 0,0:17:10.96,0:17:11.00,OnScreen,,0,0,0,track,{=65=66}{\alpha&HD6&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.52\fscy112.31\frz-3.75\frx0.4391\fry-0.8391\org(990.32,341.44)\pos(917.46,319.06)}制作人先生
+Dialogue: 0,0:17:11.00,0:17:11.05,OnScreen,,0,0,0,track,{=65=66}{\alpha&HE0&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.58\fscy112.38\frz-3.75\frx0.4391\fry-0.8391\org(990.63,341.4)\pos(917.72,319.02)}制作人先生
+Dialogue: 0,0:17:11.05,0:17:11.09,OnScreen,,0,0,0,track,{=65=66}{\alpha&HED&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.65\fscy112.46\frz-3.75\frx0.4391\fry-0.8391\org(990.94,341.37)\pos(917.99,318.97)}制作人先生
+Dialogue: 0,0:17:11.09,0:17:11.13,OnScreen,,0,0,0,track,{=65=66}{\alpha&HF7&\fn思源黑体 Medium\b0\c&H6A6870&\an7\fax-0.063174\fscx104.72\fscy112.52\frz-3.74\frx0.4391\fry-0.8391\org(991.26,341.33)\pos(918.26,318.92)}制作人先生
+Dialogue: 0,0:18:26.46,0:18:26.50,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx184.26\fscy192.87\frz-0.52\frx0.0233\fry-0.1485\org(1154.96,212.33)\pos(1154.32,289.48)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.50,0:18:26.54,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx184.18\fscy192.78\frz-0.52\frx0.0233\fry-0.1485\org(1154.87,212.48)\pos(1154.23,289.6)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.54,0:18:26.58,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx184.09\fscy192.69\frz-0.52\frx0.0233\fry-0.1485\org(1154.78,212.64)\pos(1154.14,289.72)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.58,0:18:26.62,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx184\fscy192.59\frz-0.52\frx0.0233\fry-0.1485\org(1154.68,212.8)\pos(1154.04,289.84)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.62,0:18:26.66,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.91\fscy192.5\frz-0.52\frx0.0233\fry-0.1485\org(1154.59,212.96)\pos(1153.95,289.96)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.66,0:18:26.71,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.82\fscy192.41\frz-0.52\frx0.0233\fry-0.1485\org(1154.49,213.12)\pos(1153.85,290.08)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.71,0:18:26.75,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.73\fscy192.32\frz-0.52\frx0.0233\fry-0.1485\org(1154.4,213.28)\pos(1153.76,290.21)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.75,0:18:26.79,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.64\fscy192.22\frz-0.52\frx0.0233\fry-0.1485\org(1154.3,213.44)\pos(1153.67,290.33)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.79,0:18:26.83,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.55\fscy192.13\frz-0.52\frx0.0233\fry-0.1485\org(1154.2,213.59)\pos(1153.57,290.45)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.83,0:18:26.87,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.46\fscy192.04\frz-0.52\frx0.0233\fry-0.1485\org(1154.11,213.75)\pos(1153.48,290.56)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.87,0:18:26.91,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.38\fscy191.95\frz-0.52\frx0.0233\fry-0.1485\org(1154.03,213.9)\pos(1153.39,290.68)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.91,0:18:26.96,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.29\fscy191.85\frz-0.52\frx0.0233\fry-0.1485\org(1153.93,214.07)\pos(1153.29,290.81)}283 Pro\N1st Live!
+Dialogue: 0,0:18:26.96,0:18:27.00,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.2\fscy191.76\frz-0.52\frx0.0233\fry-0.1485\org(1153.83,214.22)\pos(1153.2,290.93)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.00,0:18:27.04,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.11\fscy191.67\frz-0.52\frx0.0233\fry-0.1485\org(1153.74,214.38)\pos(1153.1,291.05)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.04,0:18:27.08,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx183.02\fscy191.57\frz-0.52\frx0.0233\fry-0.1485\org(1153.64,214.54)\pos(1153.01,291.17)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.08,0:18:27.12,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.93\fscy191.48\frz-0.52\frx0.0233\fry-0.1485\org(1153.55,214.69)\pos(1152.92,291.29)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.12,0:18:27.16,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.84\fscy191.39\frz-0.52\frx0.0233\fry-0.1485\org(1153.46,214.85)\pos(1152.82,291.41)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.16,0:18:27.21,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.76\fscy191.3\frz-0.52\frx0.0233\fry-0.1485\org(1153.36,215.01)\pos(1152.73,291.53)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.21,0:18:27.25,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.66\fscy191.2\frz-0.52\frx0.0233\fry-0.1485\org(1153.27,215.17)\pos(1152.63,291.65)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.25,0:18:27.29,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.58\fscy191.11\frz-0.52\frx0.0233\fry-0.1485\org(1153.17,215.33)\pos(1152.54,291.78)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.29,0:18:27.33,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.49\fscy191.02\frz-0.52\frx0.0233\fry-0.1485\org(1153.08,215.49)\pos(1152.45,291.89)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.33,0:18:27.37,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.4\fscy190.92\frz-0.52\frx0.0233\fry-0.1485\org(1152.98,215.65)\pos(1152.35,292.02)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.37,0:18:27.41,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.31\fscy190.83\frz-0.52\frx0.0233\fry-0.1485\org(1152.89,215.8)\pos(1152.26,292.13)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.41,0:18:27.46,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.22\fscy190.74\frz-0.52\frx0.0233\fry-0.1485\org(1152.8,215.96)\pos(1152.17,292.26)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.46,0:18:27.50,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.13\fscy190.64\frz-0.52\frx0.0233\fry-0.1485\org(1152.7,216.12)\pos(1152.07,292.38)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.50,0:18:27.54,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx182.05\fscy190.55\frz-0.52\frx0.0233\fry-0.1485\org(1152.61,216.28)\pos(1151.98,292.5)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.54,0:18:27.58,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.96\fscy190.46\frz-0.52\frx0.0233\fry-0.1485\org(1152.51,216.43)\pos(1151.88,292.62)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.58,0:18:27.62,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.87\fscy190.37\frz-0.52\frx0.0233\fry-0.1485\org(1152.42,216.59)\pos(1151.79,292.74)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.62,0:18:27.66,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.78\fscy190.27\frz-0.52\frx0.0233\fry-0.1485\org(1152.33,216.75)\pos(1151.69,292.86)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.66,0:18:27.71,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.69\fscy190.18\frz-0.52\frx0.0233\fry-0.1485\org(1152.23,216.91)\pos(1151.6,292.98)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.71,0:18:27.75,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.6\fscy190.09\frz-0.52\frx0.0233\fry-0.1485\org(1152.14,217.07)\pos(1151.51,293.11)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.75,0:18:27.79,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.51\fscy189.99\frz-0.52\frx0.0233\fry-0.1485\org(1152.05,217.22)\pos(1151.42,293.22)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.79,0:18:27.83,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.42\fscy189.9\frz-0.52\frx0.0233\fry-0.1485\org(1151.95,217.38)\pos(1151.32,293.34)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.83,0:18:27.87,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.34\fscy189.81\frz-0.52\frx0.0233\fry-0.1485\org(1151.85,217.54)\pos(1151.23,293.46)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.87,0:18:27.91,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.25\fscy189.72\frz-0.52\frx0.0233\fry-0.1485\org(1151.77,217.7)\pos(1151.14,293.59)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.91,0:18:27.96,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.16\fscy189.62\frz-0.52\frx0.0233\fry-0.1485\org(1151.67,217.86)\pos(1151.04,293.71)}283 Pro\N1st Live!
+Dialogue: 0,0:18:27.96,0:18:28.00,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx181.07\fscy189.53\frz-0.52\frx0.0233\fry-0.1485\org(1151.57,218.02)\pos(1150.94,293.83)}283 Pro\N1st Live!
+Dialogue: 0,0:18:28.00,0:18:28.04,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx180.98\fscy189.44\frz-0.52\frx0.0233\fry-0.1485\org(1151.48,218.17)\pos(1150.85,293.95)}283 Pro\N1st Live!
+Dialogue: 0,0:18:28.04,0:18:28.08,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx180.89\fscy189.34\frz-0.52\frx0.0233\fry-0.1485\org(1151.38,218.33)\pos(1150.76,294.07)}283 Pro\N1st Live!
+Dialogue: 0,0:18:28.08,0:18:28.12,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx180.8\fscy189.25\frz-0.52\frx0.0233\fry-0.1485\org(1151.29,218.49)\pos(1150.66,294.19)}283 Pro\N1st Live!
+Dialogue: 0,0:18:28.12,0:18:28.17,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx180.71\fscy189.16\frz-0.52\frx0.0233\fry-0.1485\org(1151.19,218.65)\pos(1150.56,294.32)}283 Pro\N1st Live!
+Dialogue: 0,0:18:28.17,0:18:28.21,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx180.62\fscy189.06\frz-0.52\frx0.0233\fry-0.1485\org(1151.1,218.81)\pos(1150.47,294.44)}283 Pro\N1st Live!
+Dialogue: 0,0:18:28.21,0:18:28.25,OnScreen,,0,0,0,,{=78=79}{\alpha&H00&\fn悠哉字体\b1\c&H47434D&\fax0.008570\fscx180.54\fscy188.97\frz-0.52\frx0.0233\fry-0.1485\org(1151.01,218.97)\pos(1150.38,294.56)}283 Pro\N1st Live!
+
+[Aegisub Extradata]
+Data: 0,_aegi_perspective_ambient_plane,e228.84;384.90#7C520.38;427.00#7C520.38;507.00#7C301.63;507.00
+Data: 1,_aegi_perspective_ambient_plane,e228.84;384.90#7C397.61;209.51#7C520.38;507.00#7C301.63;507.00
+Data: 2,_aegi_perspective_ambient_plane,e228.84;384.90#7C382.62;193.72#7C520.39;507.00#7C301.63;507.00
+Data: 3,_aegi_perspective_ambient_plane,e228.84;384.90#7C382.62;193.70#7C520.40;507.00#7C472.12;747.70
+Data: 4,_aegi_perspective_ambient_plane,e228.83;384.90#7C382.62;193.69#7C624.59;555.14#7C472.12;747.72
+Data: 5,_aegi_perspective_ambient_plane,e228.83;384.90#7C382.62;193.69#7C624.59;555.14#7C480.80;766.66
+Data: 6,_aegi_perspective_ambient_plane,e228.83;384.90#7C735.28;116.59#7C624.58;555.13#7C480.79;766.65
+Data: 7,_aegi_perspective_ambient_plane,e228.83;384.90#7C735.28;116.59#7C716.85;563.98#7C480.79;766.65
+Data: 8,_aegi_perspective_ambient_plane,e446.24;101.79#7C735.28;116.59#7C716.85;563.98#7C480.79;766.65
+Data: 9,_aegi_perspective_ambient_plane,e446.24;101.79#7C735.28;116.59#7C716.85;563.98#7C420.12;569.49
+Data: 10,_aegi_perspective_ambient_plane,e417.83;119.23#7C735.28;116.60#7C716.85;563.96#7C420.12;569.47
+Data: 11,_aegi_perspective_ambient_plane,e417.83;119.23#7C710.74;116.60#7C716.85;563.96#7C420.12;569.47
+Data: 12,_aegi_perspective_ambient_plane,e417.83;119.23#7C710.74;116.60#7C708.45;565.89#7C420.12;569.45
+Data: 13,_aegi_perspective_ambient_plane,e417.83;119.23#7C710.74;116.60#7C708.45;565.89#7C412.38;586.24
+Data: 14,_aegi_perspective_ambient_plane,e326.76;181.43#7C735.28;116.60#7C716.85;563.96#7C420.12;569.47
+Data: 15,_aegi_perspective_ambient_plane,e326.76;181.43#7C615.10;130.57#7C716.85;563.96#7C420.12;569.47
+Data: 16,_aegi_perspective_ambient_plane,e326.76;181.43#7C615.10;130.57#7C716.85;563.95#7C383.79;646.30
+Data: 17,_aegi_perspective_ambient_plane,e326.76;181.43#7C615.10;130.57#7C672.83;575.83#7C383.79;646.30
+Data: 18,_aegi_perspective_ambient_plane,e168.82;318.73#7C735.28;116.60#7C716.85;563.96#7C420.12;569.47
+Data: 19,_aegi_perspective_ambient_plane,e168.82;318.73#7C735.28;116.60#7C716.85;563.96#7C369.02;732.17
+Data: 20,_aegi_perspective_ambient_plane,e168.82;318.73#7C442.22;159.36#7C716.85;563.96#7C369.02;732.17
+Data: 21,_aegi_perspective_ambient_plane,e168.82;318.73#7C442.22;159.36#7C633.42;561.88#7C369.02;732.17
+Data: 22,_aegi_perspective_ambient_plane,e73.91;450.14#7C442.22;159.35#7C633.42;561.89#7C369.02;732.18
+Data: 23,_aegi_perspective_ambient_plane,e73.91;450.14#7C306.64;217.76#7C633.42;561.89#7C369.02;732.18
+Data: 24,_aegi_perspective_ambient_plane,e73.91;450.14#7C306.64;217.75#7C633.43;561.90#7C375.98;788.89
+Data: 25,_aegi_perspective_ambient_plane,e73.91;450.14#7C306.64;217.76#7C596.85;555.31#7C375.98;788.89
+Data: 26,_aegi_perspective_ambient_plane,e141.61;329.31#7C442.22;159.35#7C633.42;561.89#7C369.02;732.18
+Data: 27,_aegi_perspective_ambient_plane,e141.61;329.31#7C413.50;157.84#7C633.42;561.88#7C369.02;732.18
+Data: 28,_aegi_perspective_ambient_plane,e141.61;329.31#7C413.50;157.84#7C626.87;552.80#7C369.02;732.17
+Data: 29,_aegi_perspective_ambient_plane,e141.61;329.31#7C413.50;157.84#7C626.86;552.80#7C368.01;731.16
+Data: 30,_aegi_perspective_ambient_plane,e141.61;329.31#7C413.50;157.84#7C626.86;552.80#7C364.98;732.67
+Data: 31,_aegi_perspective_ambient_plane,e168.82;318.73#7C449.53;142.04#7C633.42;561.89#7C369.02;732.18
+Data: 32,_aegi_perspective_ambient_plane,e166.90;291.80#7C449.53;142.04#7C633.42;561.89#7C369.02;732.18
+Data: 33,_aegi_perspective_ambient_plane,e166.90;291.80#7C449.53;142.05#7C636.36;551.94#7C369.02;732.17
+Data: 34,_aegi_perspective_ambient_plane,e166.90;291.80#7C449.53;142.05#7C636.36;551.94#7C362.76;711.93
+Data: 35,_aegi_perspective_ambient_plane,e380.71;143.35#7C735.28;116.60#7C716.85;563.96#7C420.12;569.47
+Data: 36,_aegi_perspective_ambient_plane,e380.71;143.35#7C664.95;114.20#7C716.85;563.96#7C420.12;569.47
+Data: 37,_aegi_perspective_ambient_plane,e380.71;143.35#7C666.55;114.20#7C716.85;563.96#7C420.12;569.47
+Data: 38,_aegi_perspective_ambient_plane,e380.71;143.35#7C666.55;114.20#7C702.47;561.57#7C420.12;569.47
+Data: 39,_aegi_perspective_ambient_plane,e380.71;143.35#7C666.55;114.20#7C702.46;561.55#7C416.13;611.01
+Data: 40,_aegi_perspective_ambient_plane,e287.20;225.66#7C735.28;116.60#7C716.85;563.96#7C420.12;569.47
+Data: 41,_aegi_perspective_ambient_plane,e287.20;225.66#7C547.47;127.79#7C716.85;563.96#7C420.12;569.47
+Data: 42,_aegi_perspective_ambient_plane,e287.20;225.66#7C547.47;127.79#7C676.89;557.56#7C420.12;569.46
+Data: 43,_aegi_perspective_ambient_plane,e287.20;225.66#7C547.47;127.79#7C676.89;557.55#7C418.52;677.33
+Data: 44,_aegi_perspective_ambient_plane,e250.44;296.78#7C735.28;116.60#7C716.85;563.96#7C420.12;569.47
+Data: 45,_aegi_perspective_ambient_plane,e250.44;296.78#7C474.75;150.96#7C716.85;563.96#7C420.12;569.47
+Data: 46,_aegi_perspective_ambient_plane,e250.44;296.78#7C474.76;150.96#7C658.51;554.36#7C420.11;569.46
+Data: 47,_aegi_perspective_ambient_plane,e250.44;296.78#7C474.76;150.96#7C658.51;554.36#7C440.09;721.29
+Data: 48,_aegi_perspective_ambient_plane,e1109.49;524.15#7C1496.94;644.00#7C1496.94;724.00#7C1278.19;724.00
+Data: 49,_aegi_perspective_ambient_plane,e1109.48;524.15#7C1615.92;557.00#7C1496.94;724.00#7C1278.17;724.00
+Data: 50,_aegi_perspective_ambient_plane,e1109.48;524.15#7C1615.92;557.00#7C1599.93;776.38#7C1278.17;724.00
+Data: 51,_aegi_perspective_ambient_plane,e1109.48;524.15#7C1615.92;557.00#7C1599.93;776.38#7C1224.90;875.81
+Data: 52,_aegi_perspective_ambient_plane,e1109.48;524.15#7C1695.82;524.15#7C1599.93;776.38#7C1224.90;875.81
+Data: 53,_aegi_perspective_ambient_plane,e1109.47;524.15#7C1695.82;524.15#7C1694.93;960.15#7C1224.90;875.81
+Data: 54,_aegi_perspective_ambient_plane,e1109.47;524.15#7C1695.82;524.15#7C1694.93;960.15#7C1109.47;948.61
+Data: 55,_aegi_perspective_ambient_plane,e490.04;267.22#7C1526.47;370.22#7C1526.47;450.22#7C277.97;450.22
+Data: 56,_aegi_perspective_ambient_plane,e490.04;267.22#7C1434.07;330.84#7C1526.47;450.22#7C277.97;450.22
+Data: 57,_aegi_perspective_ambient_plane,e490.04;267.22#7C1434.07;330.84#7C1412.86;589.57#7C277.97;450.22
+Data: 58,_aegi_perspective_ambient_plane,e490.04;267.22#7C1444.67;330.84#7C1412.86;589.57#7C277.97;450.22
+Data: 59,_aegi_perspective_ambient_plane,e490.04;267.22#7C1444.67;330.84#7C1414.38;589.57#7C277.97;450.22
+Data: 60,_aegi_perspective_ambient_plane,e490.04;267.22#7C1444.67;330.84#7C1414.38;589.57#7C446.11;515.35
+Data: 61,_aegi_perspective_ambient_plane,e483.98;268.73#7C1444.67;330.84#7C1414.38;589.57#7C446.11;515.35
+Data: 62,_aegi_perspective_ambient_plane,e483.98;268.73#7C1444.67;330.84#7C1414.38;589.57#7C450.66;515.35
+Data: 63,_aegi_perspective_ambient_plane,e483.99;268.73#7C1444.68;330.84#7C1414.39;589.57#7C450.66;515.35
+Data: 64,_aegi_perspective_ambient_plane,e484.00;268.73#7C1444.69;330.84#7C1414.40;589.57#7C450.67;515.35
+Data: 65,_aegi_perspective_ambient_plane,e484.01;268.73#7C1444.70;330.84#7C1414.40;589.57#7C450.68;515.35
+Data: 66,a-mo,e{"uuid"#3A"feb17671-192b-4625-8fa2-1171dd744650"#2C"originalText"#3A"{\\fad(0#2C1000)\\fn#E6#80#9D#E6#BA#90#E9#BB#91#E4#BD#93 Medium\\b0\\c&H6A6870&\\an7\\fax-0.063174\\fscx96.81\\fscy104.03\\frz-3.8231\\frx0.4391\\fry-0.8391\\org(953.2#2C344.07)\\pos(885.74#2C323.26)}#E5#88#B6#E4#BD#9C#E4#BA#BA#E5#85#88#E7#94#9F"}
+Data: 67,a-mo,u?S*V>7FE)DIC:4AR-TBD9W9N.4>D9CUU.'*E,4BC9TEN.T-S949Z:4.G.T*D)CQC<X*J:WFO97R5:8BU)DIC?VR=:G&E+$!M-4!Q-#F=8':OZI#>ZLK1[<O2Z,W4)%VF:'FV<6R=9D"=8'-G3$:".DAX-#:=8'&O.VR=:G&Y,4!O-$5T.4-V8&RG=W.Y/4EO-4:=8':T9XER-$5O.4>=8':S?CUU,D!W-4>=8':S?$!O.$-T.6R=:H*Z,4!O/$)Y.FR=<X*H+$%R.T9O.$EM.$1W,D%Y+6R=='^T+$%Q-$EO/#QU-$-O/45J@?;)E?;=C?3[C_CGA?73D/?=H_3ZA_76BOG(D__]D&R=4O7GAO;?H/3^I/C$P?;+P??JOO;>J?3YA/3YC_7QM?7FP?3[BO/!AC*^
+Data: 68,_aegi_perspective_ambient_plane,e370.61;99.01#7C1244.78;123.56#7C1244.78;283.56#7C1013.00;283.56
+Data: 69,_aegi_perspective_ambient_plane,e370.61;99.01#7C1244.78;123.56#7C1244.78;283.56#7C280.60;985.15
+Data: 70,_aegi_perspective_ambient_plane,e370.61;99.01#7C1244.78;123.56#7C1639.62;1007.65#7C280.60;985.15
+Data: 71,_aegi_perspective_ambient_plane,e280.12;99.65#7C1244.78;123.56#7C1639.63;1007.65#7C280.60;985.15
+Data: 72,_aegi_perspective_ambient_plane,e280.12;99.65#7C1583.23;117.40#7C1639.63;1007.65#7C280.60;985.15
+Data: 73,_aegi_perspective_ambient_plane,e271.39;93.82#7C1632.28;104.20#7C1630.98;1001.87#7C277.91;985.86
+Data: 74,_aegi_perspective_ambient_plane,e271.39;93.82#7C1632.28;104.20#7C1642.36;1007.89#7C277.92;985.86
+Data: 75,_aegi_perspective_ambient_plane,e268.00;91.56#7C1640.94;110.50#7C1639.21;1005.79#7C274.54;983.76
+Data: 76,_aegi_perspective_ambient_plane,e279.97;99.39#7C1640.94;110.50#7C1639.21;1005.79#7C274.55;983.76
+Data: 77,_aegi_perspective_ambient_plane,e279.97;99.39#7C1640.94;110.50#7C1639.21;1005.79#7C278.21;986.08
+Data: 78,_aegi_perspective_ambient_plane,e279.97;99.39#7C1640.94;110.50#7C1640.73;1007.31#7C278.21;986.08
+Data: 79,a-mo,e{"uuid"#3A"06dcd147-370d-4926-8759-e6796508657d"#2C"originalText"#3A"{\\fn#E6#82#A0#E5#93#89#E5#AD#97#E4#BD#93\\b1\\c&H47434D&\\fax0.008570\\fscx184.26\\fscy192.87\\frz-0.5182\\frx0.0233\\fry-0.1485\\org(1154.96#2C212.33)\\pos(1154.32#2C289.48)}283 Pro\\N1st Live!"}

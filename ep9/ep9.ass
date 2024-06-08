@@ -17,10 +17,10 @@ Audio File: C:/Users/scree/Desktop/sc_ep9.mkv
 Video File: C:/Users/scree/Desktop/sc_ep9.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.750000
-Scroll Position: 102
-Active Line: 110
-Video Position: 12176
+Video Zoom Percent: 1.000000
+Scroll Position: 284
+Active Line: 288
+Video Position: 6052
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -39,291 +39,286 @@ Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:23:57.18,0:23:59.90,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}踏出第一步的勇气
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
 Dialogue: 0,0:07:48.95,0:07:56.50,注释,巡,0,0,0,,注：与第五集13:27构图完全一致
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,colors,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", ["星组"] = "&H8DF6FF&", ["花组"] = "&H9E69FF&", ["放学后"] = "&H3383FA&",} function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,utility,0,0,0,code once anystyle,function string:split(delimiter)     local result = {}     local from = 1     local delim_from, delim_to = string.find(self, delimiter, from, true)     while delim_from do         if (delim_from ~= 1) then             table.insert(result, string.sub(self, from, delim_from-1))         end         from = delim_to + 1         delim_from, delim_to = string.find(self, delimiter, from, true)     end     if (from <= #self) then table.insert(result, string.sub(self, from)) end     return result end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,global settings,0,0,0,code once anystyle,_zh_jp_gap = 45; graphic_height_bottom = 30; graphic_height_top = 25; tc_fontname = "獅尾圓體-Bold"
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,overlap checking,0,0,0,code once anystyle,start_time = -1 end_time = -1 right_pos = -1 align = -1 overlap = false function check_overlap (line_start_time, line_end_time, line_align) if line_start_time >= start_time and line_end_time <= end_time and line_align == align then return true else return false end end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,overlap = check_overlap(orgline.start_time, orgline.end_time, orgline.styleref.align) start_time = orgline.start_time end_time = orgline.end_time align = orgline.styleref.align line_text = orgline.text_stripped:split("\\N")  line_text_tags = orgline.text:split("\\N") line_width = _G.aegisub.text_extents(orgline.styleref, line_text[1] and line_text[1] or "") line_left = (meta.res_x - orgline.eff_margin_l - orgline.eff_margin_r - line_width) / 2 + orgline.eff_margin_l zh_jp_gap = line_text[2] and _zh_jp_gap or 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,short_line = _G.unicode.len(line_text[1] and line_text[1] or "1") <= 4; graphic_char_gap = short_line and 0 or 30; extended = {_G.aegisub.text_extents(orgline.styleref, orgline.actor)}; single_char_width = _G.aegisub.text_extents(orgline.styleref, " 一"); name_gap = orgline.styleref.fontname == tc_fontname and orgline.height / 2.5 or orgline.height / 5; separator_grad_length = short_line and 6-(single_char_width*0.5) or 50;
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext unless overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and line.styleref.fontname or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}!loopctx.state.zhjp == 1 and line_text_tags[loopctx.state.zhjp] or line_text[loopctx.state.zhjp]!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext if overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and "" or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}- !loopctx.state.zhjp == 1 and line_text_tags[loopctx.state.zhjp] or line_text[loopctx.state.zhjp]!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator,0,0,0,template line anystyle notext unless overlap,!relayer(9)!!line.actor == "" and skip() or ""!{!set("separator_width", (line_width / 3 < 100 and line_width or line_width / 3) + graphic_char_gap)!!set("separator_gap", line.styleref.fontname == tc_fontname and line.height / 5 or line.height / 10)!!util.make_grad(line_left+separator_width-separator_grad_length- (single_char_width*0.5),line_left+separator_width,1,false)!\pos(!short_line and (line_left) or (line_left - (single_char_width*0.5))!,!line.styleref.align == 2 and line.top - separator_gap - zh_jp_gap or line.bottom + separator_gap + zh_jp_gap!)\an!line.styleref.align == 2 and 1 or 7!\bord0.2\blur1\shad0\p1\alpha!util.get_grad("&H00&","&HFF&")!}m 0 0 l 1920 0 1920 2 0 2 0 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle notext unless overlap,!short_line and skip() or ""!!line.actor == "" and skip() or ""!{\an7\pos(!line_left - (single_char_width*0.5)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 6 0 0 0 b 6 0 11 -5 11 -11 b 11 -5 15 0 21 0 b 15 0 11 5 11 11 b 11 5 6 0 0 0 m 20 7 b 20 9 22 11 24 11 b 22 11 20 13 20 15 b 20 13 18 11 16 11 b 18 11 20 9 20 7
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext unless overlap,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&}!line.actor!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext if overlap,!line.actor == "" and skip() or ""!{!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20}　{\fscx80}& !line.actor!
 Comment: 0,0:11:05.81,0:11:08.25,注释,,0,0,0,,=====TEXTS=====
-Dialogue: 0,0:00:01.87,0:00:06.06,SC_Bottom,制作人,0,0,0,,我想让真乃你来当16人的Center\N真乃に16人のセンターを任せたいと思ってる
-Dialogue: 0,0:00:08.56,0:00:11.28,SC_Bottom,制作人,0,0,0,,可以交给你吗\N頼まれてくれるか?
-Dialogue: 0,0:00:12.02,0:00:13.28,SC_Bottom,真乃,0,0,0,,这个…\Nえっと
-Dialogue: 0,0:00:14.31,0:00:18.29,SC_Bottom,制作人,0,0,0,,我相信如果是你的话 一定能将大家连接起来\N真乃なら、みんなを繋ぐことができるんじゃないかと思ってる
-Dialogue: 0,0:00:19.37,0:00:22.48,SC_Bottom,制作人,0,0,0,,就像你跟灯织和巡连接在一起一样\N灯織とめぐるを、繋いでくれたみたいに
-Dialogue: 0,0:00:33.37,0:00:34.54,SC_Bottom,巡,0,0,0,,真乃？\N真乃?
-Dialogue: 0,0:00:39.70,0:00:41.37,SC_Bottom,灯织,0,0,0,,很难不犹豫吧\N考えちゃうよね
-Dialogue: 0,0:00:42.79,0:00:43.64,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:00:46.31,0:00:49.83,SC_Bottom,真乃,0,0,0,,虽然说了不用马上答复\Nお返事はすぐじゃなくていいって言ってくれたけど
-Dialogue: 0,0:00:50.61,0:00:53.76,SC_Bottom,真乃,0,0,0,,但我还是不确定到底能不能做到\N私にそんなことできるのかなって
-Dialogue: 0,0:00:56.43,0:01:01.50,SC_Bottom,巡,0,0,0,,那个 真乃 虽然我也不能随便就说「没问题」\Nあのね、真乃 簡単に大丈夫なんて言えないけど
-Dialogue: 0,0:01:01.96,0:01:06.83,SC_Bottom,巡,0,0,0,,只不过既然是制作人的请求的话 就代表着他相信你一定能做到吧\Nプロデューサーがお願いしたってことは、真乃ならできるってことじゃないかな
-Dialogue: 0,0:01:10.97,0:01:12.11,SC_Bottom,灯织,0,0,0,,我也这么想…\N私も
-Dialogue: 0,0:01:12.80,0:01:16.32,SC_Bottom,灯织,0,0,0,,我想正是因为制作人信任着你 才把这个任务交给了你\Nプロデューサーは、真乃だからお願いしたんだって思う
-Dialogue: 0,0:01:16.83,0:01:21.14,SC_Bottom,灯织,0,0,0,,我们一起来想吧 随时都可以来找我们商量\N一緒に考えてみよう いつでも相談に乗るから
-Dialogue: 0,0:01:24.04,0:01:27.66,SC_Bottom,真乃,0,0,0,,谢谢你们 灯织 巡\N灯織ちゃん、めぐるちゃん、ありがとう
-Dialogue: 0,0:01:34.04,0:01:35.51,SC_Bottom,恋钟,0,0,0,,哇\Nうわー
-Dialogue: 0,0:01:36.58,0:01:38.59,SC_Bottom,恋钟,0,0,0,,忒难了\N難しかー
-Dialogue: 0,0:01:38.95,0:01:42.87,SC_Bottom,摩美美,0,0,0,,接下来是来自L'Antica的通知\Nここでアンティーカからのお知らせでーす
-Dialogue: 0,0:01:46.17,0:01:50.10,SC_Bottom,雾子,0,0,0,,那简直宛如天使般的笑容\Nそれはまるで、天使のような笑顔でした
-Dialogue: 0,0:01:59.64,0:02:01.26,SC_Bottom,巡,0,0,0,,早上好\Nおはよう
-Dialogue: 0,0:02:02.32,0:02:04.37,SC_Bottom,巡,0,0,0,,啊 大家都这么早啊\Nあれ、みんな早いね
-Dialogue: 0,0:02:04.37,0:02:06.06,SC_Bottom,BOTH,0,0,0,,早上好\Nおはようございます
-Dialogue: 0,0:02:06.06,0:02:07.69,SC_Bottom,ALL,0,0,0,,早\Nおはよう
-Dialogue: 0,0:02:08.10,0:02:11.00,SC_Bottom,灯织,0,0,0,,抱歉 让你们久等了\Nすみません、お待たせしてしまって
-Dialogue: 0,0:02:11.00,0:02:15.28,SC_Bottom,结华,0,0,0,,啊 没这回事 刚好准备一下今天的工作\Nあ、ううん 今日のお仕事、ちょっと準備したくって
-Dialogue: 0,0:02:15.59,0:02:16.76,SC_Bottom,真乃,0,0,0,,hwa\Nほわっ
-Dialogue: 0,0:02:16.76,0:02:18.65,SC_Bottom,真乃,0,0,0,,今天还要录歌吧\Nレコーディングもあるのに
-Dialogue: 0,0:02:18.65,0:02:21.41,SC_Bottom,巡,0,0,0,,大家一起去做KTV的工作吗\Nみんなでカラオケのお仕事か
-Dialogue: 0,0:02:22.73,0:02:26.13,SC_Bottom,咲耶,0,0,0,,如果是「大家」就好了 但并不是呢\Nそれならよかったのだけど、そうもいかなくてね
-Dialogue: 0,0:02:26.13,0:02:26.87,SC_Bottom,巡,0,0,0,,嗯?\N?
-Dialogue: 0,0:02:26.87,0:02:29.10,SC_Bottom,摩美美,0,0,0,,大家是各干各的呢\Nバラバラなんだよねー
-Dialogue: 0,0:02:29.10,0:02:32.50,SC_Bottom,结华,0,0,0,,是啊 每个人的工作都完美地错开了\Nそう、見事に別のお仕事入っちゃって
-Dialogue: 0,0:02:33.13,0:02:34.71,SC_Bottom,真乃,0,0,0,,雾子你呢？\N霧子ちゃんは?
-Dialogue: 0,0:02:35.21,0:02:39.01,SC_Bottom,雾子,0,0,0,,我的工作…是去书店举办的朗读会…^ ^\N私は、本屋さんで朗読会のお仕事を…
-Dialogue: 0,0:02:41.05,0:02:42.41,SC_Bottom,巡,0,0,0,,诶\N?えー
-Dialogue: 0,0:02:42.41,0:02:44.91,SC_Bottom,灯织,0,0,0,,大家都这么忙啊\Nみなさん、お忙しいんですね
-Dialogue: 0,0:02:45.69,0:02:47.91,SC_Bottom,叶月,0,0,0,,早上好\Nおはようございますー
-Dialogue: 0,0:02:48.24,0:02:50.27,SC_Bottom,ALL,0,0,0,,早上好\Nおはようございます
-Dialogue: 0,0:02:50.77,0:02:57.28,SC_Bottom,叶月,0,0,0,,既然全员都到齐了 那就让我们快点开始录音前的最后准备吧\Nお揃いのようなので、レコーディング前の最終調整、早速始めましょう
-Dialogue: 0,0:02:57.68,0:02:58.73,SC_Bottom,ALL,0,0,0,,好的\Nはい
-Dialogue: 0,0:04:33.96,0:04:39.53,SC_Bottom,恋钟,0,0,0,,「因为你所相信着的那份可能性」\Nだって君が信じてくれた 可能性
-Dialogue: 0,0:04:39.53,0:04:42.35,SC_Bottom,结华,0,0,0,,「一定已经开始了吧」\Nきっとはじまってる
-Dialogue: 0,0:04:42.35,0:04:45.08,SC_Bottom,结华,0,0,0,,「感觉像是被召唤了一般」\N呼ばれた気がしたんだ
-Dialogue: 0,0:04:45.08,0:04:46.66,SC_Bottom,雾子,0,0,0,,「Believe my sky」\NBelieve my sky
-Dialogue: 0,0:04:46.66,0:04:48.46,SC_Bottom,摩美美,0,0,0,,「Believe my dream」\NBelieve my dream
-Dialogue: 0,0:04:48.46,0:04:51.20,SC_Bottom,咲耶,0,0,0,,「一起去寻找吧」\N見つけにいくよ
-Dialogue: 0,0:04:51.69,0:04:54.77,SC_Bottom,星组,0,0,0,,「Catch my wish, Catch my wind」\NCatch my wish, Catch my wind
-Dialogue: 0,0:04:54.77,0:04:56.94,SC_Bottom,星组,0,0,0,,「一起去寻找吧」\N探していたね
-Dialogue: 0,0:04:56.94,0:05:06.22,SC_Top,星组,0,0,0,,「来吧 一起给那片天空染上自己的色彩吧」\Nさあ、自分らしい色になれる空へ一緒に行こうよ
-Dialogue: 0,0:05:02.49,0:05:04.09,SC_Bottom,咲耶,0,0,0,,很有默契呢\N息が合っているね
-Dialogue: 0,0:05:04.41,0:05:06.08,SC_Bottom,雾子,0,0,0,,啊 嗯\Nあ うん
-Dialogue: 0,0:05:15.21,0:05:17.83,SC_Bottom,结华,0,0,0,,恋碳 你很在意这里吗\Nこがたん、そこ気になってるの?
-Dialogue: 0,0:05:17.83,0:05:21.37,SC_Bottom,恋钟,0,0,0,,总感觉能唱的更好\Nもうちょっと上手く歌える気がすっとよ
-Dialogue: 0,0:05:21.37,0:05:22.59,SC_Bottom,叶月,0,0,0,,嗯~\Nうん~
-Dialogue: 0,0:05:22.59,0:05:25.89,SC_Bottom,叶月,0,0,0,,这里如果能配合着旋律的展开\Nそこはメロディの広がりに合わせて、
-Dialogue: 0,0:05:25.89,0:05:30.93,SC_Bottom,叶月,0,0,0,,感受到风景随着旋律的变化 说不定有奇效呢\N景色が変わっていく感じをイメージしてみるといいかもしれませんね
-Dialogue: 0,0:05:32.17,0:05:33.50,SC_Bottom,恋钟,0,0,0,,风景…\N景色…
-Dialogue: 0,0:05:47.34,0:05:49.20,SC_Bottom,结华,0,0,0,,哇偶 不错哦\Nわ～お、いいじゃん
-Dialogue: 0,0:05:49.20,0:05:52.50,SC_Bottom,恋钟,0,0,0,,嗯 谢谢你 叶月\Nうん ありがとう、はつき
-Dialogue: 0,0:05:52.50,0:05:53.62,SC_Bottom,叶月,0,0,0,,不用谢\Nいいえ
-Dialogue: 0,0:05:54.33,0:05:57.46,SC_Top,巡,0,0,0,,「Catch my wish, Catch my wind」\NCatch my wish, Catch my wind
-Dialogue: 0,0:05:57.46,0:05:59.45,SC_Top,巡,0,0,0,,「一起去寻找吧」\N探していたね
-Dialogue: 0,0:05:54.97,0:05:57.85,SC_Bottom,灯织,0,0,0,,好厉害 这么快就能进步得这么大\Nすごい、あんなにすぐ
-Dialogue: 0,0:05:57.85,0:05:58.85,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:06:01.46,0:06:02.80,SC_Bottom,叶月,0,0,0,,好—\Nはーい
-Dialogue: 0,0:06:03.18,0:06:08.11,SC_Bottom,叶月,0,0,0,,练太多了对嗓子也不好 今天就到此为止吧\N声を使いすぎてもいけませんし、これくらいにしておきましょう
-Dialogue: 0,0:06:08.11,0:06:09.44,SC_Bottom,ALL,0,0,0,,好的\Nはーい
-Dialogue: 0,0:06:10.38,0:06:13.82,SC_Bottom,灯织,0,0,0,,让我们再想一想在正式录音之前怎么唱吧\Nレコーディングまでどう歌うか、もっと詰めよう
-Dialogue: 0,0:06:13.82,0:06:15.05,SC_Bottom,巡,0,0,0,,说的是呢！\Nそうだね!
-Dialogue: 0,0:06:19.61,0:06:21.44,SC_Bottom,咲耶,0,0,0,,怎么了 雾子\Nどうしたんだい、霧子?
-Dialogue: 0,0:06:23.31,0:06:24.37,SC_Bottom,雾子,0,0,0,,那个…\Nえっとね…
-Dialogue: 0,0:06:25.03,0:06:29.04,SC_Bottom,雾子,0,0,0,,诶…最近…大家…都在忙工作…\Nえっとね…最近、みんなでお仕事…
-Dialogue: 0,0:06:29.69,0:06:31.37,SC_Bottom,制作人,0,0,0,,大家 辛苦了\N皆、お疲れ
-Dialogue: 0,0:06:31.69,0:06:34.85,SC_Bottom,制作人,0,0,0,,很抱歉 但L'Antica到了出发时间了\Nすまないけど、アンティーカは移動の時間だ
-Dialogue: 0,0:06:34.85,0:06:36.29,SC_Bottom,恋钟,0,0,0,,好—的\Nはーい
-Dialogue: 0,0:06:36.64,0:06:38.87,SC_Bottom,结华,0,0,0,,那就录音的时候再见咯\Nじゃあまたレコーディングでね
-Dialogue: 0,0:06:38.87,0:06:39.57,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:06:39.57,0:06:40.71,SC_Bottom,巡,0,0,0,,加油\N頑張って!
-Dialogue: 0,0:06:41.03,0:06:42.84,SC_Bottom,摩美美,0,0,0,,我出发——了\N行ってきまーす
-Dialogue: 0,0:06:44.50,0:06:45.66,SC_Bottom,咲耶,0,0,0,,没事吧\N大丈夫かい?
-Dialogue: 0,0:06:46.72,0:06:48.57,SC_Bottom,雾子,0,0,0,,没问题\Nうん
-Dialogue: 0,0:07:12.50,0:07:15.63,SC_Bottom,结华,0,0,0,,制作人 结束后我们自行集合吗\Nプロデューサー、終わったら集合は各自?
-Dialogue: 0,0:07:15.63,0:07:19.04,SC_Bottom,制作人,0,0,0,,可以 知道录音棚怎么走吧\Nああ、スタジオの場所は大丈夫そうか?
-Dialogue: 0,0:07:19.27,0:07:21.00,SC_Bottom,结华,0,0,0,,完全没问题\N全然問題なし
-Dialogue: 0,0:07:30.30,0:07:32.84,SC_Bottom,制作人,0,0,0,,那么 摩美美 加油吧\Nじゃあ、摩美々、頑張ってくれ
-Dialogue: 0,0:07:33.16,0:07:35.68,SC_Bottom,摩美美,0,0,0,,我会适当加油的\Nほどほどにやりまーす
-Dialogue: 0,0:07:35.68,0:07:38.51,SC_Bottom,恋钟,0,0,0,,摩美美 今天是广播节目呢\N摩美々、今日ラジオとね
-Dialogue: 0,0:07:38.51,0:07:40.37,SC_Bottom,摩美美,0,0,0,,是的哦\Nそうだけど…
-Dialogue: 0,0:07:40.37,0:07:42.94,SC_Bottom,恋钟,0,0,0,,我也会准时收听哒\N聞くん、忘れようにせんば
-Dialogue: 0,0:07:42.94,0:07:44.61,SC_Bottom,结华,0,0,0,,一路顺风\N行ってらっしゃーい
-Dialogue: 0,0:07:45.42,0:07:46.76,SC_Bottom,摩美美,0,0,0,,好的\Nはーい
-Dialogue: 0,0:07:49.69,0:07:52.60,SC_Bottom,巡,0,0,0,,L'Antica好厉害啊\Nアンティーカーすごかったなあ
-Dialogue: 0,0:07:52.60,0:07:56.50,SC_Bottom,巡,0,0,0,,明明还有工作要做 但唱歌丝毫不马虎 \Nお仕事もあるのに、声出しもバーッてこなしてて
-Dialogue: 0,0:07:57.01,0:07:59.53,SC_Bottom,真乃,0,0,0,,大家都很认真呢\Nみんな、すごく集中してたよね
-Dialogue: 0,0:07:59.53,0:08:00.86,SC_Bottom,巡,0,0,0,,是啊是啊\Nそうそう!
-Dialogue: 0,0:08:01.36,0:08:02.56,SC_Bottom,灯织,0,0,0,,而且…\Nそれに…
-Dialogue: 0,0:08:03.17,0:08:07.25,SC_Bottom,灯织,0,0,0,,我都没意识到她们接了那么多单人工作\Nあんなにソロで活動してるなんて、知らなかった
-Dialogue: 0,0:08:07.77,0:08:08.78,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:08:08.78,0:08:13.18,SC_Bottom,灯织,0,0,0,,我们也得以她们为目标才行\N私たちも、あのくらいを目指さないといけないのかも
-Dialogue: 0,0:08:14.93,0:08:19.13,SC_Bottom,灯织,0,0,0,,因为能以个人身份接到工作 确实很厉害啊\N個人でもお仕事をいただけるって すごいことだと思うから
-Dialogue: 0,0:08:20.39,0:08:21.65,SC_Bottom,真乃,0,0,0,,是啊\N本当だね
-Dialogue: 0,0:08:22.06,0:08:27.81,SC_Bottom,巡,0,0,0,,而且 每个人的实力都得到提升的话 星组会更加闪耀吧\Nそれに、一人一人がパワーアップすれば、イルミネはもっとすごくなるよ
-Dialogue: 0,0:08:27.81,0:08:30.53,SC_Bottom,灯织,600,0,0,,嗯 我们也要加油才行\Nうん 私たちも頑張らないと
-Dialogue: 0,0:08:29.77,0:08:30.53,SC_Bottom,巡,0,300,0,,嗯\Nうん
-Dialogue: 0,0:08:31.32,0:08:34.57,SC_Bottom,巡,0,0,0,,好 那么先解决录音吧\Nよーし!まずはレコーディングだね!
-Dialogue: 0,0:08:37.15,0:08:40.12,SC_Bottom,灯织,0,0,0,,让我们好好解读一下歌词吧\N歌詞のこと、しっかり理解して臨もう
-Dialogue: 0,0:08:40.12,0:08:41.03,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:08:52.10,0:08:53.13,SC_Bottom,结华,0,0,0,,好的（适当）\Nはい
-Dialogue: 0,0:08:54.23,0:08:57.31,SC_Bottom,雾子,0,0,0,,在…不可思议的森林之中\Nそこは、不思議な森の中
-Dialogue: 0,0:08:58.21,0:09:02.03,SC_Bottom,摩美美,0,0,0,,接下来是283PRO 1st Live的相关消息\N283プロ、ファーストライブのお知らせです
-Dialogue: 0,0:09:04.50,0:09:05.75,SC_Bottom,真乃,0,0,0,,（一步一步）\N(Step by Step)
-Dialogue: 0,0:09:05.75,0:09:07.91,SC_Bottom,灯织,0,0,0,,「想成为你的力量」\Nちゃんとチカラにしたい
-Dialogue: 0,0:09:07.91,0:09:08.99,SC_Bottom,真乃,0,0,0,,（一步一步）\N(Step by Step)
-Dialogue: 0,0:09:08.99,0:09:11.78,SC_Bottom,巡,0,0,0,,「想要好好成长起来」\Nちゃんと育てたいよ
-Dialogue: 0,0:09:11.78,0:09:17.27,SC_Bottom,真乃,0,0,0,,「因为你所相信着的那份可能性」\Nだって君が信じてくれた可能性
-Dialogue: 0,0:09:17.27,0:09:21.01,SC_Bottom,真乃,0,0,0,,「给了我踏出第一步的勇气」\N最初の勇気だね
-Dialogue: 0,0:09:22.03,0:09:25.33,SC_Bottom,巡,0,0,0,,果然还是喜欢这里的歌词啊\Nここの歌詞、やっぱり好きだな
-Dialogue: 0,0:09:25.33,0:09:26.50,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:09:26.50,0:09:33.29,SC_Bottom,灯织,0,0,0,,我也是 因为有着制作人的信任 我才能走到这里\N私も、プロデューサーが信じてくれたから、今ここにいられる気がして
-Dialogue: 0,0:09:33.29,0:09:34.93,SC_Bottom,巡,0,0,0,,灯织\N灯織
-Dialogue: 0,0:09:34.93,0:09:36.80,SC_Bottom,真乃,0,0,0,,灯织\N灯織ちゃん
-Dialogue: 0,0:09:36.80,0:09:41.24,SC_Bottom,灯织,0,0,0,,当然还有你们和其他工作人员陪伴着我\Nも、もちろん二人もだし、スタッフさんとかもだけど
-Dialogue: 0,0:09:42.29,0:09:43.40,SC_Bottom,真乃,0,0,0,,我也\N私も
-Dialogue: 0,0:09:45.36,0:09:48.56,SC_Bottom,真乃,0,0,0,,我也最喜欢这里的歌词了\N私も、ここの歌詞が大好き
-Dialogue: 0,0:09:49.11,0:09:49.92,SC_Bottom,巡,0,0,0,,嗯\Nうん
-Dialogue: 0,0:09:50.77,0:09:53.76,SC_Bottom,真乃,0,0,0,,制作人先生给了我踏出第一步的勇气\N初めに勇気をくれたプロデューサーさん
-Dialogue: 0,0:09:54.28,0:09:58.64,SC_Bottom,真乃,0,0,0,,灯织和巡总是给予我奋发向上的勇气\Nいつも頑張る勇気をくれる灯織ちゃんやめぐるちゃん
-Dialogue: 0,0:09:59.69,0:10:02.40,SC_Bottom,真乃,0,0,0,,能感觉到重要的人浮现在我的眼前\N大切な人の顔が思い浮かぶから
-Dialogue: 0,0:10:06.07,0:10:06.70,SC_Bottom,灯织,0,0,0,,嗯\Nうん
-Dialogue: 0,0:10:09.05,0:10:11.70,SC_Bottom,灯织,0,0,0,,能一起走下去吗\N一緒に、行けるかな?
-Dialogue: 0,0:10:12.24,0:10:13.06,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:10:13.06,0:10:14.79,SC_Bottom,巡,0,0,0,,我们要一起走下去哦\N一緒に行けるよ!
-Dialogue: 0,0:10:16.49,0:10:17.84,SC_Bottom,真乃,0,0,0,,一起…\N一緒に…
-Dialogue: 0,0:10:19.30,0:10:23.67,SC_Bottom,真乃,0,0,0,,3人变成16人会怎么样呢\N3人が16人になったら、どうなるのかな?
-Dialogue: 0,0:10:24.92,0:10:28.88,SC_Bottom,真乃,0,0,0,,大家一起唱歌会是什么感觉呢\Nみんなで歌うって、どんな感じだろう?
-Dialogue: 0,0:10:46.44,0:10:47.74,SC_Bottom,巡,0,0,0,,嘘\Nシーッ
-Dialogue: 0,0:10:50.05,0:10:52.15,SC_Bottom,咲耶,0,0,0,,哎呀 辛苦了\Nおや、お疲れ様
-Dialogue: 0,0:10:52.57,0:10:55.05,SC_Bottom,咲耶,0,0,0,,抱歉 让你们看到了丢脸的一面\N恥ずかしいところを見られてしまったね
-Dialogue: 0,0:10:55.27,0:10:58.22,SC_Bottom,巡,0,0,0,,不不 是我们把你吵醒了 对不起\Nうんうん、起こしちゃってごめんね
-Dialogue: 0,0:10:58.22,0:11:00.19,SC_Bottom,灯织,0,0,0,,看起来很疲劳呢\Nお疲れみたいですね
-Dialogue: 0,0:11:00.19,0:11:04.22,SC_Bottom,咲耶,0,0,0,,没 我还好 这可是过得充实的证明啊\Nいや、平気だよ 充実している証拠さ
-Dialogue: 0,0:11:04.79,0:11:07.82,SC_Bottom,真乃,0,0,0,,L'Antica的各位都挺忙的样子\Nアンティーカの皆さん、忙しそうだから
-Dialogue: 0,0:11:08.19,0:11:10.89,SC_Bottom,巡,0,0,0,,其他的人都还在工作吗\N他のみんなは、まだお仕事?
-Dialogue: 0,0:11:10.89,0:11:11.74,SC_Bottom,咲耶,0,0,0,,嗯\Nああ
-Dialogue: 0,0:11:12.18,0:11:17.11,SC_Bottom,灯织,0,0,0,,大家能有这么多不同的工作 真让人吃惊\N皆さんがこんなに個別でお仕事されてるの、驚きました
-Dialogue: 0,0:11:17.46,0:11:20.74,SC_Bottom,咲耶,0,0,0,,多亏了大家的福 特别是在W.I.N.G后工作增加了呢\Nありがたいことに、ウィングからは特にね
-Dialogue: 0,0:11:21.05,0:11:24.16,SC_Bottom,巡,0,0,0,,L'Antica也备受关注呢\Nアンティーカ、大注目だったもんね
-Dialogue: 0,0:11:25.70,0:11:27.85,SC_Bottom,咲耶,0,0,0,,能被这么说我倍感荣幸\Nそう言ってもらえて光栄だ
-Dialogue: 0,0:11:29.17,0:11:32.70,SC_Bottom,咲耶,0,0,0,,只不过稍微 有一点寂寞呢\N少しだけ、寂しい気もするけど…
-Dialogue: 0,0:11:37.52,0:11:41.05,SC_Bottom,咲耶,0,0,0,,大家各自都在为了工作奔波\Nそれぞれが、懸命に仕事をこなしている
-Dialogue: 0,0:11:41.59,0:11:46.25,SC_Bottom,咲耶,0,0,0,,但是 大家也因此没有互相深入交往\Nが、すべてを知っているわけではないからね
-Dialogue: 0,0:11:48.41,0:11:49.53,SC_Bottom,巡,0,0,0,,这样吗\Nそっか
-Dialogue: 0,0:11:51.53,0:11:55.22,SC_Bottom,咲耶,0,0,0,,请不要误会了 我觉得这样也挺好的\N勘違いしないでくれ それでいいと思っているんだ
-Dialogue: 0,0:11:56.68,0:12:00.56,SC_Bottom,咲耶,0,0,0,,没有什么比听大家的冒险故事更开心的事情了\Nみんなの冒険談を聞くのはこの上ない喜びだし
-Dialogue: 0,0:12:00.89,0:12:04.07,SC_Bottom,咲耶,0,0,0,,而且 我相信着L'Antica\N何より アンティーカを信じているから
-Dialogue: 0,0:12:07.07,0:12:11.46,SC_Bottom,灯织,0,0,0,,也许彼此的信任就是向前的动力吧\Nお互い信じてるから、前に進めるんですね
-Dialogue: 0,0:12:11.46,0:12:13.32,SC_Bottom,灯织,0,0,0,,就算相隔千里…\N離れていても
-Dialogue: 0,0:12:15.99,0:12:19.70,SC_Bottom,巡,0,0,0,,这就是第一步的勇气\Nそれが…最初の勇気…
-Dialogue: 0,0:12:19.70,0:12:23.65,SC_Bottom,巡,0,0,0,,这样一想 1st Live也应该是想说这个吧\Nってことは、ファーストライブもそうなのかも
-Dialogue: 0,0:12:23.65,0:12:24.32,SC_Bottom,真乃,0,0,0,,诶？\N…え?
-Dialogue: 0,0:12:24.65,0:12:28.51,SC_Bottom,巡,0,0,0,,至今为止还没有16人一起工作过\N今まで16人でお仕事したことないけど…
-Dialogue: 0,0:12:28.81,0:12:29.96,SC_Bottom,真乃,0,0,0,,啊\Nはあ…
-Dialogue: 0,0:12:40.60,0:12:42.09,SC_Bottom,,0,0,0,,请多指教\Nよろしくお願いします
-Dialogue: 0,0:12:42.59,0:12:44.46,SC_Bottom,真乃,0,0,0,,请多指教\Nよろしくお願いします
-Dialogue: 0,0:12:55.89,0:12:58.12,SC_Bottom,恋钟,0,0,0,,辛苦了\Nお疲れ様でーす
-Dialogue: 0,0:12:58.12,0:12:59.60,SC_Bottom,恋钟,0,0,0,,可算赶上勒\N間に合ったと
-Dialogue: 0,0:12:59.60,0:13:01.42,SC_Bottom,结华,0,300,0,,辛苦了\Nお疲れ様です
-Dialogue: 0,0:12:59.60,0:13:01.42,SC_Bottom,雾子,300,0,0,,辛苦了\Nお疲れ様
-Dialogue: 0,0:13:13.05,0:13:15.11,SC_Bottom,真乃,0,0,0,,我们一定能一同前进的吧\N一緒に行けるよね
-Dialogue: 0,0:13:16.13,0:13:18.74,SC_Bottom,真乃,0,0,0,,我们16人\N私たち、16人で
-Dialogue: 0,0:13:20.85,0:13:23.95,SC_Bottom,真乃,0,0,0,,「没问题的」 这份心情\N大丈夫だよって、この気持ちが
-Dialogue: 0,0:13:23.95,0:13:27.75,SC_Bottom,真乃,0,0,0,,如果能成为大家的勇气的话\Nもし、もしもみんなの勇気になるのなら
-Dialogue: 0,0:13:29.67,0:13:31.20,SC_Bottom,真乃,0,0,0,,想传达给大家\N伝えたい
-Comment: 0,0:13:34.91,0:13:36.38,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:13:36.38,0:13:38.02,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:13:38.02,0:13:40.46,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:13:40.46,0:13:43.08,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:13:43.08,0:13:46.94,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:13:56.04,0:13:58.78,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:13:58.78,0:14:01.31,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:01.31,0:14:07.82,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:07.82,0:14:10.61,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:10.61,0:14:13.24,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:13.24,0:14:15.96,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:15.96,0:14:18.43,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:18.43,0:14:21.48,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:21.48,0:14:25.15,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:25.15,0:14:30.23,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:30.23,0:14:33.84,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:33.84,0:14:36.98,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:36.98,0:14:42.76,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:42.76,0:14:45.61,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:45.61,0:14:48.67,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:48.67,0:14:50.86,SC_Bottom,歌,0,0,0,,不用填
-Comment: 0,0:14:50.86,0:15:00.12,SC_Bottom,歌,0,0,0,,不用填
-Dialogue: 0,0:13:49.92,0:13:52.25,SC_Bottom,恋钟,0,0,0,,好动听的歌声\Nきめかーのこえー
-Dialogue: 0,0:13:52.25,0:13:53.09,SC_Bottom,结华,0,0,0,,嗯\Nうん
-Dialogue: 0,0:15:01.66,0:15:06.57,SC_Bottom,制作人,0,0,0,,总感觉…仿佛看到了16人在唱歌\N何か…見えた気がしたよ 16人で歌ってるのが
-Dialogue: 0,0:15:08.21,0:15:11.82,SC_Bottom,结华,0,0,0,,嗯 这是大家一起唱的歌吧\Nうん みんなで歌うんだよね
-Dialogue: 0,0:15:11.82,0:15:12.70,SC_Bottom,制作人,0,0,0,,啊啊\Nああ
-Dialogue: 0,0:15:16.64,0:15:19.27,SC_Bottom,恋钟,0,0,0,,咱们也要多练练\Nうちらもレッスンせんぱ!
-Dialogue: 0,0:15:20.74,0:15:23.44,SC_Bottom,咲耶,0,0,0,,嗯 要追上她们才行啊\Nああ、追いかけよう
-Dialogue: 0,0:15:24.28,0:15:26.81,SC_Bottom,咲耶,0,0,0,,星组 还有大家\Nイルミネを…みんなを…
-Dialogue: 0,0:15:27.49,0:15:28.43,SC_Bottom,ALL,0,0,0,,嗯\Nうん!
-Dialogue: 0,0:15:34.49,0:15:36.33,SC_Bottom,恋钟,0,0,0,,辛苦了\Nお疲れさま!
-Dialogue: 0,0:15:36.33,0:15:39.05,SC_Bottom,结华,0,0,0,,非常棒哦\Nすっごくよかったよ!
-Dialogue: 0,0:15:38.36,0:15:39.05,SC_Bottom,摩美美,800,0,0,,嗯\Nうん
-Dialogue: 0,0:15:39.57,0:15:41.67,SC_Bottom,真乃,0,0,0,,谢…谢谢你\Nあ、ありがとう
-Dialogue: 0,0:15:41.67,0:15:45.46,SC_Bottom,雾子,0,0,0,,之后…大家要一起唱这首大家的歌\Nこれから、みんなの音を歌うんだなって
-Dialogue: 0,0:15:46.02,0:15:48.59,SC_Bottom,真乃,0,0,0,,hwa 雾子…\Nほわっ、霧子ちゃん
-Dialogue: 0,0:15:48.59,0:15:51.32,SC_Bottom,咲耶,0,0,0,,那么 接下来轮到我们了\Nさあ、次は私たちの番だ
-Dialogue: 0,0:15:51.32,0:15:55.68,SC_Bottom,恋钟,0,0,0,,我们也得吃劲干才行\Nよーし!うちらも気合い入れて頑張ろっと!
-Dialogue: 0,0:15:56.05,0:15:57.51,SC_Bottom,ALL,0,0,0,,噢！\Nおー!
-Dialogue: 0,0:16:04.73,0:16:07.39,SC_Bottom,巡,0,0,0,,总感觉 心情舒畅呢\Nなんか気持ちよかったな
-Dialogue: 0,0:16:07.39,0:16:10.42,SC_Bottom,灯织,0,0,0,,嗯 我觉得已经唱得很好了\Nうん、うまく歌えたと思う
-Dialogue: 0,0:16:13.82,0:16:14.85,SC_Bottom,灯织,0,0,0,,真乃？\N真乃?
-Dialogue: 0,0:16:14.85,0:16:16.11,SC_Bottom,巡,0,0,0,,怎么了\Nどうしたの?
-Dialogue: 0,0:16:17.50,0:16:22.88,SC_Bottom,真乃,0,0,0,,那…那个…当我在唱的时候 注意到了一件事情\Nあ、あのね、私、歌ってみて気づいたことがあって
-Dialogue: 0,0:16:25.76,0:16:31.25,SC_Bottom,真乃,0,0,0,,「因为你所相信着的那份可能性」\Nだって君が信じてくれた可能性
-Dialogue: 0,0:16:31.25,0:16:35.10,SC_Bottom,真乃,0,0,0,,「给了我踏出第一步的勇气」\N最初の勇気だね
-Dialogue: 0,0:16:37.33,0:16:42.33,SC_Bottom,真乃,0,0,0,,因为相信着那份可能性…对吧\N可能性を信じてくれたから…だよね
-Dialogue: 0,0:16:42.33,0:16:44.61,SC_Bottom,真乃,0,0,0,,偶像…还有Center…\Nアイドルも、センターも…
-Dialogue: 0,0:16:47.43,0:16:52.25,SC_Bottom,真乃,0,0,0,,虽然还不知道我能不能做到\N私にできるかどうか、それはまだわからないけど
-Dialogue: 0,0:16:55.30,0:16:57.40,SC_Bottom,真乃,0,0,0,,但我想去和制作人先生聊一下\Nプロデューサーさんと話してくれ
-Dialogue: 0,0:16:57.78,0:16:58.64,SC_Bottom,巡,0,0,0,,嗯\Nうん
-Dialogue: 0,0:17:02.12,0:17:02.89,SC_Bottom,真乃,0,0,0,,Hwa\Nほわっ
-Dialogue: 0,0:17:12.42,0:17:14.39,SC_Bottom,制作人,0,0,0,,谢谢你能来\N来てくれて、ありがとうな
-Dialogue: 0,0:17:15.76,0:17:17.42,SC_Bottom,制作人,0,0,0,,想着和你聊一下\N話をしたいと思って
-Dialogue: 0,0:17:18.55,0:17:22.12,SC_Bottom,真乃,0,0,0,,那个…其实我也有话想说\Nあの…私もちょうどお話をしたくて
-Dialogue: 0,0:17:23.79,0:17:24.68,SC_Bottom,制作人,0,0,0,,这样啊\Nそうか
-Dialogue: 0,0:17:28.56,0:17:31.32,SC_Bottom,真乃,0,0,0,,那个 制作人先生请先说吧\Nあの、プロデューサーさんからどうぞ
-Dialogue: 0,0:17:31.32,0:17:34.85,SC_Bottom,制作人,0,0,0,,啊 不 让我先听听真乃想说的吧\Nああ、いや、まずは真乃の話を聞かせてくれ
-Dialogue: 0,0:17:34.85,0:17:37.90,SC_Bottom,真乃,0,0,0,,不 还是制作人先生先请吧\Nいいえ、本当にプロデューサーさんから
-Dialogue: 0,0:17:46.42,0:17:47.40,SC_Bottom,真乃,0,0,0,,那个…\Nあの…
-Dialogue: 0,0:17:49.98,0:17:52.89,SC_Bottom,真乃,0,0,0,,请让我当Center吧\Nセンター、やらせてください
-Dialogue: 0,0:17:54.63,0:18:01.59,SC_Bottom,真乃,0,0,0,,我察觉到了 制作人先生肯定对我充满了信任\N気づいたんです プロデューサーさんはきっと、私を信じてくれたんだって
-Dialogue: 0,0:18:02.25,0:18:05.67,SC_Bottom,真乃,0,0,0,,这份信任 一定能让我们走得更远\Nそれならきっと、進んでいけるって
-Dialogue: 0,0:18:06.93,0:18:10.45,SC_Bottom,制作人,0,0,0,,真乃…谢谢你啊\N真乃…ありがとな
-Dialogue: 0,0:18:19.42,0:18:21.16,SC_Bottom,制作人,0,0,0,,光阴似箭\N季節が加速してく
-Dialogue: 0,0:18:23.43,0:18:27.68,SC_Bottom,制作人,0,0,0,,而大家的步伐并不输给岁月的流逝\Nそれに負けないくらいのスピードで、みんなが走り出してる
-Dialogue: 0,0:18:31.86,0:18:35.38,SC_Bottom,制作人,0,0,0,,就好像大家 一直都在等待着这个时候一样\Nずっとみんな、この時を待っていたみたいに
-Dialogue: 0,0:18:42.63,0:18:45.36,SC_Bottom,制作人,0,0,0,,此刻 正是振翅高飞之时\N今が、羽ばたく時だ
-Dialogue: 0,0:18:54.98,0:18:57.62,SC_Bottom,结华,0,0,0,,会是什么呢 今天要说的\N何だろうね、今日の話って
-Dialogue: 0,0:18:57.62,0:18:59.45,SC_Bottom,千雪,0,0,0,,是啊\Nそうねー
-Dialogue: 0,0:18:59.45,0:19:01.74,SC_Bottom,甘奈,0,0,0,,那个 知道这个吗\Nねえ、これ知ってる?
-Dialogue: 0,0:19:01.74,0:19:05.41,SC_Bottom,果穗,0,0,0,,知道！烟花大会 就在今天吧\N知ってます!花火大会、今日ですよね!
-Dialogue: 0,0:19:05.41,0:19:07.44,SC_Bottom,真乃,0,0,0,,诶 这样吗\Nえっ、そうなんだ
-Dialogue: 0,0:19:07.44,0:19:09.87,SC_Bottom,恋钟,0,0,0,,会议结束后大伙儿走起吧\Nこの後みんなで行きたかぁ
-Dialogue: 0,0:19:09.87,0:19:11.71,SC_Bottom,巡,0,0,0,,我也想去！\N私も行きたい!
-Dialogue: 0,0:19:16.11,0:19:18.33,SC_Bottom,制作人,0,0,0,,大家 辛苦了\Nみんな、お疲れ様
-Dialogue: 0,0:19:18.33,0:19:20.18,SC_Bottom,全员,0,0,0,,辛苦了\Nお疲れ様です
-Dialogue: 0,0:19:22.33,0:19:26.48,SC_Bottom,制作人,0,0,0,,今天将大家集合起来 是有事情要商量\N今日は話したいことがあって、みんなに集まってもらった
-Dialogue: 0,0:19:29.86,0:19:33.63,SC_Bottom,制作人,0,0,0,,前阵子 看着大家的活跃让我感触良多\Nこのところ、みんなを見ていて感じることがある
-Dialogue: 0,0:19:35.26,0:19:39.49,SC_Bottom,制作人,0,0,0,,大家彼此互相辉映 一起向前\Nお互いの輝きで照らし合って、前に進んでいってるって
-Dialogue: 0,0:19:40.74,0:19:46.70,SC_Bottom,制作人,0,0,0,,才认识不久的各位 能像这样朝着一个目标努力 可以称之为奇迹\N出会ったばかりのみんなが、こんな風に目標に向かっていけるのは、奇跡みたいなものだって
-Dialogue: 0,0:19:48.22,0:19:49.09,SC_Bottom,制作人,0,0,0,,所以\Nだから
-Dialogue: 0,0:19:53.55,0:19:58.70,SC_Bottom,制作人,0,0,0,,所以这次1st Live毫无疑问会是大家展翅翱翔的瞬间\N今回のファーストライブは 間違いなくみんなが羽ばたく瞬間になる!
-Dialogue: 0,0:20:01.90,0:20:03.45,SC_Bottom,制作人,0,0,0,,Spread the Wings\NSpread the Wings
-Dialogue: 0,0:20:04.37,0:20:09.22,SC_Bottom,制作人,0,0,0,,这首歌就是让大家翱翔的翅膀\Nこれは、今みんなが羽ばたくための翼だ!
-Dialogue: 0,0:20:11.02,0:20:12.81,SC_Bottom,真乃,0,0,0,,新曲\N新曲?
-Dialogue: 0,0:20:12.81,0:20:15.86,SC_Bottom,制作人,0,0,0,,啊嗯 我觉得这是一首好歌\Nああ いい曲になったと思ってる
-Dialogue: 0,0:20:18.33,0:20:19.44,SC_Bottom,制作人,0,0,0,,只不过\Nただ
-Dialogue: 0,0:20:19.68,0:20:21.79,SC_Bottom,制作人,0,0,0,,到正式演出前时间已经不多了\N本番まではもう時間がない
-Dialogue: 0,0:20:22.26,0:20:26.89,SC_Bottom,制作人,0,0,0,,要不要唱这首歌 我想交给将会真正站在舞台上的各位来决定\N最終的にやるかどうかは 実際にステージに立つみんなに決めてほしい
-Dialogue: 0,0:20:27.68,0:20:31.90,SC_Bottom,制作人,0,0,0,,因为这首歌在1st Live之后也有的是机会发布\Nこの歌をお披露目する機会は ファーストライブの後にも作れるからな
-Dialogue: 0,0:20:37.83,0:20:39.50,SC_Bottom,真乃,0,0,0,,那…那个…\Nあ…あの…
-Dialogue: 0,0:20:45.29,0:20:50.60,SC_Bottom,真乃,0,0,0,,诶…歌词非常棒\Nえっと…とっても素敵な歌詞だと思いました
-Dialogue: 0,0:20:51.71,0:20:57.79,SC_Bottom,真乃,0,0,0,,如果大家能一起在Live上唱这首歌的话 Live一定会变得更好吧\Nその、みんなで歌えたら、もっと素敵なライブになるって思うから
-Dialogue: 0,0:20:59.25,0:21:03.61,SC_Bottom,真乃,0,0,0,,所以…我想唱！\Nだから…私は…歌いたい!
-Dialogue: 0,0:21:04.57,0:21:05.80,SC_Bottom,巡,0,0,0,,赞成\N賛成!
-Dialogue: 0,0:21:06.28,0:21:07.45,SC_Bottom,灯织,0,0,0,,我赞成\N私も!
-Dialogue: 0,0:21:09.30,0:21:11.82,SC_Bottom,恋钟,0,0,0,,L‘Antica也赞成\Nアンティーカも、賛成~!
-Dialogue: 0,0:21:11.82,0:21:13.80,SC_Bottom,摩美美,0,0,0,,你等会儿…\Nちょっと…
-Dialogue: 0,0:21:13.80,0:21:15.79,SC_Bottom,结华,0,0,0,,算了算了\Nまあまあ
-Dialogue: 0,0:21:15.79,0:21:19.21,SC_Bottom,摩美美,0,0,0,,我没意见\N別にいいけどー
-Dialogue: 0,0:21:19.21,0:21:20.86,SC_Bottom,果穗,0,0,0,,你们怎么想\Nどう思いますか?
-Dialogue: 0,0:21:20.86,0:21:22.57,SC_Bottom,智代子,0,0,0,,我觉得很好啊\Nすごくいいと思う!
-Dialogue: 0,0:21:23.26,0:21:25.44,SC_Bottom,果穗,0,0,0,,我们也赞成！\N私たちも賛成です!
-Dialogue: 0,0:21:25.44,0:21:27.06,SC_Bottom,智代子,0,0,0,,当然赞成\Nもちろん賛成です!
-Dialogue: 0,0:21:28.14,0:21:29.72,SC_Bottom,ALL,0,0,0,,赞成\N賛成!
-Dialogue: 0,0:21:40.70,0:21:42.52,SC_Bottom,制作人,0,0,0,,谢谢各位\Nありがとう、みんな
-Dialogue: 0,0:21:43.40,0:21:46.98,SC_Bottom,智代子,0,0,0,,那个 曲子现在已经可以听了吗？\Nあの、曲ってもう聴けたりしますか?
-Dialogue: 0,0:21:46.98,0:21:48.03,SC_Bottom,制作人,0,0,0,,啊啊\Nああ
-Dialogue: 0,0:21:48.84,0:21:51.03,SC_Bottom,甘奈,0,0,0,,好想快点听到啊\N早く聞きたいなあ
-Dialogue: 0,0:21:51.03,0:21:52.65,SC_Bottom,甜花,0,0,0,,嗯…嗯\Nう…うん
-Dialogue: 0,0:21:55.10,0:21:56.93,SC_Bottom,制作人,0,0,0,,那么 要放了\Nじゃあ、行くぞ
+Comment: 0,0:00:01.95,0:00:06.06,SC_Bottom,制作人,0,0,0,kara,我想让真乃你来当16人的Center\N真乃に16人のセンターを任せたいと思ってる
+Comment: 0,0:00:08.64,0:00:11.28,SC_Bottom,制作人,0,0,0,kara,可以交给你吗\N頼まれてくれるか?
+Comment: 0,0:00:12.10,0:00:13.28,SC_Bottom,真乃,0,0,0,kara,这个…\Nえっと
+Comment: 0,0:00:14.39,0:00:18.29,SC_Bottom,制作人,0,0,0,kara,我相信如果是你的话 一定能将大家连接起来\N真乃なら、みんなを繋ぐことができるんじゃないかと思ってる
+Comment: 0,0:00:19.45,0:00:22.48,SC_Bottom,制作人,0,0,0,kara,就像你跟灯织和巡连接在一起一样\N灯織とめぐるを、繋いでくれたみたいに
+Comment: 0,0:00:33.51,0:00:34.61,SC_Bottom,巡,0,0,0,kara,真乃？\N真乃?
+Comment: 0,0:00:39.78,0:00:41.46,SC_Bottom,灯织,0,0,0,kara,很难不犹豫吧\N考えちゃうよね
+Comment: 0,0:00:42.87,0:00:43.80,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:00:46.39,0:00:49.95,SC_Bottom,真乃,0,0,0,kara,虽然说了不用马上答复\Nお返事はすぐじゃなくていいって言ってくれたけど
+Comment: 0,0:00:50.73,0:00:53.76,SC_Bottom,真乃,0,0,0,kara,但我还是不确定到底能不能做到\N私にそんなことできるのかなって
+Comment: 0,0:00:56.51,0:01:02.04,SC_Bottom,巡,0,0,0,kara,那个 真乃 虽然我也不能随便就说「没问题」\Nあのね、真乃 簡単に大丈夫なんて言えないけど
+Comment: 0,0:01:02.04,0:01:06.83,SC_Bottom,巡,0,0,0,kara,只不过既然是制作人的请求的话 就代表着他相信你一定能做到吧\Nプロデューサーがお願いしたってことは、真乃ならできるってことじゃないかな
+Comment: 0,0:01:11.05,0:01:12.11,SC_Bottom,灯织,0,0,0,kara,我也这么想…\N私も
+Comment: 0,0:01:12.88,0:01:16.91,SC_Bottom,灯织,0,0,0,kara,我想正是因为制作人信任着你 才把这个任务交给了你\Nプロデューサーは、真乃だからお願いしたんだって思う
+Comment: 0,0:01:16.91,0:01:21.14,SC_Bottom,灯织,0,0,0,kara,我们一起来想吧 随时都可以来找我们商量\N一緒に考えてみよう いつでも相談に乗るから
+Comment: 0,0:01:24.12,0:01:27.66,SC_Bottom,真乃,0,0,0,kara,谢谢你们 灯织 巡\N灯織ちゃん、めぐるちゃん、ありがとう
+Comment: 0,0:01:34.12,0:01:35.51,SC_Bottom,恋钟,0,0,0,kara,嗯…\Nうわー
+Comment: 0,0:01:36.66,0:01:38.59,SC_Bottom,恋钟,0,0,0,kara,忒难了\N難しかー
+Comment: 0,0:01:39.22,0:01:42.87,SC_Bottom,摩美美,0,0,0,kara,接下来是来自L'Antica的通知\Nここでアンティーカからのお知らせでーす
+Comment: 0,0:01:46.25,0:01:50.10,SC_Bottom,雾子,0,0,0,kara,那简直宛如天使般的笑容\Nそれはまるで、天使のような笑顔でした
+Comment: 0,0:01:59.72,0:02:01.40,SC_Bottom,巡,0,0,0,kara,早上好\Nおはよう
+Comment: 0,0:02:02.40,0:02:04.45,SC_Bottom,巡,0,0,0,kara,啊 大家都这么早啊\Nあれ、みんな早いね
+Comment: 0,0:02:04.45,0:02:06.06,SC_Bottom,真乃,0,350,0,kara,早上好\Nおはようございます
+Comment: 0,0:02:04.45,0:02:06.06,SC_Bottom,灯织,350,0,0,kara,早上好\Nおはようございます
+Comment: 0,0:02:06.06,0:02:07.69,SC_Bottom,L'Antica,0,0,0,kara,早\Nおはよう
+Comment: 0,0:02:08.25,0:02:11.08,SC_Bottom,灯织,0,0,0,kara,抱歉 让你们久等了\Nすみません、お待たせしてしまって
+Comment: 0,0:02:11.08,0:02:15.28,SC_Bottom,结华,0,0,0,kara,啊 没这回事 刚好准备一下今天的工作\Nあ、ううん 今日のお仕事、ちょっと準備したくって
+Comment: 0,0:02:15.67,0:02:16.84,SC_Bottom,真乃,0,0,0,kara,hwa\Nほわっ
+Comment: 0,0:02:16.84,0:02:18.73,SC_Bottom,真乃,0,0,0,kara,今天还要录歌吧\Nレコーディングもあるのに
+Comment: 0,0:02:18.73,0:02:21.41,SC_Bottom,巡,0,0,0,kara,大家一起去做KTV的工作吗\Nみんなでカラオケのお仕事か
+Comment: 0,0:02:22.81,0:02:26.21,SC_Bottom,咲耶,0,0,0,kara,如果是「大家」就好了 但并不是呢\Nそれならよかったのだけど、そうもいかなくてね
+Comment: 0,0:02:26.21,0:02:26.95,SC_Bottom,巡,0,0,0,kara,嗯?\N?
+Comment: 0,0:02:26.95,0:02:29.18,SC_Bottom,摩美美,0,0,0,kara,大家是各干各的呢\Nバラバラなんだよねー
+Comment: 0,0:02:29.18,0:02:32.50,SC_Bottom,结华,0,0,0,kara,是啊 每个人的工作都完美地错开了\Nそう、見事に別のお仕事入っちゃって
+Comment: 0,0:02:33.21,0:02:34.71,SC_Bottom,真乃,0,0,0,kara,雾子你呢？\N霧子ちゃんは?
+Comment: 0,0:02:35.29,0:02:39.01,SC_Bottom,雾子,0,0,0,kara,我的工作…是去书店举办的朗读会…^ ^\N私は、本屋さんで朗読会のお仕事を…
+Comment: 0,0:02:41.06,0:02:42.49,SC_Bottom,巡,0,0,0,kara,诶\Nえー
+Comment: 0,0:02:42.49,0:02:44.91,SC_Bottom,灯织,0,0,0,kara,大家都这么忙啊\Nみなさん、お忙しいんですね
+Comment: 0,0:02:45.77,0:02:47.91,SC_Bottom,叶月,0,0,0,kara,早上好\Nおはようございますー
+Comment: 0,0:02:48.32,0:02:50.27,SC_Bottom,大家,0,0,0,kara,早上好\Nおはようございます
+Comment: 0,0:02:50.85,0:02:57.28,SC_Bottom,叶月,0,0,0,kara,既然全员都到齐了 那就让我们快点开始录音前的最后准备吧\Nお揃いのようなので、レコーディング前の最終調整、早速始めましょう
+Comment: 0,0:02:57.76,0:02:58.73,SC_Bottom,大家,0,0,0,kara,好的\Nはい
+Comment: 0,0:04:33.79,0:04:39.26,SC_Bottom,恋钟,0,0,0,kara,「因为你所相信着的那份可能性」\Nだって君が信じてくれた 可能性
+Comment: 0,0:04:39.53,0:04:42.35,SC_Bottom,结华,0,0,0,kara,「一定已经开始了吧」\Nきっとはじまってる
+Comment: 0,0:04:42.35,0:04:44.93,SC_Bottom,结华,0,0,0,kara,「感觉像是被召唤了一般」\N呼ばれた気がしたんだ
+Comment: 0,0:04:45.08,0:04:46.66,SC_Bottom,雾子,0,0,0,kara,「Believe my sky」\NBelieve my sky
+Comment: 0,0:04:46.66,0:04:48.39,SC_Bottom,摩美美,0,0,0,kara,「Believe my dream」\NBelieve my dream
+Comment: 0,0:04:48.39,0:04:51.31,SC_Bottom,咲耶,0,0,0,kara,「一起去寻找吧」\N見つけにいくよ
+Comment: 0,0:04:51.69,0:04:54.77,SC_Bottom,星组,0,0,0,kara,「Catch my wish, Catch my wind」\NCatch my wish, Catch my wind
+Comment: 0,0:04:54.77,0:04:56.82,SC_Bottom,星组,0,0,0,kara,「一起去寻找吧」\N探していたね
+Comment: 0,0:04:56.94,0:05:06.22,SC_Top,星组,0,0,0,kara,「来吧 一起给那片天空染上自己的色彩吧」\Nさあ、自分らしい色になれる空へ一緒に行こうよ
+Comment: 0,0:05:02.57,0:05:04.09,SC_Bottom,咲耶,0,0,0,kara,很有默契呢\N息が合っているね
+Comment: 0,0:05:04.49,0:05:06.08,SC_Bottom,雾子,0,0,0,kara,啊 嗯\Nあ うん
+Comment: 0,0:05:07.29,0:05:12.78,SC_Bottom,恋钟 & 结华,0,0,0,kara,「因为你所相信着的那份可能性」\Nだって君が信じてくれた 可能性
+Comment: 0,0:05:15.29,0:05:17.91,SC_Bottom,结华,0,0,0,kara,恋碳 你很在意这里吗\Nこがたん、そこ気になってるの?
+Comment: 0,0:05:17.91,0:05:21.45,SC_Bottom,恋钟,0,0,0,kara,总感觉能唱的更好\Nもうちょっと上手く歌える気がすっとよ
+Comment: 0,0:05:21.45,0:05:22.59,SC_Bottom,叶月,0,0,0,kara,嗯~\Nうん~
+Comment: 0,0:05:22.59,0:05:25.89,SC_Bottom,叶月,0,0,0,kara,这里如果能配合着旋律的展开\Nそこはメロディの広がりに合わせて、
+Comment: 0,0:05:25.89,0:05:30.93,SC_Bottom,叶月,0,0,0,kara,感受到风景随着旋律的变化 说不定有奇效呢\N景色が変わっていく感じをイメージしてみるといいかもしれませんね
+Comment: 0,0:05:32.25,0:05:33.50,SC_Bottom,恋钟,0,0,0,kara,风景…\N景色…
+Comment: 0,0:05:47.42,0:05:49.28,SC_Bottom,结华,0,0,0,kara,哇偶 不错哦\Nわ～お、いいじゃん
+Comment: 0,0:05:49.28,0:05:52.58,SC_Bottom,恋钟,0,0,0,kara,嗯 谢谢你 叶月\Nうん ありがとう、はつき
+Comment: 0,0:05:52.58,0:05:53.62,SC_Bottom,叶月,0,0,0,kara,不用谢\Nいいえ
+Comment: 0,0:05:54.33,0:05:57.46,SC_Top,巡,0,0,0,kara,「Catch my wish, Catch my wind」\NCatch my wish, Catch my wind
+Comment: 0,0:05:57.46,0:05:59.45,SC_Top,巡,0,0,0,kara,「一起去寻找吧」\N探していたね
+Comment: 0,0:05:55.05,0:05:57.93,SC_Bottom,灯织,0,0,0,kara,好厉害 这么快就能进步得这么大\Nすごい、あんなにすぐ
+Comment: 0,0:05:57.93,0:05:58.85,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:06:01.54,0:06:02.80,SC_Bottom,叶月,0,0,0,kara,好—\Nはーい
+Comment: 0,0:06:03.26,0:06:08.19,SC_Bottom,叶月,0,0,0,kara,练太多了对嗓子也不好 今天就到此为止吧\N声を使いすぎてもいけませんし、これくらいにしておきましょう
+Comment: 0,0:06:08.19,0:06:09.44,SC_Bottom,大家,0,0,0,kara,好的\Nはーい
+Comment: 0,0:06:10.46,0:06:13.90,SC_Bottom,灯织,0,0,0,kara,让我们再想一想在正式录音之前怎么唱吧\Nレコーディングまでどう歌うか、もっと詰めよう
+Comment: 0,0:06:13.90,0:06:15.05,SC_Bottom,巡,0,0,0,kara,说的是呢！\Nそうだね!
+Comment: 0,0:06:19.69,0:06:21.44,SC_Bottom,咲耶,0,0,0,kara,怎么了 雾子\Nどうしたんだい、霧子?
+Comment: 0,0:06:23.39,0:06:24.37,SC_Bottom,雾子,0,0,0,kara,那个…\Nえっとね…
+Comment: 0,0:06:25.27,0:06:29.04,SC_Bottom,雾子,0,0,0,kara,诶…最近…大家…都在忙工作…\Nえっとね…最近、みんなでお仕事…
+Comment: 0,0:06:29.77,0:06:31.37,SC_Bottom,制作人,0,0,0,kara,大家 辛苦了\N皆、お疲れ
+Comment: 0,0:06:31.77,0:06:34.93,SC_Bottom,制作人,0,0,0,kara,很抱歉 但L'Antica到了出发时间了\Nすまないけど、アンティーカは移動の時間だ
+Comment: 0,0:06:34.93,0:06:36.29,SC_Bottom,恋钟,0,0,0,kara,好—的\Nはーい
+Comment: 0,0:06:36.72,0:06:38.95,SC_Bottom,结华,0,0,0,kara,那就录音的时候再见咯\Nじゃあまたレコーディングでね
+Comment: 0,0:06:38.95,0:06:39.65,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:06:39.65,0:06:40.71,SC_Bottom,巡,0,0,0,kara,加油\N頑張って!
+Comment: 0,0:06:41.11,0:06:42.84,SC_Bottom,摩美美,0,0,0,kara,我出发——了\N行ってきまーす
+Comment: 0,0:06:44.58,0:06:45.66,SC_Bottom,咲耶,0,0,0,kara,没事吧\N大丈夫かい?
+Comment: 0,0:06:46.80,0:06:48.57,SC_Bottom,雾子,0,0,0,kara,没问题\Nうん ごめんね
+Comment: 0,0:07:12.58,0:07:15.71,SC_Bottom,结华,0,0,0,kara,制作人 结束后我们自行集合吗\Nプロデューサー、終わったら集合は各自?
+Comment: 0,0:07:15.71,0:07:19.04,SC_Bottom,制作人,0,0,0,kara,可以 知道录音棚怎么走吧\Nああ、スタジオの場所は大丈夫そうか?
+Comment: 0,0:07:19.35,0:07:21.00,SC_Bottom,结华,0,0,0,kara,完全没问题\N全然問題なし
+Comment: 0,0:07:30.38,0:07:32.84,SC_Bottom,制作人,0,0,0,kara,那么 摩美美 加油吧\Nじゃあ、摩美々、頑張ってくれ
+Comment: 0,0:07:33.24,0:07:35.68,SC_Bottom,摩美美,0,0,0,kara,我会适当加油的\Nほどほどにやりまーす
+Comment: 0,0:07:35.68,0:07:38.59,SC_Bottom,恋钟,0,0,0,kara,摩美美 今天是广播节目呢\N摩美々、今日ラジオとね
+Comment: 0,0:07:38.59,0:07:40.45,SC_Bottom,摩美美,0,0,0,kara,是的哦\Nそうだけど…
+Comment: 0,0:07:40.45,0:07:43.02,SC_Bottom,恋钟,0,0,0,kara,我也会准时收听哒\N聞くん、忘れようにせんば
+Comment: 0,0:07:43.02,0:07:44.61,SC_Bottom,结华,0,0,0,kara,一路顺风\N行ってらっしゃーい
+Comment: 0,0:07:45.50,0:07:46.76,SC_Bottom,摩美美,0,0,0,kara,好的\Nはーい
+Comment: 0,0:07:49.77,0:07:52.68,SC_Bottom,巡,0,0,0,kara,L'Antica好厉害啊\Nアンティーカーすごかったなあ
+Comment: 0,0:07:52.68,0:07:56.50,SC_Bottom,巡,0,0,0,kara,明明还有工作要做 但唱歌丝毫不马虎 \Nお仕事もあるのに、声出しもバーッてこなしてて
+Comment: 0,0:07:57.09,0:07:59.61,SC_Bottom,真乃,0,0,0,kara,大家都很认真呢\Nみんな、すごく集中してたよね
+Comment: 0,0:07:59.61,0:08:00.86,SC_Bottom,巡,0,0,0,kara,是啊是啊\Nそうそう!
+Comment: 0,0:08:01.44,0:08:02.56,SC_Bottom,灯织,0,0,0,kara,而且…\Nそれに…
+Comment: 0,0:08:03.47,0:08:07.25,SC_Bottom,灯织,0,0,0,kara,我都没意识到她们接了那么多单人工作\Nあんなにソロで活動してるなんて、知らなかった
+Comment: 0,0:08:07.85,0:08:08.86,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:08:08.86,0:08:13.18,SC_Bottom,灯织,0,0,0,kara,我们也得以她们为目标才行\N私たちも、あのくらいを目指さないといけないのかも
+Comment: 0,0:08:15.01,0:08:19.13,SC_Bottom,灯织,0,0,0,kara,因为能以个人身份接到工作 确实很厉害啊\N個人でもお仕事をいただけるって すごいことだと思うから
+Comment: 0,0:08:20.47,0:08:21.65,SC_Bottom,真乃,0,0,0,kara,是啊\N本当だね
+Comment: 0,0:08:22.14,0:08:27.89,SC_Bottom,巡,0,0,0,kara,而且 每个人的实力都得到提升的话 星组会更加闪耀吧\Nそれに、一人一人がパワーアップすれば、イルミネはもっとすごくなるよ
+Comment: 0,0:08:27.89,0:08:30.53,SC_Bottom,灯织,0,600,0,kara,嗯 我们也要加油才行\Nうん 私たちも頑張らないと
+Dialogue: 0,0:08:27.89,0:08:30.53,SC_Bottom,灯织,0,0,0,,{\fscx50\fscy50\c&HF0F0F0&\3c&H202020&\3a&H5F&\pos(764.14,946.71)}是　加　把　劲　骑　士
+Comment: 0,0:08:29.85,0:08:30.53,SC_Bottom,巡,300,0,0,kara,嗯\Nうん
+Comment: 0,0:08:31.40,0:08:34.57,SC_Bottom,巡,0,0,0,kara,好 那么先解决录音吧\Nよーし!まずはレコーディングだね!
+Comment: 0,0:08:37.23,0:08:40.20,SC_Bottom,灯织,0,0,0,kara,让我们好好解读一下歌词吧\N歌詞のこと、しっかり理解して臨もう
+Comment: 0,0:08:40.20,0:08:41.03,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:08:52.18,0:08:53.13,SC_Bottom,结华,0,0,0,kara,是的\Nはい
+Comment: 0,0:08:54.31,0:08:57.31,SC_Bottom,雾子,0,0,0,kara,在…不可思议的森林之中\Nそこは、不思議な森の中
+Comment: 0,0:08:58.29,0:09:02.03,SC_Bottom,摩美美,0,0,0,kara,接下来是283PRO 1st Live的相关消息\N283プロ、ファーストライブのお知らせです
+Comment: 0,0:09:04.50,0:09:05.75,SC_Bottom,真乃,0,0,0,kara,（一步一步）\N(Step by Step)
+Comment: 0,0:09:05.75,0:09:07.91,SC_Bottom,灯织,0,0,0,kara,「想成为你的力量」\Nちゃんとチカラにしたい
+Comment: 0,0:09:07.91,0:09:08.99,SC_Bottom,真乃,0,0,0,kara,（一步一步）\N(Step by Step)
+Comment: 0,0:09:08.99,0:09:11.78,SC_Bottom,巡,0,0,0,kara,「想要好好成长起来」\Nちゃんと育てたいよ
+Comment: 0,0:09:11.78,0:09:17.27,SC_Bottom,真乃,0,0,0,kara,「因为你所相信着的那份可能性」\Nだって君が信じてくれた可能性
+Comment: 0,0:09:17.27,0:09:21.01,SC_Bottom,真乃,0,0,0,kara,「给了我踏出第一步的勇气」\N最初の勇気だね
+Comment: 0,0:09:22.11,0:09:25.41,SC_Bottom,巡,0,0,0,kara,果然还是喜欢这里的歌词啊\Nここの歌詞、やっぱり好きだな
+Comment: 0,0:09:25.41,0:09:26.58,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:09:26.58,0:09:33.37,SC_Bottom,灯织,0,0,0,kara,我也是 因为有着制作人的信任 我才能走到这里\N私も、プロデューサーが信じてくれたから、今ここにいられる気がして
+Comment: 0,0:09:33.37,0:09:35.01,SC_Bottom,巡,0,0,0,kara,灯织\N灯織
+Comment: 0,0:09:35.01,0:09:36.88,SC_Bottom,真乃,0,0,0,kara,灯织\N灯織ちゃん
+Comment: 0,0:09:36.88,0:09:41.24,SC_Bottom,灯织,0,0,0,kara,当然还有你们和其他工作人员陪伴着我\Nも、もちろん二人もだし、スタッフさんとかもだけど
+Comment: 0,0:09:42.37,0:09:43.40,SC_Bottom,真乃,0,0,0,kara,我也\N私も
+Comment: 0,0:09:45.44,0:09:48.56,SC_Bottom,真乃,0,0,0,kara,我也最喜欢这里的歌词了\N私も、ここの歌詞が大好き
+Comment: 0,0:09:49.19,0:09:49.92,SC_Bottom,巡,0,0,0,kara,嗯\Nうん
+Comment: 0,0:09:50.78,0:09:53.76,SC_Bottom,真乃,0,0,0,kara,制作人先生给了我踏出第一步的勇气\N初めに勇気をくれたプロデューサーさん
+Comment: 0,0:09:54.36,0:09:58.64,SC_Bottom,真乃,0,0,0,kara,灯织和巡总是给予我奋发向上的勇气\Nいつも頑張る勇気をくれる灯織ちゃんやめぐるちゃん
+Comment: 0,0:09:59.77,0:10:02.40,SC_Bottom,真乃,0,0,0,kara,能感觉到重要的人浮现在我的眼前\N大切な人の顔が思い浮かぶから
+Comment: 0,0:10:06.15,0:10:06.70,SC_Bottom,灯织,0,0,0,kara,嗯\Nうん
+Comment: 0,0:10:09.13,0:10:11.70,SC_Bottom,灯织,0,0,0,kara,能一起走下去吗\N一緒に、行けるかな?
+Comment: 0,0:10:12.32,0:10:13.14,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:10:13.14,0:10:14.79,SC_Bottom,巡,0,0,0,kara,我们要一起走下去哦\N一緒に行けるよ!
+Comment: 0,0:10:16.57,0:10:17.84,SC_Bottom,真乃,0,0,0,kara,一起…\N一緒に…
+Comment: 0,0:10:19.38,0:10:23.67,SC_Bottom,真乃,0,0,0,kara,3人变成16人会怎么样呢\N3人が16人になったら、どうなるのかな?
+Comment: 0,0:10:25.00,0:10:28.88,SC_Bottom,真乃,0,0,0,kara,大家一起唱歌会是什么感觉呢\Nみんなで歌うって、どんな感じだろう?
+Comment: 0,0:10:46.52,0:10:47.74,SC_Bottom,巡,0,0,0,kara,嘘\Nシーッ
+Comment: 0,0:10:50.13,0:10:52.15,SC_Bottom,咲耶,0,0,0,kara,哎呀 辛苦了\Nおや、お疲れ様
+Comment: 0,0:10:52.65,0:10:55.05,SC_Bottom,咲耶,0,0,0,kara,抱歉 让你们看到了丢脸的一面\N恥ずかしいところを見られてしまったね
+Comment: 0,0:10:55.35,0:10:58.30,SC_Bottom,巡,0,0,0,kara,不不 是我们把你吵醒了 对不起\Nうんうん、起こしちゃってごめんね
+Comment: 0,0:10:58.30,0:11:00.27,SC_Bottom,灯织,0,0,0,kara,看起来很疲劳呢\Nお疲れみたいですね
+Comment: 0,0:11:00.27,0:11:04.22,SC_Bottom,咲耶,0,0,0,kara,没 我还好 这可是过得充实的证明啊\Nいや、平気だよ 充実している証拠さ
+Comment: 0,0:11:04.87,0:11:07.82,SC_Bottom,真乃,0,0,0,kara,L'Antica的各位都挺忙的样子\Nアンティーカの皆さん、忙しそうだから
+Comment: 0,0:11:08.27,0:11:10.97,SC_Bottom,巡,0,0,0,kara,其他的人都还在工作吗\N他のみんなは、まだお仕事?
+Comment: 0,0:11:10.97,0:11:11.74,SC_Bottom,咲耶,0,0,0,kara,嗯\Nああ
+Comment: 0,0:11:12.26,0:11:17.11,SC_Bottom,灯织,0,0,0,kara,大家能有这么多不同的工作 真让人吃惊\N皆さんがこんなに個別でお仕事されてるの、驚きました
+Comment: 0,0:11:17.54,0:11:20.74,SC_Bottom,咲耶,0,0,0,kara,多亏了大家的福 特别是在W.I.N.G后工作增加了呢\Nありがたいことに、ウィングからは特にね
+Comment: 0,0:11:21.13,0:11:24.16,SC_Bottom,巡,0,0,0,kara,L'Antica也备受关注呢\Nアンティーカ、大注目だったもんね
+Comment: 0,0:11:25.78,0:11:27.85,SC_Bottom,咲耶,0,0,0,kara,能被这么说我倍感荣幸\Nそう言ってもらえて光栄だ
+Comment: 0,0:11:29.25,0:11:32.70,SC_Bottom,咲耶,0,0,0,kara,只不过稍微 有一点寂寞呢\N少しだけ、寂しい気もするけど…
+Comment: 0,0:11:37.60,0:11:41.05,SC_Bottom,咲耶,0,0,0,kara,大家各自都在为了工作奔波\Nそれぞれが、懸命に仕事をこなしている
+Comment: 0,0:11:41.67,0:11:46.25,SC_Bottom,咲耶,0,0,0,kara,但是 大家也因此没有互相深入交往\Nが、すべてを知っているわけではないからね
+Comment: 0,0:11:48.49,0:11:49.53,SC_Bottom,巡,0,0,0,kara,这样吗\Nそっか
+Comment: 0,0:11:51.61,0:11:55.22,SC_Bottom,咲耶,0,0,0,kara,请不要误会了 我觉得这样也挺好的\N勘違いしないでくれ それでいいと思っているんだ
+Comment: 0,0:11:56.76,0:12:00.56,SC_Bottom,咲耶,0,0,0,kara,没有什么比听大家的冒险故事更开心的事情了\Nみんなの冒険談を聞くのはこの上ない喜びだし
+Comment: 0,0:12:00.97,0:12:04.07,SC_Bottom,咲耶,0,0,0,kara,而且 我相信着L'Antica\N何より アンティーカを信じているから
+Comment: 0,0:12:07.15,0:12:11.82,SC_Bottom,灯织,0,0,0,kara,也许彼此的信任就是向前的动力吧\Nお互い信じてるから、前に進めるんですね
+Comment: 0,0:12:11.82,0:12:13.32,SC_Bottom,灯织,0,0,0,kara,就算相隔千里…\N離れていても
+Comment: 0,0:12:16.07,0:12:19.78,SC_Bottom,巡,0,0,0,kara,这就是第一步的勇气\Nそれが…最初の勇気…
+Comment: 0,0:12:19.78,0:12:23.73,SC_Bottom,巡,0,0,0,kara,这样一想 1st Live也应该是想说这个吧\Nってことは、ファーストライブもそうなのかも
+Comment: 0,0:12:23.73,0:12:24.32,SC_Bottom,真乃,0,0,0,kara,诶？\N…え?
+Comment: 0,0:12:24.73,0:12:28.51,SC_Bottom,巡,0,0,0,kara,至今为止还没有16人一起工作过\N今まで16人でお仕事したことないけど…
+Comment: 0,0:12:28.89,0:12:29.96,SC_Bottom,真乃,0,0,0,kara,啊\Nはあ…
+Comment: 0,0:12:40.68,0:12:42.09,SC_Bottom,,0,0,0,kara,请多指教\Nよろしくお願いします
+Comment: 0,0:12:42.67,0:12:44.46,SC_Bottom,真乃,0,0,0,kara,请多指教\Nよろしくお願いします
+Comment: 0,0:12:55.97,0:12:58.20,SC_Bottom,恋钟,0,0,0,kara,辛苦了\Nお疲れ様でーす
+Comment: 0,0:12:58.20,0:12:59.68,SC_Bottom,恋钟,0,0,0,kara,可算赶上勒\N間に合ったと
+Comment: 0,0:12:59.68,0:13:01.42,SC_Bottom,结华,0,300,0,kara,辛苦了\Nお疲れ様です
+Comment: 0,0:12:59.68,0:13:01.42,SC_Bottom,雾子,300,0,0,kara,辛苦了\Nお疲れ様
+Comment: 0,0:13:13.13,0:13:15.11,SC_Bottom,真乃,0,0,0,kara,我们一定能一同前进的吧\N一緒に行けるよね
+Comment: 0,0:13:16.21,0:13:18.74,SC_Bottom,真乃,0,0,0,kara,我们16人\N私たち、16人で
+Comment: 0,0:13:20.93,0:13:24.03,SC_Bottom,真乃,0,0,0,kara,「没问题的」 这份心情\N大丈夫だよって、この気持ちが
+Comment: 0,0:13:24.03,0:13:27.75,SC_Bottom,真乃,0,0,0,kara,如果能成为大家的勇气的话\Nもし、もしもみんなの勇気になるのなら
+Comment: 0,0:13:29.75,0:13:31.20,SC_Bottom,真乃,0,0,0,kara,想传达给大家\N伝えたい
+Comment: 0,0:13:50.00,0:13:52.33,SC_Bottom,恋钟,0,0,0,kara,好动听的歌声\Nきめかーのこえー
+Comment: 0,0:13:52.33,0:13:53.09,SC_Bottom,结华,0,0,0,kara,嗯\Nうん
+Comment: 0,0:15:01.74,0:15:06.57,SC_Bottom,制作人,0,0,0,kara,总感觉…仿佛看到了16人在唱歌\N何か…見えた気がしたよ 16人で歌ってるのが
+Comment: 0,0:15:08.29,0:15:11.90,SC_Bottom,结华,0,0,0,kara,嗯 这是大家一起唱的歌吧\Nうん みんなで歌うんだよね
+Comment: 0,0:15:11.90,0:15:12.70,SC_Bottom,制作人,0,0,0,kara,啊啊\Nああ
+Comment: 0,0:15:16.72,0:15:19.27,SC_Bottom,恋钟,0,0,0,kara,咱们也要多练练\Nうちらもレッスンせんぱ!
+Comment: 0,0:15:20.82,0:15:23.44,SC_Bottom,咲耶,0,0,0,kara,嗯 要追上她们才行啊\Nああ、追いかけよう
+Comment: 0,0:15:24.36,0:15:26.81,SC_Bottom,咲耶,0,0,0,kara,星组 还有大家\Nイルミネを…みんなを…
+Comment: 0,0:15:27.57,0:15:28.43,SC_Bottom,大家,0,0,0,kara,嗯\Nうん!
+Comment: 0,0:15:34.57,0:15:36.33,SC_Bottom,恋钟,0,0,0,kara,辛苦了\Nお疲れさま!
+Comment: 0,0:15:36.33,0:15:39.05,SC_Bottom,结华,0,0,0,kara,非常棒哦\Nすっごくよかったよ!
+Comment: 0,0:15:38.44,0:15:39.05,SC_Bottom,摩美美,800,0,0,kara,嗯\Nうん
+Comment: 0,0:15:39.65,0:15:41.67,SC_Bottom,真乃,0,0,0,kara,谢…谢谢你\Nあ、ありがとう
+Comment: 0,0:15:41.89,0:15:45.46,SC_Bottom,雾子,0,0,0,kara,之后…大家要一起唱这首大家的歌\Nこれから、みんなの音を歌うんだなって
+Comment: 0,0:15:46.10,0:15:48.59,SC_Bottom,真乃,0,0,0,kara,hwa 雾子…\Nほわっ、霧子ちゃん
+Comment: 0,0:15:48.89,0:15:51.40,SC_Bottom,咲耶,0,0,0,kara,那么 接下来轮到我们了\Nさあ、次は私たちの番だ
+Comment: 0,0:15:51.40,0:15:55.68,SC_Bottom,恋钟,0,0,0,kara,我们也得吃劲干才行\Nよーし!うちらも気合い入れて頑張ろっと!
+Comment: 0,0:15:56.13,0:15:57.51,SC_Bottom,大家,0,0,0,kara,噢！\Nおー!
+Comment: 0,0:16:04.81,0:16:07.47,SC_Bottom,巡,0,0,0,kara,总感觉 心情舒畅呢\Nなんか気持ちよかったな
+Comment: 0,0:16:07.47,0:16:10.42,SC_Bottom,灯织,0,0,0,kara,嗯 我觉得已经唱得很好了\Nうん、うまく歌えたと思う
+Comment: 0,0:16:13.90,0:16:14.93,SC_Bottom,灯织,0,0,0,kara,真乃？\N真乃?
+Comment: 0,0:16:14.93,0:16:16.11,SC_Bottom,巡,0,0,0,kara,怎么了\Nどうしたの?
+Comment: 0,0:16:17.58,0:16:22.88,SC_Bottom,真乃,0,0,0,kara,那…那个…当我在唱的时候 注意到了一件事情\Nあ、あのね、私、歌ってみて気づいたことがあって
+Comment: 0,0:16:25.76,0:16:31.25,SC_Bottom,真乃,0,0,0,kara,「因为你所相信着的那份可能性」\Nだって君が信じてくれた可能性
+Comment: 0,0:16:31.25,0:16:35.10,SC_Bottom,真乃,0,0,0,kara,「给了我踏出第一步的勇气」\N最初の勇気だね
+Comment: 0,0:16:37.41,0:16:42.41,SC_Bottom,真乃,0,0,0,kara,因为相信着那份可能性…对吧\N可能性を信じてくれたから…だよね
+Comment: 0,0:16:42.41,0:16:44.61,SC_Bottom,真乃,0,0,0,kara,偶像…还有Center…\Nアイドルも、センターも…
+Comment: 0,0:16:47.51,0:16:52.25,SC_Bottom,真乃,0,0,0,kara,虽然还不知道我能不能做到\N私にできるかどうか、それはまだわからないけど
+Comment: 0,0:16:55.38,0:16:57.40,SC_Bottom,真乃,0,0,0,kara,但我想去和制作人先生聊一下\Nプロデューサーさんと話してくれ
+Comment: 0,0:16:57.86,0:16:58.64,SC_Bottom,巡,0,0,0,kara,嗯\Nうん
+Comment: 0,0:17:02.20,0:17:02.89,SC_Bottom,真乃,0,0,0,kara,Hwa\Nほわっ
+Comment: 0,0:17:12.50,0:17:14.39,SC_Bottom,制作人,0,0,0,kara,谢谢你能来\N来てくれて、ありがとうな
+Comment: 0,0:17:15.84,0:17:17.42,SC_Bottom,制作人,0,0,0,kara,想着和你聊一下\N話をしたいと思って
+Comment: 0,0:17:18.63,0:17:22.12,SC_Bottom,真乃,0,0,0,kara,那个…其实我也有话想说\Nあの…私もちょうどお話をしたくて
+Comment: 0,0:17:23.87,0:17:24.68,SC_Bottom,制作人,0,0,0,kara,这样啊\Nそうか
+Comment: 0,0:17:28.64,0:17:31.32,SC_Bottom,真乃,0,0,0,kara,那个 制作人先生请先说吧\Nあの、プロデューサーさんからどうぞ
+Comment: 0,0:17:31.59,0:17:34.93,SC_Bottom,制作人,0,0,0,kara,啊 不 让我先听听真乃想说的吧\Nああ、いや、まずは真乃の話を聞かせてくれ
+Comment: 0,0:17:34.93,0:17:37.90,SC_Bottom,真乃,0,0,0,kara,不 还是制作人先生先请吧\Nいいえ、本当にプロデューサーさんから
+Comment: 0,0:17:46.50,0:17:47.40,SC_Bottom,真乃,0,0,0,kara,那个…\Nあの…
+Comment: 0,0:17:50.06,0:17:52.89,SC_Bottom,真乃,0,0,0,kara,请让我当Center吧\Nセンター、やらせてください
+Comment: 0,0:17:54.71,0:18:01.59,SC_Bottom,真乃,0,0,0,kara,我察觉到了 制作人先生肯定对我充满了信任\N気づいたんです プロデューサーさんはきっと、私を信じてくれたんだって
+Comment: 0,0:18:02.33,0:18:05.67,SC_Bottom,真乃,0,0,0,kara,这份信任 一定能让我们走得更远\Nそれならきっと、進んでいけるって
+Comment: 0,0:18:07.01,0:18:10.45,SC_Bottom,制作人,0,0,0,kara,真乃…谢谢你啊\N真乃…ありがとな
+Comment: 0,0:18:19.50,0:18:21.16,SC_Bottom,制作人,0,0,0,kara,光阴似箭\N季節が加速してく
+Comment: 0,0:18:23.51,0:18:27.68,SC_Bottom,制作人,0,0,0,kara,而大家的步伐并不输给岁月的流逝\Nそれに負けないくらいのスピードで、みんなが走り出してる
+Comment: 0,0:18:31.94,0:18:35.38,SC_Bottom,制作人,0,0,0,kara,就好像大家 一直都在等待着这个时候一样\Nずっとみんな、この時を待っていたみたいに
+Comment: 0,0:18:42.71,0:18:45.36,SC_Bottom,制作人,0,0,0,kara,此刻 正是振翅高飞之时\N今が、羽ばたく時だ
+Comment: 0,0:18:55.06,0:18:57.70,SC_Bottom,结华,0,0,0,kara,会是什么呢 今天要说的\N何だろうね、今日の話って
+Comment: 0,0:18:57.70,0:18:59.45,SC_Bottom,千雪,0,0,0,kara,是啊\Nそうねー
+Comment: 0,0:18:59.45,0:19:01.82,SC_Bottom,甘奈,0,0,0,kara,那个 知道这个吗\Nねえ、これ知ってる?
+Comment: 0,0:19:01.82,0:19:05.49,SC_Bottom,果穗,0,0,0,kara,知道！烟花大会 就在今天吧\N知ってます!花火大会、今日ですよね!
+Comment: 0,0:19:05.49,0:19:07.52,SC_Bottom,真乃,0,0,0,kara,诶 这样吗\Nえっ、そうなんだ
+Comment: 0,0:19:07.52,0:19:09.87,SC_Bottom,恋钟,0,0,0,kara,会议结束后大伙儿走起吧\Nこの後みんなで行きたかぁ
+Comment: 0,0:19:09.87,0:19:11.71,SC_Bottom,巡,0,0,0,kara,我也想去！\N私も行きたい!
+Comment: 0,0:19:16.19,0:19:18.41,SC_Bottom,制作人,0,0,0,kara,大家 辛苦了\Nみんな、お疲れ様
+Comment: 0,0:19:18.41,0:19:20.18,SC_Bottom,全员,0,0,0,kara,辛苦了\Nお疲れ様です
+Comment: 0,0:19:22.41,0:19:26.48,SC_Bottom,制作人,0,0,0,kara,今天将大家集合起来 是有事情要商量\N今日は話したいことがあって、みんなに集まってもらった
+Comment: 0,0:19:29.94,0:19:33.63,SC_Bottom,制作人,0,0,0,kara,前阵子 看着大家的活跃让我感触良多\Nこのところ、みんなを見ていて感じることがある
+Comment: 0,0:19:35.34,0:19:39.49,SC_Bottom,制作人,0,0,0,kara,大家彼此互相辉映 一起向前\Nお互いの輝きで照らし合って、前に進んでいってるって
+Comment: 0,0:19:40.82,0:19:46.70,SC_Bottom,制作人,0,0,0,kara,才认识不久的各位 能像这样朝着一个目标努力 可以称之为奇迹\N出会ったばかりのみんなが、こんな風に目標に向かっていけるのは、奇跡みたいなものだって
+Comment: 0,0:19:48.30,0:19:49.09,SC_Bottom,制作人,0,0,0,kara,所以\Nだから
+Comment: 0,0:19:53.63,0:19:58.70,SC_Bottom,制作人,0,0,0,kara,所以这次1st Live毫无疑问会是大家展翅翱翔的瞬间\N今回のファーストライブは 間違いなくみんなが羽ばたく瞬間になる!
+Comment: 0,0:20:01.98,0:20:03.45,SC_Bottom,制作人,0,0,0,kara,Spread the Wings\NSpread the Wings
+Comment: 0,0:20:04.45,0:20:09.22,SC_Bottom,制作人,0,0,0,kara,这首歌就是让大家翱翔的翅膀\Nこれは、今みんなが羽ばたくための翼だ!
+Comment: 0,0:20:11.10,0:20:12.89,SC_Bottom,真乃,0,0,0,kara,新曲\N新曲?
+Comment: 0,0:20:12.89,0:20:15.86,SC_Bottom,制作人,0,0,0,kara,啊嗯 我觉得这是一首好歌\Nああ いい曲になったと思ってる
+Comment: 0,0:20:18.41,0:20:19.44,SC_Bottom,制作人,0,0,0,kara,只不过\Nただ
+Comment: 0,0:20:19.76,0:20:21.79,SC_Bottom,制作人,0,0,0,kara,到正式演出前时间已经不多了\N本番まではもう時間がない
+Comment: 0,0:20:22.34,0:20:26.89,SC_Bottom,制作人,0,0,0,kara,要不要唱这首歌 我想交给将会真正站在舞台上的各位来决定\N最終的にやるかどうかは 実際にステージに立つみんなに決めてほしい
+Comment: 0,0:20:27.76,0:20:31.90,SC_Bottom,制作人,0,0,0,kara,因为这首歌在1st Live之后也有的是机会发布\Nこの歌をお披露目する機会は ファーストライブの後にも作れるからな
+Comment: 0,0:20:37.91,0:20:39.50,SC_Bottom,真乃,0,0,0,kara,那…那个…\Nあ…あの…
+Comment: 0,0:20:45.37,0:20:50.60,SC_Bottom,真乃,0,0,0,kara,诶…歌词非常棒\Nえっと…とっても素敵な歌詞だと思いました
+Comment: 0,0:20:51.79,0:20:57.79,SC_Bottom,真乃,0,0,0,kara,如果大家能一起在Live上唱这首歌的话 Live一定会变得更好吧\Nその、みんなで歌えたら、もっと素敵なライブになるって思うから
+Comment: 0,0:20:59.33,0:21:03.61,SC_Bottom,真乃,0,0,0,kara,所以…我想唱！\Nだから…私は…歌いたい!
+Comment: 0,0:21:04.65,0:21:05.80,SC_Bottom,巡,0,0,0,kara,赞成\N賛成!
+Comment: 0,0:21:06.36,0:21:07.45,SC_Bottom,灯织,0,0,0,kara,我赞成\N私も!
+Comment: 0,0:21:09.38,0:21:11.90,SC_Bottom,恋钟,0,0,0,kara,L‘Antica也赞成\Nアンティーカも、賛成~!
+Comment: 0,0:21:11.90,0:21:13.88,SC_Bottom,摩美美,0,0,0,kara,你等会儿…\Nちょっと…
+Comment: 0,0:21:13.88,0:21:15.87,SC_Bottom,结华,0,0,0,kara,算了算了\Nまあまあ
+Comment: 0,0:21:15.87,0:21:19.29,SC_Bottom,摩美美,0,0,0,kara,我没意见\N別にいいけどー
+Comment: 0,0:21:19.29,0:21:20.94,SC_Bottom,果穗,0,0,0,kara,你们怎么想\Nどう思いますか?
+Comment: 0,0:21:20.94,0:21:22.57,SC_Bottom,智代子,0,0,0,kara,我觉得很好啊\Nすごくいいと思う!
+Comment: 0,0:21:23.34,0:21:25.52,SC_Bottom,果穗,0,0,0,kara,我们也赞成！\N私たちも賛成です!
+Comment: 0,0:21:25.52,0:21:27.06,SC_Bottom,智代子,0,0,0,kara,当然赞成\Nもちろん賛成です!
+Comment: 0,0:21:28.14,0:21:29.72,SC_Bottom,花组,0,0,0,kara,赞成\N賛成!
+Comment: 0,0:21:40.78,0:21:42.52,SC_Bottom,制作人,0,0,0,kara,谢谢各位\Nありがとう、みんな
+Comment: 0,0:21:43.65,0:21:47.06,SC_Bottom,智代子,0,0,0,kara,那个 曲子现在已经可以听了吗？\Nあの、曲ってもう聴けたりしますか?
+Comment: 0,0:21:47.06,0:21:48.03,SC_Bottom,制作人,0,0,0,kara,啊啊\Nああ
+Comment: 0,0:21:48.92,0:21:51.11,SC_Bottom,甘奈,0,0,0,kara,好想快点听到啊\N早く聞きたいなあ
+Comment: 0,0:21:51.11,0:21:52.65,SC_Bottom,甜花,0,0,0,kara,嗯…嗯\Nう…うん
+Comment: 0,0:21:55.18,0:21:56.93,SC_Bottom,制作人,0,0,0,kara,那么 要放了\Nじゃあ、行くぞ
+Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,screen/screen.ass
+Comment: 0,0:04:12.40,0:04:12.44,Default,,0,0,0,import-shifted,../op_sc.ass

@@ -8,12 +8,13 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 09 (1080p) [8AC6E655].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 09 (1080p) [8AC6E655].mkv
+Audio File: C:/Users/scree/Desktop/sc_ep9.mkv
+Video File: C:/Users/scree/Desktop/sc_ep9.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Active Line: 13
-Video Position: 21968
+Video Zoom Percent: 0.750000
+Active Line: 11
+Video Position: 19613
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -53,6 +54,7 @@ Comment: 0,0:14:33.84,0:14:36.98,歌JP,,0,0,0,kara,Believe my sky, Believe my dr
 Comment: 0,0:14:36.98,0:14:42.76,歌JP,,0,0,0,kara,憧れはもう 走り出してる（未来へ）
 Comment: 0,0:14:42.76,0:14:45.61,歌JP,,0,0,0,kara,惹かれあうグラビティ
 Comment: 0,0:14:45.61,0:14:48.67,歌JP,,0,0,0,kara,Catch my wish, Catch my wind
+Dialogue: 0,0:14:45.57,0:14:48.49,歌JP,,0,0,0,,{\blur4\pos(292,122.66)}↑幻觉来了我超
 Comment: 0,0:14:48.67,0:14:50.86,歌JP,,0,0,0,kara,探していたね
 Comment: 0,0:14:50.86,0:15:00.12,歌JP,,0,0,0,kara,さあ、自分らしい色になれる空へ一緒に行こうよ
 Comment: 0,0:13:38.02,0:13:40.46,歌CN,,0,0,0,kara,一起去寻找吧
@@ -61,12 +63,15 @@ Comment: 0,0:13:43.08,0:13:46.94,歌CN,,0,0,0,kara,闪耀的舞台
 Comment: 0,0:13:56.04,0:13:58.78,歌CN,,0,0,0,kara,透明的相框
 Comment: 0,0:13:58.78,0:14:01.31,歌CN,,0,0,0,kara,切割开那片天空的彼岸
 Comment: 0,0:14:01.31,0:14:07.82,歌CN,,0,0,0,kara,如棱镜一般 霎时映射出翅膀的碎片（闪耀着）
+Dialogue: 0,0:14:05.98,0:14:07.83,歌CN,,0,0,0,,{\blur4\pos(646.67,178.66)}↑幻觉来了我超
 Comment: 0,0:14:07.82,0:14:10.61,歌CN,,0,0,0,kara,一定已经开始了吧
 Comment: 0,0:14:10.61,0:14:13.24,歌CN,,0,0,0,kara,感觉像是被召唤了一般
 Comment: 0,0:14:13.24,0:14:15.96,歌CN,,0,0,0,kara,化作路标的光芒
 Comment: 0,0:14:15.96,0:14:18.43,歌CN,,0,0,0,kara,还请稍等片刻
 Comment: 0,0:14:18.43,0:14:21.48,歌CN,,0,0,0,kara,（一步一步）想成为你的力量
+Dialogue: 0,0:14:18.25,0:14:19.59,歌CN,,0,0,0,,{\blur4\pos(164,175.99)}↑幻觉来了我超
 Comment: 0,0:14:21.48,0:14:25.15,歌CN,,0,0,0,kara,（一步一步）想要好好成长起来
+Dialogue: 0,0:14:21.38,0:14:22.55,歌CN,,0,0,0,,{\blur4\pos(164,175.99)}↑幻觉来了我超
 Comment: 0,0:14:25.15,0:14:30.23,歌CN,,0,0,0,kara,因为你所相信着的那份可能性
 Comment: 0,0:14:30.23,0:14:33.84,歌CN,,0,0,0,kara,给了我踏出第一步的勇气
 Comment: 0,0:14:36.98,0:14:42.76,歌CN,,0,0,0,kara,心愿已然启程
