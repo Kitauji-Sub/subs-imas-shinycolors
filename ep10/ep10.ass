@@ -13,14 +13,13 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/sc_ep10.mkv
-Video File: C:/Users/scree/Desktop/sc_ep10.mkv
+Audio File: C:/Users/scree/Desktop/sc_ep10/ep10.mkv
+Video File: C:/Users/scree/Desktop/sc_ep10/ep10.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 1.000000
-Scroll Position: 49
-Active Line: 66
-Video Position: 7092
+Active Line: 1
+Video Position: 31201
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -34,9 +33,8 @@ Style: TITLE,思源黑体 Medium,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
-Dialogue: 0,0:22:27.49,0:22:36.71,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：{\b1}北宇治　登　　龙　　　门　　　　内　　　　　阁\N{\b0}翻译：{\b1\s1}FFU2{\s0} ドラゴン田中\N{\b0}后期：{\b1\s1}Scrpr{\s0} 佐久间良雄
+Dialogue: 0,0:21:32.06,0:21:41.36,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：{\b1}北宇治　登　　龙　　　门　　　　内　　　　　阁\N{\b0}翻译：{\b1\s1}FFU2{\s0} ドラゴン田中\N{\b0}后期：{\b1\s1}Scrpr{\s0} 佐久间良雄
 Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
-Dialogue: 0,0:00:00.00,0:00:03.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
 Dialogue: 0,0:00:04.00,0:00:07.65,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}五彩缤纷的印记
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
 Dialogue: 0,0:00:35.92,0:00:39.00,注释,,0,0,0,,注：原作游戏中指定合宿用学校
