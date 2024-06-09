@@ -8,7 +8,12 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Active Line: 2
+Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 10 (1080p) [6EE32950].mkv
+Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 10 (1080p) [6EE32950].mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 1.000000
+Video Position: 18191
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -16,9 +21,4 @@ Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:02:56.03,0:02:59.03,Signs,SIGN,0,0,0,,{\fs36]\bord0\c&H363636&\frx0\fry4\frz357.5\pos(320,170.666)}Class
-Dialogue: 0,0:08:45.75,0:08:48.75,Signs,SIGN,0,0,0,,{\fs36]\bord0\c&H19315B&\frx0\fry4\pos(340,142.666)\frz6.984}Home Economics
-Dialogue: 0,0:09:15.11,0:09:16.66,Signs,SIGN ORANGE BUTTON,0,0,0,,{\fs20\bord4\c&H000000&\3c&H0070CF&\frx356\fry314\frz353.8\pos(338.667,158.666)}Cook
-Dialogue: 0,0:11:38.26,0:11:43.47,Signs,SIGN,0,0,0,,{\fs36]\bord0\c&H202024&\frx0\fry4\frz357.5\pos(320,170.666)}Class
 Dialogue: 0,0:12:38.71,0:12:44.05,Signs,SIGN,0,0,0,,{\an1\fs13\c&H000000&\3c&HFFFFFF&}Joint Concert Structure Draft\N{\3c&H0F0F0F&\c&HFFFFFF&}Overall Structure\N{\3c&H6BB3F0&\c&H000000&}Hokura Taiyo Kiss\N{\3c&HDD97C9&}L'Antica Babel City Grace\NL'Antica Genwaku SILHOUETTE\N{\3c&HFFFFFF&}Unnamed Team Tsubasa Gravity\NUnnamed Team Spread The Wings!!\N{\c&HFFFFFF&\3c&H000000&}Formations
-Dialogue: 0,0:20:11.75,0:20:15.48,Signs,SIGN,0,0,0,,{\c&H130077&\3c&H8E8E8E&\fscx67\fscy70\frz3.509\move(126.857,262.286,123.428,134.286,2,878)}Ultra Fireworks\N{\c&HA25805&}Variety Pack
