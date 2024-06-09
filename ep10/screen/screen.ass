@@ -8,12 +8,12 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 10 (1080p) [6EE32950].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 10 (1080p) [6EE32950].mkv
+Audio File: C:/Users/scree/Desktop/sc_ep10.mkv
+Video File: C:/Users/scree/Desktop/sc_ep10.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 1.000000
-Video Position: 18191
+Video Position: 18338
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -21,4 +21,13 @@ Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:12:38.71,0:12:44.05,Signs,SIGN,0,0,0,,{\an1\fs13\c&H000000&\3c&HFFFFFF&}Joint Concert Structure Draft\N{\3c&H0F0F0F&\c&HFFFFFF&}Overall Structure\N{\3c&H6BB3F0&\c&H000000&}Hokura Taiyo Kiss\N{\3c&HDD97C9&}L'Antica Babel City Grace\NL'Antica Genwaku SILHOUETTE\N{\3c&HFFFFFF&}Unnamed Team Tsubasa Gravity\NUnnamed Team Spread The Wings!!\N{\c&HFFFFFF&\3c&H000000&}Formations
+Dialogue: 0,0:12:38.71,0:12:44.05,OnScreen,,0,0,0,,{\an7\pos(0,0)\alpha&H2A&\p1\clip(0,0,447,313)}m 0 0 l 1920 0 1920 1080 0 1080 0 0{\p0}
+Dialogue: 1,0:12:38.71,0:12:44.05,OnScreen,,0,0,0,,{\an7\fn思源黑体 Medium\b0\c&H000000&}合作Live流程方案\N放学后           太阳KISS\NL'antica       巴比伦的恩典\NL'antica       幻惑SILHOUETTE\N组合名未定  Tsubasa gravity\N组合名未定  Spread the Wings!!\N阵型……
+Dialogue: 0,0:12:40.07,0:12:44.03,OnScreen,,0,0,0,,{=4}{\fn思源黑体 Medium\b0\c&H7C7E7E&\fax0.014278\fscx88.90\fscy92.99\frz6.1793\frx0.6499\fry0.7036\org(428.59,610.02)\pos(428.33,628.62)}组合名未定
+
+[Aegisub Extradata]
+Data: 0,_aegi_perspective_ambient_plane,e457.37;302.12#7C878.12;389.00#7C878.12;469.00#7C601.88;469.00
+Data: 1,_aegi_perspective_ambient_plane,e457.37;302.12#7C1041.83;246.55#7C878.12;469.00#7C601.88;469.00
+Data: 2,_aegi_perspective_ambient_plane,e457.37;302.12#7C1041.83;246.55#7C1086.29;560.94#7C601.88;469.00
+Data: 3,_aegi_perspective_ambient_plane,e457.37;302.12#7C1041.83;246.55#7C1086.29;560.94#7C507.90;708.44
+Data: 4,_aegi_perspective_ambient_plane,e457.37;302.12#7C1041.83;246.55#7C1098.42;641.76#7C507.90;708.44
