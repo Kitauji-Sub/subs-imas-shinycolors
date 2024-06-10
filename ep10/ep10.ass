@@ -13,13 +13,14 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/sc_ep10/ep10.mkv
-Video File: C:/Users/scree/Desktop/sc_ep10/ep10.mkv
+Audio File: C:/Users/scree/Desktop/sc_ep10/sc_ep10.mkv
+Video File: C:/Users/scree/Desktop/sc_ep10/sc_ep10.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 1.000000
-Active Line: 1
-Video Position: 31201
+Video Zoom Percent: 0.500000
+Scroll Position: 167
+Active Line: 176
+Video Position: 26408
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -207,8 +208,8 @@ Comment: 0,0:17:38.53,0:17:42.16,SC_Bottom,果穗,0,0,0,kara,我们一定会像�
 Comment: 0,0:17:56.68,0:17:57.46,SC_Bottom,灯织,0,0,0,kara,真乃？\N真乃？
 Comment: 0,0:17:57.96,0:18:03.58,SC_Bottom,真乃,0,0,0,kara,啊 那个 我在想舞台上的风景会是怎么样的\Nあ、えっと、どんなステージになるのかなって
 Comment: 0,0:18:04.60,0:18:05.56,SC_Bottom,灯织,0,0,0,kara,你觉得呢？\Nどうだった？
-Comment: 0,0:18:12.87,0:18:20.21,SC_Bottom,真乃,0,0,0,kara,「进行想象…{\fscx50} {\fscx100}就能化作真实」\Nイメージする…{\fscx50} {\fscx100}リアルになる
-Comment: 0,0:18:21.40,0:18:26.04,SC_Bottom,星组,0,0,0,kara,「只要像现在这样」\N今はそれだけで
+Comment: 0,0:18:12.87,0:18:20.21,SC_Bottom,智代子,0,0,0,kara,「进行想象…{\fscx50} {\fscx100}就能化作真实」\Nイメージする…{\fscx50} {\fscx100}リアルになる
+Comment: 0,0:18:21.40,0:18:26.04,SC_Bottom,大家,0,0,0,kara,「只要像现在这样」\N今はそれだけで
 Comment: 0,0:18:29.33,0:18:34.51,SC_Bottom,恋钟,0,0,0,kara,站上舞台的那个瞬间 一直出现在我的梦里\Nステージに立つ瞬間、ずーっと夢見てきたと
 Comment: 0,0:19:18.58,0:19:23.61,SC_Bottom,真乃,0,0,0,kara,我想和大家一起站在{\fscx50} {\fscx100}Live{\fscx50} {\fscx100}的舞台上…\Nみんなで ライブを作れたらなって
 Comment: 0,0:19:24.32,0:19:26.43,SC_Bottom,千雪,0,0,0,kara,真好啊 真乃\N素敵ね、真乃ちゃん
