@@ -18,8 +18,8 @@ Video File: C:/Users/scree/Desktop/sc_ep11.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.625000
-Scroll Position: 94
-Active Line: 113
+Scroll Position: 63
+Active Line: 92
 Video Position: 3583
 
 [V4+ Styles]
@@ -36,7 +36,6 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
 Dialogue: 0,0:22:31.83,0:22:41.83,STF,,70,0,0,,{\an4\fscx60\fscy60\fad(500,500)}字幕制作　　{\b1}北宇治字幕组\N{\b0}翻　　译　　{\b1}FFU2\N后　　期　　{\b1}Scrpr
 Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
-Dialogue: 0,0:00:00.00,0:00:03.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
 Dialogue: 0,0:02:50.66,0:02:53.90,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}传递接力棒
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,colors,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", ["星组"] = "&H8DF6FF&", ["花组"] = "&H9E69FF&", ["放学后"] = "&H3383FA&",} function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
@@ -126,7 +125,7 @@ Comment: 0,0:15:39.08,0:15:46.13,SC_Bottom,果穗,0,0,0,kara,大家 我们放学
 Comment: 0,0:15:49.09,0:15:51.14,SC_Bottom,放学后,0,0,0,kara,变身！\N変身！
 Comment: 0,0:16:20.43,0:16:21.52,SC_Bottom,甜花,0,0,0,kara,捏嘿嘿\Nにへへ
 Comment: 0,0:18:03.02,0:18:05.02,SC_Bottom,恋钟,0,0,0,kara,好勒\Nよーし
-Comment: 0,0:18:05.58,0:18:08.61,SC_Bottom,结华,0,0,0,kara,恋碳 别把手伸出去哦\Nこがたん、手とか出しちゃダメだかんね
+Comment: 0,0:18:05.58,0:18:08.61,SC_Bottom,结华,0,0,0,kara,恋碳 别把手伸到外面去了\Nこがたん、手とか出しちゃダメだかんね
 Comment: 0,0:18:08.61,0:18:10.44,SC_Bottom,恋钟,0,0,0,kara,我晓得\N分かったら
 Comment: 0,0:19:06.58,0:19:10.49,SC_Bottom,果穗,0,0,0,kara,谢谢大家\N皆さん ありがとうございました
 Comment: 0,0:19:12.74,0:19:14.30,SC_Bottom,夏叶,0,0,0,kara,接下来是{\fscx50} {\fscx100}—\N続いてはー
