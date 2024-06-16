@@ -13,14 +13,14 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/sc_ep10/sc_ep10.mkv
-Video File: C:/Users/scree/Desktop/sc_ep10/sc_ep10.mkv
+Audio File: D:/Anime/Torrent/[KitaujiSub] THE IDOLM@STER SHINY COLORS [10][WebRip][HEVC_AAC][CHS_CHT_JP].mkv
+Video File: D:/Anime/Torrent/[KitaujiSub] THE IDOLM@STER SHINY COLORS [10][WebRip][HEVC_AAC][CHS_CHT_JP].mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.500000
-Scroll Position: 167
-Active Line: 176
-Video Position: 26408
+Scroll Position: 185
+Active Line: 200
+Video Position: 33794
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -230,9 +230,10 @@ Comment: 0,0:20:51.86,0:20:55.57,SC_Bottom,制作人,0,0,0,kara,希望这个名�
 Comment: 0,0:21:19.80,0:21:21.17,SC_Bottom,制作人,0,0,0,kara,五彩缤纷的光芒\N色とりどりの光
 Comment: 0,0:21:23.36,0:21:24.74,SC_Bottom,制作人,0,0,0,kara,闪耀色彩\Nシャイニーカラーズ
 Comment: 0,0:23:14.42,0:23:16.05,SC_Bottom,恋钟,0,0,0,kara,哇{\fscx50} {\fscx100}—\Nわあー
-Comment: 0,0:23:20.30,0:23:22.79,SC_Bottom,摩美美,0,0,0,kara,好厉害{\fscx50} {\fscx100}—\Nすごかー
+Comment: 0,0:23:20.30,0:23:22.79,SC_Bottom,恋钟,0,0,0,kara,恁牛啊{\fscx50} {\fscx100}—\Nすごかー
+Comment: 0,0:23:25.06,0:23:26.34,SC_Bottom,摩美美,0,0,0,kara,好大\N広っ
 Comment: 0,0:23:28.19,0:23:29.48,SC_Bottom,甘奈,0,0,0,kara,好可爱\Nかわいい
-Comment: 0,0:23:29.48,0:23:31.20,SC_Bottom,千雪,0,0,0,kara,真的\Nほんと
+Comment: 0,0:23:29.48,0:23:31.20,SC_Bottom,千雪,0,0,0,kara,真的诶\Nほんと
 Comment: 0,0:23:37.27,0:23:38.72,SC_Bottom,树里,0,0,0,kara,好厉害啊\Nすげえなあ
 Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,insert/insert01.ass
 Comment: 0,0:00:00.00,0:00:00.00,Default,,0,0,0,import,screen/screen.ass

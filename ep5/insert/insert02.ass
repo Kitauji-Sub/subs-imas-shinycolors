@@ -14,7 +14,8 @@ Video File: C:/Users/scree/Desktop/sc_ep5.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
-Active Line: 11
+Scroll Position: 25
+Active Line: 33
 Video Position: 27423
 
 [V4+ Styles]
@@ -37,7 +38,7 @@ Comment: 0,0:15:12.52,0:15:12.52,歌CN_center,,0,0,0,template char,!maxloop("fbf
 Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,mixin line anystyle,{\blur4}
 Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOut"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + 50*char.ci,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + 50*char.ci or line.start_time + (single_frame * loopctx.state.fbf * k_time) + 50*char.ci)!{\fn思源黑体 Heavy\b1\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!}
 Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!retime("abs",line.start_time + speed + 50*char.ci,line.end_time)!{\fn思源黑体 Heavy\b1\an7\pos(!line.left + char.left!,!line.top!)\fad(0,400)}
-Comment: 0,0:18:58.41,0:19:01.62,歌CN,,145,0,930,kara,{\fad(0,400)}光之destination
+Comment: 0,0:18:58.41,0:19:01.62,歌CN,,145,0,930,kara,{\fad(0,400)}追着光芒的终点
 Comment: 0,0:18:59.52,0:19:02.03,歌JP_center,,0,0,0,kara,ヒカリのdestination
 Comment: 0,0:19:02.03,0:19:05.72,歌JP_center,,0,0,0,kara,微かなキラメキだった
 Comment: 0,0:19:05.72,0:19:09.97,歌JP_center,,0,0,0,kara,始まりだって (始まりだって)
@@ -59,7 +60,7 @@ Comment: 0,0:20:13.48,0:20:15.73,歌JP_center,,900,0,0,kara,夢がある限り
 Comment: 0,0:20:15.73,0:20:18.28,歌JP_center,,0,0,0,kara,瞳のillumination
 Comment: 0,0:20:18.28,0:20:21.80,歌JP_center,,0,0,0,kara,輝く無限の可能性
 Comment: 0,0:20:21.97,0:20:24.75,歌JP_center,,0,0,0,kara,私たちの キ・セ・キ
-Comment: 0,0:20:24.75,0:20:29.62,歌JP_center,,0,0,0,kara,一道光芒 繋がってく (繋がってく) ヒカリの束
+Comment: 0,0:20:24.75,0:20:29.62,歌JP_center,,0,0,0,kara,繋がってく (繋がってく) ヒカリの束
 Comment: 0,0:20:29.62,0:20:31.54,歌JP_center,,0,0,0,kara,その先へ
 Comment: 0,0:20:31.54,0:20:35.77,歌JP_center,,0,0,0,kara,一度触れてしまった時に
 Comment: 0,0:20:35.77,0:20:41.42,歌JP_center,,0,0,0,kara,二度と忘れられない 夢になったの
