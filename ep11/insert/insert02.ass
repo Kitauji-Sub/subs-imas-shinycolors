@@ -9,14 +9,9 @@ PlayResY: 1080
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 11 (1080p) [CE7700F5].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors - 11 (1080p) [CE7700F5].mkv
-Video AR Mode: 4
-Video AR Value: 1.777778
-Video Zoom Percent: 1.000000
-Scroll Position: 9
-Active Line: 18
-Video Position: 14347
+Scroll Position: 24
+Active Line: 41
+Video Position: 17637
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -46,36 +41,28 @@ Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!no_out and skip() o
 Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,mixin line anystyle,{\blur4}
 Comment: 0,0:15:12.52,0:15:12.52,ILLUMINE_TITLE,,0,0,0,template char,!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOut"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + 50*char.ci,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + 50*char.ci or line.start_time + (single_frame * loopctx.state.fbf * k_time) + 50*char.ci)!{\fn思源黑体 Heavy\b1\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!\c&HFFFFFF&}
 Comment: 0,0:15:12.52,0:15:12.52,ILLUMINE_TITLE,,0,0,0,template char,!retime("abs",line.start_time + speed + 50*char.ci,line.end_time)!{\fn思源黑体 Heavy\b1\an7\pos(!line.left + char.left!,!line.top!)\fad(0,400)\c&HFFFFFF&}
-Comment: 0,0:09:52.16,0:09:56.87,ILLUMINE_TITLE,,145,0,960,kara,{\fad(0,400)}追着光芒的终点
-Comment: 0,0:09:51.28,0:09:53.82,歌JP_center,,0,0,0,kara,ヒカリのdestination
-Comment: 0,0:09:53.82,0:09:57.54,歌JP_center,,0,0,0,kara,微かなキラメキだった
-Comment: 0,0:09:57.54,0:10:01.80,歌JP_center,,0,0,0,kara,始まりだって (始まりだって)
-Comment: 0,0:10:00.34,0:10:02.31,歌JP_center,,1000,0,0,kara,気付かないまま
-Comment: 0,0:10:02.44,0:10:06.49,歌JP_center,,0,0,0,kara,追いかけてた
-Comment: 0,0:10:15.34,0:10:17.69,歌JP,,0,0,0,kara,ヒカリのdestination
-Comment: 0,0:10:17.94,0:10:21.48,歌JP,,0,0,0,kara,そのしっぽを捕まえたい
-Comment: 0,0:10:21.89,0:10:26.06,歌JP_center,no_in no_out,0,0,0,kara,見失わないで (見失わないで)
-Comment: 0,0:10:24.37,0:10:26.06,歌JP_center,no_out,900,0,0,kara,夢がある限り
-Comment: 0,0:10:26.60,0:10:29.14,歌JP_center,,0,0,0,kara,瞳のillumination
-Comment: 0,0:10:29.14,0:10:32.69,歌JP_center,,0,0,0,kara,輝く無限の可能性
-Comment: 0,0:10:32.80,0:10:35.52,歌JP_center,,0,0,0,kara,私たちの キ・セ・キ
-Comment: 0,0:10:35.63,0:10:40.34,歌JP_center,,0,0,0,kara,繋がってく (繋がってく) ヒカリの束
-Comment: 0,0:10:40.34,0:10:43.20,歌JP_center,,0,0,0,kara,その先へ
-Comment: 0,0:10:46.95,0:10:51.75,歌JP_center,,0,0,0,kara,あの空へと (あの空へと) 響き渡れ
-Comment: 0,0:10:51.89,0:10:53.84,歌JP_center,,0,0,0,kara,いつまでも
-Comment: 0,0:09:51.28,0:09:53.82,歌CN_center,,0,0,0,kara,追着光芒的终点
-Comment: 0,0:09:53.82,0:09:57.54,歌CN_center,,0,0,0,kara,虽然只是微小的光芒
-Comment: 0,0:09:57.54,0:10:01.80,歌CN_center,,0,0,0,kara,但已经开始了吧（已经开始了）
-Comment: 0,0:10:00.34,0:10:02.31,歌CN_center,,1000,0,0,kara,不知不觉之中
-Comment: 0,0:10:02.44,0:10:06.49,歌CN_center,,0,0,0,kara,已然在追赶它了
-Comment: 0,0:10:15.34,0:10:17.69,歌CN,,0,0,0,kara,追着光芒的终点
-Comment: 0,0:10:17.94,0:10:21.48,歌CN,,0,0,0,kara,想要抓住它的尾巴
-Comment: 0,0:10:21.89,0:10:26.06,歌CN_center,no_in no_out,0,0,0,kara,不想跟丢它（不想跟丢它）
-Comment: 0,0:10:24.37,0:10:26.06,歌CN_center,no_out,900,0,0,kara,只要有梦在
-Comment: 0,0:10:26.60,0:10:29.14,歌CN_center,,0,0,0,kara,瞳孔里闪烁的光
-Comment: 0,0:10:29.14,0:10:32.69,歌CN_center,,0,0,0,kara,闪耀着无限的可能性
-Comment: 0,0:10:32.80,0:10:35.52,歌CN_center,,0,0,0,kara,我们的・轨・迹
-Comment: 0,0:10:35.63,0:10:40.34,歌CN_center,,0,0,0,kara,交汇成（交汇成） 一道光芒
-Comment: 0,0:10:40.34,0:10:43.20,歌CN_center,,0,0,0,kara,照亮前方
-Comment: 0,0:10:46.95,0:10:51.75,歌CN_center,,0,0,0,kara,响彻那片蓝天（那片蓝天）
-Comment: 0,0:10:51.89,0:10:53.84,歌CN_center,,0,0,0,kara,直到永远
+Comment: 0,0:11:20.70,0:11:25.29,ILLUMINE_TITLE,,250,0,960,kara,{\fad(0,400)}成为彩虹
+Comment: 0,0:11:20.56,0:11:23.76,歌JP_center,,0,0,0,kara,ガンバルキミのこと
+Comment: 0,0:11:23.76,0:11:27.42,歌JP_center,,0,0,0,kara,ずっと見てた 見守ってたよ
+Comment: 0,0:11:27.42,0:11:33.24,歌JP_center,,0,0,0,kara,私も負けないと ぎゅっと誓った
+Comment: 0,0:11:33.24,0:11:38.89,歌JP_center,,0,800,0,kara,息を切らしたから (たどり着いた先)
+Comment: 0,0:11:36.70,0:11:40.88,歌JP_center,,800,0,0,kara,見える景色がある (見上げたら)
+Comment: 0,0:11:40.45,0:11:46.23,歌JP_center,,0,0,0,kara,強い気持ち 厚い雲を 切り開いて
+Comment: 0,0:11:46.46,0:11:50.78,歌JP_center,,0,0,0,kara,風に乗って どこまでも行けるよ
+Comment: 0,0:11:50.78,0:11:54.28,歌JP_center,,0,0,0,kara,行き止まりも 飛び越えよう
+Comment: 0,0:11:54.76,0:11:59.00,歌JP_center,,0,0,0,kara,光を身にまとい
+Comment: 0,0:12:00.26,0:12:04.58,歌JP,,0,0,0,kara,たどり着ける 約束の未来へ
+Comment: 0,0:12:04.77,0:12:07.75,歌JP,no_out,0,0,0,kara,目的地は幻じゃない
+Comment: 0,0:12:07.92,0:12:17.84,歌JP_center,,0,0,0,kara,あの日見つめた夢にこの手が 届きそう
+Comment: 0,0:11:20.56,0:11:23.76,歌CN_center,,0,0,0,kara,加油努力的你
+Comment: 0,0:11:23.76,0:11:27.42,歌CN_center,,0,0,0,kara,我一直看在眼里 守望着你
+Comment: 0,0:11:27.42,0:11:33.24,歌CN_center,,0,0,0,kara,已悄然下定「我也不能输」的决心
+Comment: 0,0:11:33.24,0:11:38.89,歌CN_center,,0,800,0,kara,因为有着让人气喘吁吁（抵达的目的地）
+Comment: 0,0:11:36.70,0:11:40.88,歌CN_center,,800,0,0,kara,才能看到的景色（抬头仰望）
+Comment: 0,0:11:40.45,0:11:46.23,歌CN_center,,0,0,0,kara,强大的心愿 冲出阴云 拨云见日
+Comment: 0,0:11:46.46,0:11:50.78,歌CN_center,,0,0,0,kara,乘着风 让风带着我们飞向远方吧
+Comment: 0,0:11:50.78,0:11:54.28,歌CN_center,,0,0,0,kara,就算此路不通 也能越过去吧
+Comment: 0,0:11:54.76,0:11:59.00,歌CN_center,,0,0,0,kara,光芒缠绕于身
+Comment: 0,0:12:00.26,0:12:04.58,歌CN,,0,0,0,kara,一定要到达 那个约定的未来
+Comment: 0,0:12:04.77,0:12:07.75,歌CN,no_out,0,0,0,kara,我们的目的地并非幻想
+Comment: 0,0:12:07.92,0:12:17.84,歌CN_center,,0,0,0,kara,那一天所注视着的梦 用这双手去触碰吧
