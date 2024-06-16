@@ -7,3 +7,4 @@ __pycache__
 /build_scripts/pre_translate.py
 /build_scripts/*.ass
 .vscode/
+.env
