@@ -1,0 +1,137 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Last Style Storage: Default
+Audio File: C:/Users/scree/Desktop/sc_ep12.mkv
+Video File: C:/Users/scree/Desktop/sc_ep12.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.875000
+Scroll Position: 63
+Active Line: 66
+Video Position: 29160
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 歌CN,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,125,1
+Style: 歌JP,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,70,1
+Style: 歌CN_center,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,125,1
+Style: 歌JP_center,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,70,1
+Style: 歌CN_center_top,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,8,70,70,125,1
+Style: 歌JP_center_top,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,8,70,70,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:15:08.52,0:15:10.52,歌JP,,0,0,0,code once anystyle,single_frame = 41.70833333333333; k_time = 1; bpm = 170; speed = 60 / bpm * 1000; cn_offset = speed / 3; char_speed = speed / 16;
+Comment: 0,0:15:10.52,0:15:12.52,歌JP,,0,0,0,code once anystyle,local animations = {     linear = function(v1, v2, position)         return CubicBezier(v1, v2, 0, 0, 1, 1, position)     end,     easeInSine = function(v1, v2, position)         return CubicBezier(v1, v2, 0.47, 0, 0.745, 0.715, position)     end,     easeOutSine = function(v1, v2, position)         return CubicBezier(v1, v2, 0.39, 0.575, 0.565, 1, position)     end,     easeInOutSine = function(v1, v2, position)         return CubicBezier(v1, v2, 0.445, 0.05, 0.55, 0.95, position)     end,     easeInQuad = function(v1, v2, position)         return CubicBezier(v1, v2, 0.55, 0.085, 0.68, 0.53, position)     end,     easeOutQuad = function(v1, v2, position)         return CubicBezier(v1, v2, 0.25, 0.46, 0.45, 0.94, position)     end,     easeInOutQuad = function(v1, v2, position)         return CubicBezier(v1, v2, 0.455, 0.03, 0.515, 0.955, position)     end,     easeInCubic = function(v1, v2, position)         return CubicBezier(v1, v2, 0.55, 0.055, 0.675, 0.19, position)     end,     easeOutCubic = function(v1, v2, position)         return CubicBezier(v1, v2, 0.215, 0.61, 0.355, 1, position)     end,     easeInOutCubic = function(v1, v2, position)         return CubicBezier(v1, v2, 0.645, 0.045, 0.355, 1, position)     end,     easeInQuart = function(v1, v2, position)         return CubicBezier(v1, v2, 0.895, 0.03, 0.685, 0.22, position)     end,     easeOutQuart = function(v1, v2, position)         return CubicBezier(v1, v2, 0.165, 0.84, 0.44, 1, position)     end,     easeInOutQuart = function(v1, v2, position)         return CubicBezier(v1, v2, 0.77, 0, 0.175, 1, position)     end,     easeInQuint = function(v1, v2, position)         return CubicBezier(v1, v2, 0.755, 0.05, 0.855, 0.06, position)     end,     easeOutQuint = function(v1, v2, position)         return CubicBezier(v1, v2, 0.23, 1, 0.32, 1, position)     end,     easeInOutQuint = function(v1, v2, position)         return CubicBezier(v1, v2, 0.86, 0, 0.07, 1, position)     end,     easeInExpo = function(v1, v2, position)         return CubicBezier(v1, v2, 0.95, 0.05, 0.795, 0.035, position)     end,     easeOutExpo = function(v1, v2, position)         return CubicBezier(v1, v2, 0.19, 1, 0.22, 1, position)     end,     easeInOutExpo = function(v1, v2, position)         return CubicBezier(v1, v2, 1, 0, 0, 1, position)     end,     easeInCirc = function(v1, v2, position)         return CubicBezier(v1, v2, 0.6, 0.04, 0.98, 0.335, position)     end,     easeOutCirc = function(v1, v2, position)         return CubicBezier(v1, v2, 0.075, 0.82, 0.165, 1, position)     end,     easeInOutCirc = function(v1, v2, position)         return CubicBezier(v1, v2, 0.785, 0.135, 0.15, 0.86, position)     end,     easeInBack = function(v1, v2, position)         return CubicBezier(v1, v2, 0.6, -0.28, 0.735, 0.045, position)     end,     easeOutBack = function(v1, v2, position)         return CubicBezier(v1, v2, 0.175, 0.885, 0.32, 1.275, position)     end,     easeInOutBack = function(v1, v2, position)         return CubicBezier(v1, v2, 0.68, -0.55, 0.265, 1.55, position)     end, } local animations_default = {     easeIn = animations.easeInQuad,     easeOut = animations.easeOutQuad,     easeInOut = animations.easeInOutQuad,     linear = animations.linear, } function Animation(v1, v2, position, type)     local animation = animations[type]     if animation then         return animation(v1, v2, position)     else         if animations_default[type] then             return animations_default[type](v1, v2, position)         end         error("Unknown animation type: " .. type)     end end function CubicBezier(v1, v2, x1, y1, x2, y2, position)     local ax = 3 * x1 - 3 * x2 + 1     local bx = 3 * x2 - 6 * x1     local cx = 3 * x1     local ay = 3 * y1 - 3 * y2 + 1     local by = 3 * y2 - 6 * y1     local cy = 3 * y1     local x = position     local t = 0.5     local epsilon = 0.00001     local Bt = 0     local dBt = 0     for i = 1, 8 do         Bt = ax * t^3 + bx * t^2 + cx * t         if math.abs(Bt - x) < epsilon then             break         end         dBt = 3 * ax * t^2 + 2 * bx * t + cx         t = t - (Bt - x) / dBt     end     local t0 = 0     local t1 = 1     for i = 1, 10 do         if math.abs(Bt - x) < epsilon then             break         end         Bt = ax * t^3 + bx * t^2 + cx * t         if Bt < x then             t0 = t         else             t1 = t         end         t = (t0 + t1) / 2     end     local Bty = ay * t^3 + by * t^2 + cy * t     return v1 + (v2 - v1) * Bty end
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,code line anystyle,no_in = false; no_out = false; if orgline.actor:find("no_in") then no_in = true end; if orgline.actor:find("no_out") then no_out = true end;
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,template char,!no_in and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + char_speed*char.ci,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + char_speed*char.ci or line.start_time + (single_frame * loopctx.state.fbf * k_time) + char_speed*char.ci)!{\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci))!{\an7\pos(!line.left + char.left!,!line.top!)}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci), line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci))!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center_top,,0,0,0,code line anystyle,no_in = false; no_out = false; if orgline.actor:find("no_in") then no_in = true end; if orgline.actor:find("no_out") then no_out = true end;
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center_top,,0,0,0,template char,!no_in and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + char_speed*char.ci,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + char_speed*char.ci or line.start_time + (single_frame * loopctx.state.fbf * k_time) + char_speed*char.ci)!{\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center_top,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci))!{\an7\pos(!line.left + char.left!,!line.top!)}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP_center_top,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci), line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci))!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,template char,!no_in and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + char_speed*char.ci,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + char_speed*char.ci or line.start_time + (single_frame * loopctx.state.fbf * k_time) + char_speed*char.ci)!{\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci))!{\an7\pos(!line.left + char.left!,!line.top!)}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci), line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci))!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN_center,,0,0,0,template char,!no_in and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + char_speed*char.ci + cn_offset,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + char_speed*char.ci + cn_offset or line.start_time + (single_frame * loopctx.state.fbf * k_time) + char_speed*char.ci + cn_offset)!{\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN_center,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci + cn_offset, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left!,!line.top!)}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN_center,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset, line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN_center_top,,0,0,0,template char,!no_in and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + char_speed*char.ci + cn_offset,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + char_speed*char.ci + cn_offset or line.start_time + (single_frame * loopctx.state.fbf * k_time) + char_speed*char.ci + cn_offset)!{\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN_center_top,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci + cn_offset, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left!,!line.top!)}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN_center_top,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset, line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!no_in and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(line.height, 0, loopctx.state.fbf/loopctx.max.fbf, "easeOutBack"))!!retime("abs",line.start_time + (single_frame * (loopctx.state.fbf - 1) * k_time) + char_speed*char.ci + cn_offset,loopctx.state.fbf == loopctx.max.fbf and line.start_time + speed + char_speed*char.ci + cn_offset or line.start_time + (single_frame * loopctx.state.fbf * k_time) + char_speed*char.ci + cn_offset)!{\an7\pos(!line.left + char.left - animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&HFF&", "&H00")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci + cn_offset, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left!,!line.top!)}
+Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset, line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,mixin line anystyle,{\blur4}
+Comment: 0,0:15:05.84,0:15:12.35,歌JP_center,,0,0,0,kara,Spread the Wings 行こう 今、はじまる奇跡
+Comment: 0,0:15:05.84,0:15:12.35,歌CN_center,,0,0,0,kara,Spread the Wings 出发吧 即将开始的奇迹
+Comment: 0,0:15:18.25,0:15:27.90,歌JP_center,,0,0,0,kara,翼を広げて (君とどこまでも) あの空の彼方
+Comment: 0,0:15:18.25,0:15:27.90,歌CN_center,,0,0,0,kara,展开翅膀（与你同行）飞向那天空的彼端
+Comment: 0,0:15:30.60,0:15:35.32,歌JP_center,,0,0,0,kara,(Start Up) 新しい夢にあつまった
+Comment: 0,0:15:30.60,0:15:35.32,歌CN_center,,0,0,0,kara,（Start Up）在新的梦想中集合
+Comment: 0,0:15:35.32,0:15:37.04,歌JP_center,,0,0,0,kara,(You & Me YES!!)
+Comment: 0,0:15:37.04,0:15:41.77,歌JP_center,,0,0,0,kara,やわらかい羽をぎゅっとつないで
+Comment: 0,0:15:37.04,0:15:41.77,歌CN_center,,0,0,0,kara,将柔软的羽毛紧紧系起
+Comment: 0,0:15:42.02,0:15:46.94,歌JP_center,,0,0,0,kara,(Look Up) 誰も見たことない翼
+Comment: 0,0:15:42.02,0:15:46.94,歌CN_center,,0,0,0,kara,（Look Up）不曾有人见过的双翼
+Comment: 0,0:15:46.94,0:15:52.92,歌JP_center,,0,0,0,kara,わたし達の空に広げよう
+Comment: 0,0:15:46.94,0:15:52.92,歌CN_center,,0,0,0,kara,在我们的天空中展开吧
+Comment: 0,0:15:53.29,0:15:58.98,歌JP_center,,0,0,0,kara,どんな憧れも全部かなえる
+Comment: 0,0:15:53.29,0:15:58.98,歌CN_center,,0,0,0,kara,无论憧憬何物 都能加以实现
+Comment: 0,0:15:59.17,0:16:04.52,歌JP_center,,0,0,0,kara,そんな未来信じてみない？
+Comment: 0,0:15:59.17,0:16:04.52,歌CN_center,,0,0,0,kara,为何不尝试去相信这样的未来呢？
+Comment: 0,0:16:04.52,0:16:11.83,歌JP_center,,0,0,0,kara,強く願えたら (それはもう) 本物だよ！
+Comment: 0,0:16:04.52,0:16:11.83,歌CN_center,,0,0,0,kara,心愿足够强烈（那已然是）真实存在！
+Comment: 0,0:16:12.28,0:16:17.95,歌JP_center,,0,0,0,kara,Spread the Wings 行こう 今、羽ばたく時間
+Comment: 0,0:16:12.28,0:16:17.95,歌CN_center,,0,0,0,kara,Spread the Wings 出发吧 现在是振翅高飞的时刻
+Comment: 0,0:16:17.95,0:16:23.56,歌JP_center,,0,0,0,kara,ずっとみんな 待っていたよね
+Comment: 0,0:16:17.95,0:16:23.56,歌CN_center,,0,0,0,kara,大家一直都在等待着吧
+Comment: 0,0:16:23.56,0:16:28.97,歌JP_center,,0,0,0,kara,Spread the Wings これは もう最初の奇跡
+Comment: 0,0:16:23.56,0:16:28.97,歌CN_center,,0,0,0,kara,Spread the Wings 这便是最初的奇迹
+Comment: 0,0:16:28.97,0:16:35.53,歌JP_center,,0,0,0,kara,(見つけた) 手を伸ばせば (Power) うまれてくる
+Comment: 0,0:16:28.97,0:16:35.53,歌CN_center,,0,0,0,kara,（找到了）伸出手  抓住（能量）
+Comment: 0,0:16:35.97,0:16:43.48,歌JP_center,,0,0,0,kara,勇気をさあ 味方にして
+Comment: 0,0:16:35.97,0:16:43.48,歌CN_center,,0,0,0,kara,让勇气成为我们的伙伴
+Comment: 0,0:16:41.64,0:16:51.10,歌JP_center_top,,0,0,0,kara,翼を広げて (君とどこまでも) あの空の彼方
+Comment: 0,0:16:41.64,0:16:51.10,歌CN_center_top,,0,0,0,kara,展开翅膀（与你同行）飞向那天空的彼端
+Comment: 0,0:16:53.95,0:16:58.64,歌JP_center,,0,0,0,kara,(Grow Up) 不安はみんな同じだね
+Comment: 0,0:16:53.95,0:16:58.64,歌CN_center,,0,0,0,kara,（Grow Up）大家都是这样怀揣着不安呢
+Comment: 0,0:16:58.64,0:17:00.36,歌JP_center,,0,0,0,kara,(Don't Worry YES!!)
+Comment: 0,0:17:00.36,0:17:05.29,歌JP_center,,0,0,0,kara,だけどワクワクちゃんとしてるの
+Comment: 0,0:17:00.36,0:17:05.29,歌CN_center,,0,0,0,kara,但内心依然怀着憧憬
+Comment: 0,0:17:05.29,0:17:09.95,歌JP_center,,0,0,0,kara,(Jump Up) うまくできない自分ごと
+Comment: 0,0:17:05.29,0:17:09.95,歌CN_center,,0,0,0,kara,（Jump Up）就算自己没法做好
+Comment: 0,0:17:10.12,0:17:15.90,歌JP_center,,0,0,0,kara,好きになれるステージきっとある
+Comment: 0,0:17:10.12,0:17:15.90,歌CN_center,,0,0,0,kara,也一定会有喜欢上我的舞台
+Comment: 0,0:17:16.56,0:17:22.21,歌JP_center,,0,0,0,kara,いっぱい夢見たぶん、うんと遠くまで
+Comment: 0,0:17:16.56,0:17:22.21,歌CN_center,,0,0,0,kara,做过许多许多的梦 直到远方
+Comment: 0,0:17:22.55,0:17:27.90,歌JP_center,,0,0,0,kara,イメージする…リアルになる
+Comment: 0,0:17:22.55,0:17:27.90,歌CN_center,,0,0,0,kara,进行想象… 就能化作真实
+Comment: 0,0:17:27.90,0:17:32.63,歌JP_center,,0,0,0,kara,今はそれだけで (じゅうぶん)
+Comment: 0,0:17:27.90,0:17:32.63,歌CN_center,,0,0,0,kara,只要像现在这样（就足够了）
+Comment: 0,0:17:32.63,0:17:37.72,歌JP_center,,0,0,0,kara,強くなれる！ (上昇気流にRide!!)
+Comment: 0,0:17:32.63,0:17:37.72,歌CN_center,,0,0,0,kara,就能变强（乘上上升气流吧！！）
+Comment: 0,0:17:38.34,0:17:44.10,歌JP_center,,0,0,0,kara,Spread the Wings 行こう まだ知らない世界
+Comment: 0,0:17:38.34,0:17:44.10,歌CN_center,,0,0,0,kara,Spread the Wings 出发吧 未曾知晓的世界
+Comment: 0,0:17:44.10,0:17:49.64,歌JP_center,,0,0,0,kara,夢が夢で 終わらない場所
+Comment: 0,0:17:44.10,0:17:49.64,歌CN_center,,0,0,0,kara,去哪个梦想不会以梦结尾的地方
+Comment: 0,0:17:49.64,0:17:55.07,歌JP_center,,0,0,0,kara,Spread the Wings いつか 最高の笑顔で
+Comment: 0,0:17:49.64,0:17:55.07,歌CN_center,,0,0,0,kara,Spread the Wings 终有一天 能绽放出最棒的笑容
+Comment: 0,0:17:55.07,0:18:01.79,歌JP_center,,0,0,0,kara,(一緒に) たどりつける (Future) キラメキへと
+Comment: 0,0:17:55.07,0:18:01.79,歌CN_center,,0,0,0,kara,（一起）抵达那个（未来）向着光辉
+Comment: 0,0:18:02.11,0:18:10.50,歌JP_center,,0,0,0,kara,可能性で 羽ばたくんだ
+Comment: 0,0:18:02.11,0:18:10.50,歌CN_center,,0,0,0,kara,乘着「可能性」振翅高飞吧
+Comment: 0,0:18:18.50,0:18:20.20,歌JP_center,,0,0,0,kara,Yeah!!
+Comment: 0,0:18:30.23,0:18:35.62,歌JP_center,,0,0,0,kara,さあ、ここから 前だけ見て進むよ
+Comment: 0,0:18:30.23,0:18:35.62,歌CN_center,,0,0,0,kara,那么 现在开始 只管着大步向前走吧
+Comment: 0,0:18:35.62,0:18:44.18,歌JP_center,,0,0,0,kara,瞳に両手に Dream (Dream) 輝かせよう
+Comment: 0,0:18:35.62,0:18:44.18,歌CN_center,,0,0,0,kara,让瞳孔与双手中的梦想（Dream）闪耀吧
+Comment: 0,0:18:46.10,0:18:51.63,歌JP_center,,0,0,0,kara,Spread the Wings 行こう 今、羽ばたく時間
+Comment: 0,0:18:46.10,0:18:51.63,歌CN_center,,0,0,0,kara,Spread the Wings 出发吧 现在是振翅高飞的时刻
+Comment: 0,0:18:51.84,0:18:57.26,歌JP_center,,0,0,0,kara,ずっとみんな 待っていたよね
+Comment: 0,0:18:51.84,0:18:57.26,歌CN_center,,0,0,0,kara,大家一直都在等待着吧
+Comment: 0,0:18:57.40,0:19:02.83,歌JP_center,,0,0,0,kara,Spread the Wings これは もう最初の奇跡
+Comment: 0,0:18:57.40,0:19:02.83,歌CN_center,,0,0,0,kara,Spread the Wings 这便是最初的奇迹
+Comment: 0,0:19:02.83,0:19:09.55,歌JP_center,,0,0,0,kara,(見つけた) 手を伸ばして (Power) 受け取ったの
+Comment: 0,0:19:02.83,0:19:09.55,歌CN_center,,0,0,0,kara,（找到了）伸出手  抓住（能量）
+Comment: 0,0:19:09.85,0:19:15.11,歌JP_center,,0,0,0,kara,君と目指す (Future) キラめく世界
+Comment: 0,0:19:09.85,0:19:15.11,歌CN_center,,0,0,0,kara,和你一起所期盼的（未来）闪耀的世界
+Comment: 0,0:19:15.50,0:19:26.13,歌JP_center,,0,0,0,kara,可能性で 羽ばたくんだ
+Comment: 0,0:19:15.50,0:19:26.13,歌CN_center,,0,0,0,kara,乘着「可能性」振翅高飞吧
+Comment: 0,0:19:35.27,0:19:40.96,歌JP_center,,0,0,0,kara,翼を広げて (君とどこまでも)
+Comment: 0,0:19:35.27,0:19:40.96,歌CN_center,,0,0,0,kara,展开翅膀（与你同行）
+Comment: 0,0:19:40.96,0:19:46.60,歌JP_center,,0,0,0,kara,あの空の彼方 (夢を追いかけて)
+Comment: 0,0:19:40.96,0:19:46.60,歌CN_center,,0,0,0,kara,飞向那天空的彼端（追逐梦想）
+Comment: 0,0:19:46.60,0:19:52.23,歌JP_center,,0,0,0,kara,翼を広げて (君とどこまでも)
+Comment: 0,0:19:46.60,0:19:52.23,歌CN_center,,0,0,0,kara,展开翅膀（与你同行）
+Comment: 0,0:19:52.23,0:19:56.04,歌JP_center,,0,0,0,kara,あの空の彼方
+Comment: 0,0:19:52.23,0:19:56.04,歌CN_center,,0,0,0,kara,飞向那天空的彼端
