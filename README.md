@@ -1,8 +1,5 @@
 # THE iDOLM@STER SHINY COLORS 偶像大师 闪耀色彩 字幕仓库
 
-> [!IMPORTANT]  
-> 由于缺少翻译，本项目现已中止。
-
 ![visual](https://p.inari.site/kitauji/202403/26/imsc.jpg)
 
 该仓库存放以`北宇治字幕组`名义制作的TV动画《偶像大师 闪耀色彩》 字幕。
@@ -15,7 +12,7 @@
 |分支|说明|下载|
 |-|-|:-:|
 |`latest`|`main`持续集成的分支，拥有最新改动，部分显示可能会不正常|[点此下载](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/tag/latest)|
-|~~`tv`~~|~~适配网络放送版TV播放源（例如CR）的稳定分支~~|~~暂无下载~~|
+|`tv`|适配网络放送版TV播放源（例如CR）的稳定分支|[点此下载](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/tag/tv-1.0)|
 
 ## 开发
 
