@@ -55,7 +55,7 @@ jobs:
       - name: Download Aegisub-cli
         run: |
           wget https://github.com/scrpr/aegisub-cli/releases/download/disable_unique_path/aegisub-cli.zip
-          unzip -q aegisub-cli.zip -d aegisub-cli/
+          unzip -q aegisub-cli.zip -d S1/aegisub-cli/
       - name: Install custom fonts
         run: |
           wget https://github.com/Kitauji-Sub/subs-shikanoko/releases/download/typeface/fonts.zip
@@ -67,7 +67,7 @@ jobs:
           python build_scripts/build.py ${{ github.workspace }}/S1
       - name: Pack files
         run: |
-          zip -r -j sc_subs_${{steps.semver.outputs.version}}.zip build/output/*
+          zip -r -j sc_subs_${{steps.semver.outputs.version}}.zip S1/build/output/*
       - name: Push the tag to Github
         if: steps.version_check.outputs.skip == 'false'
         run: |
