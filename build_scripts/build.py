@@ -1,13 +1,12 @@
-import utils
 import os
 import subprocess
+import argparse
+from utils import FileManager, SubtitleProcessor
 
-def main():
-    work_folder = os.environ.get('GITHUB_WORKSPACE')
-    # work_folder = os.getcwd()
+def main(work_folder):
     build_dir = os.path.join(work_folder, 'build')
 
-    utils.traverse_files(work_folder)
+    FileManager.traverse_files(work_folder)
 
     for root, dirs, files in os.walk(build_dir):
         for file in files:
@@ -27,8 +26,12 @@ def main():
                 output_path = os.path.join(build_dir, "output", file)
                 if file.startswith("ep"):
                     os.chdir(root)
-                    utils.merge_files(input_path, output_path)
+                    FileManager.merge_files(input_path, output_path)
                     print(f"Merged {file}")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("work_folder", help="Specify the work folder")
+    args = parser.parse_args()
+
+    main(args.work_folder)

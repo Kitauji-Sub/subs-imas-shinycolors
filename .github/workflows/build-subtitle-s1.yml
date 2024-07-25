@@ -1,0 +1,101 @@
+name: Build Subtitles
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'S1/**'
+      - '!.github/**'
+      - '!README.md'
+
+env:
+  PYTHONUNBUFFERED: "1"
+  WINEDEBUG: "-all"
+
+jobs:
+  Build-CI-Versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Semantic Version
+        uses: PaulHatch/semantic-version@v5.4.0
+        id: semver
+        with:
+          change_path: "S1"
+          namespace: Season-1
+          tag_prefix: "v"
+          major_pattern: "(MAJOR)"
+          minor_pattern: "(MINOR)"
+          bump_each_commit: true
+          bump_each_commit_patch_pattern: "(PATCH)"
+      - name: Check if version exists
+        id: version_check
+        run: |
+          if [ $(git tag -l "${{ steps.semver.outputs.version_tag }}") ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Setup Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install wine64
+          pip install --user git+https://github.com/FichteForks/Myaamori-Aegisub-Scripts.git@pr/fix-style-deduplication#subdirectory=scripts/sub-digest
+          pip install requests urllib3
+          winecfg
+      - name: Download Aegisub-cli
+        run: |
+          wget https://github.com/scrpr/aegisub-cli/releases/download/disable_unique_path/aegisub-cli.zip
+          unzip -q aegisub-cli.zip -d aegisub-cli/
+      - name: Install custom fonts
+        run: |
+          wget https://github.com/Kitauji-Sub/subs-shikanoko/releases/download/typeface/fonts.zip
+          unzip -q fonts.zip -d Fonts/
+          sudo mv Fonts/* /usr/share/fonts/
+          fc-cache -fv
+      - name: Build substitles
+        run: |
+          python build_scripts/build.py ${{ github.workspace }}/S1
+      - name: Pack files
+        run: |
+          zip -r -j sc_subs_${{steps.semver.outputs.version}}.zip build/output/*
+      - name: Push the tag to Github
+        if: steps.version_check.outputs.skip == 'false'
+        run: |
+          git tag ${{ steps.semver.outputs.version_tag }}
+          git push origin ${{ steps.semver.outputs.version_tag }}
+      - name: Generate a changelog
+        if: steps.version_check.outputs.skip == 'false'
+        uses: orhun/git-cliff-action@v3
+        with:
+          config: cliff.toml
+          args: --verbose --latest
+        env:
+          OUTPUT: CHANGELOG.md
+          GITHUB_REPO: ${{ github.repository }}
+      - name: Publish
+        if: steps.version_check.outputs.skip == 'false'
+        uses: "softprops/action-gh-release@v2"
+        with:
+          tag_name: ${{steps.semver.outputs.version_tag}}
+          fail_on_unmatched_files: true
+          prerelease: false
+          draft: false
+          body_path: CHANGELOG.md
+          name: ${{steps.semver.outputs.version}}
+          files: |
+            sc_subs_*.zip
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sc_subs_built
+          path: sc_subs_*.zip
