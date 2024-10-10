@@ -3,6 +3,7 @@ op.mp4
 op_sc.mp4
 /aegisub-cli
 S1/build
+S2/build
 __pycache__
 /build_scripts/pre_translate.py
 /build_scripts/*.ass
