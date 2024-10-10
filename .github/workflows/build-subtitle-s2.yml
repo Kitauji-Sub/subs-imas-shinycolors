@@ -6,7 +6,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'S1/**'
+      - 'S2/**'
       - '!.github/**'
       - '!README.md'
 
@@ -26,8 +26,8 @@ jobs:
         uses: PaulHatch/semantic-version@v5.4.0
         id: semver
         with:
-          change_path: "S1"
-          namespace: Season-1
+          change_path: "S2"
+          namespace: Season-2
           tag_prefix: "v"
           major_pattern: "(MAJOR)"
           minor_pattern: "(MINOR)"
@@ -55,7 +55,7 @@ jobs:
       - name: Download Aegisub-cli
         run: |
           wget https://github.com/scrpr/aegisub-cli/releases/download/disable_unique_path/aegisub-cli.zip
-          unzip -q aegisub-cli.zip -d S1/aegisub-cli/
+          unzip -q aegisub-cli.zip -d S2/aegisub-cli/
       - name: Install custom fonts
         run: |
           wget https://github.com/Kitauji-Sub/subs-shikanoko/releases/download/typeface/fonts.zip
@@ -64,10 +64,10 @@ jobs:
           fc-cache -fv
       - name: Build substitles
         run: |
-          python build_scripts/build.py ${{ github.workspace }}/S1
+          python build_scripts/build.py ${{ github.workspace }}/S2
       - name: Pack files
         run: |
-          zip -r -j sc_subs_${{steps.semver.outputs.version}}.zip S1/build/output/*
+          zip -r -j sc_subs_${{steps.semver.outputs.version}}.zip S2/build/output/*
       - name: Push the tag to Github
         if: steps.version_check.outputs.skip == 'false'
         run: |
@@ -91,7 +91,7 @@ jobs:
           prerelease: false
           draft: false
           body_path: CHANGELOG.md
-          name: ${{ format('{0} {1}', 'Season-1', steps.semver.outputs.version) }}
+          name: ${{ format('{0} {1}', 'Season-2', steps.semver.outputs.version) }}
           files: |
             sc_subs_*.zip
       - name: Upload Artifacts
