@@ -34,7 +34,7 @@ Style: TITLE,思源黑体 Medium,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
-Dialogue: 0,0:21:32.06,0:21:41.36,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：{\b1}北宇治　登　　龙　　　门　　　　内　　　　　阁\N{\b0}翻译：{\b1\s1}FFU2{\s0} ドラゴン田中\N{\b0}后期：{\b1\s1}Scrpr{\s0} 佐久间良雄
+Dialogue: 0,0:21:32.06,0:21:41.36,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：{\b1}北宇治字幕组\N{\b0}翻译：{\b1\s1}FFU2{\s0} ドラゴン田中\N{\b0}后期：{\b1\s1}Scrpr{\s0} 佐久间良雄
 Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:00:04.00,0:00:07.65,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}五彩缤纷的印记
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
