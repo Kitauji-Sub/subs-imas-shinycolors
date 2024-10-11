@@ -65,7 +65,7 @@ jobs:
           Expand-Archive -Path "aegisub-cli.zip" -DestinationPath "S2\aegisub-cli" -Force
       - name: Install custom fonts
         run: |
-          Invoke-WebRequest -Uri "https://github.com/Kitauji-Sub/subs-shikanoko/releases/download/typeface/fonts.zip" -OutFile "fonts.zip"
+          Invoke-WebRequest -Uri "https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/download/typeface/fonts_sc.zip" -OutFile "fonts.zip"
           Expand-Archive -Path "fonts.zip" -DestinationPath "Fonts" -Force
           $fontSourceFolder = "Fonts\"
           $SystemFontsPath = "C:\Windows\Fonts\"
