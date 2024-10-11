@@ -103,7 +103,7 @@ jobs:
       - name: Pack files
         run: |
           $version = "${{steps.semver.outputs.version_tag}}"
-          Compress-Archive -Path "S2/build/output/*" -DestinationPath "sc_subs_s2_$version.zip" -Force
+          Compress-Archive -Path "S2/build/output/*" -DestinationPath "sc_subs_$version.zip" -Force
       - name: Publish
         if: steps.version_check.outputs.skip == 'false'
         uses: "softprops/action-gh-release@v2"
