@@ -6,13 +6,9 @@
 
 ## 下载字幕
 
-[![status badge main branch](https://github.com/Kitauji-Sub/subs-imas-shinycolors/actions/workflows/build-subtitle.yml/badge.svg?branch=main)](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/tag/latest) ![GitHub last commit](https://img.shields.io/github/last-commit/Kitauji-Sub/subs-imas-shinycolors?label=last%20update)
+第一季：[![GitHub Release](https://img.shields.io/github/v/release/Kitauji-Sub/subs-imas-shinycolors?filter=*Season-1)](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases?q=%22Season-1%22&expanded=true)
 
-
-|分支|说明|下载|
-|-|-|:-:|
-|`latest`|`main`持续集成的分支，拥有最新改动，部分显示可能会不正常|[点此下载](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/tag/latest)|
-|`tv`|适配网络放送版TV播放源（例如CR）的稳定分支|[点此下载](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/tag/tv-1.0)|
+第二季：[![GitHub Release](https://img.shields.io/github/v/release/Kitauji-Sub/subs-imas-shinycolors?filter=*Season-2)](https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases?q=%22Season-2%22&expanded=true)
 
 ## 开发
 
