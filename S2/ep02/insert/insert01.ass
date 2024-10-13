@@ -1,0 +1,48 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/sc_s2_ep2.mkv
+Video File: C:/Users/scree/Desktop/sc_s2_ep2.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 1.125000
+Scroll Position: 9
+Active Line: 20
+Video Position: 16563
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 歌CN,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,125,1
+Style: 歌JP,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,70,1
+Style: 歌CN_center,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,125,1
+Style: 歌JP_center,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,template line anystyle,
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,mixin line anystyle,{\fad(150,150)\blur4}
+Comment: 0,0:10:52.16,0:10:56.55,歌JP,,0,0,0,kara,闇を切り刻むように 昂ぶる思い
+Comment: 0,0:10:56.55,0:11:02.39,歌JP,,0,0,0,kara,乱反射 To the stage 見せつけるわ
+Comment: 0,0:11:02.95,0:11:09.21,歌JP,,0,0,0,kara,目指すものがあるから 心に迷いなんてないの
+Comment: 0,0:11:09.21,0:11:14.16,歌JP,,0,0,0,kara,どんな試練があっても Going my ray
+Comment: 0,0:11:14.16,0:11:19.67,歌JP,,0,0,0,kara,誰かが作った道を (Dash!) 追い越したその先で (Breakout!)
+Comment: 0,0:11:19.67,0:11:25.31,歌JP,,0,0,0,kara,胸に 滾る夢を この手でつかむの
+Comment: 0,0:11:25.42,0:11:26.95,歌JP,,0,0,0,kara,諦めない、絶対
+Comment: 0,0:11:27.07,0:11:32.97,歌JP,,0,0,0,kara,高く高い壁だって Get chance & luck 飛び越え
+Comment: 0,0:11:33.48,0:11:36.38,歌JP,,0,0,0,kara,異彩の光で魅…
+Comment: 0,0:10:52.16,0:10:56.55,歌CN,,0,0,0,kara,如切碎黑暗一般 情绪高昂
+Comment: 0,0:10:56.55,0:11:02.39,歌CN,,0,0,0,kara,将它散射到舞台（Stage）上 给你看看
+Comment: 0,0:11:02.95,0:11:09.21,歌CN,,0,0,0,kara,因为心有所指 所以从不迷茫
+Comment: 0,0:11:09.21,0:11:14.16,歌CN,,0,0,0,kara,无论是怎么样的试炼 都{\fscx50} {\fscx100}Going my ray
+Comment: 0,0:11:14.16,0:11:19.67,歌CN,,0,0,0,kara,无论是谁开辟的道路（Dash！） 超越它的尽头（Breakout！）
+Comment: 0,0:11:19.67,0:11:25.31,歌CN,,0,0,0,kara,心中翻滚的梦想 牢牢抓在手中
+Comment: 0,0:11:25.42,0:11:26.95,歌CN,,0,0,0,kara,绝对 不会放弃
+Comment: 0,0:11:27.07,0:11:32.97,歌CN,,0,0,0,kara,无论多高的墙壁 Get chance & luck 飞跃而过
+Comment: 0,0:11:33.48,0:11:36.38,歌CN,,0,0,0,kara,用五颜六色的光芒…
