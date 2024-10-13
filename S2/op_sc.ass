@@ -1,0 +1,56 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Last Style Storage: Default
+Audio File: op.mp4
+Video File: op.mp4
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.750000
+Video Position: 246
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OP_JP,Source Han Serif Light,60,&H00905F61,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,0,0,2,30,30,30,1
+Style: OP_CN,思源宋体 Light,60,&H00905F61,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,0,0,8,30,30,30,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.00,OP_JP,,0,0,0,sync,
+Dialogue: 0,0:00:12.24,0:00:16.10,OP_JP,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}どこに向かう途中だろう
+Dialogue: 0,0:00:16.51,0:00:21.29,OP_JP,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}飛び込んだ光のなかで
+Dialogue: 0,0:00:23.19,0:00:27.47,OP_JP,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}わからないまま手を伸ばした
+Dialogue: 0,0:00:27.47,0:00:32.31,OP_JP,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}風を探す翼のように
+Dialogue: 0,0:00:33.37,0:00:37.50,OP_JP,,0,1200,0,OP,{\c&HFFFFFF&\fad(150,150)}一枚ずつ (My shiny feather)
+Dialogue: 0,0:00:36.00,0:00:41.28,OP_JP,,1200,0,0,OP,{\c&HFFFFFF&\fad(150,150)}違う色で (My shiny color)
+Dialogue: 0,0:00:38.80,0:00:46.40,OP_JP,,0,100,0,OP,{\c&HFFFFFF&\fad(150,150)}輝きを重ねあわせたね
+Dialogue: 0,0:00:49.24,0:00:55.26,OP_JP,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}羽ばたき続ける わたし達の空が
+Dialogue: 0,0:00:55.26,0:00:59.98,OP_JP,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}辿り着く未来で
+Dialogue: 0,0:01:01.44,0:01:05.74,OP_JP,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}なりたい自分になるんだ
+Dialogue: 0,0:01:05.74,0:01:08.51,OP_JP,,0,0,0,OP,{\fad(150,150)}キラめいてShiny Ray
+Dialogue: 0,0:01:08.51,0:01:11.71,OP_JP,,0,0,0,OP,{\fad(150,150)}もっと広い空へ
+Dialogue: 0,0:01:11.71,0:01:17.03,OP_JP,,0,0,0,OP,{\fad(150,150)}鼓動が指差すプリズム
+Dialogue: 0,0:01:17.19,0:01:24.39,OP_JP,,0,0,0,OP,{\fad(150,150)}焼きつける瞳にあつめて
+Dialogue: 0,0:01:24.75,0:01:29.39,OP_JP,,0,0,0,OP,{\fad(150,150)}どこまでも行くよ
+Dialogue: 0,0:00:12.24,0:00:16.10,OP_CN,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}我们正在前往何方呢
+Dialogue: 0,0:00:16.51,0:00:21.29,OP_CN,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}跳进了那片光芒之中
+Dialogue: 0,0:00:23.19,0:00:27.47,OP_CN,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}不知不觉中伸出了手
+Dialogue: 0,0:00:27.47,0:00:32.31,OP_CN,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}如同等风来的翅膀一般
+Dialogue: 0,0:00:33.37,0:00:37.85,OP_CN,,0,1200,0,OP,{\c&HFFFFFF&\fad(150,150)}一片又一片（My shiny feather）
+Dialogue: 0,0:00:36.00,0:00:41.28,OP_CN,,1200,0,0,OP,{\c&HFFFFFF&\fad(150,150)}不同颜色的羽毛（My shiny color）
+Dialogue: 0,0:00:38.80,0:00:46.40,OP_CN,,0,100,0,OP,{\c&HFFFFFF&\fad(150,150)}无数的光辉重叠在了一起
+Dialogue: 0,0:00:49.24,0:00:55.26,OP_CN,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}我们仍在翱翔 在属于我们的天空中
+Dialogue: 0,0:00:55.26,0:00:59.98,OP_CN,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}在我们抵达未来时
+Dialogue: 0,0:01:01.44,0:01:05.74,OP_CN,,0,0,0,OP,{\c&HFFFFFF&\fad(150,150)}成为自己想成为的样子吧
+Dialogue: 0,0:01:05.74,0:01:08.51,OP_CN,,0,0,0,OP,{\fad(150,150)}闪耀着的Shiny Ray
+Dialogue: 0,0:01:08.51,0:01:11.71,OP_CN,,0,0,0,OP,{\fad(150,150)}飞向更广阔的天空
+Dialogue: 0,0:01:11.71,0:01:17.03,OP_CN,,0,0,0,OP,{\fad(150,150)}心跳的指引如棱镜一般
+Dialogue: 0,0:01:17.19,0:01:24.39,OP_CN,,0,0,0,OP,{\fad(150,150)}将所有的景色都烙在眼中
+Dialogue: 0,0:01:24.75,0:01:29.39,OP_CN,,0,0,0,OP,{\fad(150,150)}去任何想去的地方吧
