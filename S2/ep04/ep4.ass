@@ -1,0 +1,196 @@
+﻿[Script Info]
+Original Translation: 
+Original Editing: 
+Original Timing: 
+Synch Point: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[Aegisub Project Garbage]
+Audio File: ep4_翻译用.mp4
+Video File: ep4_翻译用.mp4
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.625000
+Scroll Position: 144
+Active Line: 160
+Video Position: 34189
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,48,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: SC_Bottom,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,2,30,30,30,1
+Style: SC_Top,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,8,30,30,30,1
+Style: 注释,思源黑体,50,&H00F0F0F0,&H000000FF,&H002F2F2F,&H00000000,-1,0,0,0,100,100,1.1,0,1,3,0,7,50,10,70,1
+Style: STF,方正FW轻吟体 简 M,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,0,0,0,0,100,100,1.1,0,1,0.3,0,8,10,10,30,1
+Style: TITLE,思源黑体 Medium,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,-1,0,0,0,100,100,1.1,0,1,0,0,8,10,10,30,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
+Dialogue: 0,0:22:29.95,0:22:42.01,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：{\b1}北宇治字幕组Deep State{\b0}翻译：{\b1}FFU2{\b0}后期：{\b1}Scrpr
+Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
+Dialogue: 0,0:00:00.00,0:00:00.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
+Dialogue: 0,0:00:00.00,0:00:00.00,TITLE,,0,0,0,,{\pos(960,625)\fscy105\fad(433,0)\bord0.4\blur6}
+Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
+Comment: 0,0:11:05.81,0:11:08.25,注释,,0,0,0,,=====TEXTS=====
+Dialogue: 0,0:00:06.98,0:00:11.52,Flashback,千雪,0,0,0,,Maybe, someday, you'll be able to meet thefeelings you have within yourself, too.\Nマノちゃんの気持ちにも いつか出会えるんじゃないのかな
+Dialogue: 0,0:00:12.43,0:00:17.86,Flashback,千雪,0,0,0,,And perhaps the feelings you have,are already starting to grow inside of you.\Nそれに 本当はもう 自分の中に生まれているのかも
+Dialogue: 0,0:00:21.51,0:00:23.56,italics,真乃,0,0,0,,Inside of me, there's already...\Nわたしの中にはもう
+Dialogue: 0,0:00:25.68,0:00:26.96,italics,真乃,0,0,0,,Surely...\Nきっと
+Dialogue: 0,0:00:32.92,0:00:34.43,italics,真乃,0,0,0,,Tomorrow's concert...\N明日のステージ
+Dialogue: 0,0:00:36.18,0:00:39.36,italics,真乃,0,0,0,,I want to do my best together with everyone!\Nみんなと一緒に 頑張りたい
+Dialogue: 0,0:02:26.44,0:02:31.03,Default,STAFF,0,0,0,,The show starts in 10 minutes! Please make your way inside quickly!\N開演10分前です お早めにお入りください
+Dialogue: 0,0:02:38.54,0:02:40.11,Default,智代子,0,0,0,,I'm so nervous!\Nドキドキするね
+Dialogue: 0,0:02:45.72,0:02:48.52,Default,冬优子,0,0,0,,Wow! Look, look!\Nわ 見て見て
+Dialogue: 0,0:02:49.81,0:02:50.52,Default,真乃,0,0,0,,\Nhowa
+Dialogue: 0,0:02:55.21,0:02:58.13,Default,冬优子,0,0,0,,Everyone's waiting for us!\Nみんな  待ってるんだ
+Dialogue: 0,0:03:00.11,0:03:01.32,Default,真乃,0,0,0,,Yeah!\Nうん
+Dialogue: 0,0:03:01.75,0:03:04.36,Default,爱依,0,0,0,,Whoa...This is intense.\Nうわ やばっ
+Dialogue: 0,0:03:07.82,0:03:11.79,Default,咲耶,0,0,0,,Don't worry. The effort we've put in won't let us down.\N大丈夫 積み重ねてきたものは裏切らないさ
+Dialogue: 0,0:03:14.71,0:03:17.34,Default,爱依,0,0,0,,Yeah, I think you're right!\Nうん そんな気してきた
+Dialogue: 0,0:03:26.95,0:03:28.38,Default,巡,0,0,0,,Ma-no!\Nナホ
+Dialogue: 0,0:03:28.09,0:03:28.68,Default,真乃,0,0,0,,\Nhowa
+Dialogue: 0,0:03:28.93,0:03:30.02,Default,灯织,0,0,0,,The audience?\Nお客さん
+Dialogue: 0,0:03:30.34,0:03:34.27,Default,真乃,0,0,0,,Yeah... um, you see, well...\Nうん あのね えっと
+Dialogue: 0,0:03:35.80,0:03:37.15,Default,真乃,0,0,0,,It feels different than usual.\Nいつもより
+Dialogue: 0,0:03:42.82,0:03:45.33,Default,制作人,0,0,0,,All right, looks like everyone's here!\Nさあ みんな揃ったな
+Dialogue: 0,0:03:45.63,0:03:46.23,Default,真乃,0,0,0,,\Nhowa
+Dialogue: 0,0:03:48.22,0:03:49.17,Default,制作人,0,0,0,,Let's get going!\N行こうか
+Dialogue: 0,0:03:55.21,0:03:57.03,SC_Top,不知道谁说的,0,0,0,,\N不知道说了什么
+Dialogue: 0,0:03:57.03,0:03:58.36,SC_Top,不知道谁说的,0,0,0,,\N不知道说了什么
+Dialogue: 0,0:03:58.60,0:03:59.56,SC_Top,不知道谁说的,0,0,0,,\N不知道说了什么
+Dialogue: 0,0:04:00.53,0:04:01.53,SC_Top,不知道谁说的,0,0,0,,\N不知道说了什么
+Dialogue: 0,0:04:03.39,0:04:05.03,SC_Top,不知道谁说的,0,0,0,,\N不知道说了什么
+Dialogue: 0,0:04:05.03,0:04:05.96,SC_Top,不知道谁说的,0,0,0,,\N不知道说了什么
+Dialogue: 0,0:04:06.10,0:04:07.27,SC_Top,不知道谁说的,0,0,0,,\N不知道说了什么
+Dialogue: 0,0:04:07.27,0:04:09.45,Default,恋钟,0,0,0,,We'll deliver it perfectly!\Nバッチリ届けるぽい!
+Dialogue: 0,0:04:09.93,0:04:12.04,Default,朝日,0,0,0,,Deliver what exactly?\Nうん 何をっすか
+Dialogue: 0,0:04:12.04,0:04:12.92,Default,恋钟,0,0,0,,\N补语气词
+Dialogue: 0,0:04:15.42,0:04:17.47,Default,咲耶,0,0,0,,I guess you could say, to all our hard work.\N積み重ね かな
+Dialogue: 0,0:04:21.19,0:04:22.67,Default,果穗,0,0,0,,I'm so excited!\Nわくわくします
+Dialogue: 0,0:04:22.67,0:04:25.75,Default,甘奈,0,0,0,,Yeah, let's have lots of fun!\Nうん いっぱい楽しもう
+Dialogue: 0,0:04:27.19,0:04:29.79,Default,巡,0,0,0,,I wonder if everyone will be surprised!\Nみんなびっくりしてくれるかな
+Dialogue: 0,0:04:32.67,0:04:37.63,Default,真乃,0,0,0,,Yeah, I'm sure... they'll be surprised and happy!\Nうん きっと びっくりして ハッピーに
+Dialogue: 0,0:04:38.95,0:04:40.84,Default,千雪,0,0,0,,It's exciting, isn't it?\Nワクワクするね
+Dialogue: 0,0:04:41.11,0:04:41.81,Default,,0,0,0,,\Nうん
+Dialogue: 0,0:04:42.72,0:04:45.43,Default,恋钟,0,0,0,,All right, Mano! Do the thing!\Nじゃあ まの あれ
+Dialogue: 0,0:04:53.23,0:05:00.32,Default,真乃,0,0,0,,Let's make this a super fun event... For everyone who came here today!\N今日 ここに来てくれた皆さんのために いっぱい 楽しいイベントにしましょう
+Dialogue: 0,0:05:01.04,0:05:03.16,Default,真乃,0,0,0,,283 Pro Trick or—\N283プロ
+Dialogue: 0,0:05:03.16,0:05:04.82,Default,真乃,0,0,0,,283 Pro Trick or—\Nトリック—
+Dialogue: 0,0:05:05.22,0:05:09.80,Default,EVERYONE,0,0,0,,Happy! Yeah!\Nオアハッピー 补
+Dialogue: 0,0:05:27.76,0:05:29.34,Default,STAFF,0,0,0,,This is seat A-6.\NA6のお席です
+Dialogue: 0,0:05:51.61,0:05:54.43,Default,咲耶,0,0,0,,Tonight is... Halloween.\N今宵は ハロウィン
+Dialogue: 0,0:05:58.59,0:06:00.62,Default,甜花,0,0,0,,The time for it to begin...\N始まりの時が
+Dialogue: 0,0:06:02.47,0:06:04.12,Default,雾子,0,0,0,,...is drawing near.\N近づいている
+Dialogue: 0,0:06:06.98,0:06:10.94,Default,摩美美,0,0,0,,It's that... once-a-year...\Nそれは 年に一度も
+Dialogue: 0,0:06:12.48,0:06:15.44,Default,朝日,0,0,0,,...party of evil spirits.\N悪霊達の パーティー
+Dialogue: 0,0:06:22.33,0:06:24.28,Default,大概是巧可,0,0,0,,\Nうわ
+Dialogue: 0,0:06:24.28,0:06:27.09,Default,果穗,0,0,0,,There are so many ghosts!\Nお化けが いっぱいです
+Dialogue: 0,0:06:27.09,0:06:28.65,Default,智代子,0,0,0,,Oh no!\N大変
+Dialogue: 0,0:06:28.65,0:06:30.44,Default,树里,0,0,0,,What do we do?!\Nどうすんだ
+Dialogue: 0,0:06:31.72,0:06:35.35,Default,夏叶,0,0,0,,There's only one way to chase away these ghosts!\Nこのお化けを追いはらう方法は ただ一つ
+Dialogue: 0,0:06:36.11,0:06:39.73,Default,甘奈,0,0,0,,And that's by giving them a real fright!\Nそれは びっくりさせちゃうこと
+Dialogue: 0,0:06:43.15,0:06:44.54,Default,凛世,0,0,0,,10 seconds left.\N10秒前
+Dialogue: 0,0:06:44.90,0:06:47.97,Default,巡,0,0,0,,So tonight, it's up to us!\Nだから 今夜はわたしたちで
+Dialogue: 0,0:06:47.97,0:06:49.72,Default,恋钟,0,0,0,,To give them a scare!\Nびっくりさせて
+Dialogue: 0,0:06:50.14,0:06:51.76,Default,千雪,0,0,0,,5 seconds left.\N5秒前
+Dialogue: 0,0:06:51.76,0:06:53.33,Default,真乃,0,0,0,,Let's come together as one!\N一つになって
+Dialogue: 0,0:06:54.25,0:06:55.21,Default,灯织,0,0,0,,3!\N3
+Dialogue: 0,0:06:55.79,0:06:56.65,Default,爱依,0,0,0,,2!\N2
+Dialogue: 0,0:06:57.17,0:06:58.34,Default,冬优子,0,0,0,,1!\N1
+Dialogue: 0,0:07:07.50,0:07:11.53,Default,EVERYONE,0,0,0,,Let's all get happy together!\Nみんなで ハッピーになっちゃおう
+Dialogue: 0,0:07:17.23,0:07:19.29,Default,ILLUMUNATIONSTARS,0,0,0,,Illumination Stars!\Nイルミネーションスターズ
+Dialogue: 0,0:07:20.48,0:07:27.13,Default,真乃,0,0,0,,Everyone! Welcome to 283 PRODUCTIONS' Halloween Party - Happy Surprise Trick!\Nみなさん 283プロハロウィーンパーティーハッピーサプライズトリックへ
+Dialogue: 0,0:07:27.13,0:07:28.63,Default,灯织 & 巡,0,0,0,,Welcome!\Nようこそ
+Dialogue: 0,0:07:30.65,0:07:32.34,Default,L’ANTICA,0,0,0,,L'Antica!\Nアンティータ
+Dialogue: 0,0:07:33.01,0:07:40.68,Default,恋钟,0,0,0,,Today is a special, once-a-year party! We hope you have a great time!\N今日は年に一度の スペシャルなパーティーばい 楽しんでいってね
+Dialogue: 0,0:07:41.29,0:07:44.03,Default,Hou-Kura,0,0,0,,Houkago Climax Girls!\N放課後クライマックスガールズ
+Dialogue: 0,0:07:44.45,0:07:50.37,Default,果穗,0,0,0,,It's an incredibly fun party packed with {\i1}lots{\i0} and {\i1}lots{\i0} of surprises!\Nびっくりがたくさんつまった とっても楽しいパーティーです
+Dialogue: 0,0:07:51.68,0:07:53.35,Default,STRAYLIGHT,0,0,0,,Straylight!\NStraylight
+Dialogue: 0,0:07:54.50,0:07:58.00,Default,朝日,0,0,0,,Are you all ready to have fun?!\N楽しむ準備 できてるっすか
+Dialogue: 0,0:08:00.27,0:08:02.19,Default,ALSTRO,0,0,0,,Alstroemeria!\Nアデストロメリア
+Dialogue: 0,0:08:03.09,0:08:09.34,Default,甘奈,0,0,0,,Everyone! Let's have fun together until the very end!\Nみんな 最後まで一緒に 楽しもうね
+Dialogue: 0,0:08:14.69,0:08:17.93,Default,甘奈,0,0,0,,Now then, let's get right to it...!\Nそれでは 早速こちらを
+Dialogue: 0,0:08:18.27,0:08:20.08,Default,ALSTRO,0,0,0,,Please take a look!\Nご覧ください
+Dialogue: 0,0:08:22.08,0:08:23.93,Default,ALSTRO,0,0,0,,All shuffle!\Nオールシャッフル
+Dialogue: 0,0:08:26.74,0:08:32.22,Default,甘奈,0,0,0,,Tonight, we'll be shuffling the members and bringing you special performances!\N今夜はなんと メンバーをシャッフルしてパフォーマンスをお届けします
+Dialogue: 0,0:08:33.97,0:08:39.37,Default,甘奈,0,0,0,,One after another, they'll appear! What kind of combinations will we see?\Nどんどん登場 どんな組み合わせになるのかな
+Dialogue: 0,0:08:41.19,0:08:44.28,Default,甘奈,0,0,0,,And the first shuffle team is...\N最初のシャッフルチームは
+Dialogue: 0,0:10:27.56,0:10:29.77,Default,UNIT B,0,0,0,,Thank you very much!\N红豆泥阿里嘎多
+Dialogue: 0,0:10:31.44,0:10:34.90,Default,恋钟,0,0,0,,The next shuffle team is...\N続いてのシャッフルチームは
+Dialogue: 0,0:10:34.90,0:10:36.44,Default,UNIT B,0,0,0,,Here they are!\Nこちらです
+Dialogue: 0,0:10:40.26,0:10:43.72,Default,摩美美,0,0,0,,Even on this night of a light-filled feast...\N光あふれる 宴の夜も
+Dialogue: 0,0:10:44.98,0:10:48.58,Default,凛世,0,0,0,,This world is full of things unseen...\Nこの世は見えぬ ものばかり
+Dialogue: 0,0:10:49.26,0:10:52.00,Default,甜花,0,0,0,,Light within the light...\N光の中の 光
+Dialogue: 0,0:10:53.03,0:10:56.21,Default,凛世,0,0,0,,Darkness within the darkness...\N闇の中の 闇
+Dialogue: 0,0:10:56.21,0:10:59.25,Default,摩美美,0,0,0,,Within the depths... of the heart...\N心の うち
+Dialogue: 0,0:11:00.05,0:11:03.10,Default,凛世,0,0,0,,The door is already open.\N扉はもう 開いている
+Dialogue: 0,0:11:04.09,0:11:07.55,Default,甜花,0,0,0,,We are already here.\N私たちはもう ここにいる
+Dialogue: 0,0:11:08.05,0:11:09.56,Default,摩美美,0,0,0,,You can't see us.\N見えない
+Dialogue: 0,0:11:10.07,0:11:11.56,Default,甜花,0,0,0,,You don't notice us.\N気づかない
+Dialogue: 0,0:11:12.27,0:11:15.07,Default,摩美美 & 甜花,0,0,0,,No matter where you are...\Nたとえどこにいようとも
+Dialogue: 0,0:11:15.46,0:11:18.21,Default,爱依,0,0,0,,Yes, you all are already...\Nそう お前たちはもう
+Dialogue: 0,0:11:19.39,0:11:22.57,Default,爱依,0,0,0,,Together with us.\N私たちと 共にいる
+Dialogue: 0,0:11:27.41,0:11:29.80,Default,咲耶,0,0,0,,A dazzling feast of darkness...\Nめくるめく闇の痛み
+Dialogue: 0,0:11:31.80,0:11:34.43,Default,咲耶,0,0,0,,...You cannot escape.\Nもう 逃げられない
+Dialogue: 0,0:13:09.54,0:13:11.74,Default,ALSTRO,0,0,0,,Thank you guys!\N呃呃
+Dialogue: 0,0:13:23.20,0:13:27.43,Default,甘奈,0,0,0,,All right! It's time for the final stretch!\Nさあ いよいよラストスパートだよ
+Dialogue: 0,0:13:28.18,0:13:30.45,Default,甘奈,0,0,0,,The next team is...\N次のチームは
+Dialogue: 0,0:13:31.11,0:13:32.31,Default,甘奈,0,0,0,,Here they are!\Nこちらです
+Dialogue: 0,0:15:22.82,0:15:25.08,Default,UNIT A,0,0,0,,Thank you very much!\Nありがとうございました
+Dialogue: 0,0:15:28.76,0:15:31.28,Default,甘奈,0,0,0,,And now, the final shuffle team is...?\N最後のシャッフルチームは
+Dialogue: 0,0:15:31.28,0:15:33.56,Default,结华,0,0,0,,Can you guess who it is?\N誰だかわかるかな
+Dialogue: 0,0:15:37.12,0:15:40.71,Default,果穗,0,0,0,,All right! Let's get pumped up!\Nさあ もりあがっていきますよ
+Dialogue: 0,0:15:40.71,0:15:42.78,Default,巡,0,0,0,,If you don't get excited....!\N盛り上がらなきゃ
+Dialogue: 0,0:15:42.78,0:15:45.38,Default,EVERYONE,0,0,0,,We'll play a trick on you!\Nいたずらしちゃうぞ
+Dialogue: 0,0:16:15.84,0:16:19.24,Default,果穗,0,0,0,,Everyone! Here we go!\N补
+Dialogue: 0,0:16:19.24,0:16:23.06,Default,果穗,0,0,0,,3! 2! 1! Boom!\N补
+Dialogue: 0,0:16:26.81,0:16:28.74,Default,巡,0,0,0,,Here I go!\N行ってきまーす
+Dialogue: 0,0:17:21.48,0:17:24.05,Default,UNIT D,0,0,0,,Thank you!\Nありがとう
+Dialogue: 0,0:17:27.74,0:17:32.24,Default,巡,0,0,0,,Now, let's call everyone over! Everyone!\Nそれではここで みんなを呼んじゃいましょう
+Dialogue: 0,0:17:32.24,0:17:34.40,Default,巡,0,0,0,,Everyone!\Nみんな~!
+Dialogue: 0,0:17:34.40,0:17:36.22,Default,结华,0,0,0,,Come on over!\Nおいで~!
+Dialogue: 0,0:17:59.76,0:18:03.75,Default,结华,0,0,0,,Okay, the next one will be our final song!\Nさて 次が最後の曲になりました
+Dialogue: 0,0:18:05.74,0:18:06.33,Default,结华,0,0,0,,\Nえっ?
+Dialogue: 0,0:18:17.21,0:18:19.61,Default,智代子,0,0,0,,What?! A surprise?!\N何 サプライズ!?
+Dialogue: 0,0:18:23.66,0:18:26.54,Default,甘奈,0,0,0,,Huh, what is it, what is it?!\Nえっ 何が何が
+Dialogue: 0,0:18:42.77,0:18:43.44,Default,灯织,0,0,0,,\Nえっ
+Dialogue: 0,0:18:44.77,0:18:46.59,Default,果穗,0,0,0,,Is there more?!\Nまだあるんですか？
+Dialogue: 0,0:19:03.62,0:19:07.16,Default,恋钟,0,0,0,,We did it! We did it, yay!\Nやった やったbaibaibaibaibai chinchinchinchinchin
+Dialogue: 0,0:19:10.98,0:19:12.81,Default,结华,0,0,0,,Wow...\Nや—
+Dialogue: 0,0:19:13.27,0:19:15.34,Default,结华,0,0,0,,they really got us there.\Nやられちゃったねぇ
+Dialogue: 0,0:19:15.34,0:19:17.66,Default,树里,0,0,0,,Yeah, they sure did!\Nアッハハ だな
+Dialogue: 0,0:19:23.43,0:19:26.10,Default,SIGN,0,0,0,,{\fs38\bord2\blur2\2c&H0000FF&\c&HFFFFFF&\pos(329,240)\frz4.811\3c&H9B9F92&}Please continue with the MC!\N
+Dialogue: 0,0:19:30.80,0:19:35.14,Default,真乃,0,0,0,,Today, being able to enjoy Halloween with everyone,\N今日は 皆さんと一緒にハロウィンを楽しめて
+Dialogue: 0,0:19:36.04,0:19:39.99,Default,真乃,0,0,0,,and sharing such wonderful news at the end, made this an incredibly happy day!\N最後には 嬉しいお知らせもできて
+Dialogue: 0,0:19:39.99,0:19:45.30,Default,真乃,0,0,0,,and sharing such wonderful news at the end, made this an incredibly happy day!\Nすっごく ハッピーな1日でした
+Dialogue: 0,0:19:46.28,0:19:48.12,Default,真乃,0,0,0,,Thank you very much!\Nありがとうございました
+Dialogue: 0,0:19:48.72,0:19:50.80,Default,EVERYONE,0,0,0,,Thank you very much!\Nありがとうございましたありがとうございました
+Dialogue: 0,0:20:00.35,0:20:04.47,Default,真乃,0,0,0,,And now, for our final song! Please listen!\Nそれでは最後の曲です 聴いてください
+Dialogue: 0,0:22:12.87,0:22:15.27,Default,真乃,0,0,0,,Thank you very much!\N补
+Dialogue: 0,0:22:16.13,0:22:18.91,Default,EVERYONE,0,0,0,,Thank you very much!\N补
+Dialogue: 0,0:22:19.24,0:22:21.09,Default,恋钟,0,0,0,,Bye-bye!\N补
+Dialogue: 0,0:22:40.09,0:22:43.88,Default,千雪,0,0,0,,Great job, Mano-chan. Were you watching?\Nマノちゃん お疲れ様
+Dialogue: 0,0:22:43.88,0:22:45.17,Default,千雪,0,0,0,,Great job, Mano-chan. Were you watching?\N見てたの?
+Dialogue: 0,0:22:45.66,0:22:48.03,Default,真乃,0,0,0,,Ah, thank you!\Nhowa お疲れ様です
+Dialogue: 0,0:22:48.78,0:22:59.35,Default,真乃,0,0,0,,Um... today, I felt like... I could feel the fans closer than usual.\Nえっと…今日はなんだか…ファンの皆さんを…いつもより…近くに感じて
+Dialogue: 0,0:23:01.91,0:23:05.19,Default,千雪,0,0,0,,I'm sure the audience felt the same way, too.\Nお客さんも きっとそう思ってる
+Dialogue: 0,0:23:10.99,0:23:13.57,Default,制作人,0,0,0,,Great job, everyone!\Nみんな お疲れ様
+Dialogue: 0,0:23:13.57,0:23:15.84,Default,EVERYONE,0,0,0,,Thank you for your hard work!\Nお疲れ様でした
+Dialogue: 0,0:23:16.20,0:23:19.47,Default,制作人,0,0,0,,Yeah, it turned out to be a great event.\Nいやー いいイベントになったな
+Dialogue: 0,0:23:20.46,0:23:23.82,Default,制作人,0,0,0,,It's all thanks to everyone's hard work during the preparations.\N準備を頑張ってくれた みんなのおかげだやった
+Dialogue: 0,0:23:24.60,0:23:25.84,Default,巡,0,0,0,,We did it!\N
+Dialogue: 0,0:23:25.84,0:23:31.38,Default,恋钟,0,0,0,,Ah! We were surprised, too! That last announcement...!\Nおちらも驚いたと 最後のやつ
+Dialogue: 0,0:23:31.38,0:23:32.22,Default,制作人,0,0,0,,Haha,\Nアッハハ
+Dialogue: 0,0:23:32.81,0:23:34.36,Default,制作人,0,0,0,,did it surprise you?\N驚いてくれたか
+Dialogue: 0,0:23:35.16,0:23:36.75,Default,制作人,0,0,0,,I wanted to make sure that all of you,\N頑張ってるみんなが
+Dialogue: 0,0:23:36.75,0:23:39.81,Default,制作人,0,0,0,,who are working so hard, can shine even brighter.\Nもっと輝けるように な
+Dialogue: 0,0:23:42.46,0:23:45.14,Default,制作人,0,0,0,,Also... everyone,\Nそれと みんな
+Dialogue: 0,0:23:45.96,0:23:49.24,Default,制作人,0,0,0,,there's something important I need to talk to you about regarding what's coming next.\N今後のことで 大事な話があるんだ

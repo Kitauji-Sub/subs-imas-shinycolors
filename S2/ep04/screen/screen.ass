@@ -1,0 +1,29 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Active Line: 10
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:02:19.22,0:02:23.05,Signs,TEXT,0,0,0,,{\an7\fad(700,1000)\c&H000000&\3c&HD0E9F7&}Invitation\N{\fs15}283PRODUCTIONS Halloween Party\NOrganizer: 283PRODUCTIONS\NContact: 283PRODUCTIONS \NHalloween Party \NProduction Committee
+Dialogue: 0,0:02:32.19,0:02:36.11,Signs,TEXT,0,0,0,,{\an7\fad(000,700)\fs15\c&H000000&\3c&HFFFFFF&}- Just to be safe, I'm sending you\N the time and location for tomorrow's\N concert. Doors open at 3 PM, and the \Nshow starts at 5 PM. See you there.\N\N{\c&HFFFFFF&\3c&H6E3D00&}- Okay!\N\N{\c&H000000&\3c&HFFFFFF&}- Were you able to find the place? \NIf you're having trouble finding it, \Nlet me know.
+Dialogue: 0,0:02:36.44,0:02:39.34,Signs,SIGN,0,0,0,,{\fad(100,000)\c&H062644&\3c&H6692B8&\frx0\fry14\pos(405.571,226.572)\frz358.1}Stage Wing A
+Dialogue: 0,0:13:43.36,0:13:51.07,Signs,SIGN,0,0,0,,{\fad(100,500)\fs15\3c&H6B079A&\pos(115.556,338.223)}Hey, hey, hey
+Dialogue: 0,0:18:20.76,0:18:23.66,Signs,SIGN,0,0,0,,{\fad(300,000)\pos(315,160)\blur3\c&HF9FAEB&\3c&HE6E523&}283PRODUCTIONS
+Dialogue: 0,0:18:27.10,0:18:31.42,Signs,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(319,281)}1st Album Release Confirmed\N {\3c&HF9FAEB&\c&HC5C120&\blur2}Featuring All Units!
+Dialogue: 0,0:18:50.04,0:18:52.25,Signs,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(315,147)}283PRODUCTIONS
+Dialogue: 0,0:18:52.46,0:18:54.79,Signs,SIGN,0,0,0,,{\fad(300,100)\blur3\c&HF9FAEB&\3c&HE6E523&\frx6\fry336\frz7.248\pos(278,147)}Featuring All Units
+Dialogue: 0,0:18:55.04,0:18:58.82,Signs,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(321.667,130.778)}First National Tour\N {\3c&HF9FAEB&\c&HC5C120&\blur2}Confirmed!
+Dialogue: 0,0:19:21.90,0:19:23.43,Signs,SIGN,0,0,0,,{\fs16\bord0\pos(217,273)\2c&H0000FF&\c&HAFA59F&\frz8.89}Please continue with the MC!
+Dialogue: 0,0:22:00.19,0:22:12.16,Signs,SIGN,0,0,0,,{\fad(500,700)\fs30\bord3\blur2\fnComic Sans MS\c&HCB2BD2&\3c&HFFFFFF&\frz10.26\pos(128,47)}Thank you very much!
