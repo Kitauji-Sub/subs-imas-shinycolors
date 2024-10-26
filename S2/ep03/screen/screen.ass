@@ -1,0 +1,28 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Active Line: 9
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:09:53.82,0:09:56.19,Signs,SIGN,0,0,0,,{\fs30\fnComic Sans MS\c&HC6D1ED&\pos(320,34)}Operation: Happy Halloween!!
+Dialogue: 0,0:10:38.61,0:10:42.99,Signs,TEXT,0,0,0,,{\fnTimes New Roman\frz354.3\frx8\fry10\c&H000000&\3c&HA1ABB2&\pos(323,209)}President's Office
+Dialogue: 0,0:19:51.66,0:19:57.71,Signs,SIGN,0,0,0,,{\an8\bord2\c&H0B97E7&}Local Specialty Market - {\c&H627E69&}Now Open
+Dialogue: 0,0:19:57.71,0:20:00.59,Signs,TEXT,0,0,0,,{\an7\fs16\c&H00008D&\3c&HFFFFFF&}Unison Chorus Humming
+Dialogue: 0,0:19:57.71,0:20:00.59,Signs,TEXT,0,0,0,,{\an7\fs16\c&H00008D&\3c&HFFFFFF&}The day of the feast continues
+Dialogue: 0,0:19:57.71,0:20:00.59,Signs,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}The song of the feast continues
+Dialogue: 0,0:19:57.71,0:20:00.59,Signs,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}The magic takes effect
+Dialogue: 0,0:19:57.71,0:20:00.59,Signs,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}The sound of thunder,\N dripping blood
+Dialogue: 0,0:22:08.84,0:22:13.43,Signs,TEXT,0,0,0,,{\fnComic Sans MS\c&H5DC8FF&\3c&H9D3A75&\frz6.981\pos(209,90)}Team Nightwi
+Dialogue: 0,0:22:08.84,0:22:13.43,Signs,TEXT,0,0,0,,{\fnComic Sans MS\c&H5DC8FF&\3c&H9D3A75&\frz6.981\fscx78\fscy73\pos(360,59)}Hallow Hallow \NWeen Ween
