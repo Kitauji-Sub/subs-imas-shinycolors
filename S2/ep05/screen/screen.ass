@@ -1,0 +1,30 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:21.27,0:00:24.31,Signs,TEXT,0,0,0,,{\fad(700,000)\fs25\frx8\fry352\3c&H24D2E7&\frz6.364\b1\3c&H24D2E7&\pos(504.777,259.889)}Ma{\3c&HAF66E4&}doka{\3c&HE770AC&} Higu{\3c&HCDC44E&}chi
+Dialogue: 0,0:03:36.96,0:03:39.92,Signs,TEXT,0,0,0,,{\fad(700,000)\fs25\frx8\fry352\3c&H24D2E7&\frz6.364\b1\3c&H24D2E7&\pos(504.777,259.889)}To{\3c&HAF66E4&}ru{\3c&HE770AC&} Asa{\3c&HCDC44E&}kura
+Dialogue: 0,0:03:45.76,0:03:48.83,Signs,TEXT,0,0,0,,{\fad(700,000)\fs25\frx8\fry352\3c&H24D2E7&\frz6.364\b1\3c&H24D2E7&\pos(504.777,259.889)}Koi{\3c&HAF66E4&}to{\3c&HE770AC&} Fuku{\3c&HCDC44E&}maru
+Dialogue: 0,0:04:41.57,0:04:44.44,Signs,TEXT,0,0,0,,{\fad(700,000)\fs25\frx8\fry352\3c&H24D2E7&\frz6.364\b1\3c&H24D2E7&\pos(504.777,259.889)}Hi{\3c&HAF66E4&}nana{\3c&HE770AC&} Ichi{\3c&HCDC44E&}kawa
+Dialogue: 0,0:11:51.31,0:11:53.52,Signs,SIGN,0,0,0,,{\fnComic Sans MS\bord0\frx0\fry18\frz356.2\c&H0808A5&\pos(342.857,65.714)}Congratulations on your debut!!
+Dialogue: 0,0:11:51.31,0:11:53.52,Signs,SIGN,0,0,0,,{\bord0\frx0\fry18\c&H464646&\frz358.4\pos(328,142.285)}For Noctchill
+Dialogue: 0,0:11:51.31,0:11:53.52,Signs,SIGN,0,0,0,,{\bord0\frx0\fry18\c&H464646&\frz0.8168\pos(335.999,205.142)}Dressing Room
+Dialogue: 0,0:11:51.31,0:11:53.52,Signs,SIGN,0,0,0,,{\fnComic Sans MS\bord0\frx0\fry18\c&H0808A5&\pos(340.571,268)\frz1.363}Congratulations!
+Dialogue: 0,0:16:00.23,0:16:02.60,Signs,SIGN,0,0,0,,{\fnComic Sans MS\bord0\frx0\fry18\frz356.2\c&H0808A5&\pos(342.857,65.714)}Congratulations on your debut!!
+Dialogue: 0,0:16:00.23,0:16:02.60,Signs,SIGN,0,0,0,,{\bord0\frx0\fry18\c&H464646&\frz358.4\pos(328,142.285)}For Noctchill
+Dialogue: 0,0:16:00.23,0:16:02.60,Signs,SIGN,0,0,0,,{\bord0\frx0\fry18\c&H464646&\frz0.8168\pos(335.999,205.142)}Dressing Room
+Dialogue: 0,0:16:00.23,0:16:02.60,Signs,SIGN,0,0,0,,{\fnComic Sans MS\bord0\frx0\fry18\c&H0808A5&\pos(340.571,268)\frz1.363}Congratulations!
+Dialogue: 0,0:21:00.36,0:21:04.99,Signs,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- I heard those idols who were \Nchildhood friends are being sidelined, lol.\N- Serves them right. Don't underestimate \Nbeing an idol.\N- LOL\N- They weren't even singing, lol.\N- I wish they'd think about how the fans feel.
