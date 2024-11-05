@@ -18,6 +18,8 @@ Video File: C:/Users/scree/Desktop/ep4.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
+Scroll Position: 154
+Active Line: 178
 Video Position: 29001
 
 [V4+ Styles]
@@ -56,7 +58,7 @@ Dialogue: 0,0:00:21.58,0:00:23.56,SC_Bottom,真乃,0,0,0,kara,已然 在我的�
 Dialogue: 0,0:00:25.68,0:00:26.96,SC_Bottom,真乃,0,0,0,kara,一定…\Nきっと
 Dialogue: 0,0:00:33.00,0:00:34.62,SC_Bottom,真乃,0,0,0,kara,明天的演出\N明日のステージ
 Dialogue: 0,0:00:36.24,0:00:39.46,SC_Bottom,真乃,0,0,0,kara,我想和大家一起加油\Nみんなと一緒に 頑張りたい
-Dialogue: 0,0:02:26.50,0:02:31.04,SC_Bottom,,0,0,0,kara,离演出开始还剩10分钟 请尽快入场！\N開演10分前です お早めにお入りください
+Dialogue: 0,0:02:26.50,0:02:31.04,SC_Bottom,,0,0,0,kara,离演出开始还剩{\fscx50} {\fscx100}10{\fscx50} {\fscx100}分钟 请尽快入场！\N開演{\fscx50} {\fscx100}10{\fscx50} {\fscx100}分前です お早めにお入りください
 Dialogue: 0,0:02:38.54,0:02:40.35,SC_Bottom,智代子,0,0,0,kara,好激动啊\Nドキドキするね
 Dialogue: 0,0:02:45.81,0:02:48.52,SC_Bottom,冬优子,0,0,0,kara,哇 快看\Nわ 見て見て
 Dialogue: 0,0:02:49.81,0:02:50.69,SC_Bottom,真乃,0,0,0,kara,howa\Nほわっ
@@ -65,11 +67,11 @@ Dialogue: 0,0:03:00.18,0:03:01.32,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
 Dialogue: 0,0:03:01.82,0:03:04.42,SC_Bottom,爱依,0,0,0,kara,呜哇 好壮观\Nうわ やばっ
 Dialogue: 0,0:03:07.89,0:03:11.83,SC_Bottom,咲耶,0,0,0,kara,别担心 我们的成长是不会背叛我们的\N大丈夫 積み重ねてきたものは裏切らないさ
 Dialogue: 0,0:03:14.75,0:03:17.37,SC_Bottom,爱依,0,0,0,kara,嗯 我也这么觉得\Nうん そんな気してきた
-Dialogue: 0,0:03:27.03,0:03:28.09,SC_Bottom,巡,0,0,0,kara,真~~乃\N真~~乃
+Dialogue: 0,0:03:27.03,0:03:28.09,SC_Bottom,巡,0,0,0,kara,真～～乃\N真～～乃
 Dialogue: 0,0:03:28.09,0:03:29.03,SC_Bottom,真乃,0,0,0,kara,howa\Nほわっ
 Dialogue: 0,0:03:29.03,0:03:30.02,SC_Bottom,灯织,0,0,0,kara,在看观众们吗\Nお客さん
 Dialogue: 0,0:03:30.34,0:03:31.20,SC_Bottom,真乃,0,0,0,kara,嗯…\Nうん
-Dialogue: 0,0:03:32.11,0:03:34.27,SC_Bottom,真乃,0,0,0,kara,那个 就是\N あのね えっと
+Dialogue: 0,0:03:32.11,0:03:34.27,SC_Bottom,真乃,0,0,0,kara,那个 就是\Nあのね えっと
 Dialogue: 0,0:03:35.80,0:03:37.24,SC_Bottom,真乃,0,0,0,kara,感觉和以往不一样\Nいつもより
 Dialogue: 0,0:03:42.92,0:03:45.33,SC_Bottom,制作人,0,0,0,kara,好 大家都到齐了吧\Nさあ みんな揃ったな
 Dialogue: 0,0:03:45.63,0:03:46.38,SC_Bottom,真乃,0,0,0,kara,howa\Nほわっ
@@ -81,24 +83,24 @@ Comment: 0,0:04:00.53,0:04:01.53,SC_Top,,0,0,0,,
 Comment: 0,0:04:03.39,0:04:05.03,SC_Top,,0,0,0,,
 Comment: 0,0:04:05.03,0:04:05.96,SC_Top,,0,0,0,,
 Comment: 0,0:04:06.10,0:04:07.27,SC_Top,,0,0,0,,
-Dialogue: 0,0:04:07.27,0:04:09.45,SC_Bottom,恋钟,0,0,0,kara,我们会完美传达到的！\Nバッチリ届けるぽい!
+Dialogue: 0,0:04:07.27,0:04:09.45,SC_Bottom,恋钟,0,0,0,kara,我们会完美传达到的！\Nバッチリ届けるぽい！
 Dialogue: 0,0:04:09.95,0:04:12.04,SC_Bottom,朝日,0,0,0,kara,呃 传达什么？\Nうん 何をっすか
 Dialogue: 0,0:04:12.04,0:04:12.92,SC_Bottom,恋钟,0,0,0,kara,啊\Nあっ
 Dialogue: 0,0:04:15.49,0:04:17.59,SC_Bottom,咲耶,0,0,0,kara,我们成长的脚印吧\N積み重ね かな
 Dialogue: 0,0:04:21.24,0:04:22.72,SC_Bottom,果穗,0,0,0,kara,真是激动啊\Nわくわくします
 Dialogue: 0,0:04:22.72,0:04:25.75,SC_Bottom,甘奈,0,0,0,kara,嗯 让我们尽情享受吧\Nうん いっぱい楽しもう
 Dialogue: 0,0:04:27.26,0:04:29.82,SC_Bottom,巡,0,0,0,kara,大家会被我们吓一跳吗\Nみんなびっくりしてくれるかな
-Dialogue: 0,0:04:32.70,0:04:37.56,SC_Bottom,真乃,0,0,0,kara,嗯 大家一定能被我们吓一跳 然后变得Happy的\Nうん きっと びっくりして ハッピーに
+Dialogue: 0,0:04:32.70,0:04:37.56,SC_Bottom,真乃,0,0,0,kara,嗯 大家一定能被我们吓一跳 然后变得{\fscx50} {\fscx100}Happy{\fscx50} {\fscx100}的\Nうん きっと びっくりして ハッピーに
 Dialogue: 0,0:04:39.02,0:04:40.84,SC_Bottom,千雪,0,0,0,kara,真是期待啊\Nワクワクするね
 Dialogue: 0,0:04:41.11,0:04:41.81,SC_Bottom,,0,0,0,kara,嗯\Nうん
 Dialogue: 0,0:04:42.79,0:04:45.43,SC_Bottom,恋钟,0,0,0,kara,那么 真乃 那个\Nじゃあ まの あれ
 Dialogue: 0,0:04:53.26,0:04:57.24,SC_Bottom,真乃,0,0,0,kara,为了今天到场的观众们\N今日 ここに来てくれた皆さんのために
 Dialogue: 0,0:04:57.24,0:05:00.32,SC_Bottom,真乃,0,0,0,kara,让我们把活动办得精彩纷呈吧\Nいっぱい 楽しいイベントにしましょう
-Dialogue: 0,0:05:01.13,0:05:03.33,SC_Bottom,真乃,0,0,0,kara,283 Pro\N283プロ
+Dialogue: 0,0:05:01.13,0:05:03.33,SC_Bottom,真乃,0,0,0,kara,283 Pro\N283{\fscx50} {\fscx100}プロ
 Dialogue: 0,0:05:03.33,0:05:04.83,SC_Bottom,真乃,0,0,0,kara,Trick or—\Nトリック・オア
 Dialogue: 0,0:05:05.36,0:05:07.95,SC_Bottom,全员,0,0,0,kara,Happy——\Nハッピー
 Dialogue: 0,0:05:07.95,0:05:09.80,SC_Bottom,全员,0,0,0,kara,哦！\Nおーーー
-Dialogue: 0,0:05:27.86,0:05:29.34,SC_Bottom,,0,0,0,kara,您的座位号是A6\NA6のお席です
+Dialogue: 0,0:05:27.86,0:05:29.34,SC_Bottom,,0,0,0,kara,您的座位号是{\fscx50} {\fscx100}A6\NA6{\fscx50} {\fscx100}のお席です
 Dialogue: 0,0:05:51.69,0:05:54.43,SC_Bottom,咲耶,0,0,0,kara,今宵 万圣夜\N今宵は ハロウィン
 Dialogue: 0,0:05:58.67,0:06:00.83,SC_Bottom,甜花,0,0,0,kara,一切开始之时\N始まりの時が
 Dialogue: 0,0:06:02.53,0:06:04.12,SC_Bottom,雾子,0,0,0,kara,渐渐逼近\N近づいている
@@ -110,18 +112,18 @@ Dialogue: 0,0:06:27.09,0:06:28.65,SC_Bottom,智代子,0,0,0,kara,糟糕了\N大�
 Dialogue: 0,0:06:28.65,0:06:30.44,SC_Bottom,树里,0,0,0,kara,该怎么办\Nどうすんだ
 Dialogue: 0,0:06:31.72,0:06:35.35,SC_Bottom,夏叶,0,0,0,kara,赶走这些幽灵的办法 只有一个\Nこのお化けを追いはらう方法は ただ一つ
 Dialogue: 0,0:06:36.17,0:06:39.73,SC_Bottom,甘奈,0,0,0,kara,那就是 让它们吓一跳\Nそれは びっくりさせちゃうこと
-Dialogue: 0,0:06:43.29,0:06:44.54,SC_Bottom,凛世,0,0,0,kara,还有10秒\N10秒前
+Dialogue: 0,0:06:43.29,0:06:44.54,SC_Bottom,凛世,0,0,0,kara,还有{\fscx50} {\fscx100}10{\fscx50} {\fscx100}秒\N10{\fscx50} {\fscx100}秒前
 Dialogue: 0,0:06:44.95,0:06:48.11,SC_Bottom,巡,0,0,0,kara,所以 今晚就由我们\Nだから 今夜はわたしたちで
 Dialogue: 0,0:06:48.11,0:06:49.72,SC_Bottom,恋钟,0,0,0,kara,吓唬吓唬它们\Nびっくりさせて
-Dialogue: 0,0:06:50.20,0:06:51.86,SC_Bottom,千雪,0,0,0,kara,还有5秒\N5秒前
+Dialogue: 0,0:06:50.20,0:06:51.86,SC_Bottom,千雪,0,0,0,kara,还有{\fscx50} {\fscx100}5{\fscx50} {\fscx100}秒\N5{\fscx50} {\fscx100}秒前
 Dialogue: 0,0:06:51.86,0:06:53.46,SC_Bottom,真乃,0,0,0,kara,让我们团结一心\N一つになって
 Dialogue: 0,0:06:54.36,0:06:55.21,SC_Bottom,灯织,0,0,0,kara,3!\N3
 Dialogue: 0,0:06:55.79,0:06:56.65,SC_Bottom,爱依,0,0,0,kara,2!\N2
 Dialogue: 0,0:06:57.17,0:06:58.34,SC_Bottom,冬优子,0,0,0,kara,1!\N1
-Dialogue: 0,0:07:07.58,0:07:11.18,SC_Bottom,全员,0,0,0,kara,让我们一起Happy起来吧\Nみんなで ハッピーになっちゃおう
+Dialogue: 0,0:07:07.58,0:07:11.18,SC_Bottom,全员,0,0,0,kara,让我们一起{\fscx50} {\fscx100}Happy{\fscx50} {\fscx100}起来吧\Nみんなで ハッピーになっちゃおう
 Dialogue: 0,0:07:17.29,0:07:19.29,SC_Bottom,星组,0,0,0,kara,Illumination Stars!\Nイルミネーションスターズ
 Dialogue: 0,0:07:20.57,0:07:22.51,SC_Bottom,真乃,0,0,0,kara,大家好\Nみなさんー
-Dialogue: 0,0:07:22.51,0:07:27.13,SC_Bottom,真乃,0,0,0,kara,283 PRO Halloween Party - Happy Surprise Trick!\N283プロハロウィーンパーティーハッピーサプライズトリックへ
+Dialogue: 0,0:07:22.51,0:07:27.13,SC_Bottom,真乃,0,0,0,kara,283 PRO Halloween Party - Happy Surprise Trick!\N283{\fscx50} {\fscx100}プロハロウィーンパーティーハッピーサプライズトリックへ
 Dialogue: 0,0:07:27.39,0:07:29.03,SC_Bottom,灯织 & 巡,0,0,0,kara,欢迎大家的到来\Nようこそ
 Dialogue: 0,0:07:30.89,0:07:32.34,SC_Bottom,L'Antica,0,0,0,kara,L'Antica!\Nアンティータ
 Dialogue: 0,0:07:33.29,0:07:38.27,SC_Bottom,恋钟,0,0,0,kara,今天是一年一度的特别派对\N今日は年に一度の スペシャルなパーティーばい
@@ -136,10 +138,10 @@ Dialogue: 0,0:08:03.16,0:08:09.34,SC_Bottom,甘奈,0,0,0,kara,大家 一起享�
 Dialogue: 0,0:08:14.76,0:08:17.93,SC_Bottom,甘奈,0,0,0,kara,那就让我们直奔主题吧\Nそれでは 早速こちらを
 Dialogue: 0,0:08:18.27,0:08:20.08,SC_Bottom,花组,0,0,0,kara,请看\Nご覧ください
 Dialogue: 0,0:08:22.08,0:08:23.93,SC_Bottom,花组,0,0,0,kara,全随机\Nオールシャッフル
-Dialogue: 0,0:08:26.74,0:08:32.22,SC_Bottom,甘奈,0,0,0,kara,今晚 283的成员们会随机组队进行演出\N今夜はなんと メンバーをシャッフルしてパフォーマンスをお届けします
+Dialogue: 0,0:08:26.74,0:08:32.22,SC_Bottom,甘奈,0,0,0,kara,今晚 283{\fscx50} {\fscx100}的成员们会随机组队进行演出\N今夜はなんと メンバーをシャッフルしてパフォーマンスをお届けします
 Dialogue: 0,0:08:34.08,0:08:39.37,SC_Bottom,甘奈,0,0,0,kara,随机组合会依次出场 究竟能看到什么样的搭配呢\Nどんどん登場 どんな組み合わせになるのかな
 Dialogue: 0,0:08:41.32,0:08:44.28,SC_Bottom,甘奈,0,0,0,kara,第一个随机组合是\N最初のシャッフルチームは
-Dialogue: 0,0:10:27.56,0:10:29.77,SC_Bottom,,0,0,0,kara,谢谢大家!\N本当にありがとう
+Dialogue: 0,0:10:27.56,0:10:29.77,SC_Bottom,,0,0,0,kara,谢谢大家！\N本当にありがとう
 Dialogue: 0,0:10:31.66,0:10:34.90,SC_Bottom,恋钟,0,0,0,kara,下一个随机组合是\N続いてのシャッフルチームは
 Dialogue: 0,0:10:34.90,0:10:36.44,SC_Bottom,,0,0,0,kara,是她们\Nこちらです
 Dialogue: 0,0:10:40.26,0:10:43.72,SC_Bottom,摩美美,0,0,0,kara,华光溢彩 宴夜繁华\N光あふれる 宴の夜も
@@ -167,25 +169,25 @@ Dialogue: 0,0:15:37.12,0:15:40.71,SC_Bottom,果穗,0,0,0,kara,来吧 让我们�
 Dialogue: 0,0:15:40.71,0:15:42.78,SC_Bottom,巡,0,0,0,kara,不嗨起来的话\N盛り上がらなきゃ
 Dialogue: 0,0:15:42.99,0:15:45.38,SC_Bottom,,0,0,0,kara,就捣蛋咯！\Nいたずらしちゃうぞ
 Dialogue: 0,0:16:15.84,0:16:19.24,SC_Bottom,果穗,0,0,0,kara,大家 要上咯\N皆さん　行きますよ
-Dialogue: 0,0:16:19.24,0:16:23.06,SC_Bottom,果穗,0,0,0,kara,3! 2! 1! 爆!\N3!2!1!バン
+Dialogue: 0,0:16:19.24,0:16:23.06,SC_Bottom,果穗,0,0,0,kara,3! 2! 1! 爆！\N3!2!1!バン
 Dialogue: 0,0:16:26.81,0:16:28.74,SC_Bottom,巡,0,0,0,kara,我下来咯！\N行ってきまーす
 Dialogue: 0,0:17:21.53,0:17:24.05,SC_Bottom,,0,0,0,kara,谢谢大家\Nありがとう
 Dialogue: 0,0:17:27.80,0:17:32.05,SC_Bottom,巡,0,0,0,kara,那么 现在把大家都叫出来吧\Nそれではここで みんなを呼んじゃいましょう
-Dialogue: 0,0:17:32.60,0:17:34.40,SC_Bottom,巡,0,0,0,kara,大家\Nみんな~!
-Dialogue: 0,0:17:34.40,0:17:36.22,SC_Bottom,结华,0,0,0,kara,出来咯\Nおいで~!
+Dialogue: 0,0:17:32.60,0:17:34.40,SC_Bottom,巡,0,0,0,kara,大家\Nみんな～！
+Dialogue: 0,0:17:34.40,0:17:36.22,SC_Bottom,结华,0,0,0,kara,出来咯\Nおいで～！
 Dialogue: 0,0:17:59.82,0:18:03.75,SC_Bottom,结华,0,0,0,kara,那么 接下来就是最后一首歌了\Nさて 次が最後の曲になりました
-Dialogue: 0,0:18:05.74,0:18:06.33,SC_Bottom,结华,0,0,0,kara,诶？\Nえっ?
-Dialogue: 0,0:18:17.21,0:18:19.61,SC_Bottom,智代子,0,0,0,kara,什么 惊喜？\N何 サプライズ!?
+Dialogue: 0,0:18:05.74,0:18:06.33,SC_Bottom,结华,0,0,0,kara,诶？\Nえっ？
+Dialogue: 0,0:18:17.21,0:18:19.61,SC_Bottom,智代子,0,0,0,kara,什么 惊喜？\N何 サプライズ！？
 Dialogue: 0,0:18:23.97,0:18:26.54,SC_Bottom,甘奈,0,0,0,kara,诶？什么啊什么啊\Nえっ 何が何が
 Dialogue: 0,0:18:42.77,0:18:43.44,SC_Bottom,灯织,0,0,0,kara,诶？\Nえっ
 Dialogue: 0,0:18:44.77,0:18:46.59,SC_Bottom,果穗,0,0,0,kara,还有吗？\Nまだあるんですか？
 Dialogue: 0,0:19:03.62,0:19:07.16,SC_Bottom,恋钟,0,0,0,kara,好耶 中勒\Nやった やったぱい
-Dialogue: 0,0:19:10.98,0:19:12.81,SC_Bottom,结华,0,0,0,kara,哇—\Nや—
+Dialogue: 0,0:19:10.98,0:19:12.81,SC_Bottom,结华,0,0,0,kara,哇{\fscx50} {\fscx100}—\Nや{\fscx50} {\fscx100}—
 Dialogue: 0,0:19:13.27,0:19:15.34,SC_Bottom,结华,0,0,0,kara,还真是被吓到了呢\Nやられちゃったねぇ
 Dialogue: 0,0:19:15.34,0:19:17.66,SC_Bottom,树里,0,0,0,kara,啊哈哈 还真是\Nアッハハ だな
 Dialogue: 0,0:19:30.90,0:19:35.43,SC_Bottom,真乃,0,0,0,kara,今天能和大家一起享受万圣夜\N今日は 皆さんと一緒にハロウィンを楽しめて
 Dialogue: 0,0:19:36.04,0:19:39.91,SC_Bottom,真乃,0,0,0,kara,最后还发表了这么振奋人心的好消息\N最後には 嬉しいお知らせもできて
-Dialogue: 0,0:19:40.67,0:19:45.30,SC_Bottom,真乃,0,0,0,kara,真的是 非常Happy的一天\Nすっごく ハッピーな1日でした
+Dialogue: 0,0:19:40.67,0:19:45.30,SC_Bottom,真乃,0,0,0,kara,真的是 非常{\fscx50} {\fscx100}Happy{\fscx50} {\fscx100}的一天\Nすっごく ハッピーな{\fscx50} {\fscx100}1{\fscx50} {\fscx100}日でした
 Dialogue: 0,0:19:46.28,0:19:48.12,SC_Bottom,真乃,0,0,0,kara,非常感谢大家\Nありがとうございました
 Dialogue: 0,0:19:48.72,0:19:50.80,SC_Bottom,全员,0,0,0,kara,谢谢大家\Nありがとうございましたありがとうございました
 Dialogue: 0,0:20:00.46,0:20:04.47,SC_Bottom,真乃,0,0,0,kara,那么接下来 就是最后一首歌 请听…\Nそれでは最後の曲です 聴いてください
@@ -193,10 +195,10 @@ Dialogue: 0,0:22:12.87,0:22:15.27,SC_Bottom,真乃,0,0,0,kara,谢谢大家\Nあ�
 Dialogue: 0,0:22:16.28,0:22:18.91,SC_Bottom,全员,0,0,0,kara,谢谢大家\Nありがとうございました
 Dialogue: 0,0:22:19.31,0:22:21.09,SC_Bottom,恋钟,0,0,0,kara,拜拜！\Nバイバイ
 Dialogue: 0,0:22:40.15,0:22:42.69,SC_Bottom,千雪,0,0,0,kara,辛苦了 真乃\N真乃ちゃん お疲れ様
-Dialogue: 0,0:22:44.17,0:22:45.17,SC_Bottom,千雪,0,0,0,kara,你看到了吗\N見てたの?
+Dialogue: 0,0:22:44.17,0:22:45.17,SC_Bottom,千雪,0,0,0,kara,你看到了吗\N見てたの？
 Dialogue: 0,0:22:45.66,0:22:48.03,SC_Bottom,真乃,0,0,0,kara,你也辛苦了\Nお疲れ様です
-Dialogue: 0,0:22:48.82,0:22:52.48,SC_Bottom,真乃,0,0,0,kara,那个 今天总感觉…\Nえっと…今日はなんだか…
-Dialogue: 0,0:22:53.60,0:22:59.42,SC_Bottom,真乃,0,0,0,kara,我能感觉到和粉丝的距离比以往更近了\Nファンの皆さんを…いつもより…近くに感じて
+Dialogue: 0,0:22:48.82,0:22:52.48,SC_Bottom,真乃,0,0,0,kara,那个 今天总感觉…\Nえっと…{\fscx50} {\fscx100}今日はなんだか…
+Dialogue: 0,0:22:53.60,0:22:59.42,SC_Bottom,真乃,0,0,0,kara,我能感觉到和粉丝的距离比以往更近了\Nファンの皆さんを…{\fscx50} {\fscx100}いつもより…{\fscx50} {\fscx100}近くに感じて
 Dialogue: 0,0:23:01.96,0:23:05.19,SC_Bottom,千雪,0,0,0,kara,对观众们来说肯定也是一样的\Nお客さんも きっとそう思ってる
 Dialogue: 0,0:23:11.07,0:23:13.57,SC_Bottom,制作人,0,0,0,kara,大家都辛苦了\Nみんな お疲れ様
 Dialogue: 0,0:23:13.57,0:23:15.84,SC_Bottom,全员,0,0,0,kara,辛苦了\Nお疲れ様でした
@@ -208,7 +210,7 @@ Dialogue: 0,0:23:31.38,0:23:32.22,SC_Bottom,制作人,0,0,0,kara,啊哈哈\Nア�
 Dialogue: 0,0:23:32.94,0:23:34.36,SC_Bottom,制作人,0,0,0,kara,惊喜吧\N驚いてくれたか
 Dialogue: 0,0:23:35.20,0:23:36.90,SC_Bottom,制作人,0,0,0,kara,为了让努力的大家\N頑張ってるみんなが
 Dialogue: 0,0:23:36.90,0:23:39.81,SC_Bottom,制作人,0,0,0,kara,能够释放出更耀眼的光芒…\Nもっと輝けるように な
-Dialogue: 0,0:23:42.55,0:23:45.14,SC_Bottom,制作人,0,0,0,kara,然后…各位…\Nそれと みんな
+Dialogue: 0,0:23:42.55,0:23:45.14,SC_Bottom,制作人,0,0,0,kara,然后…{\fscx50} {\fscx100}各位…\Nそれと みんな
 Dialogue: 0,0:23:46.03,0:23:49.24,SC_Bottom,制作人,0,0,0,kara,关于今后的发展 还有一件很重要的事情要说\N今後のことで 大事な話があるんだ
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert01.ass
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert02.ass
