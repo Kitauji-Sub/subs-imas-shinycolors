@@ -1,0 +1,103 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/ep4.mkv
+Video File: C:/Users/scree/Desktop/ep4.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.750000
+Scroll Position: 51
+Active Line: 62
+Video Position: 31372
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 歌CN,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,125,1
+Style: 歌JP,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,70,1
+Style: 歌CN_center,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,125,1
+Style: 歌JP_center,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,template line anystyle,
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,mixin line anystyle,{\blur4\fad(200,200)}
+Comment: 0,0:20:04.47,0:20:06.47,SC_Bottom,,0,0,0,,#Poison Berry Daughters
+Comment: 0,0:20:14.81,0:20:18.01,歌JP,,90,0,0,kara,アクマは思い出してる
+Comment: 0,0:20:14.81,0:20:18.01,歌CN,,90,0,0,kara,回想起了那记忆中的恶魔
+Comment: 0,0:20:18.27,0:20:21.17,歌JP,,90,0,0,kara,“キミの悲鳴は最高”
+Comment: 0,0:20:18.27,0:20:21.17,歌CN,,90,0,0,kara,「你的悲鸣最棒了」
+Comment: 0,0:20:21.17,0:20:24.27,歌JP,,90,0,0,kara,もう一度　聴きたいな
+Comment: 0,0:20:21.17,0:20:24.27,歌CN,,90,0,0,kara,真想再听一次啊
+Comment: 0,0:20:24.57,0:20:27.39,歌JP,,90,0,0,kara,ガブリと噛みつきに行こう
+Comment: 0,0:20:24.57,0:20:27.39,歌CN,,90,0,0,kara,让我狠狠咬一口吧
+Comment: 0,0:20:27.75,0:20:30.63,歌JP,,90,0,0,kara,パンプキン　山盛りで
+Comment: 0,0:20:27.75,0:20:30.63,歌CN,,90,0,0,kara,堆成山的南瓜头
+Comment: 0,0:20:30.63,0:20:33.91,歌JP,,90,0,0,kara,押し寄せ　逃げられるかい？
+Comment: 0,0:20:30.63,0:20:33.91,歌CN,,90,0,0,kara,被淹没在其中 无法逃脱吧？
+Comment: 0,0:20:33.91,0:20:36.69,歌JP,,90,0,0,kara,吸血ガール　灰なテンション
+Comment: 0,0:20:33.91,0:20:36.69,歌CN,,90,0,0,kara,吸血女孩 灰色的心情
+Comment: 0,0:20:36.69,0:20:40.15,歌JP,,90,0,0,kara,サダメ？(No！)　オキテ？(No！)　知らないもん
+Comment: 0,0:20:36.69,0:20:40.15,歌CN,,90,0,0,kara,命运？（NO！）规则？（NO！）我才不知道
+Comment: 0,0:20:40.15,0:20:42.83,歌JP,,90,0,0,kara,今宵は真紅のアルビレオ
+Comment: 0,0:20:40.15,0:20:42.83,歌CN,,90,0,0,kara,今夜是深红的天鹅
+Comment: 0,0:20:43.25,0:20:46.37,歌JP,,90,0,0,kara,求めよ　イタズラな　Poison Berry Daughters
+Comment: 0,0:20:43.25,0:20:46.37,歌CN,,90,0,0,kara,渴求吧 淘气的Poison Berry Daughters
+Comment: 0,0:20:46.37,0:20:49.13,歌JP,,90,0,0,kara,ハートに歯形を授けましょう
+Comment: 0,0:20:46.37,0:20:49.13,歌CN,,90,0,0,kara,给你留下一个心形的牙齿印吧
+Comment: 0,0:20:49.49,0:20:52.19,歌JP,,90,0,0,kara,仲間に招待　キミごと頂戴
+Comment: 0,0:20:49.49,0:20:52.19,歌CN,,90,0,0,kara,邀请朋友一起 将你一并收入囊中
+Comment: 0,0:20:52.19,0:20:55.13,歌JP,,90,0,0,kara,100万年だって　One more time
+Comment: 0,0:20:52.19,0:20:55.13,歌CN,,90,0,0,kara,即使100万年也one more time
+Comment: 0,0:20:55.33,0:20:58.17,歌JP,,90,0,0,kara,驚かし合えば終わりはない
+Comment: 0,0:20:55.33,0:20:58.17,歌CN,,90,0,0,kara,彼此之间惊喜不断无休止
+Comment: 0,0:20:58.17,0:21:00.05,歌JP,,90,0,0,kara,幸せならスクリーム (Woi)
+Comment: 0,0:20:58.17,0:21:00.05,歌CN,,90,0,0,kara,感到幸福就大喊吧（Woi）
+Comment: 0,0:20:59.61,0:21:01.01,歌JP,,90,0,850,kara,一緒にスクリーム
+Comment: 0,0:20:59.61,0:21:01.01,歌CN,,90,0,905,kara,一起大喊吧
+Comment: 0,0:21:00.05,0:21:01.63,歌JP,,90,0,0,kara,最高級のスクリーム (Woi)
+Comment: 0,0:21:00.05,0:21:01.63,歌CN,,90,0,0,kara,最大的喊声（Woi)
+Comment: 0,0:21:01.03,0:21:02.39,歌JP,,90,0,850,kara,最高級のスクリーム
+Comment: 0,0:21:01.03,0:21:02.39,歌CN,,90,0,905,kara,最大的喊声
+Comment: 0,0:21:01.63,0:21:04.53,歌JP,,90,0,0,kara,笑顔に頬張れ(ケラケラ ×2)
+Comment: 0,0:21:01.63,0:21:04.53,歌CN,,90,0,0,kara,被笑容填满了（呼呼）
+Comment: 0,0:21:04.53,0:21:07.57,歌JP,,90,0,0,kara,今日もパーティーは片付けない
+Comment: 0,0:21:04.53,0:21:07.57,歌CN,,90,0,0,kara,今天的派对还没结束
+Comment: 0,0:21:07.57,0:21:11.39,歌JP,,90,0,0,kara,毎日サプライズはある　よく見て
+Comment: 0,0:21:07.57,0:21:11.39,歌CN,,90,0,0,kara,每天都会有惊喜 敬请期待吧
+Comment: 0,0:21:11.39,0:21:20.61,歌JP,,90,0,0,kara,明日　朝　顔洗うキミには　牙があるからね
+Comment: 0,0:21:11.39,0:21:20.61,歌CN,,90,0,0,kara,明天 早上 你洗脸的时候别忘了锋利的牙齿哦
+Comment: 0,0:21:20.61,0:21:24.60,歌JP,,90,0,0,kara,(Gothic… Suspense… Thriller…)
+Comment: 0,0:21:20.61,0:21:24.60,歌CN,,90,0,0,kara,(Gothic… Suspense… Thriller…)
+Comment: 0,0:21:24.90,0:21:26.88,歌JP,,90,0,0,kara,カボチャに詰め尽くせ
+Comment: 0,0:21:24.90,0:21:26.88,歌CN,,90,0,0,kara,将南瓜填满吧
+Comment: 0,0:21:26.88,0:21:30.96,歌JP,,90,0,0,kara,(Joker… Spooky… Specters…)
+Comment: 0,0:21:26.88,0:21:30.96,歌CN,,90,0,0,kara,(Joker… Spooky… Specters…)
+Comment: 0,0:21:31.90,0:21:34.26,歌JP,,90,0,0,kara,がっぷん(ズキュン)
+Comment: 0,0:21:31.90,0:21:34.26,歌CN,,90,0,0,kara,我咬(心动)
+Comment: 0,0:21:34.26,0:21:37.40,歌JP,,90,0,0,kara,100万年だって　One more time
+Comment: 0,0:21:34.26,0:21:37.40,歌CN,,90,0,0,kara,即使100万年也one more time
+Comment: 0,0:21:37.40,0:21:40.22,歌JP,,90,0,0,kara,驚かし合いに終わりはない
+Comment: 0,0:21:37.40,0:21:40.22,歌CN,,90,0,0,kara,彼此之间惊喜不断无休止
+Comment: 0,0:21:40.22,0:21:42.20,歌JP,,90,0,0,kara,幸せならスクリーム (Woi)
+Comment: 0,0:21:40.22,0:21:42.20,歌CN,,90,0,0,kara,感到幸福就大喊吧（Woi）
+Comment: 0,0:21:41.64,0:21:42.98,歌JP,,90,0,0,kara,一緒にスクリーム
+Comment: 0,0:21:41.64,0:21:42.98,歌CN,,90,0,0,kara,最高級のスクリーム
+Comment: 0,0:21:42.20,0:21:43.78,歌JP,,90,0,0,kara,最高級のスクリーム (Woi)
+Comment: 0,0:21:42.20,0:21:43.78,歌CN,,90,0,0,kara,最大的喊声（Woi)
+Comment: 0,0:21:42.98,0:21:44.54,歌JP,,90,0,0,kara,最高級のスクリーム
+Comment: 0,0:21:42.98,0:21:44.54,歌CN,,90,0,0,kara,最大的喊声
+Comment: 0,0:21:43.78,0:21:46.62,歌JP,,90,0,0,kara,笑顔に頬張れ(ケラケラ ×2)
+Comment: 0,0:21:43.78,0:21:46.62,歌CN,,90,0,0,kara,被笑容填满了（呼呼）
+Comment: 0,0:21:46.62,0:21:49.78,歌JP,,90,0,0,kara,今日もパーティーは片付けない
+Comment: 0,0:21:46.62,0:21:49.78,歌CN,,90,0,0,kara,今天的派对还没结束
+Comment: 0,0:21:49.78,0:21:53.58,歌JP,,90,0,0,kara,毎日サプライズはある　よく見て
+Comment: 0,0:21:49.78,0:21:53.58,歌CN,,90,0,0,kara,每天都会有惊喜 敬请期待吧
+Comment: 0,0:21:53.58,0:22:02.74,歌JP,,90,0,0,kara,明日　朝　顔洗うキミには　牙があるからね
+Comment: 0,0:21:53.58,0:22:02.74,歌CN,,90,0,0,kara,明天 早上 你洗脸的时候别忘了锋利的牙齿哦

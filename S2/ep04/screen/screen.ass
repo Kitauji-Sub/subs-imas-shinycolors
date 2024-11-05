@@ -8,7 +8,13 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Active Line: 10
+Audio File: C:/Users/scree/Desktop/ep4.mkv
+Video File: C:/Users/scree/Desktop/ep4.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.875000
+Active Line: 14
+Video Position: 31705
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -16,14 +22,84 @@ Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:02:19.22,0:02:23.05,Signs,TEXT,0,0,0,,{\an7\fad(700,1000)\c&H000000&\3c&HD0E9F7&}Invitation\N{\fs15}283PRODUCTIONS Halloween Party\NOrganizer: 283PRODUCTIONS\NContact: 283PRODUCTIONS \NHalloween Party \NProduction Committee
-Dialogue: 0,0:02:32.19,0:02:36.11,Signs,TEXT,0,0,0,,{\an7\fad(000,700)\fs15\c&H000000&\3c&HFFFFFF&}- Just to be safe, I'm sending you\N the time and location for tomorrow's\N concert. Doors open at 3 PM, and the \Nshow starts at 5 PM. See you there.\N\N{\c&HFFFFFF&\3c&H6E3D00&}- Okay!\N\N{\c&H000000&\3c&HFFFFFF&}- Were you able to find the place? \NIf you're having trouble finding it, \Nlet me know.
-Dialogue: 0,0:02:36.44,0:02:39.34,Signs,SIGN,0,0,0,,{\fad(100,000)\c&H062644&\3c&H6692B8&\frx0\fry14\pos(405.571,226.572)\frz358.1}Stage Wing A
-Dialogue: 0,0:13:43.36,0:13:51.07,Signs,SIGN,0,0,0,,{\fad(100,500)\fs15\3c&H6B079A&\pos(115.556,338.223)}Hey, hey, hey
-Dialogue: 0,0:18:20.76,0:18:23.66,Signs,SIGN,0,0,0,,{\fad(300,000)\pos(315,160)\blur3\c&HF9FAEB&\3c&HE6E523&}283PRODUCTIONS
-Dialogue: 0,0:18:27.10,0:18:31.42,Signs,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(319,281)}1st Album Release Confirmed\N {\3c&HF9FAEB&\c&HC5C120&\blur2}Featuring All Units!
-Dialogue: 0,0:18:50.04,0:18:52.25,Signs,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(315,147)}283PRODUCTIONS
-Dialogue: 0,0:18:52.46,0:18:54.79,Signs,SIGN,0,0,0,,{\fad(300,100)\blur3\c&HF9FAEB&\3c&HE6E523&\frx6\fry336\frz7.248\pos(278,147)}Featuring All Units
-Dialogue: 0,0:18:55.04,0:18:58.82,Signs,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(321.667,130.778)}First National Tour\N {\3c&HF9FAEB&\c&HC5C120&\blur2}Confirmed!
-Dialogue: 0,0:19:21.90,0:19:23.43,Signs,SIGN,0,0,0,,{\fs16\bord0\pos(217,273)\2c&H0000FF&\c&HAFA59F&\frz8.89}Please continue with the MC!
-Dialogue: 0,0:22:00.19,0:22:12.16,Signs,SIGN,0,0,0,,{\fad(500,700)\fs30\bord3\blur2\fnComic Sans MS\c&HCB2BD2&\3c&HFFFFFF&\frz10.26\pos(128,47)}Thank you very much!
+Dialogue: 0,0:02:19.22,0:02:21.62,OnScreen,,0,0,0,,{=10}{\fad(200,200)\fn思源黑体 Medium\b0\c&H295687&\fax0.038496\fscx131.77\fscy125.63\frz6.3468\frx0.5742\fry1.4206\org(1001.25,117.28)\pos(1000.24,142.41)}283PRODUCTION HALLOWEEN PARTY
+Dialogue: 0,0:02:19.22,0:02:21.62,OnScreen,,0,0,0,,{=16}{\fad(200,200)\fn@思源宋体\b10\c&H295687&\fax-0.024250\fscx164.43\fscy176.07\frz-80.9356\frx0.5157\fry1.6270\org(1420.78,387.69)\pos(1421.58,422.89)}邀请函
+Dialogue: 0,0:02:31.59,0:02:32.19,OnScreen,,0,0,0,,{=24}{\fn思源黑体\b0\fax0.036314\fscx116.47\fscy117.15\frz12.5837\frx0.6764\fry1.5988\org(984.21,396.17)\pos(983.37,419.6)\c&H5B6272&}制作人
+Dialogue: 0,0:02:31.59,0:02:32.19,OnScreen,,0,0,0,,{=26}{\fn思源黑体\b0\c&H525255&\fax0.030822\fscx112.29\fscy115.30\frz13.0869\frx0.6886\fry1.6270\org(1197.42,441.15)\pos(1196.73,464.21)}你有一条新消息
+Dialogue: 0,0:02:32.26,0:02:36.72,OnScreen,,0,0,0,,{=41}{\fad(0,1774)\fn思源黑体\b0\c&H525255&\an7\fax0.043169\fscx93.70\fscy108.47\frz12.5709\frx0.5887\fry1.0942\org(923.72,359.15)\pos(700.06,272.38)}以防万一，跟你说一声明天Live的时间\N15点开始入场，17点开始演出\N[马赛克]\N请多关照
+Dialogue: 0,0:02:32.26,0:02:36.72,OnScreen,,0,0,0,,{=42}{\fad(0,1774)\fn思源黑体\b0\c&H525255&\an7\fax0.052022\fscx89.17\fscy105.79\frz12.5349\frx0.6027\fry1.1224\org(1277.81,270.81)\pos(1243.61,249.66)}好——
+Dialogue: 0,0:02:32.26,0:02:36.72,OnScreen,,0,0,0,,{=43}{\fad(0,1774)\fn思源黑体\b0\c&H525255&\an7\fax0.015595\fscx93.88\fscy109.64\frz13.9646\frx0.5854\fry1.0902\org(1040.1,705.24)\pos(780.45,683.32)}能找到地方吗？如果不知道的话再跟我联系吧
+Dialogue: 0,0:18:20.76,0:18:23.66,OnScreen,SIGN,0,0,0,,{\fad(300,0)\c&HF9FAEB&\3c&HFBE480&\pos(949.85,637.82)\bord2}283 PRODUCTIONS
+Dialogue: 0,0:18:27.10,0:18:31.42,OnScreen,SIGN,0,0,0,,{\fad(200,0)\fscx200\fscy200\pos(960,875.43)\bord4\c&HFEFDF6&\3c&HF9E9AB&}全成员参加\N{\c&HF0E16A&\3c&HFFFFFF&}1st专辑发售决定！
+Dialogue: 0,0:18:50.04,0:18:52.25,OnScreen,SIGN,0,0,0,,{\fad(300,0)\c&HF9FAEB&\3c&HFBE480&\bord2\pos(956.71,429.82)}283 PRODUCTIONS
+Dialogue: 0,0:18:52.46,0:18:54.79,OnScreen,SIGN,0,0,0,,{=50}{\fad(300,300)\c&HF9FAEB&\3c&HFBE480&\fax-0.153790\fscx279.00\fscy275.89\frz8.3775\frx1.0002\fry-5.9286\xbord5.58\ybord5.52\org(821.17,378.5)\pos(829.75,433.68)}全成员参加
+Dialogue: 0,0:18:55.04,0:18:58.82,OnScreen,SIGN,0,0,0,,{\fad(200,0)\fscx200\fscy200\bord4\c&HFEFDF6&\3c&HF9E9AB&\pos(960,400)}{\c&HF0E16A&\3c&HFFFFFF&}首次全国巡演决定！
+Dialogue: 0,0:19:21.90,0:19:23.43,OnScreen,SIGN,0,0,0,,{=56}{\c&HAAA8A4&\3c&HAAA8A4&\fax-0.030541\fscx180.41\fscy173.80\frz8.1571\frx-0.3177\fry1.2083\org(641.71,647.56)\pos(642.82,682.32)\t(11,94,\c&HF7F7F7&)}请继续MC！
+Dialogue: 0,0:19:23.43,0:19:26.10,OnScreen,SIGN,0,0,0,,{=64}{\fax-0.006294\fscx365.20\fscy379.96\frz4.9239\frx-0.1054\fry0.6958\org(977.77,354.71)\pos(978.23,430.7)\c&HFFFFFF&}请继续MC！
+Dialogue: 0,0:22:00.17,0:22:12.19,OnScreen,SIGN,0,0,0,,{\fad(441,401)\fscx150\fscy150\fn悠哉字体\b1\c&HBC5DE8&\3c&HF4F4F8&\bord4\pos(243.14,164.29)\frz9.614}谢谢大家！
+
+[Aegisub Extradata]
+Data: 0,_aegi_perspective_ambient_plane,e520.00;115.07#7C1513.78;266.00#7C1513.78;346.00#7C500.22;346.00
+Data: 1,_aegi_perspective_ambient_plane,e520.00;115.07#7C1437.13;-23.48#7C1513.78;346.00#7C500.22;346.00
+Data: 2,_aegi_perspective_ambient_plane,e519.04;108.32#7C1437.14;-23.49#7C1513.79;346.00#7C500.22;346.00
+Data: 3,_aegi_perspective_ambient_plane,e519.04;108.32#7C1437.14;-23.49#7C1513.79;346.00#7C633.38;908.55
+Data: 4,_aegi_perspective_ambient_plane,e519.05;108.32#7C1437.14;-23.49#7C1562.86;661.76#7C633.40;908.53
+Data: 5,_aegi_perspective_ambient_plane,e519.05;108.32#7C1437.14;-23.49#7C1565.38;748.56#7C633.40;908.53
+Data: 6,_aegi_perspective_ambient_plane,e519.05;108.32#7C1445.90;15.03#7C1565.38;748.56#7C633.40;908.53
+Data: 7,_aegi_perspective_ambient_plane,e519.06;108.32#7C1445.90;9.83#7C1565.38;748.56#7C633.40;908.53
+Data: 8,_aegi_perspective_ambient_plane,e519.06;108.32#7C1445.90;9.83#7C1565.38;748.56#7C633.41;908.52
+Data: 9,_aegi_perspective_ambient_plane,e519.06;108.32#7C1445.90;9.83#7C1565.39;748.59#7C633.41;908.56
+Data: 10,_aegi_perspective_ambient_plane,e519.06;108.32#7C1445.90;9.83#7C1565.39;748.61#7C633.41;908.58
+Data: 11,_aegi_perspective_ambient_plane,e519.06;108.32#7C1445.90;9.83#7C1565.39;748.63#7C633.41;908.60
+Data: 12,_aegi_perspective_ambient_plane,e1973.69;905.93#7C1973.69;297.69#7C517.77;111.40#7C755.46;905.93
+Data: 13,_aegi_perspective_ambient_plane,e1973.73;905.97#7C1973.73;297.69#7C517.87;111.42#7C635.59;908.28
+Data: 14,_aegi_perspective_ambient_plane,e1563.67;747.81#7C1973.74;297.68#7C517.92;111.45#7C635.53;908.33
+Data: 15,_aegi_perspective_ambient_plane,e1563.66;747.83#7C1446.06;17.19#7C517.99;111.45#7C635.49;908.36
+Data: 16,_aegi_perspective_ambient_plane,e1563.66;747.84#7C1446.06;17.19#7C518.01;111.44#7C635.49;908.36
+Data: 17,_aegi_perspective_ambient_plane,e614.08;433.23#7C1085.88;385.00#7C1085.88;465.00#7C920.12;465.00
+Data: 18,_aegi_perspective_ambient_plane,e614.08;433.23#7C1085.88;385.00#7C1085.88;465.00#7C664.07;629.00
+Data: 19,_aegi_perspective_ambient_plane,e614.09;433.23#7C1085.88;385.00#7C1498.29;463.47#7C664.07;629.00
+Data: 20,_aegi_perspective_ambient_plane,e614.09;433.23#7C1405.12;259.74#7C1498.29;463.47#7C664.07;629.00
+Data: 21,_aegi_perspective_ambient_plane,e614.09;433.23#7C1405.12;259.74#7C1457.05;437.50#7C664.07;629.00
+Data: 22,_aegi_perspective_ambient_plane,e614.09;433.23#7C1411.75;258.53#7C1457.05;437.50#7C664.08;628.99
+Data: 23,_aegi_perspective_ambient_plane,e614.09;433.23#7C1411.75;258.53#7C1459.46;436.29#7C664.08;628.99
+Data: 24,_aegi_perspective_ambient_plane,e614.09;433.23#7C1411.75;258.53#7C1459.46;436.29#7C663.47;625.98
+Data: 25,_aegi_perspective_ambient_plane,e614.09;433.23#7C1411.74;258.53#7C1459.45;436.29#7C663.47;625.98
+Data: 26,_aegi_perspective_ambient_plane,e614.08;433.23#7C1411.74;258.53#7C1459.45;436.29#7C663.46;625.98
+Data: 27,_aegi_perspective_ambient_plane,e618.31;448.78#7C1410.47;255.34#7C1466.16;458.66#7C676.20;669.95
+Data: 28,_aegi_perspective_ambient_plane,e618.31;448.78#7C1410.48;255.34#7C1466.17;458.67#7C676.20;669.95
+Data: 29,_aegi_perspective_ambient_plane,e620.30;430.88#7C1410.48;255.34#7C1466.17;458.67#7C676.20;669.95
+Data: 30,_aegi_perspective_ambient_plane,e620.30;430.88#7C1410.48;255.34#7C1466.17;458.67#7C640.59;993.36
+Data: 31,_aegi_perspective_ambient_plane,e620.30;430.88#7C1410.48;255.34#7C1647.19;725.70#7C640.59;993.36
+Data: 32,_aegi_perspective_ambient_plane,e620.30;430.88#7C1410.48;255.34#7C1649.04;727.55#7C640.59;993.36
+Data: 33,_aegi_perspective_ambient_plane,e620.30;430.88#7C1410.48;255.34#7C1642.11;729.40#7C640.59;993.36
+Data: 34,_aegi_perspective_ambient_plane,e620.30;430.88#7C1410.48;255.34#7C1642.11;729.40#7C649.19;988.77
+Data: 35,_aegi_perspective_ambient_plane,e489.50;361.13#7C1410.48;255.34#7C1642.11;729.40#7C649.19;988.77
+Data: 36,_aegi_perspective_ambient_plane,e489.50;361.13#7C1467.43;147.91#7C1642.11;729.40#7C649.19;988.77
+Data: 37,_aegi_perspective_ambient_plane,e489.50;361.13#7C1482.83;145.98#7C1642.11;729.40#7C649.19;988.77
+Data: 38,_aegi_perspective_ambient_plane,e489.01;361.38#7C1482.83;145.98#7C1642.11;729.40#7C649.19;988.77
+Data: 39,_aegi_perspective_ambient_plane,e489.01;361.38#7C1482.83;145.99#7C1642.11;729.40#7C649.19;988.77
+Data: 40,_aegi_perspective_ambient_plane,e489.01;361.38#7C1482.83;145.99#7C1642.12;729.41#7C649.19;988.79
+Data: 41,_aegi_perspective_ambient_plane,e489.01;361.38#7C1482.83;145.98#7C1642.13;729.42#7C649.19;988.79
+Data: 42,_aegi_perspective_ambient_plane,e489.01;361.38#7C1482.82;145.99#7C1642.10;729.41#7C649.19;988.78
+Data: 43,_aegi_perspective_ambient_plane,e488.98;361.38#7C1482.82;145.99#7C1642.09;729.42#7C649.18;988.81
+Data: 44,_aegi_perspective_ambient_plane,e656.16;477.14#7C932.41;477.14#7C1412.41;989.14#7C656.16;557.14
+Data: 45,_aegi_perspective_ambient_plane,e656.16;477.14#7C932.41;477.14#7C1412.41;989.14#7C228.74;932.00
+Data: 46,_aegi_perspective_ambient_plane,e656.16;477.14#7C932.41;477.14#7C1407.84;977.71#7C228.74;932.00
+Data: 47,_aegi_perspective_ambient_plane,e656.16;477.14#7C1394.13;330.85#7C1407.84;977.71#7C228.74;932.00
+Data: 48,_aegi_perspective_ambient_plane,e242.45;433.71#7C1394.13;330.85#7C1407.84;977.71#7C228.74;932.00
+Data: 49,_aegi_perspective_ambient_plane,e242.45;433.71#7C1394.13;310.28#7C1407.84;977.71#7C228.74;932.00
+Data: 50,_aegi_perspective_ambient_plane,e247.02;474.85#7C1394.13;310.28#7C1407.84;977.71#7C228.74;932.00
+Data: 51,_aegi_perspective_ambient_plane,e271.88;620.29#7C756.19;639.00#7C756.19;719.00#7C451.81;719.00
+Data: 52,_aegi_perspective_ambient_plane,e271.88;620.29#7C756.19;639.00#7C756.19;719.00#7C311.07;946.13
+Data: 53,_aegi_perspective_ambient_plane,e271.86;620.29#7C756.19;639.00#7C993.13;837.47#7C311.06;946.15
+Data: 54,_aegi_perspective_ambient_plane,e271.86;620.29#7C961.06;524.99#7C993.13;837.47#7C311.04;946.15
+Data: 56,_aegi_perspective_ambient_plane,e271.86;620.29#7C961.06;524.99#7C993.12;837.47#7C311.04;946.15
+Data: 57,_aegi_perspective_ambient_plane,e164.38;229.57#7C1152.19;337.00#7C1152.19;417.00#7C847.81;417.00
+Data: 58,_aegi_perspective_ambient_plane,e164.38;229.57#7C1152.19;337.00#7C1152.19;417.00#7C230.67;999.86
+Data: 59,_aegi_perspective_ambient_plane,e164.38;229.57#7C1152.19;337.00#7C1771.62;805.57#7C230.67;999.86
+Data: 60,_aegi_perspective_ambient_plane,e164.38;229.57#7C1716.76;113.00#7C1771.62;805.57#7C230.67;999.86
+Data: 61,_aegi_perspective_ambient_plane,e164.38;229.57#7C1719.80;107.94#7C1771.62;805.57#7C230.67;999.86
+Data: 62,_aegi_perspective_ambient_plane,e164.38;229.57#7C1719.80;107.93#7C1772.63;829.66#7C230.67;999.86
+Data: 63,_aegi_perspective_ambient_plane,e164.38;229.57#7C1719.81;107.93#7C1772.63;829.66#7C226.66;996.09
+Data: 64,_aegi_perspective_ambient_plane,e159.88;231.07#7C1719.80;107.93#7C1772.63;829.66#7C226.66;996.09
