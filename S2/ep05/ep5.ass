@@ -13,13 +13,14 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/ep5.mkv
-Video File: C:/Users/scree/Desktop/ep5.mkv
+Audio File: C:/Users/scree/Desktop/sc_s2_ep5/ep5.mkv
+Video File: C:/Users/scree/Desktop/sc_s2_ep5/ep5.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.750000
-Active Line: 19
-Video Position: 85
+Video Zoom Percent: 0.375000
+Scroll Position: 208
+Active Line: 241
+Video Position: 24204
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -40,7 +41,7 @@ Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,overlap = c
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,short_line = _G.unicode.len(line_text[1] and line_text[1] or "1") <= 4; graphic_char_gap = short_line and 0 or 30; extended = {_G.aegisub.text_extents(orgline.styleref, orgline.actor)}; single_char_width = _G.aegisub.text_extents(orgline.styleref, " 一"); name_gap = orgline.styleref.fontname == tc_fontname and orgline.height / 2.5 or orgline.height / 5; separator_grad_length = short_line and 6-(single_char_width*0.5) or 50;
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext unless overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and line.styleref.fontname or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}!loopctx.state.zhjp == 1 and line_text_tags[loopctx.state.zhjp] or line_text[loopctx.state.zhjp]!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext if overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and "" or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}- !loopctx.state.zhjp == 1 and line_text_tags[loopctx.state.zhjp] or line_text[loopctx.state.zhjp]!
-Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator,0,0,0,template line anystyle notext unless overlap,!relayer(9)!!line.actor == "" and skip() or ""!{!set("separator_width", (line_width / 3 < 100 and line_width or line_width / 3) + graphic_char_gap)!!set("separator_gap", line.styleref.fontname == tc_fontname and line.height / 5 or line.height / 10)!!util.make_grad(line_left+separator_width-separator_grad_length- (single_char_width*0.5),line_left+separator_width,1,false)!\pos(!short_line and (line_left) or (line_left - (single_char_width*0.5))!,!line.styleref.align == 2 and line.top - separator_gap - zh_jp_gap or line.bottom + separator_gap + zh_jp_gap!)\an!line.styleref.align == 2 and 1 or 7!\bord0.2\blur1\shad0\p1\alpha!util.get_grad("&H00&","&HFF&")!}m 0 0 l 1920 0 1920 2 0 2 0 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator,0,0,0,template line anystyle notext unless overlap,!relayer(9)!!line.actor == "" and skip() or ""!{!set("separator_width", (line_width / 3 < 100 and line_width or line_width / 3) + graphic_char_gap)!!set("separator_gap", line.styleref.fontname == tc_fontname and line.height / 5 or line.height / 10)!!util.make_grad(line_left+separator_width-separator_grad_length- (single_char_width*0.5),line_left+separator_width,1,false)!\pos(!short_line and (line_left) or (line_left - (single_char_width*0.5))!,!line.styleref.align == 2 and line.top - separator_gap - zh_jp_gap or line.bottom + separator_gap + zh_jp_gap!)\an!line.styleref.align == 2 and 1 or 7!\bord0.2\blur1\shad0\p1\alpha!util.get_grad("&H01&","&HFF&")!}m 0 0 l 1920 0 1920 2 0 2 0 0
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle notext unless overlap,!short_line and skip() or ""!!line.actor == "" and skip() or ""!{\an7\pos(!line_left - (single_char_width*0.5)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 10 -5 10 -11 b 10 -5 14 0 20 0 b 14 0 10 5 10 11 b 10 5 6 0 0 0 m 19 5 b 19 7 21 9 23 9 b 21 9 19 11 19 13 b 19 11 17 9 15 9 b 17 9 19 7 19 5 m 23 -10 b 23 -9 24 -8 25 -8 b 24 -8 23 -7 23 -6 b 23 -7 22 -8 21 -8 b 22 -8 23 -9 23 -10
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext unless overlap,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&}!line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext if overlap,!line.actor == "" and skip() or ""!{!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20} {\fscx80}& !line.actor!
@@ -177,13 +178,13 @@ Dialogue: 0,0:10:57.62,0:10:58.75,SC_Bottom,圆香,0,0,0,kara,是啊是啊\Nは�
 Dialogue: 0,0:11:02.81,0:11:05.26,SC_Bottom,小糸,0,0,0,kara,我们 很帅吧！\Nかっこいいじゃん 私たち
 Dialogue: 0,0:11:08.37,0:11:13.34,SC_Bottom,小糸,0,0,0,kara,既然透都说很帅了 那就肯定是这样\N透ちゃんがかっこいいって言ったら それはもう かっこいい
 Dialogue: 0,0:11:08.69,0:11:11.57,SC_Top,圆香,0,0,0,kara,雏菜 那是我的\N私のなんだけど
-Dialogue: 0,0:11:11.57,0:11:13.70,SC_Bottom,雏菜,0,0,0,kara,诶？又不会少一块肉\Nえ 別にいいでしょう
+Dialogue: 0,0:11:11.57,0:11:13.70,SC_Top,雏菜,0,0,0,kara,诶？又不会少一块肉\Nえ 別にいいでしょう
 Dialogue: 0,0:11:13.70,0:11:14.82,SC_Bottom,透,0,0,0,kara,好冷\N冷た
 Dialogue: 0,0:11:14.82,0:11:18.44,SC_Bottom,小糸,0,0,0,kara,如果透笑了 那大家也会跟着笑\N透ちゃんが笑ってたら みんな笑っちゃう
-Dialogue: 0,0:11:16.49,0:11:18.44,SC_Bottom,雏菜,0,0,0,kara,看招\Nそれ
+Dialogue: 0,0:11:16.49,0:11:18.44,SC_Top,雏菜,0,0,0,kara,看招\Nそれ
 Dialogue: 0,0:11:20.27,0:11:22.60,SC_Bottom,透,0,0,0,kara,有的哦 在这前面\Nあるよ この先に
 Dialogue: 0,0:11:23.35,0:11:26.95,SC_Bottom,小糸,0,0,0,kara,当透说「走吧」的时候 我就已经…\N透ちゃんが行こうって言ったら それはもう
-Dialogue: 0,0:11:25.15,0:11:26.95,SC_Bottom,雏菜,0,0,0,kara,呀哈{\fscx50} {\fscx100}——\Nやはー
+Dialogue: 0,0:11:25.15,0:11:26.95,SC_Top,雏菜,0,0,0,kara,呀哈{\fscx50} {\fscx100}——\Nやはー
 Dialogue: 0,0:11:29.15,0:11:31.13,SC_Bottom,透,0,0,0,kara,嗯？走吧\Nうん 行こう
 Dialogue: 0,0:11:31.96,0:11:33.00,SC_Bottom,透,0,0,0,kara,大海\N海
 Dialogue: 0,0:11:37.42,0:11:39.74,SC_Bottom,小糸,0,0,0,kara,开始跑起来了吧\N走り出すのに 十分
@@ -231,7 +232,7 @@ Dialogue: 0,0:13:35.02,0:13:36.61,SC_Bottom,圆香,0,0,0,kara,…{\fscx50} {\fsc
 Dialogue: 0,0:13:42.17,0:13:47.56,SC_Bottom,透,0,0,0,kara,嗒{\fscx50} {\fscx100}—{\fscx50} {\fscx100}嗒 嗒嗒嗒 嗒{\fscx50} {\fscx100}—{\fscx50} {\fscx100}嗒嗒嗒\Nてってん てってってん てーてーてってん
 Dialogue: 0,0:13:48.24,0:13:51.05,SC_Bottom,透,0,0,0,kara,嗒{\fscx50} {\fscx100}—{\fscx50} {\fscx100}嗒 嗒嗒嗒\Nてってん てってってん
 Dialogue: 0,0:13:53.30,0:13:54.26,SC_Bottom,透,0,0,0,kara,紧张？\N緊張？
-Dialogue: 0,0:13:54.72,0:13:56.23,SC_Bottom,小糸,0,0,0,kara,透...\Nと 透ちゃん
+Dialogue: 0,0:13:54.72,0:13:56.23,SC_Bottom,小糸,0,0,0,kara,透…\Nと 透ちゃん
 Dialogue: 0,0:13:57.14,0:13:58.39,SC_Bottom,透,0,0,0,kara,没事的\N大丈夫
 Dialogue: 0,0:13:59.67,0:14:03.49,SC_Bottom,小糸,0,0,0,kara,完…{\fscx50} {\fscx100}完…{\fscx50} {\fscx100}完全不紧张的\Nぜ ぜんぜん ぜんぜん余裕だよ
 Dialogue: 0,0:14:07.06,0:14:07.90,SC_Bottom,制作人,0,0,0,kara,大家\Nみんな
@@ -273,7 +274,7 @@ Dialogue: 0,0:16:25.68,0:16:27.00,SC_Bottom,小糸,0,0,0,kara,圆香…\N円香�
 Dialogue: 0,0:16:27.21,0:16:30.63,SC_Bottom,雏菜,0,0,0,kara,啊哈～事情变得有点不妙了\Nあは～ なんか大変だね
 Dialogue: 0,0:16:37.60,0:16:39.97,SC_Bottom,小糸,0,0,0,kara,大家 好不容易\Nせっかく みんな
 Dialogue: 0,0:16:41.53,0:16:44.56,SC_Bottom,小糸,0,0,0,kara,走到了这一步\Nちゃんと できるようになったのに
-Dialogue: 0,0:16:49.47,0:16:55.49,SC_Bottom,,0,0,0,kara,好的 那么本期「时不我待」为您带来的是…Noctchill！\Nはい ということで 今週の「駆け出し待ったなし」はノクチル！
+Dialogue: 0,0:16:49.47,0:16:55.49,SC_Bottom,,0,0,0,kara,好的 那么本期「时不我待」为您带来的是… Noctchill！\Nはい ということで 今週の「駆け出し待ったなし」はノクチル！
 Dialogue: 0,0:16:55.75,0:16:58.09,SC_Bottom,,0,0,0,kara,今天 你们会在这里出道对吧\N今日ここでデビューなんだよね
 Dialogue: 0,0:16:58.09,0:17:01.32,SC_Bottom,,0,0,0,kara,在我们这种节目上出道 真的好吗\Nうちでデビューしちゃって ほんといいの？
 Dialogue: 0,0:17:02.39,0:17:05.94,SC_Bottom,,0,0,0,kara,所以 浅仓小姐 你是什么时候开始当偶像的呢？\Nで 浅倉くん いつから活動してるの？
@@ -338,4 +339,4 @@ Dialogue: 0,0:22:25.47,0:22:29.14,SC_Bottom,圆香,0,0,0,kara,我们到底…{\f
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert01.ass
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert02.ass
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,screen/screen.ass
-Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import-shifted,../op_sc.ass
+Comment: 0,0:01:57.06,0:01:57.10,SC_Bottom,,0,0,0,import-shifted,../op_sc.ass
