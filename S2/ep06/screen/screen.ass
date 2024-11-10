@@ -1,0 +1,38 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 06 (1080p) [82A2E2D2].mkv
+Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 06 (1080p) [82A2E2D2].mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.875000
+Active Line: 13
+Video Position: 32367
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:18.03,0:00:19.05,OnScreen,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(319,281)}1st Album Release Confirmed\N {\3c&HF9FAEB&\c&HC5C120&\blur2}Featuring All Units!
+Dialogue: 0,0:00:19.18,0:00:20.49,OnScreen,SIGN,0,0,0,,{\fad(300,000)\blur3\c&HF9FAEB&\3c&HE6E523&\pos(321.667,130.778)}First National Tour\N {\3c&HF9FAEB&\c&HC5C120&\blur2}Confirmed!
+Dialogue: 0,0:00:41.56,0:00:43.98,OnScreen,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- I heard those idols who were \Nchildhood friends are being sidelined, lol.\N- Serves them right. Don't underestimate \Nbeing an idol.\N- LOL\N- They weren't even singing, lol.\N- I wish they'd think about how the fans feel.
+Dialogue: 0,0:01:28.06,0:01:31.57,OnScreen,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}An album release and \Nnationwide tour were \Nannounced, making it \Na truly joyous and \Nsurprising event.
+Dialogue: 0,0:07:21.79,0:07:27.80,OnScreen,TEXT AT TOP IN GRAY,0,0,0,,{\an7\fs16\c&HFFFFFF&\3c&H656565&}Today\N{\c&H000000&\3c&HFFFFFF&}- Choco-chan, great job at the \NHalloween event! You were so cute!\N- My dear friend really is an amazing idol!!\NThank you for taking the audition in my place.\NAnd thank you for becoming an idol.\N{\c&HFFFFFF&\3c&H6E3D00&}- Asumi-chan, thank you sooo much!! \NI really wanted to find you and wave at you.
+Dialogue: 0,0:09:23.25,0:09:27.42,OnScreen,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- What about you, Sakuya?\N{\c&HFFFFFF&\3c&H6E3D00&}- Thank you all for the wonderful ideas.\N{\c&H000000&\3c&HFFFFFF&}- I want to do the exact same things you all want to do.
+Dialogue: 0,0:13:16.37,0:13:21.42,OnScreen,TEXT,0,0,0,,{\an8\c&H000000&\3c&HDCDCDC&}Noctchill
+Dialogue: 0,0:17:03.54,0:17:06.79,OnScreen,TEXT,0,0,0,,{\an8\c&H000000&\3c&HDDA35B&}Noctchill
+Dialogue: 0,0:17:06.79,0:17:14.05,OnScreen,TEXT IN RED,0,0,0,,{\an7\fs20\bord3\fnComic Sans MS\c&H0808A5&\3c&HFFFFFF&\pos(20,23.999)}Album Tracklist\N{\3c&H64FFFD&\c&H000000&}Illumination Stars:{\c&H000000&\3c&HFFFFFF&} Hikari no Destination (New Song)\N{\3c&HFFABDD&}L'Antica: {\3c&HFFFFFF&}Babel City Grace (New Song)\N{\3c&H6EA8FF&}Houkago Climax Girls: {\3c&HFFFFFF&}Yumesaki After School (New Song)\N{\3c&HAC67ED&}Alstroemeria: {\3c&HFFFFFF&}Alstroemeria (New Song)\N{\3c&H564FEE&}Straylight:{\3c&HFFFFFF&} Wandering Dream Chaser (New Song)
+Dialogue: 0,0:21:24.72,0:21:26.80,OnScreen,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- What about you, Sakuya?\N{\c&HFFFFFF&\3c&H6E3D00&}- Thank you all for the wonderful ideas.\N{\c&H000000&\3c&HFFFFFF&}- I want to do the exact same things you all want to do.
+Dialogue: 0,0:21:46.20,0:21:50.70,OnScreen,TEXT GRAY,0,0,0,,{\an7\fs16\c&HFFFFFF&\3c&H656565&}Today\N{\c&H000000&\3c&HFFFFFF&}- They say it can fly.
+Dialogue: 0,0:22:06.97,0:22:09.59,OnScreen,TEXT,0,0,0,,{\an7\fs16\c&HFFFFFF&\3c&H656565&}Today\N{\c&H000000&\3c&HFFFFFF&}- They say it can fly.
+Dialogue: 0,0:22:22.84,0:22:25.23,OnScreen,TEXT,0,0,0,,{\an8\c&H000000&\3c&HDDA35B&}Noctchill
+Dialogue: 0,0:22:25.23,0:22:29.99,OnScreen,TEXT IN RED,0,0,0,,{\an9\fs20\bord3\fnComic Sans MS\c&H0808A5&\3c&HFFFFFF&\pos(623.429,17.142)}Album Tracklist\N{\3c&H64FFFD&\c&H000000&}Illumination Stars:{\c&H000000&\3c&HFFFFFF&} Hikari no Destination (New Song)\N{\3c&HFFABDD&}L'Antica: {\3c&HFFFFFF&}Babel City Grace (New Song)\N{\3c&H6EA8FF&}Houkago Climax Girls: {\3c&HFFFFFF&}Yumesaki After School (New Song)\N{\3c&HAC67ED&}Alstroemeria: {\3c&HFFFFFF&}Alstroemeria (New Song)\N{\3c&H564FEE&}Straylight:{\3c&HFFFFFF&} Wandering Dream Chaser (New Song)\N{\3c&HDDB27D&}Noctchill: {\3c&HFFFFFF&}We Are Always Who We Are (New Song)
