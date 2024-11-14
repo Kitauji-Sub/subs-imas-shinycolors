@@ -6,6 +6,16 @@ WrapStyle: 0
 ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/sc_s2_ep6/ep6.mkv
+Video File: C:/Users/scree/Desktop/sc_s2_ep6/ep6.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.500000
+Scroll Position: 207
+Active Line: 238
+Video Position: 3069
+
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Default,Arial,48,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
@@ -254,3 +264,5 @@ Comment: 0,0:21:58.70,0:21:59.74,SC_Bottom,透,0,0,0,kara,不知道\N分から�
 Comment: 0,0:21:59.74,0:22:02.33,SC_Bottom,小糸,0,0,0,kara,肯 肯定已经决定好了吧\Nも もう決まってるのかな
 Comment: 0,0:22:15.78,0:22:18.34,SC_Bottom,透,0,0,0,kara,嘛 无所谓吧\Nまあ いいんじゃん
 Comment: 0,0:22:21.25,0:22:24.33,SC_Bottom,透,0,0,0,kara,海 会有的吧\N海 あるかな
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,screen/screen.ass
+Comment: 0,0:02:07.98,0:02:08.02,SC_Bottom,,0,0,0,import-shifted,../op_sc.ass
