@@ -103,7 +103,7 @@ jobs:
       - name: Pack files
         run: |
           $version = "${{steps.semver.outputs.version_tag}}"
-          7z a -t7z "sc_subs_$version.7z" "S1/build/output/*" -mx=9 -ms=4g -mf=off -m0=LZMA:d=1g:mf=bt4
+          7z a -t7z "sc_subs_$version.7z" "./S1/build/output/*" -mx=9 -ms=4g -mf=off -m0=LZMA:d=1g:mf=bt4
       - name: Publish
         if: steps.version_check.outputs.skip == 'false'
         uses: "softprops/action-gh-release@v2"
