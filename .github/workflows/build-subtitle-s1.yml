@@ -65,8 +65,8 @@ jobs:
           Expand-Archive -Path "aegisub-cli.zip" -DestinationPath "S1\aegisub-cli" -Force
       - name: Install custom fonts
         run: |
-          Invoke-WebRequest -Uri "https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/download/typeface/fonts_sc.zip" -OutFile "fonts.zip"
-          Expand-Archive -Path "fonts.zip" -DestinationPath "Fonts" -Force
+          Invoke-WebRequest -Uri "https://github.com/Kitauji-Sub/subs-imas-shinycolors/releases/download/typeface/fonts_sc.7z" -OutFile "fonts.7z"
+          7z e fonts.7z -oFonts
           $fontSourceFolder = "Fonts\"
           $SystemFontsPath = "C:\Windows\Fonts\"
           
@@ -103,7 +103,7 @@ jobs:
       - name: Pack files
         run: |
           $version = "${{steps.semver.outputs.version_tag}}"
-          Compress-Archive -Path "S1/build/output/*" -DestinationPath "sc_subs_$version.zip" -Force
+          7z a -t7z "sc_subs_$version.7z" "S1/build/output/*" -mx=9 -ms=4g -mf=off -m0=LZMA:d=1g:mf=bt4
       - name: Publish
         if: steps.version_check.outputs.skip == 'false'
         uses: "softprops/action-gh-release@v2"
