@@ -115,9 +115,9 @@ jobs:
           body_path: CHANGELOG.md
           name: ${{ format('{0} {1}', 'Season-2', steps.semver.outputs.version) }}
           files: |
-            sc_subs_*.zip
+            sc_subs_*.7z
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: sc_subs_built
-          path: sc_subs_*.zip
+          path: sc_subs_*.7z
