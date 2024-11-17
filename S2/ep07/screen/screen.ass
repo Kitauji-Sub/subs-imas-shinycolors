@@ -1,0 +1,30 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 07 (1080p) [D1580B12].mkv
+Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 07 (1080p) [D1580B12].mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.750000
+Video Position: 1893
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:01:18.93,0:01:21.91,OnScreen,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- When was the deadline to report the\N research on the next live outfits again?\N- Huh?! I forgot...\N{\c&HFFFFFF&\3c&H6E3D00&}- If I remember correctly, it should be next\N Monday. I'll notify everyone just in case!\N{\c&H000000&\3c&HFFFFFF&}- Thanks so much, Sakuya!\N- I forgot my lunch!\NIt's a super amazing bento,\Nso if you'd like, please enjoy it, \NSakuya!!
+Dialogue: 0,0:03:48.29,0:03:52.37,OnScreen,TEXT (MITSUMINE),0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- No problem at all!\N- Okay, I'll let the Producer know.\NGood job, everyone!\N- Yeah, I'm fine. (^^)\N{\c&HFFFFFF&\3c&H6E3D00&}- Thank you! That helps a lot!\N{\c&H000000&\3c&HFFFFFF&}- What's everyone's schedule like for Friday?\N- I have a media interview on Friday morning.\N- My schedule is packed on Saturday and Sunday!
+Dialogue: 0,0:03:57.09,0:04:00.73,OnScreen,TEXT (KOGANE),0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- What's everyone's schedule like for Friday?\N- I have a media interview on Friday morning.\N- My schedule is packed on Saturday and Sunday!\N- I have plans too.\N- I just checked with the Producer, and it looks like \Nwe can barely squeeze in a meeting on Monday afternoon!
+Dialogue: 0,0:06:37.45,0:06:43.75,OnScreen,TEXT,0,0,0,,{\an7\fs19\c&H000000&\3c&HFFFFFF&\fnComic Sans MS}Summary for Today\N- Show them the evolving L'Antica\N- Refinement Points (First, broadly)\N- Gothic\N- Enhance the sense of loyalty, \Nrefine the amount of information\N- World-building / Theme
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fs19\c&H000000&\3c&HFFFFFF&\fnComic Sans MS}- Potential for New Sounds: \NClassic Rock & Folk Metal\N- Image of a Hard/Serious L'Antica\N- New Costumes and Stage Design?\N- Is it necessary to coordinate with other units?\N- We want to preserve the depth of the story.\N- We want to sing and deliver passion and fire \Nthat resonates strongly.\N- We want to create more impact \Nthan ever before.
+Dialogue: 0,0:07:23.75,0:07:29.72,OnScreen,TEXT,0,0,0,,{\an7\fs19\bord0\c&H000000&\3c&HFFFFFF&\fnComic Sans MS\fscx76\fscy81\pos(188.338,225.756)\frz1.91}The things we truly want to convey.
+Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{\an9\fs19\c&H000000&\3c&HFFFFFF&\fnComic Sans MS}To Yuika, Roko, and Producer:\NConsidering the situation, we went ahead \Nand made a bit of progress together.\NWe're fine, so please don't worry.\NThank you so much for your hard work.
