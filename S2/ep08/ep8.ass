@@ -1,0 +1,309 @@
+﻿[Script Info]
+Original Translation: 
+Original Editing: 
+Original Timing: 
+Synch Point: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 08 (1080p) [6ECD9966].mkv
+Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 08 (1080p) [6ECD9966].mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 1.000000
+Scroll Position: 235
+Active Line: 242
+Video Position: 32768
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,48,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: SC_Bottom,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,2,30,30,30,1
+Style: SC_Top,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,8,30,30,30,1
+Style: 注释,思源黑体,50,&H00F0F0F0,&H000000FF,&H002F2F2F,&H00000000,-1,0,0,0,100,100,1.1,0,1,3,0,7,50,10,70,1
+Style: STF,方正FW轻吟体 简 M,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,0,0,0,0,100,100,1.1,0,1,0.3,0,8,10,10,30,1
+Style: TITLE,思源黑体 Medium,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,-1,0,0,0,100,100,1.1,0,1,0,0,8,10,10,30,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
+Dialogue: 0,0:22:29.95,0:22:42.01,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：北宇治字幕组Deep State\N翻译：FFU2\N后期：Scrpr
+Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
+Dialogue: 0,0:00:00.00,0:00:00.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
+Dialogue: 0,0:23:53.38,0:24:00.25,TITLE,,0,0,0,,{\fn悠哉字体\b1\pos(960,600)\fscy105\fad(1000,0)\bord2\blur3.5\3c&H000000&}Alstromeria是…
+Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
+Comment: 0,0:11:05.81,0:11:08.25,注释,,0,0,0,,=====TEXTS=====
+Dialogue: 0,0:00:01.13,0:00:03.85,SC_Bottom,甘奈,0,0,0,,My name is Amana Osaki, and I'm 17 years old.\N大崎あまな 17歳です
+Dialogue: 0,0:00:05.44,0:00:08.61,SC_Bottom,甘奈,0,0,0,,If I'm chosen as the cover \Ngirl for your magazine,\Nもし 恩師のカバーガールに決まったら
+Dialogue: 0,0:00:09.07,0:00:13.43,SC_Bottom,甘奈,0,0,0,,I want to share its appeal with \Nas many people as possible!\N恩師の魅力を たくさんの人に届けたいと思います
+Dialogue: 0,0:00:16.15,0:00:18.73,SC_Bottom,千雪,0,0,0,,Amana-chan... You're accepted!\N天菜ちゃん 合格
+Dialogue: 0,0:00:18.73,0:00:20.61,SC_Bottom,甘奈,0,0,0,,Huh? Already?!\Nえっ?もう?
+Dialogue: 0,0:00:20.61,0:00:23.64,SC_Bottom,甜花,0,0,0,,Y-Yeah! Perfect!\Nう うん 完璧
+Dialogue: 0,0:00:23.64,0:00:27.85,SC_Bottom,甘奈,0,0,0,,No way! I want you to be tougher on me!\N嘘だ もっと厳しくお願いしたいの
+Dialogue: 0,0:00:27.85,0:00:31.42,SC_Bottom,千雪,0,0,0,,Oh, is that so... Well then...\Nそ そっか じゃあ
+Dialogue: 0,0:00:35.26,0:00:38.76,SC_Bottom,千雪,0,0,0,,It's empty. I don't feel \Nanything from you at all!\N空っぽですね 何も感じません
+Dialogue: 0,0:00:42.25,0:00:43.75,SC_Bottom,甜花,0,0,0,,Chiyuki-san?\Nちひゆきさん?
+Dialogue: 0,0:00:44.08,0:00:46.86,SC_Bottom,千雪,0,0,0,,It's just a little game of \Nopposites, Tenka-chan.\N反対ごっこよ 天下ちゃん
+Dialogue: 0,0:00:46.86,0:00:49.93,SC_Bottom,甜花,0,0,0,,Opposites... game?\N反対 ごっこ?
+Dialogue: 0,0:00:49.93,0:00:53.84,SC_Bottom,千雪,0,0,0,,If you think of it as saying the \Nopposite of what you really feel,\N思ってるのと反対のことを言う遊びだと思えば
+Dialogue: 0,0:00:53.84,0:00:55.42,SC_Bottom,千雪,0,0,0,,even harsh words can be easier to handle!\Nきついことだって
+Dialogue: 0,0:01:00.19,0:01:03.70,SC_Bottom,甜花,0,0,0,,Uh, your greetings... are kinda weak!\N挨拶のキレが イマイチです
+Dialogue: 0,0:01:03.94,0:01:09.00,SC_Bottom,千雪,0,0,0,,Besides, Osaki-san, you're busy \Nwith Alstroemeria too, right?\Nそれに 大崎さんはアルストロメリアとしてもお忙しいですよね
+Dialogue: 0,0:01:09.72,0:01:11.51,SC_Bottom,千雪,0,0,0,,You can't fool me.\Nごまかせませんよ
+Dialogue: 0,0:01:11.51,0:01:16.86,SC_Bottom,千雪,0,0,0,,Can you really give us your all \Nwhile preparing for the album and tour?\Nアルバムやツアーの準備をしながら うちのために頑張れるんですか?
+Dialogue: 0,0:01:17.38,0:01:20.97,SC_Bottom,甘奈,0,0,0,,I'll do my best! I'll see \Neverything through to the end!\N頑張ります 全部しっかりやり遂げます!
+Dialogue: 0,0:01:23.46,0:01:25.24,SC_Bottom,甜花,0,0,0,,Y-You're accepted!\Nご 合格!
+Dialogue: 0,0:01:25.91,0:01:28.73,SC_Bottom,甘奈,0,0,0,,Huh?! Wait, was that part \Nof the opposites game?\Nうえっ って反対ごっこ?
+Dialogue: 0,0:01:29.07,0:01:33.32,SC_Bottom,甜花,0,0,0,,That... was a for-reals game!\N今のは 本当ごっこ です
+Dialogue: 0,0:01:33.73,0:01:37.23,SC_Bottom,甘奈,0,0,0,,Geez, you're spoiling me too much!\Nもう あまなを甘やかしすぎ
+Dialogue: 0,0:01:39.62,0:01:43.06,SC_Bottom,千雪,0,0,0,,But I understand. \NYou want to be well-prepared.\Nでもちゃんと準備したいのは分かるな
+Dialogue: 0,0:01:43.94,0:01:47.87,SC_Bottom,千雪,0,0,0,,We also need to research that magazine \Nand come up with a plan, right?\Nその雑誌のこともリサーチして 対策しなきゃね
+Dialogue: 0,0:01:47.87,0:01:55.09,SC_Bottom,甘奈,0,0,0,,Yeah! It's a new magazine, I think it's \Ncalled something like "{\i1}Apricot{\i0}"...\Nうん 新しい雑誌らしいんだけど アプリコットみたいな名前で
+Dialogue: 0,0:01:53.37,0:01:54.25,SC_Bottom,千雪,0,0,0,,What?\Nえっ
+Dialogue: 0,0:01:55.84,0:01:59.94,SC_Bottom,甘奈,0,0,0,,Huh? Wait... maybe it's not new,\N it could be a reissue.\Nあれ 新しいんじゃなくて 復刊だったかも
+Dialogue: 0,0:02:02.97,0:02:04.13,SC_Bottom,甜花,0,0,0,,Chiyuki-san?\Nちゆきさん?
+Dialogue: 0,0:02:05.62,0:02:07.49,SC_Bottom,千雪,0,0,0,,Ah, n-no, it's nothing!\Nあっ ううん
+Dialogue: 0,0:03:55.76,0:04:00.38,SC_Bottom,千雪,0,0,0,,I used to read it thoroughly... \Nthe special feature in {\i1}Apricot{\i0}.\Nよく読んだなあ アプリコットの特集
+Dialogue: 0,0:04:02.51,0:04:03.72,SC_Bottom,千雪,0,0,0,,I just love it.\N大好き
+Dialogue: 0,0:04:07.16,0:04:10.39,SC_Bottom,甘奈,0,0,0,,Thank you for helping us out so much.\Nありがとう こんなに手伝ってくれて
+Dialogue: 0,0:04:11.32,0:04:14.27,SC_Bottom,千雪,0,0,0,,It takes all three of us to \Nmake Alstroemeria, right?\N3人でアルストロメリアでしょ?
+Dialogue: 0,0:04:14.56,0:04:17.90,SC_Bottom,甜花,0,0,0,,Yeah, let's aim for the Grand Prix!\Nうん 目指せ グランプリ
+Dialogue: 0,0:04:18.91,0:04:23.47,SC_Bottom,甘奈,0,0,0,,Yeah! I'll work hard, thinking \Nof us all being there together!\Nうん アマナ みんなで出ると思って頑張るね
+Dialogue: 0,0:04:26.17,0:04:29.02,SC_Bottom,千雪,0,0,0,,If it's Amana-chan... \NI'm certain it'll be wonderful.\Nアマナちゃんなら 素敵だよね
+Dialogue: 0,0:04:31.91,0:04:33.14,SC_Bottom,千雪,0,0,0,,How nice...\Nいいな
+Dialogue: 0,0:04:53.93,0:04:57.74,SC_Bottom,甜花,0,0,0,,Wow, Na-chan, you're amazing! So good!\Nすごい なあちゃん すごい上手
+Dialogue: 0,0:04:59.67,0:05:01.46,SC_Bottom,千雪,0,0,0,,Practicing your walking?\Nウォーキングの練習?
+Dialogue: 0,0:05:01.46,0:05:04.52,SC_Bottom,甘奈,0,0,0,,Ah, Chiyuki-san! Yeah!\Nあ 千雪さん うん
+Dialogue: 0,0:05:05.00,0:05:10.00,SC_Bottom,甘奈,0,0,0,,I'm supposed to learn from an instructor, \Nbut I have to practice on my own, too.\N専門の先生にも習うんだけど 自分でもやっとかなきゃって
+Dialogue: 0,0:05:10.32,0:05:14.83,SC_Bottom,甘奈,0,0,0,,But, you know, it's really hard to \Nget a booking with the instructor...\Nでもね 先生の予約がなかなか取れないんだ
+Dialogue: 0,0:05:14.83,0:05:17.96,SC_Bottom,甘奈,0,0,0,,I think I can get one the day after tomorrow,\N but we don't have a place to practice.\N明後日は撮れそうなんだけど 場所がなくて…
+Dialogue: 0,0:05:18.20,0:05:23.74,SC_Bottom,千雪,0,0,0,,The day after tomorrow... Oh, because I\Nalready reserved this place.\N明後日…私がここを予約しちゃってるから
+Dialogue: 0,0:05:23.41,0:05:26.13,SC_Bottom,甘奈,0,0,0,,Ah, no, that's not what I meant!\Nあっ ううん そういうことじゃないんだ
+Dialogue: 0,0:05:26.13,0:05:27.59,SC_Bottom,千雪,0,0,0,,B-but...\Nで でも
+Dialogue: 0,0:05:31.45,0:05:32.66,SC_Bottom,千雪,0,0,0,,I'm sorry.\Nごめんね
+Dialogue: 0,0:05:34.19,0:05:38.11,SC_Bottom,甘奈,0,0,0,,No, no, I'm the one who \Nsaid something weird...\Nううん 天菜こそ変なこと言っちゃった
+Dialogue: 0,0:05:43.00,0:05:45.40,SC_Bottom,千雪,0,0,0,,Oh, right, here!\Nあっ そうだ これ
+Dialogue: 0,0:05:45.90,0:05:50.47,SC_Bottom,千雪,0,0,0,,I thought it might be helpful \Nfor your studies, if you'd like.\Nあのね よかったらお勉強用にって思って
+Dialogue: 0,0:05:51.68,0:05:56.63,SC_Bottom,甘奈,0,0,0,,Wow, is this {\i1}Apricot{\i0}? \NChiyuki-san, you had this on hand?\Nあっ これアプリコット ちゆきさん持ってたの
+Dialogue: 0,0:05:56.63,0:06:01.61,SC_Bottom,千雪,0,0,0,,No, I just found it at a \Nused bookstore yesterday.\Nううん たまたま 昨日 古本屋さんで見つけて
+Dialogue: 0,0:06:01.94,0:06:03.73,SC_Bottom,甘奈,0,0,0,,It's so cute!\Nかわいい
+Dialogue: 0,0:06:04.98,0:06:07.72,SC_Bottom,千雪,0,0,0,,Yeah, it's such... such \Na wonderful magazine...\Nうん
+Dialogue: 0,0:06:07.72,0:06:13.19,SC_Bottom,千雪,0,0,0,,Yeah, it's such... such \Na wonderful magazine...\Nすっごく すっごくすてきな雑誌なの
+Dialogue: 0,0:06:15.26,0:06:16.93,SC_Bottom,甜花,0,0,0,,Chiyuki-san...\Nちゆきさん
+Dialogue: 0,0:06:18.35,0:06:23.27,SC_Bottom,甘奈,0,0,0,,Thank you, Chiyuki-san. \NI'll study really hard!\Nありがとう ちゆきさん あまなめっちゃ勉強するから
+Dialogue: 0,0:06:23.92,0:06:24.70,SC_Bottom,千雪,0,0,0,,Um-hum.\Nうん
+Dialogue: 0,0:06:36.75,0:06:39.96,SC_Bottom,千雪,0,0,0,,The three of us are Alstroemeria...\N3人で アルストロメリア
+Dialogue: 0,0:06:42.59,0:06:45.68,SC_Bottom,千雪,0,0,0,,It's just my own practice session...\N私 ただの自主練なのに
+Dialogue: 0,0:06:50.65,0:06:51.69,SC_Bottom,甘奈,0,0,0,,Hey...\Nねぇ
+Dialogue: 0,0:06:51.97,0:06:52.77,SC_Bottom,甜花,0,0,0,,\Nうん
+Dialogue: 0,0:06:54.59,0:07:00.45,SC_Bottom,甘奈,0,0,0,,You know, Chiyuki-san... do you \Nthink she might really like {\i1}Apricot{\i0}?\Nあのね 千雪さんって もしかして アプリコット
+Dialogue: 0,0:07:00.97,0:07:03.78,SC_Bottom,甜花,0,0,0,,I thought so too. It seems like... \Nshe really likes it a lot...\Nてんかも 思った
+Dialogue: 0,0:07:03.78,0:07:08.69,SC_Bottom,甜花,0,0,0,,I thought so too. It seems like... \Nshe really likes it a lot...\Nとっても好きだったりするのかもって
+Dialogue: 0,0:07:15.15,0:07:17.91,SC_Bottom,千雪,0,0,0,,I wonder why... me...\N何でだろう 私
+Dialogue: 0,0:07:20.06,0:07:23.20,SC_Bottom,千雪,0,0,0,,Why did it have to be {\i1}Apricot{\i0}?\N何で アプリコットなんだろう
+Dialogue: 0,0:07:26.65,0:07:28.09,SC_Bottom,甜花,0,0,0,,This is the last one...\Nしょ
+Dialogue: 0,0:07:28.96,0:07:31.48,SC_Bottom,甜花,0,0,0,,This is the last one...\Nこれで 最後
+Dialogue: 0,0:07:33.07,0:07:34.38,SC_Bottom,甜花,0,0,0,,Good wor—\Nお疲れさ
+Dialogue: 0,0:07:33.67,0:07:36.95,SC_Bottom,制作人,0,0,0,,Could we possibly \Nreschedule the meeting again?\Nもう一度 お打ち合わせの時間をいただけませんか
+Dialogue: 0,0:07:37.33,0:07:42.29,SC_Bottom,制作人,0,0,0,,No, but the idea that the Grand Prix has\N already been decided in favor of Osaki is...\Nいや ですが グランプリが大崎に内定してるっていうのは
+Dialogue: 0,0:07:46.28,0:07:48.90,SC_Bottom,制作人,0,0,0,,It's an honor, but...\Nとても光栄なことではあるんですが
+Dialogue: 0,0:08:10.64,0:08:13.62,SC_Bottom,甘奈,0,0,0,,When the three of us are together, \Nour voices are unbeatable!\N3人揃ったら 最強の声だね
+Dialogue: 0,0:08:14.64,0:08:15.32,SC_Bottom,千雪,0,0,0,,Yeah!\Nうん
+Dialogue: 0,0:08:16.15,0:08:20.49,SC_Bottom,甘奈,0,0,0,,Ahh!\Nああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+Dialogue: 0,0:08:18.13,0:08:19.77,SC_Bottom,甜花,0,0,0,,Wh-what's wrong?!\N补
+Dialogue: 0,0:08:21.57,0:08:24.48,SC_Bottom,甘奈,0,0,0,,M-my stomach growled!\Nお お腹になっちゃった
+Dialogue: 0,0:08:25.67,0:08:29.10,SC_Bottom,甜花,0,0,0,,Na-chan... are you hungry?\Nなあちゃん お腹空いてるの?
+Dialogue: 0,0:08:29.65,0:08:31.60,SC_Bottom,千雪,0,0,0,,Here, take this.\Nじゃあ これ
+Dialogue: 0,0:08:33.95,0:08:36.37,SC_Bottom,甘奈,0,0,0,,Wow, really?!\Nあっ いいの
+Dialogue: 0,0:08:36.63,0:08:42.33,SC_Bottom,千雪,0,0,0,,Of course. Right now, you need \Nall the energy you can get.\Nうん あまなちゃん 今は運とエネルギー使わないといけないんだもん
+Dialogue: 0,0:08:42.33,0:08:44.51,SC_Bottom,千雪,0,0,0,,You should do your best for the audition.\Nオーディション頑張らなきゃね
+Dialogue: 0,0:08:46.92,0:08:50.15,SC_Bottom,甘奈,0,0,0,,Yeah, thank you... I'll do my best!\Nうん ありがとう 頑張るね
+Dialogue: 0,0:08:50.71,0:08:53.49,SC_Bottom,甘奈,0,0,0,,Oh, speaking of caramel, that reminds me—\Nあっ キャラメルで思い出したんだけど
+Dialogue: 0,0:08:53.49,0:08:56.37,SC_Bottom,甘奈,0,0,0,,there's this super cute flavored \Nlatte that just came out!\Nめっちゃかわいいフレーバーラテが出てたの
+Dialogue: 0,0:08:57.17,0:08:59.35,SC_Bottom,千雪,0,0,0,,Oh, r-really?\Nそ そうなの
+Dialogue: 0,0:08:59.35,0:09:01.97,SC_Bottom,甘奈,0,0,0,,Yeah! I'll get one for you tomorrow!\Nうん 明日買ってくるね
+Dialogue: 0,0:09:03.15,0:09:06.92,SC_Bottom,千雪,0,0,0,,Thank you, that sounds really wonderful...\Nありがとう それはすっごく素敵
+Dialogue: 0,0:09:06.92,0:09:10.63,SC_Bottom,千雪,0,0,0,,but... um, remember to make \Ngood use of your time...\Nだけど あの 時間を大事にして
+Dialogue: 0,0:09:11.00,0:09:13.82,SC_Bottom,千雪,0,0,0,,and take care of yourself too, okay?\N自分のことも考えなきゃ ね?
+Dialogue: 0,0:09:15.45,0:09:17.57,SC_Bottom,甘奈,0,0,0,,Y-you're right.\Nそ そうだよね
+Dialogue: 0,0:09:17.57,0:09:20.12,SC_Bottom,千雪,0,0,0,,Ah, I'm sorry...\Nあ あの ごめんなさい
+Dialogue: 0,0:09:20.12,0:09:21.61,SC_Bottom,千雪,0,0,0,,I didn't mean to sound preachy.\N偉そうなこと
+Dialogue: 0,0:09:21.16,0:09:23.48,SC_Bottom,甘奈,0,0,0,,No, you're absolutely right!\Nううん その通りだよ
+Dialogue: 0,0:09:23.48,0:09:25.58,SC_Bottom,甘奈,0,0,0,,I'm the one who should apologize...\Nアマナがごめんなさい
+Dialogue: 0,0:09:24.91,0:09:27.59,SC_Bottom,千雪,0,0,0,,N-no, there's no need to apologize.\Nううん ごめんだなんて
+Dialogue: 0,0:09:37.66,0:09:39.39,SC_Bottom,甘奈,0,0,0,,This is my fault...\Nアマナのせいだ
+Dialogue: 0,0:09:41.13,0:09:42.60,SC_Bottom,千雪,0,0,0,,This is my fault.\N私のせい
+Dialogue: 0,0:09:43.26,0:09:46.22,SC_Bottom,甘奈,0,0,0,,I'm overthinking it and \Nmaking things weird.\N気にしすぎて変な感じにしちゃってる
+Dialogue: 0,0:09:47.19,0:09:51.84,SC_Bottom,甘奈,0,0,0,,Chiyuki-san is just trying to support me.\N千雪さん アマナのこと応援してくれてるだけなのに
+Dialogue: 0,0:09:52.70,0:09:55.78,SC_Bottom,千雪,0,0,0,,She probably realizes... \Nthat I'm being strange...\Nきっと 分かっちゃってるよね
+Dialogue: 0,0:09:55.78,0:09:58.55,SC_Bottom,千雪,0,0,0,,She probably realizes... \Nthat I'm being strange...\N私 変だもん
+Dialogue: 0,0:09:59.23,0:10:02.79,SC_Bottom,甜花,0,0,0,,Na-chan... Chiyuki-san... \NI... can't do anything...\Nなーちゃん 千ゆきさん
+Dialogue: 0,0:10:02.79,0:10:06.08,SC_Bottom,甜花,0,0,0,,Na-chan... Chiyuki-san... \NI... can't do anything...\Nてんか 何にも
+Dialogue: 0,0:10:07.36,0:10:10.50,SC_Bottom,千雪,0,0,0,,The three of us, as Alstroemeria...\N3人で アルストロメリア
+Dialogue: 0,0:10:31.56,0:10:34.28,SC_Bottom,千雪,0,0,0,,\Nああああああああああああああああああああ
+Dialogue: 0,0:10:35.96,0:10:38.28,SC_Bottom,千雪,0,0,0,,\Nああああああああああああああああああああ
+Dialogue: 0,0:10:41.98,0:10:44.30,SC_Bottom,千雪,0,0,0,,\Nああああああああああああああああああああ
+Dialogue: 0,0:10:45.72,0:10:49.22,SC_Bottom,千雪,0,0,0,,\Nああああああああああああああああああああ
+Dialogue: 0,0:11:03.60,0:11:05.13,SC_Bottom,甘奈,0,0,0,,It's mom and the others.\Nママ達だ
+Dialogue: 0,0:11:09.30,0:11:11.08,SC_Bottom,甜花,0,0,0,,N-no.\Nあっ うううん
+Dialogue: 0,0:11:18.92,0:11:22.32,SC_Bottom,千雪,0,0,0,,Sorry for showing up at \Nthis hour unannounced.\Nごめんなさい 遅くに突然
+Dialogue: 0,0:11:22.32,0:11:24.74,SC_Bottom,甘奈,0,0,0,,No, it's okay. What's going on?\Nううん どうしたの
+Dialogue: 0,0:11:25.24,0:11:29.51,SC_Bottom,千雪,0,0,0,,Um... I really wanted to \Nsee you both and talk.\Nあの どうしても会ってお話したくて
+Dialogue: 0,0:11:33.10,0:11:34.08,SC_Bottom,千雪,0,0,0,,So...\Nあのね
+Dialogue: 0,0:11:35.03,0:11:40.35,SC_Bottom,千雪,0,0,0,,I want to try out for the \N{\i1}Apricot{\i0} audition, too.\Nプリコットのオーディション 私も 受けたい
+Dialogue: 0,0:11:46.84,0:11:54.97,SC_Bottom,千雪,0,0,0,,You probably guessed... {\i1}Apricot{\i0} is a \Nmagazine I've always admired.\Nわかっちゃってるよね アプリコットは本当は私の すごく憧れの雑誌
+Dialogue: 0,0:11:56.13,0:12:02.41,SC_Bottom,千雪,0,0,0,,That's why, as a devoted reader, my honest \Nwish is for Amana-chan to win, but....\Nだからアマナちゃんに勝ってほしいのは 愛読者としての本当の気持ち
+Dialogue: 0,0:12:02.41,0:12:03.21,SC_Bottom,千雪,0,0,0,,That's why, as a devoted reader, my honest \Nwish is for Amana-chan to win, but....\Nでも
+Dialogue: 0,0:12:04.24,0:12:08.12,SC_Bottom,千雪,0,0,0,,It's also true that I can't just \Nsit back and watch... I'm sorry.\N見てるだけじゃいられないのも本当なの
+Dialogue: 0,0:12:08.12,0:12:09.24,SC_Bottom,千雪,0,0,0,,It's also true that I can't just \Nsit back and watch... I'm sorry.\Nごめんなさい
+Dialogue: 0,0:12:12.51,0:12:16.65,SC_Bottom,千雪,0,0,0,,If I stay like this, I won't \Nbe able to truly support you.\Nこのままじゃ私 天菜ちゃんをちゃんと応援できない
+Dialogue: 0,0:12:17.32,0:12:21.76,SC_Bottom,千雪,0,0,0,,So I realized I want to enter,\N for my own sake.\Nだから 私は私のために出たいって思って
+Dialogue: 0,0:12:26.08,0:12:28.81,SC_Bottom,千雪,0,0,0,,Please... Amana-chan.\Nお願いします 天菜ちゃん
+Dialogue: 0,0:12:39.16,0:12:43.01,SC_Bottom,甘奈,0,0,0,,Yes! Of course... absolutely!\Nうん そんなのもちろんだよ
+Dialogue: 0,0:12:43.48,0:12:45.84,SC_Bottom,甘奈,0,0,0,,I'll have to give it everything I've got!\Nアマナ 頑張らなくちゃ
+Dialogue: 0,0:12:52.87,0:12:58.88,SC_Bottom,千雪,0,0,0,,I think it's jealousy... \NEven I am surprised by it.\N嫉妬…だと思うの 自分でも驚いちゃうけど
+Dialogue: 0,0:13:00.28,0:13:04.28,SC_Bottom,千雪,0,0,0,,I {\i1}know{\i0} it is... \NI just love that magazine, that's all...\N分かってるの 私はただ好きってだけで
+Dialogue: 0,0:13:04.59,0:13:08.12,SC_Bottom,千雪,0,0,0,,it's not like I could make \Nthat world any more beautiful.\N私があの世界を素敵にできるわけじゃない
+Dialogue: 0,0:13:11.12,0:13:16.11,SC_Bottom,千雪,0,0,0,,If Amana-chan were the cover girl,\N I'd still be absolutely thrilled.\N天菜ちゃんがカバーガールだったら私 絶対ときめくもん
+Dialogue: 0,0:13:17.69,0:13:19.86,SC_Bottom,叶月,0,0,0,,So, which one would you {\i1}really{\i0} prefer?\Nもうどっちなの?
+Dialogue: 0,0:13:21.14,0:13:23.83,SC_Bottom,千雪,0,0,0,,It's truly both.\Nどっちもホントなの
+Dialogue: 0,0:13:27.39,0:13:30.24,SC_Bottom,千雪,0,0,0,,So, in a way...\Nだから なんていうか
+Dialogue: 0,0:13:31.05,0:13:35.20,SC_Bottom,千雪,0,0,0,,Auditioning is really \Njust to satisfy myself.\N私がオーディションを受けるのは ただの自己満足
+Dialogue: 0,0:13:36.35,0:13:38.51,SC_Bottom,叶月,0,0,0,,But that's not the only reason, is it?\Nだけでもないんじゃない?
+Dialogue: 0,0:13:39.50,0:13:43.65,SC_Bottom,叶月,0,0,0,,If jealousy is going to create issues,\N嫉妬のせいで迷惑かけちゃうくらいなら
+Dialogue: 0,0:13:43.65,0:13:46.93,SC_Bottom,叶月,0,0,0,,wouldn't it be better to show \Nyour support by competing openly?\N堂々と戦うことで応援したい
+Dialogue: 0,0:13:49.09,0:13:49.97,SC_Bottom,叶月,0,0,0,,Right?\Nでしょ?
+Dialogue: 0,0:13:55.68,0:13:58.19,SC_Bottom,叶月,0,0,0,,Give it your best, Alstroemeria!\N頑張れ
+Dialogue: 0,0:13:58.19,0:13:59.76,SC_Bottom,叶月,0,0,0,,Give it your best, Alstroemeria!\Nアルストロメリア
+Dialogue: 0,0:14:02.34,0:14:05.75,SC_Bottom,甘奈,0,0,0,,You know, I don't have much confidence...\Nアマナね 全然自信なくて
+Dialogue: 0,0:14:06.45,0:14:10.70,SC_Bottom,甘奈,0,0,0,,When I said, "I'll do my best," the \Ntruth is... it's kind of the opposite.\N頑張らなくちゃって言ったのは本当は 反対
+Dialogue: 0,0:14:11.68,0:14:13.59,SC_Bottom,甘奈,0,0,0,,Maybe it's the same for both of us, but...\N二人ともかもだけど
+Dialogue: 0,0:14:14.07,0:14:17.12,SC_Bottom,甘奈,0,0,0,,there's a chance only one \Nof us will be chosen, right?\Nどっちかだけ選ばれないことだってあるよね
+Dialogue: 0,0:14:17.76,0:14:20.71,SC_Bottom,甘奈,0,0,0,,If that happens, we might not be \Nable to be like we were before...\Nそうなったら 今までみたいに
+Dialogue: 0,0:14:28.32,0:14:29.51,SC_Bottom,甜花,0,0,0,,If...\Nもし
+Dialogue: 0,0:14:31.11,0:14:34.94,SC_Bottom,甜花,0,0,0,,If you're really worried... \Nthen you don't have to enter!\Nもし心配だったら
+Dialogue: 0,0:14:34.94,0:14:37.19,SC_Bottom,甜花,0,0,0,,If you're really worried... \Nthen you don't have to enter!\Nで でなくていいよ
+Dialogue: 0,0:14:38.02,0:14:42.25,SC_Bottom,甜花,0,0,0,,But... if you do enter, \Nyou have to give it your all.\Nで 出るなら全力 出さなきゃ
+Dialogue: 0,0:14:44.05,0:14:46.49,SC_Bottom,甘奈,0,0,0,,Yeah, and I think Chiyuki-san \Nwill too... for sure...\Nうん
+Dialogue: 0,0:14:46.49,0:14:49.21,SC_Bottom,甘奈,0,0,0,,Yeah, and I think Chiyuki-san \Nwill too... for sure...\N千雪さんもきっと…
+Dialogue: 0,0:14:51.78,0:14:54.51,SC_Bottom,甘奈,0,0,0,,But, because\Nでも だから
+Dialogue: 0,0:14:56.62,0:14:57.75,SC_Bottom,甘奈,0,0,0,,we're both giving it our best...\N全力だから
+Dialogue: 0,0:14:59.69,0:15:01.93,SC_Bottom,甘奈,0,0,0,,I'm scared of what will happen \Nif one of us loses.\N負けた時が怖いよ
+Dialogue: 0,0:15:11.62,0:15:13.05,SC_Bottom,甘奈,0,0,0,,Producer!\Nプロデューサーさん
+Dialogue: 0,0:15:13.48,0:15:15.52,SC_Bottom,甘奈,0,0,0,,I'm sorry! I...\Nごめんなさい あまな
+Dialogue: 0,0:15:16.67,0:15:18.39,SC_Bottom,甘奈,0,0,0,,I'm withdrawing from the audition!\Nオーディションを辞退します
+Dialogue: 0,0:15:18.39,0:15:19.69,SC_Bottom,千雪,0,0,0,,Amana-chan!\Nあまなちゃん
+Dialogue: 0,0:15:21.09,0:15:24.56,SC_Bottom,甘奈,0,0,0,,I gave it a lot of thought.\Nアマナね いっぱい考えたの
+Dialogue: 0,0:15:25.10,0:15:28.28,SC_Bottom,甘奈,0,0,0,,I want to support Chiyuki-san! \NShe's the one who truly suits {\i1}Apricot{\i0}!\Nアマナ チユキさんを応援したい
+Dialogue: 0,0:15:28.28,0:15:30.95,SC_Bottom,甘奈,0,0,0,,I want to support Chiyuki-san! \NShe's the one who truly suits {\i1}Apricot{\i0}!\Nアプリコットにぴったりなの チユキさんなんだもん
+Dialogue: 0,0:15:32.52,0:15:37.33,SC_Bottom,甘奈,0,0,0,,I know that, and yet...\N I don't even know how to \Ngive it my best anymore...\Nそれが分かってるのに どうやって頑張ったらいいのか分からないよ
+Dialogue: 0,0:15:41.08,0:15:42.46,SC_Bottom,制作人,0,0,0,,Amana, could you hear me out—?\Nアマナ、聞いてくれるか
+Dialogue: 0,0:15:42.46,0:15:48.86,SC_Bottom,甘奈,0,0,0,,I'm so sorry! I know doing something \Nlike this is causing a lot of trouble...\Nごめんなさい すっごく すっごく迷惑かかっちゃうよね こんなこと
+Dialogue: 0,0:15:49.92,0:15:54.83,SC_Bottom,甘奈,0,0,0,,But going into the audition with \Nthese feelings isn't right either!\Nでも こんな風に思いながら出場するの もっと良くないよ
+Dialogue: 0,0:15:57.79,0:15:58.81,SC_Bottom,制作人,0,0,0,,Amana...\Nアマナ
+Dialogue: 0,0:16:05.85,0:16:08.55,SC_Bottom,千雪,0,0,0,,I'll withdraw from the audition.\N私がエントリーを取りやめます
+Dialogue: 0,0:16:08.55,0:16:10.44,SC_Bottom,甘奈,0,0,0,,Ch-Chiyuki-san...\Nち ちえきさん
+Dialogue: 0,0:16:10.91,0:16:16.31,SC_Bottom,千雪,0,0,0,,This is my fault. I... didn't \Nunderstand anything.\N私のせいです 私 何にも分かってなかった
+Dialogue: 0,0:16:17.60,0:16:21.84,SC_Bottom,千雪,0,0,0,,I had convinced myself that Amana-chan \Nwould win the Grand Prix...\Nあまなちゃんがグランプリになるってどこかで信じ込んでて
+Dialogue: 0,0:16:22.61,0:16:27.00,SC_Bottom,千雪,0,0,0,,I thought I understood what it meant to \Ntruly compete and how Amana-chan felt,\N本当に勝負するっていうことも 天菜ちゃんのことも
+Dialogue: 0,0:16:27.79,0:16:30.00,SC_Bottom,千雪,0,0,0,,but I really didn't.\N分かってるつもりで全然
+Dialogue: 0,0:16:35.92,0:16:37.67,SC_Bottom,制作人,0,0,0,,I understand how both of you feel.\N二人の気持ちは分かった
+Dialogue: 0,0:16:38.32,0:16:43.13,SC_Bottom,制作人,0,0,0,,But I called you here today because \Nthere's something I need to tell you.\Nでもな 今日呼んだのは伝えなきゃいけないことがあるからなんだ
+Dialogue: 0,0:16:44.91,0:16:46.09,SC_Bottom,制作人,0,0,0,,The truth is, for this audition...\Nこのオーディション
+Dialogue: 0,0:16:47.84,0:16:49.84,SC_Bottom,制作人,0,0,0,,Amana has already been selected \Nas the Grand Prix winner.\N天野のグランプリが内定した
+Dialogue: 0,0:16:52.86,0:16:56.35,SC_Bottom,制作人,0,0,0,,I thought your decision to enter the \Naudition was admirable, Chiyuki.\Nオーディションに出るって決断 俺はすごいと思った
+Dialogue: 0,0:16:56.88,0:16:59.38,SC_Bottom,制作人,0,0,0,,But... the Grand Prix won't be yours.\Nでも グランプリは千雪じゃない
+Dialogue: 0,0:16:59.71,0:17:03.23,SC_Bottom,制作人,0,0,0,,I want you to think about whether there's \Nstill a reason for you to compete.\Nそれでも出場する理由があるのか 考えてほしい
+Dialogue: 0,0:17:05.06,0:17:07.63,SC_Bottom,制作人,0,0,0,,I'm not fond of handling \Nthings this way, either.\N俺もこういうやり方は好きじゃないよ
+Dialogue: 0,0:17:07.63,0:17:12.58,SC_Bottom,制作人,0,0,0,,But the client made this decision after \Nevaluating Amana's past activities.\Nでも 先方がアマナのこれまでの活動を評価して 決めたことなんだ
+Dialogue: 0,0:17:13.99,0:17:17.28,SC_Bottom,制作人,0,0,0,,I'll respect Amana's choice \Nabout whether or not to withdraw.\N辞退するかは アマナの意見を尊重する
+Dialogue: 0,0:17:18.33,0:17:22.05,SC_Bottom,制作人,0,0,0,,No matter what decision you make, \NI'll support you both fully.\Nどんな結論を出したとしても 全力でサポートする
+Dialogue: 0,0:17:23.06,0:17:23.88,SC_Bottom,制作人,0,0,0,,So...\Nだから
+Dialogue: 0,0:17:24.85,0:17:28.28,SC_Bottom,制作人,0,0,0,,I want you to think hard about \Nwhat's truly most important to you.\N何が自分にとって 一番大事なのか
+Dialogue: 0,0:17:28.28,0:17:29.86,SC_Bottom,制作人,0,0,0,,I want you to think hard about \Nwhat's truly most important to you.\Nもう一回考えてみてほしい
+Dialogue: 0,0:17:31.86,0:17:34.15,SC_Bottom,千雪,0,0,0,,For me...\N私にとって
+Dialogue: 0,0:17:34.15,0:17:38.17,SC_Bottom,甘奈,0,0,0,,The most... important thing...\N一番 大事なこと
+Dialogue: 0,0:17:46.02,0:17:48.69,SC_Bottom,甘奈,0,0,0,,How about we walk a little \Nmore before heading back?\Nもうちょっと歩いてから帰らない?
+Dialogue: 0,0:17:51.60,0:17:52.44,SC_Bottom,甜花,0,0,0,,Yeah...\Nうん
+Dialogue: 0,0:17:59.93,0:18:02.97,SC_Bottom,甘奈,0,0,0,,When the three of us are together, \Nour voices are unbeatable!\N3人そろったら 最強の声だね
+Dialogue: 0,0:18:03.57,0:18:05.61,SC_Bottom,千雪,0,0,0,,My voice... no, I can't hear it... \Nit's like it won't come out.\N声…
+Dialogue: 0,0:18:05.61,0:18:09.24,SC_Bottom,千雪,0,0,0,,My voice... no, I can't hear it... \Nit's like it won't come out.\Nううん 聞こえないよ
+Dialogue: 0,0:18:09.24,0:18:10.62,SC_Bottom,千雪,0,0,0,,My voice... no, I can't hear it... \Nit's like it won't come out.\N出てないみたい
+Dialogue: 0,0:18:13.98,0:18:17.25,SC_Bottom,甘奈,0,0,0,,She's the one who truly suits {\i1}Apricot{\i0}!\Nアプリコットにぴったりなの 千雪さんなんだもん
+Dialogue: 0,0:18:24.79,0:18:26.67,SC_Bottom,千雪,0,0,0,,\Nあー
+Dialogue: 0,0:18:29.41,0:18:31.33,SC_Bottom,千雪,0,0,0,,\Nあーー
+Dialogue: 0,0:18:34.05,0:18:35.25,SC_Bottom,甘奈,0,0,0,,Chiyuki-san?\Nちゆきさん?
+Dialogue: 0,0:18:45.37,0:18:49.67,SC_Bottom,千雪,0,0,0,,I used to practice vocal \Nexercises here a lot.\Nあたし 前はよくここで発声練習してて
+Dialogue: 0,0:18:52.30,0:18:53.78,SC_Bottom,千雪,0,0,0,,\N补
+Dialogue: 0,0:18:53.78,0:18:57.12,SC_Bottom,千雪,0,0,0,,\N补
+Dialogue: 0,0:18:59.85,0:19:02.25,SC_Bottom,千雪,0,0,0,,It seems like my voice still \Nisn't coming out properly...\Nまだ喉が開いてないみたい
+Dialogue: 0,0:19:04.97,0:19:06.82,SC_Bottom,甜花,0,0,0,,M-Me too...\Nて てんかも
+Dialogue: 0,0:19:08.27,0:19:10.87,SC_Bottom,甜花,0,0,0,,\N补
+Dialogue: 0,0:19:11.45,0:19:15.57,SC_Bottom,甜花,0,0,0,,\N补
+Dialogue: 0,0:19:16.06,0:19:19.14,SC_Bottom,甘奈,0,0,0,,Ch-Chiyuki-san! Um...\Nち 千雪さん あの
+Dialogue: 0,0:19:24.07,0:19:26.64,SC_Bottom,甘奈,0,0,0,,I... I...\Nあ あの
+Dialogue: 0,0:19:27.44,0:19:28.17,SC_Bottom,千雪,0,0,0,,Yes...\Nうん
+Dialogue: 0,0:19:31.53,0:19:38.30,SC_Bottom,甘奈,0,0,0,,S-sorry, it looks like I'm \Nlosing my voice too...\Nご ごめん あまなもちょっと出ないみたい 声
+Dialogue: 0,0:19:40.82,0:19:42.20,SC_Bottom,千雪,0,0,0,,Amana-chan...\N天ちゃん
+Dialogue: 0,0:19:50.18,0:19:50.89,SC_Bottom,千雪,0,0,0,,Hey...\Nねえ
+Dialogue: 0,0:19:56.68,0:19:59.65,SC_Bottom,千雪,0,0,0,,How about we play the \N"Game of Opposites" again?\N反対ごっこ しよっか
+Dialogue: 0,0:20:09.88,0:20:15.98,SC_Bottom,千雪,0,0,0,,Amana-chan! I hope you fail the audition!\Nあまなちゃん オーディション落ちたらいいのにー
+Dialogue: 0,0:20:19.79,0:20:22.49,SC_Bottom,千雪,0,0,0,,Let your voice out! All right, \NAmana-chan, it's your turn!\Nっ出していいの声
+Dialogue: 0,0:20:22.49,0:20:25.45,SC_Bottom,千雪,0,0,0,,Let your voice out! All right, \NAmana-chan, it's your turn!\Nはい アマナちゃんの番
+Dialogue: 0,0:20:31.38,0:20:37.88,SC_Bottom,甜花,0,0,0,,I hope both of you fail the audition!\N二人とも オーディション落ちたらいいのに
+Dialogue: 0,0:20:41.88,0:20:45.27,SC_Bottom,甜花,0,0,0,,Na-chan! It's okay if you lose!\Nなーちゃん 負けてもいいよ
+Dialogue: 0,0:20:45.64,0:20:51.02,SC_Bottom,甜花,0,0,0,,If you lose, it'll... destroy \Nwhat's most important!\N負ければ こわれちゃうから 大事なもの!
+Dialogue: 0,0:21:03.06,0:21:10.66,SC_Bottom,甘奈,0,0,0,,Chiyuki-san! I hope you fail the audition!\Nちゆきさん オーディション 落ちればいいのにー
+Dialogue: 0,0:21:11.39,0:21:19.71,SC_Bottom,甘奈,0,0,0,,I really, really, really hope you fail!\Nちゆきさんが 絶対 絶対絶対 落ちればいいのに
+Dialogue: 0,0:21:20.34,0:21:24.33,SC_Bottom,甜花,0,0,0,,Both of you... fail!\N2人とも 落ちて!
+Dialogue: 0,0:21:28.38,0:21:31.01,SC_Bottom,千雪,0,0,0,,I want to lose!\N負けた——い!
+Dialogue: 0,0:21:31.01,0:21:35.94,SC_Bottom,甘奈,0,0,0,,I want to lose, too!\N天野も 負けた——い
+Dialogue: 0,0:21:38.31,0:21:43.32,SC_Bottom,甜花,0,0,0,,Both of you... lose!\N2人とも 負けて——
+Dialogue: 0,0:21:46.39,0:21:51.46,SC_Bottom,千雪,0,0,0,,And... I absolutely hate Alstroemeria!\Nもう アルストロメリアなんか
+Dialogue: 0,0:21:51.46,0:21:52.65,SC_Bottom,千雪,0,0,0,,And... I absolutely hate Alstroemeria!\N大っきらい
+Dialogue: 0,0:21:53.95,0:21:58.46,SC_Bottom,甜花,0,0,0,,Alstroemeria is... not what's most important!\Nアルストロメリア なんか
+Dialogue: 0,0:21:58.46,0:22:02.38,SC_Bottom,甜花,0,0,0,,Alstroemeria is... not what's most important!\N一番 大事じゃ ない
+Dialogue: 0,0:22:05.38,0:22:09.52,SC_Bottom,甘奈,0,0,0,,Alstroemeria is... Alstroemeria is...\Nアルストロメリアなんか
+Dialogue: 0,0:22:09.52,0:22:13.25,SC_Bottom,甘奈,0,0,0,,Alstroemeria is... Alstroemeria is...\Nアルストロメリア なんか
+Dialogue: 0,0:22:15.04,0:22:19.36,SC_Bottom,千雪,0,0,0,,... is something I hate, and \Nit's not what's most important.\N大っきらいだし 一番大事じゃない
+Dialogue: 0,0:22:22.36,0:22:23.65,SC_Bottom,甘奈,0,0,0,,Chiyuki-san...\Nちゆきさん
+Dialogue: 0,0:22:26.48,0:22:29.01,SC_Bottom,千雪,0,0,0,,The "Game of Opposites" is over.\N反対ごっこ 終わり
+Dialogue: 0,0:22:46.68,0:22:50.36,Default,,0,0,0,歌,分かっていて欲しいなんて
+Dialogue: 0,0:22:46.68,0:22:50.36,Default,,0,0,0,歌CN,
+Dialogue: 0,0:22:50.54,0:22:55.12,Default,,0,0,0,歌,一方的すぎるオビニオン
+Dialogue: 0,0:22:50.54,0:22:55.12,Default,,0,0,0,歌CN,
+Dialogue: 0,0:22:55.12,0:22:58.60,Default,,0,0,0,歌,素直になれたらいいのに
+Dialogue: 0,0:22:55.12,0:22:58.60,Default,,0,0,0,歌CN,
+Dialogue: 0,0:22:58.74,0:23:03.30,Default,,0,0,0,歌,単純なことを邪魔するプライド
+Dialogue: 0,0:22:58.74,0:23:03.30,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:03.30,0:23:06.84,Default,,0,0,0,歌,大事にしたいと思ったり
+Dialogue: 0,0:23:03.30,0:23:06.84,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:07.04,0:23:10.98,Default,,0,0,0,歌,喜ばせてあげたいと思ったり
+Dialogue: 0,0:23:07.04,0:23:10.98,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:11.14,0:23:15.20,Default,,0,0,0,歌,特別だって気づいたら
+Dialogue: 0,0:23:11.14,0:23:15.20,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:15.44,0:23:18.84,Default,,0,0,0,歌,言葉にしてあげなくちゃ
+Dialogue: 0,0:23:15.44,0:23:18.84,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:19.02,0:23:23.08,Default,,0,0,0,歌,You're the one　あなたは私の太陽
+Dialogue: 0,0:23:19.02,0:23:23.08,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:23.08,0:23:27.14,Default,,0,0,0,歌,You're only one　私はあなたの太陽
+Dialogue: 0,0:23:23.08,0:23:27.14,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:27.14,0:23:31.44,Default,,0,0,0,歌,どんなときも優しく照らし合おうよ
+Dialogue: 0,0:23:27.14,0:23:31.44,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:31.72,0:23:35.06,Default,,0,0,0,歌,届けるためのプリリィクエル
+Dialogue: 0,0:23:31.72,0:23:35.06,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:35.28,0:23:39.30,Default,,0,0,0,歌,これから始まる未来のすべてが
+Dialogue: 0,0:23:35.28,0:23:39.30,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:39.30,0:23:43.56,Default,,0,0,0,歌,楽しいことばかりじゃないとしても
+Dialogue: 0,0:23:39.30,0:23:43.56,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:43.70,0:23:47.86,Default,,0,0,0,歌,手をつないだら歩き出そう
+Dialogue: 0,0:23:43.70,0:23:47.86,Default,,0,0,0,歌CN,
+Dialogue: 0,0:23:48.00,0:23:53.52,Default,,0,0,0,歌,ずっとだよ　with you　この愛を信じてる
+Dialogue: 0,0:23:48.00,0:23:53.52,Default,,0,0,0,歌CN,

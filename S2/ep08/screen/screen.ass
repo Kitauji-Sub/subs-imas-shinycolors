@@ -1,0 +1,24 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Active Line: 5
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:03:42.03,0:03:46.12,Signs,TEXT (MAGAZINE COVER),0,0,0,,{\an9\fs15\c&H000000&\3c&HFFFFFF&}Trinkets Found on the Emerald Planet\N{\c&HFFFFFF&\3c&H813FEF&}A Stroll Through Town with a Popular Model\N{\3c&H435246&}First Time Ever! Editorial Team's Top Pick\Nfor Specialty Shops!
+Dialogue: 0,0:03:51.91,0:03:57.84,Signs,TEXT,0,0,0,,{\an8\fs16\c&H7570DF&\3c&HC1E4FF&}Making It Yourself is Both Fun and Tasty!
+Dialogue: 0,0:05:49.11,0:05:51.03,Signs,TEXT,0,0,0,,{\an8\fs16\c&H00FFF7&\3c&H000000&}Head to Your Dream City in Your Ideal Fashion!\NHow About Trying a Storybook Picnic?
+Dialogue: 0,0:12:20.01,0:12:22.84,Signs,TEXT,0,0,0,,{\an7\fs15\c&H000000&\3c&HFFFFFF&}- Hello. I heard from Amana-chan \Nthat there's going to be an audition \Nfor {\i1}Apricot{\i0}. I have something I'd like \Nto discuss with you. Would that be okay?\N{\c&HFFFFFF&\3c&H6E3D00&}- Hey. Did something happen?\N{\c&H000000&\3c&HFFFFFF&}- I'd like to participate in the audition as well.\N- I know it's a lot to ask, but Apricot has been \Nmy dream magazine for so long, and I just \Ncan't give up on it...
+Dialogue: 0,0:12:49.58,0:12:52.20,Signs,SIGN,0,0,0,,{\an8\c&H0102A8&\3c&H00A8FF&}Izakaya
+Dialogue: 0,0:22:46.65,0:23:03.00,Signs,TEXT,0,0,0,,{\an9\fad(300,000)\fs15\c&H0102A8&\3c&HC1E4FF&}Cover Girl: Amana Osaki\N{\c&H0067A9&\3c&HC1E4FF&}I want to make smiling flowers\N bloom with everyone.\N
