@@ -13,18 +13,19 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 07 (1080p) [D1580B12].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 07 (1080p) [D1580B12].mkv
+Last Style Storage: Default
+Audio File: C:/Users/scree/Desktop/ep7.mkv
+Video File: C:/Users/scree/Desktop/ep7.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.625000
-Scroll Position: 255
-Active Line: 263
-Video Position: 32070
+Video Zoom Percent: 0.750000
+Scroll Position: 235
+Active Line: 251
+Video Position: 33653
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Default,Arial,48,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Default,思源黑体 Medium,75,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0.3,2,10,10,15,1
 Style: SC_Bottom,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,2,30,30,30,1
 Style: SC_Top,方正FW轻吟体 简 B,65,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.1,0,1,2.5,0,8,30,30,30,1
 Style: 注释,思源黑体,50,&H00F0F0F0,&H000000FF,&H002F2F2F,&H00000000,-1,0,0,0,100,100,1.1,0,1,3,0,7,50,10,70,1
@@ -33,267 +34,258 @@ Style: TITLE,思源黑体 Medium,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,colors,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", ["星组"] = "&H8DF6FF&", ["花组"] = "&H9E69FF&", ["放学后"] = "&H3383FA&", ["迷光"] = "&H1C01AF&", ["水组"] = "&H984D38&",} function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,utility,0,0,0,code once anystyle,function string:split(delimiter)     local result = {}     local from = 1     local delim_from, delim_to = string.find(self, delimiter, from, true)     while delim_from do         if (delim_from ~= 1) then             table.insert(result, string.sub(self, from, delim_from-1))         end         from = delim_to + 1         delim_from, delim_to = string.find(self, delimiter, from, true)     end     if (from <= #self) then table.insert(result, string.sub(self, from)) end     return result end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,global settings,0,0,0,code once anystyle,_zh_jp_gap = 45; graphic_height_bottom = 30; graphic_height_top = 25; tc_fontname = "獅尾圓體-Bold"; max_width_separator = 500
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,overlap checking,0,0,0,code once anystyle,start_time = -1 end_time = -1 right_pos = -1 align = -1 overlap = false function check_overlap (line_start_time, line_end_time, line_align) if line_start_time >= start_time and line_end_time <= end_time and line_align == align then return true else return false end end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,overlap = check_overlap(orgline.start_time, orgline.end_time, orgline.styleref.align) start_time = orgline.start_time end_time = orgline.end_time align = orgline.styleref.align line_text = orgline.text_stripped:split("\\N")  line_text_tags = orgline.text:split("\\N") line_width = _G.aegisub.text_extents(orgline.styleref, line_text[1] and line_text[1] or "") line_left = (meta.res_x - orgline.eff_margin_l - orgline.eff_margin_r - line_width) / 2 + orgline.eff_margin_l zh_jp_gap = line_text[2] and _zh_jp_gap or 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,short_line = line_width <= 300; graphic_char_gap = short_line and 0 or 30; extended = {_G.aegisub.text_extents(orgline.styleref, orgline.actor)}; single_char_width = _G.aegisub.text_extents(orgline.styleref, " 一"); name_gap = orgline.styleref.fontname == tc_fontname and orgline.height / 2.5 or orgline.height / 5; separator_grad_length = short_line and 6-(single_char_width*0.5) or 50;
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator width,0,0,0,code line anystyle,function sigmoid(x, L, U, k) k = k or 0.5 return L + (U - L) * math.tanh(k * (x - L) / (U - L)) end; separator_width = nil; separator_width = line_width < 300 and line_width or sigmoid(line_width, 250, max_width_separator, 0.1) + graphic_char_gap;
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext unless overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and line.styleref.fontname or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}!loopctx.state.zhjp == 1 and line_text_tags[loopctx.state.zhjp] or line_text[loopctx.state.zhjp]!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext if overlap,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and "" or "FOT-Humming Std B"!\3c&H202020&\3a&H5F&}- !loopctx.state.zhjp == 1 and line_text_tags[loopctx.state.zhjp] or line_text[loopctx.state.zhjp]!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator,0,0,0,template line anystyle notext unless overlap,!relayer(9)!!line.actor == "" and skip() or ""!{!set("separator_gap", line.styleref.fontname == tc_fontname and line.height / 5 or line.height / 10)!!util.make_grad(line_left+separator_width-separator_grad_length- (single_char_width*0.5),line_left+separator_width,1,false)!\pos(!short_line and (line_left) or (line_left - (single_char_width*0.5))!,!line.styleref.align == 2 and line.top - separator_gap - zh_jp_gap or line.bottom + separator_gap + zh_jp_gap!)\an!line.styleref.align == 2 and 1 or 7!\bord0.2\blur1\shad0\p1\alpha!util.get_grad("&H01&","&HFF&")!}m 0 0 l 1920 0 1920 2 0 2 0 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle notext unless overlap,!short_line and skip() or ""!!line.actor == "" and skip() or ""!{\an7\pos(!line_left - (single_char_width*0.5)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&\p1}m 0 0 b 6 0 10 -5 10 -11 b 10 -5 14 0 20 0 b 14 0 10 5 10 11 b 10 5 6 0 0 0 m 19 5 b 19 7 21 9 23 9 b 21 9 19 11 19 13 b 19 11 17 9 15 9 b 17 9 19 7 19 5 m 23 -10 b 23 -9 24 -8 25 -8 b 24 -8 23 -7 23 -6 b 23 -7 22 -8 21 -8 b 22 -8 23 -9 23 -10
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext unless overlap,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&}!line.actor!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext if overlap,!line.actor == "" and skip() or ""!{!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20} {\fscx80}& !line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,,=====STAFF=====
-Dialogue: 0,0:22:29.95,0:22:42.01,SC_Bottom,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：北宇治字幕组Deep State\N翻译：FFU2\N后期：Scrpr
+Dialogue: 0,0:23:16.29,0:23:19.79,SC_Bottom,,0,0,0,,{\an8\fscx60\fscy60\fad(1000,0)\pos(960,130)\fn悠哉字体\b1\bord.06\blur4}字幕制作：北宇治字幕组Deep State\N翻译：Scrpr　FFU2（校对）　双柱（协助）\N后期：Scrpr
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
-Dialogue: 0,0:23:16.29,0:23:19.79,SC_Bottom,,0,0,0,,{\fn悠哉字体\b1\pos(960,705)\fscy105\fad(1000,0)\bord0.5\blur4}（标题是什么？）弥足珍贵之物
+Dialogue: 0,0:23:16.29,0:23:19.79,SC_Bottom,,0,0,0,,{\fn悠哉字体\b1\pos(960,705)\fscy105\fad(1000,0)\bord0.5\blur4}弥足珍贵之物
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,,=====NOTES=====
 Comment: 0,0:11:05.81,0:11:08.25,SC_Bottom,,0,0,0,,=====TEXTS=====
-Dialogue: 0,0:00:18.98,0:00:21.00,SC_Bottom,制作人,0,0,0,,啊 咲耶\Nあっ 咲耶
-Dialogue: 0,0:00:21.00,0:00:24.00,SC_Bottom,制作人,0,0,0,,我出去一趟 抱歉慌慌张张的\N行ってくる バタバタしててごめんな
-Dialogue: 0,0:00:25.50,0:00:26.66,SC_Bottom,咲耶,0,0,0,,注意安全\N気をつけて
-Dialogue: 0,0:00:26.66,0:00:28.53,SC_Bottom,恋钟,0,0,0,,啊 咲耶\Nあっ 咲耶
-Dialogue: 0,0:00:31.71,0:00:33.06,SC_Bottom,咲耶,0,0,0,,辛苦了\Nお疲れ様
-Dialogue: 0,0:00:33.06,0:00:35.18,SC_Bottom,恋钟,0,0,0,,咲耶 你也辛苦了\N咲耶 お疲れ
-Dialogue: 0,0:00:35.87,0:00:39.01,SC_Bottom,恋钟,0,0,0,,啊啊 我还得讨论歌曲相关的事儿\Nああ 曲のこと話さんとやのに
-Dialogue: 0,0:00:39.20,0:00:44.16,SC_Bottom,恋钟,0,0,0,,最近大家都贼忙 很久没在一起了吧\Nもう最近 みんないそがしかけん 一度も集まれてないやろ
-Dialogue: 0,0:00:44.16,0:00:45.35,SC_Bottom,制作人,0,0,0,,恋钟！\N恋鐘
-Dialogue: 0,0:00:46.30,0:00:48.29,SC_Bottom,恋钟,0,0,0,,现在就来\N今行く
-Dialogue: 0,0:00:49.02,0:00:51.82,SC_Bottom,恋钟,0,0,0,,找个时间大家一起见见面吧\Nみんなで会える時間 見つけよう
-Dialogue: 0,0:00:51.82,0:00:53.84,SC_Bottom,咲耶,0,0,0,,好啊 一路平安\Nああ 行ってらっしゃい
-Dialogue: 0,0:00:53.84,0:00:55.90,SC_Bottom,恋钟,0,0,0,,我出发了—\N行ってきまーす
-Dialogue: 0,0:01:19.35,0:01:22.10,SC_Bottom,恋钟,0,0,0,,我忘记带便当了~~~！！\Nお弁当忘れた!
-Dialogue: 0,0:01:22.10,0:01:26.48,SC_Bottom,恋钟,0,0,0,,这可是我的自豪之作 如果可以的话 就请咲耶你吃了\Nまりすごくお弁当やけん!咲耶、よかったら食べて!
-Dialogue: 0,0:01:30.77,0:01:36.03,SC_Bottom,咲耶,0,0,0,,谢谢 既然你这么说 那我就恭敬不如从命了\Nありがとう それなら お言葉に甘えさせてもらおう
-Dialogue: 0,0:01:36.69,0:01:38.52,SC_Bottom,咲耶,0,0,0,,我会好好品尝的\N大切にいただくよ
-Dialogue: 0,0:01:45.51,0:01:46.62,SC_Bottom,咲耶,0,0,0,,但是\Nけれど
-Dialogue: 0,0:01:50.49,0:01:53.48,SC_Bottom,咲耶,0,0,0,,一个人的时候 还是会有些…\N一人は 少しだけ
-Dialogue: 0,0:03:28.18,0:03:29.39,SC_Bottom,咲耶,0,0,0,,一路平安\Nいってらっしゃい
-Dialogue: 0,0:03:47.16,0:03:49.79,SC_Bottom,摩美美,0,0,0,,周五早上有采访\N金曜朝は取材
-Dialogue: 0,0:03:50.10,0:03:53.37,SC_Bottom,恋钟,0,0,0,,周末日程安排得满满的~~~\N土日はうちがパンパンやし
-Dialogue: 0,0:03:53.82,0:03:55.90,SC_Bottom,摩美美,0,0,0,,我也有安排\N私も予定あり
-Dialogue: 0,0:03:56.56,0:03:59.20,SC_Bottom,结华,0,0,0,,刚刚我跟制作人确认过了\N今 プロデューサーに確認したけど
-Dialogue: 0,0:03:59.20,0:04:02.34,SC_Bottom,结华,0,0,0,,周一下午我们可以勉强见一面\N月曜午後 ギリで集まれるっぽい!
-Dialogue: 0,0:04:04.92,0:04:07.10,SC_Bottom,咲耶,0,0,0,,忙点好啊\N忙しいのはいいことだ
-Dialogue: 0,0:04:10.88,0:04:11.74,SC_Bottom,咲耶,0,0,0,,在\Nはい
-Dialogue: 0,0:04:12.48,0:04:15.55,SC_Bottom,STAFF,0,0,0,,白濑小姐 抱歉 久等了 接下来就请多指教了\N白瀬さんお待たせしました よろしくお願いします
-Dialogue: 0,0:04:15.55,0:04:17.10,SC_Bottom,咲耶,0,0,0,,请多指教\Nよろしくお願いします
-Dialogue: 0,0:04:30.50,0:04:33.13,SC_Bottom,咲耶,0,0,0,,对了 结华来消息了哦\Nあっ結華と連絡がついたよ
-Dialogue: 0,0:04:33.89,0:04:39.59,SC_Bottom,咲耶,0,0,0,,「时间太紧迫 我得先走了 抱歉」 她是这么说的\N押しちゃってもうすぐ現場を出るとこ ごめん とのことだ。
-Dialogue: 0,0:04:39.59,0:04:43.09,SC_Bottom,恋钟,0,0,0,,大家都很忙 也没啥办法吧\Nみんな忙しいけん しょんなかよ
-Dialogue: 0,0:04:43.09,0:04:44.69,SC_Bottom,咲耶,0,0,0,,是啊 就是啊\Nああ そうだね
-Dialogue: 0,0:04:45.29,0:04:49.68,SC_Bottom,恋钟,0,0,0,,雾子那边还要花点时间 我们先开始吧\N霧子もまだかかりそうやけん 先話してよう
-Dialogue: 0,0:04:50.23,0:04:51.75,SC_Bottom,摩美美,0,0,0,,嗯…\Nん
-Dialogue: 0,0:04:57.91,0:05:01.16,SC_Bottom,咲耶,0,0,0,,那样的话 我把大家的笔记汇总在一起吧\Nそれなら 私がメモをまとめるとするよ
-Dialogue: 0,0:05:02.12,0:05:03.75,SC_Bottom,恋钟,0,0,0,,谢谢您嘞\Nありがとう
-Dialogue: 0,0:05:04.33,0:05:07.77,SC_Bottom,摩美美,0,0,0,,话说回来 为什么是在仓库\Nっていうか なんで倉庫?
-Dialogue: 0,0:05:07.77,0:05:13.79,SC_Bottom,恋钟,0,0,0,,摩美美 作战会议就得在这样的地方整\N麻美々 作戦会議は とがんとこでやるって決まっとると
-Dialogue: 0,0:05:13.79,0:05:15.45,SC_Bottom,摩美美,0,0,0,,诶—？\Nええ
-Dialogue: 0,0:05:18.70,0:05:19.96,SC_Bottom,恋钟,0,0,0,,咲耶？\N咲耶?
-Dialogue: 0,0:05:20.74,0:05:25.01,SC_Bottom,咲耶,0,0,0,,不 没什么 时间紧迫 我们开始吧\Nいや いいんだ 時間もないし始めようか
-Dialogue: 0,0:05:42.55,0:05:44.20,SC_Bottom,结华,0,0,0,,我回来了\Nただいまー
-Dialogue: 0,0:05:44.58,0:05:46.76,SC_Bottom,雾子,0,0,0,,欢迎回来 结华\Nおかえりなさい 結華ちゃん
-Dialogue: 0,0:05:47.53,0:05:51.41,SC_Bottom,结华,0,0,0,,雾雾子 抱歉哦 谢谢你等我\Nキイリンごめんね 見てくれてありがとう
-Dialogue: 0,0:05:51.79,0:05:56.12,SC_Bottom,雾子,0,0,0,,不 其实我这边也才刚结束\Nううん わたしもおしまいだけになっちゃって
-Dialogue: 0,0:05:56.12,0:05:59.02,SC_Bottom,结华,0,0,0,,果然日程还是安排得太紧了吗…\Nやっぱスケジュール無理やったか
-Dialogue: 0,0:05:59.34,0:06:05.09,SC_Bottom,雾子,0,0,0,,那个…对不起…我也得走了\Nあの ごめん ねわたしもう 行かなきゃ
-Dialogue: 0,0:06:05.52,0:06:09.07,SC_Bottom,制作人,0,0,0,,抱歉啊 没赶上大家都在的时候到\Nごめんな みんな居られる時間に間に合わなくて
-Dialogue: 0,0:06:09.07,0:06:12.60,SC_Bottom,结华,0,0,0,,哪里哪里 不是制作人你的问题\Nいやいやいや プロデューサーのせいじゃないから
-Dialogue: 0,0:06:14.21,0:06:18.03,SC_Bottom,雾子,0,0,0,,制作人先生 那个 这个\Nプロデューサーさん あ あの これ
-Dialogue: 0,0:06:19.82,0:06:21.44,SC_Bottom,雾子,0,0,0,,是咲耶写的\N咲耶さんから
-Dialogue: 0,0:06:29.95,0:06:31.51,SC_Bottom,结华,0,0,0,,哇——\Nわぁー
-Dialogue: 0,0:06:31.88,0:06:34.27,SC_Bottom,结华,0,0,0,,咲耶耶 好厉害\Nさくやん すごい!
-Dialogue: 0,0:06:35.18,0:06:40.17,SC_Bottom,结华,0,0,0,,嗯  哥特…主题…\Nえっと…ゴシック…世界観…
-Dialogue: 0,0:06:41.41,0:06:47.56,SC_Bottom,摩美美,0,0,0,,或者…可以加入一些之前没用过的声音？\Nそれか…やったことない音を入れてみるとか?
-Dialogue: 0,0:06:47.56,0:06:51.30,SC_Bottom,恋钟,0,0,0,,嗯…也不只是音乐本身\Nうーん 音楽もそうやけど
-Dialogue: 0,0:06:51.92,0:06:53.30,SC_Bottom,摩美美,0,0,0,,不只是？\Nやけど?
-Dialogue: 0,0:06:53.62,0:06:58.40,SC_Bottom,恋钟,0,0,0,,现在我们要让我们真正想要传达的东西\N今うちらが 本当に伝えたかことを
-Dialogue: 0,0:06:58.40,0:06:59.77,SC_Bottom,恋钟,0,0,0,,能够传达到\N伝えんば
-Dialogue: 0,0:07:06.44,0:07:07.41,SC_Bottom,咲耶,0,0,0,,确实\Nそうだね
-Dialogue: 0,0:07:09.05,0:07:12.29,SC_Bottom,咲耶,0,0,0,,说起来 恋钟 你时间上没问题吗\Nっと 恋鐘 時間は平気かい?
-Dialogue: 0,0:07:13.03,0:07:16.09,SC_Bottom,恋钟,0,0,0,,呜哇 我得跑路了\Nうわ もう行かんと
-Dialogue: 0,0:07:16.09,0:07:18.33,SC_Bottom,恋钟,0,0,0,,大家 抱歉啊—\Nみんな ごめん
-Dialogue: 0,0:07:29.72,0:07:33.48,SC_Bottom,结华,0,0,0,,确实 大家都很珍视这首歌呢\N確かに 大切な歌にしたいよね
-Dialogue: 0,0:07:34.09,0:07:37.50,SC_Bottom,结华,0,0,0,,要分享的内容整理的很完美 谢谢你咲耶\N共有ばっちり 咲耶んありがとう
-Dialogue: 0,0:07:40.24,0:07:41.44,SC_Bottom,结华,0,0,0,,怎么了吗\Nどうかした?
-Dialogue: 0,0:07:41.44,0:07:46.73,SC_Bottom,制作人,0,0,0,,啊 没事 就是觉得咲耶有点…\Nあっいや 何となく咲耶にしては
-Dialogue: 0,0:07:50.05,0:07:54.91,SC_Bottom,结华,0,0,0,,「考虑到当前情况 大家已经将工作往前推进一些了」\N状況を考えて みんなで少しばかり進めておいたよ
-Dialogue: 0,0:07:55.84,0:08:01.04,SC_Bottom,结华,0,0,0,,「我们没问题的 希望你们别担心」\N私たちは大丈夫 心配しないでほしい
-Dialogue: 0,0:08:02.43,0:08:05.94,SC_Bottom,结华,0,0,0,,「工作 辛苦了」\N お仕事 本当にお疲れ様
-Dialogue: 0,0:08:11.55,0:08:14.79,SC_Bottom,结华,0,0,0,,感觉咲耶说的话也没什么特别的\N三峰は別に普通だと思うけどな
-Dialogue: 0,0:08:15.14,0:08:16.33,SC_Bottom,制作人,0,0,0,,是这样吗\Nそうか
-Dialogue: 0,0:08:16.85,0:08:23.77,SC_Bottom,结华,0,0,0,,而且你看 当一个人说「我没问题的」时 不就是希望你信任她吗\Nそれにほら 大丈夫って言ってる間は 信じてもらえた方がありがたいじゃん
-Dialogue: 0,0:08:55.63,0:08:58.27,SC_Bottom,咲耶,0,0,0,,今天真是久违的在一个地方工作呢\N今日は久しぶりに一緒の現場だね
-Dialogue: 0,0:08:58.27,0:09:00.36,SC_Bottom,咲耶,0,0,0,,我很期待的哦\N心待ちにしていたよ
-Dialogue: 0,0:09:00.36,0:09:02.55,SC_Bottom,结华,0,0,0,,嗯 说的是呢\Nうん そうだよね
-Dialogue: 0,0:09:03.01,0:09:03.79,SC_Bottom,咲耶,0,0,0,,是啊\Nああ
-Dialogue: 0,0:09:04.48,0:09:07.03,SC_Bottom,咲耶,0,0,0,,就算不见面 我们也可以传达自己想说的\N会わなくても言葉は伝えられるけれど
-Dialogue: 0,0:09:07.39,0:09:11.61,SC_Bottom,咲耶,0,0,0,,但相比这样面对面交流来说还是差了不少\Nこうして眼差しを合わせる会話とは違うものだからさ
-Dialogue: 0,0:09:12.22,0:09:14.71,SC_Bottom,结华,0,0,0,,果然比起面对面还是有区别？\Nやっぱり直接じゃないと違う?
-Dialogue: 0,0:09:16.77,0:09:20.79,SC_Bottom,结华,0,0,0,,咲耶耶 比如说\Nさくやん 例えば
-Dialogue: 0,0:09:20.79,0:09:22.66,SC_Bottom,结华,0,0,0,,会寂寞…之类的？\N寂しかったりする?
-Dialogue: 0,0:09:22.66,0:09:23.64,SC_Bottom,咲耶,0,0,0,,嗯？\Nうん?
-Dialogue: 0,0:09:25.69,0:09:27.20,SC_Bottom,咲耶,0,0,0,,没有这种事情\Nそんなことは
-Dialogue: 0,0:09:31.39,0:09:37.43,SC_Bottom,咲耶,0,0,0,,不 也对 有时候确实会感觉有点寂寞\Nいや そうだね 少しだけさびしく感じることもあるよ
-Dialogue: 0,0:09:42.15,0:09:45.60,SC_Bottom,咲耶,0,0,0,,但是 只是偶尔见一面 就足够让我充满活力了\Nけれどた たまに会うだけで元気になれる
-Dialogue: 0,0:09:46.06,0:09:47.81,SC_Bottom,咲耶,0,0,0,,所以没问题的\Nだから大丈夫さ
-Dialogue: 0,0:09:48.12,0:09:52.68,SC_Bottom,结华,0,0,0,,没问题吗…咲耶的防御值真高啊\N平気か 咲耶んはガードがかたいなあ
-Dialogue: 0,0:09:53.48,0:09:55.44,SC_Bottom,结华,0,0,0,,那 换个问题\Nじゃあ 別の質問
-Dialogue: 0,0:09:57.97,0:10:02.07,SC_Bottom,结华,0,0,0,,最近的散装L'Antica 你怎么看\N最近のバラバラなアンティーカ どう思う?
-Dialogue: 0,0:10:02.60,0:10:03.74,SC_Bottom,咲耶,0,0,0,,诶？\Nえっ?
-Dialogue: 0,0:10:04.20,0:10:07.37,SC_Bottom,结华,0,0,0,,5个人一起工作的机会 没多少吧\N5人揃っての仕事ってあんまりないでしょ
-Dialogue: 0,0:10:07.77,0:10:08.60,SC_Bottom,咲耶,0,0,0,,啊\Nあぁ
-Dialogue: 0,0:10:10.13,0:10:13.18,SC_Bottom,结华,0,0,0,,我想问问咲耶耶你对此 有什么看法\Nさくきゃん的にはどうなのかなって
-Dialogue: 0,0:10:13.86,0:10:18.93,SC_Bottom,咲耶,0,0,0,,这个 不正说明大家都在辛勤工作 都备受青睐吗\Nそれは みんなが頑張っていて 愛されているということだろ
-Dialogue: 0,0:10:19.43,0:10:22.50,SC_Bottom,咲耶,0,0,0,,对我来说 这就是最重要的\N私にとって それ以上のことはないよ
-Dialogue: 0,0:10:24.27,0:10:26.25,SC_Bottom,结华,0,0,0,,那个啊 咲耶耶…\Nあのさ さくやん
-Dialogue: 0,0:10:33.40,0:10:36.09,SC_Bottom,结华,0,0,0,,呃啊 已经到拍摄时间了\Nうわ もう撮影の時間じゃ
-Dialogue: 0,0:10:37.58,0:10:40.94,SC_Bottom,咲耶,0,0,0,,你去吧 账我来结\N行こう 先にお会計を済ませてくるよ
-Dialogue: 0,0:10:41.65,0:10:44.24,SC_Bottom,结华,0,0,0,,啊…嗯\Nあっ うん
-Dialogue: 0,0:10:54.98,0:10:57.46,SC_Bottom,FATHER,0,0,0,,晚饭一个人吃 没关系吗\N夕飯 一人で平気か?
-Dialogue: 0,0:10:57.80,0:11:00.55,SC_Bottom,咲耶,0,0,0,,嗯 我没问题的\Nうん 私は大丈夫
-Dialogue: 0,0:11:18.96,0:11:20.63,SC_Bottom,结华,0,0,0,,咲耶耶 辛苦了\Nさくやん お疲れ
-Dialogue: 0,0:11:21.13,0:11:22.54,SC_Bottom,咲耶,0,0,0,,辛苦了\Nお疲れさま
-Dialogue: 0,0:11:22.54,0:11:24.49,SC_Bottom,结华,0,0,0,,下一个就是我了吧\N次三峰だよね
-Dialogue: 0,0:11:24.76,0:11:25.51,SC_Bottom,咲耶,0,0,0,,是啊\Nああ
-Dialogue: 0,0:11:26.25,0:11:28.25,SC_Bottom,结华,0,0,0,, 那个啊 咲耶耶\Nあのさ、さくやん
-Dialogue: 0,0:11:28.25,0:11:30.17,SC_Bottom,STAFF,0,0,0,,三峰小姐 拜托了\N三峰さん おねがいします
-Dialogue: 0,0:11:30.77,0:11:33.30,SC_Bottom,结华,0,0,0,,好——！\Nはーい
-Dialogue: 0,0:11:33.30,0:11:35.78,SC_Bottom,结华,0,0,0,,那 待会儿见\Nじゃあ またね
-Dialogue: 0,0:11:37.55,0:11:38.67,SC_Bottom,咲耶,0,0,0,,一路平安\Nいってらっしゃい
-Dialogue: 0,0:11:42.04,0:11:44.26,SC_Bottom,制作人,0,0,0,,咲耶 辛苦了\N咲耶 お疲れさま
-Dialogue: 0,0:11:44.26,0:11:46.93,SC_Bottom,咲耶,0,0,0,,不 您也辛苦了\Nうん お疲れさま
-Dialogue: 0,0:11:48.06,0:11:49.05,SC_Bottom,制作人,0,0,0,,没问题吗\N大丈夫か?
-Dialogue: 0,0:11:49.67,0:11:54.38,SC_Bottom,咲耶,0,0,0,,嗯 没问题的 我得走了\Nああ 私は大丈夫さ そろそろ移動しないと
-Dialogue: 0,0:11:55.98,0:11:58.86,SC_Bottom,制作人,0,0,0,,摩美美虽然也要来 但不在同一个时间啊\N摩美々も来るけど 入れ違いだな
-Dialogue: 0,0:11:59.24,0:12:03.04,SC_Bottom,制作人,0,0,0,,对了 我等会把明天的日程表发给你们\Nあっ 明日の進行表 あとで送るから
-Dialogue: 0,0:12:03.04,0:12:05.32,SC_Bottom,咲耶,0,0,0,,谢谢 我会好好确认的\Nありがとう 確認しておくよ
-Dialogue: 0,0:12:06.90,0:12:09.87,SC_Bottom,制作人,0,0,0,,大家已经很久没有聚在一起过了吧\N全員で泊まりなんて 久しぶりだな
-Dialogue: 0,0:12:11.41,0:12:14.40,SC_Bottom,制作人,0,0,0,,可算来了一个很符合L'Antica的工作\Nやっと アンティーカらしい仕事だぞ
-Dialogue: 0,0:12:16.25,0:12:17.28,SC_Bottom,咲耶,0,0,0,,说的是呢\Nそうだね
-Dialogue: 0,0:12:18.07,0:12:24.05,SC_Bottom,咲耶,0,0,0,,但是 即使没有L'Antica的团体活动 大家也不会觉得困扰吧\Nでも アンティーカとしての活動がなくても みんなは困らないんじゃないかな
-Dialogue: 0,0:12:26.28,0:12:30.83,SC_Bottom,咲耶,0,0,0,,恋钟 摩美美 结华 雾子\N恋鐘も 摩美々も 結華も 霧子も
-Dialogue: 0,0:12:31.18,0:12:33.92,SC_Bottom,咲耶,0,0,0,,她们在个人的工作中已经足够闪耀\N個人の仕事で十分輝いている
-Dialogue: 0,0:12:35.35,0:12:39.19,SC_Bottom,咲耶,0,0,0,,不如说 如果L'Antica反而拖累了她们的话\Nそれをむしろ アンティーカが妨げるなら
-Dialogue: 0,0:12:42.53,0:12:46.00,SC_Bottom,咲耶,0,0,0,,如果她们能继续闪耀下去\N彼女たちが輝けるのなら
-Dialogue: 0,0:12:46.00,0:12:49.60,SC_Bottom,咲耶,0,0,0,,她们不在这里也一定可以…\Nきっとそれは ここじゃなくたって
-Dialogue: 0,0:12:52.46,0:12:57.77,SC_Bottom,咲耶,0,0,0,,283事务所的成员并不一定非得加入组合吧\N283プロでは 必ずしもユニットに所属しなくてはならないってわけじゃないんだろ?
-Dialogue: 0,0:12:57.77,0:12:59.06,SC_Bottom,制作人,0,0,0,,咲耶…\N咲耶
-Dialogue: 0,0:12:59.06,0:13:03.10,SC_Bottom,咲耶,0,0,0,,不 我没别的意思\Nいや そんな大したことじゃないんだ
-Dialogue: 0,0:13:03.10,0:13:05.47,SC_Bottom,咲耶,0,0,0,,只是随便问了两句\Nたまに聞いてみただけさ
-Dialogue: 0,0:13:19.46,0:13:23.94,SC_Bottom,咲耶,0,0,0,,现在恋钟她们应该在第二个地点进行拍摄了吧\N今頃　恋鐘たちは 2か所目で撮影をしているところかな
-Dialogue: 0,0:13:25.92,0:13:30.53,SC_Bottom,咲耶,0,0,0,,天公作美 一定能出好片的\N天気にもめぐまれて きっとすてきな作品になるだろうね
-Dialogue: 0,0:13:39.55,0:13:41.76,SC_Bottom,STAFF,0,0,0,,好的 卡\Nはい カット
-Dialogue: 0,0:13:41.76,0:13:43.35,SC_Bottom,STAFF,0,0,0,,OK了\Nオッケーでーす
-Dialogue: 0,0:13:50.47,0:13:52.40,SC_Bottom,摩美美,0,0,0,,我回来了\Nただいま
-Dialogue: 0,0:13:53.56,0:13:56.57,SC_Bottom,恋钟,0,0,0,,你咋勒 摩美美\Nど どうけんしたとね 摩美々
-Dialogue: 0,0:13:56.57,0:13:58.38,SC_Bottom,雾子,0,0,0,,这里 坐下吧\Nこっち 座って
-Dialogue: 0,0:13:58.83,0:14:00.45,SC_Bottom,摩美美,0,0,0,,谢谢\Nありがとう
-Dialogue: 0,0:14:02.27,0:14:09.03,SC_Bottom,摩美美,0,0,0,,回来的时候脚崴了一下 踩到水坑里面去了\N座ってありがとう戻ってくる時ちょっと転んで 水たまりにぱっしゃんって
-Dialogue: 0,0:14:09.03,0:14:10.01,SC_Bottom,摩美美,0,0,0,,好疼…\Nいた…
-Dialogue: 0,0:14:10.79,0:14:12.50,SC_Bottom,恋钟,0,0,0,,哪里受伤了吗\Nとっかうったと
-Dialogue: 0,0:14:13.50,0:14:17.25,SC_Bottom,摩美美,0,0,0,,没事的 这种程度不算什么\N大丈夫 このくらい平気だし
-Dialogue: 0,0:14:17.25,0:14:21.11,SC_Bottom,恋钟,0,0,0,,浑身都是泥水还说这种话 可不中嘞\Nそうかんドロンコになっていいよってもう ダメばい!
-Dialogue: 0,0:14:22.38,0:14:26.59,SC_Bottom,恋钟,0,0,0,,呜 如果你联系我的话我肯定飞奔过去帮你\Nもう 呼んでくれたらダッシュでとんでったのに
-Dialogue: 0,0:14:26.89,0:14:31.23,SC_Bottom,恋钟,0,0,0,,有什么事要跟别人说 知道吗\N何かあったらちゃんと言うたよ 分かった
-Dialogue: 0,0:14:33.54,0:14:38.25,SC_Bottom,摩美美,0,0,0,,我知道了 那我说了\N分かりました じゃあ言います
-Dialogue: 0,0:14:39.70,0:14:41.88,SC_Bottom,摩美美,0,0,0,,咲耶提到了\N咲耶が話してた
-Dialogue: 0,0:14:43.64,0:14:46.36,SC_Bottom,摩美美,0,0,0,,关于解散的可能性\N解散の可能性について
-Dialogue: 0,0:14:57.79,0:14:59.75,SC_Bottom,咲耶,0,0,0,,结华 车到站了\N結華 着いたよ
-Dialogue: 0,0:15:07.71,0:15:09.46,SC_Bottom,咲耶,0,0,0,,长途奔波 辛苦了\N長旅お疲れ様
-Dialogue: 0,0:15:09.89,0:15:11.81,SC_Bottom,咲耶,0,0,0,,看上去对接的还没到\N迎えはまだのようだね
-Dialogue: 0,0:15:12.34,0:15:14.01,SC_Bottom,结华,0,0,0,,要给打个电话吗\N電話してみようか
-Dialogue: 0,0:15:15.68,0:15:17.41,SC_Bottom,咲耶,0,0,0,,虽然也可以\Nそれもいいけれど
-Dialogue: 0,0:15:18.16,0:15:18.94,SC_Bottom,结华,0,0,0,,嗯？\N ん？
-Dialogue: 0,0:15:27.03,0:15:29.00,SC_Bottom,咲耶,0,0,0,,这里可以二人独享的夕阳\N二人だけの夕焼けだ
-Dialogue: 0,0:15:36.40,0:15:38.57,SC_Bottom,咲耶,0,0,0,,突然请你来这里 没问题吧\N誘ってしまってよかったかな
-Dialogue: 0,0:15:40.47,0:15:42.83,SC_Bottom,咲耶,0,0,0,,接送的人来之前可以在这里放松一下\N迎えが来るまではゆっくりするといい
-Dialogue: 0,0:15:43.37,0:15:46.93,SC_Bottom,咲耶,0,0,0,,如果你想一个人休息一下的话 我可以去别处走走\N一人で休みたいようだったら 少し歩いてくるから
-Dialogue: 0,0:15:47.28,0:15:48.10,SC_Bottom,结华,0,0,0,,诶？\Nえっ?
-Dialogue: 0,0:15:48.52,0:15:52.76,SC_Bottom,结华,0,0,0,,明明是咲耶耶你邀请我来的 却又要让我一个人独处？\Nさくやんが誘ったのに 三峰一人にされちゃう感じ?
-Dialogue: 0,0:15:53.09,0:15:59.38,SC_Bottom,咲耶,0,0,0,,啊 抱歉 我只是担心工作之后又长途跋涉 你会很疲惫\Nああ すまない 仕事の後の移動で疲れているんじゃないかと 心配になってね
-Dialogue: 0,0:16:00.34,0:16:02.39,SC_Bottom,结华,0,0,0,,担心吗…\N心配って
-Dialogue: 0,0:16:06.31,0:16:10.53,SC_Bottom,结华,0,0,0,,我说 该被担心的是咲耶耶你才对\Nあのさ 心配なのはさくやんのほうだよ
-Dialogue: 0,0:16:10.53,0:16:11.49,SC_Bottom,咲耶,0,0,0,,诶？\Nえっ?
-Dialogue: 0,0:16:11.95,0:16:17.28,SC_Bottom,结华,0,0,0,,到这种地步怎么也都看出来了 你最近状态不是很好吧\Nさすがに分かるよ 最近あんまり調子よくないでしょ
-Dialogue: 0,0:16:19.10,0:16:22.12,SC_Bottom,结华,0,0,0,,明明没有精神 却还要强颜欢笑\N本当は元気がないのに無理して笑ってる
-Dialogue: 0,0:16:35.00,0:16:38.27,SC_Bottom,结华,0,0,0,,这样的情况 真的很让人担心\Nうんそういうの すっごく心配
-Dialogue: 0,0:16:39.64,0:16:42.40,SC_Bottom,结华,0,0,0,,如果是一个人能解决的事情的话就算了\N一人で解決できることならいいけどさ
-Dialogue: 0,0:16:43.03,0:16:45.23,SC_Bottom,结华,0,0,0,,但既然不是 就跟我说啊\Nそうじゃないなら話してよ
-Dialogue: 0,0:16:47.19,0:16:51.39,SC_Bottom,咲耶,0,0,0,,谢谢你 能对我说这些话\Nありがとう そんなふうに言ってくれるなんて
-Dialogue: 0,0:16:53.45,0:16:54.76,SC_Bottom,咲耶,0,0,0,,但是…\Nでも
-Dialogue: 0,0:16:54.76,0:16:56.47,SC_Bottom,咲耶,0,0,0,,但是\Nでも
-Dialogue: 0,0:16:56.47,0:16:59.86,SC_Bottom,咲耶,0,0,0,,像结华你这么关心我的人在我身边\Nこんなふうに心配してくれる結華がいるのに
-Dialogue: 0,0:16:59.86,0:17:01.89,SC_Bottom,咲耶,0,0,0,,我还能有什么好烦恼的呢\N何の悩みがあると思う?
-Dialogue: 0,0:17:02.80,0:17:05.56,SC_Bottom,咲耶,0,0,0,,说实话 我感到非常幸福\N本当に幸せなんだ
-Dialogue: 0,0:17:07.09,0:17:13.47,SC_Bottom,结华,0,0,0,,你看 你就是这样 你总是这样啊\Nねえ そういうところ そういうところだってば
-Dialogue: 0,0:17:13.47,0:17:15.35,SC_Bottom,结华,0,0,0,,别再蒙混过关了\Nごまかすのやめてよ
-Dialogue: 0,0:17:16.03,0:17:19.56,SC_Bottom,结华,0,0,0,,在我们面前你总是挂着笑容对吧\N私達の前ではいつも笑顔だよね
-Dialogue: 0,0:17:19.56,0:17:21.47,SC_Bottom,结华,0,0,0,,那你什么时候会哭呢\Nじゃ いつ泣いてるの
-Dialogue: 0,0:17:21.96,0:17:23.63,SC_Bottom,结华,0,0,0,,是一个人偷偷抹眼泪吗？\N一人で泣いてるの?
-Dialogue: 0,0:17:26.53,0:17:29.37,SC_Bottom,结华,0,0,0,,等到无法挽回的时候就太迟了啊\N取り返しがつかなくなってからじゃ遅いんだよ
-Dialogue: 0,0:17:29.78,0:17:31.74,SC_Bottom,咲耶,0,0,0,,结 结华…\Nユ 結華…
-Dialogue: 0,0:17:33.53,0:17:37.92,SC_Bottom,结华,0,0,0,,说出来啊 让我们听听看啊 咲耶耶真正的情感\N言ってよ 見せてよ さくやんの気持ち!
-Dialogue: 0,0:17:43.63,0:17:45.65,SC_Bottom,,0,0,0,,咲耶！\N咲耶
-Dialogue: 0,0:17:56.20,0:17:57.35,SC_Bottom,咲耶,0,0,0,,大家…\Nみんな
-Dialogue: 0,0:17:58.30,0:18:03.91,SC_Bottom,恋钟,0,0,0,,咲耶 有啥想的 就得跟大家说出来啊\N咲耶 考えとることがあったら 言わんのよ
-Dialogue: 0,0:18:03.91,0:18:06.20,SC_Bottom,恋钟,0,0,0,,摩美美都告诉我了\N摩美々に教えてもらったと
-Dialogue: 0,0:18:06.20,0:18:06.91,SC_Bottom,咲耶,0,0,0,,诶？\Nえっ?
-Dialogue: 0,0:18:08.88,0:18:11.89,SC_Bottom,结华,0,0,0,,看吧 我就知道有什么事情\Nほら やっぱりなんかあるんちゃう
-Dialogue: 0,0:18:13.07,0:18:16.19,SC_Bottom,恋钟,0,0,0,,你一直在想很重要的事情对吧\N大事な言葉考えとっとやろ
-Dialogue: 0,0:18:16.50,0:18:20.16,SC_Bottom,恋钟,0,0,0,,好 那我们一起说出来 预备——\Nはい せーので言んば せーの!
-Dialogue: 0,0:18:20.21,0:18:24.83,SC_Bottom,咲耶,0,0,0,,等 等一下 烦恼什么的真的…\Nま 待ってくれ 悩みなんて 本当に
-Dialogue: 0,0:18:36.71,0:18:40.44,SC_Bottom,咲耶,0,0,0,,对不起 给你们添麻烦了\Nすまない 迷惑をかけて
-Dialogue: 0,0:18:41.35,0:18:43.01,SC_Bottom,恋钟,0,0,0,,才不是呢\Nそんなこと
-Dialogue: 0,0:18:43.01,0:18:44.35,SC_Bottom,摩美美,0,0,0,,不麻烦\N迷惑じゃない
-Dialogue: 0,0:18:50.88,0:18:52.69,SC_Bottom,咲耶,0,0,0,,我不是这个意思…\Nそんなつもりじゃ
-Dialogue: 0,0:18:53.99,0:19:01.45,SC_Bottom,咲耶,0,0,0,,我真的很喜欢L'Antica 喜欢大家\N私は アンティーカのことが みんなのことが大好きで
-Dialogue: 0,0:19:01.45,0:19:02.79,SC_Bottom,咲耶,0,0,0,,就是因为这么喜欢…\N大好きだから
-Dialogue: 0,0:19:11.36,0:19:15.83,SC_Bottom,咲耶,0,0,0,,就算大家…以后不会回到L'Antica\Nみんなが アンティーカに戻ってこなかったとしても
-Dialogue: 0,0:19:18.00,0:19:19.20,SC_Bottom,咲耶,0,0,0,,我也会为你们开心\N喜んで
-Dialogue: 0,0:19:22.28,0:19:24.39,SC_Bottom,FATHER,0,0,0,,晚饭一个人吃 没关系吗\N夕飯一人で平気か?
-Dialogue: 0,0:19:24.39,0:19:26.93,SC_Bottom,咲耶,0,0,0,,嗯 我没问题的\Nうん 私は大丈夫
-Dialogue: 0,0:19:27.45,0:19:30.48,SC_Bottom,FATHER,0,0,0,,咲耶真是个好孩子 爸爸我也要加油工作\N咲耶がいい子だから お父さん頑張れる
-Dialogue: 0,0:19:31.24,0:19:33.23,SC_Bottom,FATHER,0,0,0,,那 我出门了\Nじゃ 行ってくるな
-Dialogue: 0,0:19:33.64,0:19:34.82,SC_Bottom,咲耶,0,0,0,,一路平安\Nいってらっしゃい
-Dialogue: 0,0:19:40.30,0:19:42.27,SC_Bottom,咲耶,0,0,0,,会继续支持大家的…\N応援しなくちゃって
-Dialogue: 0,0:19:47.83,0:19:52.50,SC_Bottom,恋钟,0,0,0,,你说大家不会回到L'Antica 是啥意思？\Nみんながアンティートにもどってこんって どげん意味?
-Dialogue: 0,0:19:54.14,0:19:57.96,SC_Bottom,雾子,0,0,0,,因为大家都花了很多努力在个人的活动上\Nみんなが ソロ活動を頑張ったり
-Dialogue: 0,0:19:59.09,0:20:01.93,SC_Bottom,恋钟,0,0,0,,所以你就觉得我们会解散吗！？\Nそいで解散って思ったと
-Dialogue: 0,0:20:01.93,0:20:03.16,SC_Bottom,结华,0,0,0,,解散？\N解散?
-Dialogue: 0,0:20:07.76,0:20:09.95,SC_Bottom,结华,0,0,0,,咲耶耶 这种事情…\Nさくやん それは
-Dialogue: 0,0:20:15.99,0:20:19.77,SC_Bottom,结华,0,0,0,,这种事情 只是咲耶耶的误解而已啊\Nそんなの さくやんの勘違いだよ
-Dialogue: 0,0:20:22.74,0:20:24.51,SC_Bottom,结华,0,0,0,,我说\Nねぇ
-Dialogue: 0,0:20:24.51,0:20:29.04,SC_Bottom,结华,0,0,0,,你难道觉得只有你把L'Antica看得很重要吗\N自分が誰よりも一番 アンティーカを大事にしてると思ってた
-Dialogue: 0,0:20:32.33,0:20:34.04,SC_Bottom,结华,0,0,0,,你不相信我们吗\N信じられなかった?
-Dialogue: 0,0:20:45.08,0:20:48.73,SC_Bottom,雾子,0,0,0,,那…那个 咲耶\Nあ あのね 咲耶さん
-Dialogue: 0,0:20:51.94,0:20:57.99,SC_Bottom,雾子,0,0,0,,我也非常珍视L'Antica\N私 アンティーカのことが とっても大事
-Dialogue: 0,0:21:00.04,0:21:05.88,SC_Bottom,雾子,0,0,0,,但是我 不擅长用言语表达出来\Nでも そんなふうに 言葉にしたことがなくって
-Dialogue: 0,0:21:08.71,0:21:09.66,SC_Bottom,雾子,0,0,0,,对不起\Nごめんなさい
-Dialogue: 0,0:21:23.39,0:21:26.37,SC_Bottom,恋钟,0,0,0,,我也喜欢L'Antica\Nうちは アンティーカがすき
-Dialogue: 0,0:21:27.71,0:21:30.59,SC_Bottom,恋钟,0,0,0,,因为 这里是\Nだって ここが
-Dialogue: 0,0:21:31.52,0:21:33.54,SC_Bottom,恋钟,0,0,0,,这里是我们的归宿啊\Nうちらの居場所やけん
-Dialogue: 0,0:22:01.20,0:22:03.87,SC_Bottom,咲耶,0,0,0,,为什么…我会…\N私は なんて
-Dialogue: 0,0:22:06.93,0:22:08.97,SC_Bottom,咲耶,0,0,0,,为什么我会这么傻啊\Nなんて バカな
-Dialogue: 0,0:22:17.56,0:22:22.84,SC_Bottom,恋钟,0,0,0,,你才不是傻瓜 你只是太钻牛角尖了\Nバカじゃなかよ きっと小難しかことを考えとったけん
-Dialogue: 0,0:22:50.65,0:22:53.89,SC_Bottom,咲耶,0,0,0,,我 发誓\N私 約束するよ
-Dialogue: 0,0:22:55.45,0:22:59.28,SC_Bottom,咲耶,0,0,0,,我会相信 并且依赖大家\Nみんなを信じて 頼りにするって
-Dialogue: 0,0:22:40.63,0:22:45.93,Default,,0,0,0,歌,ひとりぼっちじゃ抱きしめる
-Dialogue: 0,0:22:40.63,0:22:45.93,Default,,0,0,0,歌CN,独自一人时想要的拥抱
-Dialogue: 0,0:22:45.93,0:22:52.43,Default,,0,0,0,歌,だけになる夢があるんだろう
-Dialogue: 0,0:22:45.93,0:22:52.43,Default,,0,0,0,歌CN,大概只能在梦中实现吧
-Dialogue: 0,0:22:53.69,0:22:58.73,Default,,0,0,0,歌,立ち竦んでる誰かの胸に
-Dialogue: 0,0:22:53.69,0:22:58.73,Default,,0,0,0,歌CN,在某个驻足不前的人的胸膛里
-Dialogue: 0,0:22:58.97,0:23:02.05,Default,,0,0,0,歌,寄り添うように
-Dialogue: 0,0:22:58.97,0:23:02.05,Default,,0,0,0,歌CN,依偎着
-Dialogue: 0,0:23:02.19,0:23:05.19,Default,,0,0,0,歌,僕ら立ってみたい
-Dialogue: 0,0:23:02.19,0:23:05.19,Default,,0,0,0,歌CN,我们想要这样站立
-Dialogue: 0,0:23:05.41,0:23:08.17,Default,,0,0,0,歌,眩しい夕焼けに心
-Dialogue: 0,0:23:05.41,0:23:08.17,Default,,0,0,0,歌CN,将耀眼的夕阳
-Dialogue: 0,0:23:08.63,0:23:11.53,Default,,0,0,0,歌,焼き付けた
-Dialogue: 0,0:23:08.63,0:23:11.53,Default,,0,0,0,歌CN,烙印在心灵中
-Dialogue: 0,0:23:11.59,0:23:17.99,Default,,0,0,0,歌,世界中を 包み込む 雄大な空のような
-Dialogue: 0,0:23:11.59,0:23:17.99,Default,,0,0,0,歌CN,如同包容整个世界的辽阔天空
-Dialogue: 0,0:23:18.19,0:23:24.57,Default,,0,0,0,歌,途方もない 願いさえも 叶えてゆける
-Dialogue: 0,0:23:18.19,0:23:24.57,Default,,0,0,0,歌CN,就连不切实际的愿望也能实现
-Dialogue: 0,0:23:24.71,0:23:31.07,Default,,0,0,0,歌,友情は 瞬きの 合間にそっと交わした
-Dialogue: 0,0:23:24.71,0:23:31.07,Default,,0,0,0,歌CN,友情在眨眼的间隙中悄然交织
-Dialogue: 0,0:23:31.15,0:23:38.57,Default,,0,0,0,歌,橙のなか 鮮明になる 小さな未来の肖像
-Dialogue: 0,0:23:31.15,0:23:38.57,Default,,0,0,0,歌CN,在橙色的光芒里 愈发清晰的小小未来的肖像
-Dialogue: 0,0:23:38.67,0:23:44.03,Default,,0,0,0,歌,…どこまで行ってみよう？
-Dialogue: 0,0:23:38.67,0:23:44.03,Default,,0,0,0,歌CN,…要走到何处呢？
-Dialogue: 0,0:23:44.27,0:23:47.30,Default,,0,0,0,歌,笑い、さざめいた
-Dialogue: 0,0:23:44.27,0:23:47.30,Default,,0,0,0,歌CN,笑声如涟漪般荡漾
-Dialogue: 0,0:23:47.42,0:23:51.44,Default,,0,0,0,歌,To My Beloved
-Dialogue: 0,0:23:47.42,0:23:51.44,Default,,0,0,0,歌CN,献给我挚爱的人
+Comment: 0,0:00:19.06,0:00:21.00,SC_Bottom,制作人,0,0,0,kara,啊 咲耶\Nあっ 咲耶
+Comment: 0,0:00:21.00,0:00:24.00,SC_Bottom,制作人,0,0,0,kara,我出去一趟 抱歉慌慌张张的\N行ってくる バタバタしててごめんな
+Comment: 0,0:00:25.54,0:00:26.66,SC_Bottom,咲耶,0,0,0,kara,注意安全\N気をつけて
+Comment: 0,0:00:26.66,0:00:28.53,SC_Bottom,恋钟,0,0,0,kara,啊 咲耶\Nあっ 咲耶
+Comment: 0,0:00:31.83,0:00:32.91,SC_Bottom,咲耶,0,0,0,kara,辛苦了\Nお疲れ様
+Comment: 0,0:00:32.91,0:00:35.32,SC_Bottom,恋钟,0,0,0,kara,咲耶 你也辛苦了\N咲耶 お疲れ
+Comment: 0,0:00:35.76,0:00:39.02,SC_Bottom,恋钟,0,0,0,kara,哎呀 我们明明还得讨论歌曲相关的事儿来着\Nああ 曲のこと話さんとやのに
+Comment: 0,0:00:39.25,0:00:44.32,SC_Bottom,恋钟,0,0,0,kara,最近大家都忙得很 好久都没在一块儿了吧\Nもう最近 みんないそがしかけん 一度も集まれてないやろ
+Comment: 0,0:00:44.32,0:00:45.35,SC_Bottom,制作人,1200,0,0,kara,恋钟！\N恋鐘
+Comment: 0,0:00:46.42,0:00:48.29,SC_Bottom,恋钟,0,0,0,kara,这会就来\N今行く
+Comment: 0,0:00:49.21,0:00:51.82,SC_Bottom,恋钟,0,0,0,kara,找个时间大家一起见见面吧\Nみんなで会える時間 見つけよう
+Comment: 0,0:00:52.07,0:00:53.84,SC_Bottom,咲耶,0,0,0,kara,好啊 一路平安\Nああ 行ってらっしゃい
+Comment: 0,0:00:53.84,0:00:55.90,SC_Bottom,恋钟,0,0,0,kara,我出发了{\fscx50} {\fscx100}——\N行ってきまーす
+Comment: 0,0:01:19.35,0:01:22.10,SC_Bottom,恋钟,0,0,0,kara,我忘记带便当了～～～！！\Nお弁当忘れた！
+Comment: 0,0:01:22.10,0:01:26.48,SC_Bottom,恋钟,0,0,0,kara,这可是我的自豪之作 如果可以的话 就请咲耶你吃了\Nまりすごくお弁当やけん！咲耶、よかったら食べて！
+Comment: 0,0:01:30.77,0:01:36.03,SC_Bottom,咲耶,0,0,0,kara,谢谢 既然你这么说 那我就恭敬不如从命了\Nありがとう それなら お言葉に甘えさせてもらおう
+Comment: 0,0:01:36.76,0:01:38.67,SC_Bottom,咲耶,0,0,0,kara,我会好好品尝的\N大切にいただくよ
+Comment: 0,0:01:45.63,0:01:46.62,SC_Bottom,咲耶,0,0,0,kara,但是\Nけれど
+Comment: 0,0:01:50.56,0:01:53.71,SC_Bottom,咲耶,0,0,0,kara,一个人的时候 还是会有些…\N一人は 少しだけ
+Comment: 0,0:03:28.25,0:03:29.58,SC_Bottom,咲耶,0,0,0,kara,一路平安\Nいってらっしゃい
+Comment: 0,0:03:47.26,0:03:49.79,SC_Bottom,摩美美,0,0,0,kara,周五早上有采访\N金曜朝は取材
+Comment: 0,0:03:50.21,0:03:53.44,SC_Bottom,恋钟,0,0,0,kara,周末日程安排得满满的～～～\N土日はうちがパンパンやし
+Comment: 0,0:03:53.90,0:03:56.05,SC_Bottom,摩美美,0,0,0,kara,我也有安排\N私も予定あり
+Comment: 0,0:03:56.63,0:03:59.20,SC_Bottom,结华,0,0,0,kara,刚刚我跟制作人确认过了\N今 プロデューサーに確認したけど
+Comment: 0,0:03:59.20,0:04:02.49,SC_Bottom,结华,0,0,0,kara,周一下午我们可以勉强见一面\N月曜午後 ギリで集まれるっぽい！
+Comment: 0,0:04:04.94,0:04:07.10,SC_Bottom,咲耶,0,0,0,kara,忙点好啊\N忙しいのはいいことだ
+Comment: 0,0:04:10.95,0:04:11.92,SC_Bottom,咲耶,0,0,0,kara,在\Nはい
+Comment: 0,0:04:12.54,0:04:15.67,SC_Bottom,,0,0,0,kara,白濑小姐 抱歉 久等了 接下来就请多指教了\N白瀬さんお待たせしました よろしくお願いします
+Comment: 0,0:04:15.67,0:04:17.13,SC_Bottom,咲耶,0,0,0,kara,请多指教\Nよろしくお願いします
+Comment: 0,0:04:30.49,0:04:33.25,SC_Bottom,咲耶,0,0,0,kara,对了 结华来消息了\Nあっ結華と連絡がついたよ
+Comment: 0,0:04:33.89,0:04:39.59,SC_Bottom,咲耶,0,0,0,kara,「时间太紧迫 我得先走了 抱歉」 她是这么说的\N押しちゃってもうすぐ現場を出るとこ ごめん とのことだ。
+Comment: 0,0:04:39.84,0:04:43.09,SC_Bottom,恋钟,0,0,0,kara,大家都很忙 也没啥办法吧\Nみんな忙しいけん しょんなかよ
+Comment: 0,0:04:43.09,0:04:44.69,SC_Bottom,咲耶,0,0,0,kara,是啊 就是啊\Nああ そうだね
+Comment: 0,0:04:45.34,0:04:49.68,SC_Bottom,恋钟,0,0,0,kara,雾子那边还要花点时间 我们先开始吧\N霧子もまだかかりそうやけん 先話してよう
+Comment: 0,0:04:50.42,0:04:51.75,SC_Bottom,摩美美,0,0,0,kara,嗯…\Nん
+Comment: 0,0:04:57.99,0:05:01.38,SC_Bottom,咲耶,0,0,0,kara,那样的话 我把大家的笔记汇总在一起吧\Nそれなら 私がメモをまとめるとするよ
+Comment: 0,0:05:02.17,0:05:03.85,SC_Bottom,恋钟,0,0,0,kara,谢谢您嘞\Nありがとう
+Comment: 0,0:05:04.42,0:05:07.61,SC_Bottom,摩美美,0,0,0,kara,话说回来 为什么是在仓库\Nっていうか なんで倉庫？
+Comment: 0,0:05:07.95,0:05:13.79,SC_Bottom,恋钟,0,0,0,kara,摩美美 作战会议就得在这样的地方整\N麻美々 作戦会議は とがんとこでやるって決まっとると
+Comment: 0,0:05:13.79,0:05:15.45,SC_Bottom,摩美美,0,0,0,kara,诶{\fscx50} {\fscx100}—？\Nええ
+Comment: 0,0:05:18.79,0:05:19.96,SC_Bottom,恋钟,0,0,0,kara,咲耶？\N咲耶？
+Comment: 0,0:05:20.79,0:05:25.18,SC_Bottom,咲耶,0,0,0,kara,不 没什么 时间紧迫 我们开始吧\Nいや いいんだ 時間もないし始めようか
+Comment: 0,0:05:42.61,0:05:44.26,SC_Bottom,结华,0,0,0,kara,我回来了\Nただいまー
+Comment: 0,0:05:44.62,0:05:46.88,SC_Bottom,雾子,0,0,0,kara,欢迎回来 结华\Nおかえりなさい 結華ちゃん
+Comment: 0,0:05:47.82,0:05:51.41,SC_Bottom,结华,0,0,0,kara,Kiririn 抱歉了 谢谢你等我\Nキイリンごめんね 見てくれてありがとう
+Comment: 0,0:05:51.90,0:05:56.23,SC_Bottom,雾子,0,0,0,kara,不 其实我这边也才刚结束\Nううん わたしもおしまいだけになっちゃって
+Comment: 0,0:05:56.23,0:05:59.02,SC_Bottom,结华,0,0,0,kara,果然日程还是安排得太紧了吗…\Nやっぱスケジュール無理やったか
+Comment: 0,0:05:59.39,0:06:05.09,SC_Bottom,雾子,0,0,0,kara,那个…{\fscx50} {\fscx100}对不起…{\fscx50} {\fscx100}我也得走了\Nあの ごめん ねわたしもう 行かなきゃ
+Comment: 0,0:06:05.60,0:06:09.07,SC_Bottom,制作人,0,0,0,kara,抱歉啊 没赶上大家都在的时候到\Nごめんな みんな居られる時間に間に合わなくて
+Comment: 0,0:06:09.07,0:06:12.60,SC_Bottom,结华,0,0,0,kara,哪里哪里 不是制作人你的问题\Nいやいやいや プロデューサーのせいじゃないから
+Comment: 0,0:06:14.21,0:06:18.03,SC_Bottom,雾子,0,0,0,kara,制作人先生 那个 这个\Nプロデューサーさん あ あの これ
+Comment: 0,0:06:19.93,0:06:21.72,SC_Bottom,雾子,0,0,0,kara,是咲耶写的\N咲耶さんから
+Comment: 0,0:06:29.98,0:06:31.51,SC_Bottom,结华,0,0,0,kara,哇{\fscx50} {\fscx100}——\Nわぁー
+Comment: 0,0:06:31.99,0:06:34.29,SC_Bottom,结华,0,0,0,kara,Sakuyan 好厉害\Nさくやん すごい！
+Comment: 0,0:06:35.26,0:06:40.21,SC_Bottom,结华,0,0,0,kara,嗯  哥特…{\fscx50} {\fscx100}主题…\Nえっと…{\fscx50} {\fscx100}ゴシック…{\fscx50} {\fscx100}世界観…
+Comment: 0,0:06:41.45,0:06:47.75,SC_Bottom,摩美美,0,0,0,kara,或者…{\fscx50} {\fscx100}可以加入一些之前没用过的声音？\Nそれか…{\fscx50} {\fscx100}やったことない音を入れてみるとか？
+Comment: 0,0:06:47.75,0:06:51.30,SC_Bottom,恋钟,0,0,0,kara,嗯…{\fscx50} {\fscx100}也不只是音乐本身\Nうーん 音楽もそうやけど
+Comment: 0,0:06:52.02,0:06:53.31,SC_Bottom,摩美美,0,0,0,kara,不只是？\Nやけど？
+Comment: 0,0:06:53.68,0:06:58.40,SC_Bottom,恋钟,0,0,0,kara,现在我们要让我们真正想要传达的东西\N今うちらが 本当に伝えたかことを
+Comment: 0,0:06:58.40,0:06:59.77,SC_Bottom,恋钟,0,0,0,kara,能够传达到\N伝えんば
+Comment: 0,0:07:06.52,0:07:07.59,SC_Bottom,咲耶,0,0,0,kara,确实\Nそうだね
+Comment: 0,0:07:09.19,0:07:12.37,SC_Bottom,咲耶,0,0,0,kara,说起来 恋钟 你时间上没问题吗\Nっと 恋鐘 時間は平気かい？
+Comment: 0,0:07:13.07,0:07:16.29,SC_Bottom,恋钟,0,0,0,kara,呜哇 我得走了\Nうわ もう行かんと
+Comment: 0,0:07:16.29,0:07:18.33,SC_Bottom,恋钟,0,0,0,kara,大家 抱歉啊{\fscx50} {\fscx100}—\Nみんな ごめん
+Comment: 0,0:07:29.96,0:07:33.61,SC_Bottom,结华,0,0,0,kara,确实 大家都很珍视这首歌呢\N確かに 大切な歌にしたいよね
+Comment: 0,0:07:34.16,0:07:37.55,SC_Bottom,结华,0,0,0,kara,要分享的内容整理的很完美 谢谢你{\fscx50} {\fscx100}Sakuyan\N共有ばっちり さくやんありがとう
+Comment: 0,0:07:40.29,0:07:41.44,SC_Bottom,结华,0,0,0,kara,怎么了吗\Nどうかした？
+Comment: 0,0:07:41.44,0:07:46.63,SC_Bottom,制作人,0,0,0,kara,啊 没事 就是觉得咲耶有点…\Nあっいや 何となく咲耶にしては
+Comment: 0,0:07:50.09,0:07:54.91,SC_Bottom,结华,0,0,0,kara,「考虑到当前情况 大家已经将工作往前推进一些了」\N状況を考えて みんなで少しばかり進めておいたよ
+Comment: 0,0:07:55.84,0:08:00.90,SC_Bottom,结华,0,0,0,kara,「我们没问题的 希望你们别担心」\N私たちは大丈夫 心配しないでほしい
+Comment: 0,0:08:02.49,0:08:06.10,SC_Bottom,结华,0,0,0,kara,「工作 辛苦了」\Nお仕事 本当にお疲れ様
+Comment: 0,0:08:11.76,0:08:14.79,SC_Bottom,结华,0,0,0,kara,感觉咲耶说的话也没什么特别的\N三峰は別に普通だと思うけどな
+Comment: 0,0:08:15.24,0:08:16.37,SC_Bottom,制作人,0,0,0,kara,是这样吗\Nそうか
+Comment: 0,0:08:17.16,0:08:23.77,SC_Bottom,结华,0,0,0,kara,而且你看 当一个人说没问题的时候 不就是希望他人可以相信她吗\Nそれにほら 大丈夫って言ってる間は 信じてもらえた方がありがたいじゃん
+Comment: 0,0:08:55.68,0:08:58.41,SC_Bottom,咲耶,0,0,0,kara,今天真是久违的在一个地方工作呢\N今日は久しぶりに一緒の現場だね
+Comment: 0,0:08:58.41,0:09:00.12,SC_Bottom,咲耶,0,0,0,kara,我很期待\N心待ちにしていたよ
+Comment: 0,0:09:00.45,0:09:02.61,SC_Bottom,结华,0,0,0,kara,嗯 说的是呢\Nうん そうだよね
+Comment: 0,0:09:03.01,0:09:03.85,SC_Bottom,咲耶,0,0,0,kara,是啊\Nああ
+Comment: 0,0:09:04.39,0:09:07.39,SC_Bottom,咲耶,0,0,0,kara,就算不见面 我们也可以传达自己想说的话\N会わなくても言葉は伝えられるけれど
+Comment: 0,0:09:07.39,0:09:11.61,SC_Bottom,咲耶,0,0,0,kara,但相比这样面对面交流来说还是差了不少\Nこうして眼差しを合わせる会話とは違うものだからさ
+Comment: 0,0:09:12.31,0:09:14.85,SC_Bottom,结华,0,0,0,kara,果然比起面对面还是有区别？\Nやっぱり直接じゃないと違う？
+Comment: 0,0:09:16.88,0:09:20.00,SC_Bottom,结华,0,0,0,kara,Sakuyan 比如说\Nさくやん 例えば
+Comment: 0,0:09:20.79,0:09:22.66,SC_Bottom,结华,0,0,0,kara,会寂寞…{\fscx50} {\fscx100}之类的？\N寂しかったりする？
+Comment: 0,0:09:22.97,0:09:23.72,SC_Bottom,咲耶,0,0,0,kara,嗯？\Nうん？
+Comment: 0,0:09:25.74,0:09:27.27,SC_Bottom,咲耶,0,0,0,kara,没有这种事情\Nそんなことは
+Comment: 0,0:09:31.52,0:09:37.52,SC_Bottom,咲耶,0,0,0,kara,不 也对 有时候确实会感觉有点寂寞\Nいや そうだね 少しだけさびしく感じることもあるよ
+Comment: 0,0:09:42.21,0:09:45.60,SC_Bottom,咲耶,0,0,0,kara,但是 只是偶尔见一面 就足够让我充满活力了\Nけれどた たまに会うだけで元気になれる
+Comment: 0,0:09:46.12,0:09:47.81,SC_Bottom,咲耶,0,0,0,kara,所以没问题的\Nだから大丈夫さ
+Comment: 0,0:09:48.18,0:09:52.78,SC_Bottom,结华,0,0,0,kara,没问题吗…{\fscx50} {\fscx100}咲耶的防御值真高啊\N平気か 咲耶んはガードがかたいなあ
+Comment: 0,0:09:53.54,0:09:55.91,SC_Bottom,结华,0,0,0,kara,那 换个问题\Nじゃあ 別の質問
+Comment: 0,0:09:57.97,0:10:02.07,SC_Bottom,结华,0,0,0,kara,最近七零八落的{\fscx50} {\fscx100}L'Antica 你怎么看？\N最近のバラバラなアンティーカ どう思う？
+Comment: 0,0:10:02.71,0:10:03.74,SC_Bottom,咲耶,0,0,0,kara,诶？\Nえっ？
+Comment: 0,0:10:04.23,0:10:07.38,SC_Bottom,结华,0,0,0,kara,5{\fscx50} {\fscx100}个人一起工作的机会 没多少吧\N5{\fscx50} {\fscx100}人揃っての仕事ってあんまりないでしょ
+Comment: 0,0:10:07.77,0:10:08.77,SC_Bottom,咲耶,0,0,0,kara,啊\Nあぁ
+Comment: 0,0:10:10.18,0:10:13.30,SC_Bottom,结华,0,0,0,kara,我想问问{\fscx50} {\fscx100}Sakuyan{\fscx50} {\fscx100}你对此 有什么看法\Nさくきゃん的にはどうなのかなって
+Comment: 0,0:10:13.95,0:10:18.93,SC_Bottom,咲耶,0,0,0,kara,这个 不正说明大家都在辛勤工作 都备受青睐吗\Nそれは みんなが頑張っていて 愛されているということだろ
+Comment: 0,0:10:19.46,0:10:22.60,SC_Bottom,咲耶,0,0,0,kara,对我来说 这就是最重要的\N私にとって それ以上のことはないよ
+Comment: 0,0:10:24.33,0:10:26.39,SC_Bottom,结华,0,0,0,kara,那个啊 Sakuyan…\Nあのさ さくやん
+Comment: 0,0:10:33.50,0:10:36.27,SC_Bottom,结华,0,0,0,kara,呃啊 已经到拍摄时间了\Nうわ もう撮影の時間じゃ
+Comment: 0,0:10:37.67,0:10:40.94,SC_Bottom,咲耶,0,0,0,kara,我们走吧 账我来结\N行こう 先にお会計を済ませてくるよ
+Comment: 0,0:10:41.72,0:10:44.27,SC_Bottom,结华,0,0,0,kara,啊…{\fscx50} {\fscx100}嗯\Nあっ うん
+Comment: 0,0:10:55.06,0:10:57.46,SC_Bottom,,0,0,0,kara,晚饭一个人吃 没关系吗\N夕飯 一人で平気か？
+Comment: 0,0:10:57.80,0:11:00.55,SC_Bottom,咲耶,0,0,0,kara,嗯 我没问题的\Nうん 私は大丈夫
+Comment: 0,0:11:19.09,0:11:20.71,SC_Bottom,结华,0,0,0,kara,Sakuyan 辛苦了\Nさくやん お疲れ
+Comment: 0,0:11:21.17,0:11:22.31,SC_Bottom,咲耶,0,0,0,kara,辛苦了\Nお疲れさま
+Comment: 0,0:11:22.66,0:11:24.49,SC_Bottom,结华,0,0,0,kara,下一个就是我了吧\N次三峰だよね
+Comment: 0,0:11:24.82,0:11:25.52,SC_Bottom,咲耶,0,0,0,kara,是啊\Nああ
+Comment: 0,0:11:26.29,0:11:28.25,SC_Bottom,结华,0,0,0,kara, 那个啊 Sakuyan\Nあのさ、さくやん
+Comment: 0,0:11:28.25,0:11:30.17,SC_Bottom,,1200,0,0,kara,三峰小姐 拜托了\N三峰さん おねがいします
+Comment: 0,0:11:30.53,0:11:32.47,SC_Bottom,结华,0,0,0,kara,好{\fscx50} {\fscx100}——！\Nはーい
+Comment: 0,0:11:33.30,0:11:35.78,SC_Bottom,结华,0,0,0,kara,那 待会儿见\Nじゃあ またね
+Comment: 0,0:11:37.65,0:11:38.76,SC_Bottom,咲耶,0,0,0,kara,一路平安\Nいってらっしゃい
+Comment: 0,0:11:42.16,0:11:44.38,SC_Bottom,制作人,0,0,0,kara,咲耶 辛苦了\N咲耶 お疲れさま
+Comment: 0,0:11:44.38,0:11:46.60,SC_Bottom,咲耶,0,0,0,kara,不 您也辛苦了\Nうん お疲れさま
+Comment: 0,0:11:48.06,0:11:49.12,SC_Bottom,制作人,0,0,0,kara,没问题吗\N大丈夫か？
+Comment: 0,0:11:49.67,0:11:54.45,SC_Bottom,咲耶,0,0,0,kara,嗯 没问题的 我得走了\Nああ 私は大丈夫さ そろそろ移動しないと
+Comment: 0,0:11:56.01,0:11:58.90,SC_Bottom,制作人,0,0,0,kara,摩美美虽然也要来 但时间正好错过了吧\N摩美々も来るけど 入れ違いだな
+Comment: 0,0:11:59.28,0:12:03.16,SC_Bottom,制作人,0,0,0,kara,对了 我等会把明天的日程表发给你们\Nあっ 明日の進行表 あとで送るから
+Comment: 0,0:12:03.16,0:12:05.32,SC_Bottom,咲耶,0,0,0,kara,谢谢 我会好好确认的\Nありがとう 確認しておくよ
+Comment: 0,0:12:06.90,0:12:09.87,SC_Bottom,制作人,0,0,0,kara,大家已经很久没有聚在一起过了吧\N全員で泊まりなんて 久しぶりだな
+Comment: 0,0:12:11.52,0:12:14.48,SC_Bottom,制作人,0,0,0,kara,可算来了一个很有{\fscx50} {\fscx100}L'Antica{\fscx50} {\fscx100}感觉的工作\Nやっと アンティーカらしい仕事だぞ
+Comment: 0,0:12:16.32,0:12:17.32,SC_Bottom,咲耶,0,0,0,kara,是啊\Nそうだね
+Comment: 0,0:12:18.07,0:12:24.05,SC_Bottom,咲耶,0,0,0,kara,但是 即使没有团体活动 大家也不会觉得困扰吧\Nでも アンティーカとしての活動がなくても みんなは困らないんじゃないかな
+Comment: 0,0:12:26.28,0:12:30.83,SC_Bottom,咲耶,0,0,0,kara,恋钟 摩美美 结华 雾子\N恋鐘も 摩美々も 結華も 霧子も
+Comment: 0,0:12:31.31,0:12:33.92,SC_Bottom,咲耶,0,0,0,kara,她们在个人的工作中已经足够闪耀\N個人の仕事で十分輝いている
+Comment: 0,0:12:35.41,0:12:39.19,SC_Bottom,咲耶,0,0,0,kara,不如说 如果{\fscx50} {\fscx100}L'Antica{\fscx50} {\fscx100}反而拖累了她们的话\Nそれをむしろ アンティーカが妨げるなら
+Comment: 0,0:12:42.60,0:12:45.03,SC_Bottom,咲耶,0,0,0,kara,如果她们能继续闪耀下去\N彼女たちが輝けるのなら
+Comment: 0,0:12:46.05,0:12:49.71,SC_Bottom,咲耶,0,0,0,kara,她们不在这里也一定可以…\Nきっとそれは ここじゃなくたって
+Comment: 0,0:12:52.55,0:12:57.77,SC_Bottom,咲耶,0,0,0,kara,283{\fscx50} {\fscx100}事务所的成员并不一定非得加入组合吧\N283{\fscx50} {\fscx100}プロでは 必ずしもユニットに所属しなくてはならないってわけじゃないんだろ？
+Comment: 0,0:12:57.77,0:12:59.06,SC_Bottom,制作人,0,0,0,kara,咲耶…\N咲耶
+Comment: 0,0:12:59.06,0:13:02.66,SC_Bottom,咲耶,0,0,0,kara,不 我没别的意思\Nいや そんな大したことじゃないんだ
+Comment: 0,0:13:03.51,0:13:05.55,SC_Bottom,咲耶,0,0,0,kara,只是随便问了两句\Nたまに聞いてみただけさ
+Comment: 0,0:13:19.58,0:13:23.94,SC_Bottom,咲耶,0,0,0,kara,现在恋钟她们应该在第二个地点进行拍摄了吧\N今頃　恋鐘たちは 2{\fscx50} {\fscx100}か所目で撮影をしているところかな
+Comment: 0,0:13:25.99,0:13:30.37,SC_Bottom,咲耶,0,0,0,kara,天公作美 一定会很出片的\N天気にもめぐまれて きっとすてきな作品になるだろうね
+Comment: 0,0:13:39.59,0:13:41.03,SC_Bottom,,0,0,0,kara,好的 卡\Nはい カット
+Comment: 0,0:13:41.76,0:13:43.35,SC_Bottom,,0,0,0,kara,OK{\fscx50} {\fscx100}了\Nオッケーでーす
+Comment: 0,0:13:50.55,0:13:52.48,SC_Bottom,摩美美,0,0,0,kara,我回来了\Nただいま
+Comment: 0,0:13:53.88,0:13:56.57,SC_Bottom,恋钟,0,0,0,kara,你咋嘞 摩美美\Nど どうけんしたとね 摩美々
+Comment: 0,0:13:56.57,0:13:58.38,SC_Bottom,雾子,0,0,0,kara,这里 坐下吧\Nこっち 座って
+Comment: 0,0:13:58.87,0:14:00.55,SC_Bottom,摩美美,0,0,0,kara,谢谢\Nありがとう
+Comment: 0,0:14:02.27,0:14:08.67,SC_Bottom,摩美美,0,0,0,kara,回来的时候脚崴了一下 踩到水坑里面去了\N座ってありがとう戻ってくる時ちょっと転んで 水たまりにぱっしゃんって
+Comment: 0,0:14:09.34,0:14:10.05,SC_Bottom,摩美美,0,0,0,kara,好疼…\Nいた…
+Comment: 0,0:14:10.84,0:14:12.58,SC_Bottom,恋钟,0,0,0,kara,哪里受伤了吗\Nとっかうったと
+Comment: 0,0:14:13.53,0:14:17.25,SC_Bottom,摩美美,0,0,0,kara,没事的 这种程度不算什么\N大丈夫 このくらい平気だし
+Comment: 0,0:14:17.25,0:14:21.12,SC_Bottom,恋钟,0,0,0,kara,浑身都是泥水还说这种话 可不中嘞\Nそうかんドロンコになっていいよってもう ダメばい！
+Comment: 0,0:14:22.38,0:14:26.60,SC_Bottom,恋钟,0,0,0,kara,呜 如果你联系我的话我肯定飞奔过去帮你\Nもう 呼んでくれたらダッシュでとんでったのに
+Comment: 0,0:14:26.89,0:14:31.23,SC_Bottom,恋钟,0,0,0,kara,有什么事要跟别人说 知道吗\N何かあったらちゃんと言うたよ 分かった
+Comment: 0,0:14:33.61,0:14:38.29,SC_Bottom,摩美美,0,0,0,kara,我知道了 那我说了\N分かりました じゃあ言います
+Comment: 0,0:14:39.79,0:14:41.91,SC_Bottom,摩美美,0,0,0,kara,咲耶她提到了\N咲耶が話してた
+Comment: 0,0:14:43.68,0:14:46.36,SC_Bottom,摩美美,0,0,0,kara,关于解散的可能性\N解散の可能性について
+Comment: 0,0:14:57.86,0:14:59.75,SC_Bottom,咲耶,0,0,0,kara,结华 车到站了\N結華 着いたよ
+Comment: 0,0:15:07.83,0:15:09.49,SC_Bottom,咲耶,0,0,0,kara,长途奔波 辛苦了\N長旅お疲れ様
+Comment: 0,0:15:10.02,0:15:11.81,SC_Bottom,咲耶,0,0,0,kara,看上去接车的人还没到\N迎えはまだのようだね
+Comment: 0,0:15:12.36,0:15:14.01,SC_Bottom,结华,0,0,0,kara,要给他们打个电话吗\N電話してみようか
+Comment: 0,0:15:15.68,0:15:17.48,SC_Bottom,咲耶,0,0,0,kara,虽然也可以\Nそれもいいけれど
+Comment: 0,0:15:18.16,0:15:18.84,SC_Bottom,结华,0,0,0,kara,嗯？\Nん？
+Comment: 0,0:15:27.19,0:15:29.04,SC_Bottom,咲耶,0,0,0,kara,这里可以二人独享夕阳\N二人だけの夕焼けだ
+Comment: 0,0:15:36.47,0:15:38.65,SC_Bottom,咲耶,0,0,0,kara,突然请你来这里 没问题吧\N誘ってしまってよかったかな
+Comment: 0,0:15:40.50,0:15:42.87,SC_Bottom,咲耶,0,0,0,kara,接送的人来之前可以在这里放松一下\N迎えが来るまではゆっくりするといい
+Comment: 0,0:15:43.47,0:15:46.93,SC_Bottom,咲耶,0,0,0,kara,如果你想一个人休息一下的话 我可以去别处走走\N一人で休みたいようだったら 少し歩いてくるから
+Comment: 0,0:15:47.40,0:15:48.52,SC_Bottom,结华,0,0,0,kara,诶？\Nえっ？
+Comment: 0,0:15:48.52,0:15:52.76,SC_Bottom,结华,0,0,0,kara,明明是{\fscx50} {\fscx100}Sakuyan{\fscx50} {\fscx100}你邀请我来的 却又要让我一个人独处？\Nさくやんが誘ったのに 三峰一人にされちゃう感じ？
+Comment: 0,0:15:53.20,0:15:59.38,SC_Bottom,咲耶,0,0,0,kara,啊 抱歉 我只是担心工作之后又长途跋涉 你会很疲惫\Nああ すまない 仕事の後の移動で疲れているんじゃないかと 心配になってね
+Comment: 0,0:16:00.42,0:16:02.42,SC_Bottom,结华,0,0,0,kara,担心吗…\N心配って
+Comment: 0,0:16:06.41,0:16:10.53,SC_Bottom,结华,0,0,0,kara,我说 该被担心的是{\fscx50} {\fscx100}Sakuyan{\fscx50} {\fscx100}你才对\Nあのさ 心配なのはさくやんのほうだよ
+Comment: 0,0:16:10.80,0:16:11.49,SC_Bottom,咲耶,0,0,0,kara,诶？\Nえっ？
+Comment: 0,0:16:12.07,0:16:17.30,SC_Bottom,结华,0,0,0,kara,到这种地步怎么也都看出来了 你最近状态不是很好吧\Nさすがに分かるよ 最近あんまり調子よくないでしょ
+Comment: 0,0:16:19.13,0:16:22.19,SC_Bottom,结华,0,0,0,kara,明明没有精神 却还要强颜欢笑\N本当は元気がないのに無理して笑ってる
+Comment: 0,0:16:35.03,0:16:38.37,SC_Bottom,结华,0,0,0,kara,这样的情况 真的很让人担心\Nうんそういうの すっごく心配
+Comment: 0,0:16:39.70,0:16:42.47,SC_Bottom,结华,0,0,0,kara,如果是一个人能解决的事情的话就算了\N一人で解決できることならいいけどさ
+Comment: 0,0:16:43.11,0:16:45.23,SC_Bottom,结华,0,0,0,kara,但既然不是 就跟我说啊\Nそうじゃないなら話してよ
+Comment: 0,0:16:47.34,0:16:51.37,SC_Bottom,咲耶,0,0,0,kara,谢谢你 能对我说这些话\Nありがとう そんなふうに言ってくれるなんて
+Comment: 0,0:16:53.64,0:16:54.76,SC_Bottom,咲耶,0,0,0,kara,但是…\Nでも
+Comment: 0,0:16:55.72,0:16:57.06,SC_Bottom,咲耶,0,0,0,kara,但是\Nでも
+Comment: 0,0:16:57.06,0:17:00.03,SC_Bottom,咲耶,0,0,0,kara,像结华你这么关心我的人在我身边\Nこんなふうに心配してくれる結華がいるのに
+Comment: 0,0:17:00.03,0:17:01.95,SC_Bottom,咲耶,0,0,0,kara,我还能有什么好烦恼的呢\N何の悩みがあると思う？
+Comment: 0,0:17:02.90,0:17:05.63,SC_Bottom,咲耶,0,0,0,kara,说实话 我感到非常幸福\N本当に幸せなんだ
+Comment: 0,0:17:07.11,0:17:12.72,SC_Bottom,结华,0,0,0,kara,你看 你就是这样 你总是这样啊\Nねえ そういうところ そういうところだってば
+Comment: 0,0:17:13.47,0:17:15.41,SC_Bottom,结华,0,0,0,kara,别再蒙混过关了\Nごまかすのやめてよ
+Comment: 0,0:17:16.10,0:17:18.93,SC_Bottom,结华,0,0,0,kara,在我们面前你总是挂着笑容对吧\N私達の前ではいつも笑顔だよね
+Comment: 0,0:17:19.60,0:17:21.47,SC_Bottom,结华,0,0,0,kara,那你什么时候会哭呢\Nじゃ いつ泣いてるの
+Comment: 0,0:17:22.00,0:17:23.74,SC_Bottom,结华,0,0,0,kara,是一个人偷偷抹眼泪吗？\N一人で泣いてるの？
+Comment: 0,0:17:26.60,0:17:29.38,SC_Bottom,结华,0,0,0,kara,等到无法挽回的时候就太迟了啊\N取り返しがつかなくなってからじゃ遅いんだよ
+Comment: 0,0:17:29.90,0:17:31.75,SC_Bottom,咲耶,0,0,0,kara,结 结华…\Nユ 結華…
+Comment: 0,0:17:33.80,0:17:37.92,SC_Bottom,结华,0,0,0,kara,说出来啊 让我们听听看啊 Sakuyan{\fscx50} {\fscx100}真正的情感\N言ってよ 見せてよ さくやんの気持ち！
+Comment: 0,0:17:43.63,0:17:46.21,SC_Top,雾子,0,500,0,kara,咲耶\N咲耶さん
+Comment: 0,0:17:43.63,0:17:46.21,SC_Top,恋钟,0,0,0,kara,咲耶！\N咲耶
+Comment: 0,0:17:43.63,0:17:46.21,SC_Top,摩美美,500,0,0,kara,咲耶\N咲耶
+Comment: 0,0:17:56.28,0:17:57.40,SC_Bottom,咲耶,0,0,0,kara,大家…\Nみんな
+Comment: 0,0:17:58.52,0:18:03.91,SC_Bottom,恋钟,0,0,0,kara,咲耶 有啥想的 就得跟大家说出来啊\N咲耶 考えとることがあったら 言わんのよ
+Comment: 0,0:18:03.91,0:18:06.20,SC_Bottom,恋钟,0,0,0,kara,摩美美都告诉我了\N摩美々に教えてもらったと
+Comment: 0,0:18:06.20,0:18:07.09,SC_Bottom,咲耶,0,0,0,kara,诶？\Nえっ？
+Comment: 0,0:18:08.99,0:18:11.96,SC_Bottom,结华,0,0,0,kara,看吧 我就知道有什么事情\Nほら やっぱりなんかあるんちゃう
+Comment: 0,0:18:13.14,0:18:16.19,SC_Bottom,恋钟,0,0,0,kara,你一直在想很重要的事情对吧\N大事な言葉考えとっとやろ
+Comment: 0,0:18:16.54,0:18:21.62,SC_Bottom,恋钟,0,0,0,kara,好 那我们一起说出来 预备{\fscx50} {\fscx100}——\Nはい せーので言んば せーの！
+Comment: 0,0:18:20.16,0:18:21.62,SC_Bottom,咲耶,1400,0,0,kara,等 等一下\Nま 待ってくれ
+Comment: 0,0:18:22.24,0:18:24.97,SC_Bottom,咲耶,0,0,0,kara,烦恼什么的真的…\Nま 待ってくれ 悩みなんて 本当に
+Comment: 0,0:18:36.81,0:18:40.52,SC_Bottom,咲耶,0,0,0,kara,对不起 给你们添麻烦了\Nすまない 迷惑をかけて
+Comment: 0,0:18:41.42,0:18:43.01,SC_Bottom,恋钟,0,0,0,kara,才不是呢\Nそんなこと
+Comment: 0,0:18:43.01,0:18:44.44,SC_Bottom,摩美美,0,0,0,kara,才不麻烦\N迷惑じゃない
+Comment: 0,0:18:50.98,0:18:52.85,SC_Bottom,咲耶,0,0,0,kara,我不是这个意思…\Nそんなつもりじゃ
+Comment: 0,0:18:54.08,0:18:59.80,SC_Bottom,咲耶,0,0,0,kara,我真的很喜欢{\fscx50} {\fscx100}L'Antica 喜欢着大家\N私は アンティーカのことが みんなのことが大好きで
+Comment: 0,0:19:01.45,0:19:02.83,SC_Bottom,咲耶,0,0,0,kara,就是因为这么喜欢…\N大好きだから
+Comment: 0,0:19:11.51,0:19:15.85,SC_Bottom,咲耶,0,0,0,kara,就算大家…{\fscx50} {\fscx100}以后不会回到{\fscx50} {\fscx100}L'Antica\Nみんなが アンティーカに戻ってこなかったとしても
+Comment: 0,0:19:18.07,0:19:19.33,SC_Bottom,咲耶,0,0,0,kara,我也会为你们开心\N喜んで
+Comment: 0,0:19:22.29,0:19:24.39,SC_Bottom,,0,0,0,kara,晚饭一个人吃 没关系吗\N夕飯一人で平気か？
+Comment: 0,0:19:24.66,0:19:26.96,SC_Bottom,咲耶,0,0,0,kara,嗯 我没问题的\Nうん 私は大丈夫
+Comment: 0,0:19:27.56,0:19:30.56,SC_Bottom,,0,0,0,kara,咲耶真是个好孩子 爸爸我也要加油工作\N咲耶がいい子だから お父さん頑張れる
+Comment: 0,0:19:31.34,0:19:33.24,SC_Bottom,,0,0,0,kara,那 我出门了\Nじゃ 行ってくるな
+Comment: 0,0:19:33.76,0:19:35.09,SC_Bottom,咲耶,0,0,0,kara,一路平安\Nいってらっしゃい
+Comment: 0,0:19:40.30,0:19:42.43,SC_Bottom,咲耶,0,0,0,kara,会继续支持大家的…\N応援しなくちゃって
+Comment: 0,0:19:47.83,0:19:52.54,SC_Bottom,恋钟,0,0,0,kara,你说大家不会回到{\fscx50} {\fscx100}L'Antica 是啥意思？\Nみんながアンティートにもどってこんって どげん意味？
+Comment: 0,0:19:54.25,0:19:58.04,SC_Bottom,雾子,0,0,0,kara,因为大家都花了很多努力在个人的活动上\Nみんなが ソロ活動を頑張ったり
+Comment: 0,0:19:59.27,0:20:01.93,SC_Bottom,恋钟,0,0,0,kara,所以你就觉得我们会解散吗！？\Nそいで解散って思ったと
+Comment: 0,0:20:02.26,0:20:03.29,SC_Bottom,结华,0,0,0,kara,解散？\N解散？
+Comment: 0,0:20:07.77,0:20:10.24,SC_Bottom,结华,0,0,0,kara,Sakuyan 这种事情…\Nさくやん それは
+Comment: 0,0:20:16.06,0:20:19.93,SC_Bottom,结华,0,0,0,kara,这种事情 只是{\fscx50} {\fscx100}Sakuyan{\fscx50} {\fscx100}的误解而已啊\Nそんなの さくやんの勘違いだよ
+Comment: 0,0:20:22.74,0:20:23.87,SC_Bottom,结华,0,0,0,kara,我说\Nねぇ
+Comment: 0,0:20:24.56,0:20:29.21,SC_Bottom,结华,0,0,0,kara,你难道觉得只有你把{\fscx50} {\fscx100}L'Antica{\fscx50} {\fscx100}看得很重要吗\N自分が誰よりも一番 アンティーカを大事にしてると思ってた
+Comment: 0,0:20:32.33,0:20:34.13,SC_Bottom,结华,0,0,0,kara,你不相信我们吗\N信じられなかった？
+Comment: 0,0:20:45.08,0:20:48.83,SC_Bottom,雾子,0,0,0,kara,那…{\fscx50} {\fscx100}那个 咲耶\Nあ あのね 咲耶さん
+Comment: 0,0:20:52.00,0:20:58.08,SC_Bottom,雾子,0,0,0,kara,我也非常珍视{\fscx50} {\fscx100}L'Antica\N私 アンティーカのことが とっても大事
+Comment: 0,0:21:00.10,0:21:06.03,SC_Bottom,雾子,0,0,0,kara,但是我 不擅长用言语表达出来\Nでも そんなふうに 言葉にしたことがなくって
+Comment: 0,0:21:08.71,0:21:10.01,SC_Bottom,雾子,0,0,0,kara,对不起\Nごめんなさい
+Comment: 0,0:21:23.44,0:21:26.56,SC_Bottom,恋钟,0,0,0,kara,我也喜欢{\fscx50} {\fscx100}L'Antica\Nうちは アンティーカがすき
+Comment: 0,0:21:27.85,0:21:30.82,SC_Bottom,恋钟,0,0,0,kara,因为 这里是\Nだって ここが
+Comment: 0,0:21:31.60,0:21:33.70,SC_Bottom,恋钟,0,0,0,kara,这里是我们的归宿啊\Nうちらの居場所やけん
+Comment: 0,0:22:01.20,0:22:04.00,SC_Bottom,咲耶,0,0,0,kara,为什么…{\fscx50} {\fscx100}我会…\N私は なんて
+Comment: 0,0:22:06.95,0:22:09.08,SC_Bottom,咲耶,0,0,0,kara,为什么我会这么傻啊\Nなんて バカな
+Comment: 0,0:22:17.56,0:22:22.90,SC_Bottom,恋钟,0,0,0,kara,你才不是傻瓜 你只是太钻牛角尖了\Nバカじゃなかよ きっと小難しかことを考えとったけん
+Comment: 0,0:22:50.69,0:22:53.94,SC_Bottom,咲耶,0,0,0,kara,我 发誓\N私 約束するよ
+Comment: 0,0:22:55.54,0:22:59.48,SC_Bottom,咲耶,0,0,0,kara,我会相信 并且依赖大家\Nみんなを信じて 頼りにするって
+Comment: 0,0:22:59.48,0:23:01.48,SC_Bottom,,0,0,0,import,insert/insert01.ass
+Comment: 0,0:22:59.48,0:23:01.48,SC_Bottom,,0,0,0,import,screen/screen.ass
+Comment: 0,0:01:56.05,0:01:56.10,SC_Bottom,,0,0,0,import-shifted,../op_sc.ass

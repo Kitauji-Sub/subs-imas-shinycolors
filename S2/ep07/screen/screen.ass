@@ -8,12 +8,14 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 07 (1080p) [D1580B12].mkv
-Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 07 (1080p) [D1580B12].mkv
+Audio File: C:/Users/scree/Desktop/ep7.mkv
+Video File: C:/Users/scree/Desktop/ep7.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
-Video Position: 1893
+Scroll Position: 158
+Active Line: 169
+Video Position: 11408
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -21,10 +23,187 @@ Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:01:18.93,0:01:21.91,OnScreen,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- When was the deadline to report the\N research on the next live outfits again?\N- Huh?! I forgot...\N{\c&HFFFFFF&\3c&H6E3D00&}- If I remember correctly, it should be next\N Monday. I'll notify everyone just in case!\N{\c&H000000&\3c&HFFFFFF&}- Thanks so much, Sakuya!\N- I forgot my lunch!\NIt's a super amazing bento,\Nso if you'd like, please enjoy it, \NSakuya!!
-Dialogue: 0,0:03:48.29,0:03:52.37,OnScreen,TEXT (MITSUMINE),0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- No problem at all!\N- Okay, I'll let the Producer know.\NGood job, everyone!\N- Yeah, I'm fine. (^^)\N{\c&HFFFFFF&\3c&H6E3D00&}- Thank you! That helps a lot!\N{\c&H000000&\3c&HFFFFFF&}- What's everyone's schedule like for Friday?\N- I have a media interview on Friday morning.\N- My schedule is packed on Saturday and Sunday!
-Dialogue: 0,0:03:57.09,0:04:00.73,OnScreen,TEXT (KOGANE),0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- What's everyone's schedule like for Friday?\N- I have a media interview on Friday morning.\N- My schedule is packed on Saturday and Sunday!\N- I have plans too.\N- I just checked with the Producer, and it looks like \Nwe can barely squeeze in a meeting on Monday afternoon!
-Dialogue: 0,0:06:37.45,0:06:43.75,OnScreen,TEXT,0,0,0,,{\an7\fs19\c&H000000&\3c&HFFFFFF&\fnComic Sans MS}Summary for Today\N- Show them the evolving L'Antica\N- Refinement Points (First, broadly)\N- Gothic\N- Enhance the sense of loyalty, \Nrefine the amount of information\N- World-building / Theme
-Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fs19\c&H000000&\3c&HFFFFFF&\fnComic Sans MS}- Potential for New Sounds: \NClassic Rock & Folk Metal\N- Image of a Hard/Serious L'Antica\N- New Costumes and Stage Design?\N- Is it necessary to coordinate with other units?\N- We want to preserve the depth of the story.\N- We want to sing and deliver passion and fire \Nthat resonates strongly.\N- We want to create more impact \Nthan ever before.
-Dialogue: 0,0:07:23.75,0:07:29.72,OnScreen,TEXT,0,0,0,,{\an7\fs19\bord0\c&H000000&\3c&HFFFFFF&\fnComic Sans MS\fscx76\fscy81\pos(188.338,225.756)\frz1.91}The things we truly want to convey.
-Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{\an9\fs19\c&H000000&\3c&HFFFFFF&\fnComic Sans MS}To Yuika, Roko, and Producer:\NConsidering the situation, we went ahead \Nand made a bit of progress together.\NWe're fine, so please don't worry.\NThank you so much for your hard work.
+Dialogue: 0,0:01:18.93,0:01:21.91,OnScreen,TEXT,0,0,0,,{\an7\pos(0,0)\p1\clip(0,0,816,193.14)\alpha&H40&}m 0 0 l 1920 0 1920 1080 0 1080 0 0{\p0}
+Dialogue: 1,0:01:18.93,0:01:21.91,OnScreen,TEXT,0,0,0,,{\an7\c&H000000&\fn思源黑体 Medium\b0}恋钟：下一次的live服装的意愿调查是要啥时候发来着？？
+Dialogue: 1,0:01:18.93,0:01:21.91,OnScreen,TEXT,0,0,0,,{\an7\c&H000000&\fn思源黑体 Medium\b0}恋钟：啊！？我忘了~
+Dialogue: 1,0:01:18.93,0:01:21.91,OnScreen,TEXT,0,0,0,,{\an7\c&H000000&\fn思源黑体 Medium\b0}咲耶：应该是是下一个周一吧，以防万一还是跟大家都说一下吧
+Dialogue: 1,0:01:18.93,0:01:21.91,OnScreen,TEXT,0,0,0,,{\an7\c&H000000&\fn思源黑体 Medium\b0}恋钟：咲耶谢咯
+Dialogue: 0,0:03:48.29,0:03:52.37,OnScreen,TEXT (MITSUMINE),0,0,0,,{\an7\pos(0,0)\p1\alpha&H40&\clip(0,0,560,235.43)}m 0 0 l 1920 0 1920 1080 0 1080 0 0{\p0}
+Dialogue: 1,0:03:48.29,0:03:52.37,OnScreen,TEXT (MITSUMINE),0,0,0,,{\an7\c&H000000&\fn思源黑体 Medium\b0}恋钟：莫得问题吧\N结华：那么我就去给P碳说咯，大家辛苦了\N雾子：嗯，我也没问题(^ ^)\N咲耶：谢谢，帮大忙了\N恋钟：大家，周五有安排吗~~？
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\fn悠哉字体\frz12.28\fscx55\fscy55\pos(213.64,73.84)\c&H4A6475&}关于内容
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz6.18\pos(257.46,372.91)}新歌思维导图
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz6.18\pos(227.17,511.8)}希望注意故事的厚重感。
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz6.18\pos(141.35,629.65)}热情·火焰·想哔地唱歌，想传达到。
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz6.18\pos(143.87,651.54)}想表现出在这之上的震撼。
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz12.37\pos(911.19,468.04)}想试试新的音乐
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz13.7\pos(940.64,367.03)}有必要向\N其他组合确认？
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz15.55\pos(981.86,175.11)}新的服装？
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz15.55\pos(1001.21,224.77)}舞台美术？
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz346.7\pos(713.46,158.27)}升级的方向
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz4.513\pos(411.41,251.7)}交响乐
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz4.513\pos(409.73,290.43)}大合唱
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz4.513\pos(405.53,335.05)}多种多样的互动
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz4.513\pos(407.21,386.39)}Auto-Tune和effect？
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz1.041\pos(912.88,4.21)}以往的L'Antica风格
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz1.041\pos(992.81,87.55)}（音色·种类·表现力是否也可以？）
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz1.041\pos(845.57,79.13)}新音乐的可能性
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\pos(461.91,12.63)\frz4.733}幻想的，摇滚
+Dialogue: 0,0:06:59.77,0:07:01.23,OnScreen,TEXT TOP LEFT,0,0,0,,{\an7\fn悠哉字体\fscx55\fscy55\c&H4A6475&\frz4.733\pos(415.64,105.22)}交响金属
+Dialogue: 0,0:07:23.75,0:07:23.79,OnScreen,TEXT,0,0,0,,{=0}{\fscx100\fscy100\alpha&H00&\fn悠哉字体\frz3.06\pos(847.39,714.25)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:23.79,0:07:23.83,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.04\fscy100.04\alpha&H00&\fn悠哉字体\frz3.05\pos(847.38,714.3)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:23.83,0:07:23.88,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.06\fscy100.06\alpha&H00&\fn悠哉字体\frz3.06\pos(847.21,714.25)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:23.88,0:07:23.92,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.11\fscy100.11\alpha&H00&\fn悠哉字体\frz3.06\pos(847.25,714.24)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:23.92,0:07:23.96,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.12\fscy100.12\alpha&H00&\fn悠哉字体\frz3.06\pos(847.05,714.27)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:23.96,0:07:24.00,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.14\fscy100.14\alpha&H00&\fn悠哉字体\frz3.06\pos(846.86,714.29)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.00,0:07:24.04,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.21\fscy100.21\alpha&H00&\fn悠哉字体\frz3.06\pos(846.98,714.23)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.04,0:07:24.09,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.24\fscy100.24\alpha&H00&\fn悠哉字体\frz3.05\pos(846.91,714.28)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.09,0:07:24.13,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.27\fscy100.27\alpha&H00&\fn悠哉字体\frz3.05\pos(846.83,714.29)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.13,0:07:24.17,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.35\fscy100.35\alpha&H00&\fn悠哉字体\frz3.06\pos(846.94,714.21)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.17,0:07:24.21,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.38\fscy100.38\alpha&H00&\fn悠哉字体\frz3.06\pos(846.85,714.19)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.21,0:07:24.25,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.4\fscy100.4\alpha&H00&\fn悠哉字体\frz3.06\pos(846.7,714.18)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.25,0:07:24.29,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.45\fscy100.45\alpha&H00&\fn悠哉字体\frz3.06\pos(846.72,714.16)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.29,0:07:24.34,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.51\fscy100.51\alpha&H00&\fn悠哉字体\frz3.06\pos(846.76,714.15)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.34,0:07:24.38,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.53\fscy100.53\alpha&H00&\fn悠哉字体\frz3.06\pos(846.61,714.1)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.38,0:07:24.42,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.6\fscy100.6\alpha&H00&\fn悠哉字体\frz3.06\pos(846.71,714.09)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.42,0:07:24.46,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.65\fscy100.65\alpha&H00&\fn悠哉字体\frz3.06\pos(846.7,714.08)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.46,0:07:24.50,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.68\fscy100.68\alpha&H00&\fn悠哉字体\frz3.06\pos(846.62,714.09)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.50,0:07:24.54,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.73\fscy100.73\alpha&H00&\fn悠哉字体\frz3.06\pos(846.64,714.07)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.54,0:07:24.59,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.79\fscy100.79\alpha&H00&\fn悠哉字体\frz3.06\pos(846.67,714.02)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.59,0:07:24.63,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.8\fscy100.8\alpha&H00&\fn悠哉字体\frz3.06\pos(846.51,714.05)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.63,0:07:24.67,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.85\fscy100.85\alpha&H00&\fn悠哉字体\frz3.06\pos(846.48,714.05)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.67,0:07:24.71,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.91\fscy100.91\alpha&H00&\fn悠哉字体\frz3.06\pos(846.57,714)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.71,0:07:24.75,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.96\fscy100.96\alpha&H00&\fn悠哉字体\frz3.06\pos(846.53,713.96)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.75,0:07:24.79,OnScreen,TEXT,0,0,0,,{=0}{\fscx100.97\fscy100.97\alpha&H00&\fn悠哉字体\frz3.06\pos(846.36,714.01)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.79,0:07:24.84,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.03\fscy101.03\alpha&H00&\fn悠哉字体\frz3.06\pos(846.41,713.99)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.84,0:07:24.88,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.09\fscy101.09\alpha&H00&\fn悠哉字体\frz3.06\pos(846.46,713.98)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.88,0:07:24.92,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.09\fscy101.09\alpha&H00&\fn悠哉字体\frz3.06\pos(846.22,713.97)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.92,0:07:24.96,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.13\fscy101.13\alpha&H00&\fn悠哉字体\frz3.06\pos(846.17,713.99)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:24.96,0:07:25.00,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.15\fscy101.15\alpha&H00&\fn悠哉字体\frz3.07\pos(846,713.94)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.00,0:07:25.04,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.21\fscy101.21\alpha&H00&\fn悠哉字体\frz3.06\pos(846.08,713.95)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.04,0:07:25.09,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.25\fscy101.25\alpha&H00&\fn悠哉字体\frz3.07\pos(846.02,713.92)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.09,0:07:25.13,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.3\fscy101.3\alpha&H00&\fn悠哉字体\frz3.06\pos(846.05,713.94)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.13,0:07:25.17,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.33\fscy101.33\alpha&H00&\fn悠哉字体\frz3.06\pos(845.95,713.91)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.17,0:07:25.21,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.38\fscy101.38\alpha&H00&\fn悠哉字体\frz3.06\pos(845.94,713.92)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.21,0:07:25.25,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.43\fscy101.43\alpha&H00&\fn悠哉字体\frz3.07\pos(845.93,713.85)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.25,0:07:25.29,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.46\fscy101.46\alpha&H00&\fn悠哉字体\frz3.07\pos(845.86,713.86)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.29,0:07:25.34,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.49\fscy101.49\alpha&H00&\fn悠哉字体\frz3.06\pos(845.8,713.9)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.34,0:07:25.38,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.53\fscy101.53\alpha&H00&\fn悠哉字体\frz3.06\pos(845.74,713.89)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.38,0:07:25.42,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.6\fscy101.6\alpha&H00&\fn悠哉字体\frz3.06\pos(845.82,713.82)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.42,0:07:25.46,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.64\fscy101.64\alpha&H00&\fn悠哉字体\frz3.06\pos(845.78,713.82)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.46,0:07:25.50,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.68\fscy101.68\alpha&H00&\fn悠哉字体\frz3.06\pos(845.75,713.81)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.50,0:07:25.54,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.75\fscy101.75\alpha&H00&\fn悠哉字体\frz3.07\pos(845.84,713.74)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.54,0:07:25.59,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.77\fscy101.77\alpha&H00&\fn悠哉字体\frz3.06\pos(845.71,713.76)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.59,0:07:25.63,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.82\fscy101.82\alpha&H00&\fn悠哉字体\frz3.06\pos(845.72,713.74)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.63,0:07:25.67,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.84\fscy101.84\alpha&H00&\fn悠哉字体\frz3.07\pos(845.52,713.71)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.67,0:07:25.71,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.86\fscy101.86\alpha&H00&\fn悠哉字体\frz3.07\pos(845.38,713.71)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.71,0:07:25.75,OnScreen,TEXT,0,0,0,,{=0}{\fscx101.95\fscy101.95\alpha&H00&\fn悠哉字体\frz3.07\pos(845.6,713.67)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.75,0:07:25.80,OnScreen,TEXT,0,0,0,,{=0}{\fscx102\fscy102\alpha&H00&\fn悠哉字体\frz3.07\pos(845.61,713.62)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.80,0:07:25.84,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.05\fscy102.05\alpha&H00&\fn悠哉字体\frz3.07\pos(845.61,713.62)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.84,0:07:25.88,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.09\fscy102.09\alpha&H00&\fn悠哉字体\frz3.06\pos(845.58,713.68)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.88,0:07:25.92,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.11\fscy102.11\alpha&H00&\fn悠哉字体\frz3.06\pos(845.47,713.72)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.92,0:07:25.96,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.16\fscy102.16\alpha&H00&\fn悠哉字体\frz3.06\pos(845.46,713.65)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:25.96,0:07:26.00,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.21\fscy102.21\alpha&H00&\fn悠哉字体\frz3.07\pos(845.42,713.6)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.00,0:07:26.05,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.27\fscy102.27\alpha&H00&\fn悠哉字体\frz3.07\pos(845.5,713.56)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.05,0:07:26.09,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.31\fscy102.31\alpha&H00&\fn悠哉字体\frz3.07\pos(845.45,713.56)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.09,0:07:26.13,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.37\fscy102.37\alpha&H00&\fn悠哉字体\frz3.07\pos(845.48,713.55)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.13,0:07:26.17,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.39\fscy102.39\alpha&H00&\fn悠哉字体\frz3.07\pos(845.35,713.56)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.17,0:07:26.21,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.43\fscy102.43\alpha&H00&\fn悠哉字体\frz3.07\pos(845.31,713.53)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.21,0:07:26.25,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.49\fscy102.49\alpha&H00&\fn悠哉字体\frz3.07\pos(845.34,713.5)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.25,0:07:26.30,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.53\fscy102.53\alpha&H00&\fn悠哉字体\frz3.07\pos(845.31,713.49)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.30,0:07:26.34,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.58\fscy102.58\alpha&H00&\fn悠哉字体\frz3.07\pos(845.29,713.47)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.34,0:07:26.38,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.59\fscy102.59\alpha&H00&\fn悠哉字体\frz3.07\pos(845.15,713.5)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.38,0:07:26.42,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.65\fscy102.65\alpha&H00&\fn悠哉字体\frz3.07\pos(845.16,713.45)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.42,0:07:26.46,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.71\fscy102.71\alpha&H00&\fn悠哉字体\frz3.07\pos(845.24,713.44)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.46,0:07:26.50,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.75\fscy102.75\alpha&H00&\fn悠哉字体\frz3.07\pos(845.16,713.47)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.50,0:07:26.55,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.81\fscy102.81\alpha&H00&\fn悠哉字体\frz3.08\pos(845.22,713.31)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.55,0:07:26.59,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.85\fscy102.85\alpha&H00&\fn悠哉字体\frz3.08\pos(845.14,713.29)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.59,0:07:26.63,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.9\fscy102.9\alpha&H00&\fn悠哉字体\frz3.07\pos(845.16,713.29)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.63,0:07:26.67,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.91\fscy102.91\alpha&H00&\fn悠哉字体\frz3.07\pos(845.01,713.4)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.67,0:07:26.71,OnScreen,TEXT,0,0,0,,{=0}{\fscx102.98\fscy102.98\alpha&H00&\fn悠哉字体\frz3.07\pos(845.11,713.34)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.71,0:07:26.75,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.02\fscy103.02\alpha&H00&\fn悠哉字体\frz3.07\pos(845.07,713.33)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.75,0:07:26.80,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.06\fscy103.06\alpha&H00&\fn悠哉字体\frz3.07\pos(844.99,713.3)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.80,0:07:26.84,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.1\fscy103.1\alpha&H00&\fn悠哉字体\frz3.07\pos(844.97,713.29)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.84,0:07:26.88,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.15\fscy103.15\alpha&H00&\fn悠哉字体\frz3.07\pos(844.95,713.29)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.88,0:07:26.92,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.19\fscy103.19\alpha&H00&\fn悠哉字体\frz3.07\pos(844.93,713.27)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.92,0:07:26.96,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.24\fscy103.24\alpha&H00&\fn悠哉字体\frz3.07\pos(844.9,713.22)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:26.96,0:07:27.00,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.27\fscy103.27\alpha&H00&\fn悠哉字体\frz3.07\pos(844.85,713.27)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.00,0:07:27.05,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.32\fscy103.32\alpha&H00&\fn悠哉字体\frz3.07\pos(844.82,713.23)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.05,0:07:27.09,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.36\fscy103.36\alpha&H00&\fn悠哉字体\frz3.07\pos(844.8,713.2)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.09,0:07:27.13,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.4\fscy103.4\alpha&H00&\fn悠哉字体\frz3.07\pos(844.76,713.2)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.13,0:07:27.17,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.46\fscy103.46\alpha&H00&\fn悠哉字体\frz3.07\pos(844.8,713.17)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.17,0:07:27.21,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.51\fscy103.51\alpha&H00&\fn悠哉字体\frz3.07\pos(844.77,713.17)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.21,0:07:27.25,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.55\fscy103.55\alpha&H00&\fn悠哉字体\frz3.07\pos(844.77,713.14)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.25,0:07:27.30,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.6\fscy103.6\alpha&H00&\fn悠哉字体\frz3.07\pos(844.74,713.12)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.30,0:07:27.34,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.62\fscy103.62\alpha&H00&\fn悠哉字体\frz3.07\pos(844.59,713.14)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.34,0:07:27.38,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.66\fscy103.66\alpha&H00&\fn悠哉字体\frz3.07\pos(844.6,713.13)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.38,0:07:27.42,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.71\fscy103.71\alpha&H00&\fn悠哉字体\frz3.07\pos(844.57,713.07)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.42,0:07:27.46,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.77\fscy103.77\alpha&H00&\fn悠哉字体\frz3.07\pos(844.62,713.07)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.46,0:07:27.51,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.83\fscy103.83\alpha&H00&\fn悠哉字体\frz3.07\pos(844.64,713.01)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.51,0:07:27.55,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.85\fscy103.85\alpha&H00&\fn悠哉字体\frz3.07\pos(844.55,713.01)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.55,0:07:27.59,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.9\fscy103.9\alpha&H00&\fn悠哉字体\frz3.07\pos(844.53,713.02)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.59,0:07:27.63,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.92\fscy103.92\alpha&H00&\fn悠哉字体\frz3.08\pos(844.36,712.98)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.63,0:07:27.67,OnScreen,TEXT,0,0,0,,{=0}{\fscx103.97\fscy103.97\alpha&H00&\fn悠哉字体\frz3.07\pos(844.4,713)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.67,0:07:27.71,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.04\fscy104.04\alpha&H00&\fn悠哉字体\frz3.07\pos(844.47,712.97)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.71,0:07:27.76,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.07\fscy104.07\alpha&H00&\fn悠哉字体\frz3.07\pos(844.4,712.98)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.76,0:07:27.80,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.11\fscy104.11\alpha&H00&\fn悠哉字体\frz3.07\pos(844.36,712.96)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.80,0:07:27.84,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.16\fscy104.16\alpha&H00&\fn悠哉字体\frz3.07\pos(844.38,712.94)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.84,0:07:27.88,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.2\fscy104.2\alpha&H00&\fn悠哉字体\frz3.07\pos(844.33,712.91)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.88,0:07:27.92,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.24\fscy104.24\alpha&H00&\fn悠哉字体\frz3.08\pos(844.24,712.84)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.92,0:07:27.96,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.31\fscy104.31\alpha&H00&\fn悠哉字体\frz3.08\pos(844.36,712.83)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:27.96,0:07:28.01,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.36\fscy104.36\alpha&H00&\fn悠哉字体\frz3.08\pos(844.37,712.76)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.01,0:07:28.05,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.38\fscy104.38\alpha&H00&\fn悠哉字体\frz3.08\pos(844.23,712.82)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.05,0:07:28.09,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.46\fscy104.46\alpha&H00&\fn悠哉字体\frz3.08\pos(844.35,712.75)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.09,0:07:28.13,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.48\fscy104.48\alpha&H00&\fn悠哉字体\frz3.08\pos(844.23,712.73)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.13,0:07:28.17,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.52\fscy104.52\alpha&H00&\fn悠哉字体\frz3.08\pos(844.18,712.71)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.17,0:07:28.21,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.56\fscy104.56\alpha&H00&\fn悠哉字体\frz3.08\pos(844.14,712.72)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.21,0:07:28.26,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.6\fscy104.6\alpha&H00&\fn悠哉字体\frz3.08\pos(844.04,712.68)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.26,0:07:28.30,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.64\fscy104.64\alpha&H00&\fn悠哉字体\frz3.08\pos(844.02,712.69)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.30,0:07:28.34,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.7\fscy104.7\alpha&H00&\fn悠哉字体\frz3.09\pos(844.04,712.61)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.34,0:07:28.38,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.76\fscy104.76\alpha&H00&\fn悠哉字体\frz3.08\pos(844.15,712.67)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.38,0:07:28.42,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.8\fscy104.8\alpha&H00&\fn悠哉字体\frz3.08\pos(844.08,712.66)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.42,0:07:28.46,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.85\fscy104.85\alpha&H00&\fn悠哉字体\frz3.08\pos(844.11,712.62)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.46,0:07:28.51,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.86\fscy104.86\alpha&H00&\fn悠哉字体\frz3.08\pos(843.9,712.63)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.51,0:07:28.55,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.95\fscy104.95\alpha&H00&\fn悠哉字体\frz3.08\pos(844.09,712.6)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.55,0:07:28.59,OnScreen,TEXT,0,0,0,,{=0}{\fscx104.98\fscy104.98\alpha&H00&\fn悠哉字体\frz3.08\pos(844.02,712.58)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.59,0:07:28.63,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.01\fscy105.01\alpha&H00&\fn悠哉字体\frz3.08\pos(843.91,712.58)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.63,0:07:28.67,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.06\fscy105.06\alpha&H00&\fn悠哉字体\frz3.08\pos(843.9,712.52)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.67,0:07:28.71,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.12\fscy105.12\alpha&H00&\fn悠哉字体\frz3.08\pos(843.96,712.5)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.71,0:07:28.76,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.19\fscy105.19\alpha&H00&\fn悠哉字体\frz3.08\pos(844.04,712.46)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.76,0:07:28.80,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.19\fscy105.19\alpha&H00&\fn悠哉字体\frz3.08\pos(843.84,712.5)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.80,0:07:28.84,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.22\fscy105.22\alpha&H00&\fn悠哉字体\frz3.08\pos(843.74,712.53)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.84,0:07:28.88,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.25\fscy105.25\alpha&H00&\fn悠哉字体\frz3.08\pos(843.66,712.51)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.88,0:07:28.92,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.3\fscy105.3\alpha&H00&\fn悠哉字体\frz3.08\pos(843.66,712.52)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.92,0:07:28.96,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.35\fscy105.35\alpha&H00&\fn悠哉字体\frz3.08\pos(843.66,712.46)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:28.96,0:07:29.01,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.4\fscy105.4\alpha&H00&\fn悠哉字体\frz3.08\pos(843.67,712.42)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.01,0:07:29.05,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.44\fscy105.44\alpha&H00&\fn悠哉字体\frz3.08\pos(843.63,712.43)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.05,0:07:29.09,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.5\fscy105.5\alpha&H00&\fn悠哉字体\frz3.08\pos(843.69,712.41)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.09,0:07:29.13,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.53\fscy105.53\alpha&H00&\fn悠哉字体\frz3.08\pos(843.59,712.38)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.13,0:07:29.17,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.56\fscy105.56\alpha&H00&\fn悠哉字体\frz3.08\pos(843.49,712.38)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.17,0:07:29.22,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.63\fscy105.63\alpha&H00&\fn悠哉字体\frz3.08\pos(843.56,712.35)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.22,0:07:29.26,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.68\fscy105.68\alpha&H00&\fn悠哉字体\frz3.08\pos(843.56,712.35)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.26,0:07:29.30,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.72\fscy105.72\alpha&H00&\fn悠哉字体\frz3.08\pos(843.55,712.34)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.30,0:07:29.34,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.77\fscy105.77\alpha&H00&\fn悠哉字体\frz3.08\pos(843.56,712.31)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.34,0:07:29.38,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.82\fscy105.82\alpha&H00&\fn悠哉字体\frz3.08\pos(843.52,712.31)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.38,0:07:29.42,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.85\fscy105.85\alpha&H00&\fn悠哉字体\frz3.08\pos(843.47,712.3)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.42,0:07:29.47,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.92\fscy105.92\alpha&H00&\fn悠哉字体\frz3.09\pos(843.51,712.24)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.47,0:07:29.51,OnScreen,TEXT,0,0,0,,{=0}{\fscx105.94\fscy105.94\alpha&H00&\fn悠哉字体\frz3.08\pos(843.41,712.26)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.51,0:07:29.55,OnScreen,TEXT,0,0,0,,{=0}{\fscx106\fscy106\alpha&H00&\fn悠哉字体\frz3.09\pos(843.45,712.2)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.55,0:07:29.59,OnScreen,TEXT,0,0,0,,{=0}{\fscx106.06\fscy106.06\alpha&H00&\fn悠哉字体\frz3.08\pos(843.49,712.19)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.59,0:07:29.63,OnScreen,TEXT,0,0,0,,{=0}{\fscx106.09\fscy106.09\alpha&H00&\fn悠哉字体\frz3.09\pos(843.39,712.18)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.63,0:07:29.67,OnScreen,TEXT,0,0,0,,{=0}{\fscx106.09\fscy106.09\alpha&H00&\fn悠哉字体\frz3.08\pos(843.19,712.21)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:29.67,0:07:29.72,OnScreen,TEXT,0,0,0,,{=0}{\fscx106.14\fscy106.14\alpha&H00&\fn悠哉字体\frz3.08\pos(843.16,712.21)\c&H38444B&}想传达的事情
+Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{=6}{\clip()\alpha&H00&\an7\fn悠哉字体\fscx70\t(22,6111,\fscx73.59)\fscy70\t(22,6111,\fscy73.59)\c&H4A6475&\frz338.1\t(22,6111,\frz338.1)\move(909.14,101.71,914.25,84.82,22,6111)}革新的方向
+Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{=5}{\clip()\alpha&H00&\an7\fn悠哉字体\fscx70\t(22,6111,\fscx73.59)\fscy70\t(22,6111,\fscy73.59)\c&H4A6475&\frz339.4\t(22,6111,\frz339.4)\move(1114.67,187.69,1130.32,175.21,22,6111)}试着考虑新的味道（用上述的参考歌曲~的方法）
+Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{=4}{\clip()\alpha&H00&\an7\fn悠哉字体\fscx70\t(22,6111,\fscx73.59)\fscy70\t(22,6111,\fscy73.59)\c&H4A6475&\frz339.4\t(22,6111,\frz339.4)\move(1188.07,304.08,1207.49,297.58,22,6111)}新的齐唱方式测试
+Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{=3}{\clip()\alpha&H00&\an7\fn悠哉字体\fscx70\t(22,6111,\fscx73.59)\fscy70\t(22,6111,\fscy73.59)\c&H4A6475&\frz339\t(22,6111,\frz339)\move(1259.38,103.8,1282.46,87.02,22,6111)}…具体的需求
+Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{=2}{\clip()\alpha&H00&\an7\fn悠哉字体\fscx70\t(22,6111,\fscx73.59)\fscy70\t(22,6111,\fscy73.59)\c&H4A6475&\frz339\t(22,6111,\frz339)\move(1216.39,132.11,1237.26,116.78,22,6111)}参考歌曲的分享与展开
+Dialogue: 0,0:07:48.78,0:07:54.91,OnScreen,TEXT,0,0,0,,{=1}{\clip()\alpha&H00&\an7\fn悠哉字体\fscx70\t(22,6111,\fscx73.59)\fscy70\t(22,6111,\fscy73.59)\c&H4A6475&\frz340.3\t(22,6111,\frz340.3)\move(1436.6,261.07,1468.77,252.36,22,6111)}（善用SNS/用Chain创建讨论组）
+
+[Aegisub Extradata]
+Data: 0,a-mo,u?S*V>7FE)DIC.'1R.$ES.T=N.D1Y-#UU:G)X,4EZ-4EN.79R-72F9W-Z-W9Y)CQC<X*J:WFO97R5:8BU)DIC?VR=:G\GAK$FEYHFL:@EP:.=8':S?D-O-$9S8&RQ<X-I/$1X,D-Z,$=R.#YS.3F=8'-G3$-Y.$1U1C:^ZI/TZ,SA[,[_ZZK%Z,K,ZI/&)HU
+Data: 1,a-mo,u?S*V>7FE)DIC:4.B/79Y:4)N:4EW-CUU/79Q,4BB.W9N.W2D9W*G-T%Y.'1W)CQC<X*J:WFO97R5:8BU)DIC?VR=97YX8&RG<O;#I/74C?7NF_3^EVR=:H.D?$=Q8&RG=W.Z.T"=8'-G3$2".D1X.3:=8':S?D-U-#YT8&RQ<X-I-41T.CYW,$)W-3YQ.SF^\\S)Z:;%ZZ3I5UZ48#`HF+B$;'&J<O7)G_7\OOCOK/COOO?\B/_]C3*^
+Data: 2,a-mo,u?S*V>7FE)DIC-T5U.'9R:$!N.$%X-#UU:$FB,4EV.71N.D1Z/4)V/$&G9G%T)CQC<X*J:WFO97R5:8BU)DIC?VR=97YX8&RG<O;#I/74C?7NF_3^EVR=:H.D?$=Q8&RG=W.Z.T"=8'-G3$2".D1X.3:=8':S?D-T/6R=='^T+$%S-49O-TEM-4-S,D%R+8XFDY,IA)0GL9TGG\,HGI4FC)<EOKPEO)\FM:8FP)!C@1
+Data: 3,a-mo,u?S*V>7FE)DIC:'*G:G)U9D1N9G1S:3UU975Z,7)U.$%N.D.E:G*B-7)T.G:E)CQC<X*J:WFO97R5:8BU)DIC?VR=97YX8&RG<O;#I/74C?7NF_3^EVR=:H.D?$=Q8&RG=W.Z.T"=8'-G3$2".D1X.3:=8':S?D-T/6R=='^T+$%S.4EO-TAM-4!T,DAJ@?+!JO7&N_3^E_?;B/G=A/;RAC*^
+Data: 4,a-mo,u?S*V>7FE)DIC97%S-W)X:7%N/71X.3UU-W2F,4AW-$)N-T"F/$6E/$6B9G-S)CQC<X*J:WFO97R5:8BU)DIC?VR=97YX8&RG<O;#I/74C?7NF_3^EVR=:H.D?$=Q8&RG=W.Z.T"=8'-G3$2".D1X.3:=8':S?D-T/3YU8&RQ<X-I-4%Y/#YQ.SQT-$1O-$AJ@?;7M/?;B/G^E/75M?;7O?7]D_;VC_CPF3*^
+Data: 5,a-mo,u?S*V>7FE)DIC.D%W:G1Z/$9N:4=R9SUU:71S,4EU.D5N:'.D.DAX9D6G941X)CQC<X*J:WFO97R5:8BU)DIC?VR=97YX8&RG<O;#I/74C?7NF_3^EVR=:H.D?$=Q8&RG=W.Z.T"=8'-G3$2".D1X.3:=8':S?D-T/3YU8&RQ<X-I-4%R.#YW.SQR/$=O.DEJ@?CPF??>A/C!A_C:E?;7M/?;B/72M_G"E__]C/?5K/3YCOC`M/?;B/70AOC!A_;ND/;<MH\HGI4GFLHGMZ8PP)EC@1
+Data: 6,a-mo,u?S*V>7FE)DIC.D"F-4-Y9G%N:'6C/#UU9G9V,7%Q/'9N9G:D-4FG9W-Z97.F)CQC<X*J:WFO97R5:8BU)DIC?VR=97YX8&RG<O;#I/74C?7NF_3^EVR=:H.D?$=Q8&RG=W.Z.T"=8'-G3$2".D1X.3:=8':S?D-T/#YR8&RQ<X-I/4!Z,D%U,$%Q-3YX-3F^[:WJZJ;QZZK%ZJ;ZZ:#2)HU
