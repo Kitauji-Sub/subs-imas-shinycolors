@@ -14,14 +14,13 @@ YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
-Audio File: C:/Users/scree/Desktop/ep7.mkv
-Video File: C:/Users/scree/Desktop/ep7.mkv
+Audio File: C:/Users/scree/Desktop/sc_s2_ep7/ep7.mkv
+Video File: C:/Users/scree/Desktop/sc_s2_ep7/ep7.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.750000
-Scroll Position: 235
-Active Line: 251
-Video Position: 33653
+Video Zoom Percent: 0.625000
+Active Line: 14
+Video Position: 33515
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -48,7 +47,7 @@ Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle 
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext unless overlap,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&}!line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext if overlap,!line.actor == "" and skip() or ""!{!set("extended", {_G.aegisub.text_extents(line.styleref, " & "..line.actor)})!\an!line.styleref.align == 2 and 1 or 7!\pos(!right_pos!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&\3a&H5F&!set("right_pos", right_pos+ (extended[1]*0.8))!}{\fscx20} {\fscx80}& !line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,,=====STAFF=====
-Dialogue: 0,0:23:16.29,0:23:19.79,SC_Bottom,,0,0,0,,{\an8\fscx60\fscy60\fad(1000,0)\pos(960,130)\fn悠哉字体\b1\bord.06\blur4}字幕制作：北宇治字幕组Deep State\N翻译：Scrpr　FFU2（校对）　双柱（协助）\N后期：Scrpr
+Dialogue: 0,0:23:16.29,0:23:19.79,SC_Bottom,,0,0,0,,{\an8\fscx60\fscy60\fad(1000,0)\pos(960,90)\fn悠哉字体\b1\bord.06\blur4}字幕制作：北宇治字幕组Deep State\N翻译：Scrpr　FFU2（校对）　双柱（协助）\N后期：Scrpr
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
 Dialogue: 0,0:23:16.29,0:23:19.79,SC_Bottom,,0,0,0,,{\fn悠哉字体\b1\pos(960,705)\fscy105\fad(1000,0)\bord0.5\blur4}弥足珍贵之物
@@ -119,7 +118,7 @@ Comment: 0,0:07:09.19,0:07:12.37,SC_Bottom,咲耶,0,0,0,kara,说起来 恋钟 �
 Comment: 0,0:07:13.07,0:07:16.29,SC_Bottom,恋钟,0,0,0,kara,呜哇 我得走了\Nうわ もう行かんと
 Comment: 0,0:07:16.29,0:07:18.33,SC_Bottom,恋钟,0,0,0,kara,大家 抱歉啊{\fscx50} {\fscx100}—\Nみんな ごめん
 Comment: 0,0:07:29.96,0:07:33.61,SC_Bottom,结华,0,0,0,kara,确实 大家都很珍视这首歌呢\N確かに 大切な歌にしたいよね
-Comment: 0,0:07:34.16,0:07:37.55,SC_Bottom,结华,0,0,0,kara,要分享的内容整理的很完美 谢谢你{\fscx50} {\fscx100}Sakuyan\N共有ばっちり さくやんありがとう
+Comment: 0,0:07:34.16,0:07:37.55,SC_Bottom,结华,0,0,0,kara,要分享的内容整理得很完美 谢谢你{\fscx50} {\fscx100}Sakuyan\N共有ばっちり さくやんありがとう
 Comment: 0,0:07:40.29,0:07:41.44,SC_Bottom,结华,0,0,0,kara,怎么了吗\Nどうかした？
 Comment: 0,0:07:41.44,0:07:46.63,SC_Bottom,制作人,0,0,0,kara,啊 没事 就是觉得咲耶有点…\Nあっいや 何となく咲耶にしては
 Comment: 0,0:07:50.09,0:07:54.91,SC_Bottom,结华,0,0,0,kara,「考虑到当前情况 大家已经将工作往前推进一些了」\N状況を考えて みんなで少しばかり進めておいたよ
@@ -128,7 +127,7 @@ Comment: 0,0:08:02.49,0:08:06.10,SC_Bottom,结华,0,0,0,kara,「工作 辛苦了
 Comment: 0,0:08:11.76,0:08:14.79,SC_Bottom,结华,0,0,0,kara,感觉咲耶说的话也没什么特别的\N三峰は別に普通だと思うけどな
 Comment: 0,0:08:15.24,0:08:16.37,SC_Bottom,制作人,0,0,0,kara,是这样吗\Nそうか
 Comment: 0,0:08:17.16,0:08:23.77,SC_Bottom,结华,0,0,0,kara,而且你看 当一个人说没问题的时候 不就是希望他人可以相信她吗\Nそれにほら 大丈夫って言ってる間は 信じてもらえた方がありがたいじゃん
-Comment: 0,0:08:55.68,0:08:58.41,SC_Bottom,咲耶,0,0,0,kara,今天真是久违的在一个地方工作呢\N今日は久しぶりに一緒の現場だね
+Comment: 0,0:08:55.68,0:08:58.41,SC_Bottom,咲耶,0,0,0,kara,今天真是久违地在同一个地方工作呢\N今日は久しぶりに一緒の現場だね
 Comment: 0,0:08:58.41,0:09:00.12,SC_Bottom,咲耶,0,0,0,kara,我很期待\N心待ちにしていたよ
 Comment: 0,0:09:00.45,0:09:02.61,SC_Bottom,结华,0,0,0,kara,嗯 说的是呢\Nうん そうだよね
 Comment: 0,0:09:03.01,0:09:03.85,SC_Bottom,咲耶,0,0,0,kara,是啊\Nああ

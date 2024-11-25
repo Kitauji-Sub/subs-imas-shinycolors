@@ -9,21 +9,21 @@ PlayResY: 1080
 
 [Aegisub Project Garbage]
 Last Style Storage: Default
-Audio File: C:/Users/scree/Desktop/ep7.mkv
-Video File: C:/Users/scree/Desktop/ep7.mkv
+Audio File: C:/Users/scree/Desktop/sc_s2_ep7/ep7.mkv
+Video File: C:/Users/scree/Desktop/sc_s2_ep7/ep7.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
 Scroll Position: 9
-Active Line: 17
-Video Position: 34370
+Active Line: 30
+Video Position: 33632
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: 歌CN,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,125,1
 Style: 歌JP,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,70,1
-Style: 歌CN_center,方正FW轻吟体 简 B,55,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,0,0,0,0,100,100,1.1,0,1,0.6,0,8,70,70,30,1
-Style: 歌JP_center,FOT-Humming Std B,60,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,0,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,30,1
+Style: 歌CN_center,方正FW轻吟体 简 B,45,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,0,0,0,0,100,100,1.1,0,1,0.6,0,8,70,70,30,1
+Style: 歌JP_center,FOT-Humming Std B,50,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,0,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,30,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
