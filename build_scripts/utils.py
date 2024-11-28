@@ -111,7 +111,7 @@ class SubtitleProcessor:
 
             for style in doc.styles:
                 if style.fontname == "方正FW轻吟体 简 B" or style.fontname == "方正FW轻吟体 简 M":
-                    style.fontsize = "55"
+                    style.fontsize = str(int(style.fontsize) * 55 / 65)
                     style.bold = "0"
                 style.fontname = self.replace_fonts(style.fontname, config.font_replacements)
 
