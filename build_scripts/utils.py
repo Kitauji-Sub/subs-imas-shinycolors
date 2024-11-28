@@ -110,7 +110,7 @@ class SubtitleProcessor:
                     doc.events[i].text = doc.events[i].text.replace(".ass", "_tc.ass").replace("_sc_tc.ass", "_tc.ass")
 
             for style in doc.styles:
-                if style.fontname == "方正FW轻吟体 简 B" or style.fontname == "方正FW轻吟体 简 M":
+                if style.fontname == "方正FW轻吟体 简 B" or style.fontname == "方正FW轻吟体 简 M" or style.fontname == "FOT-Humming Std B":
                     style.fontsize = str(int(style.fontsize) * 55 / 65)
                     style.bold = "0"
                 style.fontname = self.replace_fonts(style.fontname, config.font_replacements)
