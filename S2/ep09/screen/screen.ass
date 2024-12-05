@@ -1,0 +1,23 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Active Line: 1
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:03.06,0:00:09.53,Signs,SIGN,0,0,0,,{\fs18\4c&H9AC5CB&\fnTimes New Roman\c&H000000&\3c&HFFFFFF&\fscx80\fscy88\pos(480,60)}Wholehearted\NEffort
+Dialogue: 0,0:12:25.55,0:12:30.43,Signs,TEXT,0,0,0,,{\an7\fs15\c&H000000&\3c&HFFFFFF&}Comments\N- Mysterious Mei-sama is too amazing!\N- Her power is off the charts.\N- Cool Mei-chan is unbeatable!\N- I've been seeing this girl a lot lately.\N- I'm curious about her conversations \Nwith the other members...
+Dialogue: 0,0:19:02.24,0:19:04.83,Signs,TEXT,0,0,0,,{\an7\fs15\c&H000000&\3c&HFFFFFF&}- New update is here!\N- They're regulars now, no surprises, \Nbut in a good way.\N- I'm definitely watching this live!\N- I want to see a documentary, too! \NStaff, please!!
+Dialogue: 0,0:19:09.35,0:19:13.27,Signs,TEXT,0,0,0,,{\an7\fs15\c&H000000&\3c&HFFFFFF&}- We need a Fuyu-chan special, too!\N- Mei-sama, this is crazy! Is this for real?\N- There's no way Mei-chan is just a \Ncheerful high school girl!!\N- Whoa!! Is this for real?!
+Dialogue: 0,0:00:00.00,0:00:05.00,Default,,0,0,0,,
