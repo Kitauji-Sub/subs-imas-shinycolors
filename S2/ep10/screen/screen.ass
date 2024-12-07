@@ -1,0 +1,28 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Active Line: 9
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:03:29.31,0:03:32.39,Signs,TEXT,0,0,0,,{\an9\fs18\c&H000000&\3c&HFFFFFF&}Tour Pamphlet - Profile Questionnaire\N{\fs15}Name:{\fs18\fnComic Sans MS} Chiyoko Sonoda\N{\fs15\fnArial}What's your favorite food?\N{\fs18\fnComic Sans MS}Of course, sweet chocolate! \NI love all kinds of sweets, though.
+Dialogue: 0,0:03:41.95,0:03:43.66,Signs,TEXT,0,0,0,,{\an7\fs15\c&H000000&\3c&HFFFFFF&}Please share your enthusiasm about the tour!\N{\fs18\fnComic Sans MS}I'll do my very best together with everyone \Nin Hokura and 283 Productions!
+Dialogue: 0,0:03:49.62,0:03:54.83,Signs,TEXT,0,0,0,,{\an7\fs18\c&H000000&\3c&HFFFFFF&}What kind of idol do you want\N to become through this tour?
+Dialogue: 0,0:05:03.03,0:05:07.05,Signs,TEXT,0,0,0,,{\an7\fs15\c&H000000&\3c&HFFFFFF&}What kind of idol do you want \Nto become through this tour?
+Dialogue: 0,0:23:10.99,0:23:15.60,Signs,TEXT,0,0,0,,{\blur3\3c&H728492&\fs18\fnComic Sans MS\b0\frz1.149\move(145.889,294.667,149.445,395.111,24,4570)}An idol who can bring smiles\N to everyone, like a hero!!
+Dialogue: 0,0:23:10.99,0:23:24.77,Signs,TEXT,0,0,0,,{\blur3\3c&H728492&\fs18\fnComic Sans MS\b0\move(310.222,43.111,306.666,341.778,24,13746)}An idol who can give back \Nto those who support us.
+Dialogue: 0,0:23:15.55,0:23:29.51,Signs,TEXT,0,0,0,,{\blur3\3c&H728492&\fs18\fnComic Sans MS\b0\move(151.111,46.667,154.667,356,10,13941)}An idol who puts their heart\N into everything.
+Dialogue: 0,0:23:22.81,0:23:29.51,Signs,TEXT,0,0,0,,{\blur3\3c&H728492&\fs18\fnComic Sans MS\b0\move(241.777,116.888,242.666,263.555,8,6681)}The world's\N number one \Ntop idol,\Ntogether with \Neveryone\N in Hokura.
+Dialogue: 0,0:23:29.61,0:23:35.95,Signs,TEXT,0,0,0,,{\an7\fs15\c&H0A5FAF&\3c&HFFFFFF&}- Do your best!!\N{\fs15\c&H000000&\3c&HFFFFFF&\b0\i0}- Thank you for giving me \Nthe chance to become an idol!
+Dialogue: 0,0:23:42.29,0:23:47.96,Signs,TEXT,0,0,0,,{\an8\fad(700,000)\fs23\fnComic Sans MS\c&H000000&\3c&HFFFFFF&}An idol who can make dreams come true, together with everyone.
