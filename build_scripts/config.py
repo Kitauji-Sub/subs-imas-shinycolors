@@ -9,4 +9,6 @@ font_replacements = {
     "獅尾圓體SC-Black": "獅尾圓體-Black",
 }
 
-user_protect_replace='悠哉字体'
+protect_replace='悠哉字体\n林松耄耋AI字体'
+
+pre_replace = '试镜=甄选会'
