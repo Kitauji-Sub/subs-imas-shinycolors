@@ -151,7 +151,7 @@ class FileManager:
                     processor = SubtitleProcessor(input_file, output_file)
                     processor.cleanup_ass_file()
                     processor_tc = SubtitleProcessor(output_file, output_tc_file)
-                    processor_tc.traditionalize_ass(user_protect_replace=config.user_protect_replace)
+                    processor_tc.traditionalize_ass(user_pre_replace=config.pre_replace, user_protect_replace=config.protect_replace)
 
     @staticmethod
     def merge_files(input_file, output_file):
@@ -165,4 +165,4 @@ class FileManager:
 
 if __name__ == '__main__':
     processor = SubtitleProcessor('ep1.ass', 'ep1_out.ass')
-    processor.traditionalize_ass()
+    processor.traditionalize_ass(user_pre_replace=config.pre_replace, user_protect_replace=config.user_protect_replace)
