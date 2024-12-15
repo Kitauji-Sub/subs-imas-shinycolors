@@ -1,0 +1,23 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Active Line: 4
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: OnScreen,思源黑体,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:08.07,0:00:12.95,Signs,TEXT,0,0,0,,{\an7\fs18\c&H000000&\3c&HFFFFFF&}Comment\N{\fs15}- Who's that in the back?\N- So cute.\N- That's Toru Asakura from Noctchill, right?\N- Red tracksuit, lol.
+Dialogue: 0,0:12:30.14,0:12:31.64,Signs,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}They say it can fly.
+Dialogue: 0,0:14:20.33,0:14:23.30,Signs,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- Great work today.\N Here's tomorrow's schedule.\N Let's do our best!\N\N10:30 - 11:30\NLesson\N14:00 - 15:00\NPhotoshoot\N16:30 - 17:00\NMeeting\N18:00 - 19:00\NTV Program Recording
+Dialogue: 0,0:14:32.91,0:14:35.14,Signs,TEXT,0,0,0,,{\an7\fs16\c&H000000&\3c&HFFFFFF&}- It's about time for\Nthe interview at the office.
+Dialogue: 0,0:21:22.21,0:21:30.68,Signs,TEXT TOP RED,0,0,0,,{\an7\fs15\fnComic Sans MS\c&H00009E&\3c&HFFFFFF&}Album Track List \N{\c&H000000&\3c&H6AE8F7&}illumination STARS\N{\3c&HFFFFFF&}Destination of Light\NAs Many as the Stars\N\N{\3c&HFF8CD6&}L'Antica \N{\3c&HFFFFFF&}Babel City Grace\NFrom Orange to the Future\N\N{\3c&H6EB4F5&}Houkago Climax Girls\N{\3c&HFFFFFF&}Yumesaki After School\NSoar High\N\N{\3c&HA258FF&}ALSTROEMERIA\N{\3c&HFFFFFF&}ALSTROEMERIA\NWith You\N\N{\3c&H5555D8&}Straylight\N{\3c&HFFFFFF&}Wandering Dream Chaser\NFuture Designer\N\N{\3c&HED9E9B&}Noctchill\N{\3c&HFFFFFF&}We Are Always Who We Are\NA Sign Toward the Future
