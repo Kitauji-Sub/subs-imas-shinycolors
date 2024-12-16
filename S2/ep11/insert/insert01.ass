@@ -8,7 +8,13 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Active Line: 15
+Audio File: C:/Users/scree/Desktop/ep11.mkv
+Video File: C:/Users/scree/Desktop/ep11.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.625000
+Active Line: 16
+Video Position: 34523
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -35,3 +41,25 @@ Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!no_in and skip() or
 Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci + cn_offset, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left!,!line.top!)}
 Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset, line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
 Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,mixin line anystyle,{\blur4}
+Comment: 0,0:22:40.90,0:22:47.74,歌JP,,0,0,0,kara,寄せては返す波を　きみは眺めながら
+Comment: 0,0:22:47.94,0:22:54.78,歌JP,,0,0,0,kara,「この先、僕らはどこへ行くんだろう？」
+Comment: 0,0:22:55.36,0:23:01.70,歌JP,,0,0,0,kara,心の中で不意に　揺れ動くコンパス
+Comment: 0,0:23:01.92,0:23:07.68,歌JP,,0,0,0,kara,まだ地図さえないのに
+Comment: 0,0:23:09.40,0:23:12.54,歌JP,,0,0,0,kara,踏み（出す）理由なんでさ
+Comment: 0,0:23:12.54,0:23:15.98,歌JP,,0,0,0,kara,（今は）なくてもいい
+Comment: 0,0:23:15.98,0:23:22.32,歌JP,,0,0,0,kara,さぁ行き先のない旅に出かけよう
+Comment: 0,0:23:22.70,0:23:30.68,歌JP,,0,0,0,kara,真っ白なままの世界へ　何も持たずに
+Comment: 0,0:23:30.94,0:23:37.20,歌JP,,0,0,0,kara,その途中で見つけた気持ちを　ポケットに詰めて
+Comment: 0,0:23:37.34,0:23:45.02,歌JP,,0,0,0,kara,一歩ずつ前に進もう　寄り道をしながら
+Comment: 0,0:23:45.24,0:23:51.32,歌JP,,0,0,0,kara,きみとただ　いつまでも
+Comment: 0,0:22:40.90,0:22:47.74,歌CN,,0,0,0,kara,你眺望着那此起彼伏的浪潮
+Comment: 0,0:22:47.94,0:22:54.78,歌CN,,0,0,0,kara,「接下来我们会前往何方呢」
+Comment: 0,0:22:55.36,0:23:01.70,歌CN,,0,0,0,kara,心中不知不觉中晃动的指南针
+Comment: 0,0:23:01.92,0:23:07.68,歌CN,,0,0,0,kara,甚至还没有地图
+Comment: 0,0:23:09.40,0:23:12.54,歌CN,,0,0,0,kara,踏出（这一步）的理由
+Comment: 0,0:23:12.54,0:23:15.98,歌CN,,0,0,0,kara,（现在）没有也没关系
+Comment: 0,0:23:15.98,0:23:22.32,歌CN,,0,0,0,kara,走吧 来一场没有目的地的旅行吧
+Comment: 0,0:23:22.70,0:23:30.68,歌CN,,0,0,0,kara,前往纯白的世界 什么都不用带走
+Comment: 0,0:23:30.94,0:23:37.20,歌CN,,0,0,0,kara,在旅途中找到的心意 都装进口袋吧
+Comment: 0,0:23:37.34,0:23:45.02,歌CN,,0,0,0,kara,一步步向前走吧 偶尔也绕绕路
+Comment: 0,0:23:45.24,0:23:51.32,歌CN,,0,0,0,kara,若是与你在一起 无论何时都如此
