@@ -13,15 +13,14 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/scree/Desktop/ep11.mkv
-Video File: C:/Users/scree/Desktop/ep11.mkv
-Keyframes File: C:/Users/scree/Desktop/ep11_keyframes.txt
+Audio File: C:/Users/scree/Desktop/sc_s2/ep11.mkv
+Video File: C:/Users/scree/Desktop/sc_s2/ep11.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.750000
-Scroll Position: 200
-Active Line: 236
-Video Position: 32703
+Video Zoom Percent: 0.500000
+Scroll Position: 224
+Active Line: 182
+Video Position: 24630
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -119,7 +118,7 @@ Dialogue: 0,0:06:53.37,0:06:56.87,SC_Bottom,灯织,0,0,0,kara,谢谢 只不过�
 Dialogue: 0,0:06:57.62,0:07:01.82,SC_Bottom,灯织,0,0,0,kara,有不安 也有迷茫的时候\N不安にもなるし わからなくもなるけど
 Dialogue: 0,0:07:01.82,0:07:03.70,SC_Bottom,灯织,0,0,0,kara,尽管如此 我也想加油努力\Nそれでも努力しようって
 Dialogue: 0,0:07:04.58,0:07:08.57,SC_Bottom,灯织,0,0,0,kara,想要有资格站在你们两个人旁边\N二人の隣に並んでいてもおかしくないくらい
-Dialogue: 0,0:07:12.54,0:07:15.12,SC_Bottom,真乃,0,0,0,kara,但是我…{\fscx50} {\fscx100}还没.\N私は まだ…
+Dialogue: 0,0:07:12.54,0:07:15.12,SC_Bottom,真乃,0,0,0,kara,但是我…{\fscx50} {\fscx100}还没\N私は まだ…
 Dialogue: 0,0:07:17.38,0:07:22.68,SC_Bottom,真乃,0,0,0,kara,我希望当人们听到我的歌声 我的话语的时候\N私は 歌だったりお話だったりを聞いた人が
 Dialogue: 0,0:07:22.68,0:07:25.38,SC_Bottom,真乃,0,0,0,kara,可以绽放出灿烂的笑容\N笑顔になってくれたら嬉しいなって
 Dialogue: 0,0:07:26.51,0:07:27.27,SC_Bottom,灯织,0,0,0,kara,嗯\Nうん
@@ -182,7 +181,7 @@ Dialogue: 0,0:13:13.22,0:13:16.92,SC_Bottom,雏菜,0,0,0,kara,透前辈 明明�
 Dialogue: 0,0:13:28.25,0:13:30.41,SC_Bottom,圆香,0,0,0,kara,那个 还要继续吗？\Nそこ まだやるの？
 Dialogue: 0,0:13:32.05,0:13:35.55,SC_Bottom,小糸,0,0,0,kara,得…{\fscx50} {\fscx100}得加油才行\Nが 頑張らなくちゃ もっと
 Dialogue: 0,0:13:36.23,0:13:38.79,SC_Bottom,小糸,0,0,0,kara,哒哒 哒哒哒\Nてってん てってってん
-Dialogue: 0,0:13:39.47,0:13:41.01,SC_Bottom,,0,0,0,kara,哦哦\Nおお
+Dialogue: 0,0:13:39.47,0:13:41.01,SC_Bottom,透,0,0,0,kara,哦哦\Nおお
 Dialogue: 0,0:13:42.09,0:13:44.13,SC_Bottom,透,0,0,0,kara,真了不起啊\N偉いなあ
 Dialogue: 0,0:13:46.88,0:13:49.02,SC_Bottom,小糸,0,0,0,kara,当 当然了\Nと 当然だよ
 Dialogue: 0,0:14:00.48,0:14:05.92,SC_Bottom,雏菜,0,0,0,kara,那个 透前辈 被关注很开心吗\Nねえ透先輩 注目されるのって嬉しい？
@@ -216,7 +215,7 @@ Dialogue: 0,0:16:50.75,0:16:57.89,SC_Bottom,真乃,0,0,0,kara,昨天 透夸我�
 Dialogue: 0,0:16:58.85,0:17:00.17,SC_Bottom,透,0,0,0,kara,啊\Nえっ
 Dialogue: 0,0:17:00.17,0:17:01.03,SC_Bottom,透,0,0,0,kara,嗯\Nうん
 Dialogue: 0,0:17:01.71,0:17:06.59,SC_Bottom,真乃,0,0,0,kara,但是 我 之前和朝日…\Nでも 私 前 あさひちゃんにね
-Dialogue: 0,0:17:07.25,0:17:08.15,SC_Bottom,,0,0,0,kara,嗯\Nうん
+Dialogue: 0,0:17:07.25,0:17:08.15,SC_Bottom,透,0,0,0,kara,嗯\Nうん
 Dialogue: 0,0:17:08.62,0:17:14.24,SC_Bottom,真乃,0,0,0,kara,在被问到要努力做些什么的时候 没回答上来\N何を頑張ってるのかって聞かれた時 答えられなかった
 Dialogue: 0,0:17:15.27,0:17:16.57,SC_Bottom,透,0,0,0,kara,啊…\Nああ
 Dialogue: 0,0:17:18.24,0:17:23.12,SC_Bottom,真乃,0,0,0,kara,现在也 不知道有没有真的在加油努力\N今も 本当に頑張れてるかはわからない
@@ -273,4 +272,4 @@ Dialogue: 0,0:22:25.79,0:22:27.56,SC_Bottom,制作人,0,0,0,kara,终于要在舞
 Dialogue: 0,0:22:29.28,0:22:30.98,SC_Bottom,制作人,0,0,0,kara,绽放光芒\N輝きを放つ
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,screen/screen.ass
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert01.ass
-Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,../op_sc.ass
+Comment: 0,0:03:03.00,0:03:03.04,SC_Bottom,,0,0,0,import-shifted,../op_sc.ass
