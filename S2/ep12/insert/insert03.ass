@@ -13,9 +13,9 @@ Video File: C:/Users/scree/Desktop/ep12.mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
-Scroll Position: 27
-Active Line: 38
-Video Position: 10741
+Scroll Position: 60
+Active Line: 78
+Video Position: 30049
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -42,47 +42,73 @@ Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!no_in and skip() or
 Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!retime("abs",no_in and line.start_time or line.start_time + speed + char_speed*char.ci + cn_offset, no_out and line.end_time or line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left!,!line.top!)}
 Comment: 0,0:15:12.52,0:15:12.52,歌CN,,0,0,0,template char,!no_out and skip() or ""!!maxloop("fbf", math.floor((speed / single_frame / k_time) + 0.5))!!set("animated_position", Animation(0, line.height, loopctx.state.fbf/loopctx.max.fbf, "easeInBack"))!!retime("abs",loopctx.state.fbf == 1 and line.end_time - speed - char_speed*(#line.chars-char.ci) + cn_offset or line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf + 1) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset, line.end_time - (single_frame * (loopctx.max.fbf - loopctx.state.fbf) * k_time) - char_speed*(#line.chars-char.ci) + cn_offset)!{\an7\pos(!line.left + char.left + animated_position!,!line.top!)\alpha!colorlib.interp_alpha(loopctx.state.fbf/loopctx.max.fbf, "&H00&", "&HFF")!}
 Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,mixin line anystyle,{\blur4}
-Comment: 0,0:05:39.53,0:05:39.57,歌JP,,0,0,0,,# 星の数だけ
-Dialogue: 0,0:05:40.07,0:05:45.07,歌JP,,0,0,0,,{\fad(1000,851)\an8\fn思源黑体 Heavy\bord1.5\blur3\c&HFFFFFF&\pos(305,961)}多如繁星
-Comment: 0,0:05:39.77,0:05:41.19,歌JP_center,,0,0,0,kara,どんな日も
-Comment: 0,0:05:41.19,0:05:47.75,歌JP_center,,0,0,0,kara,迷い道の今日も　ムダではないよね
-Comment: 0,0:05:47.75,0:05:51.53,歌JP_center,,0,0,0,kara,今はただ　踏み出そうって
-Comment: 0,0:05:51.53,0:05:57.11,歌JP_center,,0,0,0,kara,心の声が聞こえる
-Comment: 0,0:05:55.49,0:06:01.51,歌JP_center,,1400,0,0,kara,Lalalalalalalala…
-Dialogue: 0,0:06:03.01,0:06:08.81,歌JP,,0,0,0,,{\blur4\fad(300,300)}Lalalalalalalala…
-Comment: 0,0:06:10.19,0:06:13.97,歌JP_center,,0,0,0,kara,ひび割れた　歩道の隅
-Comment: 0,0:06:13.97,0:06:17.77,歌JP_center,,0,0,0,kara,誇らしそうに咲く花は
-Comment: 0,0:06:17.77,0:06:21.57,歌JP_center,,0,0,0,kara,ただここで　咲く未来を
-Comment: 0,0:06:21.57,0:06:24.77,歌JP_center,,0,0,0,kara,ずっと信じていたんだね
-Comment: 0,0:06:24.77,0:06:28.83,歌JP_center,,0,0,0,kara,雨が降らない日もあるから
-Comment: 0,0:06:29.01,0:06:33.01,歌JP_center,,0,0,0,kara,保なんてないけれど
-Comment: 0,0:06:33.01,0:06:36.31,歌JP_center,,0,0,0,kara,繰り返しじゃないから
-Comment: 0,0:06:36.43,0:06:41.65,歌JP_center,,0,0,0,kara,進んでいよう　行こう！
-Comment: 0,0:06:41.69,0:06:43.05,歌JP_center,,0,0,0,kara,いつだって
-Comment: 0,0:06:43.05,0:06:49.51,歌JP_center,,0,0,0,kara,始まりを思えば　今が輝く
-Comment: 0,0:06:49.69,0:06:53.17,歌JP_center,,0,0,0,kara,目を閉じて　開いているの
-Comment: 0,0:06:53.41,0:06:57.35,歌JP_center,,0,0,0,kara,自分の心の言葉を
-Comment: 0,0:06:57.35,0:07:04.61,歌JP_center,,0,0,0,kara,いつの日か迷い道が　ぱっと拓けて
-Comment: 0,0:07:04.65,0:07:08.15,歌JP_center,,0,0,0,kara,また夢に近づいてる
-Comment: 0,0:07:08.39,0:07:14.13,歌JP_center,,0,0,0,kara,そんな日が来る　来るから
-Comment: 0,0:07:12.37,0:07:18.29,歌JP_center,,1400,0,0,kara,Lalalalalalalala…
-Comment: 0,0:07:19.87,0:07:25.79,歌JP_center,,1400,0,0,kara,Lalalalalalalala…
-Comment: 0,0:05:39.77,0:05:41.19,歌CN_center,,0,0,0,kara,无论哪一天
-Comment: 0,0:05:41.19,0:05:47.75,歌CN_center,,0,0,0,kara,即使迷失在今天 也并非毫无意义
-Comment: 0,0:05:47.75,0:05:51.53,歌CN_center,,0,0,0,kara,此刻只想 向前迈步
-Comment: 0,0:05:51.53,0:05:57.11,歌CN_center,,0,0,0,kara,听见内心的呼唤
-Comment: 0,0:06:10.19,0:06:13.97,歌CN_center,,0,0,0,kara,在裂缝斑驳的路边
-Comment: 0,0:06:13.97,0:06:17.77,歌CN_center,,0,0,0,kara,那朵骄傲绽放的花
-Comment: 0,0:06:17.77,0:06:21.57,歌CN_center,,0,0,0,kara,只是在此 相信着
-Comment: 0,0:06:21.57,0:06:24.77,歌CN_center,,0,0,0,kara,未来终将盛开
-Comment: 0,0:06:24.77,0:06:28.83,歌CN_center,,0,0,0,kara,正因为也会有不降雨的日子
-Comment: 0,0:06:29.01,0:06:33.01,歌CN_center,,0,0,0,kara,虽然没有永恒的保证
-Comment: 0,0:06:33.01,0:06:36.31,歌CN_center,,0,0,0,kara,但每一步都不重复
-Comment: 0,0:06:36.43,0:06:41.65,歌CN_center,,0,0,0,kara,让我们继续前行吧 走吧！
-Comment: 0,0:06:41.69,0:06:43.05,歌CN_center,,0,0,0,kara,无论何时
-Comment: 0,0:06:43.05,0:06:49.51,歌CN_center,,0,0,0,kara,回想起初心 此刻就会闪耀
-Comment: 0,0:06:49.69,0:06:53.17,歌CN_center,,0,0,0,kara,闭上双眼 敞开心扉
-Comment: 0,0:06:53.41,0:06:57.35,歌CN_center,,0,0,0,kara,倾听内心的话语
-Comment: 0,0:06:57.35,0:07:04.61,歌CN_center,,0,0,0,kara,终有一天 迷途会豁然开朗
-Comment: 0,0:07:04.65,0:07:08.15,歌CN_center,,0,0,0,kara,又向梦想靠近一步
-Comment: 0,0:07:08.39,0:07:14.13,歌CN_center,,0,0,0,kara,这样的日子 一定会来临
+Comment: 0,0:16:42.65,0:16:47.70,歌JP,,0,0,0,,# Prism Flare
+Dialogue: 0,0:16:42.65,0:16:47.69,歌CN,,0,0,0,,{\fn思源黑体 Heavy\blur3\bord1\fad(1000,475)\an8\pos(305,961)\c&HFFFFFF&}Prism Flare
+Comment: 0,0:16:53.37,0:16:57.17,歌JP_center,,0,0,0,kara,どこに向かう途中だろう
+Comment: 0,0:16:57.67,0:17:02.33,歌JP_center,,0,0,0,kara,飛び込んだ光のなかで
+Comment: 0,0:17:04.33,0:17:08.43,歌JP_center,,0,0,0,kara,わからないまま手を伸ばした
+Comment: 0,0:17:08.65,0:17:13.39,歌JP_center,,0,0,0,kara,風を探す翼のように
+Comment: 0,0:17:14.47,0:17:19.29,歌JP_center,,0,1200,0,kara,一枚ずつ (My shiny feather)
+Comment: 0,0:17:17.13,0:17:22.03,歌JP_center,,1200,0,0,kara,違う色で (My shiny color)
+Comment: 0,0:17:19.93,0:17:27.28,歌JP_center,,0,0,0,kara,輝きを重ねあわせたね
+Comment: 0,0:17:30.42,0:17:36.40,歌JP_center,,0,0,0,kara,羽ばたき続ける　わたし達の空が
+Comment: 0,0:17:36.40,0:17:46.68,歌JP_center,,0,0,0,kara,辿り着く未来で　なりたい自分になるんだ
+Comment: 0,0:17:46.88,0:17:52.74,歌JP_center,,0,0,0,kara,キラめいてShiny Ray　もっと広い空へ
+Comment: 0,0:17:52.86,0:17:58.18,歌JP_center,,0,0,0,kara,鼓動が指差すプリズム
+Comment: 0,0:17:58.34,0:18:11.30,歌JP_center,,0,0,0,kara,焼きつける瞳にあつめて　どこまでも行くよ
+Comment: 0,0:18:23.86,0:18:27.68,歌JP_center,,0,0,0,kara,うらやましかったのかな
+Comment: 0,0:18:28.16,0:18:32.88,歌JP_center,,0,0,0,kara,心のスピードは違うから
+Comment: 0,0:18:34.82,0:18:39.04,歌JP_center,,0,0,0,kara,並ぶ君は憧れだし
+Comment: 0,0:18:39.16,0:18:43.82,歌JP_center,,0,0,0,kara,いつでもチカラになりたい
+Comment: 0,0:18:45.00,0:18:49.82,歌JP_center,,1200,0,0,kara,毎日を (Your shiny feather)
+Comment: 0,0:18:47.68,0:18:52.86,歌JP_center,,0,1200,0,kara,選んでいく (Your shiny color)
+Comment: 0,0:18:50.44,0:18:57.88,歌JP_center,,0,0,0,kara,果てしない空を描いて
+Comment: 0,0:19:00.92,0:19:06.78,歌JP_center,,0,0,0,kara,羽ばたき続けよう　可能性の翼
+Comment: 0,0:19:06.94,0:19:17.32,歌JP_center,,0,0,0,kara,映し出す未来の　見え方は自分次第だね
+Comment: 0,0:19:17.34,0:19:23.18,歌JP_center,,0,0,0,kara,それぞれのShiny Dream　育つ夢の途中
+Comment: 0,0:19:23.38,0:19:28.62,歌JP_center,,0,0,0,kara,今生きている輝きで
+Comment: 0,0:19:28.84,0:19:41.80,歌JP_center,,0,0,0,kara,惹かれあう瞬間を何度でも　一緒に歌おう
+Comment: 0,0:19:41.92,0:19:49.32,歌JP_center,,0,0,0,kara,明日に追いつく前に何ができるかな
+Comment: 0,0:19:49.38,0:19:55.76,歌JP_center,,0,0,0,kara,強く抱きしめた今日の光
+Comment: 0,0:19:55.92,0:19:59.39,歌JP_center,,0,0,0,kara,“希望”って呼べる (ありがとう)
+Comment: 0,0:19:59.02,0:20:03.21,歌JP_center,,0,0,0,kara,忘れないでいよう
+Comment: 0,0:20:04.05,0:20:09.77,歌JP_center,,0,0,0,kara,羽ばたき続ける　わたし達の空が
+Comment: 0,0:20:09.97,0:20:20.36,歌JP_center,,0,0,0,kara,辿り着く未来で　なりたい自分になるんだ
+Comment: 0,0:20:20.52,0:20:26.28,歌JP_center,,0,0,0,kara,おわらないShiny Dream　育つ夢の彼方
+Comment: 0,0:20:26.46,0:20:31.70,歌JP_center,,0,0,0,kara,鼓動が指差すプリズム
+Comment: 0,0:20:31.98,0:20:44.70,歌JP_center,,0,0,0,kara,焼きつける瞳にあつめて　どこまでも行くよ
+Comment: 0,0:20:44.94,0:20:50.40,歌JP_center,,0,0,0,kara,キラめいてShiny Ray
+Comment: 0,0:16:53.37,0:16:57.17,歌CN_center,,0,0,0,kara,我们正在前往何方呢
+Comment: 0,0:16:57.67,0:17:02.33,歌CN_center,,0,0,0,kara,跳进了那片光芒之中
+Comment: 0,0:17:04.33,0:17:08.43,歌CN_center,,0,0,0,kara,不知不觉中伸出了手
+Comment: 0,0:17:08.65,0:17:13.39,歌CN_center,,0,0,0,kara,如同等风来的翅膀一般
+Comment: 0,0:17:14.47,0:17:19.29,歌CN_center,,0,1200,0,kara,一片又一片（My shiny feather）
+Comment: 0,0:17:17.13,0:17:22.03,歌CN_center,,1200,0,0,kara,不同颜色的羽毛（My shiny color）
+Comment: 0,0:17:19.93,0:17:27.28,歌CN_center,,0,0,0,kara,无数的光辉重叠在了一起
+Comment: 0,0:17:30.42,0:17:36.40,歌CN_center,,0,0,0,kara,我们仍在翱翔 在属于我们的天空中
+Comment: 0,0:17:36.40,0:17:46.68,歌CN_center,,0,0,0,kara,在我们抵达未来时 成为自己想成为的样子吧
+Comment: 0,0:17:46.88,0:17:52.74,歌CN_center,,0,0,0,kara,闪耀着的Shiny Ray 飞向更广阔的天空
+Comment: 0,0:17:52.86,0:17:58.18,歌CN_center,,0,0,0,kara,心跳的指引如棱镜一般
+Comment: 0,0:17:58.34,0:18:11.30,歌CN_center,,0,0,0,kara,将所有的景色都烙在眼中 去任何想去的地方吧
+Comment: 0,0:18:23.86,0:18:27.68,歌CN_center,,0,0,0,kara,是否曾经羡慕过呢
+Comment: 0,0:18:28.16,0:18:32.88,歌CN_center,,0,0,0,kara,因为心灵节奏各不同
+Comment: 0,0:18:34.82,0:18:39.04,歌CN_center,,0,0,0,kara,与你并肩也是我的愿望
+Comment: 0,0:18:39.16,0:18:43.82,歌CN_center,,0,0,0,kara,一直都想成为你的力量
+Comment: 0,0:18:45.00,0:18:49.82,歌CN_center,,1200,0,0,kara,每一天都 (Your shiny feather)
+Comment: 0,0:18:47.68,0:18:52.86,歌CN_center,,0,1200,0,kara,做出选择 (Your shiny color)
+Comment: 0,0:18:50.44,0:18:57.88,歌CN_center,,0,0,0,kara,描绘着无尽的蓝天
+Comment: 0,0:19:00.92,0:19:06.78,歌CN_center,,0,0,0,kara,继续扇动翅膀吧 可能性之翼
+Comment: 0,0:19:06.94,0:19:17.32,歌CN_center,,0,0,0,kara,映照出的未来 全凭自己来定义
+Comment: 0,0:19:17.34,0:19:23.18,歌CN_center,,0,0,0,kara,各自的Shiny Dream 在成长的途中
+Comment: 0,0:19:23.38,0:19:28.62,歌CN_center,,0,0,0,kara,用此刻生命的光辉
+Comment: 0,0:19:28.84,0:19:41.80,歌CN_center,,0,0,0,kara,无论何时交汇在一起的瞬间 让我们一起歌唱吧
+Comment: 0,0:19:41.92,0:19:49.32,歌CN_center,,0,0,0,kara,追上明天之前 还能做些什么
+Comment: 0,0:19:49.38,0:19:55.76,歌CN_center,,0,0,0,kara,紧紧拥抱今日的光芒
+Comment: 0,0:19:55.92,0:19:59.39,歌CN_center,,0,0,0,kara,能称之为"希望"的 (谢谢你)
+Comment: 0,0:19:59.02,0:20:03.21,歌CN_center,,0,0,0,kara,永远不要忘记
+Comment: 0,0:20:04.05,0:20:09.77,歌CN_center,,0,0,0,kara,我们仍在翱翔 在属于我们的天空中
+Comment: 0,0:20:09.97,0:20:20.36,歌CN_center,,0,0,0,kara,在我们抵达未来时 成为自己想成为的样子吧
+Comment: 0,0:20:20.52,0:20:26.28,歌CN_center,,0,0,0,kara,永不止息Shiny Dream 在成长的彼方
+Comment: 0,0:20:26.46,0:20:31.70,歌CN_center,,0,0,0,kara,心跳的指引如棱镜一般
+Comment: 0,0:20:31.98,0:20:44.70,歌CN_center,,0,0,0,kara,在灼热的眼眸中凝聚 无论多远都要毅然前行
+Comment: 0,0:20:44.94,0:20:50.40,歌CN_center,,0,0,0,kara,闪耀着Shiny Ray

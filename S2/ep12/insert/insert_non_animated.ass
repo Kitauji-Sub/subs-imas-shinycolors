@@ -1,0 +1,80 @@
+﻿[Script Info]
+Title: Default Aegisub file
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[Aegisub Project Garbage]
+Audio File: C:/Users/scree/Desktop/ep12.mkv
+Video File: C:/Users/scree/Desktop/ep12.mkv
+Video AR Mode: 4
+Video AR Value: 1.777778
+Video Zoom Percent: 0.750000
+Scroll Position: 27
+Active Line: 40
+Video Position: 18377
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 歌CN,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,125,1
+Style: 歌JP,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,7,70,70,70,1
+Style: 歌CN_center,思源宋体,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,125,1
+Style: 歌JP_center,Source Han Serif,52,&H00F0F0F0,&H000000FF,&H004A4A4A,&H00000000,-1,0,0,0,100,100,1.1,0,1,0.6,0,2,70,70,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,template line anystyle,
+Comment: 0,0:15:12.52,0:15:12.52,歌JP,,0,0,0,mixin line anystyle,{\fn思源黑体\b1\fscx80\fscy80\fad(300,300)\blur3.2}
+Comment: 0,0:04:09.61,0:04:14.25,歌JP,,50,50,40,kara,記憶に映るSilhouette　割り込む蒼いRegret
+Comment: 0,0:04:14.41,0:04:19.01,歌JP,,50,50,40,kara,REALと対峙しながら　ピントをあわせてきた
+Comment: 0,0:04:19.15,0:04:23.79,歌JP,,50,50,40,kara,現状維持はアレルギー　逆境ならばエネルギー
+Comment: 0,0:04:23.99,0:04:29.91,歌JP,,50,50,40,kara,過去の自分を認めて　鎖を断ち切って　Outbreak
+Comment: 0,0:04:30.29,0:04:32.69,歌JP,,50,50,40,kara,Desire…
+Comment: 0,0:04:32.93,0:04:37.40,歌JP,,50,50,40,kara,淀みなき感情　手に入れた　Brave Soul
+Comment: 0,0:04:37.40,0:04:41.14,歌JP,,50,50,40,kara,今、狼煙をあげるよ
+Comment: 0,0:04:41.26,0:04:47.85,歌JP,,50,50,40,kara,時代は変わり続けても　自分の
+Comment: 0,0:04:09.61,0:04:14.25,歌CN,,50,50,85,kara,记忆中浮现的剪影 穿插着苍蓝的悔恨
+Comment: 0,0:04:14.41,0:04:19.01,歌CN,,50,50,85,kara,与现实对峙着 不断调整焦距
+Comment: 0,0:04:19.15,0:04:23.79,歌CN,,50,50,85,kara,维持现状遇阻力 逆境反成我动力
+Comment: 0,0:04:23.99,0:04:29.91,歌CN,,50,50,85,kara,承认过去的自己 斩断锁链 爆发而出
+Comment: 0,0:04:30.29,0:04:32.69,歌CN,,50,50,85,kara,渴望……
+Comment: 0,0:04:32.93,0:04:37.40,歌CN,,50,50,85,kara,抓住了无滞的感情 勇敢的灵魂
+Comment: 0,0:04:37.40,0:04:41.14,歌CN,,50,50,85,kara,此刻 点燃狼烟吧
+Comment: 0,0:04:41.26,0:04:47.85,歌CN,,50,50,85,kara,纵使时代不断变迁 也要自己
+Comment: 0,0:04:47.85,0:04:50.55,歌JP,,50,50,40,kara,頑張ってって声で
+Comment: 0,0:04:50.79,0:04:53.39,歌JP,,50,50,40,kara,最高潮になれる
+Comment: 0,0:04:53.67,0:04:58.71,歌JP,,50,50,40,kara,その訳を知る風に
+Comment: 0,0:04:59.43,0:05:01.71,歌JP,,50,50,40,kara,舞い上がれ
+Comment: 0,0:05:02.09,0:05:04.89,歌JP,,50,50,40,kara,Wake up　この胸の未来
+Comment: 0,0:05:04.89,0:05:08.09,歌JP,,50,50,40,kara,Wake up　呼び起こす今
+Comment: 0,0:05:08.23,0:05:12.38,歌JP,,50,50,40,kara,永遠くらい大袈裟な　無限も叶える
+Comment: 0,0:04:47.85,0:04:50.55,歌CN,,50,50,85,kara,听到“加油”的呼唤
+Comment: 0,0:04:50.79,0:04:53.39,歌CN,,50,50,85,kara,能够达到最顶端
+Comment: 0,0:04:53.67,0:04:58.71,歌CN,,50,50,85,kara,如同明白其中缘由的风
+Comment: 0,0:04:59.43,0:05:01.71,歌CN,,50,50,85,kara,翩然升空
+Comment: 0,0:05:02.09,0:05:04.89,歌CN,,50,50,85,kara,Wake up 胸中未来在召唤
+Comment: 0,0:05:04.89,0:05:08.09,歌CN,,50,50,85,kara,Wake up 唤醒此刻的光芒
+Comment: 0,0:05:08.23,0:05:12.38,歌CN,,50,50,85,kara,夸张地许愿到永远 创造无限可能
+Comment: 0,0:07:54.56,0:07:58.52,歌JP,,50,50,40,kara,これから始まる未来のすべてが
+Comment: 0,0:07:58.68,0:08:02.74,歌JP,,50,50,40,kara,楽しいことばかりじゃないとしても
+Comment: 0,0:08:03.00,0:08:07.08,歌JP,,50,50,40,kara,手をつないだら歩き出そう
+Comment: 0,0:08:07.30,0:08:13.00,歌JP,,50,50,40,kara,ずっとだよ　with you　この愛を信じてる
+Comment: 0,0:07:54.56,0:07:58.52,歌CN,,50,50,85,kara,所有从这里走出的未来
+Comment: 0,0:07:58.68,0:08:02.74,歌CN,,50,50,85,kara,就算前方并不是充满快乐
+Comment: 0,0:08:03.00,0:08:07.08,歌CN,,50,50,85,kara,也要手牵着手走出这一步
+Comment: 0,0:08:07.30,0:08:13.00,歌CN,,50,50,85,kara,一直with you 相信这一份爱
+Comment: 0,0:12:14.69,0:12:19.94,歌JP,,50,50,40,kara,ひとりぼっちじゃ抱きしめる
+Comment: 0,0:12:19.94,0:12:26.36,歌JP,,50,50,40,kara,だけになる夢があるんだろう
+Comment: 0,0:12:27.76,0:12:32.72,歌JP,,50,50,40,kara,立ち竦んでる誰かの胸に
+Comment: 0,0:12:33.16,0:12:36.20,歌JP,,50,50,40,kara,寄り添うように
+Comment: 0,0:12:36.20,0:12:39.30,歌JP,,50,50,40,kara,僕ら立ってみたい
+Comment: 0,0:12:39.54,0:12:42.52,歌JP,,50,50,40,kara,眩しい夕焼けに心
+Comment: 0,0:12:14.69,0:12:19.94,歌CN,,50,50,85,kara,独自一人时想要的拥抱
+Comment: 0,0:12:19.94,0:12:26.36,歌CN,,50,50,85,kara,大概只能在梦中实现吧
+Comment: 0,0:12:27.76,0:12:32.72,歌CN,,50,50,85,kara,在某个驻足不前的人的胸膛里
+Comment: 0,0:12:33.16,0:12:36.20,歌CN,,50,50,85,kara,依偎着
+Comment: 0,0:12:36.20,0:12:39.30,歌CN,,50,50,85,kara,我们想要这样站立
+Comment: 0,0:12:39.54,0:12:42.52,歌CN,,50,50,85,kara,将耀眼的夕阳

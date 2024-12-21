@@ -15,12 +15,13 @@ YCbCr Matrix: TV.709
 [Aegisub Project Garbage]
 Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 12 (1080p) [F98FD74C].mkv
 Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 12 (1080p) [F98FD74C].mkv
+Keyframes File: C:/Users/scree/Desktop/ep12_keyframes.txt
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.375000
-Scroll Position: 271
-Active Line: 298
-Video Position: 29849
+Video Zoom Percent: 0.625000
+Scroll Position: 39
+Active Line: 136
+Video Position: 33496
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -33,302 +34,150 @@ Style: TITLE,思源黑体 Medium,65,&H00FDFDFD,&H000000FF,&H00505050,&H00000000,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,colors,0,0,0,code once anystyle, charactor_color = {     ["真乃"] = "&HD6BAFF&",     ["灯织"] = "&H844314&",     ["巡"] = "&H12E0FF&",     ["恋钟"] = "&HAD4CF8&",     ["摩美美"] = "&HFB46A8&",     ["咲耶"] = "&H476000&",     ["结华"] = "&HC4913B&",     ["雾子"] = "&HFFF2D9&",     ["果穗"] = "&H1C46E5&",     ["智代子"] = "&H903BF9&",     ["树里"] = "&H02C6FF&",     ["凛世"] = "&HEBC389&",     ["夏叶"] = "&H67E690&",     ["甘奈"] = "&H7542F5&",     ["甜花"] = "&HEC5BE7&",     ["千雪"] = "&HFAFAFB&",     ["朝日"] = "&H0001F3&",     ["冬优子"] = "&H26E65C&",     ["爱依"] = "&HFF00FF&",     ["透"] = "&HD0D050&",     ["圆香"] = "&H3E1EBE&",     ["小糸"] = "&HC36779&",     ["雏菜"] = "&H39C6FF&",     ["日花"] = "&HB6CEA6&",     ["美琴"] = "&H100F76&",     ["路加"] = "&H0D1324&",     ["羽那"] = "&HD3B5E0&",     ["阳希"] = "&HA4D7EA&",     ["illumination STARS"] = "&H8DF6FF&",     ["L'Antica"] = "&H983985&",     ["放学后CLIMAX GIRLS"] = "&H3383FA&",     ["Alstroemeria"] = "&H9E69FF&",     ["Straylight"] = "&H1C01AF&",     ["noctchill"] = "&H984D38&",     ["SHHis"] = "&H748E00&",     ["CoMETIK"] = "&H000000&", ["星组"] = "&H8DF6FF&", ["花组"] = "&H9E69FF&", ["放学后"] = "&H3383FA&", ["迷光"] = "&H1C01AF&", ["水组"] = "&H984D38&",} function search_for_color(input_text)     for k, v in _G.pairs(charactor_color) do         if string.find(input_text, k) then             return v         end     end     return "&HF0F0F0&" end function name_color(color)     return colorlib.interp_xyz(0.35, "&HF0F0F0&", color) end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,utility,0,0,0,code once anystyle,function string:split(delimiter)     local result = {}     local from = 1     local delim_from, delim_to = string.find(self, delimiter, from, true)     while delim_from do         if (delim_from ~= 1) then             table.insert(result, string.sub(self, from, delim_from-1))         end         from = delim_to + 1         delim_from, delim_to = string.find(self, delimiter, from, true)     end     if (from <= #self) then table.insert(result, string.sub(self, from)) end     return result end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,global settings,0,0,0,code once anystyle,_zh_jp_gap = 45; graphic_height_bottom = 30; graphic_height_top = 25; tc_fontname = "獅尾圓體-Bold"; max_width_separator = 500
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,overlap checking,0,0,0,code once anystyle,start_time = -1 end_time = -1 right_pos = -1 align = -1 overlap = false function check_overlap (line_start_time, line_end_time, line_align) if line_start_time >= start_time and line_end_time <= end_time and line_align == align then return true else return false end end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,overlap = check_overlap(orgline.start_time, orgline.end_time, orgline.styleref.align) start_time = orgline.start_time end_time = orgline.end_time align = orgline.styleref.align line_text = orgline.text_stripped:split("\\N")  line_text_tags = orgline.text:split("\\N") line_width = _G.aegisub.text_extents(orgline.styleref, line_text[1] and line_text[1] or "") line_left = (meta.res_x - orgline.eff_margin_l - orgline.eff_margin_r - line_width) / 2 + orgline.eff_margin_l zh_jp_gap = line_text[2] and _zh_jp_gap or 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,short_line = line_width <= 300; graphic_char_gap = short_line and 0 or 30; extended = {_G.aegisub.text_extents(orgline.styleref, orgline.actor)}; single_char_width = _G.aegisub.text_extents(orgline.styleref, " 一"); name_gap = orgline.styleref.fontname == tc_fontname and orgline.height / 2.5 or orgline.height / 5; separator_grad_length = short_line and 6-(single_char_width*0.5) or 50;
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,code line anystyle,line_alpha = nil; if ln.line.tag("alpha") ~= "" then line_alpha = ln.line.tag("alpha") else line_alpha = [[\3a&H5F&]] end
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator width,0,0,0,code line anystyle,function sigmoid(x, L, U, k) k = k or 0.5 return L + (U - L) * math.tanh(k * (x - L) / (U - L)) end; separator_width = nil; separator_width = line_width < 300 and line_width or sigmoid(line_width, 250, max_width_separator, 0.1) + graphic_char_gap;
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,text,0,0,0,template line anystyle notext,!maxloop("zhjp",2)!!relayer(10-loopctx.state.zhjp)!!(zh_jp_gap == 0 and loopctx.state.zhjp == 2) and skip() or ""!{\pos(!line.center!,!line.styleref.align == 2 and (loopctx.state.zhjp == 1 and line.bottom - zh_jp_gap or line.bottom) or (loopctx.state.zhjp == 1 and line.top + zh_jp_gap or line.top)!)\bord!loopctx.state.zhjp == 1 and 3 or 2.1!\fscx!loopctx.state.zhjp == 1 and 100 or 70!\fscy!loopctx.state.zhjp == 1 and 100 or 70!\fn!loopctx.state.zhjp == 1 and line.styleref.fontname or "FOT-Humming Std B"!\3c&H202020&!line_alpha!}!loopctx.state.zhjp == 1 and line_text_tags[loopctx.state.zhjp] or line_text[loopctx.state.zhjp]!
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator,0,0,0,template line anystyle notext,!relayer(9)!!line.actor == "" and skip() or ""!{!set("separator_gap", line.styleref.fontname == tc_fontname and line.height / 5 or line.height / 10)!!util.make_grad(line_left+separator_width-separator_grad_length- (single_char_width*0.5),line_left+separator_width,1,false)!\pos(!short_line and (line_left) or (line_left - (single_char_width*0.5))!,!line.styleref.align == 2 and line.top - separator_gap - zh_jp_gap or line.bottom + separator_gap + zh_jp_gap!)\an!line.styleref.align == 2 and 1 or 7!\bord0.2\blur1\shad0\p1\alpha!util.get_grad("&H01&","&HFF&")!}m 0 0 l 1920 0 1920 2 0 2 0 0
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle notext,!short_line and skip() or ""!!line.actor == "" and skip() or ""!{\an7\pos(!line_left - (single_char_width*0.5)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\c!name_color(search_for_color(line.actor))!\3c&H202020&!line_alpha!\p1}m 0 0 b 6 0 10 -5 10 -11 b 10 -5 14 0 20 0 b 14 0 10 5 10 11 b 10 5 6 0 0 0 m 19 5 b 19 7 21 9 23 9 b 21 9 19 11 19 13 b 19 11 17 9 15 9 b 17 9 19 7 19 5 m 23 -10 b 23 -9 24 -8 25 -8 b 24 -8 23 -7 23 -6 b 23 -7 22 -8 21 -8 b 22 -8 23 -9 23 -10
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&!line_alpha!}!line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
-Dialogue: 0,0:00:06.54,0:00:09.44,STF,,0,0,0,,{\an7\fscx60\fscy60\pos(95.91,835.27)\fad(500,500)}字幕制作：北宇治字幕组Deep State\N翻译：FFU2\N后期：Scrpr
+Dialogue: 0,0:00:06.49,0:00:09.45,STF,,0,0,0,,{\an8\fscx60\fscy60\fad(250,0)\pos(960,30)\fn悠哉字体\b1\bord0.06\blur4\3c&H000000&}字幕制作：北宇治字幕组Deep State\N翻译：Scrpr FFU2（校对）\N后期：Scrpr
 Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:00:00.00,0:00:00.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
-Dialogue: 0,0:00:06.54,0:00:09.44,TITLE,,0,0,0,,{\fn悠哉字体\b1\pos(960,705)\fscy105\fad(1000,0)\bord0.5\blur4}独属于此刻的辉煌
+Dialogue: 0,0:00:06.49,0:00:09.45,TITLE,,0,0,0,,{\fn悠哉字体\b1\pos(960,600)\fscy105\fad(250,0)\bord2\blur3.5\3c&H000000&}独属于此刻的辉煌
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====NOTES=====
 Comment: 0,0:11:05.81,0:11:08.25,注释,,0,0,0,,=====TEXTS=====
-Dialogue: 0,0:00:07.73,0:00:09.44,SC_Bottom,真乃,0,0,0,,第一次看到会场的时候\N初めて見る会場は
-Dialogue: 0,0:00:15.03,0:00:18.46,SC_Bottom,真乃,0,0,0,,觉得是那么宽广 遥远无垠\Nどこまでも広くて 遠くて
-Dialogue: 0,0:00:19.19,0:00:22.84,SC_Bottom,真乃,0,0,0,,空气冰凉刺骨\N空気はヒンヤリとつめたくて
-Dialogue: 0,0:00:22.84,0:00:26.15,SC_Bottom,真乃,0,0,0,,就像停止了呼吸一样\Nまるで息をしていないみたい
-Dialogue: 0,0:00:28.22,0:00:29.25,SC_Bottom,真乃,0,0,0,,但是\Nでも
-Dialogue: 0,0:00:37.62,0:00:41.72,SC_Bottom,真乃,0,0,0,,一旦和大家一起站在舞台上 整个会场就会开始呼吸\Nみんなとステージに立てば 会場は息づいていく
-Dialogue: 0,0:00:46.79,0:00:48.76,SC_Bottom,真乃,0,0,0,,而今天一定会是\Nそして今日はきっと
-Dialogue: 0,0:00:49.93,0:00:51.36,SC_Bottom,真乃,0,0,0,,特别的一步\N特別な一歩
-Dialogue: 0,0:00:58.60,0:00:59.46,SC_Bottom,制作人,0,0,0,,怎么样？\Nどうだ?
-Dialogue: 0,0:01:00.83,0:01:01.83,SC_Bottom,真乃,0,0,0,,好\Nはい
-Dialogue: 0,0:01:04.73,0:01:09.38,SC_Bottom,制作人,0,0,0,,搞清楚自己是什么 自己想要变成什么样\N自分たちが 自分がどうなりたいか
-Dialogue: 0,0:01:09.38,0:01:11.42,SC_Bottom,制作人,0,0,0,,并不是一件容易的事情\N見つけるのは簡単なことじゃない
-Dialogue: 0,0:01:11.96,0:01:12.71,SC_Bottom,制作人,0,0,0,,但是\Nけど
-Dialogue: 0,0:01:15.39,0:01:16.77,SC_Bottom,甘奈,0,0,0,,大家一起\N一緒に
-Dialogue: 0,0:01:17.25,0:01:18.71,SC_Bottom,千雪,0,0,0,,各自都\Nそれぞれに
-Dialogue: 0,0:01:20.94,0:01:22.41,SC_Bottom,咲耶,0,0,0,,重要的东西\N大切なものを
-Dialogue: 0,0:01:24.91,0:01:26.25,SC_Bottom,咲耶,0,0,0,,已经找到了\N見つけたんだ
-Dialogue: 0,0:01:31.89,0:01:33.69,SC_Bottom,爱依,0,0,0,,让自己可以对自己感到自豪\N誇れる自分は
-Dialogue: 0,0:01:36.35,0:01:38.99,SC_Bottom,智代子,0,0,0,,还有自己的梦想\N自分の 夢は
-Dialogue: 0,0:01:46.70,0:01:49.28,SC_Bottom,叶月,0,0,0,,今天就从这里看吗\N今日はここからですか
-Dialogue: 0,0:01:49.28,0:01:50.16,SC_Bottom,制作人,0,0,0,,是啊\Nええ
-Dialogue: 0,0:01:50.94,0:01:54.09,SC_Bottom,制作人,0,0,0,,不从这里看的话 就没有感觉啊\Nここからじゃないと 見えない気がして
-Dialogue: 0,0:01:58.34,0:02:02.31,SC_Bottom,制作人,0,0,0,,每个人心中向往的远方都不尽相同\N目指す先は 一人一人違って
-Dialogue: 0,0:02:02.31,0:02:07.74,SC_Bottom,制作人,0,0,0,,纵然前路尚未明晰\Nたとえ どこへ向かうのか はっきりとわからないままでも
-Dialogue: 0,0:02:08.62,0:02:12.03,SC_Bottom,制作人,0,0,0,,只要伸出手去 投身于光芒\N手を伸ばして 光の中に飛び込めば
-Dialogue: 0,0:02:12.68,0:02:14.69,SC_Bottom,制作人,0,0,0,,一定能触摸到某些东西\Nきっと何かに指先が触れる
-Dialogue: 0,0:02:17.45,0:02:19.24,SC_Bottom,制作人,0,0,0,,此刻的她们\Nそんな彼女たちの
-Dialogue: 0,0:02:24.58,0:02:26.33,SC_Bottom,制作人,0,0,0,,正迈出这特别的一步\N特別な一歩を
-Dialogue: 0,0:02:26.71,0:02:29.56,SC_Bottom,制作人,0,0,0,,我想将这瞬间 深深铭记于心\Nしっかり 焼き付けたいんです
-Dialogue: 0,0:02:43.61,0:02:48.14,SC_Bottom,制作人,0,0,0,,是的 这便是她们绽放的时刻\Nそう それが 今の彼女たちの
-Dialogue: 0,0:02:48.14,0:02:49.53,SC_Bottom,巡,0,0,0,,马上就开场了\Nいよいよだ
-Dialogue: 0,0:03:31.09,0:03:37.65,SC_Bottom,恋钟,0,0,0,,283事务所 2nd Live Tour Prism Flare\N283プロダクションセカンドライブツアーリズムフレアへ
-Dialogue: 0,0:03:38.16,0:03:40.33,SC_Bottom,全员,0,0,0,,欢迎大家\Nようこそ
-Dialogue: 0,0:03:42.43,0:03:45.37,SC_Bottom,甘奈,0,0,0,,这是我们首次全国巡演的第一天\N初めてのツアー 初日です
-Dialogue: 0,0:03:45.61,0:03:49.91,SC_Bottom,真乃,0,0,0,,请大家敬请享受 直到最后吧\N最後まで 思いっきり楽しんでいてください
-Dialogue: 0,0:03:49.91,0:03:54.29,SC_Bottom,果穗,0,0,0,,首先为大家带来表演的是\N初にパフォーマンスをしてくれるのは
-Dialogue: 0,0:03:54.69,0:03:56.92,SC_Bottom,全员,0,0,0,,这个组合\Nこのユニットです
-Dialogue: 0,0:04:03.90,0:04:05.98,SC_Bottom,巡,0,0,0,,跳得真起劲啊\N飛ばしてる
-Dialogue: 0,0:04:17.81,0:04:19.17,SC_Bottom,真乃,0,0,0,,小糸…\N小糸ちゃん
-Dialogue: 0,0:04:19.90,0:04:21.01,SC_Bottom,巡,0,0,0,,真乃？\Nまの
-Dialogue: 0,0:04:23.06,0:04:26.57,SC_Bottom,灯织,0,0,0,,福丸的心情 我应该也能理解\N福丸さんの気持ち わかるかもしれない
-Dialogue: 0,0:04:28.58,0:04:31.54,SC_Bottom,真乃,0,0,0,,我们能做到的事…\N私たちに できること
-Dialogue: 0,0:04:33.71,0:04:38.18,SC_Bottom,灯织,0,0,0,,现在我内心的声音告诉我 迈出那一步就好\N今はただ踏み出そうって 心の声が聞こえる
-Dialogue: 0,0:04:39.75,0:04:42.30,SC_Bottom,巡,0,0,0,,让我们把情感融入到歌声中 传递给她们吧\N歌に込めて 届けよう
-Dialogue: 0,0:04:44.09,0:04:46.52,SC_Bottom,真乃,0,0,0,,嗯 从舞台上\Nうん ステージから
-Dialogue: 0,0:04:48.37,0:04:52.59,SC_Bottom,雏菜,0,0,0,,啊哈— 快看 好厉害啊\Nあはー 見て すごいよ
-Dialogue: 0,0:04:53.48,0:04:54.77,SC_Bottom,圆香,0,0,0,,还好吗？\N平気?
-Dialogue: 0,0:04:56.48,0:05:01.64,SC_Bottom,小糸,0,0,0,,我 我还是在想 我们这样好吗\Nや やっぱり いいのかな 私たち
-Dialogue: 0,0:05:04.24,0:05:08.81,SC_Bottom,小糸,0,0,0,,站 站在那里 真的好吗\Nだ だって いいのかな?あそこに…
-Dialogue: 0,0:05:32.74,0:05:36.17,SC_Bottom,真乃,0,0,0,,请传递到吧\Nどうか とどきますように
-Dialogue: 0,0:07:35.18,0:07:37.20,SC_Bottom,,0,0,0,,请做好准备\Nスタンバイお願いします
-Dialogue: 0,0:07:37.20,0:07:38.59,SC_Bottom,雏菜,0,0,0,,好——\Nはーい
-Dialogue: 0,0:07:42.90,0:07:45.56,SC_Bottom,透,0,0,0,,去看看吧 可能会有的\N見に行こう あるかも
-Dialogue: 0,0:07:47.41,0:07:48.37,SC_Bottom,透,0,0,0,,海\N海
-Dialogue: 0,0:07:52.80,0:07:53.66,SC_Bottom,小糸,0,0,0,,嗯！\Nうん
-Dialogue: 0,0:08:15.68,0:08:18.65,SC_Bottom,花组,0,0,0,,谢谢大家\Nありがとうございました
-Dialogue: 0,0:09:02.48,0:09:04.52,SC_Bottom,唇语透哥,0,0,0,,唇语识别请\N唇语识别请
-Dialogue: 0,0:12:07.33,0:12:09.65,SC_Bottom,结华,0,0,0,,哇 真是太棒了\Nやば めっちゃいい
-Dialogue: 0,0:12:09.65,0:12:11.87,SC_Bottom,恋钟,0,0,0,,我们也不能落在后面\Nうちらも負けてられんばい
-Dialogue: 0,0:12:11.87,0:12:12.89,SC_Bottom,咲耶,0,0,0,,嗯\Nああ
-Dialogue: 0,0:12:16.79,0:12:18.97,SC_Bottom,雏菜,0,0,0,,结束了呢——\N終わっちゃったね
-Dialogue: 0,0:12:35.08,0:12:36.18,SC_Bottom,真乃,0,0,0,,透…\Nタルちゃん
-Dialogue: 0,0:12:40.57,0:12:44.71,SC_Bottom,透,0,0,0,,我的心脏 还在狂跳着\Nまだ ドキドキしてる
-Dialogue: 0,0:12:47.34,0:12:49.68,SC_Bottom,透,0,0,0,,现在我能感受到我还活着\N生きてる 今
-Dialogue: 0,0:12:55.00,0:12:57.57,SC_Bottom,透,0,0,0,,谢谢你 真乃\Nありがとう まのちゃん
-Dialogue: 0,0:13:00.49,0:13:01.35,SC_Bottom,真乃,0,0,0,,嗯\Nうん
-Dialogue: 0,0:13:06.89,0:13:10.45,SC_Bottom,制作人,0,0,0,,她们各自的羽翼虽不相同\Nその羽は それぞれに違っていて
-Dialogue: 0,0:13:11.43,0:13:15.60,SC_Bottom,制作人,0,0,0,,却像毫不迷惘的光芒\Nそれは 迷いのない光のようで
-Dialogue: 0,0:13:16.02,0:13:19.38,SC_Bottom,制作人,0,0,0,,如仰望梦想时的炫目\N夢を見上げた 眩しさのようで
-Dialogue: 0,0:13:19.91,0:13:23.32,SC_Bottom,制作人,0,0,0,,似心意交织成的瑰丽\N思いが織りなす 美しさのようで
-Dialogue: 0,0:13:24.13,0:13:26.82,SC_Bottom,制作人,0,0,0,,她们彼此互相信赖 交叠的羽翼间\N互いを信じ 重なって
-Dialogue: 0,0:13:27.37,0:13:29.47,SC_Bottom,制作人,0,0,0,,绽放出崭新的光彩\N新たな輝きが生まれていく
-Dialogue: 0,0:13:30.38,0:13:32.95,SC_Bottom,制作人,0,0,0,,那是属于大家的\Nそれは みんなの
-Dialogue: 0,0:13:34.94,0:13:36.13,SC_Bottom,制作人,0,0,0,,独属于此刻的\N今だけの
-Dialogue: 0,0:13:50.14,0:13:53.10,SC_Bottom,制作人,0,0,0,,诉说着“我们活着”的闪耀\N生きてるって 輝きなんだ
-Dialogue: 0,0:13:58.75,0:13:59.85,SC_Bottom,透,0,0,0,,请多指教\Nよろしく
-Dialogue: 0,0:14:52.49,0:14:54.41,SC_Bottom,真乃,0,0,0,,我们是\N私たち
-Dialogue: 0,0:14:54.88,0:14:57.06,SC_Bottom,全员,0,0,0,,闪耀色彩\Nシャイニーカラーズです
-Dialogue: 0,0:15:10.16,0:15:13.76,SC_Bottom,真乃,0,0,0,,大家有好好享受这场演唱会吗\Nみなさん 楽しんでいただけましたか?
-Dialogue: 0,0:15:16.08,0:15:18.36,SC_Bottom,真乃,0,0,0,,谢谢大家\Nありがとうございます
-Dialogue: 0,0:15:18.36,0:15:19.27,SC_Bottom,真乃,0,0,0,,那个\Nえっと
-Dialogue: 0,0:15:23.69,0:15:27.66,SC_Bottom,真乃,0,0,0,,第一张专辑 第一次巡演\N初めてのアルバムに 初めてのツアー
-Dialogue: 0,0:15:29.03,0:15:30.23,SC_Bottom,真乃,0,0,0,,想必大家\Nきっとみんな
-Dialogue: 0,0:15:31.83,0:15:34.62,SC_Bottom,真乃,0,0,0,,都在思考着想要成为什么样的偶像\Nどんなアイドルになりたいんだろうって
-Dialogue: 0,0:15:35.52,0:15:37.72,SC_Bottom,真乃,0,0,0,,每个人都带着这样的心情\N一人一人考えながら
-Dialogue: 0,0:15:38.89,0:15:42.08,SC_Bottom,真乃,0,0,0,,迎来了今天这个日子\N今日 この日を迎えました
-Dialogue: 0,0:15:43.18,0:15:46.49,SC_Bottom,真乃,0,0,0,,虽然大家每个人都有自己的想法\N一人一人 だけど
-Dialogue: 0,0:15:46.83,0:15:51.30,SC_Bottom,真乃,0,0,0,,但我们并不孤单 而是有珍贵的伙伴陪伴在身边\N一人じゃなくて 大切な仲間がいて
-Dialogue: 0,0:15:52.11,0:15:55.62,SC_Bottom,真乃,0,0,0,,还有一直支持着我们的各位\N私たちをいつも支えてくださる皆さんも
-Dialogue: 0,0:15:56.84,0:15:58.45,SC_Bottom,真乃,0,0,0,,正因如此 我们……\Nだから私たちは
-Dialogue: 0,0:15:59.10,0:16:01.33,SC_Bottom,真乃,0,0,0,,才能继续寻找答案\N答えを探し続けて
-Dialogue: 0,0:16:01.97,0:16:04.73,SC_Bottom,真乃,0,0,0,,继续不断向前\N前に進むことができるんだって
-Dialogue: 0,0:16:04.73,0:16:06.17,SC_Bottom,真乃,0,0,0,,我是这么想的\N思っています
-Dialogue: 0,0:16:10.95,0:16:15.29,SC_Bottom,真乃,0,0,0,,此刻 我们会珍惜心中的这份感动\N今 この胸にある思いを大切にして
-Dialogue: 0,0:16:16.34,0:16:20.04,SC_Bottom,真乃,0,0,0,,想要展翅飞得更高 更远\Nもっともっと 羽ばたいていきたいです
-Dialogue: 0,0:16:20.98,0:16:24.63,SC_Bottom,真乃,0,0,0,,今后也请多多支持我们\Nこれからも よろしくお願いいたします
-Dialogue: 0,0:16:31.73,0:16:36.33,SC_Bottom,真乃,0,0,0,,那么 最后一首歌 请听\Nでは 最後の曲です 聴いてください
-Dialogue: 0,0:16:37.26,0:16:38.89,SC_Bottom,全员,0,0,0,,Prism Flare\Nプリズムフレア
-Dialogue: 0,0:21:33.90,0:21:35.65,SC_Bottom,制作人,0,0,0,,真的是最棒的演出\N最高のステージでした
-Dialogue: 0,0:21:37.40,0:21:40.65,SC_Bottom,制作人,0,0,0,,每个人的想法都交相辉映\Nみんなの想いが お互いを照らしあって
-Dialogue: 0,0:21:41.71,0:21:44.41,SC_Bottom,社长,0,0,0,,是啊 而且\Nああ それに
-Dialogue: 0,0:21:47.69,0:21:50.56,SC_Bottom,社长,0,0,0,,你也找到自己的答案了吧\N見つけたようだな お前も
-Dialogue: 0,0:21:53.77,0:21:57.94,SC_Bottom,制作人,0,0,0,,我到底 应该努力成为什么样的制作人\N俺が どんなプロデューサーであるべきか
-Dialogue: 0,0:22:03.38,0:22:07.46,SC_Bottom,制作人,0,0,0,,是她们教会了我\Nそれを教えてくれたのは 彼女たちだ
-Dialogue: 0,0:22:13.71,0:22:15.52,SC_Bottom,真乃,0,0,0,,制作人先生\Nプロデューサーさんが
-Dialogue: 0,0:22:16.03,0:22:19.23,SC_Bottom,真乃,0,0,0,,还有大家 让我明白\Nみんなが 気づかせてくれた
-Dialogue: 0,0:22:19.66,0:22:22.61,SC_Bottom,真乃,0,0,0,,当彼此的光芒交相辉映时\Nそれぞれの輝きで照らし合うことで
-Dialogue: 0,0:22:23.08,0:22:25.75,SC_Bottom,真乃,0,0,0,,就能发现崭新的自己\N新しい自分が見つかるってこと
-Dialogue: 0,0:22:26.81,0:22:30.61,SC_Bottom,真乃,0,0,0,,我想要继续不断前行\N私は 前に進み続けたい
-Dialogue: 0,0:22:31.65,0:22:38.04,SC_Bottom,真乃,0,0,0,,即使前路未明 只要有人为我们微笑\Nたとえ 先が見えなかったとしても 誰かが笑ってくれるのなら
-Dialogue: 0,0:22:38.65,0:22:42.09,SC_Bottom,真乃,0,0,0,,有人期待着未来\N誰かが 前を向いてくれるのなら
-Dialogue: 0,0:22:42.81,0:22:46.69,SC_Bottom,真乃,0,0,0,,我就想继续站在这里\N私はここに 立ち続けたい
-Dialogue: 0,0:22:51.82,0:22:56.55,SC_Bottom,制作人,0,0,0,,大家的光芒永不停息 不断蜕变\N絶えず輝きは増し 変わり続けていく
-Dialogue: 0,0:22:58.19,0:23:03.79,SC_Bottom,制作人,0,0,0,,我也得像大家一样 不断更新自己啊\N俺も 更新し続けていかないとな みんなみたいに
-Dialogue: 0,0:23:06.60,0:23:10.20,SC_Bottom,真乃,0,0,0,,这一定就是属于我们的羽翼\Nきっとこれが 私たちの翼
-Dialogue: 0,0:23:11.94,0:23:15.51,SC_Bottom,真乃,0,0,0,,在天空中描绘出的 我们的羽翼\N空に描く 私たちの翼
-Dialogue: 0,0:23:16.94,0:23:18.05,SC_Bottom,真乃,0,0,0,,我......\N私は
-Dialogue: 0,0:23:19.42,0:23:22.78,SC_Bottom,真乃,0,0,0,,我们曾经都不曾知晓\N私たちは 知らなかった
-Dialogue: 0,0:23:24.09,0:23:26.67,SC_Bottom,真乃,0,0,0,,即将开启的奇迹\Nこれから始まる奇跡も
-Dialogue: 0,0:23:27.22,0:23:28.67,SC_Bottom,真乃,0,0,0,,甚至连自己都不曾了解\N自分のことも
-Dialogue: 0,0:23:42.23,0:23:47.12,SC_Bottom,真乃,0,0,0,,但是 随着光芒愈发闪耀\Nでも 輝くほどに形を変えて
-Dialogue: 0,0:23:47.12,0:23:48.91,SC_Bottom,真乃,0,0,0,,我们必定能展翅高飞\Nどこまでも きっと
-Dialogue: 0,0:23:50.42,0:23:54.78,SC_Bottom,真乃,0,0,0,,自由翱翔于这片天空\N必ずこの空を 羽ばたいていける
-Comment: 0,0:05:39.53,0:05:39.57,SC_Bottom,,0,0,0,,# 星の数だけ
-Dialogue: 0,0:05:39.77,0:05:41.19,Default,,0,0,0,歌JP,どんな日も
-Dialogue: 0,0:05:39.77,0:05:41.19,Default,,0,0,0,歌CN,无论哪一天
-Dialogue: 0,0:05:41.19,0:05:47.75,Default,,0,0,0,歌JP,迷い道の今日も　ムダではないよね
-Dialogue: 0,0:05:41.19,0:05:47.75,Default,,0,0,0,歌CN,即使迷失在今天 也并非毫无意义
-Dialogue: 0,0:05:47.75,0:05:51.53,Default,,0,0,0,歌JP,今はただ　踏み出そうって
-Dialogue: 0,0:05:47.75,0:05:51.53,Default,,0,0,0,歌CN,此刻只想 向前迈步
-Dialogue: 0,0:05:51.53,0:05:57.11,Default,,0,0,0,歌JP,心の声が聞こえる
-Dialogue: 0,0:05:51.53,0:05:57.11,Default,,0,0,0,歌CN,听见内心的呼唤
-Dialogue: 0,0:05:55.49,0:06:01.51,Default,,0,0,0,歌JP,Lalalalalalalala…
-Dialogue: 0,0:05:55.49,0:06:01.51,Default,,0,0,0,歌CN,Lalalalalalalala...
-Dialogue: 0,0:06:03.01,0:06:08.81,Default,,0,0,0,歌JP,Lalalalalalalala…
-Dialogue: 0,0:06:03.01,0:06:08.81,Default,,0,0,0,歌CN,Lalalalalalalala...
-Dialogue: 0,0:06:10.19,0:06:13.97,Default,,0,0,0,歌JP,ひび割れた　歩道の隅
-Dialogue: 0,0:06:10.19,0:06:13.97,Default,,0,0,0,歌CN,在裂缝斑驳的路边
-Dialogue: 0,0:06:13.97,0:06:17.77,Default,,0,0,0,歌JP,誇らしそうに咲く花は
-Dialogue: 0,0:06:13.97,0:06:17.77,Default,,0,0,0,歌CN,那朵骄傲绽放的花
-Dialogue: 0,0:06:17.77,0:06:21.57,Default,,0,0,0,歌JP,ただここで　咲く未来を
-Dialogue: 0,0:06:17.77,0:06:21.57,Default,,0,0,0,歌CN,只是在此 相信着
-Dialogue: 0,0:06:21.57,0:06:25.53,Default,,0,0,0,歌JP,ずっと信じていたんだね
-Dialogue: 0,0:06:21.57,0:06:25.53,Default,,0,0,0,歌CN,未来终将盛开
-Dialogue: 0,0:06:24.77,0:06:28.83,Default,,0,0,0,歌JP,雨が降らない日もあるから
-Dialogue: 0,0:06:24.77,0:06:28.83,Default,,0,0,0,歌CN,正因为也会有不降雨的日子
-Dialogue: 0,0:06:29.01,0:06:33.01,Default,,0,0,0,歌JP,保なんてないけれど
-Dialogue: 0,0:06:29.01,0:06:33.01,Default,,0,0,0,歌CN,虽然没有永恒的保证
-Dialogue: 0,0:06:33.01,0:06:36.31,Default,,0,0,0,歌JP,繰り返しじゃないから
-Dialogue: 0,0:06:33.01,0:06:36.31,Default,,0,0,0,歌CN,但每一步都不重复
-Dialogue: 0,0:06:36.43,0:06:41.65,Default,,0,0,0,歌JP,進んでいよう　行こう！
-Dialogue: 0,0:06:36.43,0:06:41.65,Default,,0,0,0,歌CN,让我们继续前行吧 走吧！
-Dialogue: 0,0:06:41.69,0:06:43.05,Default,,0,0,0,歌JP,いつだって
-Dialogue: 0,0:06:41.69,0:06:43.05,Default,,0,0,0,歌CN,无论何时
-Dialogue: 0,0:06:43.05,0:06:49.51,Default,,0,0,0,歌JP,始まりを思えば　今が輝く
-Dialogue: 0,0:06:43.05,0:06:49.51,Default,,0,0,0,歌CN,回想起初心 此刻就会闪耀
-Dialogue: 0,0:06:49.69,0:06:53.17,Default,,0,0,0,歌JP,目を閉じて　開いているの
-Dialogue: 0,0:06:49.69,0:06:53.17,Default,,0,0,0,歌CN,闭上双眼 敞开心扉
-Dialogue: 0,0:06:53.41,0:06:57.35,Default,,0,0,0,歌JP,自分の心の言葉を
-Dialogue: 0,0:06:53.41,0:06:57.35,Default,,0,0,0,歌CN,倾听内心的话语
-Dialogue: 0,0:06:57.35,0:07:04.61,Default,,0,0,0,歌JP,いつの日か迷い道が　ぱっと拓けて
-Dialogue: 0,0:06:57.35,0:07:04.61,Default,,0,0,0,歌CN,终有一天 迷途会豁然开朗
-Dialogue: 0,0:07:04.65,0:07:08.15,Default,,0,0,0,歌JP,また夢に近づいてる
-Dialogue: 0,0:07:04.65,0:07:08.15,Default,,0,0,0,歌CN,又向梦想靠近一步
-Dialogue: 0,0:07:08.39,0:07:14.13,Default,,0,0,0,歌JP,そんな日が来る　来るから
-Dialogue: 0,0:07:08.39,0:07:14.13,Default,,0,0,0,歌CN,这样的日子 一定会来临
-Dialogue: 0,0:07:12.37,0:07:18.29,Default,,0,0,0,歌JP,Lalalalalalalala…
-Dialogue: 0,0:07:12.37,0:07:18.29,Default,,0,0,0,歌CN,Lalalalalalalala...
-Dialogue: 0,0:07:19.87,0:07:25.79,Default,,0,0,0,歌JP,Lalalalalalalala…
-Dialogue: 0,0:07:19.87,0:07:25.79,Default,,0,0,0,歌CN,Lalalalalalalala...
-Comment: 0,0:09:18.37,0:09:18.41,SC_Bottom,,0,0,0,,# いつだって僕らは
-Dialogue: 0,0:09:32.57,0:09:35.91,Default,,0,0,0,歌JP,きっと夢は叶うよなんて
-Dialogue: 0,0:09:32.57,0:09:35.91,Default,,0,0,0,歌CN,「梦想一定会实现」之类的话
-Dialogue: 0,0:09:36.09,0:09:38.59,Default,,0,0,0,歌JP,誰かが言ってたけど
-Dialogue: 0,0:09:36.09,0:09:38.59,Default,,0,0,0,歌CN,好像是有人这么跟我说过
-Dialogue: 0,0:09:38.71,0:09:42.71,Default,,0,0,0,歌JP,その夢はどこで僕を待ってるの？
-Dialogue: 0,0:09:38.71,0:09:42.71,Default,,0,0,0,歌CN,那个梦想在何处等待着我呢？
-Dialogue: 0,0:09:43.19,0:09:46.53,Default,,0,0,0,歌JP,きっと憧れているだけじゃ
-Dialogue: 0,0:09:43.19,0:09:46.53,Default,,0,0,0,歌CN,我知晓只是一味的憧憬
-Dialogue: 0,0:09:46.67,0:09:49.21,Default,,0,0,0,歌JP,ダメだって知ってるんだ
-Dialogue: 0,0:09:46.67,0:09:49.21,Default,,0,0,0,歌CN,终会一事无成
-Dialogue: 0,0:09:49.29,0:09:53.47,Default,,0,0,0,歌JP,僕の靴はまだ白いままで
-Dialogue: 0,0:09:49.29,0:09:53.47,Default,,0,0,0,歌CN,但我的鞋子依然一尘不染
-Dialogue: 0,0:09:53.67,0:09:58.98,Default,,0,0,0,歌JP,踏み出したストーリー　おぼつかない足取り
-Comment: 0,0:09:53.67,0:09:58.98,Default,,0,0,0,歌CN,迈出的故事 步伐还不够稳健
-Dialogue: 0,0:09:58.98,0:10:04.66,Default,,0,0,0,歌JP,迷って遠回り　でもいいの
-Comment: 0,0:09:58.98,0:10:04.66,Default,,0,0,0,歌CN,迷茫绕了远路 但这也无妨
-Dialogue: 0,0:10:04.66,0:10:07.29,Default,,0,0,0,歌JP,手と手を　ほら (重ねていこう)
-Comment: 0,0:10:04.66,0:10:07.29,Default,,0,0,0,歌CN,让我们 看啊（手牵着手）
-Dialogue: 0,0:10:07.29,0:10:09.57,Default,,0,0,0,歌JP,気持ち全部 (ぶつけてみよう)
-Comment: 0,0:10:07.29,0:10:09.57,Default,,0,0,0,歌CN,将所有感受（尽情释放）
-Dialogue: 0,0:10:09.57,0:10:17.52,Default,,0,0,0,歌JP,みんなが一緒なら　知らなかった世界さえ見えるよ
-Comment: 0,0:10:09.57,0:10:17.52,Default,,0,0,0,歌CN,只要大家在一起 就连未知的世界也能看见
-Dialogue: 0,0:10:30.59,0:10:35.93,Default,,0,0,0,歌JP,小さくてでこぼこ　儚い光たち
-Dialogue: 0,0:10:30.59,0:10:35.93,Default,,0,0,0,歌CN,一点点洒落的那梦幻般的光芒
-Dialogue: 0,0:10:35.93,0:10:41.48,Default,,0,0,0,歌JP,まだ頼りなくて　ゆらめいた
-Comment: 0,0:10:35.93,0:10:41.48,Default,,0,0,0,歌CN,虽然还很微弱 摇曳不定
-Dialogue: 0,0:10:41.48,0:10:44.23,Default,,0,0,0,歌JP,一つ一つ (合わせていこう)
-Dialogue: 0,0:10:41.48,0:10:44.23,Default,,0,0,0,歌CN,一个又一个（叠加在一起）
-Dialogue: 0,0:10:44.23,0:10:46.52,Default,,0,0,0,歌JP,パズルみたい (繋げていこう)
-Dialogue: 0,0:10:44.23,0:10:46.52,Default,,0,0,0,歌CN,像拼图一样（连接在一起）
-Dialogue: 0,0:10:46.52,0:10:51.12,Default,,0,0,0,歌JP,確かに希望の音が聞こえたんだ
-Dialogue: 0,0:10:46.52,0:10:51.12,Default,,0,0,0,歌CN,隐约听到了希望的声音
-Dialogue: 0,0:10:51.12,0:10:57.63,Default,,0,0,0,歌JP,光集めて　響け遠くへ (ぎゅっと)
-Comment: 0,0:10:51.12,0:10:57.63,Default,,0,0,0,歌CN,光芒聚集 响彻云霄（紧紧地）
-Dialogue: 0,0:10:57.72,0:11:01.66,Default,,0,0,0,歌JP,結んだキズナ信じて
-Comment: 0,0:10:57.72,0:11:01.66,Default,,0,0,0,歌CN,相信我们紧系的牵绊
-Dialogue: 0,0:11:01.66,0:11:07.75,Default,,0,0,0,歌JP,なんだって出来るよ　一人じゃないから
-Comment: 0,0:11:01.66,0:11:07.75,Default,,0,0,0,歌CN,因为不是一个人 所以无所不能
-Dialogue: 0,0:11:08.24,0:11:10.56,Default,,0,0,0,歌JP,昨日よりもっと
-Comment: 0,0:11:08.24,0:11:10.56,Default,,0,0,0,歌CN,一定都比昨天更加
-Dialogue: 0,0:11:10.56,0:11:16.01,Default,,0,0,0,歌JP,輝け　届け明日へ (せーの！)
-Comment: 0,0:11:10.56,0:11:16.01,Default,,0,0,0,歌CN,闪耀吧 传递向明天（预备！）
-Dialogue: 0,0:11:16.16,0:11:20.12,Default,,0,0,0,歌JP,未来を呼んでみようよ
-Dialogue: 0,0:11:16.16,0:11:20.12,Default,,0,0,0,歌CN,尝试着呼喊未来吧
-Dialogue: 0,0:11:20.12,0:11:26.41,Default,,0,0,0,歌JP,いつだって僕らは　せいいっぱい僕らは
-Dialogue: 0,0:11:20.12,0:11:26.41,Default,,0,0,0,歌CN,无论何时的我们 全力以赴的我们
-Dialogue: 0,0:11:26.70,0:11:30.66,Default,,0,0,0,歌JP,昨日よりもっと強く
-Dialogue: 0,0:11:26.70,0:11:30.66,Default,,0,0,0,歌CN,一定都比昨天更强
-Dialogue: 0,0:11:30.66,0:11:35.89,Default,,0,0,0,歌JP,光れ (今)
-Dialogue: 0,0:11:30.66,0:11:35.89,Default,,0,0,0,歌CN,闪耀吧（现在）
-Dialogue: 0,0:11:35.89,0:11:41.68,Default,,0,0,0,歌JP,光れ (今)
-Dialogue: 0,0:11:35.89,0:11:41.68,Default,,0,0,0,歌CN,闪耀吧（现在）
-Comment: 0,0:16:42.65,0:16:47.70,Default,,0,0,0,,# Prism Flare
-Dialogue: 0,0:16:53.37,0:16:57.17,Default,,0,0,0,歌JP,どこに向かう途中だろう
-Dialogue: 0,0:16:53.37,0:16:57.17,Default,,0,0,0,歌CN,我们正在前往何方呢
-Dialogue: 0,0:16:57.67,0:17:02.33,Default,,0,0,0,歌JP,飛び込んだ光のなかで
-Dialogue: 0,0:16:57.67,0:17:02.33,Default,,0,0,0,歌CN,跳进了那片光芒之中
-Dialogue: 0,0:17:04.33,0:17:08.43,Default,,0,0,0,歌JP,わからないまま手を伸ばした
-Dialogue: 0,0:17:04.33,0:17:08.43,Default,,0,0,0,歌CN,不知不觉中伸出了手
-Dialogue: 0,0:17:08.65,0:17:13.39,Default,,0,0,0,歌JP,風を探す翼のように
-Dialogue: 0,0:17:08.65,0:17:13.39,Default,,0,0,0,歌CN,如同等风来的翅膀一般
-Dialogue: 0,0:17:14.47,0:17:19.29,Default,,0,0,0,歌JP,一枚ずつ (My shiny feather)
-Dialogue: 0,0:17:14.47,0:17:19.29,Default,,0,0,0,歌CN,一片又一片（My shiny feather）
-Dialogue: 0,0:17:17.13,0:17:22.03,Default,,0,0,0,歌JP,違う色で (My shiny color)
-Dialogue: 0,0:17:17.13,0:17:22.03,Default,,0,0,0,歌CN,不同颜色的羽毛（My shiny color）
-Dialogue: 0,0:17:19.93,0:17:27.28,Default,,0,0,0,歌JP,輝きを重ねあわせたね
-Dialogue: 0,0:17:19.93,0:17:27.28,Default,,0,0,0,歌CN,无数的光辉重叠在了一起
-Dialogue: 0,0:17:30.42,0:17:36.40,Default,,0,0,0,歌JP,羽ばたき続ける　わたし達の空が
-Dialogue: 0,0:17:30.42,0:17:36.40,Default,,0,0,0,歌CN,我们仍在翱翔 在属于我们的天空中
-Dialogue: 0,0:17:36.40,0:17:46.68,Default,,0,0,0,歌JP,辿り着く未来で　なりたい自分になるんだ
-Dialogue: 0,0:17:36.40,0:17:46.68,Default,,0,0,0,歌CN,在我们抵达未来时 成为自己想成为的样子吧
-Dialogue: 0,0:17:46.88,0:17:52.74,Default,,0,0,0,歌JP,キラめいてShiny Ray　もっと広い空へ
-Dialogue: 0,0:17:46.88,0:17:52.74,Default,,0,0,0,歌CN,闪耀着的Shiny Ray 飞向更广阔的天空
-Dialogue: 0,0:17:52.86,0:17:58.18,Default,,0,0,0,歌JP,鼓動が指差すプリズム
-Dialogue: 0,0:17:52.86,0:17:58.18,Default,,0,0,0,歌CN,心跳的指引如棱镜一般
-Dialogue: 0,0:17:58.34,0:18:11.30,Default,,0,0,0,歌JP,焼きつける瞳にあつめて　どこまでも行くよ
-Dialogue: 0,0:17:58.34,0:18:11.30,Default,,0,0,0,歌CN,将所有的景色都烙在眼中 去任何想去的地方吧
-Dialogue: 0,0:18:23.86,0:18:27.68,Default,,0,0,0,歌JP,うらやましかったのかな
-Comment: 0,0:18:23.86,0:18:27.68,Default,,0,0,0,歌CN,是否曾经羡慕过呢
-Dialogue: 0,0:18:28.16,0:18:32.88,Default,,0,0,0,歌JP,心のスピードは違うから
-Comment: 0,0:18:28.16,0:18:32.88,Default,,0,0,0,歌CN,因为心灵节奏各不同
-Dialogue: 0,0:18:34.82,0:18:39.04,Default,,0,0,0,歌JP,並ぶ君は憧れだし
-Comment: 0,0:18:34.82,0:18:39.04,Default,,0,0,0,歌CN,与你并肩是我憧憬
-Dialogue: 0,0:18:39.16,0:18:43.82,Default,,0,0,0,歌JP,いつでもチカラになりたい
-Comment: 0,0:18:39.16,0:18:43.82,Default,,0,0,0,歌CN,随时都想成为你的力量
-Dialogue: 0,0:18:45.00,0:18:49.82,Default,,0,0,0,歌JP,毎日を (Your shiny feather)
-Comment: 0,0:18:45.00,0:18:49.82,Default,,0,0,0,歌CN,每一天都 (Your shiny feather)
-Dialogue: 0,0:18:47.68,0:18:52.86,Default,,0,0,0,歌JP,選んでいく (Your shiny color)
-Comment: 0,0:18:47.68,0:18:52.86,Default,,0,0,0,歌CN,做出选择 (Your shiny color)
-Dialogue: 0,0:18:50.44,0:18:57.88,Default,,0,0,0,歌JP,果てしない空を描いて
-Comment: 0,0:18:50.44,0:18:57.88,Default,,0,0,0,歌CN,描绘着无尽的蓝天
-Dialogue: 0,0:19:00.92,0:19:06.78,Default,,0,0,0,歌JP,羽ばたき続けよう　可能性の翼
-Comment: 0,0:19:00.92,0:19:06.78,Default,,0,0,0,歌CN,继续振翅吧 可能性之翼
-Dialogue: 0,0:19:06.94,0:19:17.32,Default,,0,0,0,歌JP,映し出す未来の　見え方は自分次第だね
-Comment: 0,0:19:06.94,0:19:17.32,Default,,0,0,0,歌CN,映照出的未来 全凭自己来定义
-Dialogue: 0,0:19:17.34,0:19:23.18,Default,,0,0,0,歌JP,それぞれのShiny Dream　育つ夢の途中
-Comment: 0,0:19:17.34,0:19:23.18,Default,,0,0,0,歌CN,各自的Shiny Dream 在成长的途中
-Dialogue: 0,0:19:23.38,0:19:28.62,Default,,0,0,0,歌JP,今生きている輝きで
-Comment: 0,0:19:23.38,0:19:28.62,Default,,0,0,0,歌CN,用此刻生命的光辉
-Dialogue: 0,0:19:28.84,0:19:41.80,Default,,0,0,0,歌JP,惹かれあう瞬間を何度でも　一緒に歌おう
-Comment: 0,0:19:28.84,0:19:41.80,Default,,0,0,0,歌CN,被吸引的瞬间 让我们一起歌唱
-Dialogue: 0,0:19:41.92,0:19:49.32,Default,,0,0,0,歌JP,明日に追いつく前に何ができるかな
-Comment: 0,0:19:41.92,0:19:49.32,Default,,0,0,0,歌CN,追上明天之前 还能做些什么
-Dialogue: 0,0:19:49.38,0:19:55.76,Default,,0,0,0,歌JP,強く抱きしめた今日の光
-Comment: 0,0:19:49.38,0:19:55.76,Default,,0,0,0,歌CN,紧紧拥抱今日的光芒
-Dialogue: 0,0:19:55.92,0:20:00.32,Default,,0,0,0,歌JP,“希望”って呼べる (ありがとう)
-Comment: 0,0:19:55.92,0:20:00.32,Default,,0,0,0,歌CN,能称之为"希望"的 (谢谢你)
-Dialogue: 0,0:19:59.02,0:20:03.21,Default,,0,0,0,歌JP,忘れないでいよう
-Comment: 0,0:19:59.02,0:20:03.21,Default,,0,0,0,歌CN,永远不要忘记
-Dialogue: 0,0:20:04.05,0:20:09.77,Default,,0,0,0,歌JP,羽ばたき続ける　わたし達の空が
-Dialogue: 0,0:20:04.05,0:20:09.77,Default,,0,0,0,歌CN,我们仍在翱翔 在属于我们的天空中
-Dialogue: 0,0:20:09.97,0:20:20.36,Default,,0,0,0,歌JP,辿り着く未来で　なりたい自分になるんだ
-Dialogue: 0,0:20:09.97,0:20:20.36,Default,,0,0,0,歌CN,在我们抵达未来时 成为自己想成为的样子吧
-Dialogue: 0,0:20:20.52,0:20:26.28,Default,,0,0,0,歌JP,おわらないShiny Dream　育つ夢の彼方
-Comment: 0,0:20:20.52,0:20:26.28,Default,,0,0,0,歌CN,永不止息Shiny Dream 在成长的彼方
-Dialogue: 0,0:20:26.46,0:20:31.70,Default,,0,0,0,歌JP,鼓動が指差すプリズム
-Dialogue: 0,0:20:26.46,0:20:31.70,Default,,0,0,0,歌CN,心跳的指引如棱镜一般
-Dialogue: 0,0:20:31.98,0:20:44.70,Default,,0,0,0,歌JP,焼きつける瞳にあつめて　どこまでも行くよ
-Comment: 0,0:20:31.98,0:20:44.70,Default,,0,0,0,歌CN,在灼热的眼眸中凝聚 无论多远都要去
-Dialogue: 0,0:20:44.94,0:20:50.40,Default,,0,0,0,歌JP,キラめいてShiny Ray
-Comment: 0,0:20:44.94,0:20:50.40,Default,,0,0,0,歌CN,闪耀着Shiny Ray
+Comment: 0,0:00:07.75,0:00:09.45,SC_Bottom,真乃,0,0,0,kara,第一次看到会场的时候\N初めて見る会場は
+Comment: 0,0:00:15.19,0:00:18.47,SC_Bottom,真乃,0,0,0,kara,觉得是那么宽广 遥远无垠\Nどこまでも広くて 遠くて
+Comment: 0,0:00:19.29,0:00:22.84,SC_Bottom,真乃,0,0,0,kara,空气冰凉 让人冷静\N空気はヒンヤリとつめたくて
+Comment: 0,0:00:22.84,0:00:26.21,SC_Bottom,真乃,0,0,0,kara,就像连呼吸都停止了一样\Nまるで息をしていないみたい
+Comment: 0,0:00:28.30,0:00:29.25,SC_Bottom,真乃,0,0,0,kara,但是\Nでも
+Comment: 0,0:00:37.70,0:00:42.02,SC_Bottom,真乃,0,0,0,kara,当和大家一起站在舞台上时 会场的气息开始流动\Nみんなとステージに立てば 会場は息づいていく
+Comment: 0,0:00:46.86,0:00:48.86,SC_Bottom,真乃,0,0,0,kara,而今天一定会成为\Nそして今日はきっと
+Comment: 0,0:00:49.96,0:00:51.52,SC_Bottom,真乃,0,0,0,kara,特别的一步\N特別な一歩
+Comment: 0,0:00:58.66,0:00:59.46,SC_Bottom,制作人,0,0,0,kara,怎么样？\Nどうだ？
+Comment: 0,0:01:00.96,0:01:01.86,SC_Bottom,真乃,0,0,0,kara,好\Nはい
+Comment: 0,0:01:04.78,0:01:08.76,SC_Bottom,制作人,0,0,0,kara,「自己想成为什么样的自己？」\N自分たちが 自分がどうなりたいか
+Comment: 0,0:01:09.41,0:01:11.42,SC_Bottom,制作人,0,0,0,kara,找到这个问题的答案并不容易\N見つけるのは簡単なことじゃない
+Comment: 0,0:01:12.07,0:01:12.75,SC_Bottom,制作人,0,0,0,kara,但是\Nけど
+Comment: 0,0:01:15.49,0:01:17.29,SC_Bottom,甘奈,0,0,0,kara,大家一起\N一緒に
+Comment: 0,0:01:17.29,0:01:19.02,SC_Bottom,千雪,0,0,0,kara,每一个人的…\Nそれぞれに
+Comment: 0,0:01:21.00,0:01:23.18,SC_Bottom,咲耶,0,0,0,kara,重要之物\N大切なものを
+Comment: 0,0:01:25.04,0:01:26.38,SC_Bottom,咲耶,0,0,0,kara,都已经找到了\N見つけたんだ
+Comment: 0,0:01:31.98,0:01:33.96,SC_Bottom,爱依,0,0,0,kara,能让自己引以为傲的自己\N誇れる自分は
+Comment: 0,0:01:36.48,0:01:39.10,SC_Bottom,智代子,0,0,0,kara,属于自己的梦想\N自分の 夢は
+Comment: 0,0:01:46.84,0:01:49.42,SC_Bottom,叶月,0,0,0,kara,今天要从这里位置观看吗\N今日はここからですか
+Comment: 0,0:01:49.42,0:01:50.26,SC_Bottom,制作人,0,0,0,kara,是啊\Nええ
+Comment: 0,0:01:50.98,0:01:54.09,SC_Bottom,制作人,0,0,0,kara,不在这里的话 总感觉看不太清楚\Nここからじゃないと 見えない気がして
+Comment: 0,0:01:58.34,0:02:01.98,SC_Bottom,制作人,0,0,0,kara,每个人心中向往的远方都不尽相同\N目指す先は 一人一人違って
+Comment: 0,0:02:02.47,0:02:08.11,SC_Bottom,制作人,0,0,0,kara,纵然前路尚未明晰\Nたとえ どこへ向かうのか はっきりとわからないままでも
+Comment: 0,0:02:08.71,0:02:12.17,SC_Bottom,制作人,0,0,0,kara,只要伸出手去 纵身跃入光芒之中\N手を伸ばして 光の中に飛び込めば
+Comment: 0,0:02:12.73,0:02:15.01,SC_Bottom,制作人,0,0,0,kara,一定能触摸到某些东西\Nきっと何かに指先が触れる
+Comment: 0,0:02:17.57,0:02:19.24,SC_Bottom,制作人,0,0,0,kara,此刻的她们\Nそんな彼女たちの
+Comment: 0,0:02:24.58,0:02:26.33,SC_Bottom,制作人,0,0,0,kara,正迈出这特别的一步\N特別な一歩を
+Comment: 0,0:02:26.78,0:02:29.58,SC_Bottom,制作人,0,0,0,kara,我想将这瞬间 深深铭记于心\Nしっかり 焼き付けたいんです
+Comment: 0,0:02:43.70,0:02:48.14,SC_Bottom,制作人,0,0,0,kara,是的 这便是她们绽放的时刻\Nそう それが 今の彼女たちの
+Comment: 0,0:02:48.42,0:02:49.84,SC_Bottom,巡,0,0,0,kara,马上就开始了\Nいよいよだ
+Comment: 0,0:03:31.18,0:03:37.65,SC_Bottom,恋钟,0,0,0,kara,28{\fscx50} {\fscx100}事务所{\fscx50} {\fscx100}2nd Live Tour Prism Flare\N283{\fscx50} {\fscx100}プロダクションセカンドライブツアープリズムフレア
+Comment: 0,0:03:38.30,0:03:40.14,SC_Bottom,全员,0,0,0,kara,欢迎大家\Nようこそ
+Comment: 0,0:03:42.56,0:03:45.37,SC_Bottom,甘奈,0,0,0,kara,这是我们首次巡演的第一天\N初めてのツアー 初日です
+Comment: 0,0:03:45.68,0:03:49.91,SC_Bottom,真乃,0,0,0,kara,请大家敬请享受 直到最后吧\N最後まで 思いっきり楽しんでいてください
+Comment: 0,0:03:50.13,0:03:54.29,SC_Bottom,果穗,0,0,0,kara,首先为大家带来表演的是\N初にパフォーマンスをしてくれるのは
+Comment: 0,0:03:54.77,0:03:56.92,SC_Bottom,全员,0,0,0,kara,这个组合\Nこのユニットです
+Comment: 0,0:04:03.99,0:04:06.05,SC_Bottom,巡,0,0,0,kara,真嗨啊\N飛ばしてる
+Comment: 0,0:04:17.88,0:04:19.18,SC_Bottom,真乃,0,0,0,kara,小糸…\N小糸ちゃん
+Comment: 0,0:04:20.02,0:04:21.04,SC_Bottom,巡,0,0,0,kara,真乃？\N真乃
+Comment: 0,0:04:23.16,0:04:26.57,SC_Bottom,灯织,0,0,0,kara,福丸的心情 我也许能够理解\N福丸さんの気持ち わかるかもしれない
+Comment: 0,0:04:28.61,0:04:31.57,SC_Bottom,真乃,0,0,0,kara,我们能做到的事…\N私たちに できること
+Comment: 0,0:04:33.81,0:04:38.25,SC_Bottom,灯织,0,0,0,kara,现在我内心的声音告诉我 迈出那一步就好\N今はただ踏み出そうって 心の声が聞こえる
+Comment: 0,0:04:40.01,0:04:42.30,SC_Bottom,巡,0,0,0,kara,将情感都融入歌声之中 传达出去吧\N歌に込めて 届けよう
+Comment: 0,0:04:44.19,0:04:46.85,SC_Bottom,真乃,0,0,0,kara,嗯 从舞台上\Nうん ステージから
+Comment: 0,0:04:48.43,0:04:52.69,SC_Bottom,雏菜,0,0,0,kara,啊哈{\fscx50} {\fscx100}— 快看 好厉害啊\Nあはー 見て すごいよ
+Comment: 0,0:04:53.59,0:04:54.77,SC_Bottom,圆香,0,0,0,kara,还好吗？\N平気？
+Comment: 0,0:04:56.55,0:05:01.79,SC_Bottom,小糸,0,0,0,kara,我 我还是在想 我们这样好吗\Nや やっぱり いいのかな 私たち
+Comment: 0,0:05:04.31,0:05:08.81,SC_Bottom,小糸,0,0,0,kara,站 站在那里 真的好吗\Nだ だって いいのかな？あそこに…
+Comment: 0,0:05:32.86,0:05:36.28,SC_Bottom,真乃,0,0,0,kara,请传递到吧\Nどうか とどきますように
+Comment: 0,0:07:35.18,0:07:37.34,SC_Bottom,,0,0,0,kara,请做好准备\Nスタンバイお願いします
+Comment: 0,0:07:37.34,0:07:38.68,SC_Bottom,雏菜,0,0,0,kara,好{\fscx50} {\fscx100}——\Nはーい
+Comment: 0,0:07:43.02,0:07:45.68,SC_Bottom,透,0,0,0,kara,去看看吧 可能会有的\N見に行こう あるかも
+Comment: 0,0:07:47.50,0:07:48.40,SC_Bottom,透,0,0,0,kara,海\N海
+Comment: 0,0:07:52.80,0:07:53.70,SC_Bottom,小糸,0,0,0,kara,嗯！\Nうん
+Comment: 0,0:08:15.81,0:08:18.73,SC_Bottom,花组,0,0,0,kara,谢谢大家\Nありがとうございました
+Comment: 0,0:09:02.48,0:09:04.52,SC_Bottom,透,0,0,0,kara,{\alpha&HD0&}去吧 海边\N行こう 海
+Comment: 0,0:12:07.33,0:12:09.76,SC_Bottom,结华,0,0,0,kara,哇噻 真是太棒了\Nやば めっちゃいい
+Comment: 0,0:12:09.76,0:12:11.87,SC_Bottom,恋钟,0,0,0,kara,我们也不能输啊\Nうちらも負けてられんばい
+Comment: 0,0:12:12.12,0:12:13.00,SC_Bottom,咲耶,0,0,0,kara,嗯\Nああ
+Comment: 0,0:12:16.87,0:12:19.11,SC_Bottom,雏菜,0,0,0,kara,结束了呢{\fscx50} {\fscx100}——\N終わっちゃったね
+Comment: 0,0:12:35.18,0:12:36.44,SC_Bottom,真乃,0,0,0,kara,透…\N透ちゃん
+Comment: 0,0:12:40.67,0:12:43.28,SC_Bottom,透,0,0,0,kara,依然在\Nまだ
+Comment: 0,0:12:43.28,0:12:44.87,SC_Bottom,透,0,0,0,kara,砰砰直跳着\Nドキドキしてる
+Comment: 0,0:12:47.43,0:12:49.91,SC_Bottom,透,0,0,0,kara,我正活着 现在\N生きてる 今
+Comment: 0,0:12:55.06,0:12:57.68,SC_Bottom,透,0,0,0,kara,谢谢你 真乃\Nありがとう 真乃ちゃん
+Comment: 0,0:13:00.60,0:13:01.72,SC_Bottom,真乃,0,0,0,kara,嗯\Nうん
+Comment: 0,0:13:06.99,0:13:10.47,SC_Bottom,制作人,0,0,0,kara,她们各自的羽翼虽不相同\Nその羽は それぞれに違っていて
+Comment: 0,0:13:11.55,0:13:15.60,SC_Bottom,制作人,0,0,0,kara,但就像没有迷茫的光芒\Nそれは 迷いのない光のようで
+Comment: 0,0:13:16.09,0:13:19.36,SC_Bottom,制作人,0,0,0,kara,如同仰望梦想时的炫目\N夢を見上げた 眩しさのようで
+Comment: 0,0:13:19.91,0:13:23.32,SC_Bottom,制作人,0,0,0,kara,好似心意交织成的瑰丽\N思いが織りなす 美しさのようで
+Comment: 0,0:13:24.21,0:13:27.45,SC_Bottom,制作人,0,0,0,kara,互相信赖 交叠\N互いを信じ 重なって
+Comment: 0,0:13:27.45,0:13:29.57,SC_Bottom,制作人,0,0,0,kara,绽放出崭新的光彩\N新たな輝きが生まれていく
+Comment: 0,0:13:30.47,0:13:32.96,SC_Bottom,制作人,0,0,0,kara,那是属于大家的\Nそれは みんなの
+Comment: 0,0:13:35.03,0:13:36.23,SC_Bottom,制作人,0,0,0,kara,独属于此刻的\N今だけの
+Comment: 0,0:13:50.28,0:13:53.17,SC_Bottom,制作人,0,0,0,kara,诉说着「我们活着」的闪耀\N生きてるって 輝きなんだ
+Comment: 0,0:13:58.86,0:13:59.96,SC_Bottom,透,0,0,0,kara,请多指教\Nよろしく
+Comment: 0,0:14:52.59,0:14:54.41,SC_Bottom,真乃,0,0,0,kara,我们是\N私たち
+Comment: 0,0:14:54.99,0:14:57.23,SC_Bottom,全员,0,0,0,kara,闪耀色彩\Nシャイニーカラーズです
+Comment: 0,0:15:10.24,0:15:13.76,SC_Bottom,真乃,0,0,0,kara,大家有好好享受这场演唱会吗\Nみなさん 楽しんでいただけましたか？
+Comment: 0,0:15:16.16,0:15:17.94,SC_Bottom,真乃,0,0,0,kara,谢谢大家\Nありがとうございます
+Comment: 0,0:15:18.40,0:15:19.36,SC_Bottom,真乃,0,0,0,kara,那个\Nえっと
+Comment: 0,0:15:23.81,0:15:27.81,SC_Bottom,真乃,0,0,0,kara,第一张专辑 第一次巡演\N初めてのアルバムに 初めてのツアー
+Comment: 0,0:15:29.13,0:15:30.49,SC_Bottom,真乃,0,0,0,kara,想必大家\Nきっとみんな
+Comment: 0,0:15:31.96,0:15:34.72,SC_Bottom,真乃,0,0,0,kara,对「想要成为什么样的偶像」这个问题\Nどんなアイドルになりたいんだろうって
+Comment: 0,0:15:35.68,0:15:37.90,SC_Bottom,真乃,0,0,0,kara,每个人都在不停思考着\N一人一人考えながら
+Comment: 0,0:15:38.98,0:15:42.12,SC_Bottom,真乃,0,0,0,kara,迎来了今天这个日子\N今日 この日を迎えました
+Comment: 0,0:15:43.32,0:15:46.88,SC_Bottom,真乃,0,0,0,kara,虽然每一个人的答案不同 但是…\N一人一人 だけど
+Comment: 0,0:15:46.88,0:15:51.30,SC_Bottom,真乃,0,0,0,kara,但我们并不孤单 而是有珍贵的伙伴陪伴在身边\N一人じゃなくて 大切な仲間がいて
+Comment: 0,0:15:52.24,0:15:55.74,SC_Bottom,真乃,0,0,0,kara,还有一直支持着我们的各位\N私たちをいつも支えてくださる皆さんも
+Comment: 0,0:15:56.88,0:15:58.52,SC_Bottom,真乃,0,0,0,kara,正因如此 我们……\Nだから私たちは
+Comment: 0,0:15:59.41,0:16:01.39,SC_Bottom,真乃,0,0,0,kara,才能继续寻找答案\N答えを探し続けて
+Comment: 0,0:16:02.05,0:16:04.73,SC_Bottom,真乃,0,0,0,kara,继续不断向前\N前に進むことができるんだって
+Comment: 0,0:16:05.03,0:16:06.33,SC_Bottom,真乃,0,0,0,kara,我是这么想的\N思っています
+Comment: 0,0:16:10.92,0:16:15.54,SC_Bottom,真乃,0,0,0,kara,此刻 我们会珍惜心中的这份感动\N今 この胸にある思いを大切にして
+Comment: 0,0:16:16.35,0:16:20.04,SC_Bottom,真乃,0,0,0,kara,然后飞向更高更远的地方\Nもっともっと 羽ばたいていきたいです
+Comment: 0,0:16:21.00,0:16:24.74,SC_Bottom,真乃,0,0,0,kara,今后也请多多支持我们\Nこれからも よろしくお願いいたします
+Comment: 0,0:16:31.85,0:16:36.49,SC_Bottom,真乃,0,0,0,kara,那么 最后一首歌 请听\Nでは 最後の曲です 聴いてください
+Comment: 0,0:16:37.35,0:16:39.07,SC_Bottom,全员,0,0,0,kara,Prism Flare\Nプリズムフレア
+Comment: 0,0:21:34.01,0:21:35.81,SC_Bottom,制作人,0,0,0,kara,真的是最棒的演出\N最高のステージでした
+Comment: 0,0:21:37.45,0:21:40.65,SC_Bottom,制作人,0,0,0,kara,每个人的想法都交相辉映\Nみんなの想いが お互いを照らしあって
+Comment: 0,0:21:41.84,0:21:44.44,SC_Bottom,社长,0,0,0,kara,是啊 而且\Nああ それに
+Comment: 0,0:21:47.72,0:21:50.66,SC_Bottom,社长,0,0,0,kara,你也找到答案了吧\N見つけたようだな お前も
+Comment: 0,0:21:53.93,0:21:58.07,SC_Bottom,制作人,0,0,0,kara,我到底 应该成为什么样的制作人\N俺が どんなプロデューサーであるべきか
+Comment: 0,0:22:03.48,0:22:07.60,SC_Bottom,制作人,0,0,0,kara,是她们教会了我\Nそれを教えてくれたのは 彼女たちだ
+Comment: 0,0:22:13.79,0:22:15.52,SC_Bottom,真乃,0,0,0,kara,制作人先生\Nプロデューサーさんが
+Comment: 0,0:22:16.07,0:22:19.23,SC_Bottom,真乃,0,0,0,kara,还有大家 让我明白\Nみんなが 気づかせてくれた
+Comment: 0,0:22:19.77,0:22:23.19,SC_Bottom,真乃,0,0,0,kara,当彼此的光芒交相辉映时\Nそれぞれの輝きで照らし合うことで
+Comment: 0,0:22:23.19,0:22:25.81,SC_Bottom,真乃,0,0,0,kara,就能发现崭新的自己\N新しい自分が見つかるってこと
+Comment: 0,0:22:26.89,0:22:30.81,SC_Bottom,真乃,0,0,0,kara,我 想要继续前行\N私は 前に進み続けたい
+Comment: 0,0:22:31.74,0:22:38.04,SC_Bottom,真乃,0,0,0,kara,即使前路未明 只要有人为我们微笑\Nたとえ 先が見えなかったとしても 誰かが笑ってくれるのなら
+Comment: 0,0:22:38.73,0:22:42.21,SC_Bottom,真乃,0,0,0,kara,有人期待着未来\N誰かが 前を向いてくれるのなら
+Comment: 0,0:22:42.91,0:22:46.85,SC_Bottom,真乃,0,0,0,kara,我就想继续站在这里\N私はここに 立ち続けたい
+Comment: 0,0:22:51.88,0:22:56.64,SC_Bottom,制作人,0,0,0,kara,大家的光芒永不停息 不断蜕变\N絶えず輝きは増し 変わり続けていく
+Comment: 0,0:22:58.25,0:23:03.81,SC_Bottom,制作人,0,0,0,kara,我也得像大家一样 不断更新自己啊\N俺も 更新し続けていかないとな みんなみたいに
+Comment: 0,0:23:06.74,0:23:10.36,SC_Bottom,真乃,0,0,0,kara,这一定就是属于我们的羽翼\Nきっとこれが 私たちの翼
+Comment: 0,0:23:12.04,0:23:15.60,SC_Bottom,真乃,0,0,0,kara,在天空中描绘出的 我们的羽翼\N空に描く 私たちの翼
+Comment: 0,0:23:17.06,0:23:18.28,SC_Bottom,真乃,0,0,0,kara,我……\N私は
+Comment: 0,0:23:19.50,0:23:22.88,SC_Bottom,真乃,0,0,0,kara,我们曾经都不曾知晓\N私たちは 知らなかった
+Comment: 0,0:23:24.40,0:23:26.67,SC_Bottom,真乃,0,0,0,kara,即将开启的奇迹\Nこれから始まる奇跡も
+Comment: 0,0:23:27.30,0:23:28.74,SC_Bottom,真乃,0,0,0,kara,甚至连自己都不曾了解\N自分のことも
+Comment: 0,0:23:42.35,0:23:47.21,SC_Bottom,真乃,0,0,0,kara,但是 随着光芒愈发闪耀\Nでも 輝くほどに形を変えて
+Comment: 0,0:23:47.21,0:23:49.05,SC_Bottom,真乃,0,0,0,kara,我们必定能展翅高飞\Nどこまでも きっと
+Comment: 0,0:23:50.52,0:23:55.00,SC_Bottom,真乃,0,0,0,kara,自由翱翔于这片天空\N必ずこの空を 羽ばたいていける
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert01.ass
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert02.ass
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert03.ass
+Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,,0,0,0,import,insert/insert_non_animated.ass
