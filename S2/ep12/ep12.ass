@@ -15,13 +15,11 @@ YCbCr Matrix: TV.709
 [Aegisub Project Garbage]
 Audio File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 12 (1080p) [F98FD74C].mkv
 Video File: C:/Users/scree/Desktop/[SubsPlease] The iDOLM@STER Shiny Colors S2 - 12 (1080p) [F98FD74C].mkv
-Keyframes File: C:/Users/scree/Desktop/ep12_keyframes.txt
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.625000
-Scroll Position: 39
-Active Line: 50
-Video Position: 33496
+Active Line: 13
+Video Position: 173
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -47,7 +45,7 @@ Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,separator,0,0,0,template line anystyl
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,graphic,0,0,0,template line anystyle notext,!short_line and skip() or ""!!line.actor == "" and skip() or ""!{\an7\pos(!line_left - (single_char_width*0.5)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap - graphic_height_bottom or line.bottom + name_gap + zh_jp_gap + graphic_height_top!)\bord2\fscx180\fscy180\c!name_color(search_for_color(line.actor))!\3c&H202020&!line_alpha!\p1}m 0 0 b 6 0 10 -5 10 -11 b 10 -5 14 0 20 0 b 14 0 10 5 10 11 b 10 5 6 0 0 0 m 19 5 b 19 7 21 9 23 9 b 21 9 19 11 19 13 b 19 11 17 9 15 9 b 17 9 19 7 19 5 m 23 -10 b 23 -9 24 -8 25 -8 b 24 -8 23 -7 23 -6 b 23 -7 22 -8 21 -8 b 22 -8 23 -9 23 -10
 Comment: 0,0:00:00.00,0:00:00.00,SC_Bottom,name,0,0,0,template line anystyle notext,!line.actor == "" and skip() or ""!{!set("right_pos", (short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap) + (extended[1]*0.8))!\an!line.styleref.align == 2 and 1 or 7!\pos(!(short_line and (line_left + ((line_width-(extended[1]*0.8))/2)) or line_left + graphic_char_gap)!,!line.styleref.align == 2 and line.top - name_gap - zh_jp_gap or line.bottom + name_gap + zh_jp_gap!)\bord2.4\fscx80\fscy80\c!name_color(search_for_color(line.actor))!\3c&H202020&!line_alpha!}!line.actor!
 Comment: 0,0:00:00.00,0:00:00.00,注释,,0,0,0,,=====STAFF=====
-Dialogue: 0,0:00:06.49,0:00:09.45,STF,,0,0,0,,{\an8\fscx60\fscy60\fad(250,0)\pos(960,30)\fn悠哉字体\b1\bord0.06\blur4\3c&H000000&}字幕制作：北宇治字幕组Deep State\N翻译：Scrpr FFU2（校对）\N后期：Scrpr
+Dialogue: 0,0:00:06.49,0:00:09.45,STF,,0,0,0,,{\an8\fscx60\fscy60\fad(250,0)\pos(960,30)\fn悠哉字体\b1\bord0.06\blur4\3c&H000000&}字幕制作：北宇治字幕组Deep State\N翻译：Scrpr　FFU2（校对）\N后期：Scrpr
 Comment: 0,0:00:00.00,0:00:00.00,STF,,0,0,0,,=====TITLE=====
 Dialogue: 0,0:00:00.00,0:00:00.00,TITLE,,0,0,0,,{\fn思源黑体 Heavy\fad(160,160)\pos(960,625)\bord0.1\shad4\blur3\4c&H444444&}到目前为止的闪耀色彩
 Dialogue: 0,0:00:06.49,0:00:09.45,TITLE,,0,0,0,,{\fn悠哉字体\b1\pos(960,600)\fscy105\fad(250,0)\bord2\blur3.5\3c&H000000&}独属于此刻的辉煌
